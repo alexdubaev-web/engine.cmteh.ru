@@ -6,6 +6,8 @@ from pathlib import Path,PurePosixPath
 from decimal import Decimal,InvalidOperation
 from datetime import datetime,timezone
 import argparse,hashlib,json,re,zipfile,xml.etree.ElementTree as ET
+from pipeline_io import pipeline_lock,publish_files
+from tempfile import TemporaryDirectory
 ROOT=Path(__file__).resolve().parent
 NS={'s':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
 REL='http://schemas.openxmlformats.org/officeDocument/2006/relationships'
@@ -53,17 +55,25 @@ def match_rows(rows,products):
   result[identifier]={'quantity':count,'sourceRow':number}
  return result
 
+def publish_stock_pair(root,stock,commerce,replace=None):
+ with TemporaryDirectory(dir=root) as tmp:
+  temp=Path(tmp);staged_stock=temp/'stock.json';staged_commerce=temp/'commerce.json'
+  staged_stock.write_text(json.dumps(stock,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+  staged_commerce.write_text(json.dumps(commerce,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+  publish_files({staged_stock:root/'data/stock.json',staged_commerce:root/'data/commerce.json'},replace=replace or __import__('os').replace,journal_root=root)
+
 def main():
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('file');parser.add_argument('--sheet');parser.add_argument('--dry-run',action='store_true');args=parser.parse_args()
- source=Path(args.file);products=json.loads((ROOT/'data/products.json').read_text());sheet,rows=read_rows(source,args.sheet);items=match_rows(rows,products)
- if set(items)!={p['id'] for p in products}:raise ValueError('Not all catalog products matched; import aborted')
- now=datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z')
- stock={'sourceFile':'09-14.xlsx' if '09-14' in source.name else source.name,'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'worksheet':sheet,'importedAt':now,'items':items}
- commerce=json.loads((ROOT/'data/commerce.json').read_text())
- for identifier,item in items.items():commerce['availability'][identifier]='InStock' if item['quantity']>0 else 'OutOfStock'
- if not args.dry_run:
-  (ROOT/'data/stock.json').write_text(json.dumps(stock,ensure_ascii=False,indent=2)+'\n')
-  (ROOT/'data/commerce.json').write_text(json.dumps(commerce,ensure_ascii=False,indent=2)+'\n')
+ source=Path(args.file)
+ with pipeline_lock(ROOT):
+  products=json.loads((ROOT/'data/products.json').read_text(encoding='utf-8'));sheet,rows=read_rows(source,args.sheet);items=match_rows(rows,products)
+  if set(items)!={p['id'] for p in products}:raise ValueError('Not all catalog products matched; import aborted')
+  now=datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z')
+  stock={'sourceFile':'09-14.xlsx' if '09-14' in source.name else source.name,'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'worksheet':sheet,'importedAt':now,'items':items}
+  commerce=json.loads((ROOT/'data/commerce.json').read_text(encoding='utf-8'))
+  for identifier,item in items.items():commerce['availability'][identifier]='InStock' if item['quantity']>0 else 'OutOfStock'
+  if not args.dry_run:
+   publish_stock_pair(ROOT,stock,commerce)
  print(json.dumps({'matched':len(items),'units':sum(v['quantity'] for v in items.values()),'inStock':sum(v['quantity']>0 for v in items.values()),'outOfStock':sum(v['quantity']==0 for v in items.values()),'dryRun':args.dry_run},ensure_ascii=False))
 
 if __name__=='__main__':main()

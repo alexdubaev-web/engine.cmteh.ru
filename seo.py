@@ -2,7 +2,7 @@
 from pathlib import Path
 from datetime import datetime,timezone
 from decimal import Decimal
-import hashlib,html,json,os,re
+import hashlib,html,json,os,re,uuid
 from xml.etree import ElementTree as ET
 
 CRUMBS={}
@@ -26,9 +26,10 @@ def breadcrumbs(items):
 class SEO:
  def __init__(self,root,out,base,indexable,products,categories):
   self.root,self.out,self.base,self.indexable,self.products,self.categories=root,out,base,indexable,products,categories
+  self.state_root=root/'data'
   self.byid={p['id']:p for p in products}
-  self.commerce=json.loads((root/'data/commerce.json').read_text())
-  self.previous=json.loads((root/'data/seo-state.json').read_text()) if (root/'data/seo-state.json').exists() else {}
+  self.commerce=json.loads((root/'data/commerce.json').read_text(encoding='utf-8'))
+  self.previous=json.loads((self.state_root/'seo-state.json').read_text(encoding='utf-8')) if (self.state_root/'seo-state.json').exists() else {}
   self.current={};self.changed=[];self.now=datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z')
   self.asset_versions={n:hashlib.sha256((root/'public/assets'/n).read_bytes()).hexdigest()[:12] for n in ['app.js','style.css','analytics.js']}
  def availability(self,p):
@@ -105,18 +106,21 @@ class SEO:
     ET.SubElement(image,'{'+image_ns+'}caption').text=self.product_name(p)
   ET.ElementTree(root).write(self.out/'sitemap.xml',encoding='utf-8',xml_declaration=True)
   robots='User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: '+self.base+'/sitemap.xml\n\nUser-agent: Yandex\nAllow: /\nDisallow: /api/\nClean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&yclid&gclid&ysclid&fbclid /\nSitemap: '+self.base+'/sitemap.xml\n' if self.indexable else 'User-agent: *\nDisallow: /\n'
-  (self.out/'robots.txt').write_text(robots)
-  (self.root/'data/seo-state.json').write_text(json.dumps(self.current,ensure_ascii=False,indent=2)+'\n')
+  (self.out/'robots.txt').write_text(robots,encoding='utf-8')
+  (self.state_root/'seo-state.json').write_text(json.dumps(self.current,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
   removed=[self.base+p for p in self.previous if p not in self.current and p not in UTILITIES]
-  changes_file=self.root/'data/seo-changes.json'
-  pending=json.loads(changes_file.read_text()) if changes_file.exists() else {}
+  changes_file=self.state_root/'seo-changes.json'
+  pending=json.loads(changes_file.read_text(encoding='utf-8')) if changes_file.exists() else {}
   previous_urls=pending.get('urls',[]) if pending.get('origin')==self.base and pending.get('indexable')==self.indexable else []
+  old_revisions=pending.get('revisions',{})
   urls=list(dict.fromkeys(previous_urls+self.changed+removed))
-  changes_file.write_text(json.dumps({'origin':self.base,'indexable':self.indexable,'generated_at':self.now,'urls':urls},ensure_ascii=False,indent=2)+'\n')
+  changed=set(self.changed+removed)
+  revisions={url:(uuid.uuid4().hex if url in changed or url not in old_revisions else old_revisions[url]) for url in urls}
+  changes_file.write_text(json.dumps({'origin':self.base,'indexable':self.indexable,'generated_at':self.now,'urls':urls,'revisions':revisions},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
   key=os.environ.get('INDEXNOW_KEY','')
   if key:
    if not re.fullmatch('[a-zA-Z0-9-]{8,128}',key):raise ValueError('Invalid INDEXNOW_KEY')
-   (self.out/(key+'.txt')).write_text(key)
+   (self.out/(key+'.txt')).write_text(key,encoding='utf-8')
   if self.commerce.get('yml_enabled'):self.feed()
  def feed(self):
   # Publishing a feed without verified stock would silently imply availability.

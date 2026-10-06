@@ -11,11 +11,18 @@ python package_ru.py
 
 Для демо: `npm run build && npm start`. Worker из dist/server используется только для демонстрации, обработчик персональных данных в нём выключен независимо от переменных окружения.
 
+Утилиты импорта и Python-проверки требуют Python 3.10+ и зависимости из `requirements-dev.txt` (`python -m pip install -r requirements-dev.txt`). Сама сборка и упаковка используют только стандартную библиотеку.
+
 Проверки:
 
 ```sh
 npm test
 python tests/catalog.test.py
+python tests/seo.test.py
+python tests/stock.test.py
+python tests/pipeline_io.test.py
+python -m unittest discover -s tests -p "test_*.py"
+node --test tests/routing.test.mjs
 php tests/backend.php
 ```
 

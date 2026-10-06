@@ -6,6 +6,13 @@ dist/
 .runtime/
 *.tar.gz
 __pycache__/
+.pipeline.lock
+.pipeline-publish.json
+.pipeline-backup-*/
+.build-stage-*/
+.package-*/
+.image-stage-*
+.pipeline-write-*
 
 backend/config.php
 release-ru/
