@@ -1,0 +1,23 @@
+PASS consent required
+PASS consent version required
+PASS header injection rejected
+PASS honeypot rejected
+PASS unknown products rejected
+PASS invalid quantity rejected
+PASS valid order stored
+PASS server catalog sets price
+PASS consent evidence persisted
+PASS PII encrypted in database
+PASS retry idempotent
+PASS id reuse with changed data rejected
+PASS inquiry accepted without products
+PASS persistent rate limit enforced
+PASS SMTP failure preserves orders
+PASS outbox decrypts mail content
+PASS outbox decrypts mail content
+PASS outbox retries successfully
+PASS sent mail not resent
+PASS individual deletion
+PASS retention deletes payload and consent
+PASS unconfigured backend stays disabled
+Backend checks complete

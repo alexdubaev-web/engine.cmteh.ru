@@ -1,0 +1,532 @@
+{
+  "source_file": "КОЛИН ПРАЙС.xlsx",
+  "sheet": "stocks",
+  "sku_column": "A",
+  "price_column": "F",
+  "source_sha256": "cbddf28e3b2e97fb5f61fdd3f7688508d347a0c737ab6d77a244189782640905",
+  "total_rows": 58,
+  "rows": [
+    {
+      "source_row": 2,
+      "raw_sku": "433175478",
+      "canonical_sku": "0433175478",
+      "id": "0433175478",
+      "method": "numeric_bosch_zero",
+      "old_price": 3729,
+      "new_price": 4288
+    },
+    {
+      "source_row": 3,
+      "raw_sku": "7206-0460",
+      "canonical_sku": "7206-0460",
+      "id": "7206-0460",
+      "method": "text_exact",
+      "old_price": 7910,
+      "new_price": 9096
+    },
+    {
+      "source_row": 4,
+      "raw_sku": "28272472",
+      "canonical_sku": "28272472",
+      "id": "28272472",
+      "method": "numeric_direct",
+      "old_price": 24860,
+      "new_price": 29832
+    },
+    {
+      "source_row": 5,
+      "raw_sku": "445020610",
+      "canonical_sku": "0445020610",
+      "id": "0445020610",
+      "method": "numeric_bosch_zero",
+      "old_price": 79100,
+      "new_price": 118650
+    },
+    {
+      "source_row": 6,
+      "raw_sku": "RE539764",
+      "canonical_sku": "RE539764",
+      "id": "re539764",
+      "method": "text_exact",
+      "old_price": 180800,
+      "new_price": 216960
+    },
+    {
+      "source_row": 7,
+      "raw_sku": "260100-4010",
+      "canonical_sku": "260100-4010",
+      "id": "260100-4010",
+      "method": "text_exact",
+      "old_price": 23730,
+      "new_price": 33222
+    },
+    {
+      "source_row": 8,
+      "raw_sku": "9323A270G",
+      "canonical_sku": "9323A270G",
+      "id": "9323a270g",
+      "method": "text_exact",
+      "old_price": 101700,
+      "new_price": 132210
+    },
+    {
+      "source_row": 9,
+      "raw_sku": "28540276/R00203D",
+      "canonical_sku": "28540276",
+      "id": "28540276",
+      "method": "slash_primary",
+      "old_price": 24860,
+      "new_price": 28589
+    },
+    {
+      "source_row": 10,
+      "raw_sku": "7206-0435",
+      "canonical_sku": "7206-0435",
+      "id": "7206-0435",
+      "method": "text_exact",
+      "old_price": 17628,
+      "new_price": 20272
+    },
+    {
+      "source_row": 11,
+      "raw_sku": "28516849/7240-241",
+      "canonical_sku": "28516849",
+      "id": "28516849",
+      "method": "slash_primary",
+      "old_price": 4520,
+      "new_price": 5424
+    },
+    {
+      "source_row": 12,
+      "raw_sku": "445020208",
+      "canonical_sku": "0445020208",
+      "id": "0445020208",
+      "method": "numeric_bosch_zero",
+      "old_price": 79100,
+      "new_price": 110740
+    },
+    {
+      "source_row": 13,
+      "raw_sku": "445020201",
+      "canonical_sku": "0445020201",
+      "id": "0445020201",
+      "method": "numeric_bosch_zero",
+      "old_price": 74580,
+      "new_price": 104412
+    },
+    {
+      "source_row": 14,
+      "raw_sku": "L229PBC",
+      "canonical_sku": "L229PBC",
+      "id": "l229pbc",
+      "method": "text_exact",
+      "old_price": 5537,
+      "new_price": 6367
+    },
+    {
+      "source_row": 15,
+      "raw_sku": "445120075",
+      "canonical_sku": "0445120075",
+      "id": "0445120075",
+      "method": "numeric_bosch_zero",
+      "old_price": 30510,
+      "new_price": 35086
+    },
+    {
+      "source_row": 16,
+      "raw_sku": "445020082",
+      "canonical_sku": "0445020082",
+      "id": "0445020082",
+      "method": "numeric_bosch_zero",
+      "old_price": 94920,
+      "new_price": 123396
+    },
+    {
+      "source_row": 17,
+      "raw_sku": "RE507959",
+      "canonical_sku": "RE507959",
+      "id": "re507959",
+      "method": "text_exact",
+      "old_price": 101700,
+      "new_price": 233910
+    },
+    {
+      "source_row": 18,
+      "raw_sku": "L053PBC",
+      "canonical_sku": "L053PBC",
+      "id": "l053pbc",
+      "method": "text_exact",
+      "old_price": 5198,
+      "new_price": 5977
+    },
+    {
+      "source_row": 19,
+      "raw_sku": "433175518",
+      "canonical_sku": "0433175518",
+      "id": "0433175518",
+      "method": "numeric_bosch_zero",
+      "old_price": 2825,
+      "new_price": 3248
+    },
+    {
+      "source_row": 20,
+      "raw_sku": "445020334",
+      "canonical_sku": "0445020334",
+      "id": "0445020334",
+      "method": "numeric_bosch_zero",
+      "old_price": 79100,
+      "new_price": 90965
+    },
+    {
+      "source_row": 21,
+      "raw_sku": "445020110",
+      "canonical_sku": "0445020110",
+      "id": "0445020110",
+      "method": "numeric_bosch_zero",
+      "old_price": 84750,
+      "new_price": 118650
+    },
+    {
+      "source_row": 22,
+      "raw_sku": "28308779/A651070328",
+      "canonical_sku": "28308779",
+      "id": "28308779",
+      "method": "slash_primary",
+      "old_price": 24860,
+      "new_price": 29832
+    },
+    {
+      "source_row": 23,
+      "raw_sku": "L017PBB",
+      "canonical_sku": "L017PBB",
+      "id": "l017pbb",
+      "method": "text_exact",
+      "old_price": 5198,
+      "new_price": 6237
+    },
+    {
+      "source_row": 24,
+      "raw_sku": "445120126",
+      "canonical_sku": "0445120126",
+      "id": "0445120126",
+      "method": "numeric_bosch_zero",
+      "old_price": 37290,
+      "new_price": 46612
+    },
+    {
+      "source_row": 25,
+      "raw_sku": "445120072",
+      "canonical_sku": "0445120072",
+      "id": "0445120072",
+      "method": "numeric_bosch_zero",
+      "old_price": 36160,
+      "new_price": 43392
+    },
+    {
+      "source_row": 26,
+      "raw_sku": "5620004100/GK2Q-9K546-AC",
+      "canonical_sku": "5620004100",
+      "id": "5620004100",
+      "method": "slash_primary",
+      "old_price": 24860,
+      "new_price": 31075
+    },
+    {
+      "source_row": 27,
+      "raw_sku": "445020540",
+      "canonical_sku": "0445020540",
+      "id": "0445020540",
+      "method": "numeric_bosch_zero",
+      "old_price": 54240,
+      "new_price": 75936
+    },
+    {
+      "source_row": 28,
+      "raw_sku": "DZ112112",
+      "canonical_sku": "DZ112112",
+      "id": "dz112112",
+      "method": "text_exact",
+      "old_price": 74580,
+      "new_price": 89496
+    },
+    {
+      "source_row": 29,
+      "raw_sku": "0445226092/0445226190",
+      "canonical_sku": "0445226092",
+      "id": "0445226092",
+      "method": "slash_primary",
+      "old_price": 12430,
+      "new_price": 28589
+    },
+    {
+      "source_row": 30,
+      "raw_sku": "0445120728/0445120729/527-5384/617-1909",
+      "canonical_sku": "0445120728",
+      "id": "0445120728",
+      "method": "slash_primary",
+      "old_price": 37290,
+      "new_price": 52206
+    },
+    {
+      "source_row": 31,
+      "raw_sku": "0445120212/5263307/0445120007/0445120273/5263307",
+      "canonical_sku": "0445120212",
+      "id": "0445120212",
+      "method": "slash_primary",
+      "old_price": 24860,
+      "new_price": 28589
+    },
+    {
+      "source_row": 32,
+      "raw_sku": "260100-6010/295050-0520",
+      "canonical_sku": "260100-6010",
+      "id": "260100-6010",
+      "method": "slash_primary",
+      "old_price": 24860,
+      "new_price": 42262
+    },
+    {
+      "source_row": 33,
+      "raw_sku": "445116059",
+      "canonical_sku": "0445116059",
+      "id": "0445116059",
+      "method": "numeric_bosch_zero",
+      "old_price": 21470,
+      "new_price": 25764
+    },
+    {
+      "source_row": 34,
+      "raw_sku": "DZ128161/299050-0160",
+      "canonical_sku": "DZ128161",
+      "id": "dz128161",
+      "method": "slash_primary",
+      "old_price": 192100,
+      "new_price": 297755
+    },
+    {
+      "source_row": 35,
+      "raw_sku": "RE526588",
+      "canonical_sku": "RE526588",
+      "id": "re526588",
+      "method": "text_exact",
+      "old_price": 214700,
+      "new_price": 332785
+    },
+    {
+      "source_row": 36,
+      "raw_sku": "0445124036/5801906153",
+      "canonical_sku": "0445124036",
+      "id": "0445124036",
+      "method": "slash_primary",
+      "old_price": 36160,
+      "new_price": 41584
+    },
+    {
+      "source_row": 37,
+      "raw_sku": "445020089",
+      "canonical_sku": "0445020089",
+      "id": "0445020089",
+      "method": "numeric_bosch_zero",
+      "old_price": 101700,
+      "new_price": 122040
+    },
+    {
+      "source_row": 38,
+      "raw_sku": "0445020081/10117814",
+      "canonical_sku": "0445020081",
+      "id": "0445020081",
+      "method": "slash_primary",
+      "old_price": 101700,
+      "new_price": 116955
+    },
+    {
+      "source_row": 39,
+      "raw_sku": "L215PBC",
+      "canonical_sku": "L215PBC",
+      "id": "l215pbc",
+      "method": "text_exact",
+      "old_price": 5537,
+      "new_price": 6644
+    },
+    {
+      "source_row": 40,
+      "raw_sku": "0445124025/837074860",
+      "canonical_sku": "0445124025",
+      "id": "0445124025",
+      "method": "slash_primary",
+      "old_price": 35030,
+      "new_price": 40284
+    },
+    {
+      "source_row": 41,
+      "raw_sku": "DZ128160/DZ123516",
+      "canonical_sku": "DZ128160",
+      "id": "dz128160",
+      "method": "slash_primary",
+      "old_price": 162720,
+      "new_price": 357984
+    },
+    {
+      "source_row": 42,
+      "raw_sku": "445020606",
+      "canonical_sku": "0445020606",
+      "id": "0445020606",
+      "method": "numeric_bosch_zero",
+      "old_price": 79100,
+      "new_price": 142380
+    },
+    {
+      "source_row": 43,
+      "raw_sku": "445020611",
+      "canonical_sku": "0445020611",
+      "id": "0445020611",
+      "method": "numeric_bosch_zero",
+      "old_price": 79100,
+      "new_price": 118650
+    },
+    {
+      "source_row": 44,
+      "raw_sku": "28229876 / 320/06827",
+      "canonical_sku": "28229876",
+      "id": "28229876",
+      "method": "slash_primary",
+      "old_price": 33448,
+      "new_price": 38465
+    },
+    {
+      "source_row": 45,
+      "raw_sku": "L158PBA",
+      "canonical_sku": "L158PBA",
+      "id": "l158pba",
+      "method": "text_exact",
+      "old_price": 3616,
+      "new_price": 4158
+    },
+    {
+      "source_row": 46,
+      "raw_sku": "445020508",
+      "canonical_sku": "0445020508",
+      "id": "0445020508",
+      "method": "numeric_bosch_zero",
+      "old_price": 61020,
+      "new_price": 94581
+    },
+    {
+      "source_row": 47,
+      "raw_sku": "F00RJ02177",
+      "canonical_sku": "F00RJ02177",
+      "id": "f00rj02177",
+      "method": "text_exact",
+      "old_price": 293.8,
+      "new_price": 337
+    },
+    {
+      "source_row": 48,
+      "raw_sku": "0414701072/0414701051/0414701073/7 0414701086/8 0414701094/0414701930/2599428/2599429/1943974",
+      "canonical_sku": "0414701072",
+      "id": "0414701072",
+      "method": "slash_primary",
+      "old_price": 27120,
+      "new_price": 32544
+    },
+    {
+      "source_row": 49,
+      "raw_sku": "28384974/28318239/9422A040A/GMDAT 25187375/98686903",
+      "canonical_sku": "28384974",
+      "id": "28384974",
+      "method": "slash_primary",
+      "old_price": 63280,
+      "new_price": 79100
+    },
+    {
+      "source_row": 50,
+      "raw_sku": "DZ100218/095000-6880",
+      "canonical_sku": "DZ100218",
+      "id": "dz100218",
+      "method": "slash_primary",
+      "old_price": 42940,
+      "new_price": 55822
+    },
+    {
+      "source_row": 51,
+      "raw_sku": "28384976/28286124/28318240/GMDAT 25187376",
+      "canonical_sku": "28384976",
+      "id": "28384976",
+      "method": "slash_primary",
+      "old_price": 63280,
+      "new_price": 79100
+    },
+    {
+      "source_row": 52,
+      "raw_sku": "7210-0473/31442-84300/22720232",
+      "canonical_sku": "7210-0473",
+      "id": "7210-0473",
+      "method": "slash_primary",
+      "old_price": 2260,
+      "new_price": 2825
+    },
+    {
+      "source_row": 53,
+      "raw_sku": "8980436870/294200-0650",
+      "canonical_sku": "8980436870",
+      "id": "8980436870",
+      "method": "slash_primary",
+      "old_price": 7684,
+      "new_price": 9220
+    },
+    {
+      "source_row": 54,
+      "raw_sku": "9323A260G/JCB444 320/06738 320/06929  68.6KW  9320A613G",
+      "canonical_sku": "9323A260G",
+      "id": "9323a260g",
+      "method": "slash_primary",
+      "old_price": 101700,
+      "new_price": 122040
+    },
+    {
+      "source_row": 55,
+      "raw_sku": "0445120385/0445120386/0986435647/A4710700887",
+      "canonical_sku": "0445120385",
+      "id": "0445120385",
+      "method": "slash_primary",
+      "old_price": 57630,
+      "new_price": 69156
+    },
+    {
+      "source_row": 56,
+      "raw_sku": "445020273",
+      "canonical_sku": "0445020273",
+      "id": "0445020273",
+      "method": "numeric_bosch_zero",
+      "old_price": 51980,
+      "new_price": 77970
+    },
+    {
+      "source_row": 57,
+      "raw_sku": "9109-903",
+      "canonical_sku": "9109-903",
+      "id": "9109-903",
+      "method": "text_exact",
+      "old_price": 4520,
+      "new_price": 5424
+    },
+    {
+      "source_row": 58,
+      "raw_sku": "DZ111136",
+      "canonical_sku": "DZ111136",
+      "id": "dz111136",
+      "method": "text_exact",
+      "old_price": 19210,
+      "new_price": 57630
+    },
+    {
+      "source_row": 59,
+      "raw_sku": "DZ10599",
+      "canonical_sku": "DZ10599",
+      "id": "dz10599",
+      "method": "text_exact",
+      "old_price": 632800,
+      "new_price": 791000
+    }
+  ]
+}

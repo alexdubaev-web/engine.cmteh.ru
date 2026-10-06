@@ -1,0 +1,6 @@
+Invalid-origin build: exit=1, previous dist/index.html exists=False
+Invalid-archive package: exit=1, previous release marker exists=False
+Packaging error: FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Alexandr\\AppData\\Local\\Temp\\cmteh-audit-h3hj0ptk\\nonexistent-output-dir\\package.zip'
+Default Windows build: exit=1, UnicodeDecodeError=False
+Default build error: UnicodeEncodeError: 'charmap' codec can't encode character '\u20bd' in position 9683: character maps to <undefined>
+Missing-dist package: exit=1, last-good marker exists=False, replacement public_html index exists=False

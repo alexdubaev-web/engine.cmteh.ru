@@ -1,7 +1,7 @@
 <?php
 require __DIR__.'/common.php';
 if ($_SERVER['REQUEST_METHOD']!=='GET') { header('Allow: GET'); reply(405,['ok'=>false,'message'=>'Method not allowed']); }
-if (!Orders::configured($config)) reply(200,['submissionEnabled'=>false,'consentVersion'=>'2026-10-04']);
+if (!Orders::configured($config)) reply(200,['submissionEnabled'=>false,'consentVersion'=>'2026-10-06']);
 try {
     $app=new Orders($config); $app->listing(); // verify schema before enabling UI
     sessionStart();

@@ -1,0 +1,1 @@
+PHP syntax PASS; Python syntax PASS; JS syntax PASS; PHP HTTP integration PASS: config enabled, valid POST, idempotent retry, changed request rejected, CSRF rejected, foreign Origin rejected, GET orders rejected

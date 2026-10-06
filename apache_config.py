@@ -10,7 +10,7 @@ def config(indexable,products):
  '<IfModule mod_setenvif.c>', ' SetEnvIfExpr "%{QUERY_STRING} =~ /(^|&)(q|sort|brand|filter|page|category)=/" seo_search', ' SetEnvIf Request_URI "^/(privacy|consent|404)/" seo_utility','</IfModule>',
  '<IfModule mod_headers.c>',
  ' Header always set X-Content-Type-Options "nosniff"',' Header always set Referrer-Policy "strict-origin-when-cross-origin"',' Header always set X-Frame-Options "SAMEORIGIN"',' Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"',
- ' Header always set Content-Security-Policy "default-src \'self\'; script-src \'self\'; style-src \'self\' \'unsafe-inline\'; img-src \'self\' data:; font-src \'self\'; connect-src \'self\'; form-action \'self\'; base-uri \'self\'; frame-ancestors \'self\'"']
+ ' Header always set Content-Security-Policy "default-src \'self\'; script-src \'self\' https://mc.yandex.ru https://yastatic.net; style-src \'self\' \'unsafe-inline\'; img-src \'self\' data: https://mc.yandex.ru https://mc.yandex.com https://yastatic.net; font-src \'self\'; connect-src \'self\' https://mc.yandex.ru https://mc.yandex.com https://yastatic.net wss://mc.yandex.ru; frame-src \'self\' https://metrika.yandex.ru blob:; child-src \'self\' blob:; form-action \'self\'; base-uri \'self\'; frame-ancestors \'self\'"']
  if indexable:lines+=[' Header always set X-Robots-Tag "noindex, follow" env=seo_search',' Header always set X-Robots-Tag "noindex, follow" env=seo_utility']
  else:lines+=[' Header always set X-Robots-Tag "noindex, nofollow"']
  lines+=['</IfModule>','<IfModule mod_deflate.c>',' AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json application/xml text/xml image/svg+xml','</IfModule>',

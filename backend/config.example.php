@@ -3,11 +3,11 @@
 return [
     'enabled' => false,
     'russian_infrastructure_confirmed' => false, // hosting, database, backups and mail
-    'legal_documents_confirmed' => false, // replace public policy/consent drafts first
-    'origin' => 'https://example.ru',
+    'legal_documents_confirmed' => false, // confirm published public documents
+    'origin' => 'https://engine.cmteh.ru',
     'operator_name' => '', // full legal name
     'privacy_email' => '',
-    'consent_version' => '2026-10-04',
+    'consent_version' => '2026-10-06',
     'key' => '', // php backend/console.php key:generate; keep separate backup of key
     'database' => [
         'dsn' => 'mysql:host=localhost;dbname=cm_techno;charset=utf8mb4',

@@ -9,7 +9,7 @@
     "shortName": "Распылитель топливной форсунки",
     "brand": "Bosch",
     "category": "nozzles",
-    "price": 3729,
+    "price": 4288,
     "crossBrand": "",
     "sourceRow": 7,
     "sourceUrls": [
@@ -28,7 +28,7 @@
     "shortName": "Электромагнитный клапан топливной системы",
     "brand": "Delphi",
     "category": "valves",
-    "price": 7910,
+    "price": 9096,
     "crossBrand": "",
     "sourceRow": 8,
     "sourceUrls": [
@@ -47,7 +47,7 @@
     "shortName": "Топливная форсунка Common Rail",
     "brand": "Delphi",
     "category": "injectors",
-    "price": 24860,
+    "price": 29832,
     "crossBrand": "",
     "sourceRow": 9,
     "sourceUrls": [
@@ -66,7 +66,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Bosch",
     "category": "pumps",
-    "price": 79100,
+    "price": 118650,
     "crossBrand": "",
     "sourceRow": 10,
     "sourceUrls": [
@@ -85,7 +85,7 @@
     "shortName": "Электрический топливный насос 24 В",
     "brand": "John Deere",
     "category": "other",
-    "price": 180800,
+    "price": 216960,
     "crossBrand": "",
     "sourceRow": 11,
     "sourceUrls": [
@@ -104,7 +104,7 @@
     "shortName": "Топливная форсунка",
     "brand": "Denso",
     "category": "injectors",
-    "price": 23730,
+    "price": 33222,
     "crossBrand": "Mitsubishi",
     "sourceRow": 12,
     "sourceUrls": [
@@ -123,7 +123,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Delphi",
     "category": "pumps",
-    "price": 101700,
+    "price": 132210,
     "crossBrand": "",
     "sourceRow": 13,
     "sourceUrls": [
@@ -143,7 +143,7 @@
     "shortName": "Топливная форсунка Common Rail",
     "brand": "Delphi",
     "category": "injectors",
-    "price": 24860,
+    "price": 28589,
     "crossBrand": "Mercedes-Benz",
     "sourceRow": 14,
     "sourceUrls": [
@@ -162,7 +162,7 @@
     "shortName": "Электромагнитный клапан топливной системы",
     "brand": "Delphi",
     "category": "valves",
-    "price": 17628,
+    "price": 20272,
     "crossBrand": "",
     "sourceRow": 15,
     "sourceUrls": [
@@ -182,7 +182,7 @@
     "shortName": "Топливоподкачивающий насос",
     "brand": "Delphi",
     "category": "other",
-    "price": 4520,
+    "price": 5424,
     "crossBrand": "",
     "sourceRow": 16,
     "sourceUrls": [
@@ -201,7 +201,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Bosch",
     "category": "pumps",
-    "price": 79100,
+    "price": 110740,
     "crossBrand": "",
     "sourceRow": 17,
     "sourceUrls": [
@@ -220,7 +220,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Bosch",
     "category": "pumps",
-    "price": 74580,
+    "price": 104412,
     "crossBrand": "",
     "sourceRow": 18,
     "sourceUrls": [
@@ -239,7 +239,7 @@
     "shortName": "Распылитель топливной форсунки",
     "brand": "Delphi",
     "category": "nozzles",
-    "price": 5537,
+    "price": 6367,
     "crossBrand": "",
     "sourceRow": 19,
     "sourceUrls": [
@@ -258,7 +258,7 @@
     "shortName": "Топливная форсунка Common Rail",
     "brand": "Bosch",
     "category": "injectors",
-    "price": 30510,
+    "price": 35086,
     "crossBrand": "",
     "sourceRow": 20,
     "sourceUrls": [
@@ -277,7 +277,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Bosch",
     "category": "pumps",
-    "price": 94920,
+    "price": 123396,
     "crossBrand": "",
     "sourceRow": 21,
     "sourceUrls": [
@@ -296,7 +296,7 @@
     "shortName": "Топливный насос впрыска (ТНВД)",
     "brand": "John Deere",
     "category": "pumps",
-    "price": 101700,
+    "price": 233910,
     "crossBrand": "",
     "sourceRow": 22,
     "sourceUrls": [
@@ -315,7 +315,7 @@
     "shortName": "Распылитель топливной форсунки",
     "brand": "Delphi",
     "category": "nozzles",
-    "price": 5198,
+    "price": 5977,
     "crossBrand": "DAF",
     "sourceRow": 23,
     "sourceUrls": [
@@ -334,7 +334,7 @@
     "shortName": "Распылитель топливной форсунки",
     "brand": "Bosch",
     "category": "nozzles",
-    "price": 2825,
+    "price": 3248,
     "crossBrand": "",
     "sourceRow": 24,
     "sourceUrls": [
@@ -353,7 +353,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Bosch",
     "category": "pumps",
-    "price": 79100,
+    "price": 90965,
     "crossBrand": "",
     "sourceRow": 25,
     "sourceUrls": [
@@ -372,7 +372,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Bosch",
     "category": "pumps",
-    "price": 84750,
+    "price": 118650,
     "crossBrand": "",
     "sourceRow": 26,
     "sourceUrls": [
@@ -392,7 +392,7 @@
     "shortName": "Топливная форсунка Common Rail",
     "brand": "Delphi",
     "category": "injectors",
-    "price": 24860,
+    "price": 29832,
     "crossBrand": "Mercedes-Benz",
     "sourceRow": 27,
     "sourceUrls": [
@@ -411,7 +411,7 @@
     "shortName": "Распылитель топливной форсунки",
     "brand": "Delphi",
     "category": "nozzles",
-    "price": 5198,
+    "price": 6237,
     "crossBrand": "Volvo",
     "sourceRow": 28,
     "sourceUrls": [
@@ -430,7 +430,7 @@
     "shortName": "Топливная форсунка Common Rail",
     "brand": "Bosch",
     "category": "injectors",
-    "price": 37290,
+    "price": 46612,
     "crossBrand": "",
     "sourceRow": 29,
     "sourceUrls": [
@@ -449,7 +449,7 @@
     "shortName": "Топливная форсунка Common Rail",
     "brand": "Bosch",
     "category": "injectors",
-    "price": 36160,
+    "price": 43392,
     "crossBrand": "",
     "sourceRow": 30,
     "sourceUrls": [
@@ -469,7 +469,7 @@
     "shortName": "Топливная форсунка",
     "brand": "VDO / Vitesco (Aumovio)",
     "category": "injectors",
-    "price": 24860,
+    "price": 31075,
     "crossBrand": "Ford",
     "sourceRow": 31,
     "sourceUrls": [
@@ -488,7 +488,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Bosch",
     "category": "pumps",
-    "price": 54240,
+    "price": 75936,
     "crossBrand": "",
     "sourceRow": 32,
     "sourceUrls": [
@@ -507,7 +507,7 @@
     "shortName": "Комплект распылителя форсунки",
     "brand": "John Deere",
     "category": "nozzles",
-    "price": 74580,
+    "price": 89496,
     "crossBrand": "",
     "sourceRow": 33,
     "sourceUrls": [
@@ -527,7 +527,7 @@
     "shortName": "Топливная рампа Common Rail",
     "brand": "Bosch",
     "category": "other",
-    "price": 12430,
+    "price": 28589,
     "crossBrand": "",
     "sourceRow": 34,
     "sourceUrls": [
@@ -549,7 +549,7 @@
     "shortName": "Топливная форсунка Common Rail",
     "brand": "Bosch",
     "category": "injectors",
-    "price": 37290,
+    "price": 52206,
     "crossBrand": "Caterpillar",
     "sourceRow": 35,
     "sourceUrls": [
@@ -571,7 +571,7 @@
     "shortName": "Топливная форсунка Common Rail",
     "brand": "Bosch",
     "category": "injectors",
-    "price": 24860,
+    "price": 28589,
     "crossBrand": "Cummins",
     "sourceRow": 36,
     "sourceUrls": [
@@ -591,7 +591,7 @@
     "shortName": "Топливная форсунка Common Rail",
     "brand": "Denso",
     "category": "injectors",
-    "price": 24860,
+    "price": 42262,
     "crossBrand": "Toyota",
     "sourceRow": 37,
     "sourceUrls": [
@@ -610,7 +610,7 @@
     "shortName": "Топливная форсунка Common Rail",
     "brand": "Bosch",
     "category": "injectors",
-    "price": 21470,
+    "price": 25764,
     "crossBrand": "",
     "sourceRow": 38,
     "sourceUrls": [
@@ -630,7 +630,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Denso",
     "category": "pumps",
-    "price": 192100,
+    "price": 297755,
     "crossBrand": "John Deere",
     "sourceRow": 39,
     "sourceUrls": [
@@ -649,7 +649,7 @@
     "shortName": "Электронный блок управления двигателем (ЭБУ)",
     "brand": "John Deere",
     "category": "other",
-    "price": 214700,
+    "price": 332785,
     "crossBrand": "",
     "sourceRow": 40,
     "sourceUrls": [
@@ -669,7 +669,7 @@
     "shortName": "Топливная форсунка Common Rail",
     "brand": "Bosch",
     "category": "injectors",
-    "price": 36160,
+    "price": 41584,
     "crossBrand": "Iveco / Case IH / New Holland / Astra",
     "sourceRow": 41,
     "sourceUrls": [
@@ -688,7 +688,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Bosch",
     "category": "pumps",
-    "price": 101700,
+    "price": 122040,
     "crossBrand": "",
     "sourceRow": 42,
     "sourceUrls": [
@@ -708,7 +708,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Bosch",
     "category": "pumps",
-    "price": 101700,
+    "price": 116955,
     "crossBrand": "",
     "sourceRow": 43,
     "sourceUrls": [
@@ -727,7 +727,7 @@
     "shortName": "Распылитель топливной форсунки",
     "brand": "Delphi",
     "category": "nozzles",
-    "price": 5537,
+    "price": 6644,
     "crossBrand": "Volvo / Renault",
     "sourceRow": 44,
     "sourceUrls": [
@@ -747,7 +747,7 @@
     "shortName": "Топливная форсунка Common Rail",
     "brand": "Bosch",
     "category": "injectors",
-    "price": 35030,
+    "price": 40284,
     "crossBrand": "",
     "sourceRow": 45,
     "sourceUrls": [
@@ -767,7 +767,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "John Deere",
     "category": "pumps",
-    "price": 162720,
+    "price": 357984,
     "crossBrand": "",
     "sourceRow": 46,
     "sourceUrls": [
@@ -786,7 +786,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Bosch",
     "category": "pumps",
-    "price": 79100,
+    "price": 142380,
     "crossBrand": "",
     "sourceRow": 47,
     "sourceUrls": [
@@ -805,7 +805,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Bosch",
     "category": "pumps",
-    "price": 79100,
+    "price": 118650,
     "crossBrand": "",
     "sourceRow": 48,
     "sourceUrls": [
@@ -825,7 +825,7 @@
     "shortName": "Топливная форсунка Common Rail",
     "brand": "Delphi",
     "category": "injectors",
-    "price": 33448,
+    "price": 38465,
     "crossBrand": "JCB",
     "sourceRow": 49,
     "sourceUrls": [
@@ -844,7 +844,7 @@
     "shortName": "Распылитель топливной форсунки",
     "brand": "Delphi",
     "category": "nozzles",
-    "price": 3616,
+    "price": 4158,
     "crossBrand": "JCB",
     "sourceRow": 50,
     "sourceUrls": [
@@ -863,7 +863,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Bosch",
     "category": "pumps",
-    "price": 61020,
+    "price": 94581,
     "crossBrand": "",
     "sourceRow": 51,
     "sourceUrls": [
@@ -882,7 +882,7 @@
     "shortName": "Ремкомплект топливной форсунки Common Rail",
     "brand": "Bosch",
     "category": "other",
-    "price": 293.8,
+    "price": 337,
     "crossBrand": "",
     "sourceRow": 52,
     "sourceUrls": [
@@ -909,7 +909,7 @@
     "shortName": "Насос-форсунка",
     "brand": "Bosch",
     "category": "injectors",
-    "price": 27120,
+    "price": 32544,
     "crossBrand": "",
     "sourceRow": 53,
     "sourceUrls": [
@@ -932,7 +932,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД) Common Rail",
     "brand": "Delphi",
     "category": "pumps",
-    "price": 63280,
+    "price": 79100,
     "crossBrand": "GM / Chevrolet",
     "sourceRow": 54,
     "sourceUrls": [
@@ -952,7 +952,7 @@
     "shortName": "Комплект топливной форсунки (распылитель)",
     "brand": "Denso",
     "category": "other",
-    "price": 42940,
+    "price": 55822,
     "crossBrand": "John Deere",
     "sourceRow": 55,
     "sourceUrls": [
@@ -974,7 +974,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД) Common Rail",
     "brand": "Delphi",
     "category": "pumps",
-    "price": 63280,
+    "price": 79100,
     "crossBrand": "GM / Chevrolet",
     "sourceRow": 56,
     "sourceUrls": [
@@ -995,7 +995,7 @@
     "shortName": "Клапан регулирования давления топлива HPV",
     "brand": "Delphi",
     "category": "valves",
-    "price": 2260,
+    "price": 2825,
     "crossBrand": "Mitsubishi",
     "sourceRow": 57,
     "sourceUrls": [
@@ -1015,7 +1015,7 @@
     "shortName": "Клапан управления подачей топлива SCV",
     "brand": "Denso",
     "category": "valves",
-    "price": 7684,
+    "price": 9220,
     "crossBrand": "Isuzu",
     "sourceRow": 58,
     "sourceUrls": [
@@ -1037,7 +1037,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Delphi",
     "category": "pumps",
-    "price": 101700,
+    "price": 122040,
     "crossBrand": "JCB",
     "sourceRow": 59,
     "sourceUrls": [
@@ -1059,7 +1059,7 @@
     "shortName": "Топливная форсунка Common Rail",
     "brand": "Bosch",
     "category": "injectors",
-    "price": 57630,
+    "price": 69156,
     "crossBrand": "Mercedes-Benz",
     "sourceRow": 60,
     "sourceUrls": [
@@ -1078,7 +1078,7 @@
     "shortName": "Топливный насос высокого давления (ТНВД)",
     "brand": "Bosch",
     "category": "pumps",
-    "price": 51980,
+    "price": 77970,
     "crossBrand": "",
     "sourceRow": 61,
     "sourceUrls": [
@@ -1097,7 +1097,7 @@
     "shortName": "Клапан регулировки подачи топлива Common Rail",
     "brand": "Delphi",
     "category": "valves",
-    "price": 4520,
+    "price": 5424,
     "crossBrand": "",
     "sourceRow": 62,
     "sourceUrls": [
@@ -1116,7 +1116,7 @@
     "shortName": "Клапан управления подачей топлива ТНВД",
     "brand": "John Deere",
     "category": "pumps",
-    "price": 19210,
+    "price": 57630,
     "crossBrand": "",
     "sourceRow": 63,
     "sourceUrls": [
@@ -1135,7 +1135,7 @@
     "shortName": "Комплект капитального ремонта двигателя",
     "brand": "John Deere",
     "category": "other",
-    "price": 632800,
+    "price": 791000,
     "crossBrand": "",
     "sourceRow": 64,
     "sourceUrls": [

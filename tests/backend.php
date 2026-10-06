@@ -3,10 +3,10 @@ declare(strict_types=1);
 require __DIR__.'/../backend/app.php';
 function check(bool $ok,string $message): void { if (!$ok) throw new RuntimeException($message); echo "PASS $message\n"; }
 function rejects(callable $fn,int $status,string $message): void { try { $fn(); } catch (ApiError $e) { check($e->status===$status,$message); return; } throw new RuntimeException('Expected rejection: '.$message); }
-$c=['key'=>str_repeat('ab',32),'consent_version'=>'2026-10-04','rate_limit'=>2,'retention_days'=>90];
+$c=['key'=>str_repeat('ab',32),'consent_version'=>'2026-10-06','rate_limit'=>2,'retention_days'=>90];
 $db=new PDO(getenv('CM_TEST_DSN') ?: 'sqlite::memory:',getenv('CM_TEST_DB_USER') ?: null,getenv('CM_TEST_DB_PASSWORD') ?: null);$app=new Orders($c,$db);$app->migrate();
 $p=json_decode(file_get_contents(__DIR__.'/../backend/catalog.json'),true)[0];
-$d=['requestId'=>'11111111-1111-4111-8111-111111111111','name'=>'Тест','contact'=>'test@example.ru','comment'=>'Тестовая заявка','website'=>'','consent'=>true,'consentVersion'=>'2026-10-04','items'=>[['id'=>$p['id'],'quantity'=>2,'price'=>1]]];
+$d=['requestId'=>'11111111-1111-4111-8111-111111111111','name'=>'Тест','contact'=>'test@example.ru','comment'=>'Тестовая заявка','website'=>'','consent'=>true,'consentVersion'=>'2026-10-06','items'=>[['id'=>$p['id'],'quantity'=>2,'price'=>1]]];
 rejects(fn()=>$app->accept(array_replace($d,['consent'=>false]),'127.0.0.1','consent'),400,'consent required');
 rejects(fn()=>$app->accept(array_replace($d,['consentVersion'=>'old']),'127.0.0.1','consent'),400,'consent version required');
 rejects(fn()=>$app->accept(array_replace($d,['contact'=>"a@example.ru\r\nBcc: x@example.ru"]),'127.0.0.1','consent'),400,'header injection rejected');

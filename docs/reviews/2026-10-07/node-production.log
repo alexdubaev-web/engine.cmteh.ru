@@ -1,0 +1,41 @@
+✔ no counter request before a choice, and refusal persists without loading it (1.67ms)
+✔ accept loads the counter only then and initializes configured features with clean URLs (0.7774ms)
+✔ expired, malformed, and inaccessible consent records never load analytics (0.3078ms)
+✔ an in-flight script cannot initialize after refusal; refusal destructs an active counter (0.2736ms)
+✔ stored acceptance is probed without extending its age; failed refusal cannot revive it on reload (0.3621ms)
+✔ a saved acceptance is not honored when the same-value storage probe fails (0.1246ms)
+✔ a stale script load cannot initialize after refusal and a later new consent (0.1957ms)
+✔ the module is limited to production and the source masks forms and search inputs (4.6121ms)
+✔ overseas demo rejects collection without reading personal data (19.4968ms)
+✔ order endpoint allows POST only (0.2944ms)
+✔ product route renders crawlable HTML (19.0973ms)
+✔ unknown routes return real 404 (0.4045ms)
+✔ canonical directory redirects preserve queries (0.373ms)
+✖ private preview robots do not index an unfinished domain (0.7904ms)
+✔ configuration endpoint reports mail unavailable without secrets (0.9852ms)
+✔ explicit error page returns 404 (0.3247ms)
+✔ uppercase product URL canonicalizes in a single hop (0.2092ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 16
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 131.7608
+
+✖ failing tests:
+
+test at tests\routing.test.mjs:6:1
+✖ private preview robots do not index an unfinished domain (0.7904ms)
+  AssertionError [ERR_ASSERTION]: The "string" argument must be of type string. Received type object (null)
+      at TestContext.<anonymous> (file:///C:/Users/Alexandr/AppData/Local/Temp/cmteh-audit-h3hj0ptk/tests/routing.test.mjs:6:159)
+      at async Test.run (node:internal/test_runner/test:1208:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:831:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: /noindex/,
+    operator: 'match',
+    diff: 'simple'
+  }
