@@ -5,7 +5,7 @@ import json
 import re
 from pathlib import Path
 
-from pipeline_io import pipeline_lock
+from pipeline_io import atomic_write_text, pipeline_lock
 
 ROOT = Path(__file__).resolve().parent
 
@@ -50,7 +50,7 @@ def main():
     items = parse_catalog(args.file)
     with pipeline_lock(ROOT):
         target = ROOT / 'data/products.json'
-        target.write_text(json.dumps(items, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        atomic_write_text(target, json.dumps(items, ensure_ascii=False, indent=2) + '\n')
     print('Products:', len(items), 'Brands:', dict(collections.Counter(x['brand'] for x in items)),
           'Categories:', dict(collections.Counter(x['category'] for x in items)))
 
