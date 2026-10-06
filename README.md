@@ -16,6 +16,7 @@ python package_ru.py
 Проверки:
 
 ```sh
+npm ci
 npm test
 python tests/catalog.test.py
 python tests/seo.test.py
@@ -24,6 +25,7 @@ python tests/pipeline_io.test.py
 python -m unittest discover -s tests -p "test_*.py"
 node --test tests/routing.test.mjs
 php tests/backend.php
+php tests/backend-export.php
 ```
 
 PHP-зависимость PHPMailer v7.1.1 включена в backend/vendor с лицензией. Папку backend/config.php, ключи, SMTP-пароли и базы не коммитить. Политика и согласие являются заготовками; приём заявок выключен до настройки и утверждения документов владельцем.
