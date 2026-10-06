@@ -11,23 +11,25 @@ vm.runInContext(source, context);
 const create = context.createAnalyticsConsent;
 const KEY = 'cmteh.analytics-consent.v1';
 
-function fixture({ hostname = 'engine.cmteh.ru', stored = null, storageThrows = false, now = 1_800_000_000_000 } = {}) {
+function fixture({ hostname = 'engine.cmteh.ru', stored = null, storageThrows = false, now = 1_800_000_000_000, sharedValues = null } = {}) {
   const events = { allow: null, deny: null, preferences: null, keydown: null };
   const calls = [];
   const status = { textContent: '' };
   const panel = { hidden: true, querySelector: selector => selector.includes('allow') ? { focus() {}, addEventListener: (_type, fn) => events.allow = fn } : selector.includes('deny') ? { addEventListener: (_type, fn) => events.deny = fn } : status };
   const head = { appendChild(node) { node.parentNode = head; calls.push(node); }, removeChild(node) { node.parentNode = null; } };
-  const doc = { referrer: 'https://search.example/find?q=private#frag', head, querySelector: () => panel,
+  const doc = { referrer: 'https://search.example/find?q=private#frag', hidden: false, addEventListener: (type, fn) => events[type] = fn, head, querySelector: () => panel,
     querySelectorAll: () => [{ addEventListener: (_type, fn) => events.preferences = fn }],
     createElement: () => ({}), };
-  const values = new Map(stored ? [[KEY, typeof stored === 'string' ? stored : JSON.stringify(stored)]] : []);
-  let writesBlocked = storageThrows;
+  const values = sharedValues || new Map(stored ? [[KEY, typeof stored === 'string' ? stored : JSON.stringify(stored)]] : []);
+  let writesBlocked = storageThrows, clock = now;
   const storage = { getItem: key => { if (storageThrows) throw Error('blocked'); return values.get(key) ?? null; },
     setItem: (key, value) => { if (writesBlocked) throw Error('blocked'); values.set(key, value); },
     removeItem: key => { if (writesBlocked) throw Error('blocked'); values.delete(key); } };
+  const listeners = new Map();
   const win = { location: { hostname, origin: 'https://engine.cmteh.ru', pathname: '/catalog/' },
-    addEventListener: (_type, fn) => events.keydown = fn };
-  return { events, calls, panel, doc, win, storage, values, now, blockWrites: () => { writesBlocked = true; }, run: () => create({ window: win, document: doc, storage, now: () => now }) };
+    addEventListener: (type, fn) => { events[type] = fn; listeners.set(type, [...(listeners.get(type) || []), fn]); },
+    dispatch: (type, event) => (listeners.get(type) || []).forEach(fn => fn(event)) };
+  return { events, calls, panel, doc, win, storage, values, now, setNow: value => { clock = value; }, blockWrites: () => { writesBlocked = true; }, run: () => create({ window: win, document: doc, storage, now: () => clock }) };
 }
 
 test('no counter request before a choice, and refusal persists without loading it', () => {
@@ -125,6 +127,41 @@ test('a stale script load cannot initialize after refusal and a later new consen
   assert.equal(f.win.ym.a.some(args => args[1] === 'init'), false);
   current.onload();
   assert.equal(f.win.ym.a.filter(args => args[1] === 'init').length, 1);
+});
+
+test('a refusal in another tab destructs an initialized counter without rewriting consent', () => {
+  const first = fixture({ stored: { version: 1, decision: 'accepted', savedAt: 1_800_000_000_000 } });
+  first.run(); first.calls[0].onload();
+  const sharedValues = first.values;
+  let writes = 0;
+  const second = fixture({ sharedValues });
+  const originalSet = second.storage.setItem;
+  second.storage.setItem = (...args) => { writes++; originalSet(...args); };
+  second.run(); writes = 0; second.events.deny();
+  const rejected = second.values.get(KEY);
+  first.win.dispatch('storage', { key: KEY, newValue: rejected });
+  assert.equal(first.win.ym.a.some(args => args[1] === 'destruct'), true);
+  assert.equal(first.calls[0].parentNode, null);
+  assert.equal(first.values.get(KEY), rejected);
+  assert.equal(writes, 1);
+});
+
+test('storage clearing and expired consent stop analytics on storage, focus, and visibility return', () => {
+  const cleared = fixture({ stored: { version: 1, decision: 'accepted', savedAt: 1_800_000_000_000 } });
+  cleared.run(); cleared.calls[0].onload(); cleared.values.delete(KEY);
+  cleared.win.dispatch('storage', { key: KEY, newValue: null });
+  assert.equal(cleared.win.ym.a.some(args => args[1] === 'destruct'), true);
+
+  const expired = fixture({ stored: { version: 1, decision: 'accepted', savedAt: 1_800_000_000_000 } });
+  expired.run(); expired.calls[0].onload(); expired.setNow(1_800_000_000_000 + 90 * 24 * 60 * 60 * 1000);
+  expired.win.dispatch('focus', {});
+  assert.equal(expired.win.ym.a.some(args => args[1] === 'destruct'), true);
+  assert.equal(expired.panel.hidden, false);
+
+  const hidden = fixture({ stored: { version: 1, decision: 'accepted', savedAt: 1_800_000_000_000 } });
+  hidden.run(); hidden.calls[0].onload(); hidden.setNow(1_800_000_000_000 + 90 * 24 * 60 * 60 * 1000);
+  hidden.doc.hidden = false; hidden.events.visibilitychange?.();
+  assert.equal(hidden.win.ym.a.some(args => args[1] === 'destruct'), true);
 });
 
 test('the module is limited to production and the source masks forms and search inputs', async () => {

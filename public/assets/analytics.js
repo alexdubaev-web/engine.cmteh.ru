@@ -58,6 +58,24 @@ export function createAnalyticsConsent({ window: win, document: doc, storage, no
     script = null;
     if (typeof win.ym === 'function') win.ym(COUNTER_ID, 'destruct');
   };
+  const recheckConsent = () => {
+    if (getDecision() === 'accepted') return;
+    stop();
+    if (getDecision() === null) show();
+    else hide();
+  };
+  win.addEventListener('storage', event => {
+    if (event.key !== CONSENT_KEY && event.key !== null) return;
+    const record = readRecord();
+    if (record?.decision === 'accepted') {
+      closed = false;
+      enabled = true;
+      hide();
+      start();
+    } else recheckConsent();
+  });
+  win.addEventListener('focus', recheckConsent);
+  doc.addEventListener('visibilitychange', () => { if (!doc.hidden) recheckConsent(); });
   const revoke = () => {
     stop();
     if (!setDecision('rejected')) {
