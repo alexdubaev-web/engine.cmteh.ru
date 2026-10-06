@@ -1,4 +1,5 @@
 import sys
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -68,6 +69,35 @@ class PackageAtomicTests(unittest.TestCase):
         with patch.object(package_ru, 'ROOT', self.root), patch.object(package_ru.zipfile, 'ZipFile', side_effect=OSError('injected zip failure')):
             with self.assertRaises(OSError):package_ru.package(self.archive)
         self.assert_old_outputs()
+
+    def test_process_crash_during_publish_is_rolled_back_on_recovery(self):
+        repo = Path(__file__).resolve().parents[1]
+        with tempfile.TemporaryDirectory() as external:
+            external_archive = Path(external) / 'last-good.zip'
+            external_archive.write_bytes(b'last good external archive')
+            script = f'''import os,sys
+from pathlib import Path
+sys.path.insert(0,{str(repo)!r})
+import package_ru
+package_ru.ROOT=Path({str(self.root)!r})
+original=package_ru.os.replace
+def crash_after_old_release_move(source,target):
+    result=original(source,target)
+    if Path(source)==package_ru.ROOT/'release-ru':os._exit(91)
+    return result
+package_ru.os.replace=crash_after_old_release_move
+package_ru.package(Path({str(external_archive)!r}))
+'''
+            result = subprocess.run([sys.executable, '-c', script], cwd=repo, check=False)
+            self.assertEqual(result.returncode, 91)
+            self.assertFalse(self.release.exists())
+            self.assertEqual(external_archive.read_bytes(), b'last good external archive')
+
+            with patch.object(package_ru, 'ROOT', self.root):
+                package_ru.recover_package_transactions(self.root)
+            self.assertEqual((self.release / 'public_html/marker.txt').read_text(encoding='utf-8'), 'last good release')
+            self.assertEqual(external_archive.read_bytes(), b'last good external archive')
+            self.assertEqual(list(self.root.glob('.package-*')), [])
 
     def test_success_publishes_release_and_complete_archive(self):
         with patch.object(package_ru, 'ROOT', self.root):package_ru.package(self.archive)
