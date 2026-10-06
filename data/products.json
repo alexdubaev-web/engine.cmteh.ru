@@ -1,0 +1,1147 @@
+[
+  {
+    "id": "0433175478",
+    "sku": "0433175478",
+    "codes": [
+      "0433175478"
+    ],
+    "name": "Распылитель топливной форсунки Bosch",
+    "shortName": "Распылитель топливной форсунки",
+    "brand": "Bosch",
+    "category": "nozzles",
+    "price": 3729,
+    "crossBrand": "",
+    "sourceRow": 7,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "7206-0460",
+    "sku": "7206-0460",
+    "codes": [
+      "7206-0460"
+    ],
+    "name": "Электромагнитный клапан топливной системы Delphi",
+    "shortName": "Электромагнитный клапан топливной системы",
+    "brand": "Delphi",
+    "category": "valves",
+    "price": 7910,
+    "crossBrand": "",
+    "sourceRow": 8,
+    "sourceUrls": [
+      "https://www.alter-diesel.com/delphi-injector-valve-7206-0460.html"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "28272472",
+    "sku": "28272472",
+    "codes": [
+      "28272472"
+    ],
+    "name": "Топливная форсунка Common Rail Delphi",
+    "shortName": "Топливная форсунка Common Rail",
+    "brand": "Delphi",
+    "category": "injectors",
+    "price": 24860,
+    "crossBrand": "",
+    "sourceRow": 9,
+    "sourceUrls": [
+      "https://dieselcatalog.online/ru/delphi/injectorcr/28272472.html"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445020610",
+    "sku": "0445020610",
+    "codes": [
+      "0445020610"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Bosch",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Bosch",
+    "category": "pumps",
+    "price": 79100,
+    "crossBrand": "",
+    "sourceRow": 10,
+    "sourceUrls": [
+      "https://baza.drom.ru/oem/0445020610/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "re539764",
+    "sku": "RE539764",
+    "codes": [
+      "RE539764"
+    ],
+    "name": "Электрический топливный насос 24 В John Deere",
+    "shortName": "Электрический топливный насос 24 В",
+    "brand": "John Deere",
+    "category": "other",
+    "price": 180800,
+    "crossBrand": "",
+    "sourceRow": 11,
+    "sourceUrls": [
+      "https://shop.deere.com/ca/en/product/RE539764%3A-Fuel-Pump%2C-24-Volt/p/RE539764"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "260100-4010",
+    "sku": "260100-4010",
+    "codes": [
+      "260100-4010"
+    ],
+    "name": "Топливная форсунка",
+    "shortName": "Топливная форсунка",
+    "brand": "Denso",
+    "category": "injectors",
+    "price": 23730,
+    "crossBrand": "Mitsubishi",
+    "sourceRow": 12,
+    "sourceUrls": [
+      "https://www.com-rail.com/fuel-pump-test/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "9323a270g",
+    "sku": "9323A270G",
+    "codes": [
+      "9323A270G"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Delphi",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Delphi",
+    "category": "pumps",
+    "price": 101700,
+    "crossBrand": "",
+    "sourceRow": 13,
+    "sourceUrls": [
+      "https://www.delphiautoparts.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "28540276",
+    "sku": "28540276",
+    "codes": [
+      "28540276",
+      "R00203D"
+    ],
+    "name": "Топливная форсунка Common Rail Delphi",
+    "shortName": "Топливная форсунка Common Rail",
+    "brand": "Delphi",
+    "category": "injectors",
+    "price": 24860,
+    "crossBrand": "Mercedes-Benz",
+    "sourceRow": 14,
+    "sourceUrls": [
+      "https://www.delphiautoparts.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "7206-0435",
+    "sku": "7206-0435",
+    "codes": [
+      "7206-0435"
+    ],
+    "name": "Электромагнитный клапан топливной системы Delphi",
+    "shortName": "Электромагнитный клапан топливной системы",
+    "brand": "Delphi",
+    "category": "valves",
+    "price": 17628,
+    "crossBrand": "",
+    "sourceRow": 15,
+    "sourceUrls": [
+      "https://www.delphiautoparts.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "28516849",
+    "sku": "28516849",
+    "codes": [
+      "28516849",
+      "7240-241"
+    ],
+    "name": "Топливоподкачивающий насос",
+    "shortName": "Топливоподкачивающий насос",
+    "brand": "Delphi",
+    "category": "other",
+    "price": 4520,
+    "crossBrand": "",
+    "sourceRow": 16,
+    "sourceUrls": [
+      "https://www.topdiesel.com/denso-repair-kits/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445020208",
+    "sku": "0445020208",
+    "codes": [
+      "0445020208"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Bosch",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Bosch",
+    "category": "pumps",
+    "price": 79100,
+    "crossBrand": "",
+    "sourceRow": 17,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445020201",
+    "sku": "0445020201",
+    "codes": [
+      "0445020201"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Bosch",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Bosch",
+    "category": "pumps",
+    "price": 74580,
+    "crossBrand": "",
+    "sourceRow": 18,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "l229pbc",
+    "sku": "L229PBC",
+    "codes": [
+      "L229PBC"
+    ],
+    "name": "Распылитель топливной форсунки",
+    "shortName": "Распылитель топливной форсунки",
+    "brand": "Delphi",
+    "category": "nozzles",
+    "price": 5537,
+    "crossBrand": "",
+    "sourceRow": 19,
+    "sourceUrls": [
+      "https://pnm-parts.ru/catalog/delphi/delphi/l229pbc"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445120075",
+    "sku": "0445120075",
+    "codes": [
+      "0445120075"
+    ],
+    "name": "Топливная форсунка Common Rail Bosch",
+    "shortName": "Топливная форсунка Common Rail",
+    "brand": "Bosch",
+    "category": "injectors",
+    "price": 30510,
+    "crossBrand": "",
+    "sourceRow": 20,
+    "sourceUrls": [
+      "https://fuelparts.ru/catalog/forsunki/forsunka-bosch-0445120075/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445020082",
+    "sku": "0445020082",
+    "codes": [
+      "0445020082"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Bosch",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Bosch",
+    "category": "pumps",
+    "price": 94920,
+    "crossBrand": "",
+    "sourceRow": 21,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "re507959",
+    "sku": "RE507959",
+    "codes": [
+      "RE507959"
+    ],
+    "name": "Топливный насос впрыска (ТНВД) John Deere",
+    "shortName": "Топливный насос впрыска (ТНВД)",
+    "brand": "John Deere",
+    "category": "pumps",
+    "price": 101700,
+    "crossBrand": "",
+    "sourceRow": 22,
+    "sourceUrls": [
+      "https://shop.deere.com/jdb2cstorefront/us/product/RE507959%3A-Fuel-Injection-Pump/p/RE507959"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "l053pbc",
+    "sku": "L053PBC",
+    "codes": [
+      "L053PBC"
+    ],
+    "name": "Распылитель топливной форсунки",
+    "shortName": "Распылитель топливной форсунки",
+    "brand": "Delphi",
+    "category": "nozzles",
+    "price": 5198,
+    "crossBrand": "DAF",
+    "sourceRow": 23,
+    "sourceUrls": [
+      "https://asadiesel.com/product/l053pbc-diesel-injector-nozzle/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0433175518",
+    "sku": "0433175518",
+    "codes": [
+      "0433175518"
+    ],
+    "name": "Распылитель топливной форсунки Bosch",
+    "shortName": "Распылитель топливной форсунки",
+    "brand": "Bosch",
+    "category": "nozzles",
+    "price": 2825,
+    "crossBrand": "",
+    "sourceRow": 24,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445020334",
+    "sku": "0445020334",
+    "codes": [
+      "0445020334"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Bosch",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Bosch",
+    "category": "pumps",
+    "price": 79100,
+    "crossBrand": "",
+    "sourceRow": 25,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445020110",
+    "sku": "0445020110",
+    "codes": [
+      "0445020110"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Bosch",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Bosch",
+    "category": "pumps",
+    "price": 84750,
+    "crossBrand": "",
+    "sourceRow": 26,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "28308779",
+    "sku": "28308779",
+    "codes": [
+      "28308779",
+      "A651070328"
+    ],
+    "name": "Топливная форсунка Common Rail Delphi",
+    "shortName": "Топливная форсунка Common Rail",
+    "brand": "Delphi",
+    "category": "injectors",
+    "price": 24860,
+    "crossBrand": "Mercedes-Benz",
+    "sourceRow": 27,
+    "sourceUrls": [
+      "https://www.trodo.com/catalogsearch/oem/28308779"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "l017pbb",
+    "sku": "L017PBB",
+    "codes": [
+      "L017PBB"
+    ],
+    "name": "Распылитель топливной форсунки",
+    "shortName": "Распылитель топливной форсунки",
+    "brand": "Delphi",
+    "category": "nozzles",
+    "price": 5198,
+    "crossBrand": "Volvo",
+    "sourceRow": 28,
+    "sourceUrls": [
+      "https://www.britishdiesel.co.uk/products/delphi-nozzle-l017pbb"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445120126",
+    "sku": "0445120126",
+    "codes": [
+      "0445120126"
+    ],
+    "name": "Топливная форсунка Common Rail Bosch",
+    "shortName": "Топливная форсунка Common Rail",
+    "brand": "Bosch",
+    "category": "injectors",
+    "price": 37290,
+    "crossBrand": "",
+    "sourceRow": 29,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445120072",
+    "sku": "0445120072",
+    "codes": [
+      "0445120072"
+    ],
+    "name": "Топливная форсунка Common Rail Bosch",
+    "shortName": "Топливная форсунка Common Rail",
+    "brand": "Bosch",
+    "category": "injectors",
+    "price": 36160,
+    "crossBrand": "",
+    "sourceRow": 30,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "5620004100",
+    "sku": "5620004100",
+    "codes": [
+      "5620004100",
+      "GK2Q-9K546-AC"
+    ],
+    "name": "Топливная форсунка",
+    "shortName": "Топливная форсунка",
+    "brand": "VDO / Vitesco (Aumovio)",
+    "category": "injectors",
+    "price": 24860,
+    "crossBrand": "Ford",
+    "sourceRow": 31,
+    "sourceUrls": [
+      "https://www.diesel-control.eu/en/p/aumovio-vdo-2802002051380-5620004100-vstrikovac-pzo-2-0-tdci-panther-v45-ford"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445020540",
+    "sku": "0445020540",
+    "codes": [
+      "0445020540"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Bosch",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Bosch",
+    "category": "pumps",
+    "price": 54240,
+    "crossBrand": "",
+    "sourceRow": 32,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "dz112112",
+    "sku": "DZ112112",
+    "codes": [
+      "DZ112112"
+    ],
+    "name": "Комплект распылителя форсунки John Deere",
+    "shortName": "Комплект распылителя форсунки",
+    "brand": "John Deere",
+    "category": "nozzles",
+    "price": 74580,
+    "crossBrand": "",
+    "sourceRow": 33,
+    "sourceUrls": [
+      "https://shop.deere.com/us/product/DZ112112%3A-Nozzle-Kit/p/DZ112112"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445226092",
+    "sku": "0445226092",
+    "codes": [
+      "0445226092",
+      "0445226190"
+    ],
+    "name": "Топливная рампа Common Rail Bosch",
+    "shortName": "Топливная рампа Common Rail",
+    "brand": "Bosch",
+    "category": "other",
+    "price": 12430,
+    "crossBrand": "",
+    "sourceRow": 34,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445120728",
+    "sku": "0445120728",
+    "codes": [
+      "0445120728",
+      "0445120729",
+      "527-5384",
+      "617-1909"
+    ],
+    "name": "Топливная форсунка Common Rail Bosch / Caterpillar",
+    "shortName": "Топливная форсунка Common Rail",
+    "brand": "Bosch",
+    "category": "injectors",
+    "price": 37290,
+    "crossBrand": "Caterpillar",
+    "sourceRow": 35,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445120212",
+    "sku": "0445120212",
+    "codes": [
+      "0445120212",
+      "5263307",
+      "0445120007",
+      "0445120273"
+    ],
+    "name": "Топливная форсунка Common Rail Bosch",
+    "shortName": "Топливная форсунка Common Rail",
+    "brand": "Bosch",
+    "category": "injectors",
+    "price": 24860,
+    "crossBrand": "Cummins",
+    "sourceRow": 36,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "260100-6010",
+    "sku": "260100-6010",
+    "codes": [
+      "260100-6010",
+      "295050-0520"
+    ],
+    "name": "Топливная форсунка Common Rail Denso",
+    "shortName": "Топливная форсунка Common Rail",
+    "brand": "Denso",
+    "category": "injectors",
+    "price": 24860,
+    "crossBrand": "Toyota",
+    "sourceRow": 37,
+    "sourceUrls": [
+      "https://cdi36.ru/catalog/forsunki-novye/forsunka_toplivnaya_denso_260100_6010_23670_30400_39365_original/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445116059",
+    "sku": "0445116059",
+    "codes": [
+      "0445116059"
+    ],
+    "name": "Топливная форсунка Common Rail Bosch",
+    "shortName": "Топливная форсунка Common Rail",
+    "brand": "Bosch",
+    "category": "injectors",
+    "price": 21470,
+    "crossBrand": "",
+    "sourceRow": 38,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "dz128161",
+    "sku": "DZ128161",
+    "codes": [
+      "DZ128161",
+      "299050-0160"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) John Deere / Denso",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Denso",
+    "category": "pumps",
+    "price": 192100,
+    "crossBrand": "John Deere",
+    "sourceRow": 39,
+    "sourceUrls": [
+      "https://shop.deere.com/us/product/DZ128161%3A-Fuel-Pump/p/DZ128161"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "re526588",
+    "sku": "RE526588",
+    "codes": [
+      "RE526588"
+    ],
+    "name": "Электронный блок управления двигателем (ЭБУ) John Deere",
+    "shortName": "Электронный блок управления двигателем (ЭБУ)",
+    "brand": "John Deere",
+    "category": "other",
+    "price": 214700,
+    "crossBrand": "",
+    "sourceRow": 40,
+    "sourceUrls": [
+      "https://shop.deere.com/us/product/RE526588%3A-12-Volts-24-Volts-Engine-Controller%2C-Level-16/p/RE526588"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445124036",
+    "sku": "0445124036",
+    "codes": [
+      "0445124036",
+      "5801906153"
+    ],
+    "name": "Топливная форсунка Common Rail Bosch",
+    "shortName": "Топливная форсунка Common Rail",
+    "brand": "Bosch",
+    "category": "injectors",
+    "price": 36160,
+    "crossBrand": "Iveco / Case IH / New Holland / Astra",
+    "sourceRow": 41,
+    "sourceUrls": [
+      "https://www.autokseft.cz/OE-cislo/5801906153/IVECO-55"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445020089",
+    "sku": "0445020089",
+    "codes": [
+      "0445020089"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Bosch",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Bosch",
+    "category": "pumps",
+    "price": 101700,
+    "crossBrand": "",
+    "sourceRow": 42,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445020081",
+    "sku": "0445020081",
+    "codes": [
+      "0445020081",
+      "10117814"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Bosch",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Bosch",
+    "category": "pumps",
+    "price": 101700,
+    "crossBrand": "",
+    "sourceRow": 43,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "l215pbc",
+    "sku": "L215PBC",
+    "codes": [
+      "L215PBC"
+    ],
+    "name": "Распылитель топливной форсунки",
+    "shortName": "Распылитель топливной форсунки",
+    "brand": "Delphi",
+    "category": "nozzles",
+    "price": 5537,
+    "crossBrand": "Volvo / Renault",
+    "sourceRow": 44,
+    "sourceUrls": [
+      "https://www.com-rail.com/nozzle-delphi-original-parts/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445124025",
+    "sku": "0445124025",
+    "codes": [
+      "0445124025",
+      "837074860"
+    ],
+    "name": "Топливная форсунка Common Rail Bosch",
+    "shortName": "Топливная форсунка Common Rail",
+    "brand": "Bosch",
+    "category": "injectors",
+    "price": 35030,
+    "crossBrand": "",
+    "sourceRow": 45,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "dz128160",
+    "sku": "DZ128160",
+    "codes": [
+      "DZ128160",
+      "DZ123516"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) John Deere",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "John Deere",
+    "category": "pumps",
+    "price": 162720,
+    "crossBrand": "",
+    "sourceRow": 46,
+    "sourceUrls": [
+      "https://shop.deere.com/us/product/DZ128160%3A-Fuel-Pump/p/DZ128160"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445020606",
+    "sku": "0445020606",
+    "codes": [
+      "0445020606"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Bosch",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Bosch",
+    "category": "pumps",
+    "price": 79100,
+    "crossBrand": "",
+    "sourceRow": 47,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445020611",
+    "sku": "0445020611",
+    "codes": [
+      "0445020611"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Bosch",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Bosch",
+    "category": "pumps",
+    "price": 79100,
+    "crossBrand": "",
+    "sourceRow": 48,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "28229876",
+    "sku": "28229876",
+    "codes": [
+      "28229876",
+      "320/06827"
+    ],
+    "name": "Топливная форсунка Common Rail Delphi / JCB",
+    "shortName": "Топливная форсунка Common Rail",
+    "brand": "Delphi",
+    "category": "injectors",
+    "price": 33448,
+    "crossBrand": "JCB",
+    "sourceRow": 49,
+    "sourceUrls": [
+      "https://dieselcatalog.online/en/delphi/injectorcr/28229876.html"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "l158pba",
+    "sku": "L158PBA",
+    "codes": [
+      "L158PBA"
+    ],
+    "name": "Распылитель топливной форсунки",
+    "shortName": "Распылитель топливной форсунки",
+    "brand": "Delphi",
+    "category": "nozzles",
+    "price": 3616,
+    "crossBrand": "JCB",
+    "sourceRow": 50,
+    "sourceUrls": [
+      "https://www.viscodiesel.com/en/catalog/product/view/id/9741/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445020508",
+    "sku": "0445020508",
+    "codes": [
+      "0445020508"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Bosch",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Bosch",
+    "category": "pumps",
+    "price": 61020,
+    "crossBrand": "",
+    "sourceRow": 51,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "f00rj02177",
+    "sku": "F00RJ02177",
+    "codes": [
+      "F00RJ02177"
+    ],
+    "name": "Ремкомплект топливной форсунки Common Rail Bosch",
+    "shortName": "Ремкомплект топливной форсунки Common Rail",
+    "brand": "Bosch",
+    "category": "other",
+    "price": 293.8,
+    "crossBrand": "",
+    "sourceRow": 52,
+    "sourceUrls": [
+      "https://baza.drom.ru/oem/F00RJ02177/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0414701072",
+    "sku": "0414701072",
+    "codes": [
+      "0414701072",
+      "0414701051",
+      "0414701073/7",
+      "0414701086/8",
+      "0414701094",
+      "0414701930",
+      "2599428",
+      "2599429",
+      "1943974"
+    ],
+    "name": "Насос-форсунка Bosch",
+    "shortName": "Насос-форсунка",
+    "brand": "Bosch",
+    "category": "injectors",
+    "price": 27120,
+    "crossBrand": "",
+    "sourceRow": 53,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "28384974",
+    "sku": "28384974",
+    "codes": [
+      "28384974",
+      "28318239",
+      "9422A040A",
+      "25187375",
+      "98686903"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Delphi Common Rail",
+    "shortName": "Топливный насос высокого давления (ТНВД) Common Rail",
+    "brand": "Delphi",
+    "category": "pumps",
+    "price": 63280,
+    "crossBrand": "GM / Chevrolet",
+    "sourceRow": 54,
+    "sourceUrls": [
+      "https://www.flexamiauto.cz/cerpadla/28384974-repas/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "dz100218",
+    "sku": "DZ100218",
+    "codes": [
+      "DZ100218",
+      "095000-6880"
+    ],
+    "name": "Комплект топливной форсунки (распылитель) John Deere / Denso",
+    "shortName": "Комплект топливной форсунки (распылитель)",
+    "brand": "Denso",
+    "category": "other",
+    "price": 42940,
+    "crossBrand": "John Deere",
+    "sourceRow": 55,
+    "sourceUrls": [
+      "https://shop.deere.com/us/us/product/DZ100218%3A-Nozzle-Kit/p/DZ100218"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "28384976",
+    "sku": "28384976",
+    "codes": [
+      "28384976",
+      "28286124",
+      "28318240",
+      "25187376"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Delphi Common Rail",
+    "shortName": "Топливный насос высокого давления (ТНВД) Common Rail",
+    "brand": "Delphi",
+    "category": "pumps",
+    "price": 63280,
+    "crossBrand": "GM / Chevrolet",
+    "sourceRow": 56,
+    "sourceUrls": [
+      "https://www.delphiautoparts.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "7210-0473",
+    "sku": "7210-0473",
+    "codes": [
+      "7210-0473",
+      "31442-84300",
+      "22720232"
+    ],
+    "name": "Клапан регулирования давления топлива HPV",
+    "shortName": "Клапан регулирования давления топлива HPV",
+    "brand": "Delphi",
+    "category": "valves",
+    "price": 2260,
+    "crossBrand": "Mitsubishi",
+    "sourceRow": 57,
+    "sourceUrls": [
+      "https://allegro.cz/produkt/regulacni-ventil-tlaku-palivove-listy-delphi-evropsky-e4c71fec-82e9-4d6f-9611-9dc4620ebfe6"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "8980436870",
+    "sku": "8980436870",
+    "codes": [
+      "8980436870",
+      "294200-0650"
+    ],
+    "name": "Клапан управления подачей топлива SCV",
+    "shortName": "Клапан управления подачей топлива SCV",
+    "brand": "Denso",
+    "category": "valves",
+    "price": 7684,
+    "crossBrand": "Isuzu",
+    "sourceRow": 58,
+    "sourceUrls": [
+      "https://avto.pro/part-2942000650-DENSO-950/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "9323a260g",
+    "sku": "9323A260G",
+    "codes": [
+      "9323A260G",
+      "320/06738",
+      "320/06929",
+      "9320A613G"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Delphi / JCB",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Delphi",
+    "category": "pumps",
+    "price": 101700,
+    "crossBrand": "JCB",
+    "sourceRow": 59,
+    "sourceUrls": [
+      "https://www.merlindiesel.com/wp-content/uploads/2021/12/JCB-Cross-Reference-and-Application-List.pdf"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445120385",
+    "sku": "0445120385",
+    "codes": [
+      "0445120385",
+      "0445120386",
+      "0986435647",
+      "A4710700887"
+    ],
+    "name": "Топливная форсунка Common Rail Bosch",
+    "shortName": "Топливная форсунка Common Rail",
+    "brand": "Bosch",
+    "category": "injectors",
+    "price": 57630,
+    "crossBrand": "Mercedes-Benz",
+    "sourceRow": 60,
+    "sourceUrls": [
+      "https://www.autokseft.cz/OE-cislo/A4710700887/MERCEDES-BENZ-74"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "0445020273",
+    "sku": "0445020273",
+    "codes": [
+      "0445020273"
+    ],
+    "name": "Топливный насос высокого давления (ТНВД) Bosch",
+    "shortName": "Топливный насос высокого давления (ТНВД)",
+    "brand": "Bosch",
+    "category": "pumps",
+    "price": 51980,
+    "crossBrand": "",
+    "sourceRow": 61,
+    "sourceUrls": [
+      "https://www.boschaftermarket.com/"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "9109-903",
+    "sku": "9109-903",
+    "codes": [
+      "9109-903"
+    ],
+    "name": "Клапан регулировки подачи топлива Common Rail Delphi",
+    "shortName": "Клапан регулировки подачи топлива Common Rail",
+    "brand": "Delphi",
+    "category": "valves",
+    "price": 4520,
+    "crossBrand": "",
+    "sourceRow": 62,
+    "sourceUrls": [
+      "https://www.motora.cz/delphi/9109-903.html"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "dz111136",
+    "sku": "DZ111136",
+    "codes": [
+      "DZ111136"
+    ],
+    "name": "Клапан управления подачей топлива ТНВД John Deere",
+    "shortName": "Клапан управления подачей топлива ТНВД",
+    "brand": "John Deere",
+    "category": "pumps",
+    "price": 19210,
+    "crossBrand": "",
+    "sourceRow": 63,
+    "sourceUrls": [
+      "https://shop.deere.com/us/product/DZ111136%3A-Fuel-Pump-Suction-Control-Valve/p/DZ111136"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "dz10599",
+    "sku": "DZ10599",
+    "codes": [
+      "DZ10599"
+    ],
+    "name": "Комплект капитального ремонта двигателя John Deere",
+    "shortName": "Комплект капитального ремонта двигателя",
+    "brand": "John Deere",
+    "category": "other",
+    "price": 632800,
+    "crossBrand": "",
+    "sourceRow": 64,
+    "sourceUrls": [
+      "https://shop.deere.com/uk/product/DZ10599%3A-Engine-Overhaul-Kit/p/DZ10599"
+    ],
+    "image": null,
+    "imageSource": null
+  }
+]

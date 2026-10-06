@@ -1,0 +1,240 @@
+{
+  "sourceFile": "09-14.xlsx",
+  "sourceSha256": "0f87c25ec1da510ba31fcbd6dfd8bc3c318b39f5d6e2e754953286fcec9af28d",
+  "worksheet": "Sheet2",
+  "importedAt": "2026-10-04T16:52:50Z",
+  "items": {
+    "0433175478": {
+      "quantity": 12,
+      "sourceRow": 7
+    },
+    "7206-0460": {
+      "quantity": 20,
+      "sourceRow": 8
+    },
+    "28272472": {
+      "quantity": 4,
+      "sourceRow": 9
+    },
+    "0445020610": {
+      "quantity": 1,
+      "sourceRow": 10
+    },
+    "re539764": {
+      "quantity": 2,
+      "sourceRow": 11
+    },
+    "260100-4010": {
+      "quantity": 4,
+      "sourceRow": 12
+    },
+    "9323a270g": {
+      "quantity": 2,
+      "sourceRow": 13
+    },
+    "28540276": {
+      "quantity": 4,
+      "sourceRow": 14
+    },
+    "7206-0435": {
+      "quantity": 18,
+      "sourceRow": 15
+    },
+    "28516849": {
+      "quantity": 20,
+      "sourceRow": 16
+    },
+    "0445020208": {
+      "quantity": 1,
+      "sourceRow": 17
+    },
+    "0445020201": {
+      "quantity": 1,
+      "sourceRow": 18
+    },
+    "l229pbc": {
+      "quantity": 20,
+      "sourceRow": 19
+    },
+    "0445120075": {
+      "quantity": 6,
+      "sourceRow": 20
+    },
+    "0445020082": {
+      "quantity": 1,
+      "sourceRow": 21
+    },
+    "re507959": {
+      "quantity": 1,
+      "sourceRow": 22
+    },
+    "l053pbc": {
+      "quantity": 20,
+      "sourceRow": 23
+    },
+    "0433175518": {
+      "quantity": 24,
+      "sourceRow": 24
+    },
+    "0445020334": {
+      "quantity": 1,
+      "sourceRow": 25
+    },
+    "0445020110": {
+      "quantity": 2,
+      "sourceRow": 26
+    },
+    "28308779": {
+      "quantity": 4,
+      "sourceRow": 27
+    },
+    "l017pbb": {
+      "quantity": 20,
+      "sourceRow": 28
+    },
+    "0445120126": {
+      "quantity": 4,
+      "sourceRow": 29
+    },
+    "0445120072": {
+      "quantity": 4,
+      "sourceRow": 30
+    },
+    "5620004100": {
+      "quantity": 4,
+      "sourceRow": 31
+    },
+    "0445020540": {
+      "quantity": 2,
+      "sourceRow": 32
+    },
+    "dz112112": {
+      "quantity": 6,
+      "sourceRow": 33
+    },
+    "0445226092": {
+      "quantity": 2,
+      "sourceRow": 34
+    },
+    "0445120728": {
+      "quantity": 6,
+      "sourceRow": 35
+    },
+    "0445120212": {
+      "quantity": 6,
+      "sourceRow": 36
+    },
+    "260100-6010": {
+      "quantity": 4,
+      "sourceRow": 37
+    },
+    "0445116059": {
+      "quantity": 4,
+      "sourceRow": 38
+    },
+    "dz128161": {
+      "quantity": 1,
+      "sourceRow": 39
+    },
+    "re526588": {
+      "quantity": 1,
+      "sourceRow": 40
+    },
+    "0445124036": {
+      "quantity": 6,
+      "sourceRow": 41
+    },
+    "0445020089": {
+      "quantity": 1,
+      "sourceRow": 42
+    },
+    "0445020081": {
+      "quantity": 1,
+      "sourceRow": 43
+    },
+    "l215pbc": {
+      "quantity": 20,
+      "sourceRow": 44
+    },
+    "0445124025": {
+      "quantity": 6,
+      "sourceRow": 45
+    },
+    "dz128160": {
+      "quantity": 1,
+      "sourceRow": 46
+    },
+    "0445020606": {
+      "quantity": 1,
+      "sourceRow": 47
+    },
+    "0445020611": {
+      "quantity": 1,
+      "sourceRow": 48
+    },
+    "28229876": {
+      "quantity": 4,
+      "sourceRow": 49
+    },
+    "l158pba": {
+      "quantity": 20,
+      "sourceRow": 50
+    },
+    "0445020508": {
+      "quantity": 1,
+      "sourceRow": 51
+    },
+    "f00rj02177": {
+      "quantity": 100,
+      "sourceRow": 52
+    },
+    "0414701072": {
+      "quantity": 6,
+      "sourceRow": 53
+    },
+    "28384974": {
+      "quantity": 1,
+      "sourceRow": 54
+    },
+    "dz100218": {
+      "quantity": 6,
+      "sourceRow": 55
+    },
+    "28384976": {
+      "quantity": 1,
+      "sourceRow": 56
+    },
+    "7210-0473": {
+      "quantity": 2,
+      "sourceRow": 57
+    },
+    "8980436870": {
+      "quantity": 5,
+      "sourceRow": 58
+    },
+    "9323a260g": {
+      "quantity": 1,
+      "sourceRow": 59
+    },
+    "0445120385": {
+      "quantity": 6,
+      "sourceRow": 60
+    },
+    "0445020273": {
+      "quantity": 1,
+      "sourceRow": 61
+    },
+    "9109-903": {
+      "quantity": 20,
+      "sourceRow": 62
+    },
+    "dz111136": {
+      "quantity": 8,
+      "sourceRow": 63
+    },
+    "dz10599": {
+      "quantity": 2,
+      "sourceRow": 64
+    }
+  }
+}
