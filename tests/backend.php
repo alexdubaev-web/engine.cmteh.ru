@@ -18,6 +18,15 @@ $payload=$app->export($d['requestId']);check($payload['total']===$p['price']*2,'
 check($payload['consent']['sha256']===hash('sha256','approved document') && $payload['consent']['given'],'consent evidence persisted');
 check(!str_contains($db->query('SELECT payload FROM orders')->fetchColumn(),'test@example.ru'),'PII encrypted in database');
 check($app->accept($d,'127.0.0.1','approved document')['ok'] && count($app->listing())===1,'retry idempotent');
+$legacyCore=['name'=>$payload['name'],'contact'=>$payload['contact'],'comment'=>$payload['comment'],'items'=>$payload['items'],'total'=>$payload['total'],'consentVersion'=>$payload['consentVersion']];
+$legacyFingerprint=hash_hmac('sha256',json_encode($legacyCore,JSON_UNESCAPED_UNICODE|JSON_THROW_ON_ERROR),hex2bin($c['key']));
+$q=$db->prepare('UPDATE orders SET fingerprint=? WHERE id=?');$q->execute([$legacyFingerprint,$d['requestId']]);
+$catalogProperty=new ReflectionProperty(Orders::class,'catalog');$catalog=$catalogProperty->getValue($app);
+$changedCatalog=$catalog;$changedCatalog[$p['id']]['price']++;$changedCatalog[$p['id']]['name'].=' обновлённый';$catalogProperty->setValue($app,$changedCatalog);
+check($app->accept($d,'127.0.0.1','approved document')['ok'] && count($app->listing())===1,'retry remains idempotent after catalog price and name change');
+unset($changedCatalog[$p['id']]);$catalogProperty->setValue($app,$changedCatalog);
+check($app->accept($d,'127.0.0.1','approved document')['ok'] && count($app->listing())===1,'retry remains idempotent after product removal');
+$catalogProperty->setValue($app,$catalog);
 rejects(fn()=>$app->accept(array_replace($d,['comment'=>'Changed']),'127.0.0.1','consent'),409,'id reuse with changed data rejected');
 $d2=array_replace($d,['requestId'=>'22222222-2222-4222-8222-222222222222','items'=>[]]);check($app->accept($d2,'127.0.0.1','consent')['ok'],'inquiry accepted without products');
 rejects(fn()=>$app->accept(array_replace($d,['requestId'=>'33333333-3333-4333-8333-333333333333']),'127.0.0.1','consent'),429,'persistent rate limit enforced');
