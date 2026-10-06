@@ -148,6 +148,7 @@ with pipeline_lock(ROOT):
  assets={}
  for f in OUT.rglob('*'):
   if f.is_file():
+   if '.openai' in f.relative_to(OUT).parts:continue
    key='/'+f.relative_to(OUT).as_posix();mime=mimetypes.guess_type(f.name)[0] or 'application/octet-stream';binary=f.suffix.lower() not in ['.html','.css','.js','.json','.xml','.txt','.svg'];assets[key]={'type':mime,'binary':binary,'body':base64.b64encode(f.read_bytes()).decode() if binary else f.read_text(encoding='utf-8')}
  orders=(ROOT/'src/orders.mjs').read_text(encoding='utf-8').replace('export async function handleOrder','async function handleOrder')
  runtime=(ROOT/'src/worker-runtime.mjs').read_text(encoding='utf-8')

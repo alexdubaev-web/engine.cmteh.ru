@@ -64,6 +64,8 @@ test('product route renders crawlable HTML', async () => {
   assert.match(html, /priceCurrency/);
 });
 test('unknown routes return real 404', async () => assert.equal((await get('/missing/')).status, 404));
+test('hosting metadata is not exposed by the worker asset bundle', async () =>
+  assert.equal((await get('/.openai/hosting.json')).status, 404));
 test('canonical directory redirects preserve queries', async () => {
   const response = await get('/catalog?q=bosch');
   assert.equal(response.status, 301);
