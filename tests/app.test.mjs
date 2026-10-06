@@ -53,6 +53,7 @@ function makeTab({ indexedDB, fetchImpl, seed = '[]', channelBus = new Map() }) 
 
 const tick = () => new Promise(resolve => setTimeout(resolve, 250));
 async function waitFor(predicate) { for (let i = 0; i < 100; i++) { if (predicate()) return true; await new Promise(resolve => setTimeout(resolve, 20)); } return false; }
+function readCartRecord(factory) { return new Promise((resolve, reject) => { const open = factory.open('cm-techno-cart-v1'); open.onerror = () => reject(open.error); open.onsuccess = () => { const db = open.result, tx = db.transaction('state', 'readonly'), request = tx.objectStore('state').get('cart'); request.onsuccess = () => resolve(request.result); request.onerror = () => reject(request.error); tx.oncomplete = () => db.close(); }; }); }
 const configResponse = () => Promise.resolve({ ok: true, json: async () => ({ submissionEnabled: true, consentVersion: '1', csrfToken: 'test' }) });
 function failOneCartTransaction(factory) {
   let failNext = false;
@@ -84,6 +85,40 @@ function delayOpenSuccess(factory, delayMs) {
       return typeof value === 'function' ? value.bind(target) : value;
     } });
   } };
+}
+function abortOneCartWrite(factory) {
+  let abortNext = false, aborted = 0;
+  const wrapped = { get abortCount() { return aborted; }, abortNextWrite() { abortNext = true; }, open(...args) {
+    const request = factory.open(...args);
+    return new Proxy(request, { get(target, property) {
+      if (property === 'result') return new Proxy(target.result, { get(db, key) {
+        if (key === 'transaction') return (...transactionArgs) => {
+          const tx = db.transaction(...transactionArgs);
+          return new Proxy(tx, { get(transaction, txKey) {
+            if (txKey === 'objectStore') return name => {
+              const store = transaction.objectStore(name);
+              return new Proxy(store, { get(objectStore, storeKey) {
+                if (storeKey === 'put') return (...putArgs) => {
+                  const result = objectStore.put(...putArgs);
+                  if (abortNext) { abortNext = false; aborted++; transaction.abort(); }
+                  return result;
+                };
+                const value = Reflect.get(objectStore, storeKey, objectStore);
+                return typeof value === 'function' ? value.bind(objectStore) : value;
+              } });
+            };
+            const value = Reflect.get(transaction, txKey, transaction);
+            return typeof value === 'function' ? value.bind(transaction) : value;
+          } });
+        };
+        const value = Reflect.get(db, key, db);
+        return typeof value === 'function' ? value.bind(db) : value;
+      } });
+      const value = Reflect.get(target, property, target);
+      return typeof value === 'function' ? value.bind(target) : value;
+    } });
+  } };
+  return wrapped;
 }
 
 test('concurrent cart additions in separate tabs are serialized and reload-only notifications converge', async () => {
@@ -217,5 +252,21 @@ test('cart switches to in-memory operation when an established IndexedDB connect
   tab.document.querySelector('[data-add="product-a"]').click();
   assert.ok(await waitFor(() => /Part A/.test(tab.document.querySelector('#cart-items').textContent)));
   assert.equal(tab.document.querySelector('[data-cart-count]').textContent, '2');
+  tab.dom.window.close();
+});
+
+test('an asynchronous IndexedDB abort applies an add only once before memory fallback', async () => {
+  const indexedDB = abortOneCartWrite(new IDBFactory());
+  const tab = makeTab({ indexedDB, fetchImpl: () => configResponse() });
+  assert.ok(await waitFor(() => tab.document.querySelector('[data-cart-count]').textContent === '0'));
+  assert.deepEqual((await readCartRecord(indexedDB)).items, []);
+  indexedDB.abortNextWrite();
+  tab.document.querySelector('[data-add="product-a"]').click();
+  assert.ok(await waitFor(() => tab.document.querySelector('[data-cart-count]').textContent !== '0'));
+  await tick();
+  assert.equal(indexedDB.abortCount, 1);
+  assert.equal(tab.document.querySelector('[data-cart-count]').textContent, '1');
+  tab.document.querySelector('[data-add="product-b"]').click();
+  assert.ok(await waitFor(() => tab.document.querySelector('[data-cart-count]').textContent === '2'));
   tab.dom.window.close();
 });

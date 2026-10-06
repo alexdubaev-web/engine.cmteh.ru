@@ -15,7 +15,20 @@ function toast(message){$('.toast').textContent=message;clearTimeout(toastTimer)
 function saveCart(){$$('[data-cart-count]').forEach(n=>n.textContent=cart.reduce((n,x)=>n+x.quantity,0));renderCart()}
 function notifyCartChange(revision){try{cartChannel?.postMessage({revision})}catch{}try{localStorage.setItem(CART_SIGNAL,`${revision}:${Date.now()}`)}catch{}}
 async function refreshCart(){await cartReady;if(!cartDb)return;try{const record=await readCartRecord();if(record&&Array.isArray(record.items)){cart=validCart(record.items);cartRevision=Number(record.revision)||0;saveCart()}}catch{cartDb=null;saveCart()}}
-async function updateCart(mutator,expectedRevision=null){await cartReady;if(!cartDb){if(expectedRevision!==null&&cartRevision!==expectedRevision)return false;cart=validCart(mutator(cart.map(x=>({...x}))));cartRevision++;saveCart();return true}return new Promise(resolve=>{let committed=false,revision=cartRevision;try{const tx=cartDb.transaction(CART_STORE,'readwrite'),store=tx.objectStore(CART_STORE),request=store.get(CART_KEY);request.onsuccess=()=>{const current=request.result||{items:[],revision:0},items=validCart(current.items),currentRevision=Number(current.revision)||0;if(expectedRevision!==null&&currentRevision!==expectedRevision){cart=items;cartRevision=currentRevision;committed=false;return}const next=validCart(mutator(items.map(x=>({...x}))));revision=currentRevision+1;store.put({items:next,revision},CART_KEY);cart=next;cartRevision=revision;committed=true};tx.oncomplete=()=>{saveCart();if(committed)notifyCartChange(revision);resolve(committed)};tx.onerror=tx.onabort=()=>{cartDb=null;if(expectedRevision===null){cart=validCart(mutator(cart.map(x=>({...x}))));cartRevision++;saveCart()}resolve(false)}}catch{cartDb=null;if(expectedRevision===null){cart=validCart(mutator(cart.map(x=>({...x}))));cartRevision++;saveCart()}resolve(false)}})}
+async function updateCart(mutator,expectedRevision=null){
+ await cartReady;
+ if(!cartDb){if(expectedRevision!==null&&cartRevision!==expectedRevision)return false;cart=validCart(mutator(cart.map(x=>({...x}))));cartRevision++;saveCart();return true}
+ return new Promise(resolve=>{
+  let next=null,revision=cartRevision,committed=false,failed=false;
+  const fail=()=>{if(failed)return;failed=true;cartDb=null;if(expectedRevision===null){cart=validCart(mutator(cart.map(x=>({...x}))));cartRevision++;saveCart()}resolve(false)};
+  try{
+   const tx=cartDb.transaction(CART_STORE,'readwrite'),store=tx.objectStore(CART_STORE),request=store.get(CART_KEY);
+   request.onsuccess=()=>{const current=request.result||{items:[],revision:0},items=validCart(current.items),currentRevision=Number(current.revision)||0;revision=currentRevision;if(expectedRevision!==null&&currentRevision!==expectedRevision){next=items;return}next=validCart(mutator(items.map(x=>({...x}))));revision=currentRevision+1;store.put({items:next,revision},CART_KEY);committed=true};
+   tx.oncomplete=()=>{if(next){cart=next;cartRevision=revision;saveCart();if(committed)notifyCartChange(revision)}resolve(committed)};
+   tx.onerror=tx.onabort=fail;
+  }catch{fail()}
+ });
+}
 function enqueueCartMutation(mutator){cartMutation=cartMutation.then(()=>updateCart(mutator));return cartMutation}
 let cartChannel=null;try{if('BroadcastChannel'in window){cartChannel=new window.BroadcastChannel(CART_DB);cartChannel.addEventListener('message',()=>refreshCart())}}catch{}
 window.addEventListener('storage',e=>{if(e.key===CART_SIGNAL)refreshCart()});
