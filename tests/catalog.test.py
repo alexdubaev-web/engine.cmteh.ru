@@ -2,9 +2,10 @@ from pathlib import Path
 import json,re,sys
 from urllib.parse import urlsplit
 import lxml.html
-root=Path(__file__).resolve().parents[1];out=root/'dist';products=json.loads((root/'data/products.json').read_text());pages=list(out.rglob('*.html'));errors=[];titles=[];availability=json.loads((root/'data/commerce.json').read_text())['availability']
+from build_fixture import build_fixture
+_fixture,root=build_fixture();out=root/'dist';products=json.loads((root/'data/products.json').read_text(encoding="utf-8"));pages=list(out.rglob('*.html'));errors=[];titles=[];availability=json.loads((root/'data/commerce.json').read_text(encoding="utf-8"))['availability']
 for p in pages:
- s=p.read_text();h=lxml.html.fromstring(s)
+ s=p.read_text(encoding="utf-8");h=lxml.html.fromstring(s)
  if re.search('[\u3400-\u9fff]',h.text_content()):errors.append(str(p)+' CJK text')
  if len(h.xpath('//h1'))!=1:errors.append(str(p)+' H1 count')
  title=h.xpath('//title/text()');titles+=title
@@ -17,7 +18,7 @@ for p in pages:
    if not target.exists():errors.append(str(p)+' broken link '+href)
  for raw in h.xpath('//script[@type="application/ld+json"]/text()'):json.loads(raw)
 for p in products:
- h=lxml.html.fromstring((out/'catalog'/p['id']/'index.html').read_text());graph=json.loads(h.xpath('//script[@type="application/ld+json"]/text()')[0])['@graph'];product=graph[0]
+ h=lxml.html.fromstring((out/'catalog'/p['id']/'index.html').read_text(encoding="utf-8"));graph=json.loads(h.xpath('//script[@type="application/ld+json"]/text()')[0])['@graph'];product=graph[0]
  if product['offers']['price']!=p['price']:errors.append(p['id']+' price mismatch')
  if product['sku']!=p['sku']:errors.append(p['id']+' sku mismatch')
  expected=availability.get(p['id']);actual=product['offers'].get('availability')

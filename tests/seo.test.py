@@ -3,14 +3,15 @@ from pathlib import Path
 import json,re,sys
 from urllib.parse import urlsplit
 from lxml import html,etree
-root=Path(__file__).resolve().parents[1];out=Path(sys.argv[1]) if len(sys.argv)>1 else root/'dist'
-products=json.loads((root/'data/products.json').read_text());availability=json.loads((root/'data/commerce.json').read_text())['availability'];stock=json.loads((root/'data/stock.json').read_text())['items'];errors=[];descriptions=[];h1s=[];heads=[]
+from build_fixture import build_fixture
+_fixture,root=build_fixture();out=root/'dist'
+products=json.loads((root/'data/products.json').read_text(encoding="utf-8"));availability=json.loads((root/'data/commerce.json').read_text(encoding="utf-8"))['availability'];stock=json.loads((root/'data/stock.json').read_text(encoding="utf-8"))['items'];errors=[];descriptions=[];h1s=[];heads=[]
 def require(ok,msg):
  if not ok:errors.append(msg)
 def graph(h):
  raw=json.loads(h.xpath('//script[@type="application/ld+json"]/text()')[0]);return raw.get('@graph',[raw])
 for f in out.rglob('*.html'):
- h=html.fromstring(f.read_text());path='/'+str(f.parent.relative_to(out)).strip('.')+'/' if f.parent!=out else '/';path=path.replace('//','/')
+ h=html.fromstring(f.read_text(encoding="utf-8"));path='/'+str(f.parent.relative_to(out)).strip('.')+'/' if f.parent!=out else '/';path=path.replace('//','/')
  desc=h.xpath('string(//meta[@name="description"]/@content)');descriptions.append(desc);h1s.append(h.xpath('string(//h1)'));heads.append(h.xpath('string(//title)'))
  require(bool(desc),path+' description missing');require(len(h.xpath('//meta[@name="description"]'))==1,path+' duplicate meta')
  require(bool(h.xpath('//meta[@property="og:site_name"]')),path+' missing OG site name')
@@ -29,7 +30,7 @@ for f in out.rglob('*.html'):
  for node in nodes:
   require('aggregateRating' not in node and 'review' not in node,path+' fabricated reviews')
 for p in products:
- h=html.fromstring((out/'catalog'/p['id']/'index.html').read_text());nodes=graph(h);product=next(n for n in nodes if n.get('@type')=='Product')
+ h=html.fromstring((out/'catalog'/p['id']/'index.html').read_text(encoding="utf-8"));nodes=graph(h);product=next(n for n in nodes if n.get('@type')=='Product')
  require(p['sku'] in h.xpath('string(//h1)'),p['sku']+' SKU missing from H1')
  require(product['name']==h.xpath('string(//h1)'),p['sku']+' Product name differs from H1')
  require(product['offers']['price']==p['price'],p['sku']+' price mismatch')
