@@ -58,20 +58,31 @@ final class Orders {
         if (($d['consent'] ?? false) !== true || ($d['consentVersion'] ?? '') !== $this->config['consent_version']) throw new ApiError(400,'Подтвердите согласие на обработку данных.');
         if (preg_match_all('/./us',$d['name']) < 2 || preg_match('/[\r\n]/',$d['contact']) || !(filter_var($d['contact'], FILTER_VALIDATE_EMAIL) || (preg_match('/^[+0-9 ()-]{10,25}$/D',$d['contact']) && strlen(preg_replace('/\D/','',$d['contact'])) >= 10))) throw new ApiError(400,'Укажите имя и корректный телефон или email.');
         $items = $d['items'] ?? [];
-        if (!is_array($items) || !array_is_list($items) || count($items)>count($this->catalog)) throw new ApiError(400,'Проверьте список товаров.');
-        $clean = []; $seen = []; $total = 0;
+        if (!is_array($items) || !array_is_list($items) || count($items)>100) throw new ApiError(400,'Проверьте список товаров.');
+        $intentItems = []; $seen = [];
         foreach ($items as $item) {
-            if (!is_array($item) || !is_string($item['id'] ?? null) || !isset($this->catalog[$item['id']]) || isset($seen[$item['id']]) || !is_int($item['quantity'] ?? null) || $item['quantity']<1 || $item['quantity']>999) throw new ApiError(400,'Проверьте товары и количество.');
-            $p = $this->catalog[$item['id']]; $q = $item['quantity']; $seen[$p['id']] = true;
-            $clean[] = ['id'=>$p['id'],'sku'=>$p['sku'],'name'=>$p['name'],'brand'=>$p['brand'],'quantity'=>$q,'price'=>$p['price']]; $total += $p['price']*$q;
+            if (!is_array($item) || !is_string($item['id'] ?? null) || $item['id']==='' || isset($seen[$item['id']]) || !is_int($item['quantity'] ?? null) || $item['quantity']<1 || $item['quantity']>999) throw new ApiError(400,'Проверьте товары и количество.');
+            $seen[$item['id']] = true;
+            $intentItems[] = ['id'=>$item['id'],'quantity'=>$item['quantity']];
         }
-        if (!$clean && preg_match_all('/./us',$d['comment'])<5) throw new ApiError(400,'Добавьте товары или опишите нужную деталь.');
-        $core = ['name'=>$d['name'],'contact'=>$d['contact'],'comment'=>$d['comment'],'items'=>$clean,'total'=>$total,'consentVersion'=>$this->config['consent_version']];
-        $fingerprint = hash_hmac('sha256',json_encode($core,JSON_UNESCAPED_UNICODE|JSON_THROW_ON_ERROR),$this->key);
+        if (!$intentItems && preg_match_all('/./us',$d['comment'])<5) throw new ApiError(400,'Добавьте товары или опишите нужную деталь.');
+        $intent = ['name'=>$d['name'],'contact'=>$d['contact'],'comment'=>$d['comment'],'items'=>$intentItems,'consentVersion'=>$this->config['consent_version']];
+        $fingerprint = hash_hmac('sha256',json_encode($intent,JSON_UNESCAPED_UNICODE|JSON_THROW_ON_ERROR),$this->key);
         $this->db->beginTransaction();
         try {
-            $q=$this->db->prepare('SELECT fingerprint FROM orders WHERE id=?'); $q->execute([$id]); $old=$q->fetchColumn();
-            if ($old !== false) { if (!hash_equals($old,$fingerprint)) throw new ApiError(409,'Этот номер уже использован. Измените заявку и повторите отправку.'); $this->db->commit(); return ['ok'=>true,'requestId'=>$id,'message'=>'Заявка уже зарегистрирована.']; }
+            $q=$this->db->prepare('SELECT payload FROM orders WHERE id=?'); $q->execute([$id]); $old=$q->fetchColumn();
+            if ($old !== false) {
+                if (!$this->sameIntent($this->decrypt($old),$intent)) throw new ApiError(409,'Этот номер уже использован. Измените заявку и повторите отправку.');
+                $this->db->commit(); return ['ok'=>true,'requestId'=>$id,'message'=>'Заявка уже зарегистрирована.'];
+            }
+            $clean = []; $total = 0;
+            foreach ($intentItems as $item) {
+                if (!isset($this->catalog[$item['id']])) throw new ApiError(400,'Проверьте товары и количество.');
+                $p=$this->catalog[$item['id']];$q=$item['quantity'];
+                $clean[]=['id'=>$p['id'],'sku'=>$p['sku'],'name'=>$p['name'],'brand'=>$p['brand'],'quantity'=>$q,'price'=>$p['price']];$total += $p['price']*$q;
+            }
+            if (!$clean && preg_match_all('/./us',$d['comment'])<5) throw new ApiError(400,'Добавьте товары или опишите нужную деталь.');
+            $core = ['name'=>$d['name'],'contact'=>$d['contact'],'comment'=>$d['comment'],'items'=>$clean,'total'=>$total,'consentVersion'=>$this->config['consent_version']];
             $now=time(); $bucket=hash_hmac('sha256',$ip.'|'.intdiv($now,900),$this->key);
             $sql=$this->db->getAttribute(PDO::ATTR_DRIVER_NAME)==='mysql' ? 'INSERT INTO rate_limits (bucket,hits,expires_at) VALUES (?,1,?) ON DUPLICATE KEY UPDATE hits=hits+1' : 'INSERT INTO rate_limits (bucket,hits,expires_at) VALUES (?,1,?) ON CONFLICT(bucket) DO UPDATE SET hits=hits+1';
             $q=$this->db->prepare($sql); $q->execute([$bucket,$now+1800]);
@@ -83,8 +94,8 @@ final class Orders {
         } catch (Throwable $e) { if ($this->db->inTransaction()) $this->db->rollBack();
             // Concurrent retry of the same id: acknowledge only identical content.
             if ($e instanceof PDOException && in_array((string)$e->getCode(), ['23000','23505'],true)) {
-                $q=$this->db->prepare('SELECT fingerprint FROM orders WHERE id=?'); $q->execute([$id]); $old=$q->fetchColumn();
-                if (is_string($old) && hash_equals($old,$fingerprint)) return ['ok'=>true,'requestId'=>$id,'message'=>'Заявка уже зарегистрирована.'];
+                $q=$this->db->prepare('SELECT payload FROM orders WHERE id=?'); $q->execute([$id]); $old=$q->fetchColumn();
+                if (is_string($old) && $this->sameIntent($this->decrypt($old),$intent)) return ['ok'=>true,'requestId'=>$id,'message'=>'Заявка уже зарегистрирована.'];
                 throw new ApiError(409,'Этот номер уже использован другой заявкой.');
             } throw $e;
         }
@@ -122,4 +133,13 @@ final class Orders {
     public function listing(): array { return $this->db->query('SELECT id,created_at,mail_status,attempts FROM orders ORDER BY created_at DESC LIMIT 100')->fetchAll(PDO::FETCH_ASSOC); }
     public function delete(string $id): int { $q=$this->db->prepare('DELETE FROM orders WHERE id=? AND lease_until<?'); $q->execute([$id,time()]); return $q->rowCount(); }
     public function export(string $id): array { $q=$this->db->prepare('SELECT payload FROM orders WHERE id=?'); $q->execute([$id]); $value=$q->fetchColumn(); if ($value===false) throw new RuntimeException('Order not found'); return $this->decrypt($value); }
+    private function sameIntent(array $payload,array $intent): bool {
+        $storedItems=[];
+        foreach (($payload['items'] ?? []) as $item) {
+            if (!is_array($item) || !is_string($item['id'] ?? null) || !is_int($item['quantity'] ?? null)) return false;
+            $storedItems[]=['id'=>$item['id'],'quantity'=>$item['quantity']];
+        }
+        $stored=['name'=>$payload['name'] ?? null,'contact'=>$payload['contact'] ?? null,'comment'=>$payload['comment'] ?? null,'items'=>$storedItems,'consentVersion'=>$payload['consentVersion'] ?? null];
+        return hash_equals(json_encode($stored,JSON_UNESCAPED_UNICODE|JSON_THROW_ON_ERROR),json_encode($intent,JSON_UNESCAPED_UNICODE|JSON_THROW_ON_ERROR));
+    }
 }
