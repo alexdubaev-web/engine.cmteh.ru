@@ -39,6 +39,10 @@ if (fixture) {
       writeFileSync(catalogPath, original);
       assert.notEqual(failed.status, 0, 'injected invalid product must fail the build');
       assert.deepEqual(snapshot(), before, 'failed build must preserve published output and generated state');
+      const lateFailure = spawnSync('python', ['build.py'], { cwd: copy,
+        env: { ...env, INDEXNOW_KEY: 'invalid key' }, encoding: 'utf8' });
+      assert.notEqual(lateFailure.status, 0, 'invalid IndexNow key must fail after rendering');
+      assert.deepEqual(snapshot(), before, 'late build failure must preserve published output and generated state');
     }
     const destination = path.join(fixture, mode);
     mkdirSync(destination, { recursive: true });
