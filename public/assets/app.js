@@ -70,6 +70,6 @@ $$('.order-form').forEach(form=>{let requestId=crypto.randomUUID(),lastPayload='
 })});
 const motion=matchMedia('(prefers-reduced-motion: reduce)');
 if(!motion.matches&&'IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.remove('reveal-pending');observer.unobserve(entry.target)}}),{threshold:0.08,rootMargin:'0px 0px -35px 0px'});$$('.section-heading,.about-layout,.step,.contact-layout,.article-card,.faq-layout,.product-description').forEach(el=>{if(el.getBoundingClientRect().top>innerHeight){el.classList.add('reveal-target','reveal-pending');observer.observe(el)}});motion.addEventListener('change',e=>{if(e.matches){observer.disconnect();$$('.reveal-pending').forEach(el=>el.classList.remove('reveal-pending'))}})}
-let scrolling=false;window.addEventListener('scroll',()=>{if(!scrolling){requestAnimationFrame(()=>{$('.header').classList.toggle('scrolled',scrollY>20);scrolling=false});scrolling=true}},{passive:true});
+const backToTop=$('.back-to-top');let scrolling=false;const updateScrollControls=()=>{$('.header')?.classList.toggle('scrolled',scrollY>20);backToTop?.classList.toggle('is-visible',scrollY>400)};updateScrollControls();window.addEventListener('scroll',()=>{if(!scrolling){requestAnimationFrame(()=>{updateScrollControls();scrolling=false});scrolling=true}},{passive:true});
 saveCart();
 })();

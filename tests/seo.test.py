@@ -18,6 +18,9 @@ for f in out.rglob('*.html'):
  desc=h.xpath('string(//meta[@name="description"]/@content)');descriptions.append(desc);h1s.append(h.xpath('string(//h1)'));heads.append(h.xpath('string(//title)'))
  require(bool(desc),path+' description missing');require(len(h.xpath('//meta[@name="description"]'))==1,path+' duplicate meta')
  require(bool(h.xpath('//meta[@property="og:site_name"]')),path+' missing OG site name')
+ require(bool(h.xpath('//nav[@aria-label="Основная навигация"]/a[@href="/about/"]')),path+' header About link missing')
+ require(bool(h.xpath('//body[@id="top"]//a[@href="#top"][@aria-label="Наверх"]')),path+' back-to-top fallback missing')
+ require('@media(max-width:1150px)' in h.xpath('string(//noscript/style)') and '.nav{position:static;order:3;flex:1 0 100%' in h.xpath('string(//noscript/style)'),path+' no-JS navigation must wrap through the tablet width')
  for image in h.xpath('//img'):require(image.get('alt') is not None,path+' image missing alt')
  nodes=graph(h);types={n.get('@type') for n in nodes}
  require('Organization' in types and 'WebSite' in types,path+' identity graph missing')
@@ -63,14 +66,24 @@ require(home.xpath('string(//title)')=='Топливная аппаратура 
 require(home.xpath('string(//meta[@name="description"]/@content)')=='Топливная аппаратура Bosch, Delphi, Denso, John Deere и VDO: форсунки, ТНВД, распылители и клапаны. Подбор по артикулу, цены, наличие и доставка по России.','home description differs from approved description')
 require(home.xpath('string(//h1)')=='Топливная аппаратура для дизельной спецтехники','home H1 missing topic')
 require(len(home.xpath('//section[@id="catalog"]//article[contains(@class,"product-card")]'))==8,'home must contain exactly eight rendered product cards')
-for href in ['/catalog/','/#selection','/#how-to-order','/delivery/','/articles/','/contacts/']:
+for href in ['/catalog/','/#selection','/#how-to-order','/delivery/','/articles/','/about/','/contacts/']:
  require(bool(home.xpath('//nav[@aria-label="Основная навигация"]/a[@href=$href]',href=href)),'header navigation missing '+href)
 require(bool(home.xpath('//footer//a[@href="/catalog/"]')),'footer direct catalog link missing')
 for href in ['tel:+78124688299','tel:+79119212213','tel:+79119212214','tel:+79658185687','mailto:info@cmteh.ru','mailto:sale@cmteh.ru']:
  require(bool(home.xpath('//section[contains(@class,"company-summary")]//a[@href=$href]',href=href)),'home contact missing '+href)
 require(not home.xpath('//section[contains(@class,"company-summary")]//p/p'),'home company contact block has invalid nested paragraph')
+require(not home.xpath('//section[contains(@class,"company-summary")]//dl'),'home company summary must not show legal details')
+about=html.fromstring((out/'about'/'index.html').read_text(encoding='utf-8'))
+require(not about.xpath('//main//dl[contains(@class,"specs")]'),'About page must not show legal details')
+require('по конкретному заказу' in about.text_content(),'About page order copy typo or wording regression')
+require(bool(home.xpath('//section[contains(@class,"company-summary")]//a[@href="/about/"]')),'home company summary link missing')
 contacts=html.fromstring((out/'contacts'/'index.html').read_text(encoding='utf-8'))
 require(contacts.xpath('string(//h1)')=='Контакты','contacts H1 must be Контакты')
+require(bool(contacts.xpath('//main//h2[normalize-space(.)="Реквизиты компании"]')),'contacts legal details heading missing')
+legal_text=contacts.xpath('string(//main//h2[normalize-space(.)="Реквизиты компании"]/following-sibling::dl[1])')
+for value in ['ООО «СМ ТЕХНО»','7804702073','780401001','1237800071410','Санкт-Петербург']:
+ require(value in legal_text,'contacts legal details missing '+value)
+require(bool(about.xpath('//a[@href="/catalog/"]')) and bool(about.xpath('//a[@href="/delivery/"]')) and bool(about.xpath('//a[@href="/contacts/"]')),'About page navigation links missing')
 require(bool(contacts.xpath('//a[@href="tel:+78124688299"]')),'published phone missing on contacts')
 require(bool(contacts.xpath('//a[@href="mailto:info@cmteh.ru"]')),'published email missing on contacts')
 for href in ['tel:+79119212213','tel:+79119212214','tel:+79658185687','mailto:sale@cmteh.ru']:

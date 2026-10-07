@@ -1,7 +1,7 @@
 {
   "origin": "https://engine.cmteh.ru",
   "indexable": true,
-  "generated_at": "2026-10-07T11:13:25Z",
+  "generated_at": "2026-10-07T11:56:52Z",
   "urls": [
     "https://engine.cmteh.ru/",
     "https://engine.cmteh.ru/catalog/",
@@ -83,7 +83,7 @@
     "https://engine.cmteh.ru/contacts/"
   ],
   "revisions": {
-    "https://engine.cmteh.ru/": "49578af39aa64572b7832014e4b2bc96",
+    "https://engine.cmteh.ru/": "4ec4cbd71edb401ca144e55d6ca470cc",
     "https://engine.cmteh.ru/catalog/": "c0f73fdf021a45ec9bd1ad5bc854c684",
     "https://engine.cmteh.ru/category/injectors/": "e8392480c1fb437daec3e377944c2961",
     "https://engine.cmteh.ru/category/pumps/": "f60a332eeb7d45908d3e897695e13ff9",
@@ -159,7 +159,7 @@
     "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/": "a327338abe8e4b7993a3b3cf4073110b",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/": "436dcb8c25ac4ed7bf6b47266f2c7d6d",
     "https://engine.cmteh.ru/delivery/": "fa2ebacb2aaf41e5858133e4792cf936",
-    "https://engine.cmteh.ru/about/": "8fffd0ebf18844edbf74bad250a73375",
-    "https://engine.cmteh.ru/contacts/": "24cebe763d01423797093f7e09e02025"
+    "https://engine.cmteh.ru/about/": "49311f26a3c0430fb78c76085a9482a0",
+    "https://engine.cmteh.ru/contacts/": "f3fc8271407442209141c9c4e7d5d3fa"
   }
 }

@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "4cb6b3e91a3bfd4c6e3c9337ea840d1733839b1db6330802d7373e1f5d42e1c6",
-    "lastmod": "2026-10-07T10:59:55Z"
+    "sha256": "b018250233642e33df9131d2994408910dbe548a92ddad857be0cfa2944b26f0",
+    "lastmod": "2026-10-07T11:50:00Z"
   },
   "/catalog/": {
     "sha256": "04deed3291f9daf0b403b816d22c8ecf11a998eb3ecccf41e9c85152d36a353f",
@@ -304,12 +304,12 @@
     "lastmod": "2026-10-07T10:50:57Z"
   },
   "/about/": {
-    "sha256": "ee1eb260055dda294e515bf2c074192e03c64506ff4b069a6205ad716bfda33f",
-    "lastmod": "2026-10-07T10:59:55Z"
+    "sha256": "6de0475f3769f9048c8e44e76453cb7ae2486f028e380a6828c9764bef0ac7c8",
+    "lastmod": "2026-10-07T11:50:00Z"
   },
   "/contacts/": {
-    "sha256": "7eddc459208ddfef5537cb4b0166e9bf9ddb7055fe864ec29aac6e33fd265474",
-    "lastmod": "2026-10-07T10:59:55Z"
+    "sha256": "c3e63d8caed561aa06e555bf3f5bc0bf55b4eb2c225755fdc0b87c4b41fd18c0",
+    "lastmod": "2026-10-07T11:50:00Z"
   },
   "/privacy/": {
     "sha256": "aaac96da9d509d89de6099f74efad66422af53f516bc0e89b7f19342a75b5295",
