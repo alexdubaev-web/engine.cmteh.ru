@@ -15,7 +15,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0433175478-v2.webp",
     "imageSource": null,
     "stockQuantity": 12,
     "copy": [
@@ -41,10 +41,9 @@
     "sourceUrls": [
       "https://www.alter-diesel.com/delphi-injector-valve-7206-0460.html"
     ],
-    "image": "/assets/part-7206-0460.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/delphi-7206-0460-kontrolni-ventil-trysky-z",
+    "image": "/assets/part-7206-0460-v2.webp",
+    "imageSource": null,
     "stockQuantity": 20,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/d/4/d4a9c0124b7490186a3290566e284a56-m-73774.jpeg",
     "copy": [
       "Delphi 7206-0460 — электромагнитный клапан топливной системы. Такая позиция нужна для подбора отдельного компонента: заказ клапана не означает покупку форсунки или насоса целиком. Перед заменой важно установить, какой узел ремонтируется и какой номер указан на снятой детали.",
       "В каталоге также есть 7206-0435, однако близкие обозначения нельзя считать взаимозаменяемыми. В заказе сохраните полный номер 7206-0460 и добавьте маркировку основного узла. Проверка электрической части и состояния топливной аппаратуры помогает избежать замены исправного компонента.",
@@ -68,10 +67,9 @@
     "sourceUrls": [
       "https://dieselcatalog.online/ru/delphi/injectorcr/28272472.html"
     ],
-    "image": "/assets/part-28272472.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/delphi-hrd351-28272472-repas-vstrikovac",
+    "image": "/assets/part-28272472-v2.webp",
+    "imageSource": null,
     "stockQuantity": 4,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/1/4/14483ade6b4e20f2a8fa9d35c13f7f38-detailni-zaber-vstrikovace-paliva.png",
     "copy": [
       "Форсунка Common Rail Delphi 28272472 представлена как отдельная каталожная позиция топливной аппаратуры. В системе с общей топливной рампой форсунка дозирует впрыск, поэтому при замене важны точное исполнение и соответствие установленной системе управления.",
       "Начните подбор с полного номера на корпусе, затем укажите модель и серийный номер двигателя. Похожие форсунки Delphi могут отличаться исполнением. Необходимость кодирования, адаптации и стендовой проверки уточняют по ремонтной документации для конкретного двигателя, а не по одному названию Common Rail.",
@@ -95,10 +93,9 @@
     "sourceUrls": [
       "https://baza.drom.ru/oem/0445020610/"
     ],
-    "image": "/assets/part-0445020610.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/bosch-0-445-020-610-cerpadlo-sisu-837073731",
+    "image": "/assets/part-0445020610-v2.webp",
+    "imageSource": null,
     "stockQuantity": 1,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/8/1/81aee894e361f251a8d1026eb0bef3b1-0-445-020-610.jpg",
     "copy": [
       "ТНВД Bosch 0445020610 — топливный насос высокого давления для подбора по десятизначному каталожному номеру. Насос отвечает за создание давления в системе подачи топлива; его исполнение должно соответствовать двигателю и установленной топливной аппаратуре.",
       "В одном разделе собраны насосы 0445020606, 0445020610 и 0445020611. Сходство номеров помогает найти позиции, но не подтверждает возможность замены. Сверьте табличку насоса, привод и подключения, а при запросе укажите, нужен ли узел в сборе и какие комплектующие требуются для монтажа.",
@@ -122,7 +119,7 @@
     "sourceUrls": [
       "https://shop.deere.com/ca/en/product/RE539764%3A-Fuel-Pump%2C-24-Volt/p/RE539764"
     ],
-    "image": null,
+    "image": "/assets/part-re539764-v2.webp",
     "imageSource": null,
     "stockQuantity": 2,
     "copy": [
@@ -148,7 +145,7 @@
     "sourceUrls": [
       "https://www.com-rail.com/fuel-pump-test/"
     ],
-    "image": null,
+    "image": "/assets/part-260100-4010-v2.webp",
     "imageSource": null,
     "stockQuantity": 4,
     "copy": [
@@ -174,7 +171,7 @@
     "sourceUrls": [
       "https://www.delphiautoparts.com/"
     ],
-    "image": null,
+    "image": "/assets/part-9323a270g-v2.webp",
     "imageSource": null,
     "stockQuantity": 2,
     "copy": [
@@ -201,10 +198,9 @@
     "sourceUrls": [
       "https://www.delphiautoparts.com/"
     ],
-    "image": "/assets/part-28540276.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/delphi-28540276-cr-vstrikovac-kia-hyundai-u-1-1-3cyl-1-4-4cyl-5",
+    "image": "/assets/part-28540276-v2.webp",
+    "imageSource": null,
     "stockQuantity": 4,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/3/2/320bf2106aa0ee3393c2bf89b9971e56-m-118310.jpeg",
     "copy": [
       "Форсунка Common Rail Delphi 28540276 указана в каталоге вместе с обозначением R00203D. Оба номера могут пригодиться для поиска и обсуждения позиции, но окончательный выбор делают по маркировке установленной форсунки и данным двигателя.",
       "Сообщите, какой номер нанесён на вашей детали, а какой получен из документации или предложения поставщика. Такое разделение помогает проверить связь обозначений и исполнение изделия. До заказа уточните состояние, комплектность и требования к установке: дополнительный номер не заменяет этих сведений.",
@@ -228,7 +224,7 @@
     "sourceUrls": [
       "https://www.delphiautoparts.com/"
     ],
-    "image": null,
+    "image": "/assets/part-7206-0435-v2.webp",
     "imageSource": null,
     "stockQuantity": 18,
     "copy": [
@@ -255,10 +251,9 @@
     "sourceUrls": [
       "https://www.topdiesel.com/denso-repair-kits/"
     ],
-    "image": "/assets/part-28516849.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/delphi-28516849-sada-pumpy-dopravniho-tlaku-9-zubu-dfp3-4-dt697",
+    "image": "/assets/part-28516849-v2.webp",
+    "imageSource": null,
     "stockQuantity": 20,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/f/1/f19f71d623593c4de259bf18ade7a869-chatgpt-image-25-4-2026-23-25-19.png",
     "copy": [
       "Delphi 28516849 — топливоподкачивающий насос, связанный с подачей топлива к следующим элементам системы. Эту позицию следует отличать от ТНВД: назначение подкачивающего насоса и насоса высокого давления различается, даже если они относятся к одной топливной аппаратуре.",
       "Дополнительное обозначение 7240-241 приведено для сверки. Подготовьте номер установленного насоса и уточните присоединение топливных линий и крепление. Если запрос связан с недостаточной подачей топлива, проверка фильтров и магистралей помогает обосновать необходимость замены насоса.",
@@ -282,7 +277,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445020208-v2.webp",
     "imageSource": null,
     "stockQuantity": 1,
     "copy": [
@@ -308,7 +303,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445020201-v2.webp",
     "imageSource": null,
     "stockQuantity": 1,
     "copy": [
@@ -334,7 +329,7 @@
     "sourceUrls": [
       "https://pnm-parts.ru/catalog/delphi/delphi/l229pbc"
     ],
-    "image": null,
+    "image": "/assets/part-l229pbc-v2.webp",
     "imageSource": null,
     "stockQuantity": 20,
     "copy": [
@@ -360,10 +355,9 @@
     "sourceUrls": [
       "https://fuelparts.ru/catalog/forsunki/forsunka-bosch-0445120075/"
     ],
-    "image": "/assets/part-0445120075.webp",
-    "imageSource": "https://fuelparts.ru/catalog/forsunki/forsunka-bosch-0445120075/",
+    "image": "/assets/part-0445120075-v2.webp",
+    "imageSource": null,
     "stockQuantity": 6,
-    "imageOriginal": "https://fuelparts.ru/upload/iblock/dbb/dbb22d80625b2a7fbb07c0c1ae7ba7ff.jpg",
     "copy": [
       "Bosch 0445120075 — топливная форсунка Common Rail. В системе с общей рампой форсунка управляет впрыском топлива, поэтому её выбирают по точному артикулу и исполнению двигателя. Совпадение производителя или внешнего вида не является достаточным основанием для замены.",
       "В каталоге есть отдельная позиция 0445120072: близость номеров не означает взаимозаменяемость. Для проверки подготовьте маркировку корпуса и сведения о двигателе. Условия установки, необходимость кодирования и состав монтажных материалов согласуйте по документации системы до заказа.",
@@ -387,7 +381,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445020082-v2.webp",
     "imageSource": null,
     "stockQuantity": 1,
     "copy": [
@@ -413,10 +407,9 @@
     "sourceUrls": [
       "https://shop.deere.com/jdb2cstorefront/us/product/RE507959%3A-Fuel-Injection-Pump/p/RE507959"
     ],
-    "image": "/assets/part-re507959.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/denso-294000-0560-ad-vysokotlake-cerpadlo-re527528-re507959-jde-294000-0050",
+    "image": "/assets/part-re507959-v2.webp",
+    "imageSource": null,
     "stockQuantity": 1,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/0/0/002f4d17a5e09890e25fbb1187e97685-m-121356.jpeg",
     "copy": [
       "John Deere RE507959 — топливный насос впрыска, отнесённый в каталоге к ТНВД. Для техники John Deere важно подбирать насос с учётом конкретного двигателя и его серийного диапазона: одного наименования марки техники для выбора недостаточно.",
       "В запросе сохраните префикс RE и полный номер. Если вместо RE507959 в документации указан другой артикул, запросите проверку истории замены по серийному номеру. Состав насосного узла, дополнительные элементы и условия установки следует уточнить до согласования поставки.",
@@ -440,7 +433,7 @@
     "sourceUrls": [
       "https://asadiesel.com/product/l053pbc-diesel-injector-nozzle/"
     ],
-    "image": null,
+    "image": "/assets/part-l053pbc-v2.webp",
     "imageSource": null,
     "stockQuantity": 20,
     "copy": [
@@ -466,7 +459,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0433175518-v2.webp",
     "imageSource": null,
     "stockQuantity": 24,
     "copy": [
@@ -492,7 +485,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445020334-v2.webp",
     "imageSource": null,
     "stockQuantity": 1,
     "copy": [
@@ -518,7 +511,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445020110-v2.webp",
     "imageSource": null,
     "stockQuantity": 2,
     "copy": [
@@ -545,10 +538,9 @@
     "sourceUrls": [
       "https://www.trodo.com/catalogsearch/oem/28308779"
     ],
-    "image": "/assets/part-28308779.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/delphi-hrd352-28308779-repas-vstrikovac",
+    "image": "/assets/part-28308779-v2.webp",
+    "imageSource": null,
     "stockQuantity": 4,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/8/9/8928e810414b636f7bf92a7d77882ef2-rr.jpg",
     "copy": [
       "Delphi 28308779 — форсунка Common Rail для подбора по маркировке топливного узла. В карточке отдельно приведено обозначение A651070328: его запись требует проверки по документации или фактической маркировке, прежде чем использовать как номер для замены.",
       "Не дополняйте A651070328 недостающими символами по догадке. В запросе лучше указать читаемый номер Delphi и сведения о двигателе, а сомнительную запись отметить как дополнительную. Состояние изделия, состав поставки и необходимость настройки после установки уточняются при согласовании.",
@@ -572,7 +564,7 @@
     "sourceUrls": [
       "https://www.britishdiesel.co.uk/products/delphi-nozzle-l017pbb"
     ],
-    "image": null,
+    "image": "/assets/part-l017pbb-v2.webp",
     "imageSource": null,
     "stockQuantity": 20,
     "copy": [
@@ -598,7 +590,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445120126-v2.webp",
     "imageSource": null,
     "stockQuantity": 4,
     "copy": [
@@ -624,10 +616,9 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": "/assets/part-0445120072.webp",
-    "imageSource": "https://fuelparts.ru/catalog/forsunki/forsunka-bosch-0445120072/",
+    "image": "/assets/part-0445120072-v2.webp",
+    "imageSource": null,
     "stockQuantity": 4,
-    "imageOriginal": "https://fuelparts.ru/upload/iblock/60c/60ce584782d8cf5995373e94a2a1b26f.jpg",
     "copy": [
       "Bosch 0445120072 — топливная форсунка Common Rail, выделенная в отдельную карточку каталога. Её номер следует сверять без сокращений: похожие форсунки могут иметь разные исполнения даже при одинаковом наименовании системы впрыска.",
       "Не считайте 0445120075 заменой только из-за близости цифр. Укажите номер снятой форсунки и сведения о двигателе, чтобы проверить нужную позицию. При согласовании уточните состояние детали и комплектность; требования к установке и возможному кодированию определяются документацией двигателя.",
@@ -652,10 +643,9 @@
     "sourceUrls": [
       "https://www.diesel-control.eu/en/p/aumovio-vdo-2802002051380-5620004100-vstrikovac-pzo-2-0-tdci-panther-v45-ford"
     ],
-    "image": "/assets/part-5620004100.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/aumovio-vdo-2802002051380-5620004100-vstrikovac-pzo-2-0-tdci-panther-v45-ford",
+    "image": "/assets/part-5620004100-v2.webp",
+    "imageSource": null,
     "stockQuantity": 4,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/4/0/40e3dca0d3eb90c77a2b8c78ad4a0025-ww.jpg",
     "copy": [
       "Топливная форсунка 5620004100 представлена в разделе VDO / Vitesco (Aumovio). В каталоге с ней связано обозначение GK2Q-9K546-AC. Полный номер и буквенный суффикс полезны для проверки, но не заменяют сведения о конкретном двигателе.",
       "В запросе укажите, какое обозначение нанесено на вашей форсунке. Особое внимание уделите окончанию AC: похожий номер с другим суффиксом нельзя считать тем же исполнением. Связь двух артикулов, состояние детали и требования к установке должны быть подтверждены до согласования заказа.",
@@ -679,7 +669,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445020540-v2.webp",
     "imageSource": null,
     "stockQuantity": 2,
     "copy": [
@@ -705,7 +695,7 @@
     "sourceUrls": [
       "https://shop.deere.com/us/product/DZ112112%3A-Nozzle-Kit/p/DZ112112"
     ],
-    "image": null,
+    "image": "/assets/part-dz112112-v2.webp",
     "imageSource": null,
     "stockQuantity": 6,
     "copy": [
@@ -732,7 +722,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445226092-v2.webp",
     "imageSource": null,
     "stockQuantity": 2,
     "copy": [
@@ -761,7 +751,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445120728-v2.webp",
     "imageSource": null,
     "stockQuantity": 6,
     "copy": [
@@ -790,10 +780,9 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": "/assets/part-0445120212.webp",
-    "imageSource": "https://fuelparts.ru/catalog/forsunki/forsunka-bosch-0445120212/",
+    "image": "/assets/part-0445120212-v2.webp",
+    "imageSource": null,
     "stockQuantity": 6,
-    "imageOriginal": "https://fuelparts.ru/upload/iblock/34d/34df4a61e2c55bb0e2ab3e818a3f89e1.JPG",
     "copy": [
       "Bosch 0445120212 — форсунка Common Rail, для которой приведены дополнительные номера 5263307, 0445120007 и 0445120273. Они полезны для поиска по известной маркировке, однако выбор детали требует проверки отношений между обозначениями.",
       "Укажите, какой номер прочитан непосредственно на форсунке, а какой получен из каталога двигателя. Не рассматривайте всю группу как подтверждённый список замен. В запросе добавьте модель и серийный номер двигателя; комплектность и требования к установке согласуйте по нужному исполнению.",
@@ -818,10 +807,9 @@
     "sourceUrls": [
       "https://cdi36.ru/catalog/forsunki-novye/forsunka_toplivnaya_denso_260100_6010_23670_30400_39365_original/"
     ],
-    "image": "/assets/part-260100-6010.webp",
-    "imageSource": "https://cdi36.ru/catalog/forsunki-novye/forsunka_toplivnaya_denso_260100_6010_23670_30400_39365_original/",
+    "image": "/assets/part-260100-6010-v2.webp",
+    "imageSource": null,
     "stockQuantity": 4,
-    "imageOriginal": "https://cdi36.ru/upload/dev2fun.imagecompress/webp/iblock/251/2fi2vcmvkvdq2ffyv42vjj7oe1lrnci2.webp",
     "copy": [
       "Форсунка Common Rail Denso 260100-6010 представлена с дополнительным обозначением 295050-0520. При подборе важно понять, какой номер относится к установленной детали и как он связан с номером предлагаемой позиции.",
       "Сохраните дефисы и все цифры обоих обозначений. В запросе укажите номер на корпусе, модель и серийный номер двигателя. Необходимость проверки, кодирования или адаптации после замены определяется требованиями конкретной системы; наличие дополнительного артикула не подтверждает готовность к установке без этих процедур.",
@@ -845,7 +833,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445116059-v2.webp",
     "imageSource": null,
     "stockQuantity": 4,
     "copy": [
@@ -872,10 +860,9 @@
     "sourceUrls": [
       "https://shop.deere.com/us/product/DZ128161%3A-Fuel-Pump/p/DZ128161"
     ],
-    "image": "/assets/part-dz128161.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/denso-299050-0160-ad-cerpadlo-hp6-denso-dz128161-299050-0011",
+    "image": "/assets/part-dz128161-v2.webp",
+    "imageSource": null,
     "stockQuantity": 1,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/d/1/d15fa43a63421b19fa21aebbe8acf69a-m-119173.jpeg",
     "copy": [
       "DZ128161 — насос высокого давления, представленный в каталоге John Deere / Denso. Дополнительно указан номер Denso 299050-0160. Подбор этой позиции требует сверки маркировок насоса и документации конкретного двигателя.",
       "Сообщите, какой из двух номеров нанесён на установленном узле. Для техники John Deere полезны модель и серийный номер двигателя: они помогают проверить исполнение и возможные изменения в каталоге. Соответствие обозначений, привод, подключения и состав насосного узла уточняются до заказа.",
@@ -899,7 +886,7 @@
     "sourceUrls": [
       "https://shop.deere.com/us/product/RE526588%3A-12-Volts-24-Volts-Engine-Controller%2C-Level-16/p/RE526588"
     ],
-    "image": null,
+    "image": "/assets/part-re526588-v2.webp",
     "imageSource": null,
     "stockQuantity": 1,
     "copy": [
@@ -926,10 +913,9 @@
     "sourceUrls": [
       "https://www.autokseft.cz/OE-cislo/5801906153/IVECO-55"
     ],
-    "image": "/assets/part-0445124036.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/bosch-0-445-124-036-vstrikovac-iveco-5801906153",
+    "image": "/assets/part-0445124036-v2.webp",
+    "imageSource": null,
     "stockQuantity": 6,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/0/d/0d9b4493ae6d29a5550f84504cda2b52-0445124036.png",
     "copy": [
       "Форсунка Common Rail Bosch 0445124036 приведена вместе с номером 5801906153. Дополнительное обозначение удобно для сверки документации, но окончательный подбор строится на маркировке установленного узла и конкретной модификации двигателя.",
       "В запросе сохраните оба номера и укажите происхождение каждого. Если маркировка корпуса отличается от записи в счёте, нужно проверить причину расхождения до поставки. Состояние форсунки, состав комплекта и требования к настройке после установки согласуются отдельно.",
@@ -953,7 +939,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445020089-v2.webp",
     "imageSource": null,
     "stockQuantity": 1,
     "copy": [
@@ -980,7 +966,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445020081-v2.webp",
     "imageSource": null,
     "stockQuantity": 1,
     "copy": [
@@ -1006,10 +992,9 @@
     "sourceUrls": [
       "https://www.com-rail.com/nozzle-delphi-original-parts/"
     ],
-    "image": "/assets/part-l215pbc.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/firad-alla152fl215-tryska-l215pbc",
+    "image": "/assets/part-l215pbc-v2.webp",
+    "imageSource": null,
     "stockQuantity": 20,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/6/5/651fe8b4688a1d4661436df44d346744-denso.jpg",
     "copy": [
       "Delphi L215PBC — распылитель, который выбирают как отдельную деталь при ремонте топливной форсунки. Решение о замене компонента желательно принимать после проверки узла: симптомы работы двигателя сами по себе не определяют нужный артикул.",
       "Сверьте обозначение L215PBC с маркировкой снятого распылителя и номером форсунки. Буквенная часть артикула должна сохраняться полностью. Уточните, какие детали нужны для сборки и входят ли они в поставку; контроль параметров после ремонта проводится по требованиям конкретной форсунки.",
@@ -1034,7 +1019,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445124025-v2.webp",
     "imageSource": null,
     "stockQuantity": 6,
     "copy": [
@@ -1061,10 +1046,9 @@
     "sourceUrls": [
       "https://shop.deere.com/us/product/DZ128160%3A-Fuel-Pump/p/DZ128160"
     ],
-    "image": "/assets/part-dz128160.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/denso-299050-0170-ad-cerpadlo-hp6-denso-dz128160-299050-0020",
+    "image": "/assets/part-dz128160-v2.webp",
+    "imageSource": null,
     "stockQuantity": 1,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/b/9/b954df8cb988ff744fcd967bcc27e6fa-m-142945.jpeg",
     "copy": [
       "John Deere DZ128160 — топливный насос высокого давления. С этой позицией в каталоге связан номер DZ123516. Для выбора насоса требуется понять, какое обозначение относится к установленному узлу и проверено ли изменение номера для вашей техники.",
       "Укажите модель и серийный номер двигателя, а также оба известных артикула. Историю замен проверяют по каталогу производителя: связь номеров в перечне не является достаточным подтверждением взаимозаменяемости. Исполнение привода, подключения и состав поставки уточняются перед заказом.",
@@ -1088,7 +1072,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445020606-v2.webp",
     "imageSource": null,
     "stockQuantity": 1,
     "copy": [
@@ -1114,10 +1098,9 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": "/assets/part-0445020611.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/bosch-0-445-020-611-radialni-pistove-cerpadlo-sisu-837074805",
+    "image": "/assets/part-0445020611-v2.webp",
+    "imageSource": null,
     "stockQuantity": 1,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/a/0/a06da1b67365f1b6e7814a242704481a-vy.jpg",
     "copy": [
       "Bosch 0445020611 — отдельная позиция насоса высокого давления. При запросе ТНВД нужно сохранять полный десятизначный номер: указание одной серии или последних цифр не позволяет однозначно определить насосный узел.",
       "Не считайте 0445020610 той же деталью только по близкому артикулу. Для проверки исполнения добавьте номер с таблички и сведения о двигателе. Отдельно согласуйте, нужен ли насос в сборе и какие дополнительные элементы должны входить в поставку; параметры монтажа уточняются по документации.",
@@ -1142,10 +1125,9 @@
     "sourceUrls": [
       "https://dieselcatalog.online/en/delphi/injectorcr/28229876.html"
     ],
-    "image": "/assets/part-28229876.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/delphi-hrd382-28229876-repasovany-vstrikovac",
+    "image": "/assets/part-28229876-v2.webp",
+    "imageSource": null,
     "stockQuantity": 4,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/a/e/ae417575e6695e17cbfb0c7021a7c9dd-detailni-zaber-na-vstrikovac-paliva.png",
     "copy": [
       "Форсунка Common Rail Delphi 28229876 указана с номером JCB 320/06827. Эти обозначения удобны для поиска, когда известен номер производителя форсунки или номер из документации техники, однако их связь необходимо проверить для конкретного двигателя.",
       "Сохраните косую черту и начальный ноль в 320/06827. Укажите модель двигателя и маркировку установленной форсунки. При заказе важно подтвердить исполнение, состояние и комплектность; общая принадлежность к технике JCB не определяет применимость ко всем её моделям.",
@@ -1169,7 +1151,7 @@
     "sourceUrls": [
       "https://www.viscodiesel.com/en/catalog/product/view/id/9741/"
     ],
-    "image": null,
+    "image": "/assets/part-l158pba-v2.webp",
     "imageSource": null,
     "stockQuantity": 20,
     "copy": [
@@ -1195,7 +1177,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445020508-v2.webp",
     "imageSource": null,
     "stockQuantity": 1,
     "copy": [
@@ -1221,10 +1203,9 @@
     "sourceUrls": [
       "https://baza.drom.ru/oem/F00RJ02177/"
     ],
-    "image": "/assets/part-f00rj02177.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/bosch-f00rj02177-parts-kit",
+    "image": "/assets/part-f00rj02177-v2.webp",
+    "imageSource": null,
     "stockQuantity": 100,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/0/b/0b49c966369df80936c4360fc7dd97bb-2e8c836b-7bed-4e36-b098-346e8feb79e8.png",
     "copy": [
       "Bosch F00RJ02177 — ремкомплект топливной форсунки Common Rail. Название обозначает набор ремонтных компонентов, а не форсунку в сборе. Чтобы заказ соответствовал задаче ремонта, требуется заранее уточнить содержимое комплекта.",
       "Сохраните буквенный префикс F00RJ и полный номер при переносе артикула в корзину. Укажите маркировку ремонтируемой форсунки и запросите перечень входящих деталей. Применимость набора, необходимость дополнительных элементов и последующей проверки форсунки согласуются по конкретному узлу.",
@@ -1256,10 +1237,9 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": "/assets/part-0414701072.webp",
-    "imageSource": "https://fuelparts.ru/catalog/forsunki/forsunka-bosch-0414701072/",
+    "image": "/assets/part-0414701072-v2.webp",
+    "imageSource": null,
     "stockQuantity": 6,
-    "imageOriginal": "https://fuelparts.ru/upload/iblock/989/9891b03069501e8607ec6208e6e29c96.jpg",
     "copy": [
       "Bosch 0414701072 — насос-форсунка, объединяющая насосную и распылительную части. Эту конструкцию следует отличать от отдельной форсунки Common Rail: принадлежность деталей к топливной аппаратуре не делает их одинаковыми по устройству и применимости.",
       "Дополнительные записи 0414701073/7 и 0414701086/8 сохранены в сокращённом виде. Не разворачивайте их в полные номера по догадке и не считайте весь список подтверждёнными заменами. Для заказа подготовьте точную маркировку насос-форсунки и данные двигателя; состояние и комплектность согласуются отдельно.",
@@ -1287,10 +1267,9 @@
     "sourceUrls": [
       "https://www.flexamiauto.cz/cerpadla/28384974-repas/"
     ],
-    "image": "/assets/part-28384974.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/delphi-28384974-cerpadlo-cr-gmdat-j-dfp3-25187375-tempr",
+    "image": "/assets/part-28384974-v2.webp",
+    "imageSource": null,
     "stockQuantity": 1,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/3/4/34f66aed3a9a0e97a19a256e3d5330d3-m-87684.jpeg",
     "copy": [
       "Delphi 28384974 — насос высокого давления, обозначенный в каталоге как ТНВД Common Rail. Дополнительные номера 28318239, 9422A040A, 25187375 и 98686903 помогают найти позицию по разным записям, но требуют проверки связи с установленным насосом.",
       "Укажите номер с таблички и отдельно перечислите обозначения из документов двигателя. Особое внимание уделите буквенно-цифровому номеру 9422A040A: его нельзя сокращать. До заказа проверьте исполнение насоса, привод и подключения, а состав узла и монтажные элементы согласуйте в предложении.",
@@ -1315,7 +1294,7 @@
     "sourceUrls": [
       "https://shop.deere.com/us/us/product/DZ100218%3A-Nozzle-Kit/p/DZ100218"
     ],
-    "image": null,
+    "image": "/assets/part-dz100218-v2.webp",
     "imageSource": null,
     "stockQuantity": 6,
     "copy": [
@@ -1344,10 +1323,9 @@
     "sourceUrls": [
       "https://www.delphiautoparts.com/"
     ],
-    "image": "/assets/part-28384976.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/delphi-28384976-cerpadlo-cr-gmdat-c-dfp3-25187376-tempr",
+    "image": "/assets/part-28384976-v2.webp",
+    "imageSource": null,
     "stockQuantity": 1,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/c/1/c156737c09c818dd82e28d8d1eb8c37d-m-87685.jpeg",
     "copy": [
       "Насос высокого давления Delphi 28384976 относится к позициям ТНВД Common Rail. В карточке приведены дополнительные обозначения 28286124, 28318240 и 25187376, которые полезны при сопоставлении маркировки насоса с документацией техники.",
       "Эта позиция отличается по основному номеру от 28384974; одинаковая цена и сходное название не подтверждают одинаковое исполнение. В запросе укажите номер установленного ТНВД, модель и серийный номер двигателя. Привод, присоединения и комплектность необходимо согласовать по выбранному артикулу.",
@@ -1373,10 +1351,9 @@
     "sourceUrls": [
       "https://allegro.cz/produkt/regulacni-ventil-tlaku-palivove-listy-delphi-evropsky-e4c71fec-82e9-4d6f-9611-9dc4620ebfe6"
     ],
-    "image": "/assets/part-7210-0473.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/ishinotec-97605-pressure-control-valve-7210-0473",
+    "image": "/assets/part-7210-0473-v2.webp",
+    "imageSource": null,
     "stockQuantity": 2,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/9/8/9876a4e172abd989a66e862df9d3de0d-m-146572.jpeg",
     "copy": [
       "Delphi 7210-0473 — клапан регулирования давления топлива HPV. Он относится к регулирующим компонентам топливной системы. При подборе важно отличать регулирование давления от управления подачей: клапаны с разным назначением нельзя выбирать только по похожей форме.",
       "В каталоге также указаны номера 31442-84300 и 22720232. Сообщите маркировку клапана и узла, на котором он установлен, чтобы проверить связь обозначений. Номер насоса или другой основной детали и данные двигателя помогают уточнить требуемое исполнение до поставки.",
@@ -1401,7 +1378,7 @@
     "sourceUrls": [
       "https://avto.pro/part-2942000650-DENSO-950/"
     ],
-    "image": null,
+    "image": "/assets/part-8980436870-v2.webp",
     "imageSource": null,
     "stockQuantity": 5,
     "copy": [
@@ -1430,7 +1407,7 @@
     "sourceUrls": [
       "https://www.merlindiesel.com/wp-content/uploads/2021/12/JCB-Cross-Reference-and-Application-List.pdf"
     ],
-    "image": null,
+    "image": "/assets/part-9323a260g-v2.webp",
     "imageSource": null,
     "stockQuantity": 1,
     "copy": [
@@ -1459,10 +1436,9 @@
     "sourceUrls": [
       "https://www.autokseft.cz/OE-cislo/A4710700887/MERCEDES-BENZ-74"
     ],
-    "image": "/assets/part-0445120385.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/bosch-0-445-120-385-vstrikovac-mercedes-a4710700887",
+    "image": "/assets/part-0445120385-v2.webp",
+    "imageSource": null,
     "stockQuantity": 6,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/7/6/76735240a30601746f2d3d8b6829bef3-m-102534.jpeg",
     "copy": [
       "Форсунка Common Rail Bosch 0445120385 приведена с дополнительными номерами 0445120386, 0986435647 и A4710700887. При подборе необходимо проверить, какое исполнение соответствует установленной детали и какие обозначения относятся к предлагаемому изделию.",
       "Не определяйте состояние форсунки только по дополнительному номеру: новая, восстановленная или иная поставка должна быть оговорена явно. Сообщите маркировку корпуса и данные двигателя. Перед согласованием заказа уточните комплектность и требования к установке конкретного исполнения.",
@@ -1486,7 +1462,7 @@
     "sourceUrls": [
       "https://www.boschaftermarket.com/"
     ],
-    "image": null,
+    "image": "/assets/part-0445020273-v2.webp",
     "imageSource": null,
     "stockQuantity": 1,
     "copy": [
@@ -1512,10 +1488,9 @@
     "sourceUrls": [
       "https://www.motora.cz/delphi/9109-903.html"
     ],
-    "image": "/assets/part-9109-903.webp",
-    "imageSource": "https://www.diesel-control.eu/en/p/stanadyne-scc-9109-903-9307z523b-ventil-imv-borgwarner-delphi-9109-903",
+    "image": "/assets/part-9109-903-v2.webp",
+    "imageSource": null,
     "stockQuantity": 20,
-    "imageOriginal": "https://diesel-control.s9.cdn-upgates.com/_cache/b/c/bcf83a45622d572776636443de87ed41-m-143201.jpeg",
     "copy": [
       "Delphi 9109-903 — клапан регулировки подачи топлива для системы Common Rail. Это отдельный регулирующий компонент; при его выборе необходимо учитывать насос или другой основной узел, на котором он установлен.",
       "Укажите маркировку снятого клапана и номер ТНВД. Совпадение назначения не означает одинаковое исполнение с другими клапанами подачи топлива. Разъём, конструктивные особенности и состав поставки нужно подтвердить по конкретному узлу, а необходимость замены — по результатам диагностики системы.",
@@ -1539,7 +1514,7 @@
     "sourceUrls": [
       "https://shop.deere.com/us/product/DZ111136%3A-Fuel-Pump-Suction-Control-Valve/p/DZ111136"
     ],
-    "image": null,
+    "image": "/assets/part-dz111136-v2.webp",
     "imageSource": null,
     "stockQuantity": 8,
     "copy": [
@@ -1565,7 +1540,7 @@
     "sourceUrls": [
       "https://shop.deere.com/uk/product/DZ10599%3A-Engine-Overhaul-Kit/p/DZ10599"
     ],
-    "image": null,
+    "image": "/assets/part-dz10599-v2.webp",
     "imageSource": null,
     "stockQuantity": 2,
     "copy": [

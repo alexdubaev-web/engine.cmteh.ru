@@ -46,7 +46,7 @@ class SEO:
   return {'@context':'https://schema.org','@type':'Product','@id':self.base+path+'#product','name':self.product_name(p),'sku':p['sku'],'brand':{'@type':'Brand','name':p['brand']},'category':self.categories[p['category']][0],'description':p['copy'][0]+' '+p['copy'][1],'url':self.base+path,**({'image':self.base+p['image']} if p.get('image') else {}),'additionalProperty':[{'@type':'PropertyValue','name':'Номер для проверки','value':code} for code in p['codes'] if code!=p['sku']],'offers':offer}
  def identity(self):
   company=self.commerce['company']
-  organization={'@type':'Organization','@id':self.base+'/#organization','name':'СМ ТЕХНО','url':self.base+'/','logo':{'@type':'ImageObject','url':self.base+'/assets/logo.jpg'},'areaServed':{'@type':'Country','name':'Россия'}}
+  organization={'@type':'Organization','@id':self.base+'/#organization','name':'СМ ТЕХНО','url':self.base+'/','logo':{'@type':'ImageObject','url':self.base+'/assets/logo.webp'},'areaServed':{'@type':'Country','name':'Россия'}}
   for key,prop in [('legal_name','legalName'),('phone','telephone'),('email','email')]:
    if company.get(key):organization[prop]=company[key]
   if company.get('postal_address'):organization['address']={'@type':'PostalAddress','streetAddress':company['postal_address'],'addressCountry':'RU'}
@@ -56,7 +56,7 @@ class SEO:
   canonical=self.base+path;primary_image='/assets/hero.webp';image_alt='Иллюстрация компонентов дизельной топливной системы'
   product=self.byid.get(path.split('/')[2]) if path.startswith('/catalog/') and path.count('/')==3 else None
   if product:
-   primary_image=product.get('image') or '/assets/logo.jpg';image_alt=self.product_name(product) if product.get('image') else 'СМ ТЕХНО'
+   primary_image=product.get('image') or '/assets/logo.webp';image_alt=self.product_name(product) if product.get('image') else 'СМ ТЕХНО'
   organization,website=self.identity();nodes=[]
   if schema:
    incoming=schema.get('@graph',[schema]);nodes=[{k:v for k,v in n.items() if k!='@context'} for n in incoming if n.get('@type') not in ['Organization','WebSite','BreadcrumbList','WebPage']]
