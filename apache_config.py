@@ -7,7 +7,7 @@ def config(indexable,products):
   slug=p['id'];pattern=re.escape(slug)
   lines += [' RewriteCond %{REQUEST_URI} !^/catalog/'+pattern+'/$', ' RewriteRule ^catalog/'+pattern+'(?:/index\\.html|/?)$ /catalog/'+slug+'/ [R=301,L,NC]']
  lines += [' RewriteCond %{THE_REQUEST} \\s/+(.*/)?index\\.html(?:[?\\s]) [NC]',' RewriteRule ^(.*)index\\.html$ /$1 [R=301,L,NE]','</IfModule>',
- '<IfModule mod_setenvif.c>', ' SetEnvIfExpr "%{QUERY_STRING} =~ /(^|&)(q|sort|brand|filter|page|category)=/" seo_search', ' SetEnvIf Request_URI "^/(privacy|consent|404)/" seo_utility','</IfModule>',
+ '<IfModule mod_setenvif.c>', ' SetEnvIfExpr "%{QUERY_STRING} =~ /(^|&)(q|search|sort|brand|filter|page|category)=/" seo_search', ' SetEnvIf Request_URI "^/(privacy|consent|404)/" seo_utility','</IfModule>',
  '<IfModule mod_headers.c>',
  ' Header always set X-Content-Type-Options "nosniff"',' Header always set Referrer-Policy "strict-origin-when-cross-origin"',' Header always set X-Frame-Options "SAMEORIGIN"',' Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"',
  ' Header always set Content-Security-Policy "default-src \'self\'; script-src \'self\' https://mc.yandex.ru https://yastatic.net; style-src \'self\' \'unsafe-inline\'; img-src \'self\' data: https://mc.yandex.ru https://mc.yandex.com https://yastatic.net; font-src \'self\'; connect-src \'self\' https://mc.yandex.ru https://mc.yandex.com https://yastatic.net wss://mc.yandex.ru; frame-src \'self\' https://metrika.yandex.ru blob:; child-src \'self\' blob:; form-action \'self\'; base-uri \'self\'; frame-ancestors \'self\'"']

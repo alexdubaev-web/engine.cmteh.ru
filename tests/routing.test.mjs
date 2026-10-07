@@ -97,3 +97,21 @@ test('uppercase product URL canonicalizes in a single hop', async () => {
   assert.equal(response.status, 301);
   assert.equal(response.headers.get('location'), 'https://example.com/catalog/re507959/?utm_source=test');
 });
+test('functional search and filter parameters are noindex while canonical stays clean', async () => {
+  for (const query of ['q=bosch', 'search=bosch', 'brand=bosch&sort=price', 'q=0445120075&brand=bosch&sort=price&filter=stock&page=2&category=injectors&search=bosch']) {
+    const response = await productionWorker.fetch(new Request('https://example.com/catalog/?' + query));
+    assert.equal(response.status, 200, query);
+    assert.match(response.headers.get('x-robots-tag') ?? '', /noindex/ , query);
+    const html = await response.text();
+    assert.match(html, /<link rel="canonical" href="https:\/\/engine\.cmteh\.ru\/catalog\/"/, query);
+  }
+});
+test('ordinary tracking parameters and versioned assets remain available without query noindex', async () => {
+  const page = await productionWorker.fetch(new Request('https://example.com/catalog/?utm_source=mail&v=2'));
+  assert.equal(page.status, 200);
+  assert.equal(page.headers.get('x-robots-tag'), null);
+  const asset = await productionWorker.fetch(new Request('https://example.com/assets/style.css?v=2'));
+  assert.equal(asset.status, 200);
+  assert.match(asset.headers.get('content-type') ?? '', /text\/css/);
+  assert.equal(asset.headers.get('x-robots-tag'), null);
+});

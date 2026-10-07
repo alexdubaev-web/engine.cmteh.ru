@@ -170,7 +170,7 @@ final class Orders {
         foreach ($data['items'] as $p) $lines[]=$p['sku'].' | '.$p['brand'].' | '.$p['name'].' | '.$p['quantity'].' шт. | '.$p['price'].' ₽ / шт.';
         $lines[]='Итого по каталогу: '.$data['total'].' ₽. Цена, наличие и доставка требуют подтверждения.';
         $lines[]='Согласие: '.$data['consent']['version'].', '.$data['consent']['at'];
-        return ['subject'=>'СМ ТЕХНО — '.$label,'body'=>implode("\n",$lines)];
+        return ['subject'=>'СМ ТЕХНО - '.$label,'body'=>implode("\n",$lines)];
     }
     public function purge(): int {
         $cutoff=time()-max(1,(int)$this->config['retention_days'])*86400;
