@@ -60,6 +60,10 @@
     "dz10599": "InStock"
   },
   "yml_enabled": false,
+  "yandex_verification": {
+    "origin": "https://engine.cmteh.ru",
+    "code": "8639ec96f4827a9f"
+  },
   "company": {
     "legal_name": "",
     "phone": "",

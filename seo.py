@@ -86,7 +86,8 @@ class SEO:
   robots_tag='' if self.indexable and path not in UTILITIES else '<meta name="robots" content="'+robots+'">'
   keywords=[product['sku'],product['shortName']+' '+product['brand'],*product['codes'][1:4]] if product else []
   keyword_tag='<meta name="keywords" content="'+esc(', '.join(dict.fromkeys(keywords)))+'">' if keywords else ''
-  verify='<meta name="yandex-verification" content="'+esc(os.environ['YANDEX_VERIFICATION'])+'">' if os.environ.get('YANDEX_VERIFICATION') else ''
+  verification=os.environ['YANDEX_VERIFICATION'] if 'YANDEX_VERIFICATION' in os.environ else (self.commerce.get('yandex_verification',{}).get('code','') if self.indexable and self.base==self.commerce.get('yandex_verification',{}).get('origin') else '')
+  verify='<meta name="yandex-verification" content="'+esc(verification)+'">' if verification else ''
   og_type='article' if any(n.get('@type')=='Article' for n in nodes) else 'website'
   article_meta='<meta property="article:modified_time" content="'+modified+'">' if og_type=='article' else ''
   font='/assets/manrope-400.woff2'
