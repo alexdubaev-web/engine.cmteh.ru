@@ -1,7 +1,7 @@
 {
   "origin": "https://engine.cmteh.ru",
   "indexable": true,
-  "generated_at": "2026-10-07T08:14:15Z",
+  "generated_at": "2026-10-07T10:25:17Z",
   "urls": [
     "https://engine.cmteh.ru/",
     "https://engine.cmteh.ru/catalog/",
@@ -83,7 +83,7 @@
     "https://engine.cmteh.ru/contacts/"
   ],
   "revisions": {
-    "https://engine.cmteh.ru/": "2a3cbbed135b4350be5221529df5011a",
+    "https://engine.cmteh.ru/": "1dce0fae7bba454892fe985c3d3fcfa8",
     "https://engine.cmteh.ru/catalog/": "639869c4798f4ce8b6acdd86b58fdba0",
     "https://engine.cmteh.ru/category/injectors/": "5973898f14024ebb915280b730b4af70",
     "https://engine.cmteh.ru/category/pumps/": "89c1f539267f46f880eb8aacbef6d473",
