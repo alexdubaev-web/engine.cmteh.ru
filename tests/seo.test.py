@@ -12,6 +12,8 @@ def graph(h):
  raw=json.loads(h.xpath('//script[@type="application/ld+json"]/text()')[0]);return raw.get('@graph',[raw])
 for f in out.rglob('*.html'):
  h=html.fromstring(f.read_text(encoding="utf-8"));path='/'+str(f.parent.relative_to(out)).strip('.')+'/' if f.parent!=out else '/';path=path.replace('//','/')
+ icons=h.xpath('//link[@rel="icon"]');require(len(icons)==3 and all(icon.get('href','').startswith('/assets/favicon') and '?v=' in icon.get('href','') for icon in icons),path+' versioned raster favicon set missing')
+ require([icon.get('type') for icon in icons]==['image/webp','image/webp','image/x-icon'],path+' WebP or ICO browser fallback missing')
  desc=h.xpath('string(//meta[@name="description"]/@content)');descriptions.append(desc);h1s.append(h.xpath('string(//h1)'));heads.append(h.xpath('string(//title)'))
  require(bool(desc),path+' description missing');require(len(h.xpath('//meta[@name="description"]'))==1,path+' duplicate meta')
  require(bool(h.xpath('//meta[@property="og:site_name"]')),path+' missing OG site name')
@@ -60,5 +62,6 @@ require(len(sitemap.xpath('//s:lastmod',namespaces=ns))==len(urls),'missing trut
 require(len(sitemap.xpath('//i:image',namespaces=ns))==58,'image sitemap does not cover all 58 product photos')
 require(all(urlsplit(u).path.endswith('/') for u in urls),'noncanonical URL in sitemap')
 require((out/'robots.txt').stat().st_size<500_000,'robots oversized')
+require((out/'assets/favicon-32.webp').is_file() and (out/'assets/favicon-64.webp').is_file() and (out/'assets/favicon.ico').is_file(),'optimized WebP and ICO favicon assets missing')
 assert not errors,'\n'.join(errors)
 print(f'PASS SEO: {len(heads)} pages, 58 unique product texts, metadata/H1, breadcrumbs, schema parity, precise prices, utility noindex, 58 image sitemap entries')

@@ -168,8 +168,9 @@ test('add followed immediately by submit includes the pending cart mutation', as
   const reachedOrder = await waitFor(() => typeof resolveOrder === 'function');
   assert.ok(reachedOrder, `status=${form.querySelector('.form-status').textContent}`);
   assert.deepEqual(payload.items, [{ id: 'product-a', quantity: 1 }]);
-  resolveOrder({ ok: true, json: async () => ({ ok: true, message: 'Accepted', requestId: 'request-123' }) });
-  await waitFor(() => form.querySelector('.form-status').textContent.includes('request-1'));
+  resolveOrder({ ok: true, json: async () => ({ ok: true, message: 'Accepted', requestId: 'request-123', orderNumber: 42, createdAt: Date.parse('2026-10-06T21:30:00Z') / 1000 }) });
+  await waitFor(() => form.querySelector('.form-status').textContent.includes('Заявка № 42 от 07.10.2026'));
+  assert.match(form.querySelector('.form-status').textContent, /Заявка № 42 от 07\.10\.2026/);
   await tick();
   tab.dom.window.close();
 });
@@ -191,7 +192,8 @@ test('successful submit preserves cart and form edits made while the request is 
   form.elements.name.value = 'Edited while sending';
   form.elements.name.dispatchEvent(new tab.window.Event('input', { bubbles: true }));
   resolveOrder({ ok: true, json: async () => ({ ok: true, message: 'Accepted', requestId: 'request-123' }) });
-  await waitFor(() => tab.document.querySelector('.form-status').textContent.includes('request-1'));
+  await waitFor(() => tab.document.querySelector('.form-status').textContent.includes('Accepted'));
+  assert.doesNotMatch(tab.document.querySelector('.form-status').textContent, /Старая заявка от|request-123/);
   assert.match(document.querySelector('#cart-items').textContent, /Part A/);
   assert.match(document.querySelector('#cart-items').textContent, /Part B/);
   assert.equal(form.elements.name.value, 'Edited while sending');
@@ -215,7 +217,8 @@ test('clear uses the submitted revision and does not erase an ABA remove-and-rea
   tab.document.querySelector('[data-add="product-a"]').click();
   await waitFor(() => /Part A/.test(tab.document.querySelector('#cart-items').textContent));
   resolveOrder({ ok: true, json: async () => ({ ok: true, message: 'Accepted', requestId: 'request-123' }) });
-  await waitFor(() => form.querySelector('.form-status').textContent.includes('request-1'));
+  await waitFor(() => form.querySelector('.form-status').textContent.includes('Accepted'));
+  assert.doesNotMatch(form.querySelector('.form-status').textContent, /Старая заявка от|request-123/);
   assert.match(tab.document.querySelector('#cart-items').textContent, /Part A/);
   await tick();
   tab.dom.window.close();

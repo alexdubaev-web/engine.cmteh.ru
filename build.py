@@ -138,7 +138,6 @@ with pipeline_lock(ROOT):
  page('/404/','Страница не найдена — СМ ТЕХНО','Вернитесь в каталог запчастей СМ ТЕХНО.', crumbs([('Страница не найдена',None)])+'<div class="section wrap"><h1>Такой страницы нет</h1><p style="margin:25px 0">Возможно, ссылка изменилась. Найдите нужную запчасть в каталоге.</p><a class="btn" href="/catalog/">Открыть каталог</a></div>')
  paths.remove('/404/')
  seo.finish(paths)
- (OUT/'assets/favicon.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#f9dd16"/><text x="32" y="44" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="31" fill="#202521">СМ</text></svg>',encoding='utf-8')
  (stage/'data/catalog-built.json').write_text(json.dumps(P,ensure_ascii=False,indent=2),encoding='utf-8')
  (stage/'data/seo-catalog.json').write_text(json.dumps([{'sku':p['sku'],'path':'/catalog/'+p['id']+'/','title':p['shortName']+' '+p['brand']+' '+p['sku']+' — цена | СМ ТЕХНО','description':product_description(p),'h1':seo.product_name(p),'image_alt':seo.product_name(p) if p.get('image') else None,'paragraphs':p['copy'][:2],'stockQuantity':p['stockQuantity'],'availability':seo.availability(p)} for p in P],ensure_ascii=False,indent=2),encoding='utf-8')
  (stage/'backend').mkdir()

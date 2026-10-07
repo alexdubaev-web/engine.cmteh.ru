@@ -31,8 +31,26 @@ final class Orders {
             && is_file(__DIR__.'/../public_html/consent/index.html');
     }
     public function migrate(): void {
-        $this->db->exec("CREATE TABLE IF NOT EXISTS orders (id VARCHAR(36) PRIMARY KEY, fingerprint VARCHAR(64) NOT NULL, created_at BIGINT NOT NULL, payload MEDIUMTEXT NOT NULL, mail_status VARCHAR(16) NOT NULL, attempts INTEGER NOT NULL DEFAULT 0, next_attempt BIGINT NOT NULL, lease VARCHAR(64) NULL, lease_until BIGINT NOT NULL DEFAULT 0)");
+        $driver=$this->db->getAttribute(PDO::ATTR_DRIVER_NAME);
+        $this->db->exec("CREATE TABLE IF NOT EXISTS orders (id VARCHAR(36) PRIMARY KEY, fingerprint VARCHAR(64) NOT NULL, created_at BIGINT NOT NULL, payload MEDIUMTEXT NOT NULL, mail_status VARCHAR(16) NOT NULL, attempts INTEGER NOT NULL DEFAULT 0, next_attempt BIGINT NOT NULL, lease VARCHAR(64) NULL, lease_until BIGINT NOT NULL DEFAULT 0, order_number BIGINT NULL)");
+        if ($driver==='mysql') {
+            $column=$this->db->query("SHOW COLUMNS FROM orders LIKE 'order_number'")->fetch(PDO::FETCH_ASSOC);
+            if (!$column) $this->db->exec('ALTER TABLE orders ADD COLUMN order_number BIGINT NULL');
+        } else {
+            $columns=$this->db->query('PRAGMA table_info(orders)')->fetchAll(PDO::FETCH_COLUMN,1);
+            if (!in_array('order_number',$columns,true)) $this->db->exec('ALTER TABLE orders ADD COLUMN order_number BIGINT NULL');
+        }
+        if ($driver==='mysql') {
+            $index=$this->db->query("SHOW INDEX FROM orders WHERE Key_name='orders_order_number_unique'")->fetch(PDO::FETCH_ASSOC);
+            if (!$index) $this->db->exec('CREATE UNIQUE INDEX orders_order_number_unique ON orders(order_number)');
+        } else $this->db->exec('CREATE UNIQUE INDEX IF NOT EXISTS orders_order_number_unique ON orders(order_number)');
         $this->db->exec("CREATE TABLE IF NOT EXISTS rate_limits (bucket VARCHAR(64) PRIMARY KEY, hits INTEGER NOT NULL, expires_at BIGINT NOT NULL)");
+        $this->db->exec($driver==='mysql'
+            ? 'CREATE TABLE IF NOT EXISTS order_number_counter (id TINYINT PRIMARY KEY, last_number BIGINT NOT NULL) ENGINE=InnoDB'
+            : 'CREATE TABLE IF NOT EXISTS order_number_counter (id INTEGER PRIMARY KEY, last_number BIGINT NOT NULL)');
+        $this->db->exec($driver==='mysql'
+            ? 'INSERT INTO order_number_counter (id,last_number) SELECT 1,COALESCE(MAX(order_number),0) FROM orders ON DUPLICATE KEY UPDATE id=VALUES(id)'
+            : 'INSERT INTO order_number_counter (id,last_number) SELECT 1,COALESCE(MAX(order_number),0) FROM orders WHERE true ON CONFLICT(id) DO NOTHING');
     }
     private function encrypt(array $data): string {
         $nonce = random_bytes(SODIUM_CRYPTO_SECRETBOX_NONCEBYTES);
@@ -44,6 +62,23 @@ final class Orders {
         $plain = sodium_crypto_secretbox_open(substr($raw,24), substr($raw,0,24), $this->key);
         if ($plain === false) throw new RuntimeException('Invalid encryption key');
         return json_decode($plain, true, 512, JSON_THROW_ON_ERROR);
+    }
+    private function acceptedOrder(string $id, ?int $number, int $createdAt, string $message): array {
+        return ['ok'=>true,'requestId'=>$id,'orderNumber'=>$number,'createdAt'=>$createdAt,'message'=>$message];
+    }
+    private function orderLabel(?int $number, int $createdAt): string {
+        $date=(new DateTimeImmutable('@'.$createdAt))->setTimezone(new DateTimeZone('Europe/Moscow'))->format('d.m.Y');
+        return $number===null?'Старая заявка от '.$date:'Заявка № '.$number.' от '.$date;
+    }
+    private function nextOrderNumber(): int {
+        $driver=$this->db->getAttribute(PDO::ATTR_DRIVER_NAME);
+        $q=$this->db->query('SELECT last_number FROM order_number_counter WHERE id=1'.($driver==='mysql'?' FOR UPDATE':''));
+        $current=$q->fetchColumn();
+        if ($current===false) throw new RuntimeException('Order number counter missing');
+        $number=(int)$current+1;
+        $q=$this->db->prepare('UPDATE order_number_counter SET last_number=? WHERE id=1');$q->execute([$number]);
+        if ($q->rowCount()!==1) throw new RuntimeException('Order number counter update failed');
+        return $number;
     }
     public function accept(array $d, string $ip, string $consentHtml): array {
         $id = $d['requestId'] ?? '';
@@ -68,12 +103,17 @@ final class Orders {
         if (!$intentItems && preg_match_all('/./us',$d['comment'])<5) throw new ApiError(400,'Добавьте товары или опишите нужную деталь.');
         $intent = ['name'=>$d['name'],'contact'=>$d['contact'],'comment'=>$d['comment'],'items'=>$intentItems,'consentVersion'=>$this->config['consent_version']];
         $fingerprint = hash_hmac('sha256',json_encode($intent,JSON_UNESCAPED_UNICODE|JSON_THROW_ON_ERROR),$this->key);
+        $driver=$this->db->getAttribute(PDO::ATTR_DRIVER_NAME);
         $this->db->beginTransaction();
+        if ($driver==='sqlite') {
+            $lock=$this->db->exec('UPDATE order_number_counter SET last_number=last_number WHERE id=1');
+            if ($lock!==1) { $this->db->rollBack(); throw new RuntimeException('Order number counter missing'); }
+        }
         try {
-            $q=$this->db->prepare('SELECT payload FROM orders WHERE id=?'); $q->execute([$id]); $old=$q->fetchColumn();
+            $q=$this->db->prepare('SELECT payload,created_at,order_number FROM orders WHERE id=?'); $q->execute([$id]); $old=$q->fetch(PDO::FETCH_ASSOC);
             if ($old !== false) {
-                if (!$this->sameIntent($this->decrypt($old),$intent)) throw new ApiError(409,'Этот номер уже использован. Измените заявку и повторите отправку.');
-                $this->db->commit(); return ['ok'=>true,'requestId'=>$id,'message'=>'Заявка уже зарегистрирована.'];
+                if (!$this->sameIntent($this->decrypt($old['payload']),$intent)) throw new ApiError(409,'Этот номер уже использован. Измените заявку и повторите отправку.');
+                $this->db->commit(); return $this->acceptedOrder($id,$old['order_number']===null?null:(int)$old['order_number'],(int)$old['created_at'],'Заявка уже зарегистрирована.');
             }
             $clean = []; $total = 0;
             foreach ($intentItems as $item) {
@@ -89,17 +129,18 @@ final class Orders {
             $q=$this->db->prepare('SELECT hits FROM rate_limits WHERE bucket=?'); $q->execute([$bucket]);
             if ((int)$q->fetchColumn()>($this->config['rate_limit'] ?? 8)) throw new ApiError(429,'Слишком много заявок. Попробуйте через 15 минут.');
             $core['consent']=['given'=>true,'at'=>gmdate('c',$now),'version'=>$this->config['consent_version'],'sha256'=>hash('sha256',$consentHtml),'document'=>$consentHtml];
-            $q=$this->db->prepare("INSERT INTO orders (id,fingerprint,created_at,payload,mail_status,next_attempt) VALUES (?,?,?,?,'pending',?)");
-            $q->execute([$id,$fingerprint,$now,$this->encrypt($core),$now]); $this->db->commit();
+            $orderNumber=$this->nextOrderNumber();
+            $q=$this->db->prepare("INSERT INTO orders (id,fingerprint,created_at,payload,mail_status,next_attempt,order_number) VALUES (?,?,?,?,'pending',?,?)");
+            $q->execute([$id,$fingerprint,$now,$this->encrypt($core),$now,$orderNumber]); $this->db->commit();
         } catch (Throwable $e) { if ($this->db->inTransaction()) $this->db->rollBack();
             // Concurrent retry of the same id: acknowledge only identical content.
             if ($e instanceof PDOException && in_array((string)$e->getCode(), ['23000','23505'],true)) {
-                $q=$this->db->prepare('SELECT payload FROM orders WHERE id=?'); $q->execute([$id]); $old=$q->fetchColumn();
-                if (is_string($old) && $this->sameIntent($this->decrypt($old),$intent)) return ['ok'=>true,'requestId'=>$id,'message'=>'Заявка уже зарегистрирована.'];
+                $q=$this->db->prepare('SELECT payload,created_at,order_number FROM orders WHERE id=?'); $q->execute([$id]); $old=$q->fetch(PDO::FETCH_ASSOC);
+                if (is_array($old) && $this->sameIntent($this->decrypt($old['payload']),$intent)) return $this->acceptedOrder($id,$old['order_number']===null?null:(int)$old['order_number'],(int)$old['created_at'],'Заявка уже зарегистрирована.');
                 throw new ApiError(409,'Этот номер уже использован другой заявкой.');
             } throw $e;
         }
-        return ['ok'=>true,'requestId'=>$id,'message'=>'Заявка зарегистрирована. Мы ответим по указанному контакту.'];
+        return $this->acceptedOrder($id,$orderNumber,$now,'Заявка зарегистрирована. Мы ответим по указанному контакту.');
     }
     public function deliver(callable $send, int $limit=20): array {
         $now=time(); $q=$this->db->prepare("SELECT id FROM orders WHERE mail_status IN ('pending','retry','sending') AND next_attempt<=? AND lease_until<? ORDER BY created_at LIMIT ".max(1,min(100,$limit))); $q->execute([$now,$now]); $ids=$q->fetchAll(PDO::FETCH_COLUMN); $sent=0; $failed=0;
@@ -119,18 +160,34 @@ final class Orders {
         $m->isSMTP(); $m->Host=$s['host']; $m->Port=(int)$s['port']; $m->SMTPAuth=true; $m->Username=$s['username']; $m->Password=$s['password']; $m->SMTPSecure=$s['encryption']; $m->Timeout=5; $m->getSMTPInstance()->Timelimit=10;
         $m->CharSet='UTF-8'; $m->setFrom($s['from'],$s['from_name']); $m->addAddress($s['to']);
         if (filter_var($data['contact'],FILTER_VALIDATE_EMAIL)) $m->addReplyTo($data['contact']);
-        $m->Subject='СМ ТЕХНО — заявка '.$id; $m->MessageID='<'.$id.'@'.parse_url($this->config['origin'],PHP_URL_HOST).'>';
-        $lines=['Заявка: '.$id,'Имя: '.$data['name'],'Контакт: '.$data['contact'],'Комментарий: '.$data['comment'],''];
+        $message=$this->mailMessage($id,$data);
+        $m->Subject=$message['subject']; $m->MessageID='<'.$id.'@'.parse_url($this->config['origin'],PHP_URL_HOST).'>';
+        $m->Body=$message['body']; $m->send();
+    }
+    public function mailMessage(string $id, array $data): array {
+        $reference=$this->mailContent($id);$label=$reference['label'];
+        $lines=[$label,'Имя: '.$data['name'],'Контакт: '.$data['contact'],'Комментарий: '.$data['comment'],''];
         foreach ($data['items'] as $p) $lines[]=$p['sku'].' | '.$p['brand'].' | '.$p['name'].' | '.$p['quantity'].' шт. | '.$p['price'].' ₽ / шт.';
         $lines[]='Итого по каталогу: '.$data['total'].' ₽. Цена, наличие и доставка требуют подтверждения.';
-        $lines[]='Согласие: '.$data['consent']['version'].', '.$data['consent']['at']; $m->Body=implode("\n",$lines); $m->send();
+        $lines[]='Согласие: '.$data['consent']['version'].', '.$data['consent']['at'];
+        return ['subject'=>'СМ ТЕХНО — '.$label,'body'=>implode("\n",$lines)];
     }
     public function purge(): int {
         $cutoff=time()-max(1,(int)$this->config['retention_days'])*86400;
         $q=$this->db->prepare('DELETE FROM orders WHERE created_at<? AND lease_until<?'); $q->execute([$cutoff,time()]); $count=$q->rowCount();
         $q=$this->db->prepare('DELETE FROM rate_limits WHERE expires_at<?'); $q->execute([time()]); return $count;
     }
-    public function listing(): array { return $this->db->query('SELECT id,created_at,mail_status,attempts FROM orders ORDER BY created_at DESC LIMIT 100')->fetchAll(PDO::FETCH_ASSOC); }
+    public function listing(): array {
+        $rows=$this->db->query('SELECT id,created_at,order_number,mail_status,attempts FROM orders ORDER BY created_at DESC LIMIT 100')->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($rows as &$row) $row['reference']=$this->orderLabel($row['order_number']===null?null:(int)$row['order_number'],(int)$row['created_at']);
+        unset($row);return $rows;
+    }
+    public function mailContent(string $id): array {
+        $q=$this->db->prepare('SELECT payload,order_number,created_at FROM orders WHERE id=?');$q->execute([$id]);$row=$q->fetch(PDO::FETCH_ASSOC);
+        if (!$row) throw new RuntimeException('Order not found');
+        $row['label']=$this->orderLabel($row['order_number']===null?null:(int)$row['order_number'],(int)$row['created_at']);
+        return $row;
+    }
     public function delete(string $id): int { $q=$this->db->prepare('DELETE FROM orders WHERE id=? AND lease_until<?'); $q->execute([$id,time()]); return $q->rowCount(); }
     public function export(string $id): array { $q=$this->db->prepare('SELECT payload FROM orders WHERE id=?'); $q->execute([$id]); $value=$q->fetchColumn(); if ($value===false) throw new RuntimeException('Order not found'); return $this->decrypt($value); }
     private function sameIntent(array $payload,array $intent): bool {
