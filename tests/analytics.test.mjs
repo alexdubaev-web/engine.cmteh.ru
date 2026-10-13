@@ -89,7 +89,7 @@ test('stored acceptance is probed without extending its age; failed refusal cann
   f.events.preferences();
   f.events.deny();
   assert.equal(f.win.ym.a.some(args => args[1] === 'destruct'), true);
-  assert.match(f.panel.querySelector('[data-analytics-status]').textContent, /не смог сохранить отказ/);
+  assert.match(f.panel.querySelector('[data-analytics-status]').textContent, /не сохранил ваш выбор/);
   assert.equal(f.panel.hidden, false);
 
   const reload = fixture({ stored: f.values.get(KEY) });

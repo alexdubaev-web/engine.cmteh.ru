@@ -1,0 +1,40 @@
+# Редактура текста: выпуск 13 октября 2026
+
+Удалены публичные даты внутренней проверки. Переписаны 58 карточек, главная, категории, страницы брендов, информационные разделы, 4 статьи и сообщения интерфейса. Сохранены 151 технический факт, числовые значения, источники во внутренних данных, цены, остатки, контакты и юридические документы.
+
+Независимый обзор завершён. Исправлены три замечания: уточнена каталожная масса John Deere, описание маскирования полей для Метрики и инструкция для сверки номера насоса 0445020110.
+
+## Локальная проверка
+
+Единая команда проверки перед публикацией (PowerShell):
+
+```powershell
+python .runtime/technical-enrichment/verify-human-facts.py; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }; python tests/seo.test.py; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }; python tests/catalog.test.py; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }; npm test; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }; git diff --check
+```
+
+Результат: 81 страница, 58 товаров, 151 факт; SEO и каталог прошли, 31 тест JavaScript прошёл. Проверены мобильные главная и карточка, десктопная страница компании. Дополнительная проверка готового пакета не нашла служебных дат, публичных источников и длинных тире.
+
+Сборка: `PUBLIC_SITE_URL=https://engine.cmteh.ru`, `INDEXABLE=true`, `python build.py`, `python package_ru.py --archive engine-cmteh-ru-human-copy-2026-10-13.zip`.
+
+## Пакет и публикация
+
+- ZIP: `engine-cmteh-ru-human-copy-2026-10-13.zip`.
+- SHA256: `6cc87b69a09880dbef6b3594290b3839afc01a33ed90cdbb4314b1e603f80d21`.
+- 176 файлов в архиве: 173 файла сайта и 3 документа.
+- План изменяет 85 публичных файлов: 81 HTML, 3 файла CSS/JS и sitemap. Backend и API совпадают с предыдущим выпуском.
+- Все 173 исходных серверных хеша совпали с предыдущим проверенным пакетом `4250b85dd4b5d213c0e4a10375c34c10e894523ebbb6cedbf697571f605a96aa`.
+- Helper: `/var/www/u2797422/data/.engine-cmteh-backups/seo-upload-20261013-human-6cc87b69/human_copy_deploy.py`.
+- SHA256 helper: `e7b6f8475698de8345c75101dd52bf88630cedc9251cbccf2f4b460525be3af4`. Изменён только хеш разрешённого пакета; обратная замена воспроизводит исходный helper побайтово.
+- Manifest: `/var/www/u2797422/data/.engine-cmteh-backups/seo-20261013T025730Z-1249411/manifest.json`.
+
+План подготовлен и проверен; результат публикации и HTTPS-проверки будет дописан после выполнения.
+
+## Откат
+
+При необходимости запустить на сервере:
+
+```sh
+python3 /var/www/u2797422/data/.engine-cmteh-backups/seo-upload-20261013-human-6cc87b69/human_copy_deploy.py rollback /var/www/u2797422/data/.engine-cmteh-backups/seo-20261013T025730Z-1249411/manifest.json
+```
+
+Перед заменой helper сохраняет исходные файлы в приватную резервную копию, контролирует конфигурацию и cron. Откат откажется перезаписывать файлы при расхождении с опубликованной версией.

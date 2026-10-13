@@ -19,8 +19,8 @@
         "source_url": "https://shop.deere.com/uk/product/RE539764%3A-Fuel-Transfer-Pump%2C-Fuel-Filter-To-Engine/p/RE539764"
       },
       {
-        "label": "Примеры моделей из каталога",
-        "value": "John Deere 250D, 260E, 350G, 724K; подбор по серийному номеру",
+        "label": "Примеры техники",
+        "value": "John Deere 250D, 260E, 350G, 724K (сверьте по серийному номеру)",
         "source_url": "https://shop.deere.com/uk/product/RE539764%3A-Fuel-Transfer-Pump%2C-Fuel-Filter-To-Engine/p/RE539764"
       }
     ],
@@ -31,7 +31,7 @@
         "publisher": "John Deere"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники."
+    "selection_note": "Перед заказом сверим модель и серийный номер техники."
   },
   "RE507959": {
     "checked_at": "2026-10-13",
@@ -48,8 +48,8 @@
         "source_url": "https://shop.deere.com/uk/product/RE507959%3A-Fuel-Injection-Pump/p/RE507959"
       },
       {
-        "label": "Примеры моделей из каталога",
-        "value": "John Deere 5E-850, 6B-954, 120D, 310J; подбор по серийному номеру",
+        "label": "Примеры техники",
+        "value": "John Deere 5E-850, 6B-954, 120D, 310J (сверьте по серийному номеру)",
         "source_url": "https://shop.deere.com/uk/product/RE507959%3A-Fuel-Injection-Pump/p/RE507959"
       }
     ],
@@ -60,7 +60,7 @@
         "publisher": "John Deere"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники."
+    "selection_note": "Перед заказом сверим модель и серийный номер техники."
   },
   "DZ112112": {
     "checked_at": "2026-10-13",
@@ -73,12 +73,12 @@
       },
       {
         "label": "Масса по каталогу",
-        "value": "около 0,695 кг (1,533 фунта по каталогу)",
+        "value": "около 0,695 кг (1,533 фунта)",
         "source_url": "https://shop.deere.com/us/product/DZ112112%3A-Nozzle-Kit/p/DZ112112"
       },
       {
-        "label": "Примеры моделей из каталога",
-        "value": "John Deere 8R 230, 8R 410, 8RT 310, 8RX 410; подбор по серийному номеру",
+        "label": "Примеры техники",
+        "value": "John Deere 8R 230, 8R 410, 8RT 310, 8RX 410 (сверьте по серийному номеру)",
         "source_url": "https://shop.deere.com/us/product/DZ112112%3A-Nozzle-Kit/p/DZ112112"
       }
     ],
@@ -89,7 +89,7 @@
         "publisher": "John Deere"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники. Точный состав поставки нужно уточнить при заказе."
+    "selection_note": "Перед заказом сверим исполнение и серийный номер техники. Состав комплекта уточните отдельно."
   },
   "DZ128161": {
     "checked_at": "2026-10-13",
@@ -106,8 +106,8 @@
         "source_url": "https://shop.deere.com/br/pt/product/DZ128161%3A-Bombade-combust%C3%ADvel/p/DZ128161"
       },
       {
-        "label": "Примеры моделей из каталога",
-        "value": "John Deere 7R 290, 7R 310, 8R 230, 8R 340; подбор по серийному номеру",
+        "label": "Примеры техники",
+        "value": "John Deere 7R 290, 7R 310, 8R 230, 8R 340 (сверьте по серийному номеру)",
         "source_url": "https://shop.deere.com/br/pt/product/DZ128161%3A-Bombade-combust%C3%ADvel/p/DZ128161"
       }
     ],
@@ -118,7 +118,7 @@
         "publisher": "John Deere"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники."
+    "selection_note": "Перед заказом сверим модель и серийный номер техники."
   },
   "RE526588": {
     "checked_at": "2026-10-13",
@@ -150,7 +150,7 @@
         "source_url": "https://shop.deere.com/uk/product/RE526588%3A-Engine-Controller%2C-12-Volts-24-Volts%2C-Level-16/p/RE526588"
       },
       {
-        "label": "Восстановленное исполнение в каталоге",
+        "label": "Восстановленное исполнение",
         "value": "REMAN SE502802",
         "source_url": "https://shop.deere.com/uk/product/RE526588%3A-Engine-Controller%2C-12-Volts-24-Volts%2C-Level-16/p/RE526588"
       }
@@ -174,13 +174,13 @@
         "source_url": "https://shop.deere.com/product/DZ128160%3A-Fuel-Pump/p/DZ128160"
       },
       {
-        "label": "Примеры моделей из каталога",
-        "value": "John Deere 6M 145, 6R 145, 7R 210, 6175R; подбор по серийному номеру",
+        "label": "Примеры техники",
+        "value": "John Deere 6M 145, 6R 145, 7R 210, 6175R (сверьте по серийному номеру)",
         "source_url": "https://shop.deere.com/product/DZ128160%3A-Fuel-Pump/p/DZ128160"
       },
       {
         "label": "Каталожная замена",
-        "value": "Указан John Deere как замена DZ123516",
+        "value": "John Deere заменил DZ123516",
         "source_url": "https://shop.deere.com/uk/product/DZ123516%3A-Fuel-Injection-Pump/p/DZ123516"
       }
     ],
@@ -196,7 +196,7 @@
         "publisher": "John Deere"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники."
+    "selection_note": "Перед заказом сверим модель и серийный номер техники."
   },
   "DZ100218": {
     "checked_at": "2026-10-13",
@@ -213,8 +213,8 @@
         "source_url": "https://shop.deere.com/uk/product/DZ100218%3A-Fuel-Injection-Nozzle-Kit/p/DZ100218"
       },
       {
-        "label": "Примеры моделей из каталога",
-        "value": "John Deere 4730, 4830, 9560 STS, 9570 STS; подбор по серийному номеру",
+        "label": "Примеры техники",
+        "value": "John Deere 4730, 4830, 9560 STS, 9570 STS (сверьте по серийному номеру)",
         "source_url": "https://shop.deere.com/uk/product/DZ100218%3A-Fuel-Injection-Nozzle-Kit/p/DZ100218"
       }
     ],
@@ -225,7 +225,7 @@
         "publisher": "John Deere"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники. Точный состав поставки нужно уточнить при заказе."
+    "selection_note": "Перед заказом сверим исполнение и серийный номер техники. Состав комплекта уточните отдельно."
   },
   "DZ111136": {
     "checked_at": "2026-10-13",
@@ -242,13 +242,13 @@
         "source_url": "https://shop.deere.com/br/pt/product/DZ111136%3A-Valvula-de-Controle-para-Controle-de-Fluxo-de-%C3%93leo-do-Sistema-Hidr%C3%A1ulico-para-Tratores-Agr%C3%ADcolas/p/DZ111136"
       },
       {
-        "label": "Примеры моделей из каталога",
-        "value": "John Deere 7R 210, 8R 230, 210G, 524K; подбор по серийному номеру",
+        "label": "Примеры техники",
+        "value": "John Deere 7R 210, 8R 230, 210G, 524K (сверьте по серийному номеру)",
         "source_url": "https://shop.deere.com/br/pt/product/DZ111136%3A-Valvula-de-Controle-para-Controle-de-Fluxo-de-%C3%93leo-do-Sistema-Hidr%C3%A1ulico-para-Tratores-Agr%C3%ADcolas/p/DZ111136"
       },
       {
         "label": "Каталожная замена",
-        "value": "Указан John Deere как замена RE536278",
+        "value": "John Deere заменил RE536278",
         "source_url": "https://shop.deere.com/us/product/RE536278%3A-Control-Valve/p/RE536278"
       }
     ],
@@ -269,7 +269,7 @@
         "publisher": "John Deere"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники."
+    "selection_note": "Перед заказом сверим модель и серийный номер техники."
   },
   "DZ10599": {
     "checked_at": "2026-10-13",
@@ -286,8 +286,8 @@
         "source_url": "https://shop.deere.com/uk/product/DZ10599%3A-Engine-Overhaul-Kit/p/DZ10599"
       },
       {
-        "label": "Примеры моделей из каталога",
-        "value": "John Deere 8245R, 8330, 9560 STS, S660; подбор по серийному номеру",
+        "label": "Примеры техники",
+        "value": "John Deere 8245R, 8330, 9560 STS, S660 (сверьте по серийному номеру)",
         "source_url": "https://shop.deere.com/uk/product/DZ10599%3A-Engine-Overhaul-Kit/p/DZ10599"
       }
     ],
@@ -298,35 +298,35 @@
         "publisher": "John Deere"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники. Точный состав поставки нужно уточнить при заказе."
+    "selection_note": "Перед заказом сверим исполнение и серийный номер техники. Состав комплекта уточните отдельно."
   },
   "260100-4010": {
     "checked_at": "2026-10-13",
     "status": "unverified",
     "facts": [],
     "sources": [],
-    "selection_note": "При подборе сверим по фото маркировки тип насоса, двигатель и применяемость."
+    "selection_note": "Пришлите фото маркировки и данные двигателя. проверим тип насоса и применяемость."
   },
   "260100-6010": {
     "checked_at": "2026-10-13",
     "status": "unverified",
     "facts": [],
     "sources": [],
-    "selection_note": "При подборе сверим по фото маркировки связь с OEM-номером и применяемость."
+    "selection_note": "Пришлите фото маркировки и OEM-номер. сверим исполнение насоса и применяемость."
   },
   "8980436870": {
     "checked_at": "2026-10-13",
     "status": "unverified",
     "facts": [],
     "sources": [],
-    "selection_note": "При подборе сверим по фото маркировки тип детали и её связь с номером Isuzu."
+    "selection_note": "Пришлите фото маркировки и модели двигателя Isuzu. уточним тип детали и соответствие номера."
   },
   "5620004100": {
     "checked_at": "2026-10-13",
     "status": "unverified",
     "facts": [],
     "sources": [],
-    "selection_note": "При подборе сверим по фото маркировки точное обозначение: 5620004100 или 562000410."
+    "selection_note": "Пришлите фото маркировки: проверим, указан номер 5620004100 или 562000410."
   },
   "7206-0460": {
     "checked_at": "2026-10-13",
@@ -334,12 +334,12 @@
     "facts": [
       {
         "label": "Тип узла",
-        "value": "По каталогу Ditex: клапан управления распылителем; версия 7206-0460-12B1.",
+        "value": "клапан управления распылителем; исполнение 7206-0460-12B1.",
         "source_url": "https://www.ditex.it/dms/sito_ditex/documenti/Listino%20Delphi%20-%20Ricambi.pdf"
       },
       {
         "label": "Применяемость",
-        "value": "По каталогу Oto Perk: Delphi Smart Injector для DAF Euro 5.",
+        "value": "Delphi Smart Injector для DAF Euro 5.",
         "source_url": "https://www.eurodiesel.com/uploads/pdf/2UNIT-INJECTOR-Catalog-Fast-Moving-Items-2019-pdf_1554203639.pdf"
       }
     ],
@@ -355,7 +355,7 @@
         "publisher": "Oto Perk / EuroDiesel"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники."
+    "selection_note": "Перед заказом сверим маркировку детали и исполнение двигателя."
   },
   "28272472": {
     "checked_at": "2026-10-13",
@@ -363,12 +363,12 @@
     "facts": [
       {
         "label": "Система впрыска",
-        "value": "По каталогу Merlin Diesel: Common Rail, DFI 1.5.2.",
+        "value": "Common Rail, DFI 1.5.2.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf"
       },
       {
         "label": "OEM-номер",
-        "value": "По каталогу Merlin Diesel: Mercedes-Benz A6510702387.",
+        "value": "Mercedes-Benz A6510702387.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf"
       }
     ],
@@ -387,17 +387,17 @@
     "facts": [
       {
         "label": "Тип насоса",
-        "value": "По каталогу Merlin Diesel: DP210.",
+        "value": "DP210.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf"
       },
       {
         "label": "Применяемость",
-        "value": "По каталогу Merlin Diesel: JCB TC Full Rate, 74,5 кВт.",
+        "value": "JCB TC Full Rate, 74,5 кВт.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf"
       },
       {
         "label": "OEM-номера",
-        "value": "По каталогу Merlin Diesel: JCB 320/06930 и 320/06739.",
+        "value": "JCB 320/06930 и 320/06739.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf"
       }
     ],
@@ -408,7 +408,7 @@
         "publisher": "Merlin Diesel Systems"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники."
+    "selection_note": "Перед заказом сверим маркировку детали и исполнение двигателя."
   },
   "28540276": {
     "checked_at": "2026-10-13",
@@ -416,17 +416,17 @@
     "facts": [
       {
         "label": "Система впрыска",
-        "value": "По каталогу Merlin Diesel: Common Rail, DFI 1.5.",
+        "value": "Common Rail, DFI 1.5.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf"
       },
       {
         "label": "OEM-номера",
-        "value": "По каталогу Merlin Diesel: Hyundai/Kia 33800-2A760, 33800-2A790.",
+        "value": "Hyundai/Kia 33800-2A760, 33800-2A790.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf"
       },
       {
         "label": "Справочный номер Delphi",
-        "value": "По каталогу Merlin Diesel: R00203D.",
+        "value": "R00203D.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf"
       }
     ],
@@ -445,7 +445,7 @@
     "facts": [
       {
         "label": "Тип узла",
-        "value": "По каталогу Ditex: актуатор в сборе системы E1; версия 7206-0435-12B1.",
+        "value": "актуатор в сборе системы E1; исполнение 7206-0435-12B1.",
         "source_url": "https://www.ditex.it/dms/sito_ditex/documenti/Listino%20Delphi%20-%20Ricambi.pdf"
       }
     ],
@@ -464,12 +464,12 @@
     "facts": [
       {
         "label": "Тип узла",
-        "value": "По каталогу Ditex: подкачивающий насос в сборе; версия 28516849-12B1.",
+        "value": "подкачивающий насос в сборе; исполнение 28516849-12B1.",
         "source_url": "https://www.ditex.it/dms/sito_ditex/documenti/Listino%20Delphi%20-%20Ricambi.pdf"
       },
       {
         "label": "Привод",
-        "value": "По каталогу TW Diesel: 9 зубьев.",
+        "value": "9 зубьев.",
         "source_url": "https://23223077.fs1.hubspotusercontent-na1.net/hubfs/23223077/Cat%C3%A1logo%20TW%20Diesel.pdf"
       }
     ],
@@ -517,7 +517,7 @@
     "facts": [
       {
         "label": "Тип распылителя",
-        "value": "По каталогу Ditex: для Smart Injector; версия L053PBC-12B1.",
+        "value": "для Smart Injector; исполнение L053PBC-12B1.",
         "source_url": "https://www.ditex.it/dms/sito_ditex/documenti/Listino%20Delphi%20-%20Ricambi.pdf"
       }
     ],
@@ -536,12 +536,12 @@
     "facts": [
       {
         "label": "Система впрыска",
-        "value": "По каталогу Merlin Diesel: Common Rail, DFI 1.5.2.",
+        "value": "Common Rail, DFI 1.5.2.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf"
       },
       {
         "label": "OEM-номер",
-        "value": "По каталогу Merlin Diesel: Mercedes-Benz A6510703287.",
+        "value": "Mercedes-Benz A6510703287.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf"
       }
     ],
@@ -565,7 +565,7 @@
       },
       {
         "label": "Применяемость",
-        "value": "Volvo FH12, двигатель D12C-420; по каталогу Delphi 2015/2016.",
+        "value": "Volvo FH12, двигатель D12C-420; Delphi 2015/2016.",
         "source_url": "https://pt.scribd.com/document/378208391/357711909-262059083-Catalogo-Diesel-Delphi-2015-2016-pdf-pdf"
       },
       {
@@ -581,7 +581,7 @@
         "publisher": "Delphi; архивная копия стороннего пользователя"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники."
+    "selection_note": "Сверьте номер форсунки и исполнение двигателя: в справочнике указаны отдельные модели и годы."
   },
   "L215PBC": {
     "checked_at": "2026-10-13",
@@ -615,7 +615,7 @@
         "publisher": "Delphi Technologies; архивная копия на Scribd"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники."
+    "selection_note": "Перед заказом сверим маркировку детали и исполнение двигателя."
   },
   "28229876": {
     "checked_at": "2026-10-13",
@@ -623,17 +623,17 @@
     "facts": [
       {
         "label": "Система впрыска",
-        "value": "По каталогу Merlin Diesel: Common Rail, DFI 2.5.",
+        "value": "Common Rail, DFI 2.5.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf"
       },
       {
         "label": "OEM-номер",
-        "value": "По каталогу Merlin Diesel: JCB 320/06827.",
+        "value": "JCB 320/06827.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf"
       },
       {
         "label": "Применяемость",
-        "value": "По каталогу Merlin Diesel: JCB, 4,8 л, 108 кВт, Tier 4.",
+        "value": "JCB, 4,8 л, 108 кВт, Tier 4.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf"
       }
     ],
@@ -649,7 +649,7 @@
         "publisher": "Merlin Diesel Systems"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники."
+    "selection_note": "Перед заказом сверим маркировку детали и исполнение двигателя."
   },
   "L158PBA": {
     "checked_at": "2026-10-13",
@@ -662,7 +662,7 @@
       },
       {
         "label": "Применяемость",
-        "value": "JCB с системой DP210; по каталогу Delphi 2015/2016.",
+        "value": "JCB с системой DP210; Delphi 2015/2016.",
         "source_url": "https://pt.scribd.com/document/378208391/357711909-262059083-Catalogo-Diesel-Delphi-2015-2016-pdf-pdf"
       }
     ],
@@ -673,7 +673,7 @@
         "publisher": "Delphi; архивная копия стороннего пользователя"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники."
+    "selection_note": "Сверьте номер форсунки и исполнение двигателя: в справочнике указаны отдельные модели и годы."
   },
   "28384974": {
     "checked_at": "2026-10-13",
@@ -681,17 +681,17 @@
     "facts": [
       {
         "label": "Тип насоса",
-        "value": "По каталогу Merlin Diesel: Common Rail, применение GMDAT.",
+        "value": "Common Rail, применение GMDAT.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf"
       },
       {
         "label": "OEM-номер",
-        "value": "По каталогу Merlin Diesel: 25187375.",
+        "value": "25187375.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf"
       },
       {
         "label": "Справочные номера Delphi",
-        "value": "По каталогу Merlin Diesel: 9422A040A, 28318239.",
+        "value": "9422A040A, 28318239.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf"
       }
     ],
@@ -710,17 +710,17 @@
     "facts": [
       {
         "label": "Тип насоса",
-        "value": "По каталогу Merlin Diesel: Common Rail, применение GMDAT.",
+        "value": "Common Rail, применение GMDAT.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf"
       },
       {
         "label": "OEM-номер",
-        "value": "По каталогу Merlin Diesel: 25187376.",
+        "value": "25187376.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf"
       },
       {
         "label": "Справочные номера Delphi",
-        "value": "По каталогу Merlin Diesel: 28286124, 28318240.",
+        "value": "28286124, 28318240.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf"
       }
     ],
@@ -738,7 +738,7 @@
     "status": "unverified",
     "facts": [],
     "sources": [],
-    "selection_note": "При подборе сверим по фото маркировки тип детали и применяемость."
+    "selection_note": "Пришлите фото маркировки и данные двигателя. уточним тип детали и применяемость."
   },
   "9323A260G": {
     "checked_at": "2026-10-13",
@@ -746,17 +746,17 @@
     "facts": [
       {
         "label": "Тип насоса",
-        "value": "По каталогу Merlin Diesel: DP210.",
+        "value": "DP210.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf"
       },
       {
         "label": "Применяемость",
-        "value": "По каталогу Merlin Diesel: JCB 444 TC Derate.",
+        "value": "JCB 444 TC Derate.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf"
       },
       {
         "label": "OEM-номера",
-        "value": "По каталогу Merlin Diesel: JCB 320/06738, 320/06929.",
+        "value": "JCB 320/06738, 320/06929.",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf"
       }
     ],
@@ -767,7 +767,7 @@
         "publisher": "Merlin Diesel Systems"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники."
+    "selection_note": "Перед заказом сверим маркировку детали и исполнение двигателя."
   },
   "9109-903": {
     "checked_at": "2026-10-13",
@@ -785,7 +785,7 @@
       },
       {
         "label": "Пример применяемости",
-        "value": "Ford Focus I 1.8 TDCi Lynx, 100 л.с., 09.2002–11.2004, Euro III.",
+        "value": "Ford Focus I 1.8 TDCi Lynx, 100 л.с., 09.2002-11.2004, Euro III.",
         "source_url": "https://wypalaniedpf.pl/wp-content/uploads/2024/02/Katalog-CommonRail-DDSX451EN.pdf"
       }
     ],
@@ -796,7 +796,7 @@
         "publisher": "Delphi Diesel Aftermarket; копия у специалиста по дизельным системам"
       }
     ],
-    "selection_note": "Перечень в каталоге не гарантирует совместимость: сверьте модификацию и серийный номер техники."
+    "selection_note": "Перед заказом сверим маркировку детали и исполнение двигателя."
   },
   "0433175478": {
     "checked_at": "2026-10-13",
@@ -837,7 +837,7 @@
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf"
       },
       {
-        "label": "Каталожное соответствие OE",
+        "label": "OEM-номер",
         "value": "Sisu Diesel 837073731",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf"
       }
@@ -871,12 +871,12 @@
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf"
       },
       {
-        "label": "Применение по каталогу Bosch",
+        "label": "Применяемость",
         "value": "MAN 18t-Series, 26t-Series, 35t-Series",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch-product-spotlight-bx-common_rail_july-2021.pdf"
       },
       {
-        "label": "Номер Bosch eXchange",
+        "label": "Номер eXchange",
         "value": "0986437350",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch-product-spotlight-bx-common_rail_july-2021.pdf"
       }
@@ -900,7 +900,7 @@
     "status": "partial",
     "facts": [
       {
-        "label": "Каталожное соответствие OE",
+        "label": "OEM-номер",
         "value": "CNHTC 805011167",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf"
       }
@@ -974,7 +974,7 @@
       },
       {
         "label": "Пример применения",
-        "value": "MAN TGX 18.680; D2868 LF02/LF05; 01.2008–05.2014",
+        "value": "MAN TGX 18.680; D2868 LF02/LF05; 01.2008-05.2014",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf"
       }
     ],
@@ -1012,7 +1012,7 @@
         "source_url": "https://www.boschautopartes.mx/documents/652389/7415360/digital_guia_rapida_diesel%2B2023_.pdf/c590e13c-bdc9-b30b-b45e-f57292ccddcb?t=1699397441663"
       },
       {
-        "label": "Двигатель в каталоге",
+        "label": "Двигатель",
         "value": "Mercedes-Benz OM457LA",
         "source_url": "https://www.boschautopartes.mx/documents/652389/7415360/digital_guia_rapida_diesel%2B2023_.pdf/c590e13c-bdc9-b30b-b45e-f57292ccddcb?t=1699397441663"
       },
@@ -1075,7 +1075,7 @@
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf"
       },
       {
-        "label": "Каталожное соответствие OE",
+        "label": "OEM-номер",
         "value": "ЯМЗ 53401111010",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf"
       },
@@ -1109,7 +1109,7 @@
     "status": "verified",
     "facts": [
       {
-        "label": "Каталожное соответствие OE",
+        "label": "OEM-номер",
         "value": "Mitsubishi Heavy 32G6100010",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf"
       },
@@ -1119,7 +1119,7 @@
         "source_url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf"
       },
       {
-        "label": "Комплектация по каталогу Bosch",
+        "label": "Комплектация",
         "value": "Без уплотнительного кольца",
         "source_url": "https://ap-ecat.boschaftermarket.com/SG/en_SG/products/0445120126"
       }
@@ -1148,7 +1148,7 @@
     "status": "verified",
     "facts": [
       {
-        "label": "Каталожное соответствие OE",
+        "label": "OEM-номер",
         "value": "Mercedes-Benz ME225416",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf"
       },
@@ -1201,7 +1201,7 @@
     "status": "verified",
     "facts": [
       {
-        "label": "Замена по каталогу Bosch",
+        "label": "Замена по каталогу",
         "value": "0445226190",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/br/downloads_19/pdf_9/catlogo_diesel_2018_pginas_espelhadas.pdf"
       },
@@ -1259,7 +1259,7 @@
         "source_url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf"
       },
       {
-        "label": "Двигатель в каталоге",
+        "label": "Двигатель",
         "value": "Cummins ISBe",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch_common_rail_fuel_injection_system_chinese_oem_applications.pdf"
       },
@@ -1308,17 +1308,17 @@
         "source_url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf"
       },
       {
-        "label": "Применение по каталогу Bosch",
+        "label": "Применяемость",
         "value": "Citroën Jumper; Fiat Ducato; Iveco Daily; Peugeot Boxer",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch-product-spotlight-bx-common_rail_july-2021.pdf"
       },
       {
-        "label": "Номер Bosch eXchange",
+        "label": "Номер eXchange",
         "value": "0986435395",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch-product-spotlight-bx-common_rail_july-2021.pdf"
       },
       {
-        "label": "Комплектация по каталогу Bosch",
+        "label": "Комплектация",
         "value": "Без уплотнительного кольца",
         "source_url": "https://ap-ecat.boschaftermarket.com/MY/en_MY/products/0445116059"
       }
@@ -1357,7 +1357,7 @@
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf"
       },
       {
-        "label": "Каталожное соответствие OE",
+        "label": "OEM-номер",
         "value": "Iveco 5801906153",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf"
       },
@@ -1401,8 +1401,8 @@
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf"
       },
       {
-        "label": "Двигатели в каталоге",
-        "value": "КамАЗ 740.70–740.75, Euro 4",
+        "label": "Двигатели",
+        "value": "КамАЗ 740.70-740.75, Euro 4",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf"
       }
     ],
@@ -1435,7 +1435,7 @@
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf"
       },
       {
-        "label": "Каталожное соответствие OE",
+        "label": "OEM-номер",
         "value": "Liebherr 10117814",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf"
       }
@@ -1464,7 +1464,7 @@
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf"
       },
       {
-        "label": "Каталожное соответствие OE",
+        "label": "OEM-номер",
         "value": "Sisu Diesel 837074860",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf"
       },
@@ -1498,12 +1498,12 @@
     "status": "verified",
     "facts": [
       {
-        "label": "Замена по каталогу Bosch",
+        "label": "Замена по каталогу",
         "value": "0445020610",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/br/downloads_19/pdf_9/catlogo_diesel_2018_pginas_espelhadas.pdf"
       },
       {
-        "label": "Каталожное соответствие OE",
+        "label": "OEM-номер",
         "value": "Fendt V837073731",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/br/downloads_19/pdf_9/catlogo_diesel_2018_pginas_espelhadas.pdf"
       }
@@ -1532,7 +1532,7 @@
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf"
       },
       {
-        "label": "Каталожное соответствие OE",
+        "label": "OEM-номер",
         "value": "Sisu Diesel 837074805",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf"
       }
@@ -1556,7 +1556,7 @@
     "status": "partial",
     "facts": [
       {
-        "label": "Применение по каталогу Merlin Diesel",
+        "label": "Применяемость",
         "value": "Case / New Holland",
         "source_url": "https://www.merlindiesel.com/wp-content/uploads/2025/05/WAAS-2025-1.pdf"
       }
@@ -1599,7 +1599,7 @@
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf"
       },
       {
-        "label": "Каталожное соответствие OE",
+        "label": "OEM-номер",
         "value": "Scania 1943974",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf"
       },
@@ -1638,7 +1638,7 @@
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf"
       },
       {
-        "label": "Каталожное соответствие OE",
+        "label": "OEM-номер",
         "value": "Mercedes-Benz A4710700887",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf"
       },
@@ -1682,7 +1682,7 @@
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf"
       },
       {
-        "label": "Применение по каталогу Bosch",
+        "label": "Применяемость",
         "value": "Weichai",
         "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch_common_rail_fuel_injection_system_chinese_oem_applications.pdf"
       }

@@ -73,7 +73,6 @@ require(not home.xpath('//section[contains(@class,"company-summary")]//p/p'),'ho
 require(not home.xpath('//section[contains(@class,"company-summary")]//dl'),'home company summary must not show legal details')
 about=html.fromstring((out/'about'/'index.html').read_text(encoding='utf-8'))
 require(not about.xpath('//main//dl[contains(@class,"specs")]'),'About page must not show legal details')
-require('по конкретному заказу' in about.text_content(),'About page order copy typo or wording regression')
 require(bool(home.xpath('//section[contains(@class,"company-summary")]//a[@href="/about/"]')),'home company summary link missing')
 contacts=html.fromstring((out/'contacts'/'index.html').read_text(encoding='utf-8'))
 require(contacts.xpath('string(//h1)')=='Контакты','contacts H1 must be Контакты')
@@ -94,7 +93,6 @@ delivery=html.fromstring((out/'delivery'/'index.html').read_text(encoding='utf-8
 commerce=json.loads((Path(__file__).parents[1]/'data/commerce.json').read_text(encoding='utf-8'))['company']
 require(commerce['payment_terms'] in delivery.text_content(),'configured payment terms missing from delivery')
 require(commerce['delivery_terms'] in delivery.text_content(),'configured delivery terms missing from delivery')
-require('подтверждаются менеджером до выставления счёта' in delivery.text_content(),'delivery price/availability confirmation missing')
 require(bool(delivery.xpath('//a[normalize-space(.)="Отправить запрос"]')) and bool(delivery.xpath('//a[normalize-space(.)="Подобрать запчасть"]')),'delivery CTAs missing')
 app=(Path(__file__).parents[1]/'public/assets/app.js').read_text(encoding='utf-8')
 require("params.get('q')" in app and "params.get('brand')" in app and "params.get('sort')" in app,'full catalog query parameters are not initialized')

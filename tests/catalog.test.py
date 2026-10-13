@@ -21,7 +21,7 @@ for p in pages:
  for raw in h.xpath('//script[@type="application/ld+json"]/text()'):json.loads(raw)
 for p in products:
  h=lxml.html.fromstring((out/'catalog'/p['id']/'index.html').read_text(encoding="utf-8"));graph=json.loads(h.xpath('//script[@type="application/ld+json"]/text()')[0])['@graph'];product=graph[0]
- assert 'Внешний вид и комплектность уточняются при заказе.' in h.text_content(),p['id']+' generic image note missing'
+ assert 'Изображение может быть иллюстрацией. Комплектность уточните перед заказом.' in h.text_content(),p['id']+' generic image note missing'
  assert not h.xpath('//a[normalize-space(.)="Источник фотографии"]'),p['id']+' source photo claim is visible'
  if product['offers']['price']!=p['price']:errors.append(p['id']+' price mismatch')
  if product['sku']!=p['sku']:errors.append(p['id']+' sku mismatch')

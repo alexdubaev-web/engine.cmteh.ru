@@ -80,7 +80,7 @@ export function createAnalyticsConsent({ window: win, document: doc, storage, no
     stop();
     if (!setDecision('rejected')) {
       removeDecision();
-      status.textContent = 'Аналитика выключена в этой вкладке, но браузер не смог сохранить отказ. Проверьте настройки хранилища и повторите отказ.';
+      status.textContent = 'Аналитика выключена в этой вкладке, но браузер не сохранил ваш выбор. Проверьте настройки хранилища и попробуйте ещё раз.';
       show();
       return false;
     }
@@ -111,7 +111,7 @@ export function createAnalyticsConsent({ window: win, document: doc, storage, no
   };
 
   allowButton.addEventListener('click', () => {
-    if (!setDecision('accepted')) { status.textContent = 'Браузер не позволяет сохранить выбор. Аналитика останется выключенной.'; return; }
+    if (!setDecision('accepted')) { status.textContent = 'Не удалось сохранить ваш выбор. Аналитика останется выключенной.'; return; }
     status.textContent = '';
     closed = false;
     enabled = true;
@@ -127,7 +127,7 @@ export function createAnalyticsConsent({ window: win, document: doc, storage, no
   const decision = getDecision();
   if (decision === 'accepted' && verifyStoredAcceptance()) { enabled = true; start(); }
   else if (decision === 'accepted') {
-    status.textContent = 'Не удалось подтвердить сохранённое разрешение. Аналитика останется выключенной.';
+    status.textContent = 'Не удалось подтвердить ваш выбор. Аналитика останется выключенной.';
     show();
   } else if (decision !== 'rejected') show();
   return { enabled: decision === 'accepted' && enabled, revoke };
