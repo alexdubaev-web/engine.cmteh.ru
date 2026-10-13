@@ -1,0 +1,589 @@
+[
+  {
+    "sku": "RE539764",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Топливный насос",
+        "source_url": "https://shop.deere.com/uk/product/RE539764%3A-Fuel-Transfer-Pump%2C-Fuel-Filter-To-Engine/p/RE539764",
+        "evidence": "Заголовок официальной карточки определяет деталь как топливный насос."
+      },
+      {
+        "label": "Напряжение",
+        "value": "24 В",
+        "source_url": "https://shop.deere.com/uk/product/RE539764%3A-Fuel-Transfer-Pump%2C-Fuel-Filter-To-Engine/p/RE539764",
+        "evidence": "Номинал указан в заголовке карточки точного артикула."
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "0,671 кг",
+        "source_url": "https://shop.deere.com/uk/product/RE539764%3A-Fuel-Transfer-Pump%2C-Fuel-Filter-To-Engine/p/RE539764",
+        "evidence": "Раздел размеров указывает массу 0.671 kg."
+      },
+      {
+        "label": "Габариты по каталогу (Д × Ш × В)",
+        "value": "18,415 × 9,652 × 9,144 см",
+        "source_url": "https://shop.deere.com/uk/product/RE539764%3A-Fuel-Transfer-Pump%2C-Fuel-Filter-To-Engine/p/RE539764",
+        "evidence": "В разделе размеров: длина 18.415, ширина 9.652, высота 9.144 cm."
+      },
+      {
+        "label": "Примеры моделей из каталога",
+        "value": "John Deere 250D, 260E, 350G, 724K; подбор по серийному номеру",
+        "source_url": "https://shop.deere.com/uk/product/RE539764%3A-Fuel-Transfer-Pump%2C-Fuel-Filter-To-Engine/p/RE539764",
+        "evidence": "Все четыре модели присутствуют в списке общей применяемости."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/uk/product/RE539764%3A-Fuel-Transfer-Pump%2C-Fuel-Filter-To-Engine/p/RE539764",
+        "title": "RE539764: Fuel Pump, 24 Volt",
+        "publisher": "John Deere"
+      }
+    ],
+    "gaps": [
+      "Данные получены из индексированной выдачи официального магазина; прямое открытие страницы при проверке вернуло HTTP 403.",
+      "Список моделей у John Deere означает общую применяемость; точный подбор требует модели и серийного номера техники.",
+      "Расход, давление и электрическая мощность в найденной карточке не указаны."
+    ],
+    "queries": [
+      "site:shop.deere.com \"RE539764\""
+    ]
+  },
+  {
+    "sku": "RE507959",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Насос впрыска топлива",
+        "source_url": "https://shop.deere.com/uk/product/RE507959%3A-Fuel-Injection-Pump/p/RE507959",
+        "evidence": "Заголовок официальной карточки определяет назначение насоса."
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "3,864 кг",
+        "source_url": "https://shop.deere.com/uk/product/RE507959%3A-Fuel-Injection-Pump/p/RE507959",
+        "evidence": "Раздел размеров указывает массу 3.864 kg."
+      },
+      {
+        "label": "Габариты по каталогу (Д × Ш × В)",
+        "value": "19,558 × 16,256 × 13,462 см",
+        "source_url": "https://shop.deere.com/uk/product/RE507959%3A-Fuel-Injection-Pump/p/RE507959",
+        "evidence": "В разделе размеров: длина 19.558, ширина 16.256, высота 13.462 cm."
+      },
+      {
+        "label": "Примеры моделей из каталога",
+        "value": "John Deere 5E-850, 6B-954, 120D, 310J; подбор по серийному номеру",
+        "source_url": "https://shop.deere.com/uk/product/RE507959%3A-Fuel-Injection-Pump/p/RE507959",
+        "evidence": "Перечисленные модели находятся в списке общей применяемости."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/uk/product/RE507959%3A-Fuel-Injection-Pump/p/RE507959",
+        "title": "RE507959: Fuel Injection Pump",
+        "publisher": "John Deere"
+      }
+    ],
+    "gaps": [
+      "Данные получены из индексированной выдачи официального магазина; прямое открытие страницы при проверке вернуло HTTP 403.",
+      "Список моделей у John Deere означает общую применяемость; точный подбор требует модели и серийного номера техники.",
+      "Рабочее давление, производительность и исполнение системы впрыска в карточке не указаны."
+    ],
+    "queries": [
+      "site:shop.deere.com \"RE507959\""
+    ]
+  },
+  {
+    "sku": "DZ112112",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Комплект распылителя",
+        "source_url": "https://shop.deere.com/us/product/DZ112112%3A-Nozzle-Kit/p/DZ112112",
+        "evidence": "Заголовок официальной карточки: Nozzle Kit."
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "1,533 фунта",
+        "source_url": "https://shop.deere.com/us/product/DZ112112%3A-Nozzle-Kit/p/DZ112112",
+        "evidence": "В разделе размеров масса указана в фунтах: 1.533 lb."
+      },
+      {
+        "label": "Габариты по каталогу (Д × Ш × В)",
+        "value": "8,6 × 2,3 × 1,7 дюйма",
+        "source_url": "https://shop.deere.com/us/product/DZ112112%3A-Nozzle-Kit/p/DZ112112",
+        "evidence": "В разделе размеров: длина 8.6, ширина 2.3, высота 1.7 in."
+      },
+      {
+        "label": "Примеры моделей из каталога",
+        "value": "John Deere 8R 230, 8R 410, 8RT 310, 8RX 410; подбор по серийному номеру",
+        "source_url": "https://shop.deere.com/us/product/DZ112112%3A-Nozzle-Kit/p/DZ112112",
+        "evidence": "Перечисленные модели находятся в списке общей применяемости."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/us/product/DZ112112%3A-Nozzle-Kit/p/DZ112112",
+        "title": "DZ112112: Nozzle Kit",
+        "publisher": "John Deere"
+      }
+    ],
+    "gaps": [
+      "Данные получены из индексированной выдачи официального магазина; прямое открытие страницы при проверке вернуло HTTP 403.",
+      "Список моделей у John Deere означает общую применяемость; точный подбор требует модели и серийного номера техники.",
+      "Точный состав комплекта и характеристики впрыска в текстовом описании не приведены. Подпись изображения упоминает трубку бокового подвода и кольца форсунок G2.5C; по одной подписи состав комплекта не утверждается."
+    ],
+    "queries": [
+      "site:shop.deere.com \"DZ112112\""
+    ]
+  },
+  {
+    "sku": "DZ128161",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Топливный насос",
+        "source_url": "https://shop.deere.com/br/pt/product/DZ128161%3A-Bombade-combust%C3%ADvel/p/DZ128161",
+        "evidence": "Заголовок официальной карточки называет изделие топливным насосом."
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "7,318 кг",
+        "source_url": "https://shop.deere.com/br/pt/product/DZ128161%3A-Bombade-combust%C3%ADvel/p/DZ128161",
+        "evidence": "Раздел размеров указывает массу 7,318 kg."
+      },
+      {
+        "label": "Габариты по каталогу (Д × Ш × В)",
+        "value": "24,13 × 24,13 × 13,97 см",
+        "source_url": "https://shop.deere.com/br/pt/product/DZ128161%3A-Bombade-combust%C3%ADvel/p/DZ128161",
+        "evidence": "В разделе размеров: длина и ширина 24,13, высота 13,97 cm."
+      },
+      {
+        "label": "Примеры моделей из каталога",
+        "value": "John Deere 7R 290, 7R 310, 8R 230, 8R 340; подбор по серийному номеру",
+        "source_url": "https://shop.deere.com/br/pt/product/DZ128161%3A-Bombade-combust%C3%ADvel/p/DZ128161",
+        "evidence": "Перечисленные модели находятся в списке общей применяемости."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/br/pt/product/DZ128161%3A-Bombade-combust%C3%ADvel/p/DZ128161",
+        "title": "DZ128161: Bombade combustível",
+        "publisher": "John Deere"
+      }
+    ],
+    "gaps": [
+      "Данные получены из индексированной выдачи официального магазина; прямое открытие страницы при проверке вернуло HTTP 403.",
+      "Список моделей у John Deere означает общую применяемость; точный подбор требует модели и серийного номера техники.",
+      "Связь с номером Denso 299050-0160 и изготовитель Denso первичным источником не подтверждены.",
+      "Давление и производительность не указаны."
+    ],
+    "queries": [
+      "site:shop.deere.com \"DZ128161\""
+    ]
+  },
+  {
+    "sku": "RE526588",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Электронный контроллер двигателя",
+        "source_url": "https://shop.deere.com/uk/product/RE526588%3A-Engine-Controller%2C-12-Volts-24-Volts%2C-Level-16/p/RE526588",
+        "evidence": "Тип указан в заголовке официальной карточки."
+      },
+      {
+        "label": "Напряжение",
+        "value": "12 / 24 В",
+        "source_url": "https://shop.deere.com/uk/product/RE526588%3A-Engine-Controller%2C-12-Volts-24-Volts%2C-Level-16/p/RE526588",
+        "evidence": "Оба номинала указаны в заголовке."
+      },
+      {
+        "label": "Исполнение",
+        "value": "Level 16",
+        "source_url": "https://shop.deere.com/uk/product/RE526588%3A-Engine-Controller%2C-12-Volts-24-Volts%2C-Level-16/p/RE526588",
+        "evidence": "Обозначение уровня приведено в заголовке точного артикула."
+      },
+      {
+        "label": "Семейства двигателей",
+        "value": "PowerTech 3029, 4045, 6068; требуется проверка комплектации",
+        "source_url": "https://shop.deere.com/uk/product/RE526588%3A-Engine-Controller%2C-12-Volts-24-Volts%2C-Level-16/p/RE526588",
+        "evidence": "Официальное описание перечисляет три семейства двигателей."
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "0,912 кг",
+        "source_url": "https://shop.deere.com/uk/product/RE526588%3A-Engine-Controller%2C-12-Volts-24-Volts%2C-Level-16/p/RE526588",
+        "evidence": "Раздел размеров указывает массу 0.912 kg."
+      },
+      {
+        "label": "Габариты по каталогу (Д × Ш × В)",
+        "value": "18,796 × 17,526 × 3,81 см",
+        "source_url": "https://shop.deere.com/uk/product/RE526588%3A-Engine-Controller%2C-12-Volts-24-Volts%2C-Level-16/p/RE526588",
+        "evidence": "В разделе размеров: длина 18.796, ширина 17.526, высота 3.81 cm."
+      },
+      {
+        "label": "Восстановленное исполнение в каталоге",
+        "value": "REMAN SE502802",
+        "source_url": "https://shop.deere.com/uk/product/RE526588%3A-Engine-Controller%2C-12-Volts-24-Volts%2C-Level-16/p/RE526588",
+        "evidence": "В описании RE526588 официальный магазин отдельно указывает восстановленное исполнение SE502802; это не утверждение о состоянии продаваемого товара."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/uk/product/RE526588%3A-Engine-Controller%2C-12-Volts-24-Volts%2C-Level-16/p/RE526588",
+        "title": "RE526588: Engine Controller, 12 Volts/24 Volts, Level 16",
+        "publisher": "John Deere"
+      }
+    ],
+    "gaps": [
+      "Данные получены из индексированной выдачи официального магазина; прямое открытие страницы при проверке вернуло HTTP 403.",
+      "Версия программного обеспечения, калибровка и необходимость программирования для конкретной машины не определены.",
+      "Список моделей у John Deere означает общую применяемость; точный подбор требует модели и серийного номера техники."
+    ],
+    "queries": [
+      "site:shop.deere.com \"RE526588\""
+    ]
+  },
+  {
+    "sku": "DZ128160",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Топливный насос",
+        "source_url": "https://shop.deere.com/product/DZ128160%3A-Fuel-Pump/p/DZ128160",
+        "evidence": "Официальная карточка точного артикула определяет изделие как топливный насос."
+      },
+      {
+        "label": "Примеры моделей из каталога",
+        "value": "John Deere 6M 145, 6R 145, 7R 210, 6175R; подбор по серийному номеру",
+        "source_url": "https://shop.deere.com/product/DZ128160%3A-Fuel-Pump/p/DZ128160",
+        "evidence": "Все перечисленные модели присутствуют в списке общей применяемости."
+      },
+      {
+        "label": "Каталожная замена",
+        "value": "Указан John Deere как замена DZ123516",
+        "source_url": "https://shop.deere.com/uk/product/DZ123516%3A-Fuel-Injection-Pump/p/DZ123516",
+        "evidence": "В таблице замены на странице DZ123516 указан DZ128160. Подтверждается именно направление DZ123516 → DZ128160."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/product/DZ128160%3A-Fuel-Pump/p/DZ128160",
+        "title": "DZ128160: Fuel Pump",
+        "publisher": "John Deere"
+      },
+      {
+        "url": "https://shop.deere.com/ca/en/product/DZ128160%3A-Fuel-Pump/p/DZ128160",
+        "title": "DZ128160: Fuel Pump (Canada)",
+        "publisher": "John Deere"
+      },
+      {
+        "url": "https://shop.deere.com/uk/product/DZ123516%3A-Fuel-Injection-Pump/p/DZ123516",
+        "title": "DZ123516: Fuel Injection Pump",
+        "publisher": "John Deere"
+      }
+    ],
+    "gaps": [
+      "Данные получены из индексированной выдачи официального магазина; прямое открытие страницы при проверке вернуло HTTP 403.",
+      "Список моделей у John Deere означает общую применяемость; точный подбор требует модели и серийного номера техники.",
+      "Габариты и масса противоречивы: основная страница показывает 16.074 lb и 9.2 × 9 × 6.5 in; канадская — 7.318 kg и 24.13 × 22.606 × 12.7 cm. Эти параметры не включены в факты.",
+      "Давление и производительность не опубликованы."
+    ],
+    "queries": [
+      "site:shop.deere.com \"DZ128160\"",
+      "site:shop.deere.com \"DZ123516\" \"DZ128160\""
+    ]
+  },
+  {
+    "sku": "DZ100218",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Комплект распылителя топливной форсунки",
+        "source_url": "https://shop.deere.com/uk/product/DZ100218%3A-Fuel-Injection-Nozzle-Kit/p/DZ100218",
+        "evidence": "Тип изделия указан в заголовке официальной карточки."
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "0,617 кг",
+        "source_url": "https://shop.deere.com/uk/product/DZ100218%3A-Fuel-Injection-Nozzle-Kit/p/DZ100218",
+        "evidence": "Раздел размеров указывает массу 0.617 kg."
+      },
+      {
+        "label": "Габариты по каталогу (Д × Ш × В)",
+        "value": "27,178 × 6,096 × 6,096 см",
+        "source_url": "https://shop.deere.com/uk/product/DZ100218%3A-Fuel-Injection-Nozzle-Kit/p/DZ100218",
+        "evidence": "В разделе размеров: длина 27.178, ширина и высота 6.096 cm."
+      },
+      {
+        "label": "Примеры моделей из каталога",
+        "value": "John Deere 4730, 4830, 9560 STS, 9570 STS; подбор по серийному номеру",
+        "source_url": "https://shop.deere.com/uk/product/DZ100218%3A-Fuel-Injection-Nozzle-Kit/p/DZ100218",
+        "evidence": "Модели присутствуют в списке общей применяемости."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/uk/product/DZ100218%3A-Fuel-Injection-Nozzle-Kit/p/DZ100218",
+        "title": "DZ100218: Fuel Injection Nozzle Kit",
+        "publisher": "John Deere"
+      }
+    ],
+    "gaps": [
+      "Данные получены из индексированной выдачи официального магазина; прямое открытие страницы при проверке вернуло HTTP 403.",
+      "Список моделей у John Deere означает общую применяемость; точный подбор требует модели и серийного номера техники.",
+      "Связь с номером Denso 095000-6880 и изготовитель Denso первичным источником не подтверждены.",
+      "Состав комплекта и характеристики впрыска в найденной карточке не указаны."
+    ],
+    "queries": [
+      "site:shop.deere.com \"DZ100218\""
+    ]
+  },
+  {
+    "sku": "DZ111136",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Клапан управления всасыванием топливного насоса (SCV)",
+        "source_url": "https://shop.deere.com/uk/product/DZ111136%3A-Fuel-Pump-Suction-Control-Valve/p/DZ111136",
+        "evidence": "Заголовок точного артикула определяет клапан топливного насоса. На английской странице название Fuel Pump Suction Control Valve."
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "0,259 кг",
+        "source_url": "https://shop.deere.com/br/pt/product/DZ111136%3A-Valvula-de-Controle-para-Controle-de-Fluxo-de-%C3%93leo-do-Sistema-Hidr%C3%A1ulico-para-Tratores-Agr%C3%ADcolas/p/DZ111136",
+        "evidence": "Раздел размеров указывает массу 0,259 kg."
+      },
+      {
+        "label": "Габариты по каталогу (Д × Ш × В)",
+        "value": "10,922 × 6,35 × 5,334 см",
+        "source_url": "https://shop.deere.com/br/pt/product/DZ111136%3A-Valvula-de-Controle-para-Controle-de-Fluxo-de-%C3%93leo-do-Sistema-Hidr%C3%A1ulico-para-Tratores-Agr%C3%ADcolas/p/DZ111136",
+        "evidence": "В разделе размеров: длина 10,922, ширина 6,35, высота 5,334 cm."
+      },
+      {
+        "label": "Примеры моделей из каталога",
+        "value": "John Deere 7R 210, 8R 230, 210G, 524K; подбор по серийному номеру",
+        "source_url": "https://shop.deere.com/br/pt/product/DZ111136%3A-Valvula-de-Controle-para-Controle-de-Fluxo-de-%C3%93leo-do-Sistema-Hidr%C3%A1ulico-para-Tratores-Agr%C3%ADcolas/p/DZ111136",
+        "evidence": "Модели присутствуют в списке общей применяемости."
+      },
+      {
+        "label": "Каталожная замена",
+        "value": "Указан John Deere как замена RE536278",
+        "source_url": "https://shop.deere.com/us/product/RE536278%3A-Control-Valve/p/RE536278",
+        "evidence": "На странице RE536278 в таблице замен указан DZ111136. Подтверждено направление RE536278 → DZ111136."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/uk/product/DZ111136%3A-Fuel-Pump-Suction-Control-Valve/p/DZ111136",
+        "title": "DZ111136: Fuel Pump Suction Control Valve",
+        "publisher": "John Deere"
+      },
+      {
+        "url": "https://shop.deere.com/br/pt/product/DZ111136%3A-Valvula-de-Controle-para-Controle-de-Fluxo-de-%C3%93leo-do-Sistema-Hidr%C3%A1ulico-para-Tratores-Agr%C3%ADcolas/p/DZ111136",
+        "title": "DZ111136: Válvula de Controle de Sucção da Bomba de Combustível",
+        "publisher": "John Deere"
+      },
+      {
+        "url": "https://shop.deere.com/us/product/RE536278%3A-Control-Valve/p/RE536278",
+        "title": "RE536278: Control Valve",
+        "publisher": "John Deere"
+      }
+    ],
+    "gaps": [
+      "Данные получены из индексированной выдачи официального магазина; прямое открытие страницы при проверке вернуло HTTP 403.",
+      "Список моделей у John Deere означает общую применяемость; точный подбор требует модели и серийного номера техники.",
+      "В products.json ошибочно помещён в категорию pumps: официальный тип — клапан, рекомендуется valves.",
+      "Электрические параметры и номер совместимого насоса в найденной карточке не приведены."
+    ],
+    "queries": [
+      "site:shop.deere.com \"DZ111136\"",
+      "site:shop.deere.com \"DZ111136\" \"kg\""
+    ]
+  },
+  {
+    "sku": "DZ10599",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Комплект капитального ремонта двигателя",
+        "source_url": "https://shop.deere.com/uk/product/DZ10599%3A-Engine-Overhaul-Kit/p/DZ10599",
+        "evidence": "Тип указан в заголовке официальной карточки."
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "48,988 кг",
+        "source_url": "https://shop.deere.com/uk/product/DZ10599%3A-Engine-Overhaul-Kit/p/DZ10599",
+        "evidence": "Раздел размеров указывает массу 48.988 kg."
+      },
+      {
+        "label": "Габариты по каталогу (Д × Ш × В)",
+        "value": "103,378 × 42,926 × 33,02 см",
+        "source_url": "https://shop.deere.com/uk/product/DZ10599%3A-Engine-Overhaul-Kit/p/DZ10599",
+        "evidence": "В разделе размеров: длина 103.378, ширина 42.926, высота 33.02 cm."
+      },
+      {
+        "label": "Примеры моделей из каталога",
+        "value": "John Deere 8245R, 8330, 9560 STS, S660; подбор по серийному номеру",
+        "source_url": "https://shop.deere.com/uk/product/DZ10599%3A-Engine-Overhaul-Kit/p/DZ10599",
+        "evidence": "Модели входят в общую применяемость и на британской, и на американской странице."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/uk/product/DZ10599%3A-Engine-Overhaul-Kit/p/DZ10599",
+        "title": "DZ10599: Engine Overhaul Kit",
+        "publisher": "John Deere"
+      }
+    ],
+    "gaps": [
+      "Данные получены из индексированной выдачи официального магазина; прямое открытие страницы при проверке вернуло HTTP 403.",
+      "Список моделей у John Deere означает общую применяемость; точный подбор требует модели и серийного номера техники.",
+      "Точный состав комплекта, ремонтный размер и серийные ограничения не опубликованы в найденном описании."
+    ],
+    "queries": [
+      "site:shop.deere.com \"DZ10599\"",
+      "site:shop.deere.com \"DZ10599\" \"kg\""
+    ]
+  },
+  {
+    "sku": "260100-4010",
+    "checked_at": "2026-10-13",
+    "status": "unverified",
+    "facts": [],
+    "sources": [
+      {
+        "url": "https://assets.denso-am.eu/production/attachments/DENSO-Multi-Product-Heavy-Duty-CV-Product-Catalogue-2024.pdf",
+        "title": "DENSO Multi-Product Heavy-Duty & CV Product Catalogue 2024",
+        "publisher": "DENSO"
+      }
+    ],
+    "gaps": [
+      "Точное обозначение не найдено в доступных первичных результатах DENSO; сведения продавцов не использованы как подтверждение.",
+      "Поиск точного номера в тексте официального каталога DENSO Heavy-Duty & CV 2024 не дал совпадений; это не доказывает отсутствие детали в других каталогах.",
+      "Применяемость Mitsubishi, двигатель, давление, тип управления и замены требуют первичного подтверждения."
+    ],
+    "queries": [
+      "\"260100-4010\" Denso",
+      "\"260100-4010\" site:denso.com OR site:denso-am.eu OR site:denso-am.com",
+      "\"260100-4010\" \"DENSO\" catalogue pdf",
+      "\"260100-4010\" site:assets.denso-am.eu",
+      "\"260100-4010\" site:merlindiesel.com",
+      "\"260100-4010\" filetype:pdf"
+    ]
+  },
+  {
+    "sku": "260100-6010",
+    "checked_at": "2026-10-13",
+    "status": "unverified",
+    "facts": [],
+    "sources": [
+      {
+        "url": "https://assets.denso-am.eu/production/attachments/DENSO-Multi-Product-Heavy-Duty-CV-Product-Catalogue-2024.pdf",
+        "title": "DENSO Multi-Product Heavy-Duty & CV Product Catalogue 2024",
+        "publisher": "DENSO"
+      }
+    ],
+    "gaps": [
+      "Точное обозначение не найдено в доступных первичных результатах DENSO; сведения продавцов не использованы как подтверждение.",
+      "Поиск точного номера в официальном каталоге DENSO Heavy-Duty & CV 2024 не дал совпадений; охват каталога ограничен.",
+      "Связь с 295050-0520, применяемость Toyota и технические параметры требуют первичного подтверждения."
+    ],
+    "queries": [
+      "\"260100-6010\" Denso",
+      "\"260100-6010\" site:denso.com OR site:denso-am.eu OR site:denso-am.com",
+      "\"260100-6010\" \"DENSO\" catalogue pdf",
+      "\"260100-6010\" site:assets.denso-am.eu",
+      "\"260100-6010\" site:merlindiesel.com",
+      "\"260100-6010\" filetype:pdf"
+    ]
+  },
+  {
+    "sku": "8980436870",
+    "checked_at": "2026-10-13",
+    "status": "unverified",
+    "facts": [],
+    "sources": [
+      {
+        "url": "https://assets.denso-am.eu/production/attachments/DENSO-Multi-Product-Heavy-Duty-CV-Product-Catalogue-2024.pdf",
+        "title": "DENSO Multi-Product Heavy-Duty & CV Product Catalogue 2024",
+        "publisher": "DENSO"
+      },
+      {
+        "url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/PUMP-REPAIR-COMMON-RAIL-JAN-2024-1.pdf",
+        "title": "PUMP REPAIR COMMON RAIL 04/24",
+        "publisher": "Merlin Diesel"
+      },
+      {
+        "url": "https://www.gamimpex.de/media/pdf/ISUZU-Ersatzteile.pdf",
+        "title": "ISUZU Ersatzteile, таблица номеров, стр. 754",
+        "publisher": "GAM Baumaschinenteile (хостинг; автор документа не указан)"
+      }
+    ],
+    "gaps": [
+      "Поиск точного номера Isuzu и связанного номера 294200-0650 не дал доступного первичного подтверждения типа, применяемости и взаимозаменяемости.",
+      "Поиск 294200-0650 в официальном каталоге DENSO Heavy-Duty & CV 2024 не дал совпадений; охват каталога ограничен.",
+      "Тип SCV, связь с Denso и Isuzu остаются данными исходного прайс-листа, а не результатом данной проверки.",
+      "Каталог Merlin Diesel PUMP REPAIR COMMON RAIL 04/24 относит 294200-0650 к SCV Isuzu (аналог Merlin M002-028), но связь этого номера с точным SKU 8980436870 в нём не подтверждена.",
+      "В PDF ISUZU-Ersatzteile.pdf на gamimpex.de точный 8980436870 назван OVERHAUL KIT; SUPPLY PUMP (стр. 754). Первая страница — таблица без авторства, происхождение от Isuzu не установлено. В факты производителя не включено.",
+      "Поисковая копия Engine Parts Catalog 4HK1-XYSA02-10 на Scribd содержит 8980436870 как ремонтный комплект насоса, стр. 052C, позиция 424. Официальная доступная публикация не найдена; применяемость не утверждается."
+    ],
+    "queries": [
+      "\"8980436870\" site:isuzu.com OR site:denso.com OR site:denso-am.eu",
+      "\"8980436870\" site:parts.isuzu.com",
+      "\"294200-0650\" DENSO official catalog",
+      "\"8980436870\" site:isuzu.co.jp OR site:isuzu.com.au OR site:isuzu.co.uk",
+      "\"8980436870\" site:merlindiesel.com",
+      "\"8980436870\" filetype:pdf",
+      "\"294200-0650\" site:merlindiesel.com",
+      "\"4HK1-XYSA02-10\" \"8980436870\"",
+      "\"4HK1-XYSA02-10\" catalogue pdf -site:scribd.com"
+    ]
+  },
+  {
+    "sku": "5620004100",
+    "checked_at": "2026-10-13",
+    "status": "unverified",
+    "facts": [],
+    "sources": [
+      {
+        "url": "https://www.vdo.com/media/747131/vdo-catalogue-diesel-replacementparts-07_2019.pdf",
+        "title": "VDO Diesel Replacement Parts, 07/2019",
+        "publisher": "VDO"
+      }
+    ],
+    "gaps": [
+      "Точный номер 5620004100 не найден в доступных первичных результатах VDO, Aumovio, Continental, Vitesco и Schaeffler.",
+      "Официальный каталог VDO найден в поиске, но прямое чтение завершилось ошибкой; совпадение номера внутри каталога не подтверждено.",
+      "Связь с GK2Q-9K546-AC, 2802002051380, 562000410 и применяемость Ford найдены только у продавцов и не перенесены в факты.",
+      "Написание марки VDO / Vitesco (Aumovio) и разница между 5620004100 и 562000410 требуют уточнения по маркировке."
+    ],
+    "queries": [
+      "\"5620004100\" site:aumovio.com OR site:vdo.com OR site:continental-aftermarket.com",
+      "\"5620004100\" VDO official",
+      "\"562000410\" site:aftermarket.aumovio.com OR site:vdo.com OR site:continental-aftermarket.com",
+      "\"562 0004 100\"",
+      "VDO diesel injector official online catalog 2802002051380",
+      "\"5620004100\" site:merlindiesel.com",
+      "\"5620004100\" filetype:pdf"
+    ]
+  }
+]

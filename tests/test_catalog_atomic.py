@@ -6,11 +6,39 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
+import openpyxl
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import import_catalog
 
 
 class CatalogAtomicTests(unittest.TestCase):
+    def test_exact_sku_corrections_survive_source_workbook_import(self):
+        with tempfile.TemporaryDirectory() as temp:
+            workbook = openpyxl.Workbook()
+            sheet = workbook.active
+            rows = [
+                ('28308779', '28308779 A651070328 FUTURE-CODE', 'Топливная форсунка Common Rail Delphi', 'Delphi', 'Mercedes-Benz'),
+                ('28540276', '28540276 R00203D', 'Топливная форсунка Common Rail Delphi', 'Delphi', 'Mercedes-Benz'),
+                ('DZ111136', 'DZ111136', 'Клапан управления подачей топлива ТНВД John Deere', 'John Deere', ''),
+            ]
+            rows.extend((f'TEST-{i:02}', f'TEST-{i:02}', 'Деталь для проверки импорта', 'Other', '') for i in range(55))
+            for row_index, (sku, codes, name, brand, cross_brand) in enumerate(rows, 7):
+                sheet.cell(row_index, 3, codes)
+                sheet.cell(row_index, 5, 100)
+                sheet.cell(row_index, 9, name)
+                sheet.cell(row_index, 11, brand)
+                sheet.cell(row_index, 12, cross_brand)
+                sheet.cell(row_index, 13, f'https://example.test/{sku}')
+            workbook_path = Path(temp) / 'catalog.xlsx'
+            workbook.save(workbook_path)
+
+            products = {item['sku']: item for item in import_catalog.parse_catalog(workbook_path)}
+
+            self.assertEqual(products['28308779']['codes'], ['28308779', 'A6510703287', 'FUTURE-CODE'])
+            self.assertEqual(products['28540276']['crossBrand'], 'Hyundai / Kia')
+            self.assertEqual(products['DZ111136']['category'], 'valves')
+
     def test_failed_products_publish_preserves_previous_catalog(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

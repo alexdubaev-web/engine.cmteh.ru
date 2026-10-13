@@ -144,7 +144,7 @@
     "brand": "Delphi",
     "category": "injectors",
     "price": 28589,
-    "crossBrand": "Mercedes-Benz",
+    "crossBrand": "Hyundai / Kia",
     "sourceRow": 14,
     "sourceUrls": [
       "https://www.delphiautoparts.com/"
@@ -386,7 +386,7 @@
     "sku": "28308779",
     "codes": [
       "28308779",
-      "A651070328"
+      "A6510703287"
     ],
     "name": "Топливная форсунка Common Rail Delphi",
     "shortName": "Топливная форсунка Common Rail",
@@ -1115,7 +1115,7 @@
     "name": "Клапан управления подачей топлива ТНВД John Deere",
     "shortName": "Клапан управления подачей топлива ТНВД",
     "brand": "John Deere",
-    "category": "pumps",
+    "category": "valves",
     "price": 57630,
     "crossBrand": "",
     "sourceRow": 63,

@@ -1,0 +1,1114 @@
+[
+  {
+    "sku": "0433175478",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "0,026 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 369, Peso Netto."
+      },
+      {
+        "label": "Конструкция распылителя",
+        "value": "Распылитель с сопловыми отверстиями",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 369, Polverizzat a sede forata."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [
+      "Типовое обозначение и применяемость не подтверждены первоисточником."
+    ],
+    "queries": [
+      "\"0433175478\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445020610",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "4,964 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 330, Peso Netto."
+      },
+      {
+        "label": "Конструкция насоса",
+        "value": "Радиально-поршневая",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 330, Descrizione."
+      },
+      {
+        "label": "Каталожное соответствие OE",
+        "value": "Sisu Diesel 837073731",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "evidence": "PDF 754 / C87, SISU DIESEL."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "title": "Bosch Diesel 2019–2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445020610\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445020208",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "11,58 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 329, Peso Netto."
+      },
+      {
+        "label": "Конструкция насоса",
+        "value": "Радиально-поршневая",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 329, Descrizione."
+      },
+      {
+        "label": "Применение по каталогу Bosch",
+        "value": "MAN 18t-Series, 26t-Series, 35t-Series",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch-product-spotlight-bx-common_rail_july-2021.pdf",
+        "evidence": "PDF 2, Pumps BX, строка 5."
+      },
+      {
+        "label": "Номер Bosch eXchange",
+        "value": "0986437350",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch-product-spotlight-bx-common_rail_july-2021.pdf",
+        "evidence": "PDF 2, New → BX."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch-product-spotlight-bx-common_rail_july-2021.pdf",
+        "title": "Bosch eXchange Common Rail — Product Spotlight 07.2021",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445020208\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445020201",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Каталожное соответствие OE",
+        "value": "CNHTC 805011167",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "evidence": "PDF 699 / C32, CNHTC."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "title": "Bosch Diesel 2019–2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [
+      "Конструктивный тип и рабочие параметры не подтверждены."
+    ],
+    "queries": [
+      "\"0445020201\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445120075",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "0,63 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 350, Peso Netto."
+      },
+      {
+        "label": "Тип форсунки Bosch",
+        "value": "CRIN2-16",
+        "source_url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "evidence": "PDF 7, Type Number → Type Formula."
+      },
+      {
+        "label": "Распылитель",
+        "value": "0433171966 / DLLA137P1577",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch_common_rail_fuel_injection_system_chinese_oem_applications.pdf",
+        "evidence": "PDF 11, Injector → Nozzle / Type Code."
+      },
+      {
+        "label": "Клапанный комплект",
+        "value": "F00RJ01278",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch_common_rail_fuel_injection_system_chinese_oem_applications.pdf",
+        "evidence": "PDF 11, Valve Set."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "title": "DCI Database 2026/07 — Injector Overview",
+        "publisher": "Robert Bosch GmbH"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch_common_rail_fuel_injection_system_chinese_oem_applications.pdf",
+        "title": "Bosch Common Rail — Chinese OEM Applications",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445120075\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445020082",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "11,55 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 329, Peso Netto."
+      },
+      {
+        "label": "Конструкция насоса",
+        "value": "Радиально-поршневая",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 329, Descrizione."
+      },
+      {
+        "label": "Пример применения",
+        "value": "MAN TGX 18.680; D2868 LF02/LF05; 01.2008–05.2014",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "evidence": "PDF 424 / B395, строка 18.680, сверено визуально."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "title": "Bosch Diesel 2019–2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445020082\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0433175518",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "0,026 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 369, Peso Netto."
+      },
+      {
+        "label": "Конструкция распылителя",
+        "value": "Распылитель с сопловыми отверстиями",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 369, Polverizzat a sede forata."
+      },
+      {
+        "label": "Форсунка в сборе",
+        "value": "Bosch 0432193419",
+        "source_url": "https://www.boschautopartes.mx/documents/652389/7415360/digital_guia_rapida_diesel%2B2023_.pdf/c590e13c-bdc9-b30b-b45e-f57292ccddcb?t=1699397441663",
+        "evidence": "PDF 24 / печатная 23, Inyector DHK / Tobera."
+      },
+      {
+        "label": "Двигатель в каталоге",
+        "value": "Mercedes-Benz OM457LA",
+        "source_url": "https://www.boschautopartes.mx/documents/652389/7415360/digital_guia_rapida_diesel%2B2023_.pdf/c590e13c-bdc9-b30b-b45e-f57292ccddcb?t=1699397441663",
+        "evidence": "PDF 24 / печатная 23, Tipo de Motor."
+      },
+      {
+        "label": "Система впрыска",
+        "value": "UPS — отдельный насос на цилиндр",
+        "source_url": "https://www.boschautopartes.mx/documents/652389/7415360/digital_guia_rapida_diesel%2B2023_.pdf/c590e13c-bdc9-b30b-b45e-f57292ccddcb?t=1699397441663",
+        "evidence": "PDF 24 / печатная 23, Unit-Pump."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://www.boschautopartes.mx/documents/652389/7415360/digital_guia_rapida_diesel%2B2023_.pdf/c590e13c-bdc9-b30b-b45e-f57292ccddcb?t=1699397441663",
+        "title": "Guía rápida de aplicaciones Diesel 2023",
+        "publisher": "Bosch México"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0433175518\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445020334",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "7,34 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 329, Peso Netto."
+      },
+      {
+        "label": "Конструкция насоса",
+        "value": "Радиально-поршневая",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 329, Descrizione."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [
+      "Конструкция и масса подтверждены; применяемость и OE не найдены в проверенных первоисточниках."
+    ],
+    "queries": [
+      "\"0445020334\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445020110",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "8,592 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 329, Peso Netto."
+      },
+      {
+        "label": "Конструкция насоса",
+        "value": "Радиально-поршневая",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 329, Descrizione."
+      },
+      {
+        "label": "Каталожное соответствие OE",
+        "value": "ЯМЗ 53401111010",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "evidence": "PDF 767 / C100, YAMZ."
+      },
+      {
+        "label": "Тип ТНВД",
+        "value": "CR/CP3HS3/L110/30-789S",
+        "source_url": "https://semar-servis.ru/images/my/20220130/20220130.pdf",
+        "evidence": "PDF 8, ТНВД."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "title": "Bosch Diesel 2019–2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://semar-servis.ru/images/my/20220130/20220130.pdf",
+        "title": "ОТТС ТС RU Е-RU.МТ35.00809",
+        "publisher": "ИНСАТ; опубликовано изготовителем СЕМАР-СЕРВИС"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445020110\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445120126",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Каталожное соответствие OE",
+        "value": "Mitsubishi Heavy 32G6100010",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "evidence": "PDF 739 / C72, MITSUBISHI HEAVY."
+      },
+      {
+        "label": "Тип форсунки Bosch",
+        "value": "CRIN2-L",
+        "source_url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "evidence": "PDF 8, Type Number → Type Formula."
+      },
+      {
+        "label": "Комплектация по каталогу Bosch",
+        "value": "Без уплотнительного кольца",
+        "source_url": "https://ap-ecat.boschaftermarket.com/SG/en_SG/products/0445120126",
+        "evidence": "Details Parameters: Without sealing ring."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "title": "Bosch Diesel 2019–2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "title": "DCI Database 2026/07 — Injector Overview",
+        "publisher": "Robert Bosch GmbH"
+      },
+      {
+        "url": "https://ap-ecat.boschaftermarket.com/SG/en_SG/products/0445120126",
+        "title": "Bosch AutoParts Catalogue — 0445120126",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [
+      "Значение массы 0,009 кг в прайс-листе выглядит служебным; не использовать."
+    ],
+    "queries": [
+      "\"0445120126\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445120072",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Каталожное соответствие OE",
+        "value": "Mercedes-Benz ME225416",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "evidence": "PDF 733 / C66, MERCEDES-BENZ."
+      },
+      {
+        "label": "Тип форсунки Bosch",
+        "value": "CRIN3-L",
+        "source_url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "evidence": "PDF 7, Type Number → Type Formula."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "title": "Bosch Diesel 2019–2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "title": "DCI Database 2026/07 — Injector Overview",
+        "publisher": "Robert Bosch GmbH"
+      }
+    ],
+    "gaps": [
+      "Значение массы 0,009 кг в прайс-листе выглядит служебным; не использовать."
+    ],
+    "queries": [
+      "\"0445120072\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445020540",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Тип ТНВД",
+        "value": "CR/CP4N1/L50/20",
+        "source_url": "https://semar-servis.ru/images/my/20220130/20220130.pdf",
+        "evidence": "PDF 8, ТНВД."
+      },
+      {
+        "label": "Двигатель в документе изготовителя",
+        "value": "ЯМЗ-53443; подбор по исполнению",
+        "source_url": "https://semar-servis.ru/images/my/20220130/20220130.pdf",
+        "evidence": "PDF 8, двигатель и ТНВД."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://semar-servis.ru/images/my/20220130/20220130.pdf",
+        "title": "ОТТС ТС RU Е-RU.МТ35.00809",
+        "publisher": "ИНСАТ; опубликовано изготовителем СЕМАР-СЕРВИС"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445020540\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445226092",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Замена по каталогу Bosch",
+        "value": "0445226190",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/br/downloads_19/pdf_9/catlogo_diesel_2018_pginas_espelhadas.pdf",
+        "evidence": "PDF 57 / печатная 111: Produto anterior → Substituto/referência reposição."
+      },
+      {
+        "label": "Датчик давления",
+        "value": "Bosch 0281006325",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/br/downloads_19/pdf_9/catlogo_diesel_2018_pginas_espelhadas.pdf",
+        "evidence": "PDF 23 / печатная 42, Sensor de Pressão."
+      },
+      {
+        "label": "Клапан ограничения давления",
+        "value": "Bosch 1110010024",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/br/downloads_19/pdf_9/catlogo_diesel_2018_pginas_espelhadas.pdf",
+        "evidence": "PDF 23 / печатная 42, Válvula Limitadora de Pressão."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/br/downloads_19/pdf_9/catlogo_diesel_2018_pginas_espelhadas.pdf",
+        "title": "Catálogo Diesel Bosch 2019–2020",
+        "publisher": "Bosch Brasil"
+      }
+    ],
+    "gaps": [
+      "Направление замены подтверждено каталогом; универсальная обратная взаимозаменяемость не заявляется."
+    ],
+    "queries": [
+      "\"0445226092\" site:boschaftermarket.com",
+      "\"0 445 226 092\" Bosch pdf"
+    ]
+  },
+  {
+    "sku": "0445120728",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип форсунки Bosch",
+        "value": "CRIN3-18",
+        "source_url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "evidence": "PDF 11, Type Number → Type Formula."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "title": "DCI Database 2026/07 — Injector Overview",
+        "publisher": "Robert Bosch GmbH"
+      }
+    ],
+    "gaps": [
+      "Связь с Caterpillar 527-5384 / 617-1909 и взаимозаменяемость с 0445120729 не подтверждены этим документом."
+    ],
+    "queries": [
+      "\"0445120728\" site:boschaftermarket.com",
+      "\"0 445 120 728\" Bosch pdf"
+    ]
+  },
+  {
+    "sku": "0445120212",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "0,603 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 351, Peso Netto."
+      },
+      {
+        "label": "Тип форсунки Bosch",
+        "value": "CRIN1",
+        "source_url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "evidence": "PDF 8, Type Number → Type Formula."
+      },
+      {
+        "label": "Двигатель в каталоге",
+        "value": "Cummins ISBe",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch_common_rail_fuel_injection_system_chinese_oem_applications.pdf",
+        "evidence": "PDF 10, Engine."
+      },
+      {
+        "label": "Распылитель",
+        "value": "0433175501 / DSLA143P5501",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch_common_rail_fuel_injection_system_chinese_oem_applications.pdf",
+        "evidence": "PDF 10, Nozzle / Type Code."
+      },
+      {
+        "label": "Клапанный комплект",
+        "value": "F00RJ02130",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch_common_rail_fuel_injection_system_chinese_oem_applications.pdf",
+        "evidence": "PDF 10, Valve Set."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "title": "DCI Database 2026/07 — Injector Overview",
+        "publisher": "Robert Bosch GmbH"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch_common_rail_fuel_injection_system_chinese_oem_applications.pdf",
+        "title": "Bosch Common Rail — Chinese OEM Applications",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445120212\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445116059",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "0,372 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 349, Peso Netto."
+      },
+      {
+        "label": "Тип форсунки Bosch",
+        "value": "CRI 3-18",
+        "source_url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "evidence": "PDF 6, Type Number → Type Formula."
+      },
+      {
+        "label": "Применение по каталогу Bosch",
+        "value": "Citroën Jumper; Fiat Ducato; Iveco Daily; Peugeot Boxer",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch-product-spotlight-bx-common_rail_july-2021.pdf",
+        "evidence": "PDF 2, Injector BX, строка 11."
+      },
+      {
+        "label": "Номер Bosch eXchange",
+        "value": "0986435395",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch-product-spotlight-bx-common_rail_july-2021.pdf",
+        "evidence": "PDF 2, New → BX."
+      },
+      {
+        "label": "Комплектация по каталогу Bosch",
+        "value": "Без уплотнительного кольца",
+        "source_url": "https://ap-ecat.boschaftermarket.com/MY/en_MY/products/0445116059",
+        "evidence": "Details Parameters: Without sealing ring."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "title": "DCI Database 2026/07 — Injector Overview",
+        "publisher": "Robert Bosch GmbH"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch-product-spotlight-bx-common_rail_july-2021.pdf",
+        "title": "Bosch eXchange Common Rail — Product Spotlight 07.2021",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://ap-ecat.boschaftermarket.com/MY/en_MY/products/0445116059",
+        "title": "Bosch AutoParts Catalogue — 0445116059",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445116059\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445124036",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "0,807 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 352, Peso Netto."
+      },
+      {
+        "label": "Каталожное соответствие OE",
+        "value": "Iveco 5801906153",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "evidence": "PDF 720 / C53, IVECO."
+      },
+      {
+        "label": "Тип форсунки Bosch",
+        "value": "CRIN3-22",
+        "source_url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "evidence": "PDF 11, Type Number → Type Formula."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "title": "Bosch Diesel 2019–2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "title": "DCI Database 2026/07 — Injector Overview",
+        "publisher": "Robert Bosch GmbH"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445124036\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445020089",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "11,562 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 329, Peso Netto."
+      },
+      {
+        "label": "Конструкция насоса",
+        "value": "Радиально-поршневая",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 329, Descrizione."
+      },
+      {
+        "label": "Двигатели в каталоге",
+        "value": "КамАЗ 740.70–740.75, Euro 4",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "evidence": "PDF 456 / B427, KAMAZ Serie 740."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "title": "Bosch Diesel 2019–2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445020089\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445020081",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "11,53 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 328, Peso Netto."
+      },
+      {
+        "label": "Конструкция насоса",
+        "value": "Радиально-поршневая",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 328, Descrizione."
+      },
+      {
+        "label": "Каталожное соответствие OE",
+        "value": "Liebherr 10117814",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "evidence": "PDF 726 / C59, LIEBHERR."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "title": "Bosch Diesel 2019–2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445020081\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445124025",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "0,6 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 352, Peso Netto."
+      },
+      {
+        "label": "Каталожное соответствие OE",
+        "value": "Sisu Diesel 837074860",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "evidence": "PDF 754 / C87, SISU DIESEL."
+      },
+      {
+        "label": "Тип форсунки Bosch",
+        "value": "CRIN3-20",
+        "source_url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "evidence": "PDF 11, Type Number → Type Formula."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "title": "Bosch Diesel 2019–2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "title": "DCI Database 2026/07 — Injector Overview",
+        "publisher": "Robert Bosch GmbH"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445124025\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445020606",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Замена по каталогу Bosch",
+        "value": "0445020610",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/br/downloads_19/pdf_9/catlogo_diesel_2018_pginas_espelhadas.pdf",
+        "evidence": "PDF 57 / печатная 111: Produto anterior → Substituto/referência reposição."
+      },
+      {
+        "label": "Каталожное соответствие OE",
+        "value": "Fendt V837073731",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/br/downloads_19/pdf_9/catlogo_diesel_2018_pginas_espelhadas.pdf",
+        "evidence": "PDF 59 / печатная 114, FENDT."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/br/downloads_19/pdf_9/catlogo_diesel_2018_pginas_espelhadas.pdf",
+        "title": "Catálogo Diesel Bosch 2019–2020",
+        "publisher": "Bosch Brasil"
+      }
+    ],
+    "gaps": [
+      "Направление замены подтверждено каталогом; универсальная обратная взаимозаменяемость не заявляется."
+    ],
+    "queries": [
+      "\"0445020606\" site:boschaftermarket.com",
+      "\"0 445 020 606\" Bosch pdf"
+    ]
+  },
+  {
+    "sku": "0445020611",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "4,517 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 330, Peso Netto."
+      },
+      {
+        "label": "Конструкция насоса",
+        "value": "Радиально-поршневая",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 330, Descrizione."
+      },
+      {
+        "label": "Каталожное соответствие OE",
+        "value": "Sisu Diesel 837074805",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "evidence": "PDF 754 / C87, SISU DIESEL."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "title": "Bosch Diesel 2019–2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445020611\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445020508",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Применение по каталогу Merlin Diesel",
+        "value": "Case / New Holland",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2025/05/WAAS-2025-1.pdf",
+        "evidence": "Раздел BOSCH PUMPS, 0 445 020 508."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.merlindiesel.com/wp-content/uploads/2025/05/WAAS-2025-1.pdf",
+        "title": "WAAS 2025",
+        "publisher": "Merlin Diesel Systems"
+      }
+    ],
+    "gaps": [
+      "Применение подтверждено составителем Merlin Diesel; точные модели и тип насоса не подтверждены Bosch."
+    ],
+    "queries": [
+      "\"0445020508\" site:boschaftermarket.com",
+      "\"0 445 020 508\" Bosch pdf"
+    ]
+  },
+  {
+    "sku": "F00RJ02177",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Назначение комплекта",
+        "value": "Уплотнения высокого давления Common Rail",
+        "source_url": "https://ap-ecat.boschaftermarket.com/TH/th/search/product/result?ccode%5B0%5D=DS008&page=20&perPage=51&view=list",
+        "evidence": "Строка артикула; ชุดชิ้นส่วน แหวนซีลแรงดันสูง CR."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://ap-ecat.boschaftermarket.com/TH/th/search/product/result?ccode%5B0%5D=DS008&page=20&perPage=51&view=list",
+        "title": "Bosch AutoParts Catalogue — F00RJ02177",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [
+      "Количество и размеры уплотнений не подтверждены."
+    ],
+    "queries": [
+      "\"F00RJ02177\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0414701072",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "1,735 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 345, Peso Netto."
+      },
+      {
+        "label": "Каталожное соответствие OE",
+        "value": "Scania 1943974",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "evidence": "PDF 753 / C86, SCANIA."
+      },
+      {
+        "label": "Система впрыска",
+        "value": "UIS — насос-форсунка",
+        "source_url": "https://ap-ecat.boschaftermarket.com/TH/th/search/product/result?ccode%5B0%5D=DS008&page=28&perPage=51&view=list",
+        "evidence": "Строка артикула: Unit injector (UIS)."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "title": "Bosch Diesel 2019–2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://ap-ecat.boschaftermarket.com/TH/th/search/product/result?ccode%5B0%5D=DS008&page=28&perPage=51&view=list",
+        "title": "Bosch AutoParts Catalogue — 0414701072",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0414701072\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445120385",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "1,12 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 352, Peso Netto."
+      },
+      {
+        "label": "Каталожное соответствие OE",
+        "value": "Mercedes-Benz A4710700887",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "evidence": "PDF 731 / C64, MERCEDES-BENZ."
+      },
+      {
+        "label": "Тип форсунки Bosch",
+        "value": "CRIN4-27",
+        "source_url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "evidence": "PDF 9, Type Number → Type Formula."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/catalogs/diesel.pdf",
+        "title": "Bosch Diesel 2019–2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://help.boschdiagnostics.com/DCI700/content/InjectorOverview.pdf",
+        "title": "DCI Database 2026/07 — Injector Overview",
+        "publisher": "Robert Bosch GmbH"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445120385\" site:boschaftermarket.com"
+    ]
+  },
+  {
+    "sku": "0445020273",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Масса нетто",
+        "value": "7 кг",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 329, Peso Netto."
+      },
+      {
+        "label": "Конструкция насоса",
+        "value": "Радиально-поршневая",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "evidence": "PDF 329, Descrizione."
+      },
+      {
+        "label": "Применение по каталогу Bosch",
+        "value": "Weichai",
+        "source_url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch_common_rail_fuel_injection_system_chinese_oem_applications.pdf",
+        "evidence": "PDF 16, CR Pump."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/it/xx_pdfs_28/price_list/listini_prezzi.pdf",
+        "title": "Listino Bosch 01.11.2020",
+        "publisher": "Bosch Automotive Aftermarket"
+      },
+      {
+        "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/za/services_20/download_teasers/diesel/product_communication/bosch_common_rail_fuel_injection_system_chinese_oem_applications.pdf",
+        "title": "Bosch Common Rail — Chinese OEM Applications",
+        "publisher": "Bosch Automotive Aftermarket"
+      }
+    ],
+    "gaps": [],
+    "queries": [
+      "\"0445020273\" site:boschaftermarket.com"
+    ]
+  }
+]

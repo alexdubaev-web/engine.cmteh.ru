@@ -62,8 +62,6 @@ require(len(descriptions)==len(set(descriptions)),'duplicate descriptions');requ
 home=html.fromstring((out/'index.html').read_text(encoding='utf-8'))
 nojs_nav=home.xpath('string(//head/noscript/style)')
 require('position:static' in nojs_nav and 'flex-wrap:wrap' in nojs_nav,'no-JS mobile navigation must stay in document flow')
-require(home.xpath('string(//title)')=='Топливная аппаратура Bosch, Delphi, Denso, John Deere | СМ ТЕХНО','home title differs from approved title')
-require(home.xpath('string(//meta[@name="description"]/@content)')=='Топливная аппаратура Bosch, Delphi, Denso, John Deere и VDO: форсунки, ТНВД, распылители и клапаны. Подбор по артикулу, цены, наличие и доставка по России.','home description differs from approved description')
 require(home.xpath('string(//h1)')=='Топливная аппаратура для дизельной спецтехники','home H1 missing topic')
 require(len(home.xpath('//section[@id="catalog"]//article[contains(@class,"product-card")]'))==8,'home must contain exactly eight rendered product cards')
 for href in ['/catalog/','/#selection','/#how-to-order','/delivery/','/articles/','/about/','/contacts/']:

@@ -1,0 +1,675 @@
+[
+  {
+    "sku": "7206-0460",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип узла",
+        "value": "По каталогу Ditex: клапан управления распылителем; версия 7206-0460-12B1.",
+        "source_url": "https://www.ditex.it/dms/sito_ditex/documenti/Listino%20Delphi%20-%20Ricambi.pdf",
+        "evidence": "Стр. 72: строка версии с суффиксом 12B1."
+      },
+      {
+        "label": "Применяемость",
+        "value": "По каталогу Oto Perk: Delphi Smart Injector для DAF Euro 5.",
+        "source_url": "https://www.eurodiesel.com/uploads/pdf/2UNIT-INJECTOR-Catalog-Fast-Moving-Items-2019-pdf_1554203639.pdf",
+        "evidence": "Каталог указывает точный артикул в разделе компонентов Smart Injector."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ditex.it/dms/sito_ditex/documenti/Listino%20Delphi%20-%20Ricambi.pdf",
+        "title": "Listino Delphi — Ricambi, февраль 2025",
+        "publisher": "Ditex"
+      },
+      {
+        "url": "https://www.eurodiesel.com/uploads/pdf/2UNIT-INJECTOR-Catalog-Fast-Moving-Items-2019-pdf_1554203639.pdf",
+        "title": "Unit Injector (EUI–HEUI) Repair Kits, 2019",
+        "publisher": "Oto Perk / EuroDiesel"
+      }
+    ],
+    "gaps": [
+      "Напряжение, сопротивление и полный список форсунок не подтверждены.",
+      "Каталог Ditex использует суффикс 12B1; комплектацию поставляемой детали следует сверить."
+    ],
+    "queries": [
+      "\"7206-0460\" Delphi filetype:pdf",
+      "\"7206-0460\" site:delphiautoparts.com"
+    ]
+  },
+  {
+    "sku": "28272472",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Система впрыска",
+        "value": "По каталогу Merlin Diesel: Common Rail, DFI 1.5.2.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "evidence": "Стр. 2, строка 28272472."
+      },
+      {
+        "label": "OEM-номер",
+        "value": "По каталогу Merlin Diesel: Mercedes-Benz A6510702387.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "evidence": "Стр. 2, строка 28272472."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "title": "Delphi Cross Reference & Application Guide, 06/24",
+        "publisher": "Merlin Diesel Systems"
+      }
+    ],
+    "gaps": [
+      "Модель автомобиля и код двигателя первоисточником не установлены.",
+      "Рабочее давление и электрические параметры не подтверждены."
+    ],
+    "queries": [
+      "\"28272472\" site:delphiautoparts.com",
+      "\"28272472\" Delphi \"DDNX\""
+    ]
+  },
+  {
+    "sku": "9323A270G",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип насоса",
+        "value": "По каталогу Merlin Diesel: DP210.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf",
+        "evidence": "Стр. 4, строка точного артикула."
+      },
+      {
+        "label": "Применяемость",
+        "value": "По каталогу Merlin Diesel: JCB TC Full Rate, 74,5 кВт.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf",
+        "evidence": "Стр. 4, графа Application/Engine Number."
+      },
+      {
+        "label": "OEM-номера",
+        "value": "По каталогу Merlin Diesel: JCB 320/06930 и 320/06739.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf",
+        "evidence": "Стр. 4, графы JCB No. и Cross Ref."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf",
+        "title": "Delphi/JCB Cross Reference & Application Guide, 04/24",
+        "publisher": "Merlin Diesel Systems"
+      }
+    ],
+    "gaps": [
+      "74,5 кВт — мощность двигателя в применяемости, не мощность насоса.",
+      "Напряжение и параметры подключения не подтверждены."
+    ],
+    "queries": [
+      "\"9323A270G\" Delphi filetype:pdf",
+      "\"9323A270G\" site:delphiautoparts.com",
+      "Merlin Diesel JCB cross reference application guide 9323A270G"
+    ]
+  },
+  {
+    "sku": "28540276",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Система впрыска",
+        "value": "По каталогу Merlin Diesel: Common Rail, DFI 1.5.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "evidence": "Стр. 4, строка 28540276."
+      },
+      {
+        "label": "OEM-номера",
+        "value": "По каталогу Merlin Diesel: Hyundai/Kia 33800-2A760, 33800-2A790.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "evidence": "Стр. 4, строка 28540276."
+      },
+      {
+        "label": "Справочный номер Delphi",
+        "value": "По каталогу Merlin Diesel: R00203D.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "evidence": "Стр. 4, строка 28540276."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "title": "Delphi Cross Reference & Application Guide, 06/24",
+        "publisher": "Merlin Diesel Systems"
+      }
+    ],
+    "gaps": [
+      "Исходная crossBrand Mercedes-Benz противоречит справочнику; не использовать её как подтверждённую применяемость.",
+      "Конкретные модели и годы выпуска требуют дополнительной проверки."
+    ],
+    "queries": [
+      "\"28540276\" Delphi filetype:pdf",
+      "\"28540276\" site:delphiautoparts.com"
+    ]
+  },
+  {
+    "sku": "7206-0435",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип узла",
+        "value": "По каталогу Ditex: актуатор в сборе системы E1; версия 7206-0435-12B1.",
+        "source_url": "https://www.ditex.it/dms/sito_ditex/documenti/Listino%20Delphi%20-%20Ricambi.pdf",
+        "evidence": "Стр. 72: классификация актуатора E1."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ditex.it/dms/sito_ditex/documenti/Listino%20Delphi%20-%20Ricambi.pdf",
+        "title": "Listino Delphi — Ricambi, февраль 2025",
+        "publisher": "Ditex"
+      }
+    ],
+    "gaps": [
+      "Точное соответствие форсункам BEBE4C07001/BEBE4C08001 найдено только в сторонних товарных карточках; не включено в факты.",
+      "Суффикс 12B1 приведён как версия каталога, не как подтверждение комплектации.",
+      "Напряжение и сопротивление не подтверждены."
+    ],
+    "queries": [
+      "\"7206-0435\" Delphi filetype:pdf",
+      "\"7206-0435\" site:delphiautoparts.com",
+      "\"7206-0435\" \"ACTUATOR\" filetype:pdf -site:scribd.com"
+    ]
+  },
+  {
+    "sku": "28516849",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип узла",
+        "value": "По каталогу Ditex: подкачивающий насос в сборе; версия 28516849-12B1.",
+        "source_url": "https://www.ditex.it/dms/sito_ditex/documenti/Listino%20Delphi%20-%20Ricambi.pdf",
+        "evidence": "Стр. 12: классификация Transfer Pump Assembly."
+      },
+      {
+        "label": "Привод",
+        "value": "По каталогу TW Diesel: 9 зубьев.",
+        "source_url": "https://23223077.fs1.hubspotusercontent-na1.net/hubfs/23223077/Cat%C3%A1logo%20TW%20Diesel.pdf",
+        "evidence": "Раздел Sistema Delphi, стр. 7: для этого артикула указано 9 зубьев."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ditex.it/dms/sito_ditex/documenti/Listino%20Delphi%20-%20Ricambi.pdf",
+        "title": "Listino Delphi — Ricambi, февраль 2025",
+        "publisher": "Ditex"
+      },
+      {
+        "url": "https://23223077.fs1.hubspotusercontent-na1.net/hubfs/23223077/Cat%C3%A1logo%20TW%20Diesel.pdf",
+        "title": "Catálogo TW Diesel, раздел Sistema Delphi",
+        "publisher": "TW Diesel"
+      }
+    ],
+    "gaps": [
+      "Связь с кодом 7240-241 не подтверждена техническим первоисточником.",
+      "Не смешивать с 28303795: каталог TW указывает для него 13 зубьев.",
+      "PDF TW прочитан по поисковому индексу; прямое открытие инструментом не удалось."
+    ],
+    "queries": [
+      "\"28516849\" Delphi filetype:pdf",
+      "\"28516849\" site:delphiautoparts.com",
+      "\"28516849\" \"7240-241\" Delphi"
+    ]
+  },
+  {
+    "sku": "L229PBC",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Для форсунки",
+        "value": "Delphi BEBE4C08001.",
+        "source_url": "https://pt.scribd.com/document/378208391/357711909-262059083-Catalogo-Diesel-Delphi-2015-2016-pdf-pdf",
+        "evidence": "Каталог Delphi 2015/2016, раздел Volvo, стр. 80–81/126."
+      },
+      {
+        "label": "Тип системы",
+        "value": "Электронная насос-форсунка EUI, серия E1.",
+        "source_url": "https://pt.scribd.com/document/378208391/357711909-262059083-Catalogo-Diesel-Delphi-2015-2016-pdf-pdf",
+        "evidence": "Таблица Volvo связывает распылитель с форсункой серии E1."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://pt.scribd.com/document/378208391/357711909-262059083-Catalogo-Diesel-Delphi-2015-2016-pdf-pdf",
+        "title": "Aplicações Diesel 2015/2016, каталог Delphi (копия на Scribd)",
+        "publisher": "Delphi; архивная копия стороннего пользователя"
+      }
+    ],
+    "gaps": [
+      "Каталог в разных разделах печатает OEM 3829087 и 3839087; спорный OEM не включён.",
+      "Размеры отверстий и угол распыла не подтверждены Delphi; данные аналогов Firad не перенесены."
+    ],
+    "queries": [
+      "\"L229PBC\" Delphi filetype:pdf",
+      "\"L229PBC\" site:delphiautoparts.com"
+    ]
+  },
+  {
+    "sku": "L053PBC",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип распылителя",
+        "value": "По каталогу Ditex: для Smart Injector; версия L053PBC-12B1.",
+        "source_url": "https://www.ditex.it/dms/sito_ditex/documenti/Listino%20Delphi%20-%20Ricambi.pdf",
+        "evidence": "Стр. 107: классификация Smart Injector."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ditex.it/dms/sito_ditex/documenti/Listino%20Delphi%20-%20Ricambi.pdf",
+        "title": "Listino Delphi — Ricambi, февраль 2025",
+        "publisher": "Ditex"
+      }
+    ],
+    "gaps": [
+      "Геометрия из каталога Firad относится к его изделию ALLA150FL053 и не перенесена на оригинал Delphi.",
+      "DAF и конкретная форсунка требуют проверки изготовителем."
+    ],
+    "queries": [
+      "\"L053PBC\" Delphi filetype:pdf",
+      "\"L053PBC\" site:delphiautoparts.com"
+    ]
+  },
+  {
+    "sku": "28308779",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Система впрыска",
+        "value": "По каталогу Merlin Diesel: Common Rail, DFI 1.5.2.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "evidence": "Стр. 2, строка 28308779."
+      },
+      {
+        "label": "OEM-номер",
+        "value": "По каталогу Merlin Diesel: Mercedes-Benz A6510703287.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "evidence": "Стр. 2, строка 28308779."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "title": "Delphi Cross Reference & Application Guide, 06/24",
+        "publisher": "Merlin Diesel Systems"
+      }
+    ],
+    "gaps": [
+      "Исходный код A651070328 короче опубликованного номера A6510703287; его нельзя считать подтверждённым OEM.",
+      "Давление и точные модели автомобилей не подтверждены."
+    ],
+    "queries": [
+      "\"28308779\" Delphi filetype:pdf",
+      "\"28308779\" site:delphiautoparts.com",
+      "\"28308779\" \"A651070328\" Delphi"
+    ]
+  },
+  {
+    "sku": "L017PBB",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Для форсунки",
+        "value": "Delphi BEBE4B12004.",
+        "source_url": "https://pt.scribd.com/document/378208391/357711909-262059083-Catalogo-Diesel-Delphi-2015-2016-pdf-pdf",
+        "evidence": "Каталог Delphi, стр. 126: сопоставление распылителя и форсунки."
+      },
+      {
+        "label": "Применяемость",
+        "value": "Volvo FH12, двигатель D12C-420; по каталогу Delphi 2015/2016.",
+        "source_url": "https://pt.scribd.com/document/378208391/357711909-262059083-Catalogo-Diesel-Delphi-2015-2016-pdf-pdf",
+        "evidence": "Стр. 126, строка FH12."
+      },
+      {
+        "label": "OEM-номер форсунки",
+        "value": "Volvo 3155040.",
+        "source_url": "https://pt.scribd.com/document/378208391/357711909-262059083-Catalogo-Diesel-Delphi-2015-2016-pdf-pdf",
+        "evidence": "Стр. 126: OEM относится к форсунке в сборе."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://pt.scribd.com/document/378208391/357711909-262059083-Catalogo-Diesel-Delphi-2015-2016-pdf-pdf",
+        "title": "Aplicações Diesel 2015/2016, каталог Delphi (копия на Scribd)",
+        "publisher": "Delphi; архивная копия стороннего пользователя"
+      }
+    ],
+    "gaps": [
+      "OEM 3155040 относится к форсунке, не к самому распылителю.",
+      "Буклет Reman указывает D12A, а каталог 2015/2016 D12C-420; подбор по двигателю требует проверки номера форсунки.",
+      "Давление 320 в таблице не переносится как рабочее давление системы."
+    ],
+    "queries": [
+      "\"L017PBB\" Delphi filetype:pdf",
+      "\"L017PBB\" site:delphiautoparts.com"
+    ]
+  },
+  {
+    "sku": "L215PBC",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Для форсунки",
+        "value": "Delphi BEBE4D24002.",
+        "source_url": "https://pt.scribd.com/document/482216241/Kits-Delphi-parcial-pdf",
+        "evidence": "Буклет Delphi, таблица применяемости Reman."
+      },
+      {
+        "label": "Тип системы",
+        "value": "Электронная насос-форсунка EUI, поколение E3.18.",
+        "source_url": "https://pt.scribd.com/document/482216241/Kits-Delphi-parcial-pdf",
+        "evidence": "В таблице указаны линия EUI и поколение E3.18."
+      },
+      {
+        "label": "Применяемость",
+        "value": "Volvo FH13 с 2007 года, D13A; по буклету Delphi.",
+        "source_url": "https://pt.scribd.com/document/482216241/Kits-Delphi-parcial-pdf",
+        "evidence": "Строка форсунки BEBE4D24002."
+      },
+      {
+        "label": "OEM-номер форсунки",
+        "value": "Volvo 21340612.",
+        "source_url": "https://pt.scribd.com/document/482216241/Kits-Delphi-parcial-pdf",
+        "evidence": "OEM относится к форсунке в сборе, а не к распылителю."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://pt.scribd.com/document/482216241/Kits-Delphi-parcial-pdf",
+        "title": "Kits Delphi / Injetores Diesel EUI e Common Rail (копия буклета)",
+        "publisher": "Delphi Technologies; архивная копия на Scribd"
+      }
+    ],
+    "gaps": [
+      "Буклет перечисляет одну конкретную применяемость; это не полный список.",
+      "Геометрия отверстий не подтверждена документом Delphi."
+    ],
+    "queries": [
+      "\"L215PBC\" Delphi filetype:pdf",
+      "\"L215PBC\" site:delphiautoparts.com",
+      "\"L215PBC\" \"Delphi\" \"Kits\""
+    ]
+  },
+  {
+    "sku": "28229876",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Система впрыска",
+        "value": "По каталогу Merlin Diesel: Common Rail, DFI 2.5.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "evidence": "Стр. 2, строка 28229876."
+      },
+      {
+        "label": "OEM-номер",
+        "value": "По каталогу Merlin Diesel: JCB 320/06827.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf",
+        "evidence": "Стр. 2, графа JCB No."
+      },
+      {
+        "label": "Применяемость",
+        "value": "По каталогу Merlin Diesel: JCB, 4,8 л, 108 кВт, Tier 4.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf",
+        "evidence": "Стр. 2, графа Application/Engine Number."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "title": "Delphi Cross Reference & Application Guide, 06/24",
+        "publisher": "Merlin Diesel Systems"
+      },
+      {
+        "url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf",
+        "title": "Delphi/JCB Cross Reference & Application Guide, 04/24",
+        "publisher": "Merlin Diesel Systems"
+      }
+    ],
+    "gaps": [
+      "Мощность и объём относятся к применению двигателя, не к характеристикам форсунки.",
+      "Не распространять применяемость на все двигатели JCB 444."
+    ],
+    "queries": [
+      "\"28229876\" site:delphiautoparts.com",
+      "\"28229876\" Delphi \"DDNX\"",
+      "\"28229876\" \"320/06827\" Delphi"
+    ]
+  },
+  {
+    "sku": "L158PBA",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Для форсунки",
+        "value": "Delphi LJBB04101A.",
+        "source_url": "https://pt.scribd.com/document/378208391/357711909-262059083-Catalogo-Diesel-Delphi-2015-2016-pdf-pdf",
+        "evidence": "Каталог Delphi 2015/2016, таблица JCB, стр. 46."
+      },
+      {
+        "label": "Применяемость",
+        "value": "JCB с системой DP210; по каталогу Delphi 2015/2016.",
+        "source_url": "https://pt.scribd.com/document/378208391/357711909-262059083-Catalogo-Diesel-Delphi-2015-2016-pdf-pdf",
+        "evidence": "В таблице JCB распылитель связан с форсункой LJBB04101A."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://pt.scribd.com/document/378208391/357711909-262059083-Catalogo-Diesel-Delphi-2015-2016-pdf-pdf",
+        "title": "Aplicações Diesel 2015/2016, каталог Delphi (копия на Scribd)",
+        "publisher": "Delphi; архивная копия стороннего пользователя"
+      }
+    ],
+    "gaps": [
+      "Число 280 в каталоге дано в столбце давления форсунки (ATM), поэтому не обозначено как рабочее давление распылителя в барах.",
+      "Точную модель техники необходимо сверять по форсунке."
+    ],
+    "queries": [
+      "\"L158PBA\" Delphi filetype:pdf",
+      "\"L158PBA\" site:delphiautoparts.com"
+    ]
+  },
+  {
+    "sku": "28384974",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип насоса",
+        "value": "По каталогу Merlin Diesel: Common Rail, применение GMDAT.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "evidence": "Стр. 3, строка 28384974."
+      },
+      {
+        "label": "OEM-номер",
+        "value": "По каталогу Merlin Diesel: 25187375.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "evidence": "Стр. 3, строка 28384974."
+      },
+      {
+        "label": "Справочные номера Delphi",
+        "value": "По каталогу Merlin Diesel: 9422A040A, 28318239.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "evidence": "Стр. 3, строка 28384974."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "title": "Delphi Cross Reference & Application Guide, 06/24",
+        "publisher": "Merlin Diesel Systems"
+      }
+    ],
+    "gaps": [
+      "98686903 найден в карточках продавцов, но не подтверждён выбранным техническим справочником.",
+      "Объём двигателя, давление и массовые параметры не подтверждены."
+    ],
+    "queries": [
+      "\"28384974\" Delphi filetype:pdf",
+      "\"28384974\" site:delphiautoparts.com",
+      "\"28384974\" \"98686903\" Delphi"
+    ]
+  },
+  {
+    "sku": "28384976",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип насоса",
+        "value": "По каталогу Merlin Diesel: Common Rail, применение GMDAT.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "evidence": "Стр. 3, строка 28384976."
+      },
+      {
+        "label": "OEM-номер",
+        "value": "По каталогу Merlin Diesel: 25187376.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "evidence": "Стр. 3, строка 28384976."
+      },
+      {
+        "label": "Справочные номера Delphi",
+        "value": "По каталогу Merlin Diesel: 28286124, 28318240.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "evidence": "Стр. 3, строка 28384976."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.merlindiesel.com/wp-content/uploads/2024/08/DELPHI-CV-INJECTOR-APPLICATION-GUIDE-2024-new-1-1.pdf",
+        "title": "Delphi Cross Reference & Application Guide, 06/24",
+        "publisher": "Merlin Diesel Systems"
+      }
+    ],
+    "gaps": [
+      "Не утверждается взаимозаменяемость с 28384974.",
+      "Объём двигателя и рабочее давление не подтверждены."
+    ],
+    "queries": [
+      "\"28384976\" Delphi filetype:pdf",
+      "\"28384976\" site:delphiautoparts.com",
+      "\"28384976\" \"28286124\" \"28318240\" Delphi"
+    ]
+  },
+  {
+    "sku": "7210-0473",
+    "checked_at": "2026-10-13",
+    "status": "unverified",
+    "facts": [],
+    "sources": [],
+    "gaps": [
+      "Точный артикул не найден в доступных технических каталогах Delphi, Ditex и Merlin Rail Repair.",
+      "Коды 31442-84300 и 22720232 найдены в торговых карточках, но связь с 7210-0473 не подтверждена изготовителем или техническим справочником.",
+      "Указание Mitsubishi в исходной карточке не подтверждено; продавцы также указывают Volvo/DAF/Renault.",
+      "Не добавлять давление, напряжение, посадочную резьбу или универсальную применяемость."
+    ],
+    "queries": [
+      "\"7210-0473\" Delphi filetype:pdf",
+      "\"7210-0473\" site:delphiautoparts.com",
+      "\"7210-0473\" \"merlin\"",
+      "\"31442-84300\" \"Mitsubishi\"",
+      "\"22720232\" site:volvo.com"
+    ]
+  },
+  {
+    "sku": "9323A260G",
+    "checked_at": "2026-10-13",
+    "status": "partial",
+    "facts": [
+      {
+        "label": "Тип насоса",
+        "value": "По каталогу Merlin Diesel: DP210.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf",
+        "evidence": "Стр. 4, строка 9323A260G."
+      },
+      {
+        "label": "Применяемость",
+        "value": "По каталогу Merlin Diesel: JCB 444 TC Derate.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf",
+        "evidence": "Стр. 4, графа Application/Engine Number."
+      },
+      {
+        "label": "OEM-номера",
+        "value": "По каталогу Merlin Diesel: JCB 320/06738, 320/06929.",
+        "source_url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf",
+        "evidence": "Стр. 4, графы JCB No. и Cross Ref."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.merlindiesel.com/wp-content/uploads/2024/04/JCB-CROSS-REF-APPLICATION-GUIDE-2024.pdf",
+        "title": "Delphi/JCB Cross Reference & Application Guide, 04/24",
+        "publisher": "Merlin Diesel Systems"
+      }
+    ],
+    "gaps": [
+      "Связь с 9320A613G найдена у продавца Delphi Parts Store, но не в выбранном справочнике; не заявлять как подтверждённую замену.",
+      "Напряжение и мощность двигателя не перенесены из торговых карточек."
+    ],
+    "queries": [
+      "\"9323A260G\" Delphi filetype:pdf",
+      "\"9323A260G\" site:delphiautoparts.com",
+      "\"9323A260G\" \"9320A613G\" Delphi"
+    ]
+  },
+  {
+    "sku": "9109-903",
+    "checked_at": "2026-10-13",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Тип клапана",
+        "value": "Дозирующий клапан на входе насоса IMV системы Common Rail.",
+        "source_url": "https://wypalaniedpf.pl/wp-content/uploads/2024/02/Katalog-CommonRail-DDSX451EN.pdf",
+        "evidence": "Delphi DDSX451EN, стр. 24–27: определение IMV и таблица применяемости."
+      },
+      {
+        "label": "Назначение",
+        "value": "Регулирует подачу топлива в камеру высокого давления насоса по сигналу блока управления.",
+        "source_url": "https://wypalaniedpf.pl/wp-content/uploads/2024/02/Katalog-CommonRail-DDSX451EN.pdf",
+        "evidence": "Раздел IMV описывает регулирование подачи и давления в рампе."
+      },
+      {
+        "label": "Пример применяемости",
+        "value": "Ford Focus I 1.8 TDCi Lynx, 100 л.с., 09.2002–11.2004, Euro III.",
+        "source_url": "https://wypalaniedpf.pl/wp-content/uploads/2024/02/Katalog-CommonRail-DDSX451EN.pdf",
+        "evidence": "Таблица на стр. 26: точный IMV 9109-903."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://wypalaniedpf.pl/wp-content/uploads/2024/02/Katalog-CommonRail-DDSX451EN.pdf",
+        "title": "Delphi Common Rail, DDSX451EN",
+        "publisher": "Delphi Diesel Aftermarket; копия у специалиста по дизельным системам"
+      }
+    ],
+    "gaps": [
+      "Приведена одна строка применяемости, а не универсальный список моделей.",
+      "Электрические параметры и OEM-кроссы не подтверждены этим документом."
+    ],
+    "queries": [
+      "\"9109-903\" site:delphiautoparts.com",
+      "\"9109-903\" \"Delphi\" filetype:pdf"
+    ]
+  }
+]

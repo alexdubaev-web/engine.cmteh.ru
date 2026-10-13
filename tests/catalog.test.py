@@ -28,6 +28,26 @@ for p in products:
  expected=availability.get(p['id']);actual=product['offers'].get('availability')
  if actual!=('https://schema.org/'+expected if expected else None):errors.append(p['id']+' unjustified availability')
 assert len(products)==58
+technical=json.loads((root/'data/product_technical.json').read_text(encoding='utf-8'))
+assert set(technical)=={p['sku'] for p in products},'Technical records must cover every catalog SKU exactly once'
+assert sum(not record['facts'] for record in technical.values())==5,'Five unverified records must remain selection-only'
+for product in products:
+ record=technical[product['sku']]
+ assert all(not fact['label'].startswith('Габариты') for fact in record['facts']),product['sku']+' must not publish OEM dimensions'
+ assert all(source['url'].startswith('https://') for source in record['sources']),product['sku']+' technical source must use HTTPS'
+ assert {fact['source_url'] for fact in record['facts']}=={source['url'] for source in record['sources']},product['sku']+' source list must match published facts'
+ page=out/'catalog'/product['id']/'index.html';h=lxml.html.fromstring(page.read_text(encoding='utf-8'))
+ sections=h.xpath('//section[@id="technical"]')
+ assert len(sections)==1,product['sku']+' technical section missing'
+ section=sections[0]
+ actual=[(x.xpath('./dt/text()')[0],x.xpath('./dd/text()')[0].strip()) for x in section.xpath('.//dl[@class="specs"]/div')]
+ expected=[(fact['label'],fact['value']) for fact in record['facts']]
+ assert actual==expected,product['sku']+' visible facts differ from production data'
+ if record.get('selection_note'):
+  assert record['selection_note'] in section.text_content(),product['sku']+' selection note missing from technical section'
+ if not record['facts']:
+  assert not record['sources'] and not section.xpath('.//p[contains(@class,"technical-date")]'),product['sku']+' unverified record must not imply researched specifications'
+  assert record.get('selection_note'),product['sku']+' unverified record needs an actionable selection note'
 image_manifest=json.loads((root/'data/images.json').read_text(encoding='utf-8'))
 image_dimensions=json.loads((root/'data/image-dimensions.json').read_text(encoding='utf-8'))
 image_ledger=json.loads((root/'docs/PRODUCT-IMAGES-2026-10-07.json').read_text(encoding='utf-8'))

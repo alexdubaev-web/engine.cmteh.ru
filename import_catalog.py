@@ -9,6 +9,24 @@ from pipeline_io import atomic_write_text, pipeline_lock
 
 ROOT = Path(__file__).resolve().parent
 
+def apply_catalog_corrections(items):
+    """Keep three reviewed exact-SKU catalog corrections across workbook imports."""
+    corrections = {
+        # Merlin Diesel Delphi guide identifies Hyundai/Kia OEMs for 28540276.
+        '28540276': {'crossBrand': 'Hyundai / Kia'},
+        # John Deere exact-SKU title identifies DZ111136 as a suction-control valve.
+        'DZ111136': {'category': 'valves'},
+    }
+    for item in items:
+        if item['sku'] == '28308779':
+            # Correct the truncated Merlin cross-reference while retaining other workbook codes.
+            codes = ['A6510703287' if code == 'A651070328' else code for code in item.get('codes', [])]
+            item['codes'] = list(dict.fromkeys(codes))
+        correction = corrections.get(item['sku'])
+        if correction:
+            item.update(correction)
+    return items
+
 
 def parse_catalog(path):
     import openpyxl
@@ -40,7 +58,7 @@ def parse_catalog(path):
                       'image': None, 'imageSource': None})
     if len(items) != 58:
         raise ValueError(f'Expected 58 products, found {len(items)}')
-    return items
+    return apply_catalog_corrections(items)
 
 
 def main():
