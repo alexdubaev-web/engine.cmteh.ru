@@ -38,15 +38,16 @@ for product in products:
  assert {fact['source_url'] for fact in record['facts']}=={source['url'] for source in record['sources']},product['sku']+' source list must match published facts'
  page=out/'catalog'/product['id']/'index.html';h=lxml.html.fromstring(page.read_text(encoding='utf-8'))
  sections=h.xpath('//section[@id="technical"]')
- assert len(sections)==1,product['sku']+' technical section missing'
- section=sections[0]
- actual=[(x.xpath('./dt/text()')[0],x.xpath('./dd/text()')[0].strip()) for x in section.xpath('.//dl[@class="specs"]/div')]
- expected=[(fact['label'],fact['value']) for fact in record['facts']]
- assert actual==expected,product['sku']+' visible facts differ from production data'
- if record.get('selection_note'):
-  assert record['selection_note'] in section.text_content(),product['sku']+' selection note missing from technical section'
- if not record['facts']:
-  assert not record['sources'] and not section.xpath('.//p[contains(@class,"technical-date")]'),product['sku']+' unverified record must not imply researched specifications'
+ if record['facts']:
+  assert len(sections)==1,product['sku']+' technical section missing'
+  section=sections[0]
+  actual=[(x.xpath('./dt/text()')[0],x.xpath('./dd/text()')[0].strip()) for x in section.xpath('.//dl[@class="specs"]/div')]
+  expected=[(fact['label'],fact['value']) for fact in record['facts']]
+  assert actual==expected,product['sku']+' visible facts differ from production data'
+  if record.get('selection_note'):
+   assert record['selection_note'] not in section.text_content(),product['sku']+' internal selection note must stay out of the public technical section'
+ else:
+  assert not record['sources'] and not sections,product['sku']+' unverified record must not render an empty technical section'
   assert record.get('selection_note'),product['sku']+' unverified record needs an actionable selection note'
 image_manifest=json.loads((root/'data/images.json').read_text(encoding='utf-8'))
 image_dimensions=json.loads((root/'data/image-dimensions.json').read_text(encoding='utf-8'))
