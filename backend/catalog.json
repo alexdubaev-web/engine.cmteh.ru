@@ -404,5 +404,47 @@
     "name": "Комплект капитального ремонта двигателя John Deere",
     "brand": "John Deere",
     "price": 791000
+  },
+  {
+    "id": "re543262",
+    "sku": "RE543262",
+    "name": "Топливный насос впрыска John Deere",
+    "brand": "John Deere",
+    "price": 410355
+  },
+  {
+    "id": "re571640",
+    "sku": "RE571640",
+    "name": "ТНВД John Deere",
+    "brand": "John Deere",
+    "price": 215485
+  },
+  {
+    "id": "dz100212",
+    "sku": "DZ100212",
+    "name": "Комплект топливной форсунки Common Rail John Deere",
+    "brand": "John Deere",
+    "price": 41253
+  },
+  {
+    "id": "dz100221",
+    "sku": "DZ100221",
+    "name": "Комплект топливной форсунки Common Rail John Deere",
+    "brand": "John Deere",
+    "price": 75756
+  },
+  {
+    "id": "dz100217",
+    "sku": "DZ100217",
+    "name": "Комплект топливной форсунки Common Rail John Deere",
+    "brand": "John Deere",
+    "price": 73124
+  },
+  {
+    "id": "dz100216",
+    "sku": "DZ100216",
+    "name": "Комплект топливной форсунки Common Rail John Deere",
+    "brand": "John Deere",
+    "price": 53650
   }
 ]

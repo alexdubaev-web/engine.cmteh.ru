@@ -1143,5 +1143,122 @@
     ],
     "image": null,
     "imageSource": null
+  },
+  {
+    "id": "re543262",
+    "sku": "RE543262",
+    "codes": [
+      "RE543262"
+    ],
+    "name": "Топливный насос впрыска John Deere",
+    "shortName": "Топливный насос впрыска",
+    "brand": "John Deere",
+    "category": "pumps",
+    "price": 410355,
+    "crossBrand": "",
+    "sourceRow": 6,
+    "sourceUrls": [
+      "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "re571640",
+    "sku": "RE571640",
+    "codes": [
+      "RE571640"
+    ],
+    "name": "ТНВД John Deere",
+    "shortName": "ТНВД",
+    "brand": "John Deere",
+    "category": "pumps",
+    "price": 215485,
+    "crossBrand": "",
+    "sourceRow": 7,
+    "sourceUrls": [
+      "https://shop.deere.com/uk/product/RE571640%3A-Fuel-Injection-Pump/p/RE571640"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "dz100212",
+    "sku": "DZ100212",
+    "codes": [
+      "DZ100212"
+    ],
+    "name": "Комплект топливной форсунки Common Rail John Deere",
+    "shortName": "Комплект топливной форсунки Common Rail",
+    "brand": "John Deere",
+    "category": "injectors",
+    "price": 41253,
+    "crossBrand": "",
+    "sourceRow": 8,
+    "sourceUrls": [
+      "https://shop.deere.com/us/product/DZ100212%3A-Fuel-Injection-Nozzle-Kit/p/DZ100212"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "dz100221",
+    "sku": "DZ100221",
+    "codes": [
+      "DZ100221"
+    ],
+    "name": "Комплект топливной форсунки Common Rail John Deere",
+    "shortName": "Комплект топливной форсунки Common Rail",
+    "brand": "John Deere",
+    "category": "injectors",
+    "price": 75756,
+    "crossBrand": "",
+    "sourceRow": 9,
+    "sourceUrls": [
+      "https://shop.deere.com/us/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+      "https://shop.deere.com/ca/en/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "dz100217",
+    "sku": "DZ100217",
+    "codes": [
+      "DZ100217"
+    ],
+    "name": "Комплект топливной форсунки Common Rail John Deere",
+    "shortName": "Комплект топливной форсунки Common Rail",
+    "brand": "John Deere",
+    "category": "injectors",
+    "price": 73124,
+    "crossBrand": "",
+    "sourceRow": 10,
+    "sourceUrls": [
+      "https://shop.deere.com/us/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217",
+      "https://shop.deere.com/ca/en/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217"
+    ],
+    "image": null,
+    "imageSource": null
+  },
+  {
+    "id": "dz100216",
+    "sku": "DZ100216",
+    "codes": [
+      "DZ100216"
+    ],
+    "name": "Комплект топливной форсунки Common Rail John Deere",
+    "shortName": "Комплект топливной форсунки Common Rail",
+    "brand": "John Deere",
+    "category": "injectors",
+    "price": 53650,
+    "crossBrand": "",
+    "sourceRow": 11,
+    "sourceUrls": [
+      "https://shop.deere.com/us/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+      "https://shop.deere.com/ca/en/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216"
+    ],
+    "image": null,
+    "imageSource": null
   }
 ]

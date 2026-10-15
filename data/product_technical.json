@@ -1700,5 +1700,218 @@
       }
     ],
     "selection_note": ""
+  },
+  "RE543262": {
+    "checked_at": "2026-10-15",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Топливный насос впрыска",
+        "source_url": "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262"
+      },
+      {
+        "label": "Примеры техники",
+        "value": "John Deere 7R 210, 8R 230",
+        "source_url": "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262"
+      },
+      {
+        "label": "Примеры двигателей",
+        "value": "John Deere 6068HFC93, 6090HFC94",
+        "source_url": "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262",
+        "title": "RE543262: Fuel Injection Pump | Shop.Deere.com",
+        "publisher": "John Deere"
+      }
+    ]
+  },
+  "RE571640": {
+    "checked_at": "2026-10-15",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Топливный насос высокого давления",
+        "source_url": "https://shop.deere.com/uk/product/RE571640%3A-Fuel-Injection-Pump/p/RE571640"
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "4,991 кг",
+        "source_url": "https://shop.deere.com/uk/product/RE571640%3A-Fuel-Injection-Pump/p/RE571640"
+      },
+      {
+        "label": "Примеры техники",
+        "value": "John Deere S660, S670, S760, S770",
+        "source_url": "https://shop.deere.com/uk/product/RE571640%3A-Fuel-Injection-Pump/p/RE571640"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/uk/product/RE571640%3A-Fuel-Injection-Pump/p/RE571640",
+        "title": "RE571640: Fuel Injection Pump | Shop.Deere.com",
+        "publisher": "John Deere"
+      }
+    ]
+  },
+  "DZ100212": {
+    "checked_at": "2026-10-15",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Комплект топливной форсунки",
+        "source_url": "https://shop.deere.com/us/product/DZ100212%3A-Fuel-Injection-Nozzle-Kit/p/DZ100212"
+      },
+      {
+        "label": "Система впрыска",
+        "value": "Common Rail",
+        "source_url": "https://shop.deere.com/us/product/DZ100212%3A-Fuel-Injection-Nozzle-Kit/p/DZ100212"
+      },
+      {
+        "label": "Примеры двигателей",
+        "value": "John Deere 4045TF252, 4045TF254, 6068HF279, 6068HF285",
+        "source_url": "https://shop.deere.com/us/product/DZ100212%3A-Fuel-Injection-Nozzle-Kit/p/DZ100212"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/us/product/DZ100212%3A-Fuel-Injection-Nozzle-Kit/p/DZ100212",
+        "title": "DZ100212: High Pressure Common Rail Injection Nozzle Kit | Shop.Deere.com",
+        "publisher": "John Deere"
+      }
+    ]
+  },
+  "DZ100221": {
+    "checked_at": "2026-10-15",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Комплект топливной форсунки",
+        "source_url": "https://shop.deere.com/us/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221"
+      },
+      {
+        "label": "Система впрыска",
+        "value": "Common Rail",
+        "source_url": "https://shop.deere.com/us/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221"
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "0,673 кг",
+        "source_url": "https://shop.deere.com/ca/en/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221"
+      },
+      {
+        "label": "Примеры двигателей",
+        "value": "John Deere 6090AFM85, 6090SFM75",
+        "source_url": "https://shop.deere.com/ca/en/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221"
+      },
+      {
+        "label": "Примеры техники",
+        "value": "John Deere 8130, S660",
+        "source_url": "https://shop.deere.com/ca/en/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/us/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+        "title": "DZ100221: High Pressure Common Rail Injection Nozzle Kit | Shop.Deere.com",
+        "publisher": "John Deere"
+      },
+      {
+        "url": "https://shop.deere.com/ca/en/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+        "title": "DZ100221: High Pressure Common Rail Injection Nozzle Kit | Shop.Deere.com",
+        "publisher": "John Deere"
+      }
+    ]
+  },
+  "DZ100217": {
+    "checked_at": "2026-10-15",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Комплект топливной форсунки",
+        "source_url": "https://shop.deere.com/us/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217"
+      },
+      {
+        "label": "Система впрыска",
+        "value": "Common Rail",
+        "source_url": "https://shop.deere.com/us/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217"
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "0,555 кг",
+        "source_url": "https://shop.deere.com/ca/en/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217"
+      },
+      {
+        "label": "Примеры двигателей",
+        "value": "John Deere 4045HF485, 6068HRT80",
+        "source_url": "https://shop.deere.com/ca/en/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217"
+      },
+      {
+        "label": "Примеры техники",
+        "value": "John Deere 7R 210, 4730",
+        "source_url": "https://shop.deere.com/ca/en/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/us/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217",
+        "title": "DZ100217: High Pressure Common Rail Injection Nozzle Kit | Shop.Deere.com",
+        "publisher": "John Deere"
+      },
+      {
+        "url": "https://shop.deere.com/ca/en/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217",
+        "title": "DZ100217: High Pressure Common Rail Injection Nozzle Kit | Shop.Deere.com",
+        "publisher": "John Deere"
+      }
+    ]
+  },
+  "DZ100216": {
+    "checked_at": "2026-10-15",
+    "status": "verified",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Комплект топливной форсунки",
+        "source_url": "https://shop.deere.com/us/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216"
+      },
+      {
+        "label": "Система впрыска",
+        "value": "Common Rail",
+        "source_url": "https://shop.deere.com/us/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216"
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "0,612 кг",
+        "source_url": "https://shop.deere.com/ca/en/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216"
+      },
+      {
+        "label": "Примеры двигателей",
+        "value": "John Deere 6068HF485, 6068HFG85",
+        "source_url": "https://shop.deere.com/ca/en/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216"
+      },
+      {
+        "label": "Примеры техники",
+        "value": "John Deere 210G, 6930",
+        "source_url": "https://shop.deere.com/ca/en/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.deere.com/us/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+        "title": "DZ100216: High Pressure Common Rail Injection Nozzle Kit | Shop.Deere.com",
+        "publisher": "John Deere"
+      },
+      {
+        "url": "https://shop.deere.com/ca/en/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+        "title": "DZ100216: High Pressure Common Rail Injection Nozzle Kit | Shop.Deere.com",
+        "publisher": "John Deere"
+      }
+    ]
   }
 }

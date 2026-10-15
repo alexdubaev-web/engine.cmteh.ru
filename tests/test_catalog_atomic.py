@@ -46,7 +46,7 @@ class CatalogAtomicTests(unittest.TestCase):
             target = root / 'data/products.json'
             previous = '[{"id":"last-good"}]\n'
             target.write_text(previous, encoding='utf-8')
-            products = [{'id': 'new-catalog'}]
+            products = [{'id': 'last-good'}]
 
             original_write_text = Path.write_text
             def fail_direct_target_write(path, data, *args, **kwargs):
@@ -67,6 +67,23 @@ class CatalogAtomicTests(unittest.TestCase):
                  patch.object(Path, 'write_text', fail_direct_target_write), \
                  patch.object(os, 'replace', side_effect=fail_atomic_publish):
                 with self.assertRaises(OSError):
+                    import_catalog.main()
+
+            self.assertEqual(target.read_text(encoding='utf-8'), previous)
+
+    def test_import_rejects_missing_ids_without_replacing_expanded_catalog(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / 'data').mkdir()
+            target = root / 'data/products.json'
+            previous = '[{"id":"last-good"},{"id":"new-john-deere"}]\n'
+            target.write_text(previous, encoding='utf-8')
+            products = [{'id': 'last-good'}]
+
+            with patch.object(import_catalog, 'ROOT', root), \
+                 patch.object(import_catalog, 'parse_catalog', return_value=products), \
+                 patch.object(sys, 'argv', ['import_catalog.py', 'legacy-catalog.xlsx']):
+                with self.assertRaisesRegex(ValueError, 'new-john-deere'):
                     import_catalog.main()
 
             self.assertEqual(target.read_text(encoding='utf-8'), previous)

@@ -235,6 +235,39 @@
     "dz10599": {
       "quantity": 2,
       "sourceRow": 64
+    },
+    "re543262": {
+      "quantity": 5,
+      "sourceRow": 6
+    },
+    "re571640": {
+      "quantity": 5,
+      "sourceRow": 7
+    },
+    "dz100212": {
+      "quantity": 36,
+      "sourceRow": 8
+    },
+    "dz100221": {
+      "quantity": 36,
+      "sourceRow": 9
+    },
+    "dz100217": {
+      "quantity": 36,
+      "sourceRow": 10
+    },
+    "dz100216": {
+      "quantity": 36,
+      "sourceRow": 11
     }
-  }
+  },
+  "additionalImports": [
+    {
+      "sourceFile": "Запчасти-John-Deere.xlsx",
+      "sourceSha256": "96787bede468de2859d23c59ae7d4a13a40f9779f968d27f575d51546a51a38d",
+      "worksheet": "Запчасти",
+      "importedAt": "2026-10-15",
+      "instructions": "Direct user quantity instruction for six new John Deere SKUs; prices are from the approved workbook."
+    }
+  ]
 }

@@ -27,7 +27,10 @@ for p in products:
  if product['sku']!=p['sku']:errors.append(p['id']+' sku mismatch')
  expected=availability.get(p['id']);actual=product['offers'].get('availability')
  if actual!=('https://schema.org/'+expected if expected else None):errors.append(p['id']+' unjustified availability')
-assert len(products)==58
+expected_product_count=len(products)
+assert expected_product_count==64,'Catalog must retain all 58 existing products and six approved additions'
+assert {'RE543262','RE571640','DZ100212','DZ100221','DZ100217','DZ100216'} <= {p['sku'] for p in products},'Approved John Deere additions missing'
+assert len({p['id'] for p in products})==expected_product_count
 technical=json.loads((root/'data/product_technical.json').read_text(encoding='utf-8'))
 assert set(technical)=={p['sku'] for p in products},'Technical records must cover every catalog SKU exactly once'
 assert sum(not record['facts'] for record in technical.values())==5,'Five unverified records must remain selection-only'
@@ -54,9 +57,9 @@ image_dimensions=json.loads((root/'data/image-dimensions.json').read_text(encodi
 image_ledger=json.loads((root/'docs/PRODUCT-IMAGES-2026-10-07.json').read_text(encoding='utf-8'))
 manifest={row['id']:row for row in image_manifest}
 ledger={row['id']:row for row in image_ledger['products']}
-assert len(manifest)==58 and set(manifest)=={p['id'] for p in products},'Image manifest must cover all 58 catalog products'
-assert len(image_dimensions)==58,'Image dimensions must cover all 58 product assets'
-assert set(ledger)==set(manifest),'Image provenance ledger must cover all 58 products'
+assert len(manifest)==expected_product_count and set(manifest)=={p['id'] for p in products},'Image manifest must cover the full catalog'
+assert len(image_dimensions)==expected_product_count,'Image dimensions must cover all product assets'
+assert set(ledger)==set(manifest),'Image provenance ledger must cover all products'
 for product in products:
  row=manifest[product['id']];entry=ledger[product['id']];image=row.get('image')
  assert image==f"/assets/part-{product['id']}-v2.webp",product['id']+' missing versioned WebP image'
@@ -73,4 +76,4 @@ with Image.open(root/'public/assets/logo.webp') as logo:
  logo.load();assert logo.format=='WEBP' and logo.size==(400,148),'Logo must be a 2x WebP asset'
 assert len(set(titles))==len(titles),'Duplicate titles'
 assert not errors,'\n'.join(errors)
-print(f'PASS: {len(pages)} HTML pages, 58 SKU/price matches, internal links, JSON-LD, unique titles, no Chinese text')
+print(f'PASS: {len(pages)} HTML pages, {expected_product_count} SKU/price matches, internal links, JSON-LD, unique titles, no Chinese text')

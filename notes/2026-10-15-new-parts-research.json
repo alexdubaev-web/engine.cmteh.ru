@@ -1,0 +1,472 @@
+[
+  {
+    "sku": "RE507959",
+    "brand": "John Deere",
+    "name_ru": "Топливный насос впрыска (ТНВД) John Deere",
+    "category_ru": "ТНВД",
+    "intro": "Топливный насос впрыска John Deere RE507959 подаёт топливо к форсункам дизельного двигателя под высоким давлением.",
+    "detail": "Среди примеров применения насоса - техника John Deere 5E-850, 6B-954, 120D и 310J.",
+    "meta_description": "Топливный насос впрыска John Deere RE507959; примеры применения - 5E-850, 6B-954, 120D, 310J. Продажа и доставка по России.",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Насос впрыска топлива"
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "3,864 кг"
+      },
+      {
+        "label": "Примеры техники",
+        "value": "John Deere 5E-850, 6B-954, 120D, 310J"
+      }
+    ],
+    "existing_catalog": true,
+    "image": {
+      "file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\existing\\re507959.webp",
+      "original_file": "D:\\codex\\!engine.cmteh.ru\\public\\assets\\part-re507959-v2.webp",
+      "source_page": "https://shop.deere.com/us/product/RE507959%3A-Fuel-Injection-Pump/p/RE507959",
+      "source_url": "https://johndeere.widen.net/content/yd0jyzy7eq/webp/RE507959_iso2.webp?w=560&h=560&position=c&color=ffffffff&quality=100&u=jq3ioy",
+      "width": 560,
+      "height": 560,
+      "bytes": 15584,
+      "kind": "manufacturer-product-image",
+      "sha256": "e665b2376e7515f66ced00d4112a4fd960b612fea4273677b593cc3576cb47c8"
+    },
+    "sources": [
+      {
+        "url": "https://shop.deere.com/uk/product/RE507959%3A-Fuel-Injection-Pump/p/RE507959",
+        "title": "RE507959: Fuel Injection Pump",
+        "publisher": "John Deere"
+      }
+    ],
+    "internal_notes": "Existing manufacturer gallery image reused; no price/stock imported. DZ100218 name follows Fuel Injection Nozzle Kit and image of injector kit; no unsupported repair-kit contents asserted.",
+    "alt": "Топливный насос впрыска (ТНВД) John Deere RE507959",
+    "photo_file": "photos/john-deere-re507959.webp"
+  },
+  {
+    "sku": "RE539764",
+    "brand": "John Deere",
+    "name_ru": "Электрический топливный насос John Deere, 24 В",
+    "category_ru": "Топливные насосы",
+    "intro": "Электрический топливный насос John Deere RE539764 подаёт топливо в систему питания дизельного двигателя.",
+    "detail": "Насос рассчитан на питание от сети 24 В. Среди примеров его применения - техника John Deere 250D, 260E, 350G и 724K.",
+    "meta_description": "Электрический топливный насос John Deere RE539764 с питанием 24 В для подачи топлива к двигателю. Продажа и доставка по России.",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Топливный насос"
+      },
+      {
+        "label": "Напряжение",
+        "value": "24 В"
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "0,671 кг"
+      },
+      {
+        "label": "Примеры техники",
+        "value": "John Deere 250D, 260E, 350G, 724K"
+      }
+    ],
+    "existing_catalog": true,
+    "image": {
+      "file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\existing\\re539764.webp",
+      "original_file": "D:\\codex\\!engine.cmteh.ru\\public\\assets\\part-re539764-v2.webp",
+      "source_page": "https://shop.deere.com/uk/product/RE539764%3A-Fuel-Pump%2C-24-Volt/p/RE539764",
+      "source_url": "https://johndeere.widen.net/content/950up9ucwf/webp/RE539764_iso1.webp?w=560&h=560&position=c&color=ffffffff&quality=100&u=jq3ioy",
+      "width": 560,
+      "height": 560,
+      "bytes": 14240,
+      "kind": "manufacturer-product-image",
+      "sha256": "0837cd9ddbb6709b3d3ad8ee691037469f615a3be6822145e6294abdaa5ec996"
+    },
+    "sources": [
+      {
+        "url": "https://shop.deere.com/uk/product/RE539764%3A-Fuel-Transfer-Pump%2C-Fuel-Filter-To-Engine/p/RE539764",
+        "title": "RE539764: Fuel Pump, 24 Volt",
+        "publisher": "John Deere"
+      }
+    ],
+    "internal_notes": "Existing manufacturer gallery image reused; no price/stock imported. DZ100218 name follows Fuel Injection Nozzle Kit and image of injector kit; no unsupported repair-kit contents asserted.",
+    "alt": "Электрический топливный насос John Deere, 24 В RE539764",
+    "photo_file": "photos/john-deere-re539764.webp"
+  },
+  {
+    "sku": "RE543262",
+    "brand": "John Deere",
+    "name_ru": "Топливный насос впрыска John Deere RE543262",
+    "category_ru": "Топливные насосы",
+    "intro": "Топливный насос впрыска John Deere RE543262 дозирует и подаёт топливо в систему впрыска дизельного двигателя.",
+    "detail": "Среди примеров применения насоса - тракторы John Deere 7R 210 и 8R 230, а также двигатели 6068HFC93 и 6090HFC94.",
+    "meta_description": "Топливный насос впрыска John Deere RE543262 для дозированной подачи топлива. Примеры применения - тракторы 7R 210 и 8R 230.",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Топливный насос впрыска"
+      },
+      {
+        "label": "Примеры техники",
+        "value": "John Deere 7R 210, 8R 230"
+      },
+      {
+        "label": "Примеры двигателей",
+        "value": "John Deere 6068HFC93, 6090HFC94"
+      }
+    ],
+    "internal_notes": [
+      "Official product title and h1 match exact SKU RE543262: Fuel Injection Pump.",
+      "Official product image is a manufacturer-authored studio/CAD render, not a literal photograph. Exact SKU gallery URL found in saved product HTML; optimized by resizing and WebP encoding only.",
+      "No pressure claim: official shop and multiple reman guides say Fuel Injection Pump, but official rx532579.pdf labels RE543262 as low pressure. Neutral public pump name avoids resolving this documentary inconsistency by guesswork.",
+      "No prices, availability, warranty, emissions, fuel savings or lifespan claims included. Compatible-equipment examples do not assert universal fitment."
+    ],
+    "image": {
+      "file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\group-a\\re543262.webp",
+      "original_file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\group-a\\re543262.original.webp",
+      "source_page": "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262",
+      "source_url": "https://johndeere.widen.net/content/avi0dwiacr/webp/RE543262_iso2.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 32094,
+      "kind": "manufacturer-product-image",
+      "sha256": "18183893d85726c2d2dc2e1e689085cd2f30a8b4d20c32499d58353321c0e9b1"
+    },
+    "sources": [
+      {
+        "url": "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262",
+        "title": "RE543262: Fuel Injection Pump | Shop.Deere.com"
+      }
+    ],
+    "existing_catalog": false,
+    "alt": "Топливный насос впрыска John Deere RE543262",
+    "photo_file": "photos/john-deere-re543262.webp"
+  },
+  {
+    "sku": "RE571640",
+    "brand": "John Deere",
+    "name_ru": "ТНВД John Deere RE571640",
+    "category_ru": "ТНВД",
+    "intro": "ТНВД John Deere RE571640 подаёт топливо под давлением к форсункам дизельного двигателя.",
+    "detail": "Насос регулирует подачу топлива в систему впрыска. Среди примеров применения - комбайны John Deere S660, S670, S760 и S770. Масса насоса составляет 4,991 кг.",
+    "meta_description": "ТНВД John Deere RE571640 для подачи топлива под давлением к форсункам. Примеры применения - комбайны S660, S670, S760 и S770.",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Топливный насос высокого давления"
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "4,991 кг"
+      },
+      {
+        "label": "Примеры техники",
+        "value": "John Deere S660, S670, S760, S770"
+      }
+    ],
+    "internal_notes": [
+      "Official product title and h1 match exact SKU RE571640: Fuel Injection Pump. Manufacturer describes delivery of pressurized fuel to engine injectors and controlled delivery.",
+      "Mass is explicitly published on UK John Deere product page in kilograms; no derived pressure or fitment range.",
+      "Official product image is a manufacturer-authored studio/CAD render, not a literal photograph. Exact SKU gallery URL found in saved product HTML; optimized by resizing and WebP encoding only.",
+      "No prices, availability, warranty, emissions, fuel savings or lifespan claims included."
+    ],
+    "image": {
+      "file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\group-a\\re571640.webp",
+      "original_file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\group-a\\re571640.original.webp",
+      "source_page": "https://shop.deere.com/uk/product/RE571640%3A-Fuel-Injection-Pump/p/RE571640",
+      "source_url": "https://johndeere.widen.net/content/gevdswmcg9/webp/RE571640_iso1.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 29338,
+      "kind": "manufacturer-product-image",
+      "sha256": "a3a799933cdb4aaa179a12655bf6df409d032c95bd48c11926ef41b205df7f8c"
+    },
+    "sources": [
+      {
+        "url": "https://shop.deere.com/uk/product/RE571640%3A-Fuel-Injection-Pump/p/RE571640",
+        "title": "RE571640: Fuel Injection Pump | Shop.Deere.com"
+      }
+    ],
+    "existing_catalog": false,
+    "alt": "ТНВД John Deere RE571640",
+    "photo_file": "photos/john-deere-re571640.webp"
+  },
+  {
+    "sku": "DZ100212",
+    "brand": "John Deere",
+    "name_ru": "Комплект топливной форсунки Common Rail John Deere DZ100212",
+    "category_ru": "Комплекты топливных форсунок",
+    "intro": "Комплект топливной форсунки Common Rail John Deere DZ100212 предназначен для дизельной системы впрыска с общей топливной рампой. Форсунка дозирует топливо и распыляет его в цилиндре двигателя.",
+    "detail": "Среди примеров совместимых двигателей - 4045TF252, 4045TF254, 6068HF279 и 6068HF285.",
+    "meta_description": "Комплект топливной форсунки Common Rail John Deere DZ100212 для системы с общей рампой. Примеры двигателей - 4045TF252 и 6068HF279.",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Комплект топливной форсунки"
+      },
+      {
+        "label": "Система впрыска",
+        "value": "Common Rail"
+      },
+      {
+        "label": "Примеры двигателей",
+        "value": "John Deere 4045TF252, 4045TF254, 6068HF279, 6068HF285"
+      }
+    ],
+    "internal_notes": [
+      "Official product title and h1 match exact SKU DZ100212: High Pressure Common Rail Injection Nozzle Kit. Preserve kit identity; do not label as bare nozzle or internal repair parts.",
+      "Official gallery image depicts injector body together with ancillary items; public text deliberately makes no exact kit-content guarantee from the picture alone.",
+      "Official product image is a manufacturer-authored studio/CAD render, not a literal photograph. Exact SKU gallery URL found in saved product HTML; optimized by resizing and WebP encoding only.",
+      "No prices, availability, OEM cross-references, warranty or unsupported performance claims included."
+    ],
+    "image": {
+      "file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\group-a\\dz100212.webp",
+      "original_file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\group-a\\dz100212.original.webp",
+      "source_page": "https://shop.deere.com/us/product/DZ100212%3A-Fuel-Injection-Nozzle-Kit/p/DZ100212",
+      "source_url": "https://johndeere.widen.net/content/ukdtyjyfov/webp/DZ100212_iso3.webp",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 11006,
+      "kind": "manufacturer-product-image",
+      "sha256": "ff962b5cf23d3072ae10aefa83eb5bcefb798893bd70fd042a8c3d7c376f3980"
+    },
+    "sources": [
+      {
+        "url": "https://shop.deere.com/us/product/DZ100212%3A-Fuel-Injection-Nozzle-Kit/p/DZ100212",
+        "title": "DZ100212: High Pressure Common Rail Injection Nozzle Kit | Shop.Deere.com"
+      }
+    ],
+    "existing_catalog": false,
+    "alt": "Комплект топливной форсунки Common Rail John Deere DZ100212",
+    "photo_file": "photos/john-deere-dz100212.webp"
+  },
+  {
+    "sku": "DZ100221",
+    "brand": "John Deere",
+    "name_ru": "Комплект топливной форсунки Common Rail John Deere DZ100221",
+    "category_ru": "Комплекты топливных форсунок",
+    "intro": "Комплект топливной форсунки Common Rail John Deere DZ100221 предназначен для системы впрыска дизельного двигателя. Форсунка распыляет топливо при подаче в камеру сгорания.",
+    "detail": "Комплект относится к топливной аппаратуре Common Rail с общей топливной рампой. Среди примеров применения - двигатели John Deere 6090AFM85 и 6090SFM75, трактор 8130 и комбайн S660.",
+    "meta_description": "Комплект топливной форсунки Common Rail John Deere DZ100221 для дизельного впрыска; примеры применения - двигатели 6090AFM85 и 6090SFM75.",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Комплект топливной форсунки"
+      },
+      {
+        "label": "Система впрыска",
+        "value": "Common Rail"
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "0,673 кг"
+      },
+      {
+        "label": "Примеры двигателей",
+        "value": "John Deere 6090AFM85, 6090SFM75"
+      },
+      {
+        "label": "Примеры техники",
+        "value": "John Deere 8130, S660"
+      }
+    ],
+    "image": {
+      "file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\group-b\\dz100221.webp",
+      "original_file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\group-b\\dz100221-original.webp",
+      "source_page": "https://shop.deere.com/us/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+      "source_url": "https://johndeere.widen.net/content/jx3j7hsauk/webp/DZ100221_iso5.webp?w=1200&h=1200&position=c&color=ffffffff&quality=100&u=jq3ioy",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 9920,
+      "kind": "manufacturer-product-image",
+      "sha256": "6e2986eed50bb69e3d959b38fb06ad89aafa769ee2acbd6c46b78ed16e2fbb66"
+    },
+    "sources": [
+      {
+        "url": "https://shop.deere.com/us/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+        "title": "DZ100221: High Pressure Common Rail Injection Nozzle Kit | Shop.Deere.com"
+      },
+      {
+        "url": "https://shop.deere.com/ca/en/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+        "title": "DZ100221: High Pressure Common Rail Injection Nozzle Kit | Shop.Deere.com"
+      }
+    ],
+    "internal_notes": [
+      "Official product identity is High Pressure Common Rail Injection Nozzle Kit. Lead adjudicated Russian public title as Комплект топливной форсунки Common Rail because official gallery depicts injector-shaped kit; no assertion of exact kit contents or bare-tip repair scope. No operating pressure, nozzle-hole count, or OEM cross-reference added.",
+      "Exact-SKU title and part number checked in saved live official HTML. Mass and examples checked against current Canadian English metric page. Manufacturer compatible-equipment list indicates general fit; examples are not an exhaustive compatibility guarantee.",
+      "Exact-SKU Widen image URL extracted from the matching official product gallery. Visually inspected optimized output; clean whole kit on white, appears to be manufacturer studio render/product illustration rather than a documentary photograph. No generative image processing, cropping, background removal, or semantic edits. Encoded WebP quality 84, method 6, downscaled 1200 to 1000 px.",
+      "Live 2026-10-15 page mass is 0.673 kg (US 1.483 lb), superseding cached search snippet 0.635 kg / 1.4 lb."
+    ],
+    "existing_catalog": false,
+    "alt": "Комплект топливной форсунки Common Rail John Deere DZ100221",
+    "photo_file": "photos/john-deere-dz100221.webp"
+  },
+  {
+    "sku": "DZ100217",
+    "brand": "John Deere",
+    "name_ru": "Комплект топливной форсунки Common Rail John Deere DZ100217",
+    "category_ru": "Комплекты топливных форсунок",
+    "intro": "Комплект топливной форсунки Common Rail John Deere DZ100217 используется в системе питания дизельного двигателя. Форсунка дозирует подачу топлива в цилиндр и распыляет его при впрыске.",
+    "detail": "Комплект предназначен для системы Common Rail, в которой топливо подаётся из общей рампы. Среди примеров применения - двигатели John Deere 4045HF485 и 6068HRT80, трактор 7R 210 и опрыскиватель 4730.",
+    "meta_description": "Комплект топливной форсунки Common Rail John Deere DZ100217 для дизельного впрыска; примеры применения - двигатели 4045HF485 и 6068HRT80.",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Комплект топливной форсунки"
+      },
+      {
+        "label": "Система впрыска",
+        "value": "Common Rail"
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "0,555 кг"
+      },
+      {
+        "label": "Примеры двигателей",
+        "value": "John Deere 4045HF485, 6068HRT80"
+      },
+      {
+        "label": "Примеры техники",
+        "value": "John Deere 7R 210, 4730"
+      }
+    ],
+    "image": {
+      "file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\group-b\\dz100217.webp",
+      "original_file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\group-b\\dz100217-original.webp",
+      "source_page": "https://shop.deere.com/us/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217",
+      "source_url": "https://johndeere.widen.net/content/ps0vjrluxe/webp/DZ100217_iso3.webp?w=1200&h=1200&position=c&color=ffffffff&quality=100&u=jq3ioy",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 10670,
+      "kind": "manufacturer-product-image",
+      "sha256": "a3165b2ffdce18413c928ab0600f7f67bdd74f80503f9930291cc19a1b244058"
+    },
+    "sources": [
+      {
+        "url": "https://shop.deere.com/us/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217",
+        "title": "DZ100217: High Pressure Common Rail Injection Nozzle Kit | Shop.Deere.com"
+      },
+      {
+        "url": "https://shop.deere.com/ca/en/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217",
+        "title": "DZ100217: High Pressure Common Rail Injection Nozzle Kit | Shop.Deere.com"
+      }
+    ],
+    "internal_notes": [
+      "Official product identity is High Pressure Common Rail Injection Nozzle Kit. Lead adjudicated Russian public title as Комплект топливной форсунки Common Rail because official gallery depicts injector-shaped kit; no assertion of exact kit contents or bare-tip repair scope. No operating pressure, nozzle-hole count, or OEM cross-reference added.",
+      "Exact-SKU title and part number checked in saved live official HTML. Mass and examples checked against current Canadian English metric page. Manufacturer compatible-equipment list indicates general fit; examples are not an exhaustive compatibility guarantee.",
+      "Exact-SKU Widen image URL extracted from the matching official product gallery. Visually inspected optimized output; clean whole kit on white, appears to be manufacturer studio render/product illustration rather than a documentary photograph. No generative image processing, cropping, background removal, or semantic edits. Encoded WebP quality 84, method 6, downscaled 1200 to 1000 px.",
+      "DZ100217_iso3 and DZ100216_iso3 are distinct URLs independently present in each exact-SKU official gallery, but downloaded source bytes and optimized outputs are identical. Retained each SKU-specific attribution; no inference of interchangeability.",
+      "Live 2026-10-15 page mass is 0.555 kg (US 1.223 lb), superseding cached search snippet 0.617 kg / 1.36 lb."
+    ],
+    "existing_catalog": false,
+    "alt": "Комплект топливной форсунки Common Rail John Deere DZ100217",
+    "photo_file": "photos/john-deere-dz100217.webp"
+  },
+  {
+    "sku": "DZ100218",
+    "brand": "John Deere",
+    "name_ru": "Комплект топливной форсунки John Deere",
+    "category_ru": "Комплекты топливных форсунок",
+    "intro": "Комплект топливной форсунки John Deere DZ100218 предназначен для системы впрыска дизельного двигателя.",
+    "detail": "Форсунка дозирует подачу топлива и распыляет его в камере сгорания. Среди примеров применения - опрыскиватели John Deere 4730 и 4830, а также комбайны 9560 STS и 9570 STS.",
+    "meta_description": "Комплект топливной форсунки John Deere DZ100218; примеры применения - 4730, 4830 и 9560 STS. Продажа и доставка по России.",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Комплект топливной форсунки"
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "0,617 кг"
+      },
+      {
+        "label": "Примеры техники",
+        "value": "John Deere 4730, 4830, 9560 STS, 9570 STS"
+      }
+    ],
+    "existing_catalog": true,
+    "image": {
+      "file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\existing\\dz100218.webp",
+      "original_file": "D:\\codex\\!engine.cmteh.ru\\public\\assets\\part-dz100218-v2.webp",
+      "source_page": "https://shop.deere.com/us/product/DZ100218%3A-Nozzle-Kit/p/DZ100218",
+      "source_url": "https://johndeere.widen.net/content/k5ewwxuq6m/webp/DZ100218_iso1.webp?w=560&h=560&position=c&color=ffffffff&quality=100&u=jq3ioy",
+      "width": 560,
+      "height": 560,
+      "bytes": 10096,
+      "kind": "manufacturer-product-image",
+      "sha256": "e564da06aafd375c0901c1ecdfd6fe0057395a4fb82da2e10dae8681eab729e5"
+    },
+    "sources": [
+      {
+        "url": "https://shop.deere.com/uk/product/DZ100218%3A-Fuel-Injection-Nozzle-Kit/p/DZ100218",
+        "title": "DZ100218: Fuel Injection Nozzle Kit",
+        "publisher": "John Deere"
+      }
+    ],
+    "internal_notes": "Existing manufacturer gallery image reused; no price/stock imported. DZ100218 name follows Fuel Injection Nozzle Kit and image of injector kit; no unsupported repair-kit contents asserted.",
+    "alt": "Комплект топливной форсунки John Deere DZ100218",
+    "photo_file": "photos/john-deere-dz100218.webp"
+  },
+  {
+    "sku": "DZ100216",
+    "brand": "John Deere",
+    "name_ru": "Комплект топливной форсунки Common Rail John Deere DZ100216",
+    "category_ru": "Комплекты топливных форсунок",
+    "intro": "Комплект топливной форсунки Common Rail John Deere DZ100216 предназначен для топливной системы дизельного двигателя. Форсунка вводит топливо в камеру сгорания в распылённом виде.",
+    "detail": "Комплект используется в топливной системе Common Rail с общей рампой высокого давления. Среди примеров применения - двигатели John Deere 6068HF485 и 6068HFG85, экскаватор 210G и трактор 6930.",
+    "meta_description": "Комплект топливной форсунки Common Rail John Deere DZ100216 для дизельного впрыска; примеры применения - двигатели 6068HF485 и 6068HFG85.",
+    "facts": [
+      {
+        "label": "Тип детали",
+        "value": "Комплект топливной форсунки"
+      },
+      {
+        "label": "Система впрыска",
+        "value": "Common Rail"
+      },
+      {
+        "label": "Масса по каталогу",
+        "value": "0,612 кг"
+      },
+      {
+        "label": "Примеры двигателей",
+        "value": "John Deere 6068HF485, 6068HFG85"
+      },
+      {
+        "label": "Примеры техники",
+        "value": "John Deere 210G, 6930"
+      }
+    ],
+    "image": {
+      "file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\group-b\\dz100216.webp",
+      "original_file": "D:\\codex\\!engine.cmteh.ru\\.runtime\\new-parts-20261015\\group-b\\dz100216-original.webp",
+      "source_page": "https://shop.deere.com/us/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+      "source_url": "https://johndeere.widen.net/content/qi9prgheq9/webp/DZ100216_iso3.webp?w=1200&h=1200&position=c&color=ffffffff&quality=100&u=jq3ioy",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 10670,
+      "kind": "manufacturer-product-image",
+      "sha256": "a3165b2ffdce18413c928ab0600f7f67bdd74f80503f9930291cc19a1b244058"
+    },
+    "sources": [
+      {
+        "url": "https://shop.deere.com/us/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+        "title": "DZ100216: High Pressure Common Rail Injection Nozzle Kit | Shop.Deere.com"
+      },
+      {
+        "url": "https://shop.deere.com/ca/en/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+        "title": "DZ100216: High Pressure Common Rail Injection Nozzle Kit | Shop.Deere.com"
+      }
+    ],
+    "internal_notes": [
+      "Official product identity is High Pressure Common Rail Injection Nozzle Kit. Lead adjudicated Russian public title as Комплект топливной форсунки Common Rail because official gallery depicts injector-shaped kit; no assertion of exact kit contents or bare-tip repair scope. No operating pressure, nozzle-hole count, or OEM cross-reference added.",
+      "Exact-SKU title and part number checked in saved live official HTML. Mass and examples checked against current Canadian English metric page. Manufacturer compatible-equipment list indicates general fit; examples are not an exhaustive compatibility guarantee.",
+      "Exact-SKU Widen image URL extracted from the matching official product gallery. Visually inspected optimized output; clean whole kit on white, appears to be manufacturer studio render/product illustration rather than a documentary photograph. No generative image processing, cropping, background removal, or semantic edits. Encoded WebP quality 84, method 6, downscaled 1200 to 1000 px.",
+      "DZ100217_iso3 and DZ100216_iso3 are distinct URLs independently present in each exact-SKU official gallery, but downloaded source bytes and optimized outputs are identical. Retained each SKU-specific attribution; no inference of interchangeability."
+    ],
+    "existing_catalog": false,
+    "alt": "Комплект топливной форсунки Common Rail John Deere DZ100216",
+    "photo_file": "photos/john-deere-dz100216.webp"
+  }
+]

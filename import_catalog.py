@@ -68,6 +68,11 @@ def main():
     items = parse_catalog(args.file)
     with pipeline_lock(ROOT):
         target = ROOT / 'data/products.json'
+        current = json.loads(target.read_text(encoding='utf-8')) if target.exists() else []
+        incoming_ids = {item['id'] for item in items}
+        missing_ids = {item['id'] for item in current} - incoming_ids
+        if missing_ids:
+            raise ValueError(f'Catalog import would remove existing products: {sorted(missing_ids)}')
         atomic_write_text(target, json.dumps(items, ensure_ascii=False, indent=2) + '\n')
     print('Products:', len(items), 'Brands:', dict(collections.Counter(x['brand'] for x in items)),
           'Categories:', dict(collections.Counter(x['category'] for x in items)))
