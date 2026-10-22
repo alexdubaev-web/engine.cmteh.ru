@@ -125,10 +125,9 @@ class SEO:
   changed=set(self.changed+removed)
   revisions={url:(uuid.uuid4().hex if url in changed or url not in old_revisions else old_revisions[url]) for url in urls}
   changes_file.write_text(json.dumps({'origin':self.base,'indexable':self.indexable,'generated_at':self.now,'urls':urls,'revisions':revisions},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-  key=os.environ.get('INDEXNOW_KEY','')
-  if key:
-   if not re.fullmatch('[a-zA-Z0-9-]{8,128}',key):raise ValueError('Invalid INDEXNOW_KEY')
-   (self.out/(key+'.txt')).write_text(key,encoding='utf-8')
+  key=os.environ['INDEXNOW_KEY'] if 'INDEXNOW_KEY' in os.environ else self.commerce.get('indexnow_key','')
+  if key and (not isinstance(key,str) or not re.fullmatch('[a-zA-Z0-9-]{8,128}',key)):raise ValueError('Invalid INDEXNOW_KEY')
+  if self.indexable and key:(self.out/(key+'.txt')).write_text(key,encoding='utf-8')
   if self.commerce.get('yml_enabled'):self.feed()
  def feed(self):
   # Publishing a feed without verified stock would silently imply availability.

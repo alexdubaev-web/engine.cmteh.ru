@@ -1,3 +1,7 @@
 tools/*.sh text eol=lf
 seo/semantic-core/*.csv text eol=lf
 seo/semantic-core/*.json text eol=lf
+*.php text eol=lf
+backend/vendor/PHPMailer/LICENSE text eol=lf
+backend/vendor/PHPMailer/PROVENANCE.json text eol=lf
+public/assets/FONT-LICENSE.txt text eol=lf

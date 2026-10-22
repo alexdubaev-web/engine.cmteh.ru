@@ -54,10 +54,14 @@ def main():
         return
     state, tokens = snapshot_queue()
     origin = state['origin']
-    key = os.environ.get('INDEXNOW_KEY', '')
+    key = os.environ['INDEXNOW_KEY'] if 'INDEXNOW_KEY' in os.environ else ''
+    if 'INDEXNOW_KEY' not in os.environ:
+        commerce_path = ROOT / 'data/commerce.json'
+        if commerce_path.is_file():
+            key = json.loads(commerce_path.read_text(encoding='utf-8')).get('indexnow_key', '')
     if not state.get('indexable') or '.chatgpt.site' in urlsplit(origin).hostname:
         raise SystemExit('Build an indexable production domain first; demo notification is disabled.')
-    if not re.fullmatch('[a-zA-Z0-9-]{8,128}', key):
+    if not isinstance(key, str) or not re.fullmatch('[a-zA-Z0-9-]{8,128}', key):
         raise SystemExit('Set INDEXNOW_KEY and rebuild to publish its verification file.')
     key_url = origin + '/' + key + '.txt'
     urls = list(tokens)
