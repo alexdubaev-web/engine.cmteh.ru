@@ -1,0 +1,4148 @@
+{
+  "accepted_keyword_count": 397,
+  "articles": [
+    {
+      "slug": "dizel-ploho-zavoditsya-na-holodnuyu",
+      "status": "published",
+      "url": "/articles/dizel-ploho-zavoditsya-na-holodnuyu/"
+    },
+    {
+      "slug": "podbor-po-artikulu",
+      "status": "published",
+      "url": "/articles/podbor-po-artikulu/"
+    },
+    {
+      "slug": "tnvd-pered-zakazom",
+      "status": "published",
+      "url": "/articles/tnvd-pered-zakazom/"
+    },
+    {
+      "slug": "forsunka-ili-raspylitel",
+      "status": "published",
+      "url": "/articles/forsunka-ili-raspylitel/"
+    },
+    {
+      "slug": "spisok-zapchastey-dlya-zakaza",
+      "status": "published",
+      "url": "/articles/spisok-zapchastey-dlya-zakaza/"
+    }
+  ],
+  "brand_category_groups": [
+    {
+      "brand": "Bosch",
+      "category": "injectors",
+      "secondary_brand_url": "/brands/bosch/",
+      "skus": [
+        "0414701072",
+        "0445116059",
+        "0445120072",
+        "0445120075",
+        "0445120126",
+        "0445120212",
+        "0445120385",
+        "0445120728",
+        "0445124025",
+        "0445124036"
+      ],
+      "target_url": "/category/injectors/"
+    },
+    {
+      "brand": "Bosch",
+      "category": "nozzles",
+      "secondary_brand_url": "/brands/bosch/",
+      "skus": [
+        "0433175478",
+        "0433175518"
+      ],
+      "target_url": "/category/nozzles/"
+    },
+    {
+      "brand": "Bosch",
+      "category": "other",
+      "secondary_brand_url": "/brands/bosch/",
+      "skus": [
+        "0445226092",
+        "F00RJ02177"
+      ],
+      "target_url": "/category/other/"
+    },
+    {
+      "brand": "Bosch",
+      "category": "pumps",
+      "secondary_brand_url": "/brands/bosch/",
+      "skus": [
+        "0445020081",
+        "0445020082",
+        "0445020089",
+        "0445020110",
+        "0445020201",
+        "0445020208",
+        "0445020273",
+        "0445020334",
+        "0445020508",
+        "0445020540",
+        "0445020606",
+        "0445020610",
+        "0445020611"
+      ],
+      "target_url": "/category/pumps/"
+    },
+    {
+      "brand": "Delphi",
+      "category": "injectors",
+      "secondary_brand_url": "/brands/delphi/",
+      "skus": [
+        "28229876",
+        "28272472",
+        "28308779",
+        "28540276"
+      ],
+      "target_url": "/category/injectors/"
+    },
+    {
+      "brand": "Delphi",
+      "category": "nozzles",
+      "secondary_brand_url": "/brands/delphi/",
+      "skus": [
+        "L017PBB",
+        "L053PBC",
+        "L158PBA",
+        "L215PBC",
+        "L229PBC"
+      ],
+      "target_url": "/category/nozzles/"
+    },
+    {
+      "brand": "Delphi",
+      "category": "other",
+      "secondary_brand_url": "/brands/delphi/",
+      "skus": [
+        "28516849"
+      ],
+      "target_url": "/category/other/"
+    },
+    {
+      "brand": "Delphi",
+      "category": "pumps",
+      "secondary_brand_url": "/brands/delphi/",
+      "skus": [
+        "28384974",
+        "28384976",
+        "9323A260G",
+        "9323A270G"
+      ],
+      "target_url": "/category/pumps/"
+    },
+    {
+      "brand": "Delphi",
+      "category": "valves",
+      "secondary_brand_url": "/brands/delphi/",
+      "skus": [
+        "7206-0435",
+        "7206-0460",
+        "7210-0473",
+        "9109-903"
+      ],
+      "target_url": "/category/valves/"
+    },
+    {
+      "brand": "Denso",
+      "category": "injectors",
+      "secondary_brand_url": "/brands/denso/",
+      "skus": [
+        "260100-4010",
+        "260100-6010"
+      ],
+      "target_url": "/category/injectors/"
+    },
+    {
+      "brand": "Denso",
+      "category": "other",
+      "secondary_brand_url": "/brands/denso/",
+      "skus": [
+        "DZ100218"
+      ],
+      "target_url": "/category/other/"
+    },
+    {
+      "brand": "Denso",
+      "category": "pumps",
+      "secondary_brand_url": "/brands/denso/",
+      "skus": [
+        "DZ128161"
+      ],
+      "target_url": "/category/pumps/"
+    },
+    {
+      "brand": "Denso",
+      "category": "valves",
+      "secondary_brand_url": "/brands/denso/",
+      "skus": [
+        "8980436870"
+      ],
+      "target_url": "/category/valves/"
+    },
+    {
+      "brand": "John Deere",
+      "category": "injectors",
+      "secondary_brand_url": "/brands/john-deere/",
+      "skus": [
+        "DZ100212",
+        "DZ100216",
+        "DZ100217",
+        "DZ100221"
+      ],
+      "target_url": "/category/injectors/"
+    },
+    {
+      "brand": "John Deere",
+      "category": "nozzles",
+      "secondary_brand_url": "/brands/john-deere/",
+      "skus": [
+        "DZ112112"
+      ],
+      "target_url": "/category/nozzles/"
+    },
+    {
+      "brand": "John Deere",
+      "category": "other",
+      "secondary_brand_url": "/brands/john-deere/",
+      "skus": [
+        "DZ10599",
+        "RE526588",
+        "RE539764"
+      ],
+      "target_url": "/category/other/"
+    },
+    {
+      "brand": "John Deere",
+      "category": "pumps",
+      "secondary_brand_url": "/brands/john-deere/",
+      "skus": [
+        "DZ128160",
+        "RE507959",
+        "RE543262",
+        "RE571640"
+      ],
+      "target_url": "/category/pumps/"
+    },
+    {
+      "brand": "John Deere",
+      "category": "valves",
+      "secondary_brand_url": "/brands/john-deere/",
+      "skus": [
+        "DZ111136"
+      ],
+      "target_url": "/category/valves/"
+    },
+    {
+      "brand": "VDO / Vitesco (Aumovio)",
+      "category": "injectors",
+      "secondary_brand_url": "/brands/vdo/",
+      "skus": [
+        "5620004100"
+      ],
+      "target_url": "/category/injectors/"
+    }
+  ],
+  "candidate_count": 3057,
+  "curated_decisions": {
+    "count": 40,
+    "file": "seo/semantic-core/curated-decisions.json",
+    "sha256": "7f29331a2462ee57745653051fd97f5e8fa738eb9d6321b961ab9f9e6954a263"
+  },
+  "excluded_count": 219,
+  "excluded_keyword_count": 213,
+  "manual_review_count": 2929,
+  "manual_review_keyword_count": 2929,
+  "observations_included_in_observations_csv": 3899,
+  "parent_observations": [
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "топливная аппаратура",
+      "observation_id": "ws-2026-10-12-q001-total",
+      "original_query": "топливная аппаратура",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "топливная аппаратура",
+      "query_id": "ws-2026-10-12-q001",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 1,
+      "value": 15008
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "тнвд",
+      "observation_id": "ws-2026-10-12-q002-total",
+      "original_query": "тнвд",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "тнвд",
+      "query_id": "ws-2026-10-12-q002",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 2,
+      "value": 528652
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "форсунки bosch",
+      "observation_id": "ws-2026-10-12-q003-total",
+      "original_query": "форсунки bosch",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "форсунки bosch",
+      "query_id": "ws-2026-10-12-q003",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 3,
+      "value": 10469
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "форсунки delphi",
+      "observation_id": "ws-2026-10-12-q004-total",
+      "original_query": "форсунки delphi",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "форсунки delphi",
+      "query_id": "ws-2026-10-12-q004",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 4,
+      "value": 3372
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "форсунки denso",
+      "observation_id": "ws-2026-10-12-q005-total",
+      "original_query": "форсунки denso",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "форсунки denso",
+      "query_id": "ws-2026-10-12-q005",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 5,
+      "value": 2512
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "тнвд bosch",
+      "observation_id": "ws-2026-10-12-q006-total",
+      "original_query": "тнвд bosch",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "тнвд bosch",
+      "query_id": "ws-2026-10-12-q006",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 6,
+      "value": 6096
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "тнвд delphi",
+      "observation_id": "ws-2026-10-12-q007-total",
+      "original_query": "тнвд delphi",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "тнвд delphi",
+      "query_id": "ws-2026-10-12-q007",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 7,
+      "value": 973
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "тнвд denso",
+      "observation_id": "ws-2026-10-12-q008-total",
+      "original_query": "тнвд denso",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "тнвд denso",
+      "query_id": "ws-2026-10-12-q008",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 8,
+      "value": 722
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "форсунки john deere",
+      "observation_id": "ws-2026-10-12-q009-total",
+      "original_query": "форсунки john deere",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "форсунки john deere",
+      "query_id": "ws-2026-10-12-q009",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 9,
+      "value": 146
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "тнвд john deere",
+      "observation_id": "ws-2026-10-12-q010-total",
+      "original_query": "тнвд john deere",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "тнвд john deere",
+      "query_id": "ws-2026-10-12-q010",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 10,
+      "value": 133
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "распылитель форсунки",
+      "observation_id": "ws-2026-10-12-q011-total",
+      "original_query": "распылитель форсунки",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "распылитель форсунки",
+      "query_id": "ws-2026-10-12-q011",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 11,
+      "value": 21464
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "клапан форсунки",
+      "observation_id": "ws-2026-10-12-q012-total",
+      "original_query": "клапан форсунки",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "клапан форсунки",
+      "query_id": "ws-2026-10-12-q012",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 12,
+      "value": 32624
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "ремкомплект форсунки",
+      "observation_id": "ws-2026-10-12-q013-total",
+      "original_query": "ремкомплект форсунки",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "ремкомплект форсунки",
+      "query_id": "ws-2026-10-12-q013",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 13,
+      "value": 17916
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "форсунки бош",
+      "observation_id": "ws-2026-10-12-q014-total",
+      "original_query": "форсунки бош",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "форсунки бош",
+      "query_id": "ws-2026-10-12-q014",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 14,
+      "value": 15755
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "тнвд бош",
+      "observation_id": "ws-2026-10-12-q015-total",
+      "original_query": "тнвд бош",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "тнвд бош",
+      "query_id": "ws-2026-10-12-q015",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 15,
+      "value": 12396
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "форсунки делфи",
+      "observation_id": "ws-2026-10-12-q016-total",
+      "original_query": "форсунки делфи",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "форсунки делфи",
+      "query_id": "ws-2026-10-12-q016",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 16,
+      "value": 7307
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "форсунки денсо",
+      "observation_id": "ws-2026-10-12-q017-total",
+      "original_query": "форсунки денсо",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "форсунки денсо",
+      "query_id": "ws-2026-10-12-q017",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 17,
+      "value": 2394
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "клапан scv",
+      "observation_id": "ws-2026-10-12-q018-total",
+      "original_query": "клапан scv",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "клапан scv",
+      "query_id": "ws-2026-10-12-q018",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 18,
+      "value": 837
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "форсунки common rail",
+      "observation_id": "ws-2026-10-12-q019-total",
+      "original_query": "форсунки common rail",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "форсунки common rail",
+      "query_id": "ws-2026-10-12-q019",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 19,
+      "value": 5788
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "подбор форсунок",
+      "observation_id": "ws-2026-10-12-q020-total",
+      "original_query": "подбор форсунок",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "подбор форсунок",
+      "query_id": "ws-2026-10-12-q020",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 20,
+      "value": 498
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "номер форсунки",
+      "observation_id": "ws-2026-10-12-q021-total",
+      "original_query": "номер форсунки",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "номер форсунки",
+      "query_id": "ws-2026-10-12-q021",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 21,
+      "value": 9280
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "замена распылителя форсунки",
+      "observation_id": "ws-2026-10-12-q022-total",
+      "original_query": "замена распылителя форсунки",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "замена распылителя форсунки",
+      "query_id": "ws-2026-10-12-q022",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 22,
+      "value": 1226
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "тнвд купить",
+      "observation_id": "ws-2026-10-12-q023-total",
+      "original_query": "тнвд купить",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "тнвд купить",
+      "query_id": "ws-2026-10-12-q023",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 23,
+      "value": 31021
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "форсунки vdo",
+      "observation_id": "ws-2026-10-12-q024-total",
+      "original_query": "форсунки vdo",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "форсунки vdo",
+      "query_id": "ws-2026-10-12-q024",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 24,
+      "value": 297
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "тнвд делфи",
+      "observation_id": "ws-2026-10-12-q025-total",
+      "original_query": "тнвд делфи",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "тнвд делфи",
+      "query_id": "ws-2026-10-12-q025",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 25,
+      "value": 1751
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445120075",
+      "observation_id": "ws-2026-10-12-q026-total",
+      "original_query": "0445120075",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445120075",
+      "query_id": "ws-2026-10-12-q026",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 26,
+      "value": 36
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "re539764",
+      "observation_id": "ws-2026-10-12-q027-total",
+      "original_query": "re539764",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "re539764",
+      "query_id": "ws-2026-10-12-q027",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 27,
+      "value": 88
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0433175478",
+      "observation_id": "ws-2026-10-12-q028-total",
+      "original_query": "0433175478",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0433175478",
+      "query_id": "ws-2026-10-12-q028",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 28,
+      "value": 18
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "7206-0460",
+      "observation_id": "ws-2026-10-12-q029-total",
+      "original_query": "7206-0460",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "7206-0460",
+      "query_id": "ws-2026-10-12-q029",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 29,
+      "value": 8
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "28272472",
+      "observation_id": "ws-2026-10-12-q030-total",
+      "original_query": "28272472",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "28272472",
+      "query_id": "ws-2026-10-12-q030",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 30,
+      "value": 15
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445020610",
+      "observation_id": "ws-2026-10-12-q031-total",
+      "original_query": "0445020610",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445020610",
+      "query_id": "ws-2026-10-12-q031",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 31,
+      "value": 41
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "260100-4010",
+      "observation_id": "ws-2026-10-12-q032-total",
+      "original_query": "260100-4010",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "260100-4010",
+      "query_id": "ws-2026-10-12-q032",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 32,
+      "value": 0
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "9323a270g",
+      "observation_id": "ws-2026-10-12-q033-total",
+      "original_query": "9323a270g",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "9323a270g",
+      "query_id": "ws-2026-10-12-q033",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 33,
+      "value": 28
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "28540276",
+      "observation_id": "ws-2026-10-12-q034-total",
+      "original_query": "28540276",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "28540276",
+      "query_id": "ws-2026-10-12-q034",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 34,
+      "value": 0
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "7206-0435",
+      "observation_id": "ws-2026-10-12-q035-total",
+      "original_query": "7206-0435",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "7206-0435",
+      "query_id": "ws-2026-10-12-q035",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 35,
+      "value": 2
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "28516849",
+      "observation_id": "ws-2026-10-12-q036-total",
+      "original_query": "28516849",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "28516849",
+      "query_id": "ws-2026-10-12-q036",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 36,
+      "value": 24
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445020208",
+      "observation_id": "ws-2026-10-12-q037-total",
+      "original_query": "0445020208",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445020208",
+      "query_id": "ws-2026-10-12-q037",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 37,
+      "value": 35
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445020201",
+      "observation_id": "ws-2026-10-12-q038-total",
+      "original_query": "0445020201",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445020201",
+      "query_id": "ws-2026-10-12-q038",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 38,
+      "value": 27
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "l229pbc",
+      "observation_id": "ws-2026-10-12-q039-total",
+      "original_query": "l229pbc",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "l229pbc",
+      "query_id": "ws-2026-10-12-q039",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 39,
+      "value": 0
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445020082",
+      "observation_id": "ws-2026-10-12-q040-total",
+      "original_query": "0445020082",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445020082",
+      "query_id": "ws-2026-10-12-q040",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 40,
+      "value": 10
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "re507959",
+      "observation_id": "ws-2026-10-12-q041-total",
+      "original_query": "re507959",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "re507959",
+      "query_id": "ws-2026-10-12-q041",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 41,
+      "value": 66
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "l053pbc",
+      "observation_id": "ws-2026-10-12-q042-total",
+      "original_query": "l053pbc",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "l053pbc",
+      "query_id": "ws-2026-10-12-q042",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 42,
+      "value": 3
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0433175518",
+      "observation_id": "ws-2026-10-12-q043-total",
+      "original_query": "0433175518",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0433175518",
+      "query_id": "ws-2026-10-12-q043",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 43,
+      "value": 30
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445020334",
+      "observation_id": "ws-2026-10-12-q044-total",
+      "original_query": "0445020334",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445020334",
+      "query_id": "ws-2026-10-12-q044",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 44,
+      "value": 28
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445020110",
+      "observation_id": "ws-2026-10-12-q045-total",
+      "original_query": "0445020110",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445020110",
+      "query_id": "ws-2026-10-12-q045",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 45,
+      "value": 401
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "28308779",
+      "observation_id": "ws-2026-10-12-q046-total",
+      "original_query": "28308779",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "28308779",
+      "query_id": "ws-2026-10-12-q046",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 46,
+      "value": 8
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "l017pbb",
+      "observation_id": "ws-2026-10-12-q047-total",
+      "original_query": "l017pbb",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "l017pbb",
+      "query_id": "ws-2026-10-12-q047",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 47,
+      "value": 5
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445120126",
+      "observation_id": "ws-2026-10-12-q048-total",
+      "original_query": "0445120126",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445120126",
+      "query_id": "ws-2026-10-12-q048",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 48,
+      "value": 7
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445120072",
+      "observation_id": "ws-2026-10-12-q049-total",
+      "original_query": "0445120072",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445120072",
+      "query_id": "ws-2026-10-12-q049",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 49,
+      "value": 135
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "5620004100",
+      "observation_id": "ws-2026-10-12-q050-total",
+      "original_query": "5620004100",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "5620004100",
+      "query_id": "ws-2026-10-12-q050",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 50,
+      "value": 0
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445020540",
+      "observation_id": "ws-2026-10-12-q051-total",
+      "original_query": "0445020540",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445020540",
+      "query_id": "ws-2026-10-12-q051",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 51,
+      "value": 252
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "dz112112",
+      "observation_id": "ws-2026-10-12-q052-total",
+      "original_query": "dz112112",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "dz112112",
+      "query_id": "ws-2026-10-12-q052",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 52,
+      "value": 43
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445226092",
+      "observation_id": "ws-2026-10-12-q053-total",
+      "original_query": "0445226092",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "0445226092",
+      "query_id": "ws-2026-10-12-q053",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 53,
+      "value": 3
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445120728",
+      "observation_id": "ws-2026-10-12-q054-total",
+      "original_query": "0445120728",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "0445120728",
+      "query_id": "ws-2026-10-12-q054",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 54,
+      "value": 0
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445120212",
+      "observation_id": "ws-2026-10-12-q055-total",
+      "original_query": "0445120212",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445120212",
+      "query_id": "ws-2026-10-12-q055",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 55,
+      "value": 46
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "260100-6010",
+      "observation_id": "ws-2026-10-12-q056-total",
+      "original_query": "260100-6010",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "260100-6010",
+      "query_id": "ws-2026-10-12-q056",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 56,
+      "value": 1
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445116059",
+      "observation_id": "ws-2026-10-12-q057-total",
+      "original_query": "0445116059",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445116059",
+      "query_id": "ws-2026-10-12-q057",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 57,
+      "value": 69
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "dz128161",
+      "observation_id": "ws-2026-10-12-q058-total",
+      "original_query": "dz128161",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "dz128161",
+      "query_id": "ws-2026-10-12-q058",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 58,
+      "value": 31
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "re526588",
+      "observation_id": "ws-2026-10-12-q059-total",
+      "original_query": "re526588",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "re526588",
+      "query_id": "ws-2026-10-12-q059",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 59,
+      "value": 50
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445124036",
+      "observation_id": "ws-2026-10-12-q060-total",
+      "original_query": "0445124036",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "0445124036",
+      "query_id": "ws-2026-10-12-q060",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 60,
+      "value": 4
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445020089",
+      "observation_id": "ws-2026-10-12-q061-total",
+      "original_query": "0445020089",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445020089",
+      "query_id": "ws-2026-10-12-q061",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 61,
+      "value": 767
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445020081",
+      "observation_id": "ws-2026-10-12-q062-total",
+      "original_query": "0445020081",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445020081",
+      "query_id": "ws-2026-10-12-q062",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 62,
+      "value": 55
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "l215pbc",
+      "observation_id": "ws-2026-10-12-q063-total",
+      "original_query": "l215pbc",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "l215pbc",
+      "query_id": "ws-2026-10-12-q063",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 63,
+      "value": 5
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445124025",
+      "observation_id": "ws-2026-10-12-q064-total",
+      "original_query": "0445124025",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445124025",
+      "query_id": "ws-2026-10-12-q064",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 64,
+      "value": 30
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "dz128160",
+      "observation_id": "ws-2026-10-12-q065-total",
+      "original_query": "dz128160",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "dz128160",
+      "query_id": "ws-2026-10-12-q065",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 65,
+      "value": 9
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445020606",
+      "observation_id": "ws-2026-10-12-q066-total",
+      "original_query": "0445020606",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445020606",
+      "query_id": "ws-2026-10-12-q066",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 66,
+      "value": 8
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445020611",
+      "observation_id": "ws-2026-10-12-q067-total",
+      "original_query": "0445020611",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445020611",
+      "query_id": "ws-2026-10-12-q067",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 67,
+      "value": 15
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "28229876",
+      "observation_id": "ws-2026-10-12-q068-total",
+      "original_query": "28229876",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "28229876",
+      "query_id": "ws-2026-10-12-q068",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 68,
+      "value": 8
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "l158pba",
+      "observation_id": "ws-2026-10-12-q069-total",
+      "original_query": "l158pba",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "l158pba",
+      "query_id": "ws-2026-10-12-q069",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 69,
+      "value": 38
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445020508",
+      "observation_id": "ws-2026-10-12-q070-total",
+      "original_query": "0445020508",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "0445020508",
+      "query_id": "ws-2026-10-12-q070",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 70,
+      "value": 1
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "f00rj02177",
+      "observation_id": "ws-2026-10-12-q071-total",
+      "original_query": "f00rj02177",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "f00rj02177",
+      "query_id": "ws-2026-10-12-q071",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 71,
+      "value": 75
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0414701072",
+      "observation_id": "ws-2026-10-12-q072-total",
+      "original_query": "0414701072",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0414701072",
+      "query_id": "ws-2026-10-12-q072",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 72,
+      "value": 24
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "28384974",
+      "observation_id": "ws-2026-10-12-q073-total",
+      "original_query": "28384974",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "28384974",
+      "query_id": "ws-2026-10-12-q073",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 73,
+      "value": 0
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "dz100218",
+      "observation_id": "ws-2026-10-12-q074-total",
+      "original_query": "dz100218",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "dz100218",
+      "query_id": "ws-2026-10-12-q074",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 74,
+      "value": 27
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "28384976",
+      "observation_id": "ws-2026-10-12-q075-total",
+      "original_query": "28384976",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "28384976",
+      "query_id": "ws-2026-10-12-q075",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 75,
+      "value": 0
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "7210-0473",
+      "observation_id": "ws-2026-10-12-q076-total",
+      "original_query": "7210-0473",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "7210-0473",
+      "query_id": "ws-2026-10-12-q076",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 76,
+      "value": 8
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "8980436870",
+      "observation_id": "ws-2026-10-12-q077-total",
+      "original_query": "8980436870",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "8980436870",
+      "query_id": "ws-2026-10-12-q077",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 77,
+      "value": 47
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "9323a260g",
+      "observation_id": "ws-2026-10-12-q078-total",
+      "original_query": "9323a260g",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "9323a260g",
+      "query_id": "ws-2026-10-12-q078",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 78,
+      "value": 30
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445120385",
+      "observation_id": "ws-2026-10-12-q079-total",
+      "original_query": "0445120385",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445120385",
+      "query_id": "ws-2026-10-12-q079",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 79,
+      "value": 90
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "0445020273",
+      "observation_id": "ws-2026-10-12-q080-total",
+      "original_query": "0445020273",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "0445020273",
+      "query_id": "ws-2026-10-12-q080",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 80,
+      "value": 20
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "9109-903",
+      "observation_id": "ws-2026-10-12-q081-total",
+      "original_query": "9109-903",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "9109-903",
+      "query_id": "ws-2026-10-12-q081",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 81,
+      "value": 47
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "dz111136",
+      "observation_id": "ws-2026-10-12-q082-total",
+      "original_query": "dz111136",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "dz111136",
+      "query_id": "ws-2026-10-12-q082",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 82,
+      "value": 3
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "dz10599",
+      "observation_id": "ws-2026-10-12-q083-total",
+      "original_query": "dz10599",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "dz10599",
+      "query_id": "ws-2026-10-12-q083",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 83,
+      "value": 300
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "quoted_total",
+      "normalized_query": "0445020089",
+      "observation_id": "ws-2026-10-12-q084-total",
+      "original_query": "\"0445020089\"",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "\"0445020089\"",
+      "query_id": "ws-2026-10-12-q084",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 84,
+      "value": 280
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "quoted_total",
+      "normalized_query": "0445020110",
+      "observation_id": "ws-2026-10-12-q085-total",
+      "original_query": "\"0445020110\"",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "\"0445020110\"",
+      "query_id": "ws-2026-10-12-q085",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 85,
+      "value": 136
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "quoted_total",
+      "normalized_query": "dz10599",
+      "observation_id": "ws-2026-10-12-q086-total",
+      "original_query": "\"dz10599\"",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "\"dz10599\"",
+      "query_id": "ws-2026-10-12-q086",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 86,
+      "value": 202
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "quoted_total",
+      "normalized_query": "топливная аппаратура",
+      "observation_id": "ws-2026-10-12-q087-total",
+      "original_query": "\"топливная аппаратура\"",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "\"топливная аппаратура\"",
+      "query_id": "ws-2026-10-12-q087",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 87,
+      "value": 82
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "quoted_total",
+      "normalized_query": "0445020540",
+      "observation_id": "ws-2026-10-12-q088-total",
+      "original_query": "\"0445020540\"",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "\"0445020540\"",
+      "query_id": "ws-2026-10-12-q088",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 88,
+      "value": 105
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "quoted_total",
+      "normalized_query": "0445120072",
+      "observation_id": "ws-2026-10-12-q089-total",
+      "original_query": "\"0445120072\"",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "\"0445120072\"",
+      "query_id": "ws-2026-10-12-q089",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 89,
+      "value": 26
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "quoted_total",
+      "normalized_query": "форсунки bosch",
+      "observation_id": "ws-2026-10-12-q090-total",
+      "original_query": "\"форсунки bosch\"",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "\"форсунки bosch\"",
+      "query_id": "ws-2026-10-12-q090",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 90,
+      "value": 57
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "quoted_total",
+      "normalized_query": "тнвд купить",
+      "observation_id": "ws-2026-10-12-q091-total",
+      "original_query": "\"тнвд купить\"",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "\"тнвд купить\"",
+      "query_id": "ws-2026-10-12-q091",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 91,
+      "value": 59
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "quoted_total",
+      "normalized_query": "купить форсунку бош",
+      "observation_id": "ws-2026-10-12-q092-total",
+      "original_query": "\"купить форсунку бош\"",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "\"купить форсунку бош\"",
+      "query_id": "ws-2026-10-12-q092",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 92,
+      "value": 5
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "quoted_total",
+      "normalized_query": "купить форсунку делфи",
+      "observation_id": "ws-2026-10-12-q093-total",
+      "original_query": "\"купить форсунку делфи\"",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "\"купить форсунку делфи\"",
+      "query_id": "ws-2026-10-12-q093",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 93,
+      "value": 3
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "2601004010",
+      "observation_id": "ws-2026-10-12-q094-total",
+      "original_query": "2601004010",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "2601004010",
+      "query_id": "ws-2026-10-12-q094",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 94,
+      "value": 0
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "2601006010",
+      "observation_id": "ws-2026-10-12-q095-total",
+      "original_query": "2601006010",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "2601006010",
+      "query_id": "ws-2026-10-12-q095",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 95,
+      "value": 0
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "72060435",
+      "observation_id": "ws-2026-10-12-q096-total",
+      "original_query": "72060435",
+      "period": "11.09.2026 – 11.10.2026",
+      "query": "72060435",
+      "query_id": "ws-2026-10-12-q096",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 96,
+      "value": 0
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "форсунки джон дир",
+      "observation_id": "ws-2026-10-12-q097-total",
+      "original_query": "форсунки джон дир",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "форсунки джон дир",
+      "query_id": "ws-2026-10-12-q097",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 97,
+      "value": 452
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "тнвд джон дир",
+      "observation_id": "ws-2026-10-12-q098-total",
+      "original_query": "тнвд джон дир",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "тнвд джон дир",
+      "query_id": "ws-2026-10-12-q098",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 98,
+      "value": 241
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "насос форсунка",
+      "observation_id": "ws-2026-10-12-q099-total",
+      "original_query": "насос форсунка",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "насос форсунка",
+      "query_id": "ws-2026-10-12-q099",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 99,
+      "value": 21166
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "маркировка форсунки",
+      "observation_id": "ws-2026-10-12-q100-total",
+      "original_query": "маркировка форсунки",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "маркировка форсунки",
+      "query_id": "ws-2026-10-12-q100",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 100,
+      "value": 1262
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "номер тнвд",
+      "observation_id": "ws-2026-10-12-q101-total",
+      "original_query": "номер тнвд",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "номер тнвд",
+      "query_id": "ws-2026-10-12-q101",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 101,
+      "value": 2414
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "как прописать форсунки",
+      "observation_id": "ws-2026-10-12-q102-total",
+      "original_query": "как прописать форсунки",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "как прописать форсунки",
+      "query_id": "ws-2026-10-12-q102",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 102,
+      "value": 3683
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "распылитель форсунки bosch",
+      "observation_id": "ws-2026-10-12-q103-total",
+      "original_query": "распылитель форсунки bosch",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "распылитель форсунки bosch",
+      "query_id": "ws-2026-10-12-q103",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 103,
+      "value": 346
+    },
+    {
+      "classification": "parent_total",
+      "devices": "Все устройства",
+      "metric_type": "broad_total",
+      "normalized_query": "клапан форсунки delphi",
+      "observation_id": "ws-2026-10-12-q104-total",
+      "original_query": "клапан форсунки delphi",
+      "period": "05.09.2026 – 04.10.2026",
+      "query": "клапан форсунки delphi",
+      "query_id": "ws-2026-10-12-q104",
+      "raw_row": "",
+      "reason": "Значение над таблицей исходного исследования",
+      "region": "Россия",
+      "row_index": 0,
+      "source": "https://wordstat.yandex.ru/",
+      "source_query_index": 104,
+      "value": 297
+    }
+  ],
+  "products": [
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0414701072/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0414701072"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "0414701051"
+        },
+        {
+          "kind": "supplier_shorthand",
+          "review_flag": "verify_as_literal_code",
+          "value": "0414701073/7"
+        },
+        {
+          "kind": "supplier_shorthand",
+          "review_flag": "verify_as_literal_code",
+          "value": "0414701086/8"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "0414701094"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "0414701930"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "2599428"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "2599429"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "1943974"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q072-r002",
+        "ws-2026-10-12-q072-r003",
+        "ws-2026-10-12-q072-total"
+      ],
+      "name": "Насос-форсунка Bosch",
+      "short_name": "Насос-форсунка",
+      "sku": "0414701072"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0433175478/",
+      "category": "nozzles",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0433175478"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q028-r002",
+        "ws-2026-10-12-q028-total"
+      ],
+      "name": "Распылитель топливной форсунки Bosch",
+      "short_name": "Распылитель топливной форсунки",
+      "sku": "0433175478"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0433175518/",
+      "category": "nozzles",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0433175518"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q043-r002",
+        "ws-2026-10-12-q043-total"
+      ],
+      "name": "Распылитель топливной форсунки Bosch",
+      "short_name": "Распылитель топливной форсунки",
+      "sku": "0433175518"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445020081/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445020081"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "10117814"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q062-r002",
+        "ws-2026-10-12-q062-r003",
+        "ws-2026-10-12-q062-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Bosch",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "0445020081"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445020082/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445020082"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q040-r002",
+        "ws-2026-10-12-q040-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Bosch",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "0445020082"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445020089/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445020089"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q006-r023",
+        "ws-2026-10-12-q006-r088",
+        "ws-2026-10-12-q006-r116",
+        "ws-2026-10-12-q061-r002",
+        "ws-2026-10-12-q061-r003",
+        "ws-2026-10-12-q061-r004",
+        "ws-2026-10-12-q061-r005",
+        "ws-2026-10-12-q061-r006",
+        "ws-2026-10-12-q061-r007",
+        "ws-2026-10-12-q061-r008",
+        "ws-2026-10-12-q061-r009",
+        "ws-2026-10-12-q061-r010",
+        "ws-2026-10-12-q061-r011",
+        "ws-2026-10-12-q061-r012",
+        "ws-2026-10-12-q061-r013",
+        "ws-2026-10-12-q061-r014",
+        "ws-2026-10-12-q061-r015",
+        "ws-2026-10-12-q061-r016",
+        "ws-2026-10-12-q061-r017",
+        "ws-2026-10-12-q061-r018",
+        "ws-2026-10-12-q061-r019",
+        "ws-2026-10-12-q061-r020",
+        "ws-2026-10-12-q061-r021",
+        "ws-2026-10-12-q061-r022",
+        "ws-2026-10-12-q061-r023",
+        "ws-2026-10-12-q061-r024",
+        "ws-2026-10-12-q061-r025",
+        "ws-2026-10-12-q061-r026",
+        "ws-2026-10-12-q061-r027",
+        "ws-2026-10-12-q061-r028",
+        "ws-2026-10-12-q061-r029",
+        "ws-2026-10-12-q061-total",
+        "ws-2026-10-12-q084-r002",
+        "ws-2026-10-12-q084-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Bosch",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "0445020089"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445020110/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445020110"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q006-r057",
+        "ws-2026-10-12-q045-r002",
+        "ws-2026-10-12-q045-r003",
+        "ws-2026-10-12-q045-r004",
+        "ws-2026-10-12-q045-r005",
+        "ws-2026-10-12-q045-r006",
+        "ws-2026-10-12-q045-r007",
+        "ws-2026-10-12-q045-r008",
+        "ws-2026-10-12-q045-r009",
+        "ws-2026-10-12-q045-r010",
+        "ws-2026-10-12-q045-r011",
+        "ws-2026-10-12-q045-r012",
+        "ws-2026-10-12-q045-r013",
+        "ws-2026-10-12-q045-r014",
+        "ws-2026-10-12-q045-total",
+        "ws-2026-10-12-q085-r002",
+        "ws-2026-10-12-q085-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Bosch",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "0445020110"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445020201/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445020201"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q038-r002",
+        "ws-2026-10-12-q038-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Bosch",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "0445020201"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445020208/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445020208"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q037-r002",
+        "ws-2026-10-12-q037-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Bosch",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "0445020208"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445020273/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445020273"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q080-r002",
+        "ws-2026-10-12-q080-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Bosch",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "0445020273"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445020334/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445020334"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q044-r002",
+        "ws-2026-10-12-q044-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Bosch",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "0445020334"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445020508/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445020508"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q070-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Bosch",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "0445020508"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445020540/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445020540"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q006-r126",
+        "ws-2026-10-12-q051-r002",
+        "ws-2026-10-12-q051-r003",
+        "ws-2026-10-12-q051-r004",
+        "ws-2026-10-12-q051-r005",
+        "ws-2026-10-12-q051-r006",
+        "ws-2026-10-12-q051-total",
+        "ws-2026-10-12-q088-r002",
+        "ws-2026-10-12-q088-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Bosch",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "0445020540"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445020606/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445020606"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q066-r002",
+        "ws-2026-10-12-q066-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Bosch",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "0445020606"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445020610/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445020610"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q031-r002",
+        "ws-2026-10-12-q031-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Bosch",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "0445020610"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445020611/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445020611"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q067-r002",
+        "ws-2026-10-12-q067-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Bosch",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "0445020611"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445116059/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445116059"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q057-r002",
+        "ws-2026-10-12-q057-r003",
+        "ws-2026-10-12-q057-r004",
+        "ws-2026-10-12-q057-total"
+      ],
+      "name": "Топливная форсунка Common Rail Bosch",
+      "short_name": "Топливная форсунка Common Rail",
+      "sku": "0445116059"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445120072/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445120072"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q049-r002",
+        "ws-2026-10-12-q049-r003",
+        "ws-2026-10-12-q049-r004",
+        "ws-2026-10-12-q049-r005",
+        "ws-2026-10-12-q049-r006",
+        "ws-2026-10-12-q049-r007",
+        "ws-2026-10-12-q049-total",
+        "ws-2026-10-12-q089-r002",
+        "ws-2026-10-12-q089-total"
+      ],
+      "name": "Топливная форсунка Common Rail Bosch",
+      "short_name": "Топливная форсунка Common Rail",
+      "sku": "0445120072"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445120075/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445120075"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q026-r002",
+        "ws-2026-10-12-q026-total"
+      ],
+      "name": "Топливная форсунка Common Rail Bosch",
+      "short_name": "Топливная форсунка Common Rail",
+      "sku": "0445120075"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445120126/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445120126"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q048-r002",
+        "ws-2026-10-12-q048-total"
+      ],
+      "name": "Топливная форсунка Common Rail Bosch",
+      "short_name": "Топливная форсунка Common Rail",
+      "sku": "0445120126"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445120212/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445120212"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "5263307"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "0445120007"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "0445120273"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q055-r002",
+        "ws-2026-10-12-q055-r003",
+        "ws-2026-10-12-q055-r004",
+        "ws-2026-10-12-q055-r005",
+        "ws-2026-10-12-q055-total"
+      ],
+      "name": "Топливная форсунка Common Rail Bosch",
+      "short_name": "Топливная форсунка Common Rail",
+      "sku": "0445120212"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445120385/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445120385"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "0445120386"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "0986435647"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "A4710700887"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q079-r002",
+        "ws-2026-10-12-q079-r003",
+        "ws-2026-10-12-q079-r004",
+        "ws-2026-10-12-q079-total"
+      ],
+      "name": "Топливная форсунка Common Rail Bosch",
+      "short_name": "Топливная форсунка Common Rail",
+      "sku": "0445120385"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445120728/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445120728"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "0445120729"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "527-5384"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "617-1909"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q054-total"
+      ],
+      "name": "Топливная форсунка Common Rail Bosch / Caterpillar",
+      "short_name": "Топливная форсунка Common Rail",
+      "sku": "0445120728"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445124025/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445124025"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "837074860"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q064-r002",
+        "ws-2026-10-12-q064-total"
+      ],
+      "name": "Топливная форсунка Common Rail Bosch",
+      "short_name": "Топливная форсунка Common Rail",
+      "sku": "0445124025"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445124036/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445124036"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "5801906153"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q060-total"
+      ],
+      "name": "Топливная форсунка Common Rail Bosch",
+      "short_name": "Топливная форсунка Common Rail",
+      "sku": "0445124036"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/0445226092/",
+      "category": "other",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "0445226092"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "0445226190"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q053-total"
+      ],
+      "name": "Топливная рампа Common Rail Bosch",
+      "short_name": "Топливная рампа Common Rail",
+      "sku": "0445226092"
+    },
+    {
+      "brand": "Denso",
+      "canonical_target": "/catalog/260100-4010/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "260100-4010"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q032-total",
+        "ws-2026-10-12-q094-total"
+      ],
+      "name": "Топливная форсунка",
+      "short_name": "Топливная форсунка",
+      "sku": "260100-4010"
+    },
+    {
+      "brand": "Denso",
+      "canonical_target": "/catalog/260100-6010/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "260100-6010"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "295050-0520"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q056-total",
+        "ws-2026-10-12-q095-total"
+      ],
+      "name": "Топливная форсунка Common Rail Denso",
+      "short_name": "Топливная форсунка Common Rail",
+      "sku": "260100-6010"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/28229876/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "28229876"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "320/06827"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q068-total"
+      ],
+      "name": "Топливная форсунка Common Rail Delphi / JCB",
+      "short_name": "Топливная форсунка Common Rail",
+      "sku": "28229876"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/28272472/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "28272472"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q030-r002",
+        "ws-2026-10-12-q030-total"
+      ],
+      "name": "Топливная форсунка Common Rail Delphi",
+      "short_name": "Топливная форсунка Common Rail",
+      "sku": "28272472"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/28308779/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "28308779"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "A6510703287"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q046-r002",
+        "ws-2026-10-12-q046-total"
+      ],
+      "name": "Топливная форсунка Common Rail Delphi",
+      "short_name": "Топливная форсунка Common Rail",
+      "sku": "28308779"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/28384974/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "28384974"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "28318239"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "9422A040A"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "25187375"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "98686903"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q073-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Delphi Common Rail",
+      "short_name": "Топливный насос высокого давления (ТНВД) Common Rail",
+      "sku": "28384974"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/28384976/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "28384976"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "28286124"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "28318240"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "25187376"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q075-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Delphi Common Rail",
+      "short_name": "Топливный насос высокого давления (ТНВД) Common Rail",
+      "sku": "28384976"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/28516849/",
+      "category": "other",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "28516849"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "7240-241"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q036-r002",
+        "ws-2026-10-12-q036-total"
+      ],
+      "name": "Топливоподкачивающий насос",
+      "short_name": "Топливоподкачивающий насос",
+      "sku": "28516849"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/28540276/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "28540276"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "R00203D"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q034-total"
+      ],
+      "name": "Топливная форсунка Common Rail Delphi",
+      "short_name": "Топливная форсунка Common Rail",
+      "sku": "28540276"
+    },
+    {
+      "brand": "VDO / Vitesco (Aumovio)",
+      "canonical_target": "/catalog/5620004100/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "5620004100"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "GK2Q-9K546-AC"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q050-total"
+      ],
+      "name": "Топливная форсунка",
+      "short_name": "Топливная форсунка",
+      "sku": "5620004100"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/7206-0435/",
+      "category": "valves",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "7206-0435"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q035-total",
+        "ws-2026-10-12-q096-total"
+      ],
+      "name": "Электромагнитный клапан топливной системы Delphi",
+      "short_name": "Электромагнитный клапан топливной системы",
+      "sku": "7206-0435"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/7206-0460/",
+      "category": "valves",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "7206-0460"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q029-total"
+      ],
+      "name": "Электромагнитный клапан топливной системы Delphi",
+      "short_name": "Электромагнитный клапан топливной системы",
+      "sku": "7206-0460"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/7210-0473/",
+      "category": "valves",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "7210-0473"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "31442-84300"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "22720232"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q076-total"
+      ],
+      "name": "Клапан регулирования давления топлива HPV",
+      "short_name": "Клапан регулирования давления топлива HPV",
+      "sku": "7210-0473"
+    },
+    {
+      "brand": "Denso",
+      "canonical_target": "/catalog/8980436870/",
+      "category": "valves",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "8980436870"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "294200-0650"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q077-r002",
+        "ws-2026-10-12-q077-total"
+      ],
+      "name": "Клапан управления подачей топлива SCV",
+      "short_name": "Клапан управления подачей топлива SCV",
+      "sku": "8980436870"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/9109-903/",
+      "category": "valves",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "9109-903"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q081-total"
+      ],
+      "name": "Клапан регулировки подачи топлива Common Rail Delphi",
+      "short_name": "Клапан регулировки подачи топлива Common Rail",
+      "sku": "9109-903"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/9323a260g/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "9323A260G"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "320/06738"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "320/06929"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "9320A613G"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q078-r002",
+        "ws-2026-10-12-q078-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Delphi / JCB",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "9323A260G"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/9323a270g/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "9323A270G"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q033-r002",
+        "ws-2026-10-12-q033-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) Delphi",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "9323A270G"
+    },
+    {
+      "brand": "John Deere",
+      "canonical_target": "/catalog/dz100212/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "DZ100212"
+        }
+      ],
+      "evidence_ids": [],
+      "name": "Комплект топливной форсунки Common Rail John Deere",
+      "short_name": "Комплект топливной форсунки Common Rail",
+      "sku": "DZ100212"
+    },
+    {
+      "brand": "John Deere",
+      "canonical_target": "/catalog/dz100216/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "DZ100216"
+        }
+      ],
+      "evidence_ids": [],
+      "name": "Комплект топливной форсунки Common Rail John Deere",
+      "short_name": "Комплект топливной форсунки Common Rail",
+      "sku": "DZ100216"
+    },
+    {
+      "brand": "John Deere",
+      "canonical_target": "/catalog/dz100217/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "DZ100217"
+        }
+      ],
+      "evidence_ids": [],
+      "name": "Комплект топливной форсунки Common Rail John Deere",
+      "short_name": "Комплект топливной форсунки Common Rail",
+      "sku": "DZ100217"
+    },
+    {
+      "brand": "Denso",
+      "canonical_target": "/catalog/dz100218/",
+      "category": "other",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "DZ100218"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "095000-6880"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q074-r002",
+        "ws-2026-10-12-q074-total"
+      ],
+      "name": "Комплект топливной форсунки (распылитель) John Deere / Denso",
+      "short_name": "Комплект топливной форсунки (распылитель)",
+      "sku": "DZ100218"
+    },
+    {
+      "brand": "John Deere",
+      "canonical_target": "/catalog/dz100221/",
+      "category": "injectors",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "DZ100221"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q009-r003"
+      ],
+      "name": "Комплект топливной форсунки Common Rail John Deere",
+      "short_name": "Комплект топливной форсунки Common Rail",
+      "sku": "DZ100221"
+    },
+    {
+      "brand": "John Deere",
+      "canonical_target": "/catalog/dz10599/",
+      "category": "other",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "DZ10599"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q083-r002",
+        "ws-2026-10-12-q083-r003",
+        "ws-2026-10-12-q083-r004",
+        "ws-2026-10-12-q083-r005",
+        "ws-2026-10-12-q083-r006",
+        "ws-2026-10-12-q083-total",
+        "ws-2026-10-12-q086-r002",
+        "ws-2026-10-12-q086-total"
+      ],
+      "name": "Комплект капитального ремонта двигателя John Deere",
+      "short_name": "Комплект капитального ремонта двигателя",
+      "sku": "DZ10599"
+    },
+    {
+      "brand": "John Deere",
+      "canonical_target": "/catalog/dz111136/",
+      "category": "valves",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "DZ111136"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q082-total"
+      ],
+      "name": "Клапан управления подачей топлива ТНВД John Deere",
+      "short_name": "Клапан управления подачей топлива ТНВД",
+      "sku": "DZ111136"
+    },
+    {
+      "brand": "John Deere",
+      "canonical_target": "/catalog/dz112112/",
+      "category": "nozzles",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "DZ112112"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q052-r002",
+        "ws-2026-10-12-q052-total"
+      ],
+      "name": "Комплект распылителя форсунки John Deere",
+      "short_name": "Комплект распылителя форсунки",
+      "sku": "DZ112112"
+    },
+    {
+      "brand": "John Deere",
+      "canonical_target": "/catalog/dz128160/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "DZ128160"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "DZ123516"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q065-r002",
+        "ws-2026-10-12-q065-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) John Deere",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "DZ128160"
+    },
+    {
+      "brand": "Denso",
+      "canonical_target": "/catalog/dz128161/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "DZ128161"
+        },
+        {
+          "kind": "additional_code",
+          "review_flag": "additional_number_without_interchangeability_claim",
+          "value": "299050-0160"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q058-r002",
+        "ws-2026-10-12-q058-total"
+      ],
+      "name": "Топливный насос высокого давления (ТНВД) John Deere / Denso",
+      "short_name": "Топливный насос высокого давления (ТНВД)",
+      "sku": "DZ128161"
+    },
+    {
+      "brand": "Bosch",
+      "canonical_target": "/catalog/f00rj02177/",
+      "category": "other",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "F00RJ02177"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q071-r002",
+        "ws-2026-10-12-q071-r003",
+        "ws-2026-10-12-q071-r004",
+        "ws-2026-10-12-q071-total"
+      ],
+      "name": "Ремкомплект топливной форсунки Common Rail Bosch",
+      "short_name": "Ремкомплект топливной форсунки Common Rail",
+      "sku": "F00RJ02177"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/l017pbb/",
+      "category": "nozzles",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "L017PBB"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q047-total"
+      ],
+      "name": "Распылитель топливной форсунки",
+      "short_name": "Распылитель топливной форсунки",
+      "sku": "L017PBB"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/l053pbc/",
+      "category": "nozzles",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "L053PBC"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q042-total"
+      ],
+      "name": "Распылитель топливной форсунки",
+      "short_name": "Распылитель топливной форсунки",
+      "sku": "L053PBC"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/l158pba/",
+      "category": "nozzles",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "L158PBA"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q069-r002",
+        "ws-2026-10-12-q069-r003",
+        "ws-2026-10-12-q069-total"
+      ],
+      "name": "Распылитель топливной форсунки",
+      "short_name": "Распылитель топливной форсунки",
+      "sku": "L158PBA"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/l215pbc/",
+      "category": "nozzles",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "L215PBC"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q063-r002",
+        "ws-2026-10-12-q063-total"
+      ],
+      "name": "Распылитель топливной форсунки",
+      "short_name": "Распылитель топливной форсунки",
+      "sku": "L215PBC"
+    },
+    {
+      "brand": "Delphi",
+      "canonical_target": "/catalog/l229pbc/",
+      "category": "nozzles",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "L229PBC"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q039-total"
+      ],
+      "name": "Распылитель топливной форсунки",
+      "short_name": "Распылитель топливной форсунки",
+      "sku": "L229PBC"
+    },
+    {
+      "brand": "John Deere",
+      "canonical_target": "/catalog/re507959/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "RE507959"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q041-r002",
+        "ws-2026-10-12-q041-r003",
+        "ws-2026-10-12-q041-total"
+      ],
+      "name": "Топливный насос впрыска (ТНВД) John Deere",
+      "short_name": "Топливный насос впрыска (ТНВД)",
+      "sku": "RE507959"
+    },
+    {
+      "brand": "John Deere",
+      "canonical_target": "/catalog/re526588/",
+      "category": "other",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "RE526588"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q059-r002",
+        "ws-2026-10-12-q059-r003",
+        "ws-2026-10-12-q059-total"
+      ],
+      "name": "Электронный блок управления двигателем (ЭБУ) John Deere",
+      "short_name": "Электронный блок управления двигателем (ЭБУ)",
+      "sku": "RE526588"
+    },
+    {
+      "brand": "John Deere",
+      "canonical_target": "/catalog/re539764/",
+      "category": "other",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "RE539764"
+        }
+      ],
+      "evidence_ids": [
+        "ws-2026-10-12-q027-r002",
+        "ws-2026-10-12-q027-r003",
+        "ws-2026-10-12-q027-total"
+      ],
+      "name": "Электрический топливный насос 24 В John Deere",
+      "short_name": "Электрический топливный насос 24 В",
+      "sku": "RE539764"
+    },
+    {
+      "brand": "John Deere",
+      "canonical_target": "/catalog/re543262/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "RE543262"
+        }
+      ],
+      "evidence_ids": [],
+      "name": "Топливный насос впрыска John Deere",
+      "short_name": "Топливный насос впрыска",
+      "sku": "RE543262"
+    },
+    {
+      "brand": "John Deere",
+      "canonical_target": "/catalog/re571640/",
+      "category": "pumps",
+      "codes": [
+        {
+          "kind": "catalog_sku",
+          "review_flag": "canonical_sku",
+          "value": "RE571640"
+        }
+      ],
+      "evidence_ids": [],
+      "name": "ТНВД John Deere",
+      "short_name": "ТНВД",
+      "sku": "RE571640"
+    }
+  ],
+  "schema_version": 1,
+  "serp_research": {
+    "fetched_date": "2026-10-22",
+    "file": "seo/semantic-core/serp-research.json",
+    "method_limits": [
+      "Not Yandex/Google top10 data; no ranking, geography, device, organic completeness or independent trend guarantee.",
+      "Available returned URL sets can contain PDFs, videos and broad reference pages. Overlap describes this sample only; standard top10 thresholds are not applied.",
+      "No paid API, volume, keyword difficulty, cost, competition or conversion measurements.",
+      "Prior Wordstat notes dated 2026-10-12 used only as context; existing counts not refreshed or relabeled."
+    ],
+    "queries": [
+      {
+        "decision": "Product lists and pump cards observed; retain Bosch/Бош as aliases on existing category and brand, no separate spelling pages.",
+        "id": "Q01",
+        "intent": "transactional",
+        "query": "тнвд bosch купить",
+        "source_urls": [
+          "https://kg.alta-karter.com/tnvd?brand=bosch",
+          "https://cdi36.ru/catalog/tnvd/tnvd_bosch/",
+          "https://tds-west.ru/catalog/tnvd/tnvd-bosch/",
+          "https://tds-west.ru/catalog/tnvd/",
+          "https://avilongroup.net/magazin/product/tnvd-bosch-1"
+        ],
+        "target": {
+          "canonicalPath": "/category/pumps/",
+          "status": "category"
+        }
+      },
+      {
+        "decision": "Vehicle-heavy results do not establish fitment for any catalog pump.",
+        "id": "Q02",
+        "intent": "transactional",
+        "query": "тнвд бош купить",
+        "source_urls": [
+          "https://rgr.fis.ru/catalog/638472-toplivnye-nasosy-tnvd-bosch-bosh",
+          "https://xn--h1aehg.xn--p1ai/zapchasti/import/BOSCH/tnvd-bosh-0-402-648-610E95-3e55f5a83e55f5a8-b5d1-11e5-b17e-001e6713e7ec.html",
+          "https://kamdvigatel.ru/nasos-toplivnyj/",
+          "https://smf.kts-dizel.ru/nasosy/tnvd-bosch-0445010544/",
+          "https://tehtreyding.ru/zapchasti-na-kitajskuyu-tehniku/zapchasti-cummins/tnvd-kamaz-kamminz-6isbe-evro-4-65115-4308-258264-0445020137.html"
+        ],
+        "target": {
+          "canonicalPath": "/category/pumps/",
+          "status": "category"
+        }
+      },
+      {
+        "decision": "Lists and valve cards observed. Keep injection control valve separate from complete injector.",
+        "id": "Q03",
+        "intent": "transactional",
+        "query": "клапан форсунки delphi купить",
+        "source_urls": [
+          "https://transmetauto.ru/magazin/folder/klapan-forsunki-delphi",
+          "https://precizika.ru/catalog/klapany-dlya-delphi/",
+          "https://www.dvsavto.ru/catalog/toplivnaya_apparatura_1/forsunki/delphi/zapchasti_forsunok_delphi/klapany_forsunok_delphi/",
+          "https://uctadieselpro.ru/catalog/delphi/klapany_dlya_forsunok_delphi/",
+          "https://www.uctadieselpro.ru/catalog/delphi/"
+        ],
+        "target": {
+          "canonicalPath": "/category/valves/",
+          "status": "category"
+        }
+      },
+      {
+        "decision": "Delphi/Делфи alias; individual valve compatibility remains SKU-specific.",
+        "id": "Q04",
+        "intent": "transactional",
+        "query": "клапан форсунки делфи купить",
+        "source_urls": [
+          "https://bustorgdetal.com/zapchasti_dlya_forsunok/klapany_forsunkok/klapany_forsunok_delphi/",
+          "https://farco.ru/shop/product/28277576-delfi-euro-5-9308-625c-upravliaiushchii-klapan-forsunki-common-rail-delphi",
+          "https://ucta.ru/delphi-technologies?page=7",
+          "https://4car24.ru/delphi/klapan-forsunki-1/",
+          "https://dtsmarket.ru/28239294-delphi-klapan-forsunki-6640170221"
+        ],
+        "target": {
+          "canonicalPath": "/category/valves/",
+          "status": "category"
+        }
+      },
+      {
+        "decision": "Mostly injector product lists; brand support /brands/bosch/.",
+        "id": "Q05",
+        "intent": "transactional",
+        "query": "форсунки bosch купить",
+        "source_urls": [
+          "https://remandex.ru/shop?groupCode=injectors",
+          "https://tds-west.ru/catalog/forsunki/forsunki-bosch/",
+          "https://www.vdparts.ru/catalog/forsunki_toplivnye_rampy/forsunki_bosch/",
+          "https://remandex.ru/shop?groupCode=injectors&onlyInStock=false",
+          "https://akpart.ru/catalog/toplivnye-forsunki/bosch_6/"
+        ],
+        "target": {
+          "canonicalPath": "/category/injectors/",
+          "status": "category"
+        }
+      },
+      {
+        "decision": "Same spelling family as Bosch; observed URL overlap alone cannot validate complete SERP.",
+        "id": "Q06",
+        "intent": "transactional",
+        "query": "форсунки бош купить",
+        "source_urls": [
+          "https://remandex.ru/shop?groupCode=injectors",
+          "https://cdi36.ru/catalog/forsunki-novye/forsunki-novye-bosch/",
+          "https://cdi36.ru/catalog/raskhodnye-materialy/materialy-dlya-bosch/",
+          "https://fuelparts.ru/info/brands/bosch/",
+          "https://volex32.ru/up/prajs-list-29-05-26.pdf"
+        ],
+        "target": {
+          "canonicalPath": "/category/injectors/",
+          "status": "category"
+        }
+      },
+      {
+        "decision": "Dedicated nozzle lists and cards. Existing Delphi SKUs L229PBC L053PBC L017PBB L215PBC L158PBA. Seller labels for 28538389 conflict with valve lists; do not import as nozzle.",
+        "id": "Q07",
+        "intent": "transactional",
+        "query": "распылитель форсунки delphi купить",
+        "source_urls": [
+          "https://tachka.ru/delphi/6980571",
+          "https://kg.alta-karter.com/delphi/28538389",
+          "https://transmetauto.ru/magazin/folder/raspylitel-forsunki-delphi",
+          "https://tachka.ru/delphi/7135-837",
+          "https://farco.ru/shop/brand/delphi/3378"
+        ],
+        "target": {
+          "canonicalPath": "/category/nozzles/",
+          "status": "category"
+        }
+      },
+      {
+        "decision": "SCV sits at pump fuel inlet, not injector control valve. Denso 294200-0650 is existing catalog code; no other SCV fitments approved.",
+        "id": "Q08",
+        "intent": "transactional",
+        "query": "клапан SCV Denso 8980436870",
+        "source_urls": [
+          "https://www.bascolin.com/products/common-rail/suction-control-valve/294200-0650.html",
+          "https://baza.drom.ru/oem/8980436870/",
+          "https://www.dencodiesel.com/products/294200-0650-denso-suction-control-valve-assembly-repl-0050-0550",
+          "https://dieselgroup.kz/p131429735-klapan-davleniya-topliva.html",
+          "https://phongvuautoparts.com/van-scv-denso-2942000650-van-dieu-ap-bom-cao-ap-hp3-cho-isuzu-nqr-npr-nkr-elf-dmax.html"
+        ],
+        "target": {
+          "canonicalPath": "/catalog/8980436870/",
+          "status": "product"
+        }
+      },
+      {
+        "decision": "Fuel injectors and fuel-system lists observed; specify diesel injection to avoid crop spray parts.",
+        "id": "Q09",
+        "intent": "transactional",
+        "query": "John Deere топливная аппаратура форсунки купить",
+        "source_urls": [
+          "https://www.farpost.ru/zapchasti/%2B/%D0%B8%D0%BD%D0%B6%D0%B5%D0%BA%D1%82%D0%BE%D1%80%2C%2B%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0/model/john%2Bdeere/",
+          "https://optipart.ru/catalog/j/johndeere/",
+          "https://www.farpost.ru/zapchasti/%2B/%D0%B8%D0%BD%D0%B6%D0%B5%D0%BA%D1%82%D0%BE%D1%80%2C%2B%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0/model/john%2Bdeere/?manufacturer=Denso",
+          "https://agrocat.ru/catalog/john-deere/p/dz116152",
+          "https://dieselzip.ru/product-cat/john-deere/forsunki-i-raspyliteli-john-deere/"
+        ],
+        "target": {
+          "canonicalPath": "/brands/john-deere/",
+          "status": "brand"
+        }
+      },
+      {
+        "decision": "Engine overhaul kit is separate from fuel injector repair kit. No new engine-wide catalog promised.",
+        "id": "Q10",
+        "intent": "transactional",
+        "query": "John Deere ремкомплект двигателя DZ10599 купить",
+        "source_urls": [
+          "https://greenpartstore.ru/shop/914433/",
+          "https://partsell.ru/catalog/dz10599",
+          "https://shop.agroprof.com/catalog/zapchasti_john_deere/d/dz10599_kompl_dlya_rem_dvigat_c_f_ag/",
+          "https://shop.uniparts-e.ru/product/remkomplekt-dvigatelja-dz10599-re531100-re528398-tdz10599/",
+          "https://www.oooarmat.ru/product/komplekt-dlya-remonta-dvigatelya-dz10599-john-deere"
+        ],
+        "target": {
+          "canonicalPath": "/catalog/dz10599/",
+          "status": "product"
+        }
+      },
+      {
+        "decision": "No belts or tensioners in current 64-SKU catalog. Exclude; no new landing page recommendation.",
+        "id": "Q11",
+        "intent": "transactional",
+        "query": "John Deere ремень натяжитель купить",
+        "source_urls": [
+          "https://elevengate.ru/catalog/type/remen-ili-natyazhitel/",
+          "https://altercompany.su/magazin/folder/natyazhiteli-roliki-john-deere",
+          "https://partsell.ru/catalog/gr_rashodnye-materialy/gr_remni/gr_remen-generatora/br_john-deere",
+          "https://partssolution.ru/spares/zapchasti-john-deere/dvigateli-john-deere/natyagiteli-remni-john-deere",
+          "https://jdparts.ru/katalog/john-deere/remni"
+        ],
+        "target": {
+          "canonicalPath": null,
+          "status": "excluded"
+        }
+      },
+      {
+        "decision": "Potential buyer explanation of unit injector vs Common Rail; link existing 0414701072 and relevant Common Rail cards only. Not a claim of interchangeability.",
+        "id": "Q12",
+        "intent": "informational",
+        "query": "насос форсунка и common rail отличие",
+        "source_urls": [
+          "https://tesma.ua/ru/pages/systema-common-rail",
+          "https://tesma.ua/pages/dyzelna-palyvna-systema",
+          "https://parts.diesel-center.ru/blog/stati/forsunki-common-rail-i-nasos-forsunki/",
+          "https://www.commonrail.ru/tech/tech_05.php",
+          "https://dieselok.md/about/articles/cr-ili-pd/"
+        ],
+        "target": {
+          "canonicalPath": null,
+          "status": "proposed-needs-content"
+        }
+      },
+      {
+        "decision": "Part-number query returns product/OEM listings. Catalog SKU page owns exact-number commerce; no vehicle variant expansion from search words.",
+        "id": "Q13",
+        "intent": "transactional",
+        "query": "0445020089 купить",
+        "source_urls": [
+          "https://kam.ru/catalog/94794/",
+          "https://zapchastrf.ru/products/0445020089-etp/",
+          "https://autotc.ru/product/tnvd-evro-4-common-rail-bosch-art-0445020089-1005542267",
+          "https://akpart.ru/catalog/toplivnye-nasosy/bosch_5/101223/",
+          "https://mig-kama.ru/mod/shop/product/TNVD__BOSCH"
+        ],
+        "target": {
+          "canonicalPath": "/catalog/0445020089/",
+          "status": "product"
+        }
+      },
+      {
+        "decision": "Repair-service price pages dominate observed results; site sells parts, so repair service intent excluded.",
+        "id": "Q14",
+        "intent": "service",
+        "query": "ремонт форсунок бош цена",
+        "source_urls": [
+          "https://madimotor.ru/uslugi/tnvd-forsunki/bosh/",
+          "https://adzc.ru/bosch.html",
+          "https://madimotor.ru/uslugi/remont-forsunok/remont-forsunok-bosch/",
+          "https://dizelbox.ru/prices",
+          "https://bosch.formula.org.ua/palyvna-systema/"
+        ],
+        "target": {
+          "canonicalPath": null,
+          "status": "excluded"
+        }
+      },
+      {
+        "decision": "Test benches and diagnostic equipment sellers; no bench SKU in current catalog.",
+        "id": "Q15",
+        "intent": "transactional-equipment",
+        "query": "стенд проверки форсунок купить",
+        "source_urls": [
+          "https://atdiesel.ru/oborudovanie/stendy-dlya-common-rail/stend-ispytatelnyj-triumf/",
+          "https://www.sorokin.ru/catalog/diagnosticheskoe_oborudovanie/stendy/",
+          "https://www.technosouz.ru/category/diagnostika/stendy-dlya-forsunok/dizelnykh/",
+          "https://www.garo.cc/katalog/diagnosticheskoe-oborudovanie/stend-dlja-ispytanija/stend-dlja-regulirovki-forsunok-m/",
+          "https://www.technosouz.ru/category/diagnostika/stendy-dlya-forsunok/"
+        ],
+        "target": {
+          "canonicalPath": null,
+          "status": "excluded"
+        }
+      },
+      {
+        "decision": "Washer/headlight spray parts; exclude from diesel nozzle cluster.",
+        "id": "Q16",
+        "intent": "transactional-other-system",
+        "query": "распылитель форсунки омывателя купить",
+        "source_urls": [
+          "https://bibibit.ru/catalog/80216/74568",
+          "https://baza.drom.ru/g15867913255.html",
+          "https://avapt.store/c/raspylitel-forsunki",
+          "https://bibibit.ru/catalog/42717/74568",
+          "https://m.integration.vs.market.yandex.net/card/raspylitel-forsunki-kryshki-omyvatelya-far-mazda/102967882538"
+        ],
+        "target": {
+          "canonicalPath": null,
+          "status": "excluded"
+        }
+      },
+      {
+        "decision": "Existing buyer article owns part-number selection. Request full number, engine/serial data; no visual-fit guarantee.",
+        "id": "Q17",
+        "intent": "informational",
+        "query": "как подобрать форсунку по номеру Bosch",
+        "source_urls": [
+          "https://injectune.com/ru/news/kodirovanie-forsunok-ima-c2i-qr",
+          "https://precizika.ru/blog/78519/",
+          "https://commonrail.com.ua/forsunki-common-rail/klapany-multiplikatory-forsunok",
+          "https://dieselt.ru/articles/kak-podobrat-raspylitel-dizelnoi-forsunki",
+          "https://commonrail.com.ua/ua/forsunki-common-rail/klapany-multiplikatory-forsunok"
+        ],
+        "target": {
+          "canonicalPath": "/articles/podbor-po-artikulu/",
+          "status": "article"
+        }
+      },
+      {
+        "decision": "Potential short SCV buyer explanation with manufacturer safety sourcing; not DIY high-pressure troubleshooting or repair-service landing.",
+        "id": "Q18",
+        "intent": "informational",
+        "query": "клапан SCV Denso что это",
+        "source_urls": [
+          "https://automarka-rm.ru/wp-content/uploads/2019/11/Sistemy-upravleniya-i-osnovy-diagnostiki-dizelnyh-dvigatelej-Common-Rail.pdf",
+          "https://sto.kovsh.com/library/diesel_fuel_system/fuel_equipment_manufacturers/denso/common_rail_denso/tnvd_common_rail_denso/hp3/klapan_denso_scv/t/tabs14822/informatciia",
+          "https://denso.ae/products/diesel-components/common-rail-suction-control-valve-scv",
+          "https://www.denso-am.eu/ru/products/dizelnye-komponenty/common-rail-nasosy",
+          "https://www.sto.kovsh.com/library/diesel_fuel_system/fuel_equipment_manufacturers/denso/common_rail_denso/tnvd_common_rail_denso/hp3"
+        ],
+        "target": {
+          "canonicalPath": null,
+          "status": "proposed-needs-content"
+        }
+      },
+      {
+        "decision": "Indexed manufacturer label Fuel Injection Pump; official PDF also labels low pressure. Keep neutral product label; pressure subtype unresolved.",
+        "id": "Q19",
+        "intent": "transactional",
+        "query": "RE543262 John Deere",
+        "source_urls": [
+          "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262",
+          "https://www.deere.com/assets/pdfs/common/qrg/rx532579.pdf",
+          "https://www.deere.com/assets/pdfs/common/qrg/rx550516.pdf",
+          "https://www.deere.com/assets/pdfs/common/qrg/rx532586.pdf",
+          "https://www.deere.com/assets/pdfs/common/qrg/rx532590.pdf"
+        ],
+        "target": {
+          "canonicalPath": "/catalog/re543262/",
+          "status": "product"
+        }
+      },
+      {
+        "decision": "Indexed manufacturer label Fuel Injection Pump. Product full page 403; indexed label evidence only, official PDF corroborates pump.",
+        "id": "Q20",
+        "intent": "transactional",
+        "query": "RE571640 John Deere",
+        "source_urls": [
+          "https://shop.deere.com/us/product/RE571640%3A-Fuel-Injection-Pump/p/RE571640",
+          "https://shop.deere.com/us/product/RE571640%3A%2BFuel%2BInjection%2BPump/p/RE571640",
+          "https://www.deere.com/assets/pdfs/common/qrg/rx535029.pdf",
+          "https://www.deere.com/assets/pdfs/common/qrg/rx535028.pdf",
+          "https://www.deere.com/assets/pdfs/common/qrg/rx535030.pdf"
+        ],
+        "target": {
+          "canonicalPath": "/catalog/re571640/",
+          "status": "product"
+        }
+      },
+      {
+        "decision": "Indexed manufacturer Common Rail injection nozzle KIT, not engine kit or bare nozzle. Full shop page 403; PDF corroborates injector label.",
+        "id": "Q21",
+        "intent": "transactional",
+        "query": "DZ100212 John Deere",
+        "source_urls": [
+          "https://www.deere.com/assets/pdfs/common/qrg/6068hn078-powertech-pte-6.8l-mazzoti-oem-engine-%28stage-iii-a%29.pdf",
+          "https://shop.deere.com/us/en/product/DZ100212%3A-Fuel-Injection-Nozzle-Kit/p/DZ100212",
+          "https://www.brokentractor.com/p/john-deere-electric-fuel-injector-dz100212/",
+          "https://shop.deere.com/ca/en/product/DZ100212%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100212",
+          "https://www.deere.com/assets/pdfs/common/qrg/4045HF285.pdf"
+        ],
+        "target": {
+          "canonicalPath": "/catalog/dz100212/",
+          "status": "product"
+        }
+      },
+      {
+        "decision": "Indexed manufacturer Common Rail injection nozzle KIT. Full shop page 403; PDF corroborates injector label.",
+        "id": "Q22",
+        "intent": "transactional",
+        "query": "DZ100221 John Deere",
+        "source_urls": [
+          "https://shop.deere.com/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+          "https://shop.deere.com/us/product/DZ100221%3A-Fuel-Injection-Nozzle-Kit/p/DZ100221",
+          "https://www.deere.ca/assets/pdfs/common/qrg/oem-engine/6090hf475-powertech-industrial-tier-2.pdf",
+          "https://shop.deere.com/us/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+          "https://www.deere.com/assets/pdfs/common/qrg/6090hfl75-powertech-9.0l-%286090-tier-2%29-oem-engine.pdf"
+        ],
+        "target": {
+          "canonicalPath": "/catalog/dz100221/",
+          "status": "product"
+        }
+      },
+      {
+        "decision": "Indexed manufacturer Common Rail injection nozzle KIT. Full shop page 403; indexed evidence only for exact kit label.",
+        "id": "Q23",
+        "intent": "transactional",
+        "query": "DZ100217 John Deere",
+        "source_urls": [
+          "https://shop.deere.com/us/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217",
+          "https://shop.deere.com/us/product/DZ100217%3A-Fuel-Injection-Nozzle-Kit/p/DZ100217",
+          "https://www.costex.com/wp-content/uploads/2025/03/F-720-423-Rev.-A-Fuel-Injectors-for-John-Deere.pdf",
+          "https://shop.deere.com/ca/en/product/DZ100217%3A-Fuel-Injection-Nozzle-Kit/p/DZ100217",
+          "https://www.deere.com/assets/pdfs/common/qrg/4045hf275--powertech-4.5l-oem-engine.pdf"
+        ],
+        "target": {
+          "canonicalPath": "/catalog/dz100217/",
+          "status": "product"
+        }
+      },
+      {
+        "decision": "Indexed manufacturer Common Rail injection nozzle KIT. Full shop page 403; indexed evidence only for exact kit label.",
+        "id": "Q24",
+        "intent": "transactional",
+        "query": "DZ100216 John Deere",
+        "source_urls": [
+          "https://shop.deere.com/us/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+          "https://shop.deere.com/uk/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+          "https://shop.deere.com/us/us/product/DZ100216%3A-Fuel-Injection-Nozzle-Kit/p/DZ100216",
+          "https://shop.deere.com/us/product/RE546782%3A-High-Pressure-Common-Rail-Injector-Nozzle-kit/p/RE546782",
+          "https://www.costex.com/wp-content/uploads/2025/03/F-720-423-Rev.-A-Fuel-Injectors-for-John-Deere.pdf"
+        ],
+        "target": {
+          "canonicalPath": "/catalog/dz100216/",
+          "status": "product"
+        }
+      },
+      {
+        "decision": "Bosch primary source separates unit injector and unit pump systems; no SKU fitment inferred.",
+        "id": "Q25",
+        "intent": "technical-source",
+        "query": "официально Bosch unit injector common rail systems",
+        "source_urls": [
+          "https://www.bosch-mobility.com/en/solutions/injectors/",
+          "https://www.bosch-mobility.com/en/solutions/injectors/unit-injector/",
+          "https://www.bosch-mobility.com/media/global/solutions/off-highway-and-large-engines/powertrain-solutions/unit-pump-system-unit-injector/ps_summary_unit-pump-system_en_20260312.pdf",
+          "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/unit-pump-and-unit-injector-system-ohw/",
+          "https://www.bosch-mobility.com/en/solutions/pumps/injection-pump/"
+        ],
+        "target": {
+          "canonicalPath": null,
+          "status": "source-only"
+        }
+      },
+      {
+        "decision": "DENSO primary source supports SCV and high-pressure injury caution; unrelated A/C control valve result must be ignored.",
+        "id": "Q26",
+        "intent": "technical-source",
+        "query": "Denso suction control valve high pressure safety",
+        "source_urls": [
+          "https://assets.denso-am.eu/production/attachments/AC-Compressor-Control-Valve-Identification-Bulletin-English.pdf",
+          "https://assets.denso-am.eu/production/attachments/Diesel-Components-Leaflet-English.pdf",
+          "https://assets.denso-am.eu/production/attachments/Diesel-Components-DCRS300260-Installation-Guide-English.pdf",
+          "https://www.denso-am.eu/news/fourth-generation-common-rail-diesel-diagnosis-suction-control-valve",
+          "https://assets.denso-am.eu/staging/attachments/1663941943%20EN_Diesel_SCV%20Kit_DCRS300260_installation%20guide.pdf"
+        ],
+        "target": {
+          "canonicalPath": null,
+          "status": "source-only"
+        }
+      },
+      {
+        "decision": "Delphi primary source supports checking correct injector part number and correction code.",
+        "id": "Q27",
+        "intent": "technical-source",
+        "query": "Delphi diesel common rail injector identify part number",
+        "source_urls": [
+          "https://www.delphiautoparts.com/resource-center/article/how-to-remove-and-replace-a-diesel-common-rail-injector",
+          "https://www.delphiautoparts.com/en-gb/products-and-technologies/diesel-fuel-systems/fuel-injection/diesel-fuel-injection/how-to-replace-common-rail-injectors",
+          "https://www.delphiautoparts.com/docs/default-source/products-technologies/d_explore-diesel-reman_flyer_a4_en.pdf?sfvrsn=ce07aa04_1",
+          "https://www.delphiautoparts.com/products-technologies/gasoline-fuel-systems/fuel-injection-system/gdi-systems/common-rail-injector-programming-for-mercedes",
+          "https://www.delphiautoparts.com/docs/default-source/marketing-and-media-documents/dsc_diesel_module3970dd44d3374cdcb75ddc64cd2f1c57.pdf?sfvrsn=e533d8d0_9"
+        ],
+        "target": {
+          "canonicalPath": null,
+          "status": "source-only"
+        }
+      },
+      {
+        "decision": "Additional official evidence for RE543262 conflicting pressure terminology.",
+        "id": "Q28",
+        "intent": "technical-source",
+        "query": "John Deere RE543262 low pressure fuel pump",
+        "source_urls": [
+          "https://www.deere.com/assets/pdfs/common/qrg/rx532579.pdf",
+          "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262",
+          "https://www.deere.com/assets/pdfs/common/qrg/rx532586.pdf",
+          "https://www.deere.com/assets/pdfs/common/qrg/6090hfc95.pdf",
+          "https://www.deere.com/assets/pdfs/common/qrg/rx550516.pdf"
+        ],
+        "target": {
+          "canonicalPath": null,
+          "status": "source-only"
+        }
+      },
+      {
+        "decision": "Crop-spray nozzle results mixed with diesel injector offers; exclude crop-care parts. A fuel injector fitted to a sprayer engine remains fuel-system part, only with documented fitment.",
+        "id": "Q29",
+        "intent": "transactional-other-system",
+        "query": "форсунки джон дир опрыскиватель купить",
+        "source_urls": [
+          "https://zapchasti-catalog.ru/john-deere-crop-care-unit-parts/",
+          "https://flagma.kz/forsunki-john-deere-095000-5050-o2985323.html",
+          "https://vipzapchasti.agrobiz.net/goods/forsunka-na-opryskivatel-john-deere-an206621/",
+          "https://zapchasti.ria.com/c/forsunka-car/o-john-deere-spec/",
+          "https://flagma.kz/forsunki-john-deere-dzhon-dir-re528407-o2984916.html"
+        ],
+        "target": {
+          "canonicalPath": null,
+          "status": "excluded"
+        }
+      },
+      {
+        "decision": "Search results include aftermarket conversion kit caveats and contradictory fitment claims. Do not add КамАЗ Евро-5 applicability to existing SKU from query or seller snippets.",
+        "id": "Q30",
+        "intent": "transactional-unverified-fitment",
+        "query": "ТНВД бош КамАЗ евро 5 купить",
+        "source_urls": [
+          "https://uralmob.com/catalog/sistema-pitaniya/tnvd-kamaz-evro-5-common-rail-analog-bosh-0445020089-tolko-s-komplektom-pereoborudovaniya-azpi",
+          "https://www.arsenalavto.ru/catalog.php?uid=4338145",
+          "https://ad-groupkaz.kz/p110806330-tnvd-bosch-0445020089.html",
+          "https://vairteh.ru/product/toplivnyy-nasos-vysokogo-davleniya-bosch-0445020089-original101223",
+          "https://tatrazbor.com/product/tnvd-bosch-kamaz/"
+        ],
+        "target": {
+          "canonicalPath": null,
+          "status": "exclude-variant"
+        }
+      }
+    ],
+    "sha256": "83bb5d125464fe2dbda85985668fcf1721dbcad87e7f0a6985c54ac00e991517",
+    "source_engine": "web search"
+  },
+  "source": {
+    "collected_at": "2026-10-12",
+    "disclaimer": "Данные отражают только сохранённый снимок; новые частотности не проверялись.",
+    "file": "notes/2026-10-12-wordstat-research.json",
+    "provider": "Yandex Wordstat",
+    "sha256": "a668d19902bf63dc247ebb0970b6c149b9608ac9754c3d797da3e9fbc279330a"
+  }
+}

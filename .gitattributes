@@ -1,1 +1,3 @@
 tools/*.sh text eol=lf
+seo/semantic-core/*.csv text eol=lf
+seo/semantic-core/*.json text eol=lf
