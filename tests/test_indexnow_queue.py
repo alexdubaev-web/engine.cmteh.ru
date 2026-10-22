@@ -6,24 +6,67 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
+import shutil
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import tools.indexnow as indexnow
+from seo import SEO
 
 
 class IndexNowQueueTests(unittest.TestCase):
-    def test_cli_dry_run_uses_its_repo_root_and_never_submits(self):
+    def test_cli_dry_run_uses_config_fallback_env_override_and_explicit_empty_disable(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp);(root/'tools').mkdir();(root/'data').mkdir()
-            import shutil
             shutil.copy2(Path(indexnow.__file__),root/'tools/indexnow.py')
             shutil.copy2(Path(indexnow.__file__).parents[1]/'pipeline_io.py',root/'pipeline_io.py')
             (root/'data/seo-changes.json').write_text(json.dumps({'origin':'https://engine.cmteh.ru','indexable':True,
                 'urls':['https://engine.cmteh.ru/catalog/a/'],'revisions':{'https://engine.cmteh.ru/catalog/a/':'r1'}}),encoding='utf-8')
-            env={**os.environ,'INDEXNOW_KEY':'test-key-12345678'}
-            result=subprocess.run([sys.executable,str(root/'tools/indexnow.py'),'submit','--dry-run'],cwd=root,env=env,
+            stored_key='stored-key-12345678'
+            (root/'data/commerce.json').write_text(json.dumps({'indexnow_key':stored_key}),encoding='utf-8')
+            env={key:value for key,value in os.environ.items() if key!='INDEXNOW_KEY'}
+            args=[sys.executable,str(root/'tools/indexnow.py'),'submit','--dry-run']
+            result=subprocess.run(args,cwd=root,env=env,
                                   capture_output=True,text=True,check=True)
             self.assertIn('"urlCount": 1',result.stdout)
+            self.assertIn('/'+stored_key+'.txt',result.stdout)
+            override='override-key-12345678'
+            result=subprocess.run(args,cwd=root,env={**env,'INDEXNOW_KEY':override},
+                                  capture_output=True,text=True,check=True)
+            self.assertIn('/'+override+'.txt',result.stdout)
+            self.assertNotIn('/'+stored_key+'.txt',result.stdout)
+            result=subprocess.run(args,cwd=root,env={**env,'INDEXNOW_KEY':''},
+                                  capture_output=True,text=True)
+            self.assertNotEqual(result.returncode,0)
+            self.assertIn('Set INDEXNOW_KEY',result.stderr)
+            (root/'data/commerce.json').unlink()
+            result=subprocess.run(args,cwd=root,env=env,capture_output=True,text=True)
+            self.assertNotEqual(result.returncode,0)
+            self.assertIn('Set INDEXNOW_KEY',result.stderr)
+
+    def test_build_keyfile_uses_fallback_only_for_indexable_output(self):
+        key='build-key-12345678'
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);data=root/'data';assets=root/'public/assets';data.mkdir(parents=True);assets.mkdir(parents=True)
+            (data/'commerce.json').write_text(json.dumps({'indexnow_key':key,'availability':{},'company':{},'yml_enabled':False}),encoding='utf-8')
+            for name in ['app.js','style.css','analytics.js','favicon-32.webp','favicon-64.webp','favicon.ico']:
+                (assets/name).write_bytes(b'fixture')
+            production=root/'production';production.mkdir()
+            overridden=root/'overridden';overridden.mkdir()
+            preview=root/'preview';preview.mkdir()
+            with patch.dict(os.environ,{},clear=True):
+                SEO(root,production,'https://engine.cmteh.ru',True,[],{}).finish([])
+                SEO(root,preview,'https://cm-techno-diesel.alexdubaev.chatgpt.site',False,[],{}).finish([])
+            self.assertEqual((production/(key+'.txt')).read_text(encoding='utf-8'),key)
+            self.assertFalse((preview/(key+'.txt')).exists())
+            override='override-key-12345678'
+            with patch.dict(os.environ,{'INDEXNOW_KEY':override},clear=True):
+                SEO(root,overridden,'https://engine.cmteh.ru',True,[],{}).finish([])
+            self.assertEqual((overridden/(override+'.txt')).read_text(encoding='utf-8'),override)
+            self.assertFalse((overridden/(key+'.txt')).exists())
+            disabled=root/'disabled';disabled.mkdir()
+            with patch.dict(os.environ,{'INDEXNOW_KEY':''},clear=True):
+                SEO(root,disabled,'https://engine.cmteh.ru',True,[],{}).finish([])
+            self.assertFalse((disabled/(key+'.txt')).exists())
     def test_acknowledgement_keeps_same_url_changed_during_request(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
