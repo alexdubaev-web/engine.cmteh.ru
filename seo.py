@@ -2,6 +2,7 @@
 from pathlib import Path
 from datetime import datetime,timezone
 from decimal import Decimal
+from urllib.parse import urlsplit
 import hashlib,html,json,os,re,uuid
 from xml.etree import ElementTree as ET
 
@@ -59,6 +60,10 @@ class SEO:
   product=self.byid.get(path.split('/')[2]) if path.startswith('/catalog/') and path.count('/')==3 else None
   if product:
    primary_image=product.get('image') or '/assets/logo.webp';image_alt=self.product_name(product) if product.get('image') else 'СМ ТЕХНО'
+  article=next((n for n in (schema.get('@graph',[schema]) if schema else []) if n.get('@type')=='Article'),None)
+  if article and isinstance(article.get('image'),dict):
+   primary_image=urlsplit(article['image'].get('url','')).path or primary_image
+   image_alt=article['image'].get('description') or image_alt
   organization,website=self.identity();nodes=[]
   if schema:
    incoming=schema.get('@graph',[schema]);nodes=[{k:v for k,v in n.items() if k!='@context'} for n in incoming if n.get('@type') not in ['Organization','WebSite','BreadcrumbList','WebPage']]
@@ -91,7 +96,7 @@ class SEO:
   verification=os.environ['YANDEX_VERIFICATION'] if 'YANDEX_VERIFICATION' in os.environ else (self.commerce.get('yandex_verification',{}).get('code','') if self.indexable and self.base==self.commerce.get('yandex_verification',{}).get('origin') else '')
   verify='<meta name="yandex-verification" content="'+esc(verification)+'">' if verification else ''
   og_type='article' if any(n.get('@type')=='Article' for n in nodes) else 'website'
-  article_meta='<meta property="article:modified_time" content="'+modified+'">' if og_type=='article' else ''
+  article_meta=('<meta property="article:modified_time" content="'+modified+'">'+('<meta property="article:published_time" content="'+esc(article['datePublished'])+'">' if article and article.get('datePublished') else '')) if og_type=='article' else ''
   font='/assets/manrope-400.woff2'
   preload='<link rel="preload" href="'+font+'" as="font" type="font/woff2" crossorigin>' if (self.root/'public'/font.lstrip('/')).exists() else ''
   analytics_ui='<section class="analytics-panel" data-analytics-panel role="dialog" aria-modal="true" aria-labelledby="analytics-title" hidden><div class="analytics-card"><h2 id="analytics-title">Настройки аналитики</h2><p>С вашего разрешения Яндекс Метрика будет собирать статистику посещений, действий на страницах и сведений о браузере. Содержимое форм заказа скрыто от записи, а ввод в поля маскируется.</p><p>Вы можете изменить выбор в любой момент. Подробнее - в <a href="/privacy/">Политике обработки данных</a>.</p><p data-analytics-status role="status" aria-live="polite"></p><div class="analytics-actions"><button class="btn outline" type="button" data-analytics-deny>Не разрешать</button><button class="btn" type="button" data-analytics-allow>Разрешить</button></div></div></section>' if analytics_enabled else ''

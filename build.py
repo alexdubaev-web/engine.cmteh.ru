@@ -101,6 +101,45 @@ with pipeline_lock(ROOT):
   more=f'<button class="btn outline" id="show-more">Показать ещё {icon("down")}</button>' if full else f'<a class="btn outline" href="/catalog/">Посмотреть весь каталог {icon("arrow")}</a>'
   return f'''<div class="catalog" data-limit="{12 if full else 8}" data-default-category="{category}"><div class="tabs" aria-label="Категории запчастей">{tabs}</div><div class="filters"><label class="field-search">{icon('search')}<span class="sr-only">Артикул или название</span><input class="ym-disable-keys" id="catalog-search" type="search" placeholder="Артикул или название" autocomplete="off"></label><label><span class="sr-only">Бренд</span><select id="brand-filter"><option value="">Все бренды</option>{options}</select></label><label><span class="sr-only">Сортировка</span><select id="sort-filter"><option value="default">По умолчанию</option><option value="price-asc">Сначала дешевле</option><option value="price-desc">Сначала дороже</option><option value="name">По артикулу</option></select></label></div><div class="grid" id="product-grid">{''.join(card(p) for p in items)}</div><div class="empty-state" hidden><h3>Ничего не найдено</h3><p>Проверьте номер или опишите нужную деталь в запросе.</p><button class="btn outline" data-reset style="margin-top:20px">Сбросить фильтры</button></div><div class="catalog-bottom">{more}<p><span id="result-count" aria-live="polite">{len(items)} позиций</span> · Цены указаны в рублях. Наличие и доставку уточним перед заказом.</p></div></div>'''
  def article_card(a):return f'''<article class="article-card"><div class="article-meta"><span>{a['category']}</span><span>{a['time']}</span></div><h3><a href="/articles/{a['slug']}/">{a['title']}</a></h3><p>{a['lead']}</p><a class="text-link" href="/articles/{a['slug']}/">Читать статью {icon('arrow')}</a></article>'''
+ def inline_markdown(text):
+  pattern=r'\[([^\]]+)\]\(([^)]+)\)'
+  text=re.sub(r'\*\*([^*]+)\*\*',r'\1',text);parts=[];cursor=0
+  for match in re.finditer(pattern,text):
+   parts.append(e(text[cursor:match.start()]));label,url=match.groups();parsed=urlsplit(url)
+   if not ((parsed.scheme=='https' and parsed.netloc) or (url.startswith('/') and not url.startswith('//'))):parts.append(e(match.group(0)))
+   else:parts.append(f'<a href="{e(url)}"'+(' target="_blank" rel="noopener"' if parsed.scheme=='https' else '')+f'>{e(label)}</a>')
+   cursor=match.end()
+  parts.append(e(text[cursor:]));return ''.join(parts)
+ def article_body(a):
+  if not a.get('bodyFile'):
+   return ''.join(f'<section><h2>{e(h)}</h2><p>{e(p)}</p></section>' for h,p in a['sections'])
+  lines=(ROOT/a['bodyFile']).read_text(encoding='utf-8').splitlines();blocks=[];paragraph=[];items=[];heading=None
+  def flush():
+   nonlocal paragraph,items
+   if paragraph:
+    text=' '.join(paragraph)
+    if text!=a.get('lead'):blocks.append('<p>'+inline_markdown(text)+'</p>')
+    paragraph=[]
+   if items:blocks.append('<ul>'+''.join('<li>'+inline_markdown(x)+'</li>' for x in items)+'</ul>');items=[]
+  for line in lines:
+   if line.startswith('# '):flush()
+   elif line.startswith('## '):
+    flush()
+    if heading is not None:blocks.append('</section>')
+    heading=line[3:]
+    if heading=='Источники' and a.get('products'):
+     products=[next((p for p in P if p['sku']==sku and p['category']=='injectors'),None) for sku in a['products']]
+     if any(p is None for p in products):raise ValueError('Article references an unknown injector SKU')
+     blocks.append('<section class="article-products"><h2>Позиции для сверки после диагностики</h2><p>Это отдельные позиции каталога, а не рекомендация для любого двигателя. Перед заказом проверьте полный артикул и применимость по данным техники.</p><ul>'+''.join(f'<li><a href="/catalog/{e(p["id"])}/">{e(p["brand"])} {e(p["sku"])}</a></li>' for p in products)+'</ul></section>')
+    blocks.append('<section><h2>'+e(heading)+'</h2>')
+   elif line.startswith('### '):flush();blocks.append('<h3>'+e(line[4:])+'</h3>')
+   elif line.startswith('**Практический разбор'):flush()
+   elif line.startswith('- '):items.append(line[2:])
+   elif not line.strip():flush()
+   else:paragraph.append(line.replace('**',''))
+  flush()
+  if heading is not None:blocks.append('</section>')
+  return ''.join(blocks)
  def contact():return f'''<section class="contact" id="selection"><div class="wrap contact-layout"><div><h2>Помочь с<br><span>подбором?</span></h2><p>Напишите артикул или опишите, какая деталь нужна.</p><small>Укажите модель техники и двигателя, если знаете.</small></div>{form('inquiry')}</div></section>'''
  featured=sorted(P,key=lambda p:(not bool(p.get('image')),p['sourceRow']))
  hero=f'''<section class="hero"><div class="wrap hero-inner"><div class="hero-copy"><h1>Топливная аппаратура для дизельной спецтехники</h1><p>Форсунки, ТНВД, распылители и клапаны Bosch, Delphi, Denso, John Deere и VDO. Найдите деталь по артикулу или напишите нам для подбора.</p><form class="searchbox" action="/catalog/" id="hero-search"><label class="sr-only" for="hero-query">Поиск по артикулу</label><input class="ym-disable-keys" id="hero-query" name="q" type="search" placeholder="Введите артикул или название" autocomplete="off"><button aria-label="Найти запчасть" type="submit">{icon('arrow')}</button></form><div class="example">Например: 0445120075 или RE539764</div><a class="btn" href="#catalog">Перейти в каталог {icon('down')}</a></div><div class="hero-visual"><img src="/assets/hero.webp" alt="Иллюстрация компонентов дизельной топливной системы" width="1536" height="1024" fetchpriority="high"></div></div></section><div class="brands"><div class="wrap brand-row"><span><a class="brand-logo" href="/brands/bosch/"><img src="/assets/brand-bosch.webp" alt="Bosch" width="433" height="97"></a></span><span><a class="brand-logo" href="/brands/delphi/"><img src="/assets/brand-delphi.webp" alt="Delphi" width="573" height="180"></a></span><span><a class="brand-logo" href="/brands/denso/"><img src="/assets/brand-denso.webp" alt="DENSO" width="140" height="53"></a></span><span class="deere"><a class="brand-logo" href="/brands/john-deere/"><img src="/assets/brand-john-deere.webp" alt="John Deere" width="192" height="36"></a></span><span><a class="brand-logo" href="/brands/vdo/"><img src="/assets/brand-vdo.webp" alt="VDO" width="250" height="50"></a></span></div></div>'''
@@ -144,7 +183,8 @@ with pipeline_lock(ROOT):
   credit='Изображение может быть иллюстрацией. Комплектность уточните перед заказом.'
   codes=''.join(f'<span>{e(c)}</span>' for c in p['codes'])
   related=sorted([x for x in featured if x['category']==p['category'] and x['id']!=p['id']],key=lambda x:(x['brand']!=p['brand'],not bool(x.get('image')),x['sourceRow']))[:4]
-  articles=ARTICLE_MAP[p['category']] or [a for a in ARTICLES if a['slug']=='spisok-zapchastey-dlya-zakaza']
+  prioritized=[a for a in ARTICLES if p['sku'] in a.get('products',[])]
+  articles=(prioritized+[a for a in ARTICLE_MAP[p['category']] if a not in prioritized])[:2] or [a for a in ARTICLES if a['slug']=='spisok-zapchastey-dlya-zakaza']
   if not any(a['slug']=='spisok-zapchastey-dlya-zakaza' for a in articles):articles=articles+[ARTICLE_BY_SLUG['spisok-zapchastey-dlya-zakaza']]
   state=seo.availability(p)
   stock=f'<link itemprop="availability" href="https://schema.org/{state}">'+stock_label(p) if state else ''
@@ -155,8 +195,14 @@ with pipeline_lock(ROOT):
   page(path,title,desc,content,schema)
  page('/articles/','Статьи о подборе дизельных запчастей | СМ ТЕХНО','Как сверить артикул, выбрать ТНВД и понять, какая деталь нужна для ремонта.',crumbs([('Статьи',None)])+'<div class="wrap page-title"><h1>Статьи о запчастях</h1><p>Короткие ответы о подборе и заказе деталей для дизельной техники.</p></div><section class="section wrap catalog-page"><div class="article-grid articles-list">'+''.join(article_card(a)for a in ARTICLES)+'</div></section>')
  for a in ARTICLES:
-  article_schema={'@context':'https://schema.org','@type':'Article','headline':a['title'],'description':a['lead'],'inLanguage':'ru-RU','author':{'@type':'Organization','name':'СМ ТЕХНО'},'publisher':{'@type':'Organization','name':'СМ ТЕХНО'},'mainEntityOfPage':base+'/articles/'+a['slug']+'/'}
-  content=crumbs([('Статьи','/articles/'),(a['title'],None)])+f'''<div class="article-hero"><div class="wrap"><div class="article-meta"><span>{a['category']}</span><span>{a['time']} чтения</span></div><h1>{a['title']}</h1><p class="lead">{a['lead']}</p></div></div><article class="wrap read-content">{''.join(f'<section><h2>{h}</h2><p>{p}</p></section>'for h,p in a['sections'])}<aside class="read-cta"><h3>Нужна деталь?</h3><p>Найдите её в каталоге или отправьте запрос на подбор.</p><a class="btn" href="/category/{a['related']}/">{CATS[a['related']][0]} {icon('arrow')}</a></aside></article>'''
+  article_schema={'@context':'https://schema.org','@type':'Article','headline':a['title'],'description':a['lead'],'inLanguage':'ru-RU','author':{'@type':'Organization','name':'СМ ТЕХНО'},'publisher':{'@type':'Organization','name':'СМ ТЕХНО'},'mainEntityOfPage':base+'/articles/'+a['slug']+'/',**({'datePublished':a['date']} if a.get('date') else {}),**({'image':{'@type':'ImageObject','url':base+a['cover'],'caption':a['coverCaption'],'description':a['coverAlt']}} if a.get('cover') else {})}
+  cover=(f'<figure class="article-cover"><img src="{e(a["cover"])}" alt="{e(a["coverAlt"])}" width="{int(a["coverWidth"])}" height="{int(a["coverHeight"])}" loading="eager" decoding="async"><figcaption>{e(a["coverCaption"])}</figcaption></figure>' if a.get('cover') else '')
+  month_names=['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря']
+  published=''
+  if a.get('date'):
+   from datetime import date
+   pub=date.fromisoformat(a['date']);published=f'<time datetime="{e(a["date"])}">{pub.day} {month_names[pub.month-1]} {pub.year}</time>'
+  content=crumbs([('Статьи','/articles/'),(a['title'],None)])+f'''<div class="article-hero"><div class="wrap"><div class="article-meta"><span>{e(a['category'])}</span><span>{e(a['time'])} чтения</span>{published}</div><h1>{e(a['title'])}</h1><p class="lead">{e(a['lead'])}</p>{cover}</div></div><article class="wrap read-content">{article_body(a)}<aside class="read-cta"><h3>Нужна деталь?</h3><p>Найдите её в каталоге или отправьте запрос на подбор.</p><a class="btn" href="/category/{e(a['related'])}/">{e(CATS[a['related']][0])} {icon('arrow')}</a></aside></article>'''
   page('/articles/'+a['slug']+'/',a['title']+' - СМ ТЕХНО',a['lead'],content,article_schema)
  delivery=seo.commerce['company'].get('delivery_terms','')
  payment=seo.commerce['company'].get('payment_terms','')
