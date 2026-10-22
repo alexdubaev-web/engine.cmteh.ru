@@ -1,0 +1,589 @@
+{
+  "schemaVersion": 1,
+  "source": "notes/2026-10-12-wordstat-research.json",
+  "checkedAgainst": [
+    "data/catalog-built.json",
+    "data/product_technical.json",
+    "data/articles.py"
+  ],
+  "date": "2026-10-22",
+  "scope": "Curated actual related-query overrides; no fresh internet expansion, no new demand metrics, no production edits.",
+  "taxonomyRules": [
+    "Component intent outranks a whole-assembly code: nozzle, injector valve, SCV/IMV pump metering valve, HPV pressure valve and repair kit remain distinct.",
+    "Exact SKU code only confirms catalog target if requested part type matches; unknown code or unsupported component relation requires review.",
+    "Generic SCV is a valves-category intent: both8980436870 andDZ111136 have SCV evidence, and compatibility is not shared by name.",
+    "Delphi7206-0460 and7206-0435 are injector control actuators;9109-903 is pump inlet IMV;7210-0473 is catalogHPV. Never merge all valve subtypes.",
+    "Repair-service intent excluded; explicit informational repair/diagnostic buyer questions may remain needs-content with technical safety guard.",
+    "ECU RE526588 is an engine controller; generic pump controller requests and wiring diagrams are not proved by engine-family facts.",
+    "DZ10599 is engine overhaul kit;F00RJ02177 is high-pressure seal kit. Generic repair words cannot merge them.",
+    "Current catalog has no Bosch injector-valve SKU, pump rebuild kits, diagnostic benches, gasoline/washer/crop-spray nozzles, belts or tensioners.",
+    "Machine-model words and nearby related-query numbers are not compatibility evidence. Family-level facts only support qualified examples, not all variants."
+  ],
+  "decisions": [
+    {
+      "query": "распылитель дизельной форсунки",
+      "action": "accept",
+      "targetPath": "/category/nozzles/",
+      "needsContentTopic": null,
+      "rationale": "Head noun распылитель identifies nozzle component before contained word форсунка; do not route to complete injectors.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "распылитель форсунки",
+          "sourceRowIndex": 4
+        }
+      ]
+    },
+    {
+      "query": "распылитель топливной форсунки",
+      "action": "accept",
+      "targetPath": "/category/nozzles/",
+      "needsContentTopic": null,
+      "rationale": "Diesel fuel nozzle assortment exists; component takes precedence.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "распылитель форсунки",
+          "sourceRowIndex": 6
+        }
+      ]
+    },
+    {
+      "query": "распылитель форсунки bosch common rail",
+      "action": "accept",
+      "targetPath": "/category/nozzles/",
+      "needsContentTopic": null,
+      "rationale": "Nozzle intent; do not promise all Bosch Common Rail executions or infer a nozzle/injector pairing.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "форсунки bosch",
+          "sourceRowIndex": 130
+        },
+        {
+          "parentQuery": "форсунки common rail",
+          "sourceRowIndex": 96
+        },
+        {
+          "parentQuery": "распылитель форсунки bosch",
+          "sourceRowIndex": 2
+        }
+      ]
+    },
+    {
+      "query": "распылители форсунок делфи",
+      "action": "accept",
+      "targetPath": "/category/nozzles/",
+      "needsContentTopic": null,
+      "rationale": "Existing Delphi nozzle SKUs support component page; Delphi/Делфи spelling alias.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "распылитель форсунки",
+          "sourceRowIndex": 12
+        },
+        {
+          "parentQuery": "форсунки делфи",
+          "sourceRowIndex": 13
+        }
+      ]
+    },
+    {
+      "query": "купить клапан форсунки delphi",
+      "action": "accept",
+      "targetPath": "/category/valves/",
+      "needsContentTopic": null,
+      "rationale": "Existing Delphi injector actuator 7206-0460 is a qualified example; not every Delphi control-valve number stocked.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "форсунки delphi",
+          "sourceRowIndex": 18
+        },
+        {
+          "parentQuery": "клапан форсунки delphi",
+          "sourceRowIndex": 2
+        }
+      ]
+    },
+    {
+      "query": "клапан мультипликатор для форсунок delphi",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "Подбор мультипликатора Delphi по номеру форсунки",
+      "rationale": "Classic Common Rail multipliers are not proved equivalent to stocked E1/Smart Injector actuators; generic brand match insufficient.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "форсунки delphi",
+          "sourceRowIndex": 26
+        },
+        {
+          "parentQuery": "клапан форсунки delphi",
+          "sourceRowIndex": 4
+        }
+      ]
+    },
+    {
+      "query": "клапаны форсунок bosch",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "Клапан форсунки Bosch: проверка номера и наличия",
+      "rationale": "No Bosch valve SKU among current six valves. Do not label fulfilled assortment or substitute Bosch seal kit.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "форсунки bosch",
+          "sourceRowIndex": 12
+        },
+        {
+          "parentQuery": "клапан форсунки",
+          "sourceRowIndex": 85
+        }
+      ]
+    },
+    {
+      "query": "форсунки 8 клапанов",
+      "action": "exclude",
+      "targetPath": null,
+      "needsContentTopic": null,
+      "rationale": "Engine valve-count wording is not injector-control-valve intent; unsupported gasoline vehicle family.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "клапан форсунки",
+          "sourceRowIndex": 2
+        }
+      ]
+    },
+    {
+      "query": "28538389 клапан форсунки delphi",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "Подбор неподтверждённого артикула Delphi 28538389",
+      "rationale": "Observed unknown SKU; not stocked and not a nozzle despite conflicting third-party search labels.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "форсунки delphi",
+          "sourceRowIndex": 42
+        },
+        {
+          "parentQuery": "клапан форсунки delphi",
+          "sourceRowIndex": 6
+        }
+      ]
+    },
+    {
+      "query": "0445120072 распылитель",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "Подбор распылителя к форсунке 0445120072",
+      "rationale": "Existing whole injector code names parent assembly; technical record has no verified nozzle SKU pairing.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "0445120072",
+          "sourceRowIndex": 3
+        }
+      ]
+    },
+    {
+      "query": "0445120072 клапан",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "Подбор клапана к форсунке 0445120072",
+      "rationale": "Exact assembly match must not override valve component modifier; technical record lacks paired valve.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "0445120072",
+          "sourceRowIndex": 4
+        }
+      ]
+    },
+    {
+      "query": "распылитель форсунки 0445120212",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "Подбор распылителя к форсунке 0445120212",
+      "rationale": "Existing injector code does not establish which nozzle fits.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "0445120212",
+          "sourceRowIndex": 4
+        }
+      ]
+    },
+    {
+      "query": "клапан scv на тнвд",
+      "action": "accept",
+      "targetPath": "/category/valves/",
+      "needsContentTopic": null,
+      "rationale": "Two qualified SCV examples: Denso8980436870 and JohnDeereDZ111136. Generic SCV query does not select either exact product.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "клапан scv",
+          "sourceRowIndex": 2
+        }
+      ]
+    },
+    {
+      "query": "клапан дозирования топлива scv",
+      "action": "accept",
+      "targetPath": "/category/valves/",
+      "needsContentTopic": null,
+      "rationale": "Pump inlet flow-control family; not injector valve, IMV/SCV word similarity alone not interchangeability.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "клапан scv",
+          "sourceRowIndex": 9
+        }
+      ]
+    },
+    {
+      "query": "scv клапан тойота",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "SCV Toyota: проверка полного артикула",
+      "rationale": "Vehicle-brand-only request; do not assume compatibility of Denso8980436870.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "клапан scv",
+          "sourceRowIndex": 3
+        }
+      ]
+    },
+    {
+      "query": "как проверить клапан scv",
+      "action": "accept",
+      "targetPath": null,
+      "needsContentTopic": "Что уточнить при подозрении на неисправность SCV до покупки",
+      "rationale": "Keep buyer information with diagnosis limitation; no unsafe high-pressure DIY checks.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "клапан scv",
+          "sourceRowIndex": 13
+        }
+      ]
+    },
+    {
+      "query": "delphi 7210 0473",
+      "action": "accept",
+      "targetPath": "/catalog/7210-0473/",
+      "needsContentTopic": null,
+      "rationale": "Exact known HPV code in spaced spelling; do not classify as SCV or injector.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "7210-0473",
+          "sourceRowIndex": 2
+        }
+      ]
+    },
+    {
+      "query": "9109 903 delphi",
+      "action": "accept",
+      "targetPath": "/catalog/9109-903/",
+      "needsContentTopic": null,
+      "rationale": "Known IMV metering valve on pump inlet, supported by product_technical; distinct from injector valve.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "9109-903",
+          "sourceRowIndex": 2
+        }
+      ]
+    },
+    {
+      "query": "7206 0460",
+      "action": "accept",
+      "targetPath": "/catalog/7206-0460/",
+      "needsContentTopic": null,
+      "rationale": "Known Delphi Smart Injector nozzle control actuator; preserve part code while normalizing separators.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "7206-0460",
+          "sourceRowIndex": 1
+        }
+      ]
+    },
+    {
+      "query": "форсунки опрыскивателя джон дир",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "Уточнить: топливная форсунка двигателя или распылитель агрохимии",
+      "rationale": "Ambiguous machine use; exclude confirmed crop spray nozzle, accept diesel engine injection only after clarification.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "форсунки джон дир",
+          "sourceRowIndex": 2
+        }
+      ]
+    },
+    {
+      "query": "топливные форсунки джон дир",
+      "action": "accept",
+      "targetPath": "/brands/john-deere/",
+      "needsContentTopic": null,
+      "rationale": "Fuel modifier resolves crop-spray ambiguity; no unsupported model variants implied.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "форсунки джон дир",
+          "sourceRowIndex": 3
+        }
+      ]
+    },
+    {
+      "query": "форсунка двигатель джон дир 6090",
+      "action": "accept",
+      "targetPath": "/brands/john-deere/",
+      "needsContentTopic": null,
+      "rationale": "Existing JohnDeere injectors include qualified6090 examples; engine-family-only query must not auto choose a SKU.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "форсунки джон дир",
+          "sourceRowIndex": 5
+        }
+      ]
+    },
+    {
+      "query": "dz100221 форсунка john deere",
+      "action": "accept",
+      "targetPath": "/catalog/dz100221/",
+      "needsContentTopic": null,
+      "rationale": "Exact existing code; Common Rail injector nozzle kit, not engine kit or interchangeable DZ1002xx family.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "форсунки john deere",
+          "sourceRowIndex": 2
+        }
+      ]
+    },
+    {
+      "query": "dz10599 комплект для ремонта",
+      "action": "accept",
+      "targetPath": "/catalog/dz10599/",
+      "needsContentTopic": null,
+      "rationale": "Exact code is engine overhaul kit; don't route by ремонт to service or by комплект to injector seals.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "dz10599",
+          "sourceRowIndex": 2
+        }
+      ]
+    },
+    {
+      "query": "dz10599 reliance",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "Состав и производитель комплекта DZ10599",
+      "rationale": "Known code plus unconfirmed manufacturer Reliance; don't claim offered JohnDeere-branded item is Reliance.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "dz10599",
+          "sourceRowIndex": 3
+        }
+      ]
+    },
+    {
+      "query": "схема подключения re526588",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "Документация подключения контроллера RE526588",
+      "rationale": "Known engine ECU but no verified wiring document in technical facts; product card is not wiring answer.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "re526588",
+          "sourceRowIndex": 2
+        }
+      ]
+    },
+    {
+      "query": "купить блок управления тнвд",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "Подбор электронного блока по полному номеру",
+      "rationale": "Generic pump ECU is not automatically engine controller RE526588, despite ECU vocabulary.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "тнвд купить",
+          "sourceRowIndex": 175
+        }
+      ]
+    },
+    {
+      "query": "f00rj02177 ремкомплект",
+      "action": "accept",
+      "targetPath": "/catalog/f00rj02177/",
+      "needsContentTopic": null,
+      "rationale": "Exact kit; technical scope is high-pressure Common Rail seals, not all injector internals.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "f00rj02177",
+          "sourceRowIndex": 2
+        }
+      ]
+    },
+    {
+      "query": "f00rj02177 ремкомплект на какие модели",
+      "action": "accept",
+      "targetPath": "/catalog/f00rj02177/",
+      "needsContentTopic": null,
+      "rationale": "Relevant product selection question; technical scope known but model compatibility requires separate evidence, no invented list.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "f00rj02177",
+          "sourceRowIndex": 3
+        }
+      ]
+    },
+    {
+      "query": "ремкомплект форсунок бош common rail",
+      "action": "accept",
+      "targetPath": "/category/other/",
+      "needsContentTopic": null,
+      "rationale": "Existing F00RJ02177 high-pressure seal kit is qualified example only. No universal rebuild kit or arbitrary injector compatibility promised.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "ремкомплект форсунки",
+          "sourceRowIndex": 141
+        },
+        {
+          "parentQuery": "форсунки бош",
+          "sourceRowIndex": 143
+        },
+        {
+          "parentQuery": "форсунки common rail",
+          "sourceRowIndex": 58
+        }
+      ]
+    },
+    {
+      "query": "ремкомплект тнвд bosch",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "Подбор ремкомплекта ТНВД Bosch",
+      "rationale": "Injector high-pressure seals F00RJ02177 do not establish pump repair kit availability.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "тнвд bosch",
+          "sourceRowIndex": 9
+        }
+      ]
+    },
+    {
+      "query": "ремонт форсунок delphi",
+      "action": "exclude",
+      "targetPath": null,
+      "needsContentTopic": null,
+      "rationale": "Unqualified repair-service request; site has no repair service offer.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "форсунки delphi",
+          "sourceRowIndex": 7
+        }
+      ]
+    },
+    {
+      "query": "bosch сервис ремонт форсунок",
+      "action": "exclude",
+      "targetPath": null,
+      "needsContentTopic": null,
+      "rationale": "Explicit workshop/service intent, not part purchase.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "форсунки bosch",
+          "sourceRowIndex": 118
+        }
+      ]
+    },
+    {
+      "query": "ремонт форсунки common rail своими руками",
+      "action": "accept",
+      "targetPath": null,
+      "needsContentTopic": "Что знать перед ремонтом Common Rail и подбором запчастей",
+      "rationale": "Informational intent retained as editorial topic; no hands-on high-pressure repair procedures or promised service.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "форсунки common rail",
+          "sourceRowIndex": 72
+        }
+      ]
+    },
+    {
+      "query": "как отличить оригинальные форсунки bosch",
+      "action": "accept",
+      "targetPath": null,
+      "needsContentTopic": "Как проверить происхождение и маркировку форсунки Bosch перед заказом",
+      "rationale": "Buyer question; evidence-based supplier/marking checks only, no visual-sign guarantee of authenticity.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "форсунки bosch",
+          "sourceRowIndex": 193
+        }
+      ]
+    },
+    {
+      "query": "после замены распылителей форсунок",
+      "action": "accept",
+      "targetPath": null,
+      "needsContentTopic": "Что уточнить после замены распылителя до повторной покупки",
+      "rationale": "Informational follow-up, not repair-price service; diagnosis belongs to qualified diesel service.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "распылитель форсунки",
+          "sourceRowIndex": 75
+        },
+        {
+          "parentQuery": "замена распылителя форсунки",
+          "sourceRowIndex": 4
+        }
+      ]
+    },
+    {
+      "query": "стенд для ремонта форсунок common rail",
+      "action": "exclude",
+      "targetPath": null,
+      "needsContentTopic": null,
+      "rationale": "Diagnostic equipment absent from 64-SKU assortment.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "форсунки common rail",
+          "sourceRowIndex": 52
+        }
+      ]
+    },
+    {
+      "query": "0445020089 клапан",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "Подбор клапана к насосу 0445020089",
+      "rationale": "Known whole pump code plus component modifier must not route automatically to whole pump card.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "0445020089",
+          "sourceRowIndex": 10
+        }
+      ]
+    },
+    {
+      "query": "перепускной клапан тнвд 0445020089 bosch",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "Подбор перепускного клапана к 0445020089",
+      "rationale": "No verified bypass-valve pairing in catalog technical data; not SCV/HPV by vague semantic similarity.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "тнвд bosch",
+          "sourceRowIndex": 115
+        },
+        {
+          "parentQuery": "0445020089",
+          "sourceRowIndex": 21
+        }
+      ]
+    },
+    {
+      "query": "0445020089 ремкомплект",
+      "action": "review",
+      "targetPath": null,
+      "needsContentTopic": "Подбор ремонтного комплекта насоса 0445020089",
+      "rationale": "Known pump code does not supply a pump repair-kit SKU or infer F00RJ02177 compatibility.",
+      "sourceEvidence": [
+        {
+          "parentQuery": "0445020089",
+          "sourceRowIndex": 23
+        }
+      ]
+    }
+  ],
+  "verification": "40/40 query strings verified literally against related rows; frequency suffix only checked as numeric text, no frequency extracted."
+}

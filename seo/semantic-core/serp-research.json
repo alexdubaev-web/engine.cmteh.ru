@@ -1,0 +1,3374 @@
+{
+  "schemaVersion": 1,
+  "title": "engine.cmteh.ru semantic-core live search boundary evidence",
+  "fetchedDate": "2026-10-22",
+  "baseSHA": "0481ddd73192b2165189b265383fd97268ea886a",
+  "sourceEngine": "web search",
+  "scope": {
+    "boundaryQueries": 20,
+    "newSkuQueries": 6,
+    "authorityFollowupQueries": 4,
+    "currentCatalogSkuCount": 64
+  },
+  "method": {
+    "skill": "seo-cluster",
+    "tool": "web.run search_query/open",
+    "limits": [
+      "Not Yandex/Google top10 data; no ranking, geography, device, organic completeness or independent trend guarantee.",
+      "Available returned URL sets can contain PDFs, videos and broad reference pages. Overlap describes this sample only; standard top10 thresholds are not applied.",
+      "No paid API, volume, keyword difficulty, cost, competition or conversion measurements.",
+      "Prior Wordstat notes dated 2026-10-12 used only as context; existing counts not refreshed or relabeled."
+    ],
+    "urlNormalization": "Remove protocol, fragment and trailing path slash; lowercase hostname; preserve all query parameters, including brand, groupCode, page and manufacturer. Keep www, locale and encoded paths distinct."
+  },
+  "queries": [
+    {
+      "id": "Q01",
+      "query": "тнвд bosch купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "category",
+        "canonicalPath": "/category/pumps/"
+      },
+      "decision": "Product lists and pump cards observed; retain Bosch/Бош as aliases on existing category and brand, no separate spelling pages.",
+      "observedPageTypes": [
+        "catalog-product-or-list",
+        "document"
+      ],
+      "sourceUrls": [
+        "https://kg.alta-karter.com/tnvd?brand=bosch",
+        "https://cdi36.ru/catalog/tnvd/tnvd_bosch/",
+        "https://tds-west.ru/catalog/tnvd/tnvd-bosch/",
+        "https://tds-west.ru/catalog/tnvd/",
+        "https://avilongroup.net/magazin/product/tnvd-bosch-1"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://kg.alta-karter.com/tnvd?brand=bosch",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://cdi36.ru/catalog/tnvd/tnvd_bosch/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://tds-west.ru/catalog/tnvd/tnvd-bosch/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://tds-west.ru/catalog/tnvd/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://avilongroup.net/magazin/product/tnvd-bosch-1",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://forsunkipro.ru/catalog/tnvd/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://kz.alta-karter.com/tnvd?brand=bosch",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://dieselzap.ru/tnvd-bosch",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://cdi36.ru/catalog/tnvd/tnvd_bosch/tnvd_bosch_0445010195/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.rdauto.ru/toplivnaya-apparatura/bosch/tnvd-1/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://kg.alta-karter.com/tnvd/opel/bosch",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://avtoatom.ru/katalog/598-toplivniy_nasos_0445020086.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/321688-nasos_toplivnyj_vysokogo_davlenija_tnvd_bosch/pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/847380-para_plunzhernaja_tnvd_bosch_zexel/pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/323825-forsunka_toplivnaja_tnvd_bosch/pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/109346-para_plunzhernaja_tnvd_bosch/pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://tranzit-group.ru/data/pages/4/0/prais27022017.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://tranzit-group.ru/data/pages/4/3/prais_tranzit_01032017.pdf",
+          "pageType": "document"
+        }
+      ]
+    },
+    {
+      "id": "Q02",
+      "query": "тнвд бош купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "category",
+        "canonicalPath": "/category/pumps/"
+      },
+      "decision": "Vehicle-heavy results do not establish fitment for any catalog pump.",
+      "observedPageTypes": [
+        "catalog-product-or-list",
+        "document"
+      ],
+      "sourceUrls": [
+        "https://rgr.fis.ru/catalog/638472-toplivnye-nasosy-tnvd-bosch-bosh",
+        "https://xn--h1aehg.xn--p1ai/zapchasti/import/BOSCH/tnvd-bosh-0-402-648-610E95-3e55f5a83e55f5a8-b5d1-11e5-b17e-001e6713e7ec.html",
+        "https://kamdvigatel.ru/nasos-toplivnyj/",
+        "https://smf.kts-dizel.ru/nasosy/tnvd-bosch-0445010544/",
+        "https://tehtreyding.ru/zapchasti-na-kitajskuyu-tehniku/zapchasti-cummins/tnvd-kamaz-kamminz-6isbe-evro-4-65115-4308-258264-0445020137.html"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://rgr.fis.ru/catalog/638472-toplivnye-nasosy-tnvd-bosch-bosh",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://xn--h1aehg.xn--p1ai/zapchasti/import/BOSCH/tnvd-bosh-0-402-648-610E95-3e55f5a83e55f5a8-b5d1-11e5-b17e-001e6713e7ec.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://kamdvigatel.ru/nasos-toplivnyj/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://smf.kts-dizel.ru/nasosy/tnvd-bosch-0445010544/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://tehtreyding.ru/zapchasti-na-kitajskuyu-tehniku/zapchasti-cummins/tnvd-kamaz-kamminz-6isbe-evro-4-65115-4308-258264-0445020137.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://autopiter.ru/goods/%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%20%D0%B4%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%82%D0%BD%D0%B2%D0%B4%20%D0%B1%D0%BE%D1%88",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://kg.alta-karter.com/tnvd?brand=bosch",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://volex32.ru/up/prajs-list-28-08-24.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://kts-dizel.ru/nasosy/tnvd-0445020150-4988595-0445020045-5264248-1702932-3971529-1409696-4982057-bosch-0445020150/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://volex32.ru/up/prajs-list-17-06-25.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://sankt-peterburg.kamdvigatel.ru/nasos-toplivnyj/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://smf.kts-dizel.ru/nasosy/tnvd-bosch-0460424541/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://4car24.ru/bosch/tnvd-1/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://forsunkipro.ru/catalog/tnvd/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://volex32.ru/up/prajs-list-12-09-25.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://volex32.ru/up/prajs-list-14-08-24.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://tops22.ru/uploads/files/2020/06/11/praysy-td-top-sistemy-062020_1591851363.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://bosch-service.ru/userfiles/File/filearchive/pricelists/UNI.pdf",
+          "pageType": "document"
+        }
+      ]
+    },
+    {
+      "id": "Q03",
+      "query": "клапан форсунки delphi купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "category",
+        "canonicalPath": "/category/valves/"
+      },
+      "decision": "Lists and valve cards observed. Keep injection control valve separate from complete injector.",
+      "observedPageTypes": [
+        "catalog-product-or-list",
+        "document",
+        "other-reference"
+      ],
+      "sourceUrls": [
+        "https://transmetauto.ru/magazin/folder/klapan-forsunki-delphi",
+        "https://precizika.ru/catalog/klapany-dlya-delphi/",
+        "https://www.dvsavto.ru/catalog/toplivnaya_apparatura_1/forsunki/delphi/zapchasti_forsunok_delphi/klapany_forsunok_delphi/",
+        "https://uctadieselpro.ru/catalog/delphi/klapany_dlya_forsunok_delphi/",
+        "https://www.uctadieselpro.ru/catalog/delphi/"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://transmetauto.ru/magazin/folder/klapan-forsunki-delphi",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://precizika.ru/catalog/klapany-dlya-delphi/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.dvsavto.ru/catalog/toplivnaya_apparatura_1/forsunki/delphi/zapchasti_forsunok_delphi/klapany_forsunok_delphi/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://uctadieselpro.ru/catalog/delphi/klapany_dlya_forsunok_delphi/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.uctadieselpro.ru/catalog/delphi/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://dlla.ru/katalog-produkcii/dlya-dlla/klapany-cr/klapany-tip-delphi/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://uctadieselpro.ru/catalog/delphi/klapany_dlya_forsunok_delphi/klapan_forsunki_delphi_e5_9308z625c/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.uctadieselpro.ru/catalog/delphi/klapany_dlya_forsunok_delphi/klapan_forsunki_delphi_e5_9308z625c/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.uctadieselpro.ru/catalog/delphi/klapany_dlya_forsunok_delphi/klapan_forsunki_delphi_e3_28538389/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://parterra.ru/product/nsii0010429433-delphi-28346624/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://4car24.ru/delphi/klapan-forsunki-1/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://cdi36.ru/catalog/klapana-multiplikatory-aktuatory/multiplikatory-dlya-delphi/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://tranzit-group.ru/data/pages/4/3/prais_tranzit_01032017.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://tranzit-group.ru/data/pages/4/0/prais27022017.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.globaldiesel.ru/Katalog%20for%20web%20%28Secured%29.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://storage.by.prom.st/333570_crtest4e.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=73ItDOwBn8k",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://dieselland.eu/wp-content/uploads/2022/02/Catalog-Dieselland-27.02.22.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Q-XLBZ-XRqc",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://storage.by.prom.st/332798_final.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%81%D0%BE%D1%81-%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0",
+          "pageType": "other-reference"
+        }
+      ]
+    },
+    {
+      "id": "Q04",
+      "query": "клапан форсунки делфи купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "category",
+        "canonicalPath": "/category/valves/"
+      },
+      "decision": "Delphi/Делфи alias; individual valve compatibility remains SKU-specific.",
+      "observedPageTypes": [
+        "catalog-product-or-list",
+        "unclassified-search-result",
+        "document"
+      ],
+      "sourceUrls": [
+        "https://bustorgdetal.com/zapchasti_dlya_forsunok/klapany_forsunkok/klapany_forsunok_delphi/",
+        "https://farco.ru/shop/product/28277576-delfi-euro-5-9308-625c-upravliaiushchii-klapan-forsunki-common-rail-delphi",
+        "https://ucta.ru/delphi-technologies?page=7",
+        "https://4car24.ru/delphi/klapan-forsunki-1/",
+        "https://dtsmarket.ru/28239294-delphi-klapan-forsunki-6640170221"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://bustorgdetal.com/zapchasti_dlya_forsunok/klapany_forsunkok/klapany_forsunok_delphi/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://farco.ru/shop/product/28277576-delfi-euro-5-9308-625c-upravliaiushchii-klapan-forsunki-common-rail-delphi",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://ucta.ru/delphi-technologies?page=7",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://4car24.ru/delphi/klapan-forsunki-1/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://dtsmarket.ru/28239294-delphi-klapan-forsunki-6640170221",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://kts-dizel.ru/klapana/klapan-forsunki-delphi-evro-5-repard-10-322/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://dlla.ru/katalog-produkcii/dlya-dlla/klapany-cr/klapany-tip-delphi/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://farco.ru/shop/category/22-nasos-forsunki-eui-eup-i-nasosnye-sektsii-pld-oborudovanie-spetsinstrument/klapana-dlia-remonta-nasos-forsunok-i-nasosnyh-sektsii",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://cdi36.ru/catalog/klapana-multiplikatory-aktuatory/multiplikatory-dlya-delphi/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://4car24.ru/delphi/klapan-forsunki-1/28278897.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://rgr.fis.ru/catalog/638482-klapan-remkomplekt-forsunki-delphi-delfi",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://4car24.ru/delphi/klapan-forsunki-1/28538389-18b1.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://champion.ru/upload/iblock/e4f/ftdsdo20jd6nhlzjq9tqu3dg1qpi3bpq/DTP81E_detailing.PDF",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/136944-klapan_kamaz_dv_cummins_forsunki_0445120123_0_445_120_059_0445120212_analog_bosch_f00rj01714_azpi/pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/169788-klapan_kamaz_54901_dv_910_forsunki_upravljajuschij_analog_bosch_f00rj02449_azpi/pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/136943-klapan_gaz_valdaj_forsunki_0_445_120_134_dv_cummins_isf_3_8_analog_bosch_f00rj02103_evro_3_azpi/pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://automarka-rm.ru/wp-content/uploads/2019/11/Ustrojstvo-tehnicheskoe-obsluzhivanie-Dvigateli-A274-100-i-A275-100-chugunnyj-blok-czilindrov.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/367069-klapan_kamaz_dv_cummins_isbe_isde_qsb4_5_isb6_7_forsunki_komplekt_analog_bosch_f00rj02472__azpi/pdf",
+          "pageType": "document"
+        }
+      ]
+    },
+    {
+      "id": "Q05",
+      "query": "форсунки bosch купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "category",
+        "canonicalPath": "/category/injectors/"
+      },
+      "decision": "Mostly injector product lists; brand support /brands/bosch/.",
+      "observedPageTypes": [
+        "catalog-product-or-list",
+        "document",
+        "other-reference"
+      ],
+      "sourceUrls": [
+        "https://remandex.ru/shop?groupCode=injectors",
+        "https://tds-west.ru/catalog/forsunki/forsunki-bosch/",
+        "https://www.vdparts.ru/catalog/forsunki_toplivnye_rampy/forsunki_bosch/",
+        "https://remandex.ru/shop?groupCode=injectors&onlyInStock=false",
+        "https://akpart.ru/catalog/toplivnye-forsunki/bosch_6/"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://remandex.ru/shop?groupCode=injectors",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://tds-west.ru/catalog/forsunki/forsunki-bosch/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.vdparts.ru/catalog/forsunki_toplivnye_rampy/forsunki_bosch/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://remandex.ru/shop?groupCode=injectors&onlyInStock=false",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://akpart.ru/catalog/toplivnye-forsunki/bosch_6/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://cdi36.ru/catalog/forsunki-novye/forsunki-novye-bosch/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://vdparts.ru/catalog/forsunki_toplivnye_rampy/forsunki_bosch/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://rem-dizel.com/catalog/toplivnye-forsunki/bosch_top_forsunki/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://dieselzap.ru/forsunki-bosch",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://megamarket.ru/catalog/forsunki-toplivnye/brand-bosch/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://cdi36.ru/catalog/raspyliteli/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://cdi36.ru/catalog/raspyliteli/raspyliteli-dlya-bosch/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/886802-raspylitel_forsunki_bosch/pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/321010-raspylitel_forsunki_bosch/pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/321004-raspylitel_forsunki_bosch/pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/418794-gajka_raspylitelja_forsunki_bosch/pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.boschaftermarket.com/xrm/media/images/country_specific/uk/news_and_downloads/downloads_23/414775_kommunikations-content_truck_ua.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://automarka-rm.ru/wp-content/uploads/2019/11/Sistemy-upravleniya-i-osnovy-diagnostiki-dizelnyh-dvigatelej-Common-Rail.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%81%D0%BE%D1%81-%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0",
+          "pageType": "other-reference"
+        }
+      ]
+    },
+    {
+      "id": "Q06",
+      "query": "форсунки бош купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "category",
+        "canonicalPath": "/category/injectors/"
+      },
+      "decision": "Same spelling family as Bosch; observed URL overlap alone cannot validate complete SERP.",
+      "observedPageTypes": [
+        "catalog-product-or-list",
+        "unclassified-search-result",
+        "document",
+        "other-reference"
+      ],
+      "sourceUrls": [
+        "https://remandex.ru/shop?groupCode=injectors",
+        "https://cdi36.ru/catalog/forsunki-novye/forsunki-novye-bosch/",
+        "https://cdi36.ru/catalog/raskhodnye-materialy/materialy-dlya-bosch/",
+        "https://fuelparts.ru/info/brands/bosch/",
+        "https://volex32.ru/up/prajs-list-29-05-26.pdf"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://remandex.ru/shop?groupCode=injectors",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://cdi36.ru/catalog/forsunki-novye/forsunki-novye-bosch/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://cdi36.ru/catalog/raskhodnye-materialy/materialy-dlya-bosch/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://fuelparts.ru/info/brands/bosch/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://volex32.ru/up/prajs-list-29-05-26.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://rgr.fis.ru/catalog/638524-raspyliteli-forsunok-bosch-bosh",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://bustorgdetal.com/dizelnye_forsunki/bosch/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://tver.03market.ru/dizelnyie-forsunki-bosh",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://cdi36.ru/catalog/raspyliteli/raspyliteli-dlya-bosch/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://api.ziyonet.uz/uploads/books/456901/5b5066006b59a.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://kronaparts.ru/forsunki/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://kts-dizel.ru/forsunki/forsunka-bosch-0445116024/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://akpart.ru/catalog/toplivnye-forsunki/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://fuelparts.ru/catalog/forsunki/filter/brand-is-bosch/apply/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://volex32.ru/up/prajs-list-12-03-25.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://volex32.ru/up/prajs-list-17-06-25.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/321004-raspylitel_forsunki_bosch/pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://dvizhok.su/i/files2/archive/2016/dvizhok_v44.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0",
+          "pageType": "other-reference"
+        }
+      ]
+    },
+    {
+      "id": "Q07",
+      "query": "распылитель форсунки delphi купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "category",
+        "canonicalPath": "/category/nozzles/"
+      },
+      "decision": "Dedicated nozzle lists and cards. Existing Delphi SKUs L229PBC L053PBC L017PBB L215PBC L158PBA. Seller labels for 28538389 conflict with valve lists; do not import as nozzle.",
+      "observedPageTypes": [
+        "catalog-product-or-list",
+        "document",
+        "other-reference"
+      ],
+      "sourceUrls": [
+        "https://tachka.ru/delphi/6980571",
+        "https://kg.alta-karter.com/delphi/28538389",
+        "https://transmetauto.ru/magazin/folder/raspylitel-forsunki-delphi",
+        "https://tachka.ru/delphi/7135-837",
+        "https://farco.ru/shop/brand/delphi/3378"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://tachka.ru/delphi/6980571",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://kg.alta-karter.com/delphi/28538389",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://transmetauto.ru/magazin/folder/raspylitel-forsunki-delphi",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://tachka.ru/delphi/7135-837",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://farco.ru/shop/brand/delphi/3378",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://cdi36.ru/catalog/raspyliteli/raspyliteli-dlya-delphi/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://kg.alta-karter.com/delphi/5641934",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://tachka.ru/raspylitel-forsunki/delphi",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://dizzel.ru/product/1425",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://tachka.ru/delphi/28538389",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.detaluga.ru/catalog/27633202",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://kg.alta-karter.com/delphi/7135-580",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://tranzit-group.ru/data/pages/4/3/prais_tranzit_01032017.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://kismetdiesel.com/downloads/kismet_diesel_2019_catalogue.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://tranzit-group.ru/data/pages/4/0/prais27022017.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://dieselland.eu/wp-content/uploads/2022/02/Catalog-Dieselland-27.02.22.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://dieselland.eu/wp-content/uploads/2022/04/Catalog-Dieselland-17.04.22.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%81%D0%BE%D1%81-%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0",
+          "pageType": "other-reference"
+        }
+      ]
+    },
+    {
+      "id": "Q08",
+      "query": "клапан SCV Denso 8980436870",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "product",
+        "canonicalPath": "/catalog/8980436870/"
+      },
+      "decision": "SCV sits at pump fuel inlet, not injector control valve. Denso 294200-0650 is existing catalog code; no other SCV fitments approved.",
+      "observedPageTypes": [
+        "unclassified-search-result",
+        "catalog-product-or-list",
+        "document"
+      ],
+      "sourceUrls": [
+        "https://www.bascolin.com/products/common-rail/suction-control-valve/294200-0650.html",
+        "https://baza.drom.ru/oem/8980436870/",
+        "https://www.dencodiesel.com/products/294200-0650-denso-suction-control-valve-assembly-repl-0050-0550",
+        "https://dieselgroup.kz/p131429735-klapan-davleniya-topliva.html",
+        "https://phongvuautoparts.com/van-scv-denso-2942000650-van-dieu-ap-bom-cao-ap-hp3-cho-isuzu-nqr-npr-nkr-elf-dmax.html"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://www.bascolin.com/products/common-rail/suction-control-valve/294200-0650.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://baza.drom.ru/oem/8980436870/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.dencodiesel.com/products/294200-0650-denso-suction-control-valve-assembly-repl-0050-0550",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://dieselgroup.kz/p131429735-klapan-davleniya-topliva.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://phongvuautoparts.com/van-scv-denso-2942000650-van-dieu-ap-bom-cao-ap-hp3-cho-isuzu-nqr-npr-nkr-elf-dmax.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://syncee.com/product/749074_83434_8017175805994/scv-fuel-metering-valve-suitable-for-toyota-hilux-fortuner-innova-2kd-ftv",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://shop.ginner.at/KFZ-Teile/Dieseleinspritzsystem/Ersatzeile-Einzelteile/Denso-Ventile-SCV-Kits/SCV-Kit-ORIGINAL-DENSO",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://isuzu-tfk.ru/products/isuzu/klapan-tnvd-denso-4nk1-nqr75-bogdan-e3-294200-0650-8980436870-2940091221/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://baza.drom.ru/novosibirsk/sell_spare_parts/klapan-davlenija-tnvd-8980436870-g18538287204.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.diesel-parts-service.com/sale-10239453-denso-scv-8-98043687-0-8980436870-genuine-fuel-pressure-regulator-suction-valve-scv-8980436870.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.diesel-parts-service.com/china-isuzu-8-98043687-0-8980436870-genuine-fuel-pressure-regulator-suction-valve-scv-8980436870-10239450.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.liquediesel.com/sale-10314105-denso-suction-valve-scv-8980436870-294200-0650-2942000650.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://assets.denso-am.eu/production/attachments/Diesel-Components-SCV-Kit-Installation-Guide-Russian.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://automarka-rm.ru/wp-content/uploads/2019/11/Sistemy-upravleniya-i-osnovy-diagnostiki-dizelnyh-dvigatelej-Common-Rail.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://assets.denso-am.eu/production/attachments/Diesel-Components-Leaflet-Bulgarian.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://kismetdiesel.com/downloads/kismet_catalogue.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://manuals.plus/m/0e35186474ab2533ea36b904e70ab0573a22be7aee233e378487133b6a27b7a7.pdf",
+          "pageType": "document"
+        }
+      ]
+    },
+    {
+      "id": "Q09",
+      "query": "John Deere топливная аппаратура форсунки купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "brand",
+        "canonicalPath": "/brands/john-deere/"
+      },
+      "decision": "Fuel injectors and fuel-system lists observed; specify diesel injection to avoid crop spray parts.",
+      "observedPageTypes": [
+        "catalog-product-or-list",
+        "unclassified-search-result",
+        "document",
+        "other-reference"
+      ],
+      "sourceUrls": [
+        "https://www.farpost.ru/zapchasti/%2B/%D0%B8%D0%BD%D0%B6%D0%B5%D0%BA%D1%82%D0%BE%D1%80%2C%2B%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0/model/john%2Bdeere/",
+        "https://optipart.ru/catalog/j/johndeere/",
+        "https://www.farpost.ru/zapchasti/%2B/%D0%B8%D0%BD%D0%B6%D0%B5%D0%BA%D1%82%D0%BE%D1%80%2C%2B%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0/model/john%2Bdeere/?manufacturer=Denso",
+        "https://agrocat.ru/catalog/john-deere/p/dz116152",
+        "https://dieselzip.ru/product-cat/john-deere/forsunki-i-raspyliteli-john-deere/"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://www.farpost.ru/zapchasti/%2B/%D0%B8%D0%BD%D0%B6%D0%B5%D0%BA%D1%82%D0%BE%D1%80%2C%2B%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0/model/john%2Bdeere/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://optipart.ru/catalog/j/johndeere/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.farpost.ru/zapchasti/%2B/%D0%B8%D0%BD%D0%B6%D0%B5%D0%BA%D1%82%D0%BE%D1%80%2C%2B%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0/model/john%2Bdeere/?manufacturer=Denso",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://agrocat.ru/catalog/john-deere/p/dz116152",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://dieselzip.ru/product-cat/john-deere/forsunki-i-raspyliteli-john-deere/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://greensmith.ru/cat-elementy-toplivnoy-sistemy",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://partlib.ru/categories/engine-parts/engine-fuel-system-parts?mode=all&offset=10008",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://kzn.zapchastrf.ru/catalog/john-deere/sistema-toplivnaya/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.farpost.ru/krasnodarskii-krai/zapchasti/%2B/%D0%B8%D0%BD%D0%B6%D0%B5%D0%BA%D1%82%D0%BE%D1%80%2C%2B%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0/model/john%2Bdeere/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://flagma.kz/forsunki-john-deere-095000-5050-o2985323.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://armtek.ru/brand/john-deere-3108/category/chunk-JP6PWVKG.js",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://kintpart.ru/catalog/johndeere/toplivnaya_sistema48/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://agromester.md/pdf/catalog-John-Deere-2017.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://agromester.md/pdf/johndeere-4030-f.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://catalog45.ru/gallery/wg_brochure_pam-catalogue_1019_v1_ru.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://forum4x4club.ru/index.php?app=core&attach_id=104499&module=attach&section=attach",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://daltimbermash.ru/sites/daltimbermash.ru/files/docs/opryskivateli_r4040i_r4050i.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.dojusagro.lt/files/uploaded/Dojus%20katalogas%20RU_01%2004.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%81%D0%BE%D1%81-%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0",
+          "pageType": "other-reference"
+        }
+      ]
+    },
+    {
+      "id": "Q10",
+      "query": "John Deere ремкомплект двигателя DZ10599 купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "product",
+        "canonicalPath": "/catalog/dz10599/"
+      },
+      "decision": "Engine overhaul kit is separate from fuel injector repair kit. No new engine-wide catalog promised.",
+      "observedPageTypes": [
+        "catalog-product-or-list",
+        "unclassified-search-result",
+        "document"
+      ],
+      "sourceUrls": [
+        "https://greenpartstore.ru/shop/914433/",
+        "https://partsell.ru/catalog/dz10599",
+        "https://shop.agroprof.com/catalog/zapchasti_john_deere/d/dz10599_kompl_dlya_rem_dvigat_c_f_ag/",
+        "https://shop.uniparts-e.ru/product/remkomplekt-dvigatelja-dz10599-re531100-re528398-tdz10599/",
+        "https://www.oooarmat.ru/product/komplekt-dlya-remonta-dvigatelya-dz10599-john-deere"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://greenpartstore.ru/shop/914433/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://partsell.ru/catalog/dz10599",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://shop.agroprof.com/catalog/zapchasti_john_deere/d/dz10599_kompl_dlya_rem_dvigat_c_f_ag/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://shop.uniparts-e.ru/product/remkomplekt-dvigatelja-dz10599-re531100-re528398-tdz10599/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.oooarmat.ru/product/komplekt-dlya-remonta-dvigatelya-dz10599-john-deere",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://partsell.ru/catalog/re105990",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://lancerex.ru/dz10599-remkomplekt-dvigatelya-john-deere.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.elec.ru/market/nabor-dz10599-re531100-john-deere-dlja-kapitalnogo-14969815103.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://agrocat.ru/catalog/john-deere/p/re528398",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://partsell.ru/catalog/tdz10599",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://partsgarant.com/catalog/spectehnika/John-Deere/dvigatel/komplekt-dlya-kapitalnogo-remonta-dvigatelya-6090-John-Deere-DZ10599-RE531100-DZ10599.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://agrocat.ru/catalog/assur-power/p/as-dz10599",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://agroprofi55.ru/wp-content/uploads/2023/11/%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3-John-Deere.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://agromester.md/pdf/catalog-John-Deere-2017.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://tractor.bg/products/pdf/112993",
+          "pageType": "unclassified-search-result"
+        }
+      ]
+    },
+    {
+      "id": "Q11",
+      "query": "John Deere ремень натяжитель купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "excluded",
+        "canonicalPath": null
+      },
+      "decision": "No belts or tensioners in current 64-SKU catalog. Exclude; no new landing page recommendation.",
+      "observedPageTypes": [
+        "catalog-product-or-list",
+        "unclassified-search-result",
+        "document"
+      ],
+      "sourceUrls": [
+        "https://elevengate.ru/catalog/type/remen-ili-natyazhitel/",
+        "https://altercompany.su/magazin/folder/natyazhiteli-roliki-john-deere",
+        "https://partsell.ru/catalog/gr_rashodnye-materialy/gr_remni/gr_remen-generatora/br_john-deere",
+        "https://partssolution.ru/spares/zapchasti-john-deere/dvigateli-john-deere/natyagiteli-remni-john-deere",
+        "https://jdparts.ru/katalog/john-deere/remni"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://elevengate.ru/catalog/type/remen-ili-natyazhitel/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://altercompany.su/magazin/folder/natyazhiteli-roliki-john-deere",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://partsell.ru/catalog/gr_rashodnye-materialy/gr_remni/gr_remen-generatora/br_john-deere",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://partssolution.ru/spares/zapchasti-john-deere/dvigateli-john-deere/natyagiteli-remni-john-deere",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://jdparts.ru/katalog/john-deere/remni",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://eat-m.net/john-deere-remni-i-roliki/natyazhitel-remnya-john-deere-re52490-re70535-re518097-re548027",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://impart.online/catalog/re548027natyazhitel-remnya-john-deere-pmparts-36qkc8a0in/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://a-t-z.ru/sovmestimaya-model/6125af001/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://lowesparts.deere.com/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://partsell.ru/catalog/gr_rashodnye-materialy/gr_remni/br_john-deere",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://agrilineproducts.com/belt-tensioner-kit-al156090-76868",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://agrocat.ru/catalog/john-deere/p/h131638",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://device.report/m/363218340b40c892ebcca1dc21fe5c84c562e9dbe437742c7c98a48754cb4024.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://altercompany.ru/f/3029tf_df_um_rus.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://agroprofi55.ru/wp-content/uploads/2023/11/%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3-John-Deere.pdf",
+          "pageType": "document"
+        }
+      ]
+    },
+    {
+      "id": "Q12",
+      "query": "насос форсунка и common rail отличие",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "informational",
+      "target": {
+        "status": "proposed-needs-content",
+        "canonicalPath": null
+      },
+      "decision": "Potential buyer explanation of unit injector vs Common Rail; link existing 0414701072 and relevant Common Rail cards only. Not a claim of interchangeability.",
+      "observedPageTypes": [
+        "informational",
+        "document",
+        "other-reference",
+        "unclassified-search-result"
+      ],
+      "sourceUrls": [
+        "https://tesma.ua/ru/pages/systema-common-rail",
+        "https://tesma.ua/pages/dyzelna-palyvna-systema",
+        "https://parts.diesel-center.ru/blog/stati/forsunki-common-rail-i-nasos-forsunki/",
+        "https://www.commonrail.ru/tech/tech_05.php",
+        "https://dieselok.md/about/articles/cr-ili-pd/"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://tesma.ua/ru/pages/systema-common-rail",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://tesma.ua/pages/dyzelna-palyvna-systema",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://parts.diesel-center.ru/blog/stati/forsunki-common-rail-i-nasos-forsunki/",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://www.commonrail.ru/tech/tech_05.php",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://dieselok.md/about/articles/cr-ili-pd/",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://tesma.ua/ru/pages/dyzelna-palyvna-systema",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://tesma.ua/pages/systema-common-rail",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://elib.osu.ru/bitstream/123456789/11909/1/94204_20190515.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://russpecdiesel.ru/blog/kak-rabotaet-dizelnyj-dvigatel/",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%81%D0%BE%D1%81-%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://autosale.notatka.com.ua/instrukcii-remont/common-rail-abo-nasos-forsunka-iaka-sistema-vpriskuvannia-paliva-efektivnishe-v-suchasnikh-avtomobiliakh",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://autosale.notatka.com.ua/fakty-avto/nasos-forsunka-abo-common-rail-iakii-variant-upriskuvannia-vigidnishe-vibrati-dlia-avtomobilia",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://xn----7sbqrnbgmegeyj8j.xn--p1ai/galleries/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D1%8F-%D0%BD%D0%B0%D1%81%D0%BE%D1%81-%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B8/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.commonrail.kz/vazhno-znat/opisanie-common-rail/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://assets.denso-am.eu/production/attachments/Diesel-components-leaflet-Russian.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://xn--80aa9af6bk.xn--p1ai/injrtest.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://uazbuka.ru/lib/book/Automotive_technology/glava_1.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://automarka-rm.ru/wp-content/uploads/2019/11/Sistemy-upravleniya-i-osnovy-diagnostiki-dizelnyh-dvigatelej-Common-Rail.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://lib.ulstu.ru/venec/disk/2017/390.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%81%D0%BE%D1%81%D0%BD%D1%8B%D0%B9_%D0%B0%D0%B3%D1%80%D0%B5%D0%B3%D0%B0%D1%82",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BF%D0%BB%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BD%D0%B0%D1%81%D0%BE%D1%81_%D0%B2%D1%8B%D1%81%D0%BE%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B4%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0ox3uP55gGE",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BF%D0%BB%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F_%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D0%BF%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B2%D0%BF%D1%80%D1%8B%D1%81%D0%BA_%D1%82%D0%BE%D0%BF%D0%BB%D0%B8%D0%B2%D0%B0",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ov5JuIhEVdQ",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://www.reddit.com/r/u_zarkodavchev/comments/ghh7gf",
+          "pageType": "unclassified-search-result"
+        }
+      ]
+    },
+    {
+      "id": "Q13",
+      "query": "0445020089 купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "product",
+        "canonicalPath": "/catalog/0445020089/"
+      },
+      "decision": "Part-number query returns product/OEM listings. Catalog SKU page owns exact-number commerce; no vehicle variant expansion from search words.",
+      "observedPageTypes": [
+        "catalog-product-or-list",
+        "unclassified-search-result",
+        "document"
+      ],
+      "sourceUrls": [
+        "https://kam.ru/catalog/94794/",
+        "https://zapchastrf.ru/products/0445020089-etp/",
+        "https://autotc.ru/product/tnvd-evro-4-common-rail-bosch-art-0445020089-1005542267",
+        "https://akpart.ru/catalog/toplivnye-nasosy/bosch_5/101223/",
+        "https://mig-kama.ru/mod/shop/product/TNVD__BOSCH"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://kam.ru/catalog/94794/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://zapchastrf.ru/products/0445020089-etp/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://autotc.ru/product/tnvd-evro-4-common-rail-bosch-art-0445020089-1005542267",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://akpart.ru/catalog/toplivnye-nasosy/bosch_5/101223/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://mig-kama.ru/mod/shop/product/TNVD__BOSCH",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.farpost.ru/oem/0445020089/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://kts-dizel.ru/nasosy/tnvd-bosch-0445020089/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://autotc.ru/product/0445020089-tnvd-0445020081-bosch-1003474175",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://ad-groupkaz.kz/p110806330-tnvd-bosch-0445020089.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.mi-parts.ru/catalog/8/53448/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://akpart.ru/catalog/toplivnye-nasosy/bosch_5/108427/0445020089/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://kamacenter.ru/shop/zapasnie-chasti-kamaz/sistema-pitaniya/tnvd-bosch-0445020089.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://adpug.ru/upload/iblock/957/mgg11wjw6jesuqbrjizxmxlwyyy6g1jd/Instruktsiya-po-pereoborudovaniyu-DVS-740-KAMAZ-EURO_5-polnyy-komplekt.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://spb.autodieselpart.ru/upload/iblock/555/t3hs4ump234w4umwx2r12uarx81jykuh/Instruktsiya-po-pereoborudovaniyu-DVS-740-KAMAZ-EURO_5-polnyy-komplekt.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://azpi.ru/upload/iblock/12d/991ss11blw29mif1c90jpqwiudqii1kx.pdf",
+          "pageType": "document"
+        }
+      ]
+    },
+    {
+      "id": "Q14",
+      "query": "ремонт форсунок бош цена",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "service",
+      "target": {
+        "status": "excluded",
+        "canonicalPath": null
+      },
+      "decision": "Repair-service price pages dominate observed results; site sells parts, so repair service intent excluded.",
+      "observedPageTypes": [
+        "repair-service",
+        "unclassified-search-result",
+        "catalog-product-or-list",
+        "document"
+      ],
+      "sourceUrls": [
+        "https://madimotor.ru/uslugi/tnvd-forsunki/bosh/",
+        "https://adzc.ru/bosch.html",
+        "https://madimotor.ru/uslugi/remont-forsunok/remont-forsunok-bosch/",
+        "https://dizelbox.ru/prices",
+        "https://bosch.formula.org.ua/palyvna-systema/"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://madimotor.ru/uslugi/tnvd-forsunki/bosh/",
+          "pageType": "repair-service"
+        },
+        {
+          "url": "https://adzc.ru/bosch.html",
+          "pageType": "repair-service"
+        },
+        {
+          "url": "https://madimotor.ru/uslugi/remont-forsunok/remont-forsunok-bosch/",
+          "pageType": "repair-service"
+        },
+        {
+          "url": "https://dizelbox.ru/prices",
+          "pageType": "repair-service"
+        },
+        {
+          "url": "https://bosch.formula.org.ua/palyvna-systema/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://nasosforsunki.ru/services/remont-common-rail",
+          "pageType": "repair-service"
+        },
+        {
+          "url": "https://uslugi.yandex.ru/profile/Avtospecservis-3052750?occupationId=%2Fremont-avto&serviceId=%2Fremont-avto%2Fdvigatel_%2Fremont-forsunok&specId=%2Fremont-avto%2Fdvigatel_&text=%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82+%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BE%D0%BA+common+rail",
+          "pageType": "repair-service"
+        },
+        {
+          "url": "https://bosch-avto.ru/uslugi/diagnostika-i-remont-toplivnoy-sistemy/",
+          "pageType": "repair-service"
+        },
+        {
+          "url": "https://diesel-pro.ru/uslugi/forsunki/remont-forsunok-common-rail/",
+          "pageType": "repair-service"
+        },
+        {
+          "url": "https://parketspektr.ru/bosh-servisnyy-tsentr-remont-forsunok/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://parketspektr.ru/tsentr-bosh-remont-toplivnoy-apparatury/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.ural-bosch.ru/remont-toplivnoy-apparatury/remont-common-rail-sistem/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://rdc76.ru/images/AvtoTehCentr_RDC_Prajs_2025_09_01.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.c-motor.ru/files/price-list/pr_in.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://xn----etb1b.xn--p1ai/resources/files/company/79018859bffe2bc7822ad4aa29aca53f/section_docs/be0b0f026df4c802978220d09305915a.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://xn--35-6kca9app.xn--p1ai/media/filer_public/c8/51/c8510c1e-ef13-40e1-8b74-7fa84b41cbfb/prais-list_na_uslugi_servisa_kamaz_tsentr_vologda_1_1.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.c-motor.ru/files/price-list/price-list.pdf",
+          "pageType": "document"
+        }
+      ]
+    },
+    {
+      "id": "Q15",
+      "query": "стенд проверки форсунок купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional-equipment",
+      "target": {
+        "status": "excluded",
+        "canonicalPath": null
+      },
+      "decision": "Test benches and diagnostic equipment sellers; no bench SKU in current catalog.",
+      "observedPageTypes": [
+        "equipment-product-or-list",
+        "document"
+      ],
+      "sourceUrls": [
+        "https://atdiesel.ru/oborudovanie/stendy-dlya-common-rail/stend-ispytatelnyj-triumf/",
+        "https://www.sorokin.ru/catalog/diagnosticheskoe_oborudovanie/stendy/",
+        "https://www.technosouz.ru/category/diagnostika/stendy-dlya-forsunok/dizelnykh/",
+        "https://www.garo.cc/katalog/diagnosticheskoe-oborudovanie/stend-dlja-ispytanija/stend-dlja-regulirovki-forsunok-m/",
+        "https://www.technosouz.ru/category/diagnostika/stendy-dlya-forsunok/"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://atdiesel.ru/oborudovanie/stendy-dlya-common-rail/stend-ispytatelnyj-triumf/",
+          "pageType": "equipment-product-or-list"
+        },
+        {
+          "url": "https://www.sorokin.ru/catalog/diagnosticheskoe_oborudovanie/stendy/",
+          "pageType": "equipment-product-or-list"
+        },
+        {
+          "url": "https://www.technosouz.ru/category/diagnostika/stendy-dlya-forsunok/dizelnykh/",
+          "pageType": "equipment-product-or-list"
+        },
+        {
+          "url": "https://www.garo.cc/katalog/diagnosticheskoe-oborudovanie/stend-dlja-ispytanija/stend-dlja-regulirovki-forsunok-m/",
+          "pageType": "equipment-product-or-list"
+        },
+        {
+          "url": "https://www.technosouz.ru/category/diagnostika/stendy-dlya-forsunok/",
+          "pageType": "equipment-product-or-list"
+        },
+        {
+          "url": "https://mactak-m.ru/catalog/diagnosticheskoe-oborudovanie/ultrazvukovoe-oborudovanie/ultrazvukovye-stendy-dlya-inzhektorov/stend-dlya-proverki-i-uz-ochistki-forsunok-nordberg-cmt31ag/",
+          "pageType": "equipment-product-or-list"
+        },
+        {
+          "url": "https://www.rustehnika.ru/catalog/equipment-for-diesel-service-fuel-pump/fuel_diesel_systems_service_equipment/m-107-107e-stendy-dlya-ispytaniya-i-regulirovki-forsunok-m-107-m-107e/",
+          "pageType": "equipment-product-or-list"
+        },
+        {
+          "url": "https://lyubercy.mactak-m.ru/catalog/diagnosticheskoe-oborudovanie/ultrazvukovoe-oborudovanie/ultrazvukovye-stendy-dlya-inzhektorov/stend-dlya-proverki-i-uz-ochistki-forsunok-nordberg-cmt31ab/",
+          "pageType": "equipment-product-or-list"
+        },
+        {
+          "url": "https://mactak-m.ru/catalog/diagnosticheskoe-oborudovanie/ultrazvukovoe-oborudovanie/ultrazvukovye-stendy-dlya-inzhektorov/stend-dlya-proverki-i-uz-ochistki-forsunok-grunbaum-inj6000/",
+          "pageType": "equipment-product-or-list"
+        },
+        {
+          "url": "https://www.garo.cc/katalog/diagnosticheskoe-oborudovanie/stend-dlja-ispytanija/",
+          "pageType": "equipment-product-or-list"
+        },
+        {
+          "url": "https://mactak-m.ru/catalog/diagnosticheskoe-oborudovanie/ultrazvukovoe-oborudovanie/ultrazvukovye-stendy-dlya-inzhektorov/stend-dlya-proverki-i-uz-ochistki-forsunok-launch-cnc-605a-gdi/",
+          "pageType": "equipment-product-or-list"
+        },
+        {
+          "url": "https://mactak-m.ru/catalog/diagnosticheskoe-oborudovanie/ultrazvukovoe-oborudovanie/ultrazvukovye-stendy-dlya-inzhektorov/stend-dlya-proverki-i-uz-ochistki-forsunok-launch-cnc-605/",
+          "pageType": "equipment-product-or-list"
+        },
+        {
+          "url": "https://dieselland.ru/wp-content/uploads/2024/04/Catalog-Dieselland-23.04.24.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://storage.kz.prom.st/70153_instruktsiya.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://dieselland.eu/wp-content/uploads/2022/04/Catalog-Dieselland-17.04.22.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://dieselland.eu/wp-content/uploads/2021/09/Kratkij-katalog-2021-2022.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://dieselland.ru/wp-content/uploads/2023/09/Catalog-Dieselland-02.08.23.pdf",
+          "pageType": "document"
+        }
+      ]
+    },
+    {
+      "id": "Q16",
+      "query": "распылитель форсунки омывателя купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional-other-system",
+      "target": {
+        "status": "excluded",
+        "canonicalPath": null
+      },
+      "decision": "Washer/headlight spray parts; exclude from diesel nozzle cluster.",
+      "observedPageTypes": [
+        "catalog-product-or-list",
+        "document",
+        "other-reference"
+      ],
+      "sourceUrls": [
+        "https://bibibit.ru/catalog/80216/74568",
+        "https://baza.drom.ru/g15867913255.html",
+        "https://avapt.store/c/raspylitel-forsunki",
+        "https://bibibit.ru/catalog/42717/74568",
+        "https://m.integration.vs.market.yandex.net/card/raspylitel-forsunki-kryshki-omyvatelya-far-mazda/102967882538"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://bibibit.ru/catalog/80216/74568",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://baza.drom.ru/g15867913255.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://avapt.store/c/raspylitel-forsunki",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://bibibit.ru/catalog/42717/74568",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://m.integration.vs.market.yandex.net/card/raspylitel-forsunki-kryshki-omyvatelya-far-mazda/102967882538",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://zelam.ru/zapchasti/forsunki-omyvatelya/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.joom.ru/ru/products/66d68b71f18a3101302b2203",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.joom.ru/ru/products/677dd0e01f286001915ba02b",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://capcar.ru/catalog/forsunka-omyvatelya",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://exist.ua/forsunki-omyvatelja-stekla/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://autopiter.kg/goods/rr1k6955103/roadrunner/id141818903",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://m.integration.vs.market.yandex.net/card/raspylitel-forsunki-kryshki-omyvatelya-far-subaru/102967813910",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://d1hu588lul0tna.cloudfront.net/toyotaone/ruru/zp_arial_3676_KB_tcm-3020-1207927.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://mg-autodom.kz/upload/iblock/57d/l3er21oq4t6xp30ozo5jm3tf3vrhcjuk/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/321004-raspylitel_forsunki_bosch/pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.lrservice.ru/data/157/1/LRFreel_TO_rep.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://parklogix.ru/upload/iblock/6ed/6uq9zr2m5uj1lq2kilr0nznfk8psld95/Instruktsiya-po-ustanovke-omyvatelya-dlya-kamery-zadnego-vida-na-Chery-Tiggo-7-Pro-Max-_komplektatsiya-ACTIVE_.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0",
+          "pageType": "other-reference"
+        }
+      ]
+    },
+    {
+      "id": "Q17",
+      "query": "как подобрать форсунку по номеру Bosch",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "informational",
+      "target": {
+        "status": "article",
+        "canonicalPath": "/articles/podbor-po-artikulu/"
+      },
+      "decision": "Existing buyer article owns part-number selection. Request full number, engine/serial data; no visual-fit guarantee.",
+      "observedPageTypes": [
+        "informational",
+        "catalog-product-or-list",
+        "unclassified-search-result",
+        "document",
+        "repair-service",
+        "other-reference"
+      ],
+      "sourceUrls": [
+        "https://injectune.com/ru/news/kodirovanie-forsunok-ima-c2i-qr",
+        "https://precizika.ru/blog/78519/",
+        "https://commonrail.com.ua/forsunki-common-rail/klapany-multiplikatory-forsunok",
+        "https://dieselt.ru/articles/kak-podobrat-raspylitel-dizelnoi-forsunki",
+        "https://commonrail.com.ua/ua/forsunki-common-rail/klapany-multiplikatory-forsunok"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://injectune.com/ru/news/kodirovanie-forsunok-ima-c2i-qr",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://precizika.ru/blog/78519/",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://commonrail.com.ua/forsunki-common-rail/klapany-multiplikatory-forsunok",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://dieselt.ru/articles/kak-podobrat-raspylitel-dizelnoi-forsunki",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://commonrail.com.ua/ua/forsunki-common-rail/klapany-multiplikatory-forsunok",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://4car24.ru/bosch/forsunka-dizelnaya/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://xn--80aknbiwdlh.xn--p1ai/toplivnye-forsunki-dlya-spectehniki-sovmestimost-markirovka-i-osobennosti-vybora",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://remontforsunok.ru/toplivnaya-apparatura/prodazha/bosch",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.niro34.com/d/756110/d/stardex0602-universalnyy-stend-dlya-ispytaniya-dizelnyh-inzhektorov-sistemy-common-rail-razlichnyh.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://diesel-is.com/articles/kak-nayti-nomer-dizelnoy-forsunki/",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://kupiforsunki.ru/legkovye_dizelnye_forsunki_bosch.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://ascenter.by/services/remont-nasos-forsunok-vag/",
+          "pageType": "repair-service"
+        },
+        {
+          "url": "https://www.sto.kovsh.com/library/diesel_fuel_system/fuel_equipment_manufacturers/bosch/bosch_common_rail/forsunki/t/comments/2",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://mediathek-bosch-automotive.com/files/bosch_wa/979/086.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://automarka-rm.ru/wp-content/uploads/2019/11/Sistemy-upravleniya-i-osnovy-diagnostiki-dizelnyh-dvigatelej-Common-Rail.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://media3.bosch-home.com/Documents/9001302053_A.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.rdauto.ru/wp-content/uploads/2018/bosch-forsunka.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://de.wikipedia.org/wiki/Injektormengenabgleich",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B1%D0%BB%D0%BE%D0%BA_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%81%D0%BE%D1%81-%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0",
+          "pageType": "other-reference"
+        }
+      ]
+    },
+    {
+      "id": "Q18",
+      "query": "клапан SCV Denso что это",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "informational",
+      "target": {
+        "status": "proposed-needs-content",
+        "canonicalPath": null
+      },
+      "decision": "Potential short SCV buyer explanation with manufacturer safety sourcing; not DIY high-pressure troubleshooting or repair-service landing.",
+      "observedPageTypes": [
+        "document",
+        "catalog-product-or-list",
+        "unclassified-search-result",
+        "informational",
+        "other-reference"
+      ],
+      "sourceUrls": [
+        "https://automarka-rm.ru/wp-content/uploads/2019/11/Sistemy-upravleniya-i-osnovy-diagnostiki-dizelnyh-dvigatelej-Common-Rail.pdf",
+        "https://sto.kovsh.com/library/diesel_fuel_system/fuel_equipment_manufacturers/denso/common_rail_denso/tnvd_common_rail_denso/hp3/klapan_denso_scv/t/tabs14822/informatciia",
+        "https://denso.ae/products/diesel-components/common-rail-suction-control-valve-scv",
+        "https://www.denso-am.eu/ru/products/dizelnye-komponenty/common-rail-nasosy",
+        "https://www.sto.kovsh.com/library/diesel_fuel_system/fuel_equipment_manufacturers/denso/common_rail_denso/tnvd_common_rail_denso/hp3"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://automarka-rm.ru/wp-content/uploads/2019/11/Sistemy-upravleniya-i-osnovy-diagnostiki-dizelnyh-dvigatelej-Common-Rail.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://sto.kovsh.com/library/diesel_fuel_system/fuel_equipment_manufacturers/denso/common_rail_denso/tnvd_common_rail_denso/hp3/klapan_denso_scv/t/tabs14822/informatciia",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://denso.ae/products/diesel-components/common-rail-suction-control-valve-scv",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.denso-am.eu/ru/products/dizelnye-komponenty/common-rail-nasosy",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.sto.kovsh.com/library/diesel_fuel_system/fuel_equipment_manufacturers/denso/common_rail_denso/tnvd_common_rail_denso/hp3",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://tesma.ua/ru/pages/klapan-rehulyuyuchyi-kilkist-palyva",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://st.jp-autoparts.ru/2/784/652/allionpremio.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://mzd3.ru/sistem/sistema-regulirovanija-davlenija-topliva-dns.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://assets.denso-am.eu/production/attachments/Diesel-Components-Leaflet-Bulgarian.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://assets.denso-am.eu/production/attachments/Diesel-Components-SCV-Kit-Installation-Guide-Russian.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://tesma.ua/pages/klapan-rehulyuyuchyi-kilkist-palyva",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://prado-club.ru/article/prado-scv-klapan-davleniya-toplivnoj-rampy/",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://denso-sales.co.za/products/diesel-components/common-rail-suction-control-valve-scv",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://densovietnam.vn/san-pham/van-dinh-luong-scv-tren-bom-cao-ap-476/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.commonrail.ru/equip/equip_05.php",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://dieselinjectors.com.au/pages/suction-control-valve",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WEZJJB7xZOc",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UtGn9GkX264",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F_%D1%84%D0%B0%D0%B7_%D0%B3%D0%B0%D0%B7%D0%BE%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%BF%D1%83%D1%81%D0%BA%D0%BD%D0%BE%D0%B9_%D0%BA%D0%BB%D0%B0%D0%BF%D0%B0%D0%BD",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B0%D0%BF%D0%B0%D0%BD",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%93%D0%B8%D0%B4%D1%80%D0%BE%D0%BA%D0%BB%D0%B0%D0%BF%D0%B0%D0%BD",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D1%87%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D0%B0%D0%BF%D0%B0%D0%BD",
+          "pageType": "other-reference"
+        },
+        {
+          "url": "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B5%D0%B4%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D0%B0%D0%BF%D0%B0%D0%BD",
+          "pageType": "other-reference"
+        }
+      ]
+    },
+    {
+      "id": "Q19",
+      "query": "RE543262 John Deere",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "product",
+        "canonicalPath": "/catalog/re543262/"
+      },
+      "decision": "Indexed manufacturer label Fuel Injection Pump; official PDF also labels low pressure. Keep neutral product label; pressure subtype unresolved.",
+      "observedPageTypes": [
+        "manufacturer-product",
+        "document",
+        "unclassified-search-result"
+      ],
+      "sourceUrls": [
+        "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262",
+        "https://www.deere.com/assets/pdfs/common/qrg/rx532579.pdf",
+        "https://www.deere.com/assets/pdfs/common/qrg/rx550516.pdf",
+        "https://www.deere.com/assets/pdfs/common/qrg/rx532586.pdf",
+        "https://www.deere.com/assets/pdfs/common/qrg/rx532590.pdf"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/rx532579.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/rx550516.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/rx532586.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/rx532590.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/rx532592.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.ca/assets/pdfs/common/qrg/rx532579.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/RE536277%3A%2BFuel%2BPump/p/RE536277",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://www.greenpartstore.com/John-Deere-Fuel-Pump-RE543262.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.spencerdiesel.com/product/?mfg=JDI&model=524K&part=SD+J1+RE543262",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.heavytruckparts.net/item/John-Deere/6068ht074/Fuel-Injection-Pump/1821960/1/26014647?oemnum=RE543262",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.spencerdiesel.com/product/?mfg=JDI&model=624K&part=SD+J1+RE543262",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.spencerdiesel.com/product/?mfg=JD&model=6210R&part=SD+J1+RE543262",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.doggettequipment.com/products/engine/engine-fuel-system-parts/fuel-injection-pump/re543262",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.motointegrator.de/artikel/1535228-common-rail-pumpe-diesel-reman-re543262-dr",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.intercars24.ee/products/g0khle-injection-pump-re543262-dr",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.spencerdiesel.com/product/?mfg=JD&model=7270R&part=SD+J1+RE543262",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.spencerdiesel.com/product/?mfg=JD&model=6140R&part=SD+J1+RE543262",
+          "pageType": "unclassified-search-result"
+        }
+      ]
+    },
+    {
+      "id": "Q20",
+      "query": "RE571640 John Deere",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "product",
+        "canonicalPath": "/catalog/re571640/"
+      },
+      "decision": "Indexed manufacturer label Fuel Injection Pump. Product full page 403; indexed label evidence only, official PDF corroborates pump.",
+      "observedPageTypes": [
+        "manufacturer-product",
+        "document",
+        "unclassified-search-result",
+        "catalog-product-or-list"
+      ],
+      "sourceUrls": [
+        "https://shop.deere.com/us/product/RE571640%3A-Fuel-Injection-Pump/p/RE571640",
+        "https://shop.deere.com/us/product/RE571640%3A%2BFuel%2BInjection%2BPump/p/RE571640",
+        "https://www.deere.com/assets/pdfs/common/qrg/rx535029.pdf",
+        "https://www.deere.com/assets/pdfs/common/qrg/rx535028.pdf",
+        "https://www.deere.com/assets/pdfs/common/qrg/rx535030.pdf"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://shop.deere.com/us/product/RE571640%3A-Fuel-Injection-Pump/p/RE571640",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/RE571640%3A%2BFuel%2BInjection%2BPump/p/RE571640",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/rx535029.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/rx535028.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/rx535030.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.ca/assets/pdfs/common/qrg/oem-engine/6090hf475-powertech-industrial-tier-2.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/rx532593.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.ca/assets/pdfs/common/qrg/9r-four-wheel-drive-final-tier-4-ft4-series-tractors-015000-9370r-9420r-9470r-9520r-9570r-%26-9620r.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.akrs.com/en-us/parts/fuel-injection-pump---re571640/RE571640.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://shop.deere.com/ca/en/product/RE571640%3A-Fuel-Injection-Pump/p/RE571640",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://aspect-plus.com/de-kraftstoffpumpe-john-deere-re571640-250d-250d-ii-260e-300d-ii-originalteil-19158",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.greenpartstore.com/john-deere-fuel-injection-pump-re571640.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.abilenemachine.com/remanufactured-injecton-pump-amre571640",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.doggettequipment.com/products/engine/engine-fuel-system-parts/fuel-injection-pump/re571640",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://driveondiesel.com/oem-re571640-john-deere-4-5l-4-8l-9-0l-high-pressure-fuel-pump-6355.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.machinio.com/listings/117244223-fuel-injection-pump-john-deere-250d-250d-ii-260e-300d-ii-genuine-in-kyiv-ukraine",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.geomaq.com.br/catalogo/item/re571640_-_bomba_injetora_comp-_john_deere_-_linha_canavieira",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.emmetts.com.au/shop/product/fuel-injection-pump-re571640/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.reddit.com/r/johndeere/comments/ts3mh3",
+          "pageType": "unclassified-search-result"
+        }
+      ]
+    },
+    {
+      "id": "Q21",
+      "query": "DZ100212 John Deere",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "product",
+        "canonicalPath": "/catalog/dz100212/"
+      },
+      "decision": "Indexed manufacturer Common Rail injection nozzle KIT, not engine kit or bare nozzle. Full shop page 403; PDF corroborates injector label.",
+      "observedPageTypes": [
+        "document",
+        "manufacturer-product",
+        "unclassified-search-result",
+        "catalog-product-or-list"
+      ],
+      "sourceUrls": [
+        "https://www.deere.com/assets/pdfs/common/qrg/6068hn078-powertech-pte-6.8l-mazzoti-oem-engine-%28stage-iii-a%29.pdf",
+        "https://shop.deere.com/us/en/product/DZ100212%3A-Fuel-Injection-Nozzle-Kit/p/DZ100212",
+        "https://www.brokentractor.com/p/john-deere-electric-fuel-injector-dz100212/",
+        "https://shop.deere.com/ca/en/product/DZ100212%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100212",
+        "https://www.deere.com/assets/pdfs/common/qrg/4045HF285.pdf"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/6068hn078-powertech-pte-6.8l-mazzoti-oem-engine-%28stage-iii-a%29.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://shop.deere.com/us/en/product/DZ100212%3A-Fuel-Injection-Nozzle-Kit/p/DZ100212",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://www.brokentractor.com/p/john-deere-electric-fuel-injector-dz100212/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://shop.deere.com/ca/en/product/DZ100212%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100212",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/4045HF285.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://interstate-mcbee.com/wp-content/uploads/2021/09/inj-flyer-40456068reman-9-23-2021.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.ladimiragro.com/pl/dz100212-wtryskiwacz-john-deere",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://shop.deere.com/product/A-DZ100212%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/A-DZ100212",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/6068HF285.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.wengers.com/injector-dz100212-n.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://exhibitorsearch.messefrankfurt.com/images/original/document_downloads/10000007202401/372097/1719548111009_3207379942.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.wengers.com/fuel-injection-nozzle-dz100212.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.malpasonline.co.uk/oem/DZ100212/John-Deere",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.deere.ca/assets/pdfs/common/qrg/6068hyf01-powertech-pte-6.8l-sprayer-pla-oem-engine-%28tier-3%29-.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.puric.hr/hr/products/716286",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.disenparts.com/common-rail-injector-dz100212-john-deere.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://neyer.de/en/products/kramp-dz100212",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://cdkdiesel.com/John-Deere-Injector-DZ100212",
+          "pageType": "unclassified-search-result"
+        }
+      ]
+    },
+    {
+      "id": "Q22",
+      "query": "DZ100221 John Deere",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "product",
+        "canonicalPath": "/catalog/dz100221/"
+      },
+      "decision": "Indexed manufacturer Common Rail injection nozzle KIT. Full shop page 403; PDF corroborates injector label.",
+      "observedPageTypes": [
+        "catalog-product-or-list",
+        "manufacturer-product",
+        "document",
+        "unclassified-search-result"
+      ],
+      "sourceUrls": [
+        "https://shop.deere.com/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+        "https://shop.deere.com/us/product/DZ100221%3A-Fuel-Injection-Nozzle-Kit/p/DZ100221",
+        "https://www.deere.ca/assets/pdfs/common/qrg/oem-engine/6090hf475-powertech-industrial-tier-2.pdf",
+        "https://shop.deere.com/us/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+        "https://www.deere.com/assets/pdfs/common/qrg/6090hfl75-powertech-9.0l-%286090-tier-2%29-oem-engine.pdf"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://shop.deere.com/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/DZ100221%3A-Fuel-Injection-Nozzle-Kit/p/DZ100221",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://www.deere.ca/assets/pdfs/common/qrg/oem-engine/6090hf475-powertech-industrial-tier-2.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/6090hfl75-powertech-9.0l-%286090-tier-2%29-oem-engine.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.worthingtonagparts.com/injector-ai-a-dz100221",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/engine-qrg/6090hfm85.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.akrs.com/en-us/nozzles/fuel-injection-nozzle---dz100221/DZ100221.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://sklepzawadzka.com.pl/czesci-do-maszyn/460-re546776-dz100221-wtryskiwacz-john-deere.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/engine-qrg/6090hfg86.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.kmpbrand.com/wp-content/uploads/2025/11/John-Deere%C2%AE6090-Comparison.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://diferencialagricola.com.br/produtos/pecas-para-tratores/bico-injetor-john-deere-dz100221/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.brokentractor.com/p/injector-for-john-deere-combines-tractors-and-graders-dz100221/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://expansaobr.com/es/detalhes/peca/211814-DZ100221/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/A-DZ100221%3A-Nozzle-Kit/p/A-DZ100221",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://spareto.com/oe/dz100221",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.dlcz.cz/john-deere",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/region-3/products/tractors/lista-de-piezas-de-tractores-jun24.pdf",
+          "pageType": "document"
+        }
+      ]
+    },
+    {
+      "id": "Q23",
+      "query": "DZ100217 John Deere",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "product",
+        "canonicalPath": "/catalog/dz100217/"
+      },
+      "decision": "Indexed manufacturer Common Rail injection nozzle KIT. Full shop page 403; indexed evidence only for exact kit label.",
+      "observedPageTypes": [
+        "manufacturer-product",
+        "document",
+        "unclassified-search-result"
+      ],
+      "sourceUrls": [
+        "https://shop.deere.com/us/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217",
+        "https://shop.deere.com/us/product/DZ100217%3A-Fuel-Injection-Nozzle-Kit/p/DZ100217",
+        "https://www.costex.com/wp-content/uploads/2025/03/F-720-423-Rev.-A-Fuel-Injectors-for-John-Deere.pdf",
+        "https://shop.deere.com/ca/en/product/DZ100217%3A-Fuel-Injection-Nozzle-Kit/p/DZ100217",
+        "https://www.deere.com/assets/pdfs/common/qrg/4045hf275--powertech-4.5l-oem-engine.pdf"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://shop.deere.com/us/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/DZ100217%3A-Fuel-Injection-Nozzle-Kit/p/DZ100217",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://www.costex.com/wp-content/uploads/2025/03/F-720-423-Rev.-A-Fuel-Injectors-for-John-Deere.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://shop.deere.com/ca/en/product/DZ100217%3A-Fuel-Injection-Nozzle-Kit/p/DZ100217",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/4045hf275--powertech-4.5l-oem-engine.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/4045HF485.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://agri.blueperry.co.uk/products/john-deere-nozzle-kit-dz100217",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/DZ100220%3A-Fuel-Injection-Nozzle-Kit/p/DZ100220",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://hdxperts.dk/CustomerData/Files/Folders/1024-new-product-releases-2021-2023/2358_npr-nov-2021.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://kmkagro.com/sklep/wyprzedaz/2030-wtryskiwacz-john-deere-dz100217.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://hdxperts.dk/CustomerData/Files/Folders/1025-2023-parts-catalogs/2375_inj-catalog-corecodes-8-9-2023.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://partao.com/john-deere-dz100217-high-pressure-common-rail-injection-nozzle-kit.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://app.theironhub.com/auctions/ID109CID41Y2026-9XPi3Vb3/listings/oo8l9i0TpYKHSpgmDMBa",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/4045hfj85.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://agro-czesci.com.pl/pl/p/DZ100217-RE546781-WTRYSKIWACZ-ORG./3797",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.armazemautopecas.com.br/injecao-diesel/john-deere/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://shoppreview.deere.com/us/product/RE546781%3A-High-Pressure-Common-Rail-Injector-Nozzle-kit/p/RE546781",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://www.pavoni.com.br/loja/produtos/john-deere/bico-injetor/dz100217/544154",
+          "pageType": "unclassified-search-result"
+        }
+      ]
+    },
+    {
+      "id": "Q24",
+      "query": "DZ100216 John Deere",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional",
+      "target": {
+        "status": "product",
+        "canonicalPath": "/catalog/dz100216/"
+      },
+      "decision": "Indexed manufacturer Common Rail injection nozzle KIT. Full shop page 403; indexed evidence only for exact kit label.",
+      "observedPageTypes": [
+        "manufacturer-product",
+        "document",
+        "unclassified-search-result"
+      ],
+      "sourceUrls": [
+        "https://shop.deere.com/us/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+        "https://shop.deere.com/uk/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+        "https://shop.deere.com/us/us/product/DZ100216%3A-Fuel-Injection-Nozzle-Kit/p/DZ100216",
+        "https://shop.deere.com/us/product/RE546782%3A-High-Pressure-Common-Rail-Injector-Nozzle-kit/p/RE546782",
+        "https://www.costex.com/wp-content/uploads/2025/03/F-720-423-Rev.-A-Fuel-Injectors-for-John-Deere.pdf"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://shop.deere.com/us/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/uk/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/us/us/product/DZ100216%3A-Fuel-Injection-Nozzle-Kit/p/DZ100216",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/RE546782%3A-High-Pressure-Common-Rail-Injector-Nozzle-kit/p/RE546782",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://www.costex.com/wp-content/uploads/2025/03/F-720-423-Rev.-A-Fuel-Injectors-for-John-Deere.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://shop.deere.com/ca/en/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://agri.blueperry.co.uk/products/john-deere-injection-nozzle-dz100216",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.costex.com/fuel-injectors-for-john-deere",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://neyer.de/en/products/kramp-dz100216",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://interstate-mcbee.com/wp-content/uploads/2023/07/inj-flyer-40456068reman-7-25-2023.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://exhibitorsearch.messefrankfurt.com/images/original/document_downloads/10000007202401/380249/1721620854664_1029439894.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://pub-mediabox-storage.rxweb-prd.com/exhibitor/document/exh-5bd4f487-7977-44de-aa92-599703787a16/61ef3b11-8eee-432a-8d14-aefb21b17124.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://interstate-mcbee.com/wp-content/uploads/2023/08/inj-catalog-corecodes-8-9-2023.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://hdxperts.dk/CustomerData/Files/Folders/1025-2023-parts-catalogs/2375_inj-catalog-corecodes-8-9-2023.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://jk-agro.pl/produkt/wtryskiwacz-org-john-deere-dz100216/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://aoparts.com/categories/john-deere?page=6",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://aspect-plus.com/de-kraftstoffeinspritzduese-john-deere-dz100216-5078e-6930-210-p-originalteil-19150",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://allegro.pl/produkt/wtryskiwacz-common-rail-john-deere-f86b2eb6-7391-4992-a14b-8efcccc3fca8",
+          "pageType": "unclassified-search-result"
+        }
+      ]
+    },
+    {
+      "id": "Q25",
+      "query": "официально Bosch unit injector common rail systems",
+      "sourceEngine": "web search",
+      "domainFilter": "bosch-mobility.com",
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "technical-source",
+      "target": {
+        "status": "source-only",
+        "canonicalPath": null
+      },
+      "decision": "Bosch primary source separates unit injector and unit pump systems; no SKU fitment inferred.",
+      "observedPageTypes": [
+        "unclassified-search-result",
+        "document"
+      ],
+      "sourceUrls": [
+        "https://www.bosch-mobility.com/en/solutions/injectors/",
+        "https://www.bosch-mobility.com/en/solutions/injectors/unit-injector/",
+        "https://www.bosch-mobility.com/media/global/solutions/off-highway-and-large-engines/powertrain-solutions/unit-pump-system-unit-injector/ps_summary_unit-pump-system_en_20260312.pdf",
+        "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/unit-pump-and-unit-injector-system-ohw/",
+        "https://www.bosch-mobility.com/en/solutions/pumps/injection-pump/"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://www.bosch-mobility.com/en/solutions/injectors/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/en/solutions/injectors/unit-injector/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/media/global/solutions/off-highway-and-large-engines/powertrain-solutions/unit-pump-system-unit-injector/ps_summary_unit-pump-system_en_20260312.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/unit-pump-and-unit-injector-system-ohw/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/en/solutions/pumps/injection-pump/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/en/solutions/control-units/engine-control-unit/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/media/global/solutions/passenger-cars-and-light-commercial-vehicles/powertrain-solutions/diesel-common-rail-system-solenoid/solenoid-valve-injector/ps_summary_solenoid-valve-injector-for-common-rail-systems_en_16x9_20250901.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/media/global/solutions/off-highway-and-large-engines/powertrain-solutions/unit-pump-system-unit-injector/unit-injector/ps_summary_unit_injector-for-large-engines_en_20260127.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/media/global/solutions/passenger-cars-and-light-commercial-vehicles/powertrain-solutions/diesel-common-rail-system-piezo/piezo-injector/ps_summary_piezo-injector-for-common-rail-systems_en_16x9_20250818.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/en/solutions/injectors/solenoid-valve-injector-cri2/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/media/global/solutions/off-highway-and-large-engines/powertrain-solutions/unit-pump-system-unit-injector/summary_unit_pump_system.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/en/company/milestones/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/media/global/solutions/passenger-cars-and-light-commercial-vehicles/powertrain-solutions/diesel-common-rail-system-piezo/ps_summary_common-rail-system-with-piezo-injectors_en_16x9_20250818.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/en/solutions/control-units/engine-control-unit-for-large-engines/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-piezo/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-solenoid/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/modular-common-rail-system-md-ohw/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.bosch-mobility.com/en/solutions/injectors/piezo-injector-cri3/",
+          "pageType": "unclassified-search-result"
+        }
+      ]
+    },
+    {
+      "id": "Q26",
+      "query": "Denso suction control valve high pressure safety",
+      "sourceEngine": "web search",
+      "domainFilter": "denso-am.eu",
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "technical-source",
+      "target": {
+        "status": "source-only",
+        "canonicalPath": null
+      },
+      "decision": "DENSO primary source supports SCV and high-pressure injury caution; unrelated A/C control valve result must be ignored.",
+      "observedPageTypes": [
+        "document",
+        "informational",
+        "unclassified-search-result"
+      ],
+      "sourceUrls": [
+        "https://assets.denso-am.eu/production/attachments/AC-Compressor-Control-Valve-Identification-Bulletin-English.pdf",
+        "https://assets.denso-am.eu/production/attachments/Diesel-Components-Leaflet-English.pdf",
+        "https://assets.denso-am.eu/production/attachments/Diesel-Components-DCRS300260-Installation-Guide-English.pdf",
+        "https://www.denso-am.eu/news/fourth-generation-common-rail-diesel-diagnosis-suction-control-valve",
+        "https://assets.denso-am.eu/staging/attachments/1663941943%20EN_Diesel_SCV%20Kit_DCRS300260_installation%20guide.pdf"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://assets.denso-am.eu/production/attachments/AC-Compressor-Control-Valve-Identification-Bulletin-English.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://assets.denso-am.eu/production/attachments/Diesel-Components-Leaflet-English.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://assets.denso-am.eu/production/attachments/Diesel-Components-DCRS300260-Installation-Guide-English.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.denso-am.eu/news/fourth-generation-common-rail-diesel-diagnosis-suction-control-valve",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://assets.denso-am.eu/staging/attachments/1663941943%20EN_Diesel_SCV%20Kit_DCRS300260_installation%20guide.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.denso-am.eu/product-updates/diesel-components-27-new-part-numbers-added-to-range",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.denso-am.eu/pl/aktualizacje-produktow/cz%C4%99%C5%9Bci-do-silnik%C3%B3w-diesla---nowe-cz%C4%99%C5%9Bci-do-naprawy-pomp-i-wtryskiwaczy",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.denso-am.eu/products/diesel-components/common-rail-suction-control-valve-scv",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.denso-am.eu/ua/product-updates/diesel-components-27-new-part-numbers-added-to-range",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.denso-am.eu/news/fourth-generation-common-rail-diesel-technology",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://www.denso-am.eu/products/ac-engine-cooling/pressure-switches",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.denso-am.eu/ru/products/dizelnye-komponenty/common-rail-nasosy",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.denso-am.eu/de/products/diesel-komponenten/common-rail-suction-control-valve-scv",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.denso-am.eu/ru/products/dizelnye-komponenty/common-rail-nasosy-2",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.denso-am.eu/products/diesel-components",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.denso-am.eu/news/quality-you-can-trust-a-first-look-at-densos-2026-aftermarket-launches",
+          "pageType": "informational"
+        }
+      ]
+    },
+    {
+      "id": "Q27",
+      "query": "Delphi diesel common rail injector identify part number",
+      "sourceEngine": "web search",
+      "domainFilter": "delphiautoparts.com",
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "technical-source",
+      "target": {
+        "status": "source-only",
+        "canonicalPath": null
+      },
+      "decision": "Delphi primary source supports checking correct injector part number and correction code.",
+      "observedPageTypes": [
+        "informational",
+        "unclassified-search-result",
+        "document"
+      ],
+      "sourceUrls": [
+        "https://www.delphiautoparts.com/resource-center/article/how-to-remove-and-replace-a-diesel-common-rail-injector",
+        "https://www.delphiautoparts.com/en-gb/products-and-technologies/diesel-fuel-systems/fuel-injection/diesel-fuel-injection/how-to-replace-common-rail-injectors",
+        "https://www.delphiautoparts.com/docs/default-source/products-technologies/d_explore-diesel-reman_flyer_a4_en.pdf?sfvrsn=ce07aa04_1",
+        "https://www.delphiautoparts.com/products-technologies/gasoline-fuel-systems/fuel-injection-system/gdi-systems/common-rail-injector-programming-for-mercedes",
+        "https://www.delphiautoparts.com/docs/default-source/marketing-and-media-documents/dsc_diesel_module3970dd44d3374cdcb75ddc64cd2f1c57.pdf?sfvrsn=e533d8d0_9"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://www.delphiautoparts.com/resource-center/article/how-to-remove-and-replace-a-diesel-common-rail-injector",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/en-gb/products-and-technologies/diesel-fuel-systems/fuel-injection/diesel-fuel-injection/how-to-replace-common-rail-injectors",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/docs/default-source/products-technologies/d_explore-diesel-reman_flyer_a4_en.pdf?sfvrsn=ce07aa04_1",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/products-technologies/gasoline-fuel-systems/fuel-injection-system/gdi-systems/common-rail-injector-programming-for-mercedes",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/docs/default-source/marketing-and-media-documents/dsc_diesel_module3970dd44d3374cdcb75ddc64cd2f1c57.pdf?sfvrsn=e533d8d0_9",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/en-gb/mom/how-to/article/how-to-replace-common-rail-injectors",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/apac/products-and-technologies/diesel-fuel-systems/fuel-injection/diesel-fuel-injection/how-to-check-the-electrical-status-of-a-common-rail-injector",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/docs/default-source/academy-training/dsc_diesel_module.pdf?sfvrsn=3bcd5d76_1",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/en-gb/mom/need-to-know/article/fuel-analyzer-tech-tips",
+          "pageType": "informational"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/apac/products-and-technologies/diesel-fuel-systems/fuel-injection/diesel-fuel-injection/how-to-program-and-replace-a-common-rail-injector",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/test-equipment/fuel-injection-diagnostics/electronic-injector-test-kit",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/test-equipment/fuel-injection-diagnostics/sealed-rail-diagnostic-kit",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/apac/products-and-technologies/diesel-fuel-systems/fuel-injection/diesel-fuel-injection/best-practice-advice-for-servicing-common-rail-injectors",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/products-technologies/diesel-fuel-systems/diesel-fuel-injection/remanufactured-diesel-fuel-injectors/trim-code-upload-software",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/docs/default-source/products-technologies/delphi_na-brochure_diesel-reman-all-makes_dt-22-115-e.pdf?sfvrsn=86eb70b1_3",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/en-gb/products-and-technologies/diesel-fuel-systems/fuel-injection/diesel-fuel-injection---car-and-light-commercial-vehicle/how-to-replace-common-rail-injectors",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://www.delphiautoparts.com/docs/default-source/academy-training/ddsu151e_all_makes_brochure_3_nm.pdf?sfvrsn=8cedaff_1",
+          "pageType": "document"
+        }
+      ]
+    },
+    {
+      "id": "Q28",
+      "query": "John Deere RE543262 low pressure fuel pump",
+      "sourceEngine": "web search",
+      "domainFilter": "deere.com",
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "technical-source",
+      "target": {
+        "status": "source-only",
+        "canonicalPath": null
+      },
+      "decision": "Additional official evidence for RE543262 conflicting pressure terminology.",
+      "observedPageTypes": [
+        "document",
+        "manufacturer-product"
+      ],
+      "sourceUrls": [
+        "https://www.deere.com/assets/pdfs/common/qrg/rx532579.pdf",
+        "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262",
+        "https://www.deere.com/assets/pdfs/common/qrg/rx532586.pdf",
+        "https://www.deere.com/assets/pdfs/common/qrg/6090hfc95.pdf",
+        "https://www.deere.com/assets/pdfs/common/qrg/rx550516.pdf"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/rx532579.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/rx532586.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/6090hfc95.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/rx550516.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/rx532590.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://www.deere.com/assets/pdfs/common/qrg/engine-qrg/6090hfg95.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/RE536277%3A%2BFuel%2BPump/p/RE536277",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/RE543628%3A-Fuel-Injection-Pump/p/RE543628",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/RE544262%3A-Fuel-Line/p/RE544262",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/RE543240%3A-Fuel-Injection-Pump/p/RE543240",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/br/pt/product/RE543262%3A-Bomba-Injetora-de-Combust%C3%ADvel/p/RE543262",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/uk/product/RE543628%3A-Fuel-Injection-Pump/p/RE543628",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/RE503162%3A-Fuel-Injection-Pump/p/RE503162",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/RE536662%3A-Fuel-Pump/p/RE536662",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/RE543423%3A-Fuel-Injection-Pump/p/RE543423",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/RE530822%3A%2BFuel%2BInjection%2BPump/p/RE530822",
+          "pageType": "manufacturer-product"
+        },
+        {
+          "url": "https://shop.deere.com/us/product/RE543297%3A-High-Pressure-Fuel-Pump-Supply-Line/p/RE543297",
+          "pageType": "manufacturer-product"
+        }
+      ]
+    },
+    {
+      "id": "Q29",
+      "query": "форсунки джон дир опрыскиватель купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional-other-system",
+      "target": {
+        "status": "excluded",
+        "canonicalPath": null
+      },
+      "decision": "Crop-spray nozzle results mixed with diesel injector offers; exclude crop-care parts. A fuel injector fitted to a sprayer engine remains fuel-system part, only with documented fitment.",
+      "observedPageTypes": [
+        "unclassified-search-result",
+        "catalog-product-or-list",
+        "document"
+      ],
+      "sourceUrls": [
+        "https://zapchasti-catalog.ru/john-deere-crop-care-unit-parts/",
+        "https://flagma.kz/forsunki-john-deere-095000-5050-o2985323.html",
+        "https://vipzapchasti.agrobiz.net/goods/forsunka-na-opryskivatel-john-deere-an206621/",
+        "https://zapchasti.ria.com/c/forsunka-car/o-john-deere-spec/",
+        "https://flagma.kz/forsunki-john-deere-dzhon-dir-re528407-o2984916.html"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://zapchasti-catalog.ru/john-deere-crop-care-unit-parts/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://flagma.kz/forsunki-john-deere-095000-5050-o2985323.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://vipzapchasti.agrobiz.net/goods/forsunka-na-opryskivatel-john-deere-an206621/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://zapchasti.ria.com/c/forsunka-car/o-john-deere-spec/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://flagma.kz/forsunki-john-deere-dzhon-dir-re528407-o2984916.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://flagma.kz/forsunki-john-deere-6081-095000-8723-o2985320.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://agrobiz.net/tr/zapchasti-dlya-samohodnogo-opryskivatelya/na-opryskivateli-dzhon-dir/",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://zapchasti.ria.com/c/forsunka-car/o-john-deere-spec/o-bu/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://agrobiz.net/ua/zapchasti-na-kombayn-dzhon-dir/forsunki.htm",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://flagma.kz/forsunki-john-deere-6081t-095000-6490-o2985321.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://agrobiz.net/zapchasti-dlya-zhatki-dzhon-dir/forsunki.htm",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://zapchasti-catalog.ru/john-deere-AKK31194.html",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://astana-nan.kz/image/catalog/pdf/2020_12-4_4%2852%29.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://agromester.md/pdf/brochure700.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://bossagro.kz/wp-content/uploads/boss-03-2020-%D1%80%D0%B0%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-new.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://astana-nan.kz/image/catalog/07072022/2020_12-4_4%2852%29.pdf",
+          "pageType": "document"
+        }
+      ]
+    },
+    {
+      "id": "Q30",
+      "query": "ТНВД бош КамАЗ евро 5 купить",
+      "sourceEngine": "web search",
+      "domainFilter": null,
+      "fetchedDate": "2026-10-22",
+      "region": null,
+      "device": null,
+      "completeTop10": false,
+      "organicClassification": "not exposed by tool; result URLs preserved as returned, no top-rank or ad-free guarantee",
+      "intent": "transactional-unverified-fitment",
+      "target": {
+        "status": "exclude-variant",
+        "canonicalPath": null
+      },
+      "decision": "Search results include aftermarket conversion kit caveats and contradictory fitment claims. Do not add КамАЗ Евро-5 applicability to existing SKU from query or seller snippets.",
+      "observedPageTypes": [
+        "catalog-product-or-list",
+        "unclassified-search-result",
+        "document"
+      ],
+      "sourceUrls": [
+        "https://uralmob.com/catalog/sistema-pitaniya/tnvd-kamaz-evro-5-common-rail-analog-bosh-0445020089-tolko-s-komplektom-pereoborudovaniya-azpi",
+        "https://www.arsenalavto.ru/catalog.php?uid=4338145",
+        "https://ad-groupkaz.kz/p110806330-tnvd-bosch-0445020089.html",
+        "https://vairteh.ru/product/toplivnyy-nasos-vysokogo-davleniya-bosch-0445020089-original101223",
+        "https://tatrazbor.com/product/tnvd-bosch-kamaz/"
+      ],
+      "returnedResults": [
+        {
+          "url": "https://uralmob.com/catalog/sistema-pitaniya/tnvd-kamaz-evro-5-common-rail-analog-bosh-0445020089-tolko-s-komplektom-pereoborudovaniya-azpi",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.arsenalavto.ru/catalog.php?uid=4338145",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://ad-groupkaz.kz/p110806330-tnvd-bosch-0445020089.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://vairteh.ru/product/toplivnyy-nasos-vysokogo-davleniya-bosch-0445020089-original101223",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://tatrazbor.com/product/tnvd-bosch-kamaz/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://tehtreyding.ru/zapchasti-na-kitajskuyu-tehniku/tnvd-bosch-dlya-gruzovikov-i-spectehniki.html",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://m.integration.vs.market.yandex.net/card/dozirovochnyy-blok-tnvd-aktuator-yevro-5-2000-bar-dv-yamz-5344-paz-gazon-next---art-0928400757-bosch/103130678198",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.sparsenal.ru/tnvd",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://mig-kama.ru/mod/shop/product/TNVD__BOSCH",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://kamdvigatel.ru/nasos-toplivnyj/",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://www.autoopt.ru/catalog/167153-komplekt_kamaz_evro_5_pereoborudovanija_tnvd_bosch_0445020089_na_tnvd_a_08_004_00_00_01_polnyj_azpi",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://prometey-yar.ru/catalog/pereoborudovanie-avtomobilya-kamaz",
+          "pageType": "catalog-product-or-list"
+        },
+        {
+          "url": "https://gruzovik16.ru/index.php?pr_id=304&route=extension%2Ffeed%2Fkom%2Fcp",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://kamaz.kz/price.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://szvo.gov35.ru/EM-portlet/JSP/contract/ccwe_file_download.jsp?docId=b1116bb2-f838-47c1-8605-a8c0f33f5f6b&docType=2",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://volex32.ru/up/prajs-list-12-09-25.pdf",
+          "pageType": "document"
+        },
+        {
+          "url": "https://szvo.gov35.ru/EM-portlet/JSP/contract/ccwe_file_download.jsp?docId=dfbf56cf-57cd-4d9c-94f2-6282edae3f04&docType=2",
+          "pageType": "unclassified-search-result"
+        },
+        {
+          "url": "https://at-k.kz/upload/price_kamaz_at-k.kz.pdf",
+          "pageType": "document"
+        }
+      ]
+    }
+  ],
+  "overlap": [
+    {
+      "queryA": "Q01",
+      "queryB": "Q02",
+      "availableUrlCountA": 18,
+      "availableUrlCountB": 18,
+      "sharedUrls": [
+        "kg.alta-karter.com/tnvd?brand=bosch",
+        "forsunkipro.ru/catalog/tnvd"
+      ],
+      "observedOverlap": 2,
+      "validatedTop10": false,
+      "thresholdApplied": false
+    },
+    {
+      "queryA": "Q03",
+      "queryB": "Q04",
+      "availableUrlCountA": 22,
+      "availableUrlCountB": 18,
+      "sharedUrls": [
+        "dlla.ru/katalog-produkcii/dlya-dlla/klapany-cr/klapany-tip-delphi",
+        "4car24.ru/delphi/klapan-forsunki-1",
+        "cdi36.ru/catalog/klapana-multiplikatory-aktuatory/multiplikatory-dlya-delphi"
+      ],
+      "observedOverlap": 3,
+      "validatedTop10": false,
+      "thresholdApplied": false
+    },
+    {
+      "queryA": "Q05",
+      "queryB": "Q06",
+      "availableUrlCountA": 20,
+      "availableUrlCountB": 19,
+      "sharedUrls": [
+        "remandex.ru/shop?groupCode=injectors",
+        "cdi36.ru/catalog/forsunki-novye/forsunki-novye-bosch",
+        "cdi36.ru/catalog/raspyliteli/raspyliteli-dlya-bosch",
+        "www.autoopt.ru/catalog/321004-raspylitel_forsunki_bosch/pdf",
+        "ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0"
+      ],
+      "observedOverlap": 5,
+      "validatedTop10": false,
+      "thresholdApplied": false
+    },
+    {
+      "queryA": "Q03",
+      "queryB": "Q07",
+      "availableUrlCountA": 22,
+      "availableUrlCountB": 19,
+      "sharedUrls": [
+        "tranzit-group.ru/data/pages/4/3/prais_tranzit_01032017.pdf",
+        "tranzit-group.ru/data/pages/4/0/prais27022017.pdf",
+        "dieselland.eu/wp-content/uploads/2022/02/Catalog-Dieselland-27.02.22.pdf",
+        "ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%81%D0%BE%D1%81-%D1%84%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0",
+        "ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%81%D1%83%D0%BD%D0%BA%D0%B0"
+      ],
+      "observedOverlap": 5,
+      "validatedTop10": false,
+      "thresholdApplied": false
+    },
+    {
+      "queryA": "Q09",
+      "queryB": "Q10",
+      "availableUrlCountA": 20,
+      "availableUrlCountB": 15,
+      "sharedUrls": [
+        "agromester.md/pdf/catalog-John-Deere-2017.pdf"
+      ],
+      "observedOverlap": 1,
+      "validatedTop10": false,
+      "thresholdApplied": false
+    },
+    {
+      "queryA": "Q09",
+      "queryB": "Q11",
+      "availableUrlCountA": 20,
+      "availableUrlCountB": 15,
+      "sharedUrls": [],
+      "observedOverlap": 0,
+      "validatedTop10": false,
+      "thresholdApplied": false
+    },
+    {
+      "queryA": "Q13",
+      "queryB": "Q14",
+      "availableUrlCountA": 15,
+      "availableUrlCountB": 17,
+      "sharedUrls": [],
+      "observedOverlap": 0,
+      "validatedTop10": false,
+      "thresholdApplied": false
+    }
+  ],
+  "sourceFacts": [
+    {
+      "id": "deere-shop-labels",
+      "urls": [
+        {
+          "sku": "RE543262",
+          "sourceURL": "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262",
+          "indexedResultURLs": [
+            "https://shop.deere.com/us/product/RE543262%3A-Fuel-Injection-Pump/p/RE543262",
+            "https://shop.deere.com/us/product/RE536277%3A%2BFuel%2BPump/p/RE536277"
+          ],
+          "accessStatus": "indexed title/snippet observed; direct page fetch 403; no full-page verification",
+          "verifiedLabel": "Fuel Injection Pump"
+        },
+        {
+          "sku": "RE571640",
+          "sourceURL": "https://shop.deere.com/uk/product/RE571640%3A-Fuel-Injection-Pump/p/RE571640",
+          "indexedResultURLs": [
+            "https://shop.deere.com/us/product/RE571640%3A-Fuel-Injection-Pump/p/RE571640",
+            "https://shop.deere.com/us/product/RE571640%3A%2BFuel%2BInjection%2BPump/p/RE571640",
+            "https://shop.deere.com/ca/en/product/RE571640%3A-Fuel-Injection-Pump/p/RE571640"
+          ],
+          "accessStatus": "indexed title/snippet observed; direct page fetch 403; no full-page verification",
+          "verifiedLabel": "Fuel Injection Pump"
+        },
+        {
+          "sku": "DZ100212",
+          "sourceURL": "https://shop.deere.com/us/product/DZ100212%3A-Fuel-Injection-Nozzle-Kit/p/DZ100212",
+          "indexedResultURLs": [
+            "https://shop.deere.com/us/en/product/DZ100212%3A-Fuel-Injection-Nozzle-Kit/p/DZ100212",
+            "https://shop.deere.com/ca/en/product/DZ100212%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100212",
+            "https://shop.deere.com/product/A-DZ100212%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/A-DZ100212"
+          ],
+          "accessStatus": "indexed title/snippet observed; direct page fetch 403; no full-page verification",
+          "verifiedLabel": "High Pressure Common Rail Injection Nozzle Kit"
+        },
+        {
+          "sku": "DZ100221",
+          "sourceURL": "https://shop.deere.com/us/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+          "indexedResultURLs": [
+            "https://shop.deere.com/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+            "https://shop.deere.com/us/product/DZ100221%3A-Fuel-Injection-Nozzle-Kit/p/DZ100221",
+            "https://shop.deere.com/us/product/DZ100221%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100221",
+            "https://shop.deere.com/us/product/A-DZ100221%3A-Nozzle-Kit/p/A-DZ100221"
+          ],
+          "accessStatus": "indexed title/snippet observed; direct page fetch 403; no full-page verification",
+          "verifiedLabel": "High Pressure Common Rail Injection Nozzle Kit"
+        },
+        {
+          "sku": "DZ100217",
+          "sourceURL": "https://shop.deere.com/us/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217",
+          "indexedResultURLs": [
+            "https://shop.deere.com/us/product/DZ100217%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100217",
+            "https://shop.deere.com/us/product/DZ100217%3A-Fuel-Injection-Nozzle-Kit/p/DZ100217",
+            "https://shop.deere.com/ca/en/product/DZ100217%3A-Fuel-Injection-Nozzle-Kit/p/DZ100217",
+            "https://shop.deere.com/us/product/DZ100220%3A-Fuel-Injection-Nozzle-Kit/p/DZ100220"
+          ],
+          "accessStatus": "indexed title/snippet observed; direct page fetch 403; no full-page verification",
+          "verifiedLabel": "High Pressure Common Rail Injection Nozzle Kit"
+        },
+        {
+          "sku": "DZ100216",
+          "sourceURL": "https://shop.deere.com/us/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+          "indexedResultURLs": [
+            "https://shop.deere.com/us/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+            "https://shop.deere.com/uk/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216",
+            "https://shop.deere.com/us/us/product/DZ100216%3A-Fuel-Injection-Nozzle-Kit/p/DZ100216",
+            "https://shop.deere.com/us/product/RE546782%3A-High-Pressure-Common-Rail-Injector-Nozzle-kit/p/RE546782",
+            "https://shop.deere.com/ca/en/product/DZ100216%3A-High-Pressure-Common-Rail-Injection-Nozzle-Kit/p/DZ100216"
+          ],
+          "accessStatus": "indexed title/snippet observed; direct page fetch 403; no full-page verification",
+          "verifiedLabel": "High Pressure Common Rail Injection Nozzle Kit"
+        }
+      ],
+      "limitation": "No compatibility, dimensions, performance, current stock or price established by this research."
+    },
+    {
+      "id": "re543262-pressure-conflict",
+      "sourceURL": "https://www.deere.com/assets/pdfs/common/qrg/rx532579.pdf",
+      "evidence": "Official tractor parts guide labels RE543262 low-pressure fuel pump; manufacturer shop index labels injection pump. Pressure subtype not resolved.",
+      "recommendation": "Do not extend product semantic core with high-pressure/ТНВД subtype for RE543262 until exact technical catalog resolves conflict."
+    },
+    {
+      "id": "scv-function",
+      "sourceURL": "https://www.denso-am.eu/ru/products/dizelnye-komponenty/common-rail-nasosy",
+      "evidence": "DENSO describes suction control valves and variants for pump systems; generic SCV terminology alone does not prove compatibility."
+    },
+    {
+      "id": "unit-injector",
+      "sourceURL": "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/unit-pump-and-unit-injector-system-ohw/",
+      "evidence": "Bosch describes unit injector as a pump integrated with nozzle and solenoid; unit pump and common-rail families must not be merged as equivalent products."
+    },
+    {
+      "id": "correct-number",
+      "sourceURL": "https://www.delphiautoparts.com/resource-center/article/how-to-remove-and-replace-a-diesel-common-rail-injector",
+      "evidence": "Delphi directs checking the correct injector part number and noting the correction code."
+    },
+    {
+      "id": "high-pressure-safety",
+      "sourceURL": "https://www.denso-am.eu/news/fourth-generation-common-rail-diesel-diagnosis-suction-control-valve",
+      "evidence": "DENSO warns high-pressure fuel leaks can cause severe injury; relevant buyer education may stay but must avoid unsafe home diagnostic procedures.",
+      "editorialBoundary": "Symptoms do not prove a failed part. Ask qualified diesel service for diagnosis; do not instruct users to loosen operating high-pressure lines or find leaks by touch."
+    },
+    {
+      "id": "deere-injector-corroboration",
+      "sourceURL": "https://www.deere.ca/assets/pdfs/common/qrg/oem-engine/6090hf475-powertech-industrial-tier-2.pdf",
+      "evidence": "Official 6090HF475 guide lists original RE571640 against fuel-injection pump and DZ100221 against fuel-injection nozzle reman entries; no broad machine compatibility inferred."
+    },
+    {
+      "id": "dz100212-corroboration",
+      "sourceURL": "https://www.deere.com/assets/pdfs/common/qrg/4045HF285.pdf",
+      "evidence": "Official 4045HF285 guide includes reman-for-DZ100212 under injection nozzle. This supports part family, not all variants."
+    }
+  ]
+}
