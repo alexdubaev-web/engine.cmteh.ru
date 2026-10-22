@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "657cd96af3fd237685f9922d9773719cc96d6d508aeba0ed27da3919dd0ab049",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "be5cac2c67990c8a48c5460ef5a98842e352449c7b0db0884d94a4cee7ce99bf",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/": {
     "sha256": "0d2e451c1c288eeabc03318737be4437302fcfaaf15a7701acf3807c24f6e6df",
@@ -56,8 +56,8 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/28272472/": {
-    "sha256": "1d3bfa382d4620447aa66cae4931a1c4378b0bc448a8e03747269baa684d3b9f",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "a377989d091bb692d9b533b0d1da8e3b36ffa10505b22b3de12afa7123f50fbb",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/0445020610/": {
     "sha256": "7981c4b7a18bcc58a94fa54c15c280c7749dc53a38e8cabfa617df6785930ca3",
@@ -68,16 +68,16 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/260100-4010/": {
-    "sha256": "2618826638f7c4655908ce51d8220b5ff735e4e323d80cf84bf0bd73ee97e3ce",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "48f41af3dfaefeda1f6f83fa780dd9957c0f8d0d0155b2fa66b8c628201b6a10",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/9323a270g/": {
     "sha256": "a688225cbb98ea2b6cbdb423e7e28d17cd6874c1a83a93ca842a56b06812fbe7",
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/28540276/": {
-    "sha256": "6a11f8e8dff1e2b96d2717cd6ebf1b4adb2612e891e18bee701d8e720aa954b3",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "c1485a6c2bd0f3c7329648b0e27fe1b6654e7cd212126f220622c0c68c1d1fb1",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/7206-0435/": {
     "sha256": "e8df37d79b135f7b62c49aebd76d8d3f11ca34581eaa7612a80ebd6a2db9ee54",
@@ -100,8 +100,8 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/0445120075/": {
-    "sha256": "d68ba6253e391f6764736a644f7496ada93a9e585ccc02a96874d0b370f1ec9b",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "9ae1eac760f6e14be7e4cf87c2f9c0df6a903bbd8fc7180bfdf3a4ee048af0a0",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/0445020082/": {
     "sha256": "0b03b58d11df0a55c89ebb405002bc6548e5d27fecc91cc9dde4ccd438a43341",
@@ -128,24 +128,24 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/28308779/": {
-    "sha256": "de82ee0ad0cbd99172b79596a341c1e30d2775cb5b274a756f96dfb5f4d07649",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "09fd1b4aa5b85794ff80d5a25f08a06f1f4f59088e62b67131b2dd70330f2679",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/l017pbb/": {
     "sha256": "cfd58977e58cd784964ee478433c44c2d7f0e493dfca5fc303b3fab5d4bf43c2",
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/0445120126/": {
-    "sha256": "cfa8fc763dfb7a8f182dc028e6cfd1b9c513697eaf97030fdbe95b20b2e3b90c",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "99377ce99d64d0eeccb527df243431a6ca0b749ba6a3c766999621d755c564cd",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/0445120072/": {
-    "sha256": "4042dc613e173b9d8f21143595992337bcc25778a70bbd6de0b80738796cfc07",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "b0137feea6a1b3e7d9d5faed942e6f5fedef80f17ad2f5d0ebf6d6a8f48ce8a3",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/5620004100/": {
-    "sha256": "8c32a8b100d9d081c1600b5ab5db2ee8ef52625e6827e906e8bb97160f32dc5f",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "9da7b55bdbe2b8f2cb0e271c4c63b3b58b0082b2525992843d3d3941663439f8",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/0445020540/": {
     "sha256": "25ba9843b979197397d589618c5b4241121d727179f8ff7d04b365513a314e58",
@@ -160,20 +160,20 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/0445120728/": {
-    "sha256": "c6b25d08b16832ac7da5b833160500af0a7487d6185631d86b13329f9d2fa6ca",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "e71b2a614f66dfa4f8d77643f1b1dd9c064e98567b81443ee38920a0d3cb6acd",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/0445120212/": {
-    "sha256": "701eeb6f933a021990c25527771bf77b820e56dd6df389c90f20f6a9c4dc19d7",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "e0e7bcdf48d16f78adae87c558462f716579ef692573d234240e42a80919485e",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/260100-6010/": {
-    "sha256": "f5aeabd13f0a3ca4d20086b487f2f4549482e67f931081480fc9d026f5819466",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "8e60185d5634977d0e93c1b6f16b6fe1b1015b1ff39de200642543a8eb6b0968",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/0445116059/": {
-    "sha256": "1625179920c3015a0fea8c9531a88c744237da25b5ab511d4854a941c3e4e4ea",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "e73a4ef374cbb0e407534413b1a2a1467dccb745b9a87a8b70e4bf17b7144ddd",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/dz128161/": {
     "sha256": "ffb8dc2c41c510780ee233f604d6dae7458feea642ec82edd7c53d7f6bb12b50",
@@ -184,8 +184,8 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/0445124036/": {
-    "sha256": "8420558c110ebcae9a2b8d234fe8814200ac93fd96537d631035c7ad1788b146",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "03e5a363be38f8813f5997b24233b77a466ba23503a9e241ff0d5f1e0ff4512f",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/0445020089/": {
     "sha256": "539b241bd7fa11d71ed0d3fc5c4b0f00d65dd1869d5d2ce98f65e451bee60983",
@@ -200,8 +200,8 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/0445124025/": {
-    "sha256": "f8813734c0bf03da6d206310a380e6d2fddc839c8c7e6b8355fea165f9df40a3",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "0462c05c5ba3eb4b2129fe1cc7b777b38a813f8a7e756d6d8fffbb0b79d1bb15",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/dz128160/": {
     "sha256": "8f9b6304512689b935f2dcea636c40fd9a8e168c3b19d95368fea2f161b853c7",
@@ -216,8 +216,8 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/28229876/": {
-    "sha256": "63598a396d62349c33b826f71ead6c1afd1ff5a50cdaeca694cae56ff416cea8",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "d3240e88761b0239ed2034a787c8e94b2b6367a91d461abdaa6c35764453d55f",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/l158pba/": {
     "sha256": "39e7586a0e3c39f600c1890a0dfb5943814eb41b6fd7a527f47f44c4aa39e0c6",
@@ -232,8 +232,8 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/0414701072/": {
-    "sha256": "6440dcd50c437a5534c8ce8fcd3f5ff5249ecf9473d0198f80cc9abb5bf2b0df",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "7712c68d0628781e1bbd8dfd0e5b3409ae2b09fbba3399017ac76a94121e9cd9",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/28384974/": {
     "sha256": "ad714b194f7a4f19ea6facc3d8ed2566ead6ef4c533c28e7718086c84a383f5f",
@@ -260,8 +260,8 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/0445120385/": {
-    "sha256": "4c750c237079e25b8ee71717783b03e7def48efb5de486eb845dfa18e098371e",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "602b54504d814a6784093893bf943b9f274df6fc333fab78b630a920ef232179",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/0445020273/": {
     "sha256": "f7cbfaa43698c2742700bd9a38c614a43156f830f26631a351dfab0f8e4f482e",
@@ -288,24 +288,28 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/dz100212/": {
-    "sha256": "74f0de0a074de9b0f2a3cf07e5faddb2f9c7977fee683961130be44a387d918e",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "846b9a5d8bd46569c83b62716ce7ffe5ced4d3c7550389b2c772e0c9c2df0abb",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/dz100221/": {
-    "sha256": "6382fb0aa85e4a32981e2cbd3b10598b74dbdf47646cebdc6402a8f2f8d7ee8e",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "5c86dee9362f474fbc8f037da63386ca410077ea83b648205a21f6b9bf9f3463",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/dz100217/": {
-    "sha256": "480eaac3b0022807e675c2ab7ac82ec97ef869cdd78c38cf204b948ca3f69110",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "c8ee3e694ef2fea275748e28c58cc278cfbb35ae19b4b3edfa4e9e3515b8ec8c",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/catalog/dz100216/": {
-    "sha256": "ef6d5016ac14caeafbe38bbfbfbe7979811b4377768dae15d27ebeb5e1075e5c",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "ee147a9faeba1d4eb65a1c757aea066a49dc171f2b90b784a3b394c42e88e627",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/articles/": {
-    "sha256": "ffad762adfcec11f8c3cc240eda0699fe2dec9191224e34b3005279e88ba05fa",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "8d9b286659747bcefb65f78ad9927bd01197dd6d0bff546c364ce2264dc7fb53",
+    "lastmod": "2026-10-22T10:30:25Z"
+  },
+  "/articles/dizel-ploho-zavoditsya-na-holodnuyu/": {
+    "sha256": "53e966f209a2cda572fc216701f78b1457573c8db631a08511cf8bb5c5e4a6c7",
+    "lastmod": "2026-10-22T10:30:25Z"
   },
   "/articles/podbor-po-artikulu/": {
     "sha256": "ed3e1f4b6f5fad8f1db9c8ec972db0f63cb1af928f67f4afebe181e380093e3c",
