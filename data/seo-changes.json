@@ -1,7 +1,7 @@
 {
   "origin": "https://engine.cmteh.ru",
   "indexable": true,
-  "generated_at": "2026-10-23T06:08:15Z",
+  "generated_at": "2026-10-24T08:30:42Z",
   "urls": [
     "https://engine.cmteh.ru/",
     "https://engine.cmteh.ru/catalog/",
@@ -88,10 +88,11 @@
     "https://engine.cmteh.ru/about/",
     "https://engine.cmteh.ru/contacts/",
     "https://engine.cmteh.ru/articles/dizel-ploho-zavoditsya-na-holodnuyu/",
-    "https://engine.cmteh.ru/articles/kodirovanie-forsunok-posle-zameny/"
+    "https://engine.cmteh.ru/articles/kodirovanie-forsunok-posle-zameny/",
+    "https://engine.cmteh.ru/articles/klapan-scv-ili-imv-podbor/"
   ],
   "revisions": {
-    "https://engine.cmteh.ru/": "5106685fab49471d9ff76cddab31c1ce",
+    "https://engine.cmteh.ru/": "5c3a68e3fc5b466988b70b8a885e3ab2",
     "https://engine.cmteh.ru/catalog/": "f6647828c57c47d3b905aa68351bfdfc",
     "https://engine.cmteh.ru/category/injectors/": "6dc5f0c2c80042798d0c270880c21d47",
     "https://engine.cmteh.ru/category/pumps/": "647b9dfd6487421baf0211e832ed857e",
@@ -104,14 +105,14 @@
     "https://engine.cmteh.ru/brands/john-deere/": "65f9eda6c18b4d93b13b81cded39da9c",
     "https://engine.cmteh.ru/brands/vdo/": "bb8f2f3478404aacbff800572a890350",
     "https://engine.cmteh.ru/catalog/0433175478/": "90717e4e5986495db43053b65a67bc5a",
-    "https://engine.cmteh.ru/catalog/7206-0460/": "f8f79e2414f1406980fc8905963f7791",
+    "https://engine.cmteh.ru/catalog/7206-0460/": "b8b30bbf11374ce18c6a77b65b3bf693",
     "https://engine.cmteh.ru/catalog/28272472/": "5d2806a7cd5a4bba9e584656e5146d1b",
     "https://engine.cmteh.ru/catalog/0445020610/": "439be27129954bf0a55ba28230c5af9b",
     "https://engine.cmteh.ru/catalog/re539764/": "b4399c48abc54ccaa0b746b3655b1414",
     "https://engine.cmteh.ru/catalog/260100-4010/": "36253cd60a4a4569bb4ee0762da079f4",
     "https://engine.cmteh.ru/catalog/9323a270g/": "9395bae6ed384507b3ba3a4fd1ac3c32",
     "https://engine.cmteh.ru/catalog/28540276/": "fad605345680446e93a68196971e9abd",
-    "https://engine.cmteh.ru/catalog/7206-0435/": "00b54dd727b84bf2ac435e60dc65825b",
+    "https://engine.cmteh.ru/catalog/7206-0435/": "749148fbec0444bf9834e721de3ab593",
     "https://engine.cmteh.ru/catalog/28516849/": "210ec96ab5434d709ab55ed8c337b6e4",
     "https://engine.cmteh.ru/catalog/0445020208/": "f56d6828f941420cae44dda7b5077194",
     "https://engine.cmteh.ru/catalog/0445020201/": "64c7a2bb7a1147abae2c208c10d1e263",
@@ -153,13 +154,13 @@
     "https://engine.cmteh.ru/catalog/28384974/": "1b7c202d75174a29a30ebad9cba93684",
     "https://engine.cmteh.ru/catalog/dz100218/": "bf4dec6579d44327903f515261449adb",
     "https://engine.cmteh.ru/catalog/28384976/": "94166498a9424ae981f41c69b9c578c1",
-    "https://engine.cmteh.ru/catalog/7210-0473/": "8378bce3df3f45caa71ed1baa5e335a2",
-    "https://engine.cmteh.ru/catalog/8980436870/": "464c5f618ef34dd99505ec889d7213d0",
+    "https://engine.cmteh.ru/catalog/7210-0473/": "6c91dd95d3f64f8c859d408bb15fe145",
+    "https://engine.cmteh.ru/catalog/8980436870/": "45f3710753e74b368b107f0d06bd064f",
     "https://engine.cmteh.ru/catalog/9323a260g/": "f343fb51ea864fdaa01f98635e1b9856",
     "https://engine.cmteh.ru/catalog/0445120385/": "2f720512c7454c9a9d8ecd0fbf4ca470",
     "https://engine.cmteh.ru/catalog/0445020273/": "1664dc7a3e584199b7fbfd0c84b1708e",
-    "https://engine.cmteh.ru/catalog/9109-903/": "ad5a9e83188b46519ffbff55c5d57f36",
-    "https://engine.cmteh.ru/catalog/dz111136/": "e50ae6d716d54afb8bb3c0c90a963510",
+    "https://engine.cmteh.ru/catalog/9109-903/": "580a573898094c1d8199e3b9f7cc865b",
+    "https://engine.cmteh.ru/catalog/dz111136/": "51c8dbea9a2a4a3cb2f004860f9172d1",
     "https://engine.cmteh.ru/catalog/dz10599/": "b9694916f2594edca04ae8094ccdf06d",
     "https://engine.cmteh.ru/catalog/re543262/": "6474c30c38664c7890b54467acfdd576",
     "https://engine.cmteh.ru/catalog/re571640/": "7727d8ab4b214116b6d3e8c91d343920",
@@ -167,7 +168,7 @@
     "https://engine.cmteh.ru/catalog/dz100221/": "0561377ec1df48a1b750393f3d533d91",
     "https://engine.cmteh.ru/catalog/dz100217/": "22a02887e74046c780672d9fe2f378c1",
     "https://engine.cmteh.ru/catalog/dz100216/": "8ddcd23f9438484aa93a62f892a05c39",
-    "https://engine.cmteh.ru/articles/": "293c022e6df34cd29128da5b2828244b",
+    "https://engine.cmteh.ru/articles/": "1edfc9b7b1df4aa4823403f990adfdda",
     "https://engine.cmteh.ru/articles/podbor-po-artikulu/": "12d49c5178ef4c5fb59c40f1ee15ee45",
     "https://engine.cmteh.ru/articles/tnvd-pered-zakazom/": "0676fb1bbea3492b8106c1a242d85d49",
     "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/": "20eb074cf6094211a1a18f06dcb869e3",
@@ -175,7 +176,8 @@
     "https://engine.cmteh.ru/delivery/": "81d7c434e4974f119c73101cbdaecb85",
     "https://engine.cmteh.ru/about/": "9a9c0f91949d422da6a6a716157c502f",
     "https://engine.cmteh.ru/contacts/": "b01f5148319f48d98afab74d629a48b1",
-    "https://engine.cmteh.ru/articles/dizel-ploho-zavoditsya-na-holodnuyu/": "e4996e35fa184ed398832930fc178d00",
-    "https://engine.cmteh.ru/articles/kodirovanie-forsunok-posle-zameny/": "c40e5709f1ff4a0da5d7a5f1e95ba9a4"
+    "https://engine.cmteh.ru/articles/dizel-ploho-zavoditsya-na-holodnuyu/": "a590a9c5bdbd4a97bc37b5b6898e5832",
+    "https://engine.cmteh.ru/articles/kodirovanie-forsunok-posle-zameny/": "c779894e43734a9190c9a084c3c7965c",
+    "https://engine.cmteh.ru/articles/klapan-scv-ili-imv-podbor/": "83418b0726794b8d8cc7ec558b90c8f1"
   }
 }

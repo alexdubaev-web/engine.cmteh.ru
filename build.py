@@ -130,9 +130,12 @@ with pipeline_lock(ROOT):
     if heading is not None:blocks.append('</section>')
     heading=line[3:]
     if heading=='Источники' and a.get('products'):
-     products=[next((p for p in P if p['sku']==sku and p['category']=='injectors'),None) for sku in a['products']]
-     if any(p is None for p in products):raise ValueError('Article references an unknown injector SKU')
-     blocks.append('<section class="article-products"><h2>Позиции для сверки после диагностики</h2><p>Это отдельные позиции каталога, а не рекомендация для любого двигателя. Перед заказом проверьте полный артикул и применимость по данным техники.</p><ul>'+''.join(f'<li><a href="/catalog/{e(p["id"])}/">{e(p["brand"])} {e(p["sku"])}</a></li>' for p in products)+'</ul></section>')
+     products=[]
+     for sku in a['products']:
+      matches=[p for p in P if p['sku']==sku]
+      if len(matches)!=1 or matches[0]['category'] not in CATS:raise ValueError(f'Article references an unknown or ambiguous catalog SKU: {sku}')
+      products.append(matches[0])
+     blocks.append('<section class="article-products"><h2>Позиции для сверки перед заказом</h2><p>Это отдельные позиции каталога, а не рекомендация для любого двигателя. Перед заказом проверьте полный артикул и применимость по данным техники.</p><ul>'+''.join(f'<li><a href="/catalog/{e(p["id"])}/">{e(p["shortName"])} {e(p["brand"])} {e(p["sku"])}</a></li>' for p in products)+'</ul></section>')
     blocks.append('<section><h2>'+e(heading)+'</h2>')
    elif line.startswith('### '):flush();blocks.append('<h3>'+e(line[4:])+'</h3>')
    elif line.startswith('**Практический разбор'):flush()

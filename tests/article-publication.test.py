@@ -1,6 +1,9 @@
 """Focused regression for the accepted cold-start article publication."""
 import json
+import os
 from pathlib import Path
+import subprocess
+import sys
 from lxml import etree, html
 from PIL import Image
 from build_fixture import build_fixture
@@ -41,6 +44,40 @@ for listing in [out / 'index.html', out / 'articles' / 'index.html']:
 ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
 sitemap = etree.parse(str(out / 'sitemap.xml'))
 assert sitemap.xpath('//s:loc[contains(text(), $slug)]', namespaces=ns, slug=new_url)
+valve_slug = 'klapan-scv-ili-imv-podbor'
+valve_url = f'/articles/{valve_slug}/'
+valve_article = html.fromstring((out / 'articles' / valve_slug / 'index.html').read_text(encoding='utf-8'))
+assert valve_article.xpath('string(//link[@rel="canonical"]/@href)').endswith(valve_url)
+valve_cover = valve_article.xpath('//figure[@class="article-cover"]/img')[0]
+assert valve_cover.get('src') == '/assets/fuel-valves.webp'
+with Image.open(out / 'assets' / 'fuel-valves.webp') as image:
+    assert image.format == 'WEBP' and image.size == (1400, 933)
+    assert (valve_cover.get('width'), valve_cover.get('height')) == ('1400', '933')
+    assert (out / 'assets' / 'fuel-valves.webp').stat().st_size < 200_000
+assert valve_cover.get('alt').startswith('Два металлических клапана управления подачей топлива')
+assert 'Иллюстрация создана с помощью генеративной модели' in valve_article.xpath('string(//figure[@class="article-cover"]/figcaption)')
+valve_graph = json.loads(valve_article.xpath('//script[@type="application/ld+json"]/text()')[0])['@graph']
+valve_schema = next(node for node in valve_graph if node.get('@type') == 'Article')
+assert valve_schema['datePublished'] == '2026-10-24'
+assert valve_article.xpath('string(//meta[@property="article:published_time"]/@content)') == '2026-10-24'
+assert valve_article.xpath('string(//meta[@property="og:image"]/@content)').endswith('/assets/fuel-valves.webp')
+for domain in ['denso-am.eu', 'delphiautoparts.com', 'wypalaniedpf.pl']:
+    assert valve_article.xpath(f'//a[contains(@href,"{domain}")]')
+assert valve_article.xpath('//a[@href="/catalog/9109-903/"]')
+assert valve_article.xpath('//a[@href="/catalog/dz111136/"]')
+assert valve_article.xpath('//a[@href="/articles/podbor-po-artikulu/"]')
+assert valve_article.xpath('//a[@href="/articles/tnvd-pered-zakazom/"]')
+for sku in ['9109-903', 'dz111136']:
+    product = html.fromstring((out / 'catalog' / sku / 'index.html').read_text(encoding='utf-8'))
+    assert product.xpath(f'//section[contains(@class,"product-reading")]//a[@href="{valve_url}"]')
+for listing in [out / 'index.html', out / 'articles' / 'index.html']:
+    assert html.fromstring(listing.read_text(encoding='utf-8')).xpath(f'//a[@href="{valve_url}"]')
+assert sitemap.xpath('//s:loc[contains(text(), $slug)]', namespaces=ns, slug=valve_url)
+articles_source = root / 'data' / 'articles.py'
+articles_text = articles_source.read_text(encoding='utf-8')
+articles_source.write_text(articles_text.replace("'products':['9109-903','DZ111136']", "'products':['UNKNOWN-SKU','DZ111136']", 1), encoding='utf-8')
+invalid_build = subprocess.run([sys.executable, 'build.py'], cwd=root, env={**os.environ, 'INDEXABLE': 'false', 'PUBLIC_SITE_URL': ''}, capture_output=True, text=True)
+assert invalid_build.returncode != 0 and 'unknown or ambiguous catalog SKU: UNKNOWN-SKU' in invalid_build.stderr
 slug = 'dizel-ploho-zavoditsya-na-holodnuyu'
 url = f'/articles/{slug}/'
 article = html.fromstring((out / 'articles' / slug / 'index.html').read_text(encoding='utf-8'))

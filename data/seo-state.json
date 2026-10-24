@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "5fa69f432f8f243299f5dfceaf9b5bab0900866f86eec53b16e1705ac63467c1",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "a71a762cb0eab035a668693ceffb4f3fa29bf5d3b08496c82f04297ca51aebc3",
+    "lastmod": "2026-10-24T08:30:42Z"
   },
   "/catalog/": {
     "sha256": "57b45c05383d4a76e312a8935d198ec4e283a60eada8f8c4faebd0c65417da7a",
@@ -52,8 +52,8 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/7206-0460/": {
-    "sha256": "dabba19f861a32834728dc3588fdaca27e5064ea365385f348a56137432b0b53",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "37b05e2aa9799b99caa2e341b53eb3d7f530560a3d14c10fe66a9ba24efeba21",
+    "lastmod": "2026-10-24T08:30:42Z"
   },
   "/catalog/28272472/": {
     "sha256": "6ecfd4155ffaa15c4f5d52f0399c6e57f490b0d4be04daa805ff6027f07e1c2a",
@@ -80,8 +80,8 @@
     "lastmod": "2026-10-23T06:06:48Z"
   },
   "/catalog/7206-0435/": {
-    "sha256": "e8df37d79b135f7b62c49aebd76d8d3f11ca34581eaa7612a80ebd6a2db9ee54",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "ed561276d349c6ca99a24f4963d7253abda6df3e7ee31d0bb2f5d4afa860d02f",
+    "lastmod": "2026-10-24T08:30:42Z"
   },
   "/catalog/28516849/": {
     "sha256": "3863f09adbe7b4681dd710ce07b2d0cae7dd2503e64a0801e5f05e2dc1a4cb08",
@@ -248,12 +248,12 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/7210-0473/": {
-    "sha256": "34988379b7939cf218bdb1eb2cda0a905b417e30dfc781a88d86e6a12013b961",
-    "lastmod": "2026-10-22T15:25:26Z"
+    "sha256": "a4ec3b6a2e5a1ad5dbb02e0d67d48cfc8498e48c789bd583d2c66bd24a232c2c",
+    "lastmod": "2026-10-24T08:30:42Z"
   },
   "/catalog/8980436870/": {
-    "sha256": "3ba9dae373b9bee7297a258831dde4674a87d26ae2a2ad43e2c9652e0e19f0fb",
-    "lastmod": "2026-10-22T15:25:26Z"
+    "sha256": "8a99d9caef91d5d15471eb5296019767e39c39f2ffe6f1d841a7242553d8c2f3",
+    "lastmod": "2026-10-24T08:30:42Z"
   },
   "/catalog/9323a260g/": {
     "sha256": "9f704ebb786b90e8b33c855a145e99e49d80317db50aeb20400cb752ec99a717",
@@ -268,12 +268,12 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/9109-903/": {
-    "sha256": "871dc4229044c4b169a283485de9795bd8dc41955c4d67dbea36a4b4ca7bbaf3",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "8775a39422b590950da1234cc86163ad3f36c2ab88eca872a22c1510139b63c8",
+    "lastmod": "2026-10-24T08:30:42Z"
   },
   "/catalog/dz111136/": {
-    "sha256": "5614c390da966b393ad82ad6a5eda70491f0478f16d87d8f18bc626dde9ccd4f",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "5a6de34cd4b045abcf40b88940457c0191833dac584d3d627dac35ab85e3f572",
+    "lastmod": "2026-10-24T08:30:42Z"
   },
   "/catalog/dz10599/": {
     "sha256": "af2d4c574fba37a51f6d1cfacf8aecc940004443f22ec530c16df03c860cd3e7",
@@ -304,16 +304,20 @@
     "lastmod": "2026-10-23T06:06:48Z"
   },
   "/articles/": {
-    "sha256": "349c66ccdc9cce818f12a2e2ec4a1a6152848711b3b6149ecadeffaa153dd4ba",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "63f006564f0ca0ffd31899f188f2383429d6b7c87d0db092c46650805ff4ea82",
+    "lastmod": "2026-10-24T08:30:42Z"
+  },
+  "/articles/klapan-scv-ili-imv-podbor/": {
+    "sha256": "f62b2f38dfef3fe11eae181e30fffaff2c90442e8fdabeb37b5e5e0af6d71448",
+    "lastmod": "2026-10-24T08:30:42Z"
   },
   "/articles/kodirovanie-forsunok-posle-zameny/": {
-    "sha256": "1bad5b0406b9984929d2a80cbbc14e2a9f0bff35145287be488d8c212b15f356",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "03d0e3e9cc0cd3720a4d4d2539dc6a8eadcacc8159baa8a275ab3e18e1af448a",
+    "lastmod": "2026-10-24T08:30:42Z"
   },
   "/articles/dizel-ploho-zavoditsya-na-holodnuyu/": {
-    "sha256": "53e966f209a2cda572fc216701f78b1457573c8db631a08511cf8bb5c5e4a6c7",
-    "lastmod": "2026-10-22T10:30:25Z"
+    "sha256": "42c512c29f99a6c5c0b18176aec961bf918e157254d7cc6a1c57d1cf1b9cd68b",
+    "lastmod": "2026-10-24T08:30:42Z"
   },
   "/articles/podbor-po-artikulu/": {
     "sha256": "ed3e1f4b6f5fad8f1db9c8ec972db0f63cb1af928f67f4afebe181e380093e3c",
