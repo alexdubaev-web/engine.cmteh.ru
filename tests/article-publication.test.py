@@ -73,6 +73,34 @@ for sku in ['9109-903', 'dz111136']:
 for listing in [out / 'index.html', out / 'articles' / 'index.html']:
     assert html.fromstring(listing.read_text(encoding='utf-8')).xpath(f'//a[@href="{valve_url}"]')
 assert sitemap.xpath('//s:loc[contains(text(), $slug)]', namespaces=ns, slug=valve_url)
+water_slug = 'povtornyy-signal-voda-v-toplive'
+water_url = f'/articles/{water_slug}/'
+water_article = html.fromstring((out / 'articles' / water_slug / 'index.html').read_text(encoding='utf-8'))
+assert water_article.xpath('string(//link[@rel="canonical"]/@href)').endswith(water_url)
+water_cover = water_article.xpath('//figure[@class="article-cover"]/img')[0]
+assert water_cover.get('src') == '/assets/water-fuel.webp'
+with Image.open(out / 'assets' / 'water-fuel.webp') as image:
+    assert image.format == 'WEBP' and image.size == (1400, 933)
+    assert (water_cover.get('width'), water_cover.get('height')) == ('1400', '933')
+    assert (out / 'assets' / 'water-fuel.webp').stat().st_size < 200_000
+assert water_cover.get('alt').startswith('Дизельный топливный фильтр-сепаратор')
+assert 'Иллюстрация создана с помощью генеративной модели' in water_article.xpath('string(//figure[@class="article-cover"]/figcaption)')
+water_graph = json.loads(water_article.xpath('//script[@type="application/ld+json"]/text()')[0])['@graph']
+water_schema = next(node for node in water_graph if node.get('@type') == 'Article')
+assert water_schema['datePublished'] == '2026-10-25'
+assert water_article.xpath('string(//meta[@property="article:published_time"]/@content)') == '2026-10-25'
+assert water_article.xpath('string(//meta[@property="og:image"]/@content)').endswith('/assets/water-fuel.webp')
+for domain in ['delphiautoparts.com', 'perkins.com', 'agcopartsandservice.com']:
+    assert water_article.xpath(f'//a[contains(@href,"{domain}")]')
+for href in ['/catalog/28272472/', '/catalog/0445120126/', '/category/injectors/',
+             '/articles/dizel-ploho-zavoditsya-na-holodnuyu/', '/articles/tnvd-pered-zakazom/']:
+    assert water_article.xpath(f'//a[@href="{href}"]')
+for sku in ['28272472', '0445120126']:
+    product = html.fromstring((out / 'catalog' / sku / 'index.html').read_text(encoding='utf-8'))
+    assert product.xpath(f'//section[contains(@class,"product-reading")]//a[@href="{water_url}"]')
+for listing in [out / 'index.html', out / 'articles' / 'index.html']:
+    assert html.fromstring(listing.read_text(encoding='utf-8')).xpath(f'//a[@href="{water_url}"]')
+assert sitemap.xpath('//s:loc[contains(text(), $slug)]', namespaces=ns, slug=water_url)
 articles_source = root / 'data' / 'articles.py'
 articles_text = articles_source.read_text(encoding='utf-8')
 articles_source.write_text(articles_text.replace("'products':['9109-903','DZ111136']", "'products':['UNKNOWN-SKU','DZ111136']", 1), encoding='utf-8')
@@ -115,8 +143,7 @@ for sku in ['0445120075', '0445120072']:
 for old_slug in ['podbor-po-artikulu', 'tnvd-pered-zakazom', 'forsunka-ili-raspylitel', 'spisok-zapchastey-dlya-zakaza']:
     assert (out / 'articles' / old_slug / 'index.html').is_file()
     assert html.fromstring((out / 'articles' / old_slug / 'index.html').read_text(encoding='utf-8')).xpath('//h1')
-for listing in [out / 'index.html', out / 'articles' / 'index.html']:
-    assert html.fromstring(listing.read_text(encoding='utf-8')).xpath(f'//a[@href="{url}"]')
+assert html.fromstring((out / 'articles' / 'index.html').read_text(encoding='utf-8')).xpath(f'//a[@href="{url}"]')
 ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
 sitemap = etree.parse(str(out / 'sitemap.xml'))
 assert sitemap.xpath('//s:loc[contains(text(), $slug)]', namespaces=ns, slug=url)

@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "a71a762cb0eab035a668693ceffb4f3fa29bf5d3b08496c82f04297ca51aebc3",
-    "lastmod": "2026-10-24T08:30:42Z"
+    "sha256": "72a8e937bc6711055ad26c354c666c398a7c1f594a7ee9f955fde2d358867f69",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/": {
     "sha256": "57b45c05383d4a76e312a8935d198ec4e283a60eada8f8c4faebd0c65417da7a",
@@ -56,8 +56,8 @@
     "lastmod": "2026-10-24T08:30:42Z"
   },
   "/catalog/28272472/": {
-    "sha256": "6ecfd4155ffaa15c4f5d52f0399c6e57f490b0d4be04daa805ff6027f07e1c2a",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "d892184de9dc3b459da5940acaa0ede6cdd136479c7a260770647dca8894048a",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/0445020610/": {
     "sha256": "e0d9b37979d098355b579d1dc36426f76aad63d134e2e8e4cff9667a4a799d06",
@@ -68,16 +68,16 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/260100-4010/": {
-    "sha256": "69435f6ad320f200637aad7a941a5d1ac3b824842aa199643dc262b1b4e5ccee",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "c18ebee96eeb403bef2f4c984677f11353360e9672448e7f953421a8209bb718",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/9323a270g/": {
     "sha256": "dc1adf0180539d0372214626c2f0718a144043f86f0f10460bd38a84e97f6e20",
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/28540276/": {
-    "sha256": "ece2b7815716ff09d0101e2ee7c1fe4332e103734f997921aadb3f6147dfa4ed",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "856ccd95a2e37ccbd1a29a5b5a9ab2d1ca766d9048e9cf5a29abf89a00556af3",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/7206-0435/": {
     "sha256": "ed561276d349c6ca99a24f4963d7253abda6df3e7ee31d0bb2f5d4afa860d02f",
@@ -100,8 +100,8 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/0445120075/": {
-    "sha256": "851bfcc69422118784d542bf275be55ea4635e6f8c4b711e9e91d5541b57315f",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "599b1fa1e3d73f3c64658002ca872ad4460840f4b0df4e94f5226ece32efe63f",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/0445020082/": {
     "sha256": "dbe9d0c06f72a77a3f4ec4f590afd50880eb59952d9492909f8db4285325df54",
@@ -128,24 +128,24 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/28308779/": {
-    "sha256": "a46202e53904b3f2ef5f664dfa257c3fd9ef9f26374f4db4e55115ebdbe3c882",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "dac69db7cfc155d58565a0d28b5fc09421d4e951b94958393cf919207c5a9b11",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/l017pbb/": {
     "sha256": "cfd58977e58cd784964ee478433c44c2d7f0e493dfca5fc303b3fab5d4bf43c2",
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/0445120126/": {
-    "sha256": "feff0f367bf6d0760aa099138073e9625448bb829027593e00c4dbfb32100560",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "d50673166a92d0530744e9564fbe531ae556a712c2733abdaf52d68d548abbb2",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/0445120072/": {
-    "sha256": "0020f953aea8e118a949b82c020a3aee50d32502d303345cdaed7efec9839c92",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "e524066a0315dcd2f8083c11932a315c9f71ad7db39babc8d18d2e09c879dcb2",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/5620004100/": {
-    "sha256": "19e8ca2e587be2bd1d16176e160ffa07816bc3ce4b2163303ce8a72f80dabb7e",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "afaef8e9448ee7d79f37e2cfc02de201e98dbab2381c1bb03d9f57eab5800c63",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/0445020540/": {
     "sha256": "a0b48d6236e7ca05d1e9043a01fde0cdf9b5e0e04bcae9e6ecf59e2cab83cb8a",
@@ -160,20 +160,20 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/0445120728/": {
-    "sha256": "97d35ff6ac560a812e5cb738e127b3633191e9d43b553d8cd07f3fd2fc8eddf9",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "01f1b202de9d8755b5894e52cadb0239dd546c73c35a2b711e24a79731da49b9",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/0445120212/": {
-    "sha256": "c8719bf9718bdd91b4c63c743683cb9a88b3c0f296d9176e3ed216342f3ded71",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "d2c02879fdc52f561826d06332389d86c2ed9323b636f47ed3b8d6ef566ffc10",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/260100-6010/": {
-    "sha256": "20bc0fc015458043b47af470f25fd1d0db3ca40ed1501d3986f68dfba9cac864",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "41f2784def5aab915472763e6a2753b4800ba284d76662cceca68c4e70f64ce3",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/0445116059/": {
-    "sha256": "8084e299ed484149f1d188b69ec6ab03d5a10a64849691d177f2a5a1c701149e",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "a3be59ea847156bb1f1d5b87c80a5368b07c6e9bf20e896bcd31ca804923b607",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/dz128161/": {
     "sha256": "f81c2b14e2ab32538880374724ea079e96cc154a7b4ff08708dd9095b6ffaf43",
@@ -184,8 +184,8 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/0445124036/": {
-    "sha256": "7bc0c6e746f757082daa4da89840e5202d5a2f1c3e269e9e5fe1233b7a6f8493",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "6989c1a9ff453d6337e8e58ba9a95beed110be0d7cade0288579a3b04c8679d7",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/0445020089/": {
     "sha256": "850695240e4633ebde6cf06413f5751a47480082e54853ecac64e12062c44c60",
@@ -200,8 +200,8 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/0445124025/": {
-    "sha256": "9bc5958c56f8885462f40c9d37767112e35eaf1fd55a808ebeb494001b0a6673",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "df7b08c297f21d0119a2b31d35cf19c21c94369a122849f2d88d174c411bb885",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/dz128160/": {
     "sha256": "fdc5c74bfb36b677fa353310b2aa11779f0175a1b09ca833e8aeadba82e1fac5",
@@ -216,8 +216,8 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/28229876/": {
-    "sha256": "24304223f4e0ce08aff7e98f6be6dea156ad8ef1ad9af40d09a3e9d767772d0b",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "887dc0a0114d215ca9245ed071b8f1a39734ef833211359d5b8eb0cbb6d494b8",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/l158pba/": {
     "sha256": "39e7586a0e3c39f600c1890a0dfb5943814eb41b6fd7a527f47f44c4aa39e0c6",
@@ -232,8 +232,8 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/0414701072/": {
-    "sha256": "85a90b34a5e774654529ebf1deb46a55a9a2e62c4a415b8189c4a8f072c4bfdd",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "718b15c6141a28bd9023e5e12c1764763db3dc815242b8bddf9b80132071e000",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/28384974/": {
     "sha256": "c23ce90b5e9a2a1d8bbbd8042e2a3844a4fdad405fb909efac568093e20b5ee3",
@@ -260,8 +260,8 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/0445120385/": {
-    "sha256": "acdfb2d81efaa39418448696c358a7f3936d5925406649d078a3293f66173c5e",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "5aaf02b73b277644c1952d14dacf3b83963c4e6716e39a537da728755a5f915e",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/0445020273/": {
     "sha256": "bd689160e43c008e03ea4d58a10c1cc5bff6b147930507c534d45cf183cff5fa",
@@ -288,24 +288,28 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/dz100212/": {
-    "sha256": "121710d7364da3142d9d411b82385532f1a6c598bf274a10be9e47553cd15a5d",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "d459e3c5e26b2cc2dc0b6d0175738ea7d5e1d3ca147ff007793a3b1c0bf4c120",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/dz100221/": {
-    "sha256": "2726d2ed4fdd91b007bd4feffb78b7601c028a958118a442d154966458f1cf80",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "95ced8908c854c7dc366825154ca9d57dfcd03b0648172ab43e267ecfe74bc63",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/dz100217/": {
-    "sha256": "b403cf204a21e3d020d6879c923e7d7f6c9deb9abfcf76a3b297e50c7e109211",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "2b3e8795834b6d2054a024e27867d492c641d82c4980068c7d4a75dbeda30f54",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/dz100216/": {
-    "sha256": "3ffc4a25620cd5c7659821030f2a61b31552f4786481dd1976c676073aeeae19",
-    "lastmod": "2026-10-23T06:06:48Z"
+    "sha256": "ab89690e0128f0c1478d7b91c2983598407f84713e3fd2db0b2750c243a4a618",
+    "lastmod": "2026-10-25T06:07:47Z"
   },
   "/articles/": {
-    "sha256": "63f006564f0ca0ffd31899f188f2383429d6b7c87d0db092c46650805ff4ea82",
-    "lastmod": "2026-10-24T08:30:42Z"
+    "sha256": "7a54801bda7db2b886826d4992409e55d93ac80bd96a90d82a7203195adbb3e3",
+    "lastmod": "2026-10-25T06:07:47Z"
+  },
+  "/articles/povtornyy-signal-voda-v-toplive/": {
+    "sha256": "29a1010cdda14848f57afa94bb8e92895aab2c6cb00c40f59a551edf997ddbae",
+    "lastmod": "2026-10-25T06:09:02Z"
   },
   "/articles/klapan-scv-ili-imv-podbor/": {
     "sha256": "f62b2f38dfef3fe11eae181e30fffaff2c90442e8fdabeb37b5e5e0af6d71448",
