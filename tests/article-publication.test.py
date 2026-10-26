@@ -39,8 +39,7 @@ assert new_article.xpath('//a[@href="/articles/forsunka-ili-raspylitel/"]')
 for sku in ['28272472', '0445120126']:
     product = html.fromstring((out / 'catalog' / sku / 'index.html').read_text(encoding='utf-8'))
     assert product.xpath(f'//section[contains(@class,"product-reading")]//a[@href="{new_url}"]')
-for listing in [out / 'index.html', out / 'articles' / 'index.html']:
-    assert html.fromstring(listing.read_text(encoding='utf-8')).xpath(f'//a[@href="{new_url}"]')
+assert html.fromstring((out / 'articles' / 'index.html').read_text(encoding='utf-8')).xpath(f'//a[@href="{new_url}"]')
 ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
 sitemap = etree.parse(str(out / 'sitemap.xml'))
 assert sitemap.xpath('//s:loc[contains(text(), $slug)]', namespaces=ns, slug=new_url)
@@ -147,5 +146,30 @@ assert html.fromstring((out / 'articles' / 'index.html').read_text(encoding='utf
 ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
 sitemap = etree.parse(str(out / 'sitemap.xml'))
 assert sitemap.xpath('//s:loc[contains(text(), $slug)]', namespaces=ns, slug=url)
+unit_slug = 'nasos-forsunka-i-common-rail'
+unit_url = f'/articles/{unit_slug}/'
+unit_article = html.fromstring((out / 'articles' / unit_slug / 'index.html').read_text(encoding='utf-8'))
+assert unit_article.xpath('string(//link[@rel="canonical"]/@href)').endswith(unit_url)
+assert unit_article.xpath('string(//meta[@property="article:published_time"]/@content)') == '2026-10-26'
+assert unit_article.xpath('//time[@datetime="2026-10-26"]')
+unit_cover = unit_article.xpath('//figure[@class="article-cover"]/img')[0]
+assert unit_cover.get('src') == '/assets/unit-injector.webp'
+with Image.open(out / 'assets' / 'unit-injector.webp') as image:
+    assert image.format == 'WEBP' and image.size == (1399, 933)
+    assert (out / 'assets' / 'unit-injector.webp').stat().st_size < 200_000
+    assert (unit_cover.get('width'), unit_cover.get('height')) == ('1399', '933')
+assert unit_cover.get('alt') and 'условная' in unit_cover.get('alt').lower()
+assert 'не фотография конкретного артикула' in unit_article.xpath('string(//figure[@class="article-cover"]/figcaption)')
+for domain in ['bosch-mobility.com', 'boschaftermarket.com']:
+    assert unit_article.xpath(f'//a[contains(@href,"{domain}")]')
+for href in ['/catalog/0414701072/', '/catalog/0445120075/', '/category/injectors/',
+             '/articles/podbor-po-artikulu/', '/articles/forsunka-ili-raspylitel/']:
+    assert unit_article.xpath(f'//a[@href="{href}"]')
+for sku in ['0414701072', '0445120075']:
+    product = html.fromstring((out / 'catalog' / sku / 'index.html').read_text(encoding='utf-8'))
+    assert product.xpath(f'//section[contains(@class,"product-reading")]//a[@href="{unit_url}"]')
+for listing in [out / 'index.html', out / 'articles' / 'index.html']:
+    assert html.fromstring(listing.read_text(encoding='utf-8')).xpath(f'//a[@href="{unit_url}"]')
+assert sitemap.xpath('//s:loc[contains(text(), $slug)]', namespaces=ns, slug=unit_url)
 temporary.cleanup()
 print('PASS article publication: cover, citations, schema/OG, listing, sitemap, reciprocal product links, and legacy articles')

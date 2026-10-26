@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "72a8e937bc6711055ad26c354c666c398a7c1f594a7ee9f955fde2d358867f69",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "bb2d0f4aacdd98a5cb1c5f70882ef3d3b3b30c2b161a9255c9694521e42d14e9",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/": {
     "sha256": "57b45c05383d4a76e312a8935d198ec4e283a60eada8f8c4faebd0c65417da7a",
@@ -68,16 +68,16 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/260100-4010/": {
-    "sha256": "c18ebee96eeb403bef2f4c984677f11353360e9672448e7f953421a8209bb718",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "d81d26b84436577aebdff87eaf1c03ee741d1134476f0a352b3b3f4250b036f0",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/9323a270g/": {
     "sha256": "dc1adf0180539d0372214626c2f0718a144043f86f0f10460bd38a84e97f6e20",
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/28540276/": {
-    "sha256": "856ccd95a2e37ccbd1a29a5b5a9ab2d1ca766d9048e9cf5a29abf89a00556af3",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "6c54b2f5e2d46c5e63a72cd90d4a0ae8615ab03c48e5cf7274a6c63e5b4dbf8a",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/7206-0435/": {
     "sha256": "ed561276d349c6ca99a24f4963d7253abda6df3e7ee31d0bb2f5d4afa860d02f",
@@ -100,8 +100,8 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/0445120075/": {
-    "sha256": "599b1fa1e3d73f3c64658002ca872ad4460840f4b0df4e94f5226ece32efe63f",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "55dacafadf6c41718c1467401b178dad0aa0d456fac74daacfef75259e4a87d0",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/0445020082/": {
     "sha256": "dbe9d0c06f72a77a3f4ec4f590afd50880eb59952d9492909f8db4285325df54",
@@ -128,8 +128,8 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/28308779/": {
-    "sha256": "dac69db7cfc155d58565a0d28b5fc09421d4e951b94958393cf919207c5a9b11",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "68903077e98b9c8fe875c7099b8ee27924bad5e02bfeb069a2504b1e21e99675",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/l017pbb/": {
     "sha256": "cfd58977e58cd784964ee478433c44c2d7f0e493dfca5fc303b3fab5d4bf43c2",
@@ -140,12 +140,12 @@
     "lastmod": "2026-10-25T06:07:47Z"
   },
   "/catalog/0445120072/": {
-    "sha256": "e524066a0315dcd2f8083c11932a315c9f71ad7db39babc8d18d2e09c879dcb2",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "a9df42a3a656f757846e004ed27f802dce43ace39b6764853089cf67299bcf7c",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/5620004100/": {
-    "sha256": "afaef8e9448ee7d79f37e2cfc02de201e98dbab2381c1bb03d9f57eab5800c63",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "449e53c2aae27f5ceb2788be46ad392e290d058c0c3bfc2cb19cd35dae4815ca",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/0445020540/": {
     "sha256": "a0b48d6236e7ca05d1e9043a01fde0cdf9b5e0e04bcae9e6ecf59e2cab83cb8a",
@@ -160,20 +160,20 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/0445120728/": {
-    "sha256": "01f1b202de9d8755b5894e52cadb0239dd546c73c35a2b711e24a79731da49b9",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "052fa4823112423ec40af18c76217b166d0f7980a7dbe860d7f507f3dd69c0a9",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/0445120212/": {
-    "sha256": "d2c02879fdc52f561826d06332389d86c2ed9323b636f47ed3b8d6ef566ffc10",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "898d4584b47dbc7452c38c02b63a0e54f396d026a2c9b770f028833f5c65679a",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/260100-6010/": {
-    "sha256": "41f2784def5aab915472763e6a2753b4800ba284d76662cceca68c4e70f64ce3",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "ff459a6abe27d2f4fced4f76e9c78adc5601b35cd960d4f1fb5fcdd0c75e0aea",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/0445116059/": {
-    "sha256": "a3be59ea847156bb1f1d5b87c80a5368b07c6e9bf20e896bcd31ca804923b607",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "ed841b186424fb454517135f06e53e688b03774fbf10b18f403f6779f6550464",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/dz128161/": {
     "sha256": "f81c2b14e2ab32538880374724ea079e96cc154a7b4ff08708dd9095b6ffaf43",
@@ -184,8 +184,8 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/0445124036/": {
-    "sha256": "6989c1a9ff453d6337e8e58ba9a95beed110be0d7cade0288579a3b04c8679d7",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "b3a7bb583d219f7c43d72d14f142aca745a347f3e68b36f46152af976ec92c45",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/0445020089/": {
     "sha256": "850695240e4633ebde6cf06413f5751a47480082e54853ecac64e12062c44c60",
@@ -200,8 +200,8 @@
     "lastmod": "2026-10-15T11:00:33Z"
   },
   "/catalog/0445124025/": {
-    "sha256": "df7b08c297f21d0119a2b31d35cf19c21c94369a122849f2d88d174c411bb885",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "43e0e5303e80750829da8bb6b9c909fd1d211adbc121b1c9f1b665036f6da4f6",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/dz128160/": {
     "sha256": "fdc5c74bfb36b677fa353310b2aa11779f0175a1b09ca833e8aeadba82e1fac5",
@@ -216,8 +216,8 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/28229876/": {
-    "sha256": "887dc0a0114d215ca9245ed071b8f1a39734ef833211359d5b8eb0cbb6d494b8",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "b9b85ce82c78f01b75134e6079e2632f509ccf765596c96c93a89c4a2c08678e",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/l158pba/": {
     "sha256": "39e7586a0e3c39f600c1890a0dfb5943814eb41b6fd7a527f47f44c4aa39e0c6",
@@ -232,8 +232,8 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/0414701072/": {
-    "sha256": "718b15c6141a28bd9023e5e12c1764763db3dc815242b8bddf9b80132071e000",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "150e3dfe2cdc5cfac61e2d8e58bff8c6dbd9bb9047226b906d8b818d562385ff",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/28384974/": {
     "sha256": "c23ce90b5e9a2a1d8bbbd8042e2a3844a4fdad405fb909efac568093e20b5ee3",
@@ -260,8 +260,8 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/0445120385/": {
-    "sha256": "5aaf02b73b277644c1952d14dacf3b83963c4e6716e39a537da728755a5f915e",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "3177a97ebe5fc3c83bc9df68c7bd26c548400e04346d1e9654cf66f856eeafa1",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/0445020273/": {
     "sha256": "bd689160e43c008e03ea4d58a10c1cc5bff6b147930507c534d45cf183cff5fa",
@@ -288,24 +288,28 @@
     "lastmod": "2026-10-22T15:25:26Z"
   },
   "/catalog/dz100212/": {
-    "sha256": "d459e3c5e26b2cc2dc0b6d0175738ea7d5e1d3ca147ff007793a3b1c0bf4c120",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "d68be22473e884dea8dc151305576441d3a9b62d5a723629278f094ac34d5059",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/dz100221/": {
-    "sha256": "95ced8908c854c7dc366825154ca9d57dfcd03b0648172ab43e267ecfe74bc63",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "e27813d68aaca30fd9356fa5d2ce02120963f053db6f581596c00d66167ba1ba",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/dz100217/": {
-    "sha256": "2b3e8795834b6d2054a024e27867d492c641d82c4980068c7d4a75dbeda30f54",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "df6adcaac043517d6b876cdeb8dcda676d1e4b0577a603f26181e511ae64eda3",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/catalog/dz100216/": {
-    "sha256": "ab89690e0128f0c1478d7b91c2983598407f84713e3fd2db0b2750c243a4a618",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "8368f8e8ed26585ee0a6c36f6eaadfa86818f585d301fad4394117aa0c6bfa57",
+    "lastmod": "2026-10-26T06:06:08Z"
   },
   "/articles/": {
-    "sha256": "7a54801bda7db2b886826d4992409e55d93ac80bd96a90d82a7203195adbb3e3",
-    "lastmod": "2026-10-25T06:07:47Z"
+    "sha256": "72c27fd90a17033d42966b6bf05d7eaebb266a265c19d8a9e513f18474995a5e",
+    "lastmod": "2026-10-26T06:06:08Z"
+  },
+  "/articles/nasos-forsunka-i-common-rail/": {
+    "sha256": "89b876ce6c732eb17d4c97983b47a605961cf216f28d783d571d18e7c9532daa",
+    "lastmod": "2026-10-26T06:09:05Z"
   },
   "/articles/povtornyy-signal-voda-v-toplive/": {
     "sha256": "29a1010cdda14848f57afa94bb8e92895aab2c6cb00c40f59a551edf997ddbae",
