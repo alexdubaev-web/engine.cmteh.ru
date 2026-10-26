@@ -24,5 +24,6 @@ return [
     // Proposed technical setting only; owner approval and policy alignment required.
     'retention_days' => 90,
     'rate_limit' => 8,
+    'mail_alert_after_seconds' => 900,
     'immediate_delivery' => true,
 ];

@@ -2,6 +2,20 @@ const CONSENT_KEY = 'cmteh.analytics-consent.v1';
 const CONSENT_VERSION = 1;
 const MAX_AGE = 90 * 24 * 60 * 60 * 1000;
 const COUNTER_ID = 113475902;
+const ALLOWED_EVENTS = new Set(['search', 'search_empty', 'add_to_cart', 'cart_open', 'form_start', 'form_error', 'form_success']);
+const EVENT_PARAMS = {
+  search: ['query_length', 'result_count', 'results_count'],
+  search_empty: ['query_length', 'result_count'],
+  add_to_cart: ['item_id', 'sku', 'quantity'],
+  cart_open: [],
+  form_start: ['kind'],
+  form_error: ['kind', 'reason'],
+  form_success: ['kind']
+};
+const ATTRIBUTION_PARAMS = [
+  ['utm_source', 100], ['utm_medium', 100], ['utm_campaign', 100],
+  ['utm_content', 100], ['utm_term', 100], ['yclid', 256]
+];
 
 export function createAnalyticsConsent({ window: win, document: doc, storage, now = Date.now }) {
   const panel = doc.querySelector('[data-analytics-panel]');
@@ -11,6 +25,7 @@ export function createAnalyticsConsent({ window: win, document: doc, storage, no
   const status = panel.querySelector('[data-analytics-status]');
   let script = null;
   let enabled = false;
+  let initialized = false;
   let closed = false;
   let loadGeneration = 0;
 
@@ -54,6 +69,7 @@ export function createAnalyticsConsent({ window: win, document: doc, storage, no
     loadGeneration += 1;
     closed = true;
     enabled = false;
+    initialized = false;
     if (script?.parentNode) script.parentNode.removeChild(script);
     script = null;
     if (typeof win.ym === 'function') win.ym(COUNTER_ID, 'destruct');
@@ -76,6 +92,21 @@ export function createAnalyticsConsent({ window: win, document: doc, storage, no
   });
   win.addEventListener('focus', recheckConsent);
   doc.addEventListener('visibilitychange', () => { if (!doc.hidden) recheckConsent(); });
+  doc.addEventListener('cm:analytics', event => {
+    const detail = event?.detail;
+    if (!initialized || !validConsent() || !detail || !ALLOWED_EVENTS.has(detail.name)) return;
+    const params = {};
+    const allowed = EVENT_PARAMS[detail.name];
+    if (detail.params && typeof detail.params === 'object' && !Array.isArray(detail.params)) {
+      for (const key of allowed) {
+        const value = detail.params[key];
+        if ((key === 'kind' || key === 'reason') && typeof value === 'string' && /^[a-z_-]{1,32}$/.test(value)) params[key] = value;
+        else if ((key === 'sku' || key === 'item_id') && typeof value === 'string' && /^[A-Za-z0-9_-]{1,64}$/.test(value)) params[key] = value;
+        else if (['query_length', 'result_count', 'results_count', 'quantity'].includes(key) && Number.isSafeInteger(value) && value >= 0 && value <= 100000) params[key] = value;
+      }
+    }
+    win.ym(COUNTER_ID, 'reachGoal', detail.name, params);
+  });
   const revoke = () => {
     stop();
     if (!setDecision('rejected')) {
@@ -100,12 +131,25 @@ export function createAnalyticsConsent({ window: win, document: doc, storage, no
       if (!validConsent()) { stop(); return; }
       if (typeof win.ym !== 'function') { stop(); return; }
       const cleanReferrer = (() => { try { const url = new URL(doc.referrer); return url.origin + url.pathname; } catch { return ''; } })();
+      const attribution = (() => {
+        const source = new URLSearchParams(win.location.search || '');
+        const clean = new URLSearchParams();
+        for (const [key, maxLength] of ATTRIBUTION_PARAMS) {
+          const values = source.getAll(key);
+          if (values.length !== 1) continue;
+          const value = values[0];
+          if (value.length > 0 && value.length <= maxLength && !/[\u0000-\u001f\u007f]/.test(value)) clean.set(key, value);
+        }
+        const query = clean.toString();
+        return `${win.location.origin}${win.location.pathname}${query ? `?${query}` : ''}`;
+      })();
       win.ym(COUNTER_ID, 'init', {
         ssr: true, webvisor: true, clickmap: true, ecommerce: 'dataLayer',
         accurateTrackBounce: true, trackLinks: true,
-        url: `${win.location.origin}${win.location.pathname}`,
+        url: attribution,
         referrer: cleanReferrer
       });
+      initialized = true;
     };
     doc.head.appendChild(script);
   };

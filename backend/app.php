@@ -45,12 +45,28 @@ final class Orders {
             if (!$index) $this->db->exec('CREATE UNIQUE INDEX orders_order_number_unique ON orders(order_number)');
         } else $this->db->exec('CREATE UNIQUE INDEX IF NOT EXISTS orders_order_number_unique ON orders(order_number)');
         $this->db->exec("CREATE TABLE IF NOT EXISTS rate_limits (bucket VARCHAR(64) PRIMARY KEY, hits INTEGER NOT NULL, expires_at BIGINT NOT NULL)");
+        $this->ensureIndex('orders','orders_created_at_idx','created_at');
+        $this->ensureIndex('orders','orders_mail_queue_idx','mail_status,next_attempt,lease_until,created_at');
+        $this->ensureIndex('rate_limits','rate_limits_expires_at_idx','expires_at');
         $this->db->exec($driver==='mysql'
             ? 'CREATE TABLE IF NOT EXISTS order_number_counter (id TINYINT PRIMARY KEY, last_number BIGINT NOT NULL) ENGINE=InnoDB'
             : 'CREATE TABLE IF NOT EXISTS order_number_counter (id INTEGER PRIMARY KEY, last_number BIGINT NOT NULL)');
         $this->db->exec($driver==='mysql'
             ? 'INSERT INTO order_number_counter (id,last_number) SELECT 1,COALESCE(MAX(order_number),0) FROM orders ON DUPLICATE KEY UPDATE id=VALUES(id)'
             : 'INSERT INTO order_number_counter (id,last_number) SELECT 1,COALESCE(MAX(order_number),0) FROM orders WHERE true ON CONFLICT(id) DO NOTHING');
+    }
+    private function ensureIndex(string $table,string $name,string $columns): void {
+        if ($this->db->getAttribute(PDO::ATTR_DRIVER_NAME)==='mysql') {
+            $q=$this->db->prepare("SHOW INDEX FROM `$table` WHERE Key_name=?");$q->execute([$name]);
+            if ($q->fetch(PDO::FETCH_ASSOC)) return;
+            $this->db->exec("CREATE INDEX `$name` ON `$table` ($columns)");
+            return;
+        }
+        $this->db->exec("CREATE INDEX IF NOT EXISTS `$name` ON `$table` ($columns)");
+    }
+    public function ready(): bool {
+        $this->db->query('SELECT id,created_at,order_number,mail_status,attempts FROM orders LIMIT 1');
+        return true;
     }
     private function encrypt(array $data): string {
         $nonce = random_bytes(SODIUM_CRYPTO_SECRETBOX_NONCEBYTES);
@@ -181,6 +197,13 @@ final class Orders {
         $rows=$this->db->query('SELECT id,created_at,order_number,mail_status,attempts FROM orders ORDER BY created_at DESC LIMIT 100')->fetchAll(PDO::FETCH_ASSOC);
         foreach ($rows as &$row) $row['reference']=$this->orderLabel($row['order_number']===null?null:(int)$row['order_number'],(int)$row['created_at']);
         unset($row);return $rows;
+    }
+    public function mailHealth(int $alertAfter=900): array {
+        $q=$this->db->query("SELECT COUNT(*) AS queued,SUM(CASE WHEN mail_status='retry' THEN 1 ELSE 0 END) AS failed,MIN(created_at) AS oldest_created,SUM(CASE WHEN attempts>=5 THEN 1 ELSE 0 END) AS high_attempts FROM orders WHERE mail_status IN ('pending','retry','sending')");
+        $row=$q->fetch(PDO::FETCH_ASSOC);
+        $oldest=$row['oldest_created']===null?0:max(0,time()-(int)$row['oldest_created']);
+        $highAttempts=(int)($row['high_attempts']??0)>0;
+        return ['queued'=>(int)$row['queued'],'failed'=>(int)($row['failed']??0),'oldestAgeSeconds'=>$oldest,'alertAfterSeconds'=>max(0,$alertAfter),'alert'=>$highAttempts||$oldest>max(0,$alertAfter)];
     }
     public function mailContent(string $id): array {
         $q=$this->db->prepare('SELECT payload,order_number,created_at FROM orders WHERE id=?');$q->execute([$id]);$row=$q->fetch(PDO::FETCH_ASSOC);

@@ -66,7 +66,7 @@
     "dz100217": "InStock",
     "dz100216": "InStock"
   },
-  "yml_enabled": false,
+  "yml_enabled": true,
   "yandex_verification": {
     "origin": "https://engine.cmteh.ru",
     "code": "8639ec96f4827a9f"

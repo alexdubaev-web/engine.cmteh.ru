@@ -5,14 +5,23 @@ require __DIR__.'/app.php';
 require __DIR__.'/export.php';
 $cmd=$argv[1] ?? 'help';
 if ($cmd==='key:generate') { echo bin2hex(random_bytes(32)).PHP_EOL; exit; }
-if ($cmd==='help') { echo "Commands: key:generate, migrate, check, mail:retry, purge, list, export ID ABSOLUTE_PATH, delete ID\n"; exit; }
+if ($cmd==='help') { echo "Commands: key:generate, migrate, check, mail:health, mail:retry, purge, list, export ID ABSOLUTE_PATH, delete ID\n"; exit; }
 try {
     if (!is_file(__DIR__.'/config.php')) throw new RuntimeException('Copy config.example.php to private config.php first');
     $c=require __DIR__.'/config.php'; $app=new Orders($c);
     switch ($cmd) {
         case 'migrate': $app->migrate(); echo "Database ready\n"; break;
         case 'check': echo 'Configuration gate: '.(Orders::configured($c)?'ready':'disabled').PHP_EOL; echo 'Database connected; orders: '.count($app->listing()).PHP_EOL; break;
-        case 'mail:retry': if (!Orders::configured($c)) throw new RuntimeException('Configuration gate disabled'); echo json_encode($app->deliver([$app,'sendMail']),JSON_THROW_ON_ERROR).PHP_EOL; break;
+        case 'mail:retry':
+            if (!Orders::configured($c)) throw new RuntimeException('Configuration gate disabled');
+            $result=$app->deliver([$app,'sendMail']);echo json_encode($result,JSON_THROW_ON_ERROR).PHP_EOL;
+            if (($result['retry']??0)>0) exit(1);
+            break;
+        case 'mail:health':
+            $health=$app->mailHealth((int)($c['mail_alert_after_seconds']??900));
+            echo json_encode($health,JSON_THROW_ON_ERROR).PHP_EOL;
+            if ($health['alert']) exit(1);
+            break;
         case 'purge': echo 'Deleted expired records: '.$app->purge().PHP_EOL; break;
         case 'list': echo json_encode($app->listing(),JSON_PRETTY_PRINT|JSON_THROW_ON_ERROR).PHP_EOL; break;
         case 'delete': echo 'Deleted records: '.$app->delete($argv[2] ?? '').PHP_EOL; break;

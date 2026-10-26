@@ -54,7 +54,7 @@ with Image.open(out / 'assets' / 'fuel-valves.webp') as image:
     assert (valve_cover.get('width'), valve_cover.get('height')) == ('1400', '933')
     assert (out / 'assets' / 'fuel-valves.webp').stat().st_size < 200_000
 assert valve_cover.get('alt').startswith('Два металлических клапана управления подачей топлива')
-assert 'Иллюстрация создана с помощью генеративной модели' in valve_article.xpath('string(//figure[@class="article-cover"]/figcaption)')
+assert not valve_article.xpath('//figure[@class="article-cover"]/figcaption')
 valve_graph = json.loads(valve_article.xpath('//script[@type="application/ld+json"]/text()')[0])['@graph']
 valve_schema = next(node for node in valve_graph if node.get('@type') == 'Article')
 assert valve_schema['datePublished'] == '2026-10-24'
@@ -83,7 +83,7 @@ with Image.open(out / 'assets' / 'water-fuel.webp') as image:
     assert (water_cover.get('width'), water_cover.get('height')) == ('1400', '933')
     assert (out / 'assets' / 'water-fuel.webp').stat().st_size < 200_000
 assert water_cover.get('alt').startswith('Дизельный топливный фильтр-сепаратор')
-assert 'Иллюстрация создана с помощью генеративной модели' in water_article.xpath('string(//figure[@class="article-cover"]/figcaption)')
+assert not water_article.xpath('//figure[@class="article-cover"]/figcaption')
 water_graph = json.loads(water_article.xpath('//script[@type="application/ld+json"]/text()')[0])['@graph']
 water_schema = next(node for node in water_graph if node.get('@type') == 'Article')
 assert water_schema['datePublished'] == '2026-10-25'
@@ -119,7 +119,7 @@ assert image_format == 'WEBP'
 assert (cover.get('width'), cover.get('height')) == tuple(str(v) for v in image_size)
 assert bool(cover.get('alt')) and (out / 'assets/cold-start.webp').stat().st_size < 200_000
 assert cover.get('alt').startswith('Топливный фильтр')
-assert 'Иллюстрация создана с помощью генеративной модели' in article.xpath('string(//figure[@class="article-cover"]/figcaption)')
+assert not article.xpath('//figure[@class="article-cover"]/figcaption')
 graph = json.loads(article.xpath('//script[@type="application/ld+json"]/text()')[0])['@graph']
 schema = next(node for node in graph if node.get('@type') == 'Article')
 assert schema['datePublished'] == '2026-10-22'
@@ -159,7 +159,7 @@ with Image.open(out / 'assets' / 'unit-injector.webp') as image:
     assert (out / 'assets' / 'unit-injector.webp').stat().st_size < 200_000
     assert (unit_cover.get('width'), unit_cover.get('height')) == ('1399', '933')
 assert unit_cover.get('alt') and 'условная' in unit_cover.get('alt').lower()
-assert 'не фотография конкретного артикула' in unit_article.xpath('string(//figure[@class="article-cover"]/figcaption)')
+assert not unit_article.xpath('//figure[@class="article-cover"]/figcaption')
 for domain in ['bosch-mobility.com', 'boschaftermarket.com']:
     assert unit_article.xpath(f'//a[contains(@href,"{domain}")]')
 for href in ['/catalog/0414701072/', '/catalog/0445120075/', '/category/injectors/',
