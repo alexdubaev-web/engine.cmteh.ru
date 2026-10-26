@@ -15,13 +15,27 @@ function fixture({ hostname = 'engine.cmteh.ru', stored = null, storageThrows = 
   const events = { allow: null, deny: null, preferences: null, keydown: null };
   const calls = [];
   const status = { textContent: '' };
-  const panel = { hidden: true, querySelector: selector => selector.includes('allow') ? { focus() {}, addEventListener: (_type, fn) => events.allow = fn } : selector.includes('deny') ? { addEventListener: (_type, fn) => events.deny = fn } : status };
+  const body = { tagName: 'BODY' };
+  let activeElement = body;
+  const focusable = () => ({ focus() { activeElement = this; }, addEventListener() {}, getAttribute: () => null });
+  const allowButton = focusable();
+  const denyButton = focusable();
+  const privacyLink = focusable();
+  const policyLink = focusable();
+  const preferencesButton = focusable();
+  allowButton.addEventListener = (_type, fn) => events.allow = fn;
+  denyButton.addEventListener = (_type, fn) => events.deny = fn;
+  preferencesButton.addEventListener = (_type, fn) => events.preferences = fn;
+  const focusables = [allowButton, denyButton, privacyLink, policyLink];
+  const panel = { hidden: true, querySelector: selector => selector.includes('allow') ? allowButton : selector.includes('deny') ? denyButton : status,
+    querySelectorAll: () => focusables, contains: element => focusables.includes(element) };
   const head = { appendChild(node) { node.parentNode = head; calls.push(node); }, removeChild(node) { node.parentNode = null; } };
   const docListeners = new Map();
-  const doc = { referrer: 'https://search.example/find?q=private#frag', hidden: false,
+  const doc = { referrer: 'https://search.example/find?q=private#frag', hidden: false, body,
+    get activeElement() { return activeElement; },
     addEventListener: (type, fn) => { events[type] = fn; docListeners.set(type, [...(docListeners.get(type) || []), fn]); },
     dispatch: (type, event) => (docListeners.get(type) || []).forEach(fn => fn(event)), head, querySelector: () => panel,
-    querySelectorAll: () => [{ addEventListener: (_type, fn) => events.preferences = fn }],
+    querySelectorAll: () => [preferencesButton],
     createElement: () => ({}), };
   const values = sharedValues || new Map(stored ? [[KEY, typeof stored === 'string' ? stored : JSON.stringify(stored)]] : []);
   let writesBlocked = storageThrows, clock = now;
@@ -32,7 +46,8 @@ function fixture({ hostname = 'engine.cmteh.ru', stored = null, storageThrows = 
   const win = { location: { hostname, origin: 'https://engine.cmteh.ru', pathname: '/catalog/', search, hash },
     addEventListener: (type, fn) => { events[type] = fn; listeners.set(type, [...(listeners.get(type) || []), fn]); },
     dispatch: (type, event) => (listeners.get(type) || []).forEach(fn => fn(event)) };
-  return { events, calls, panel, doc, win, storage, values, now, setNow: value => { clock = value; }, blockWrites: () => { writesBlocked = true; }, run: () => create({ window: win, document: doc, storage, now: () => clock }) };
+  return { events, calls, panel, doc, win, storage, values, focusables, allowButton, denyButton, preferencesButton,
+    now, setNow: value => { clock = value; }, blockWrites: () => { writesBlocked = true; }, run: () => create({ window: win, document: doc, storage, now: () => clock }) };
 }
 
 test('no counter request before a choice, and refusal persists without loading it', () => {
@@ -41,6 +56,46 @@ test('no counter request before a choice, and refusal persists without loading i
   f.events.deny();
   assert.equal(f.calls.length, 0); assert.equal(f.panel.hidden, true);
   assert.equal(JSON.parse(f.values.get(KEY)).decision, 'rejected');
+});
+
+test('visible consent dialog traps Tab and Shift+Tab at its focus boundaries', () => {
+  const f = fixture(); f.run();
+  const dispatched = [];
+  const key = shiftKey => ({ key: 'Tab', shiftKey, preventDefault() { dispatched.push('prevented'); } });
+  f.focusables[0].focus();
+  f.win.dispatch('keydown', key(true));
+  assert.equal(f.doc.activeElement, f.focusables.at(-1));
+  f.focusables.at(-1).focus();
+  f.win.dispatch('keydown', key(false));
+  assert.equal(f.doc.activeElement, f.focusables[0]);
+  assert.equal(dispatched.length, 2);
+});
+
+test('Escape from reopened consent preferences restores focus to its trigger', () => {
+  const f = fixture(); f.run();
+  f.win.dispatch('keydown', { key: 'Escape' });
+  assert.equal(f.panel.hidden, true);
+  f.preferencesButton.focus(); f.events.preferences();
+  assert.equal(f.doc.activeElement, f.allowButton);
+  f.win.dispatch('keydown', { key: 'Escape' });
+  assert.equal(f.panel.hidden, true);
+  assert.equal(f.doc.activeElement, f.preferencesButton);
+});
+
+test('allowing analytics from reopened preferences restores focus to its trigger', () => {
+  const f = fixture(); f.run();
+  f.win.dispatch('keydown', { key: 'Escape' });
+  f.preferencesButton.focus(); f.events.preferences(); f.events.allow();
+  assert.equal(f.panel.hidden, true);
+  assert.equal(f.doc.activeElement, f.preferencesButton);
+});
+
+test('refusing analytics from reopened preferences restores focus to its trigger', () => {
+  const f = fixture(); f.run();
+  f.win.dispatch('keydown', { key: 'Escape' });
+  f.preferencesButton.focus(); f.events.preferences(); f.events.deny();
+  assert.equal(f.panel.hidden, true);
+  assert.equal(f.doc.activeElement, f.preferencesButton);
 });
 
 test('accept loads the counter only then and initializes with only validated attribution parameters', () => {

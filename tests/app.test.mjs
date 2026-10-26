@@ -20,7 +20,7 @@ function makeBroadcastChannel(bus) {
   };
 }
 
-function makeTab({ indexedDB, fetchImpl, seed = '[]', channelBus = new Map(), catalog = false, kind = 'cart', productId = '' }) {
+function makeTab({ indexedDB, fetchImpl, seed = '[]', sessionSeed = null, channelBus = new Map(), catalog = false, kind = 'cart', productId = '' }) {
   const errors = [];
   const virtualConsole = new VirtualConsole();
   virtualConsole.on('jsdomError', error => errors.push(error.message));
@@ -61,6 +61,7 @@ function makeTab({ indexedDB, fetchImpl, seed = '[]', channelBus = new Map(), ca
   const anchorClick = window.HTMLAnchorElement.prototype.click;
   window.HTMLAnchorElement.prototype.click = function () { if (this.hasAttribute('download')) { this.dataset.clicked = 'true'; return; } return anchorClick.call(this); };
   window.localStorage.setItem('cm-techno-cart', seed);
+  if (sessionSeed !== null) window.sessionStorage.setItem('cm-techno-cart-quantity-checkpoint', sessionSeed);
   window.eval(source);
   return { dom, window, document: window.document, errors };
 }
@@ -68,6 +69,8 @@ function makeTab({ indexedDB, fetchImpl, seed = '[]', channelBus = new Map(), ca
 const tick = () => new Promise(resolve => setTimeout(resolve, 250));
 async function waitFor(predicate) { for (let i = 0; i < 100; i++) { if (predicate()) return true; await new Promise(resolve => setTimeout(resolve, 20)); } return false; }
 function readCartRecord(factory) { return new Promise((resolve, reject) => { const open = factory.open('cm-techno-cart-v1'); open.onerror = () => reject(open.error); open.onsuccess = () => { const db = open.result, tx = db.transaction('state', 'readonly'), request = tx.objectStore('state').get('cart'); request.onsuccess = () => resolve(request.result); request.onerror = () => reject(request.error); tx.oncomplete = () => db.close(); }; }); }
+function writeCartRecord(factory, record) { return new Promise((resolve, reject) => { const open = factory.open('cm-techno-cart-v1'); open.onupgradeneeded = () => open.result.createObjectStore('state'); open.onerror = () => reject(open.error); open.onsuccess = () => { const db = open.result, tx = db.transaction('state', 'readwrite'); tx.objectStore('state').put(record, 'cart'); tx.oncomplete = () => { db.close(); resolve(); }; tx.onerror = tx.onabort = () => { db.close(); reject(tx.error); }; }; }); }
+async function waitForCartRecord(factory, predicate) { for (let i = 0; i < 100; i++) { const record = await readCartRecord(factory); if (predicate(record)) return record; await new Promise(resolve => setTimeout(resolve, 20)); } return null; }
 const configResponse = () => Promise.resolve({ ok: true, json: async () => ({ submissionEnabled: true, consentVersion: '1', csrfToken: 'test' }) });
 
 test('catalog search matches aliases, unordered tokens, punctuated article codes, and current category', async () => {
@@ -170,6 +173,84 @@ test('disabled submission mode can save a request without requiring consent or p
   assert.deepEqual(calls, ['/api/config.php']);
   assert.equal(form.querySelector('[data-export]').hidden, false);
   await tick(); tab.dom.window.close();
+});
+
+test('aborted quantity update replays after reload only while its base cart revision still matches', async () => {
+  const indexedDB = abortOneCartWrite(new IDBFactory());
+  const first = makeTab({ indexedDB, seed: JSON.stringify([{ id: 'product-a', quantity: 1 }]) });
+  assert.ok(await waitFor(() => /Part A/.test(first.document.querySelector('#cart-items').textContent)));
+  assert.equal((await readCartRecord(indexedDB)).items[0].quantity, 1);
+  indexedDB.abortNextWrite();
+  await first.document.querySelector('[data-cart-open]').click();
+  const quantity = first.document.querySelector('[data-quantity-input]');
+  quantity.value = '3'; quantity.dispatchEvent(new first.window.Event('change', { bubbles: true }));
+  assert.ok(await waitFor(() => indexedDB.abortCount === 1));
+  const checkpoint = first.window.sessionStorage.getItem('cm-techno-cart-quantity-checkpoint');
+  assert.deepEqual(JSON.parse(checkpoint), { baseRevision: 0, quantities: { 'product-a': 3 } });
+  assert.equal((await readCartRecord(indexedDB)).items[0].quantity, 1);
+  first.dom.window.close();
+  const reloaded = makeTab({ indexedDB, sessionSeed: checkpoint });
+  assert.ok(await waitFor(() => reloaded.document.querySelector('[data-quantity-input]')?.value === '3'));
+  assert.equal((await readCartRecord(indexedDB)).items[0].quantity, 3);
+  assert.equal(reloaded.window.sessionStorage.getItem('cm-techno-cart-quantity-checkpoint'), null);
+  await tick(); reloaded.dom.window.close();
+
+  const staleDb = new IDBFactory();
+  await writeCartRecord(staleDb, { items: [{ id: 'product-a', quantity: 1 }], revision: 4 });
+  const stale = makeTab({ indexedDB: staleDb, sessionSeed: JSON.stringify({ baseRevision: 3, quantities: { 'product-a': 3 } }) });
+  assert.ok(await waitFor(() => stale.document.querySelector('[data-quantity-input]')?.value === '1'));
+  assert.equal((await readCartRecord(staleDb)).items[0].quantity, 1);
+  assert.equal(stale.window.sessionStorage.getItem('cm-techno-cart-quantity-checkpoint'), null);
+  await tick(); stale.dom.window.close();
+});
+
+test('committed cart submission clears quantity checkpoint without resurrecting items', async () => {
+  const indexedDB = new IDBFactory();
+  const tab = makeTab({ indexedDB, seed: JSON.stringify([{ id: 'product-a', quantity: 1 }]), fetchImpl: url => url === '/api/orders.php'
+    ? Promise.resolve({ ok: true, json: async () => ({ ok: true, message: 'Accepted' }) })
+    : configResponse() });
+  assert.ok(await waitFor(() => /Part A/.test(tab.document.querySelector('#cart-items').textContent)));
+  await tab.document.querySelector('[data-cart-open]').click();
+  const quantity = tab.document.querySelector('[data-quantity-input]');
+  quantity.value = '3'; quantity.dispatchEvent(new tab.window.Event('change', { bubbles: true }));
+  assert.deepEqual(JSON.parse(tab.window.sessionStorage.getItem('cm-techno-cart-quantity-checkpoint')), { baseRevision: 0, quantities: { 'product-a': 3 } });
+  assert.ok(await waitForCartRecord(indexedDB, record => record.items[0]?.quantity === 3));
+  assert.equal(tab.window.sessionStorage.getItem('cm-techno-cart-quantity-checkpoint'), null);
+  const form = tab.document.querySelector('.order-form');
+  form.dispatchEvent(new tab.window.Event('submit', { bubbles: true, cancelable: true }));
+  assert.ok(await waitFor(() => tab.document.querySelector('[data-cart-count]').textContent === '0'));
+  const reloaded = makeTab({ indexedDB, sessionSeed: tab.window.sessionStorage.getItem('cm-techno-cart-quantity-checkpoint') });
+  assert.ok(await waitFor(() => reloaded.document.querySelector('[data-cart-count]').textContent === '0'));
+  assert.equal((await readCartRecord(indexedDB)).items.length, 0);
+  assert.equal(reloaded.window.sessionStorage.getItem('cm-techno-cart-quantity-checkpoint'), null);
+  await tick(); tab.dom.window.close(); reloaded.dom.window.close();
+});
+
+test('successful submission preserves a newer aborted quantity edit made while POST is pending', async () => {
+  const indexedDB = abortOneCartWrite(new IDBFactory()); let resolveOrder;
+  const tab = makeTab({ indexedDB, seed: JSON.stringify([{ id: 'product-a', quantity: 1 }]), fetchImpl: url => url === '/api/orders.php'
+    ? new Promise(resolve => { resolveOrder = resolve; })
+    : configResponse() });
+  assert.ok(await waitFor(() => /Part A/.test(tab.document.querySelector('#cart-items').textContent)));
+  const form = tab.document.querySelector('.order-form');
+  form.dispatchEvent(new tab.window.Event('submit', { bubbles: true, cancelable: true }));
+  assert.ok(await waitFor(() => typeof resolveOrder === 'function'));
+  indexedDB.abortNextWrite();
+  await tab.document.querySelector('[data-cart-open]').click();
+  const quantity = tab.document.querySelector('[data-quantity-input]');
+  quantity.value = '3'; quantity.dispatchEvent(new tab.window.Event('change', { bubbles: true }));
+  assert.ok(await waitFor(() => indexedDB.abortCount === 1));
+  const checkpoint = tab.window.sessionStorage.getItem('cm-techno-cart-quantity-checkpoint');
+  assert.deepEqual(JSON.parse(checkpoint), { baseRevision: 0, quantities: { 'product-a': 3 } });
+  resolveOrder({ ok: true, json: async () => ({ ok: true, message: 'Accepted' }) });
+  assert.ok(await waitFor(() => form.querySelector('.form-status').textContent.includes('Accepted')));
+  assert.equal(tab.window.sessionStorage.getItem('cm-techno-cart-quantity-checkpoint'), checkpoint);
+  tab.dom.window.close();
+  const reloaded = makeTab({ indexedDB, sessionSeed: checkpoint });
+  assert.ok(await waitFor(() => reloaded.document.querySelector('[data-quantity-input]')?.value === '3'));
+  assert.equal((await readCartRecord(indexedDB)).items[0].quantity, 3);
+  assert.equal(reloaded.window.sessionStorage.getItem('cm-techno-cart-quantity-checkpoint'), null);
+  await tick(); reloaded.dom.window.close();
 });
 function failOneCartTransaction(factory) {
   let failNext = false;

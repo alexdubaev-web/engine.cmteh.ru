@@ -28,6 +28,7 @@ export function createAnalyticsConsent({ window: win, document: doc, storage, no
   let initialized = false;
   let closed = false;
   let loadGeneration = 0;
+  let previousFocus = null;
 
   const readRecord = () => {
     try {
@@ -60,8 +61,23 @@ export function createAnalyticsConsent({ window: win, document: doc, storage, no
       return false;
     }
   };
-  const show = () => { panel.hidden = false; allowButton.focus(); };
-  const hide = () => { panel.hidden = true; };
+  const show = () => {
+    if (panel.hidden) {
+      const active = doc.activeElement;
+      previousFocus = active && active !== doc.body && !panel.contains(active) && typeof active.focus === 'function' ? active : null;
+    }
+    panel.hidden = false;
+    allowButton.focus();
+  };
+  const restoreFocus = () => {
+    const target = previousFocus;
+    previousFocus = null;
+    if (target && target.isConnected !== false && typeof target.focus === 'function') target.focus();
+  };
+  const hide = (returnFocus = false) => {
+    panel.hidden = true;
+    if (returnFocus) restoreFocus();
+  };
   const validConsent = () => !closed && enabled && getDecision() === 'accepted';
   win.ym = win.ym || function () { (win.ym.a = win.ym.a || []).push(arguments); };
 
@@ -116,7 +132,7 @@ export function createAnalyticsConsent({ window: win, document: doc, storage, no
       return false;
     }
     status.textContent = '';
-    hide();
+    hide(true);
     return true;
   };
   const start = () => {
@@ -159,14 +175,37 @@ export function createAnalyticsConsent({ window: win, document: doc, storage, no
     status.textContent = '';
     closed = false;
     enabled = true;
-    hide();
+    hide(true);
     start();
   });
   denyButton.addEventListener('click', () => {
     revoke();
   });
   doc.querySelectorAll('[data-analytics-preferences]').forEach(button => button.addEventListener('click', show));
-  win.addEventListener('keydown', event => { if (event.key === 'Escape' && !panel.hidden) hide(); });
+  win.addEventListener('keydown', event => {
+    if (panel.hidden) return;
+    if (event.key === 'Escape') {
+      hide(true);
+      return;
+    }
+    if (event.key !== 'Tab') return;
+    const focusable = [...panel.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')]
+      .filter(element => !element.hidden && element.getAttribute('aria-hidden') !== 'true');
+    if (!focusable.length) {
+      event.preventDefault();
+      allowButton.focus();
+      return;
+    }
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && (doc.activeElement === first || !panel.contains(doc.activeElement))) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && (doc.activeElement === last || !panel.contains(doc.activeElement))) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
 
   const decision = getDecision();
   if (decision === 'accepted' && verifyStoredAcceptance()) { enabled = true; start(); }
