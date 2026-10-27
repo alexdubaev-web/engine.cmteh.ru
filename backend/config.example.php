@@ -21,5 +21,6 @@ return [
     ],
     'retention_days' => 90, // set to the justified period in your documents
     'rate_limit' => 8, // accepted requests per IP per 15 minutes
+    'mail_alert_after_seconds' => 900, // alert when queued delivery is older than 15 minutes
     'immediate_delivery' => true,
 ];

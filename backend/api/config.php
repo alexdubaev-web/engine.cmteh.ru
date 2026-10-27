@@ -3,7 +3,7 @@ require __DIR__.'/common.php';
 if ($_SERVER['REQUEST_METHOD']!=='GET') { header('Allow: GET'); reply(405,['ok'=>false,'message'=>'Method not allowed']); }
 if (!Orders::configured($config)) reply(200,['submissionEnabled'=>false,'consentVersion'=>'2026-10-06']);
 try {
-    $app=new Orders($config); $app->listing(); // verify schema before enabling UI
+    $app=new Orders($config); $app->ready(); // verify schema without scanning the order history
     sessionStart();
     $_SESSION['csrf'] ??= bin2hex(random_bytes(32));
     $token=$_SESSION['csrf']; session_write_close();

@@ -6,19 +6,36 @@ import vm from 'node:vm';
 const source = (await readFile(new URL('../public/assets/analytics.js', import.meta.url), 'utf8'))
   .replace('export function createAnalyticsConsent', 'function createAnalyticsConsent')
   .replace(/\ntry \{ createAnalyticsConsent\([\s\S]*$/, '\nglobalThis.createAnalyticsConsent = createAnalyticsConsent;');
-const context = vm.createContext({ URL, Date, JSON, Number });
+const context = vm.createContext({ URL, URLSearchParams, Date, JSON, Number });
 vm.runInContext(source, context);
 const create = context.createAnalyticsConsent;
 const KEY = 'cmteh.analytics-consent.v1';
 
-function fixture({ hostname = 'engine.cmteh.ru', stored = null, storageThrows = false, now = 1_800_000_000_000, sharedValues = null } = {}) {
+function fixture({ hostname = 'engine.cmteh.ru', stored = null, storageThrows = false, now = 1_800_000_000_000, sharedValues = null, search = '?utm_source=mail&utm_medium=cpc&utm_campaign=spring&utm_content=ad1&utm_term=injector&yclid=click123&q=private&token=secret', hash = '#private' } = {}) {
   const events = { allow: null, deny: null, preferences: null, keydown: null };
   const calls = [];
   const status = { textContent: '' };
-  const panel = { hidden: true, querySelector: selector => selector.includes('allow') ? { focus() {}, addEventListener: (_type, fn) => events.allow = fn } : selector.includes('deny') ? { addEventListener: (_type, fn) => events.deny = fn } : status };
+  const body = { tagName: 'BODY' };
+  let activeElement = body;
+  const focusable = () => ({ focus() { activeElement = this; }, addEventListener() {}, getAttribute: () => null });
+  const allowButton = focusable();
+  const denyButton = focusable();
+  const privacyLink = focusable();
+  const policyLink = focusable();
+  const preferencesButton = focusable();
+  allowButton.addEventListener = (_type, fn) => events.allow = fn;
+  denyButton.addEventListener = (_type, fn) => events.deny = fn;
+  preferencesButton.addEventListener = (_type, fn) => events.preferences = fn;
+  const focusables = [allowButton, denyButton, privacyLink, policyLink];
+  const panel = { hidden: true, querySelector: selector => selector.includes('allow') ? allowButton : selector.includes('deny') ? denyButton : status,
+    querySelectorAll: () => focusables, contains: element => focusables.includes(element) };
   const head = { appendChild(node) { node.parentNode = head; calls.push(node); }, removeChild(node) { node.parentNode = null; } };
-  const doc = { referrer: 'https://search.example/find?q=private#frag', hidden: false, addEventListener: (type, fn) => events[type] = fn, head, querySelector: () => panel,
-    querySelectorAll: () => [{ addEventListener: (_type, fn) => events.preferences = fn }],
+  const docListeners = new Map();
+  const doc = { referrer: 'https://search.example/find?q=private#frag', hidden: false, body,
+    get activeElement() { return activeElement; },
+    addEventListener: (type, fn) => { events[type] = fn; docListeners.set(type, [...(docListeners.get(type) || []), fn]); },
+    dispatch: (type, event) => (docListeners.get(type) || []).forEach(fn => fn(event)), head, querySelector: () => panel,
+    querySelectorAll: () => [preferencesButton],
     createElement: () => ({}), };
   const values = sharedValues || new Map(stored ? [[KEY, typeof stored === 'string' ? stored : JSON.stringify(stored)]] : []);
   let writesBlocked = storageThrows, clock = now;
@@ -26,10 +43,11 @@ function fixture({ hostname = 'engine.cmteh.ru', stored = null, storageThrows = 
     setItem: (key, value) => { if (writesBlocked) throw Error('blocked'); values.set(key, value); },
     removeItem: key => { if (writesBlocked) throw Error('blocked'); values.delete(key); } };
   const listeners = new Map();
-  const win = { location: { hostname, origin: 'https://engine.cmteh.ru', pathname: '/catalog/' },
+  const win = { location: { hostname, origin: 'https://engine.cmteh.ru', pathname: '/catalog/', search, hash },
     addEventListener: (type, fn) => { events[type] = fn; listeners.set(type, [...(listeners.get(type) || []), fn]); },
     dispatch: (type, event) => (listeners.get(type) || []).forEach(fn => fn(event)) };
-  return { events, calls, panel, doc, win, storage, values, now, setNow: value => { clock = value; }, blockWrites: () => { writesBlocked = true; }, run: () => create({ window: win, document: doc, storage, now: () => clock }) };
+  return { events, calls, panel, doc, win, storage, values, focusables, allowButton, denyButton, preferencesButton,
+    now, setNow: value => { clock = value; }, blockWrites: () => { writesBlocked = true; }, run: () => create({ window: win, document: doc, storage, now: () => clock }) };
 }
 
 test('no counter request before a choice, and refusal persists without loading it', () => {
@@ -40,7 +58,47 @@ test('no counter request before a choice, and refusal persists without loading i
   assert.equal(JSON.parse(f.values.get(KEY)).decision, 'rejected');
 });
 
-test('accept loads the counter only then and initializes configured features with clean URLs', () => {
+test('visible consent dialog traps Tab and Shift+Tab at its focus boundaries', () => {
+  const f = fixture(); f.run();
+  const dispatched = [];
+  const key = shiftKey => ({ key: 'Tab', shiftKey, preventDefault() { dispatched.push('prevented'); } });
+  f.focusables[0].focus();
+  f.win.dispatch('keydown', key(true));
+  assert.equal(f.doc.activeElement, f.focusables.at(-1));
+  f.focusables.at(-1).focus();
+  f.win.dispatch('keydown', key(false));
+  assert.equal(f.doc.activeElement, f.focusables[0]);
+  assert.equal(dispatched.length, 2);
+});
+
+test('Escape from reopened consent preferences restores focus to its trigger', () => {
+  const f = fixture(); f.run();
+  f.win.dispatch('keydown', { key: 'Escape' });
+  assert.equal(f.panel.hidden, true);
+  f.preferencesButton.focus(); f.events.preferences();
+  assert.equal(f.doc.activeElement, f.allowButton);
+  f.win.dispatch('keydown', { key: 'Escape' });
+  assert.equal(f.panel.hidden, true);
+  assert.equal(f.doc.activeElement, f.preferencesButton);
+});
+
+test('allowing analytics from reopened preferences restores focus to its trigger', () => {
+  const f = fixture(); f.run();
+  f.win.dispatch('keydown', { key: 'Escape' });
+  f.preferencesButton.focus(); f.events.preferences(); f.events.allow();
+  assert.equal(f.panel.hidden, true);
+  assert.equal(f.doc.activeElement, f.preferencesButton);
+});
+
+test('refusing analytics from reopened preferences restores focus to its trigger', () => {
+  const f = fixture(); f.run();
+  f.win.dispatch('keydown', { key: 'Escape' });
+  f.preferencesButton.focus(); f.events.preferences(); f.events.deny();
+  assert.equal(f.panel.hidden, true);
+  assert.equal(f.doc.activeElement, f.preferencesButton);
+});
+
+test('accept loads the counter only then and initializes with only validated attribution parameters', () => {
   const f = fixture(); f.run(); assert.equal(f.calls.length, 0);
   f.events.allow(); assert.equal(f.calls.length, 1);
   const script = f.calls[0];
@@ -52,8 +110,37 @@ test('accept loads the counter only then and initializes configured features wit
   assert.deepEqual({ ssr: init[2].ssr, webvisor: init[2].webvisor, clickmap: init[2].clickmap,
     ecommerce: init[2].ecommerce, accurateTrackBounce: init[2].accurateTrackBounce, trackLinks: init[2].trackLinks },
   { ssr: true, webvisor: true, clickmap: true, ecommerce: 'dataLayer', accurateTrackBounce: true, trackLinks: true });
-  assert.equal(init[2].url, 'https://engine.cmteh.ru/catalog/');
+  assert.equal(init[2].url, 'https://engine.cmteh.ru/catalog/?utm_source=mail&utm_medium=cpc&utm_campaign=spring&utm_content=ad1&utm_term=injector&yclid=click123');
   assert.equal(init[2].referrer, 'https://search.example/find');
+});
+
+test('invalid, duplicated, oversized, private query values and fragments are excluded from attribution URL', () => {
+  const f = fixture({ search: '?utm_source=ok&utm_source=duplicate&utm_medium=' + 'x'.repeat(101) + '&utm_campaign=summer&yclid=' + 'y'.repeat(257) + '&q=private', hash: '#private' });
+  f.run(); f.events.allow(); f.calls[0].onload();
+  const init = f.win.ym.a.find(args => args[1] === 'init');
+  assert.equal(init[2].url, 'https://engine.cmteh.ru/catalog/?utm_campaign=summer');
+});
+
+test('only allowlisted analytics events reach Yandex after init, with safe params and no pre-init buffering', () => {
+  const f = fixture(); f.run();
+  const event = (name, params) => f.doc.dispatch('cm:analytics', { detail: { name, params } });
+  event('search', { query: 'private text', query_length: 13, result_count: 4, email: 'person@example.com' });
+  f.events.allow();
+  event('add_to_cart', { sku: '0445120075', quantity: 1 });
+  assert.equal(f.win.ym.a?.some(args => args[1] === 'reachGoal') || false, false);
+  f.calls[0].onload();
+  event('search', { query: 'private text', query_length: 13, result_count: 4, email: 'person@example.com' });
+  event('form_error', { kind: 'inquiry', reason: 'contact_format', contact: 'person@example.com' });
+  event('form_success', { kind: 'cart', name: 'Person', phone: '+7 999 123-45-67' });
+  event('purchase', { total: 1000 });
+  const goals = f.win.ym.a.filter(args => args[1] === 'reachGoal');
+  assert.equal(goals.length, 3);
+  assert.deepEqual(Array.from(goals, args => args[2]), ['search', 'form_error', 'form_success']);
+  assert.deepEqual(JSON.parse(JSON.stringify(Array.from(goals, args => args[3]))), [
+    { query_length: 13, result_count: 4 },
+    { kind: 'inquiry', reason: 'contact_format' },
+    { kind: 'cart' }
+  ]);
 });
 
 test('expired, malformed, and inaccessible consent records never load analytics', () => {
