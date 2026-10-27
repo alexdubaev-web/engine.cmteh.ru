@@ -41,6 +41,8 @@ try {
     $retry=runConsole($script,'mail:retry');$retryReport=json_decode($retry['stdout'],true);
     cliCheck($retry['code']===1&&$retryReport['retry']===3,'mail:retry returns nonzero when delivery attempts fail');
 } finally {
+    if (isset($insert) && $insert instanceof PDOStatement) $insert->closeCursor();
+    unset($insert,$db);
     if (is_dir($root)) {
         $iterator=new RecursiveIteratorIterator(new RecursiveDirectoryIterator($root,FilesystemIterator::SKIP_DOTS),RecursiveIteratorIterator::CHILD_FIRST);
         foreach ($iterator as $entry) $entry->isDir()?rmdir($entry->getPathname()):unlink($entry->getPathname());
