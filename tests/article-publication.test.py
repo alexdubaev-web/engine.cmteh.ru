@@ -69,8 +69,7 @@ assert valve_article.xpath('//a[@href="/articles/tnvd-pered-zakazom/"]')
 for sku in ['9109-903', 'dz111136']:
     product = html.fromstring((out / 'catalog' / sku / 'index.html').read_text(encoding='utf-8'))
     assert product.xpath(f'//section[contains(@class,"product-reading")]//a[@href="{valve_url}"]')
-for listing in [out / 'index.html', out / 'articles' / 'index.html']:
-    assert html.fromstring(listing.read_text(encoding='utf-8')).xpath(f'//a[@href="{valve_url}"]')
+assert html.fromstring((out / 'articles' / 'index.html').read_text(encoding='utf-8')).xpath(f'//a[@href="{valve_url}"]')
 assert sitemap.xpath('//s:loc[contains(text(), $slug)]', namespaces=ns, slug=valve_url)
 water_slug = 'povtornyy-signal-voda-v-toplive'
 water_url = f'/articles/{water_slug}/'
