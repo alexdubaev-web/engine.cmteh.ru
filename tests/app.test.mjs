@@ -72,6 +72,7 @@ function readCartRecord(factory) { return new Promise((resolve, reject) => { con
 function writeCartRecord(factory, record) { return new Promise((resolve, reject) => { const open = factory.open('cm-techno-cart-v1'); open.onupgradeneeded = () => open.result.createObjectStore('state'); open.onerror = () => reject(open.error); open.onsuccess = () => { const db = open.result, tx = db.transaction('state', 'readwrite'); tx.objectStore('state').put(record, 'cart'); tx.oncomplete = () => { db.close(); resolve(); }; tx.onerror = tx.onabort = () => { db.close(); reject(tx.error); }; }; }); }
 async function waitForCartRecord(factory, predicate) { for (let i = 0; i < 100; i++) { const record = await readCartRecord(factory); if (predicate(record)) return record; await new Promise(resolve => setTimeout(resolve, 20)); } return null; }
 const configResponse = () => Promise.resolve({ ok: true, json: async () => ({ submissionEnabled: true, consentVersion: '1', csrfToken: 'test' }) });
+const acceptedOrderResponse = (requestId, fields = {}) => Promise.resolve({ ok: true, json: async () => ({ ok: true, message: 'Accepted', requestId, orderNumber: 42, createdAt: Date.parse('2026-10-06T21:30:00Z') / 1000, ...fields }) });
 
 test('catalog search matches aliases, unordered tokens, punctuated article codes, and current category', async () => {
   const fetchCalls = [], tab = makeTab({ indexedDB: new IDBFactory(), catalog: true, fetchImpl: (...args) => { fetchCalls.push(args); return configResponse(); } });
@@ -107,7 +108,7 @@ test('no-results inquiry link pre-fills the description with the current search'
 test('inquiry from a product card includes that product in the submitted items', async () => {
   let submitted;
   const events = [], tab = makeTab({ indexedDB: new IDBFactory(), kind: 'inquiry', productId: 'product-a', fetchImpl: (url, options) => {
-    if (url === '/api/orders.php') { submitted = JSON.parse(options.body); return Promise.resolve({ ok: true, json: async () => ({ ok: true, message: 'Accepted' }) }); }
+    if (url === '/api/orders.php') { submitted = JSON.parse(options.body); return acceptedOrderResponse(submitted.requestId); }
     return configResponse();
   } });
   tab.document.addEventListener('cm:analytics', event => events.push(event.detail));
@@ -160,6 +161,59 @@ test('invalid inquiry reports a non-personal form error and does not submit', as
   await tick(); tab.dom.window.close();
 });
 
+test('malformed or mismatched success responses are not accepted or tracked', async t => {
+  const cases = [
+    ['truthy non-boolean ok', requestId => ({ ok: 'true', requestId, createdAt: 1791322200, orderNumber: 42 })],
+    ['foreign request id', requestId => ({ ok: true, requestId: '00000000-0000-4000-8000-000000000000', createdAt: 1791322200, orderNumber: 42 })],
+    ['missing timestamp', requestId => ({ ok: true, requestId, orderNumber: 42 })],
+    ['unrepresentable timestamp', requestId => ({ ok: true, requestId, createdAt: Number.MAX_SAFE_INTEGER, orderNumber: 42 })],
+    ['invalid order number', requestId => ({ ok: true, requestId, createdAt: 1791322200, orderNumber: 0 })],
+    ['array response', () => []]
+  ];
+  for (const [name, makePayload] of cases) await t.test(name, async () => {
+    const events = [];
+    const tab = makeTab({ indexedDB: new IDBFactory(), kind: 'inquiry', fetchImpl: (url, options) => url === '/api/orders.php'
+      ? Promise.resolve({ ok: true, json: async () => makePayload(JSON.parse(options.body).requestId) })
+      : configResponse() });
+    tab.document.addEventListener('cm:analytics', event => events.push(event.detail));
+    const form = tab.document.querySelector('.order-form');
+    form.elements.comment.value = 'Проверка запроса';
+    form.dispatchEvent(new tab.window.Event('submit', { bubbles: true, cancelable: true }));
+    assert.ok(await waitFor(() => events.some(event => event.name === 'form_error' && event.params.reason === 'server_rejected')));
+    assert.equal(events.filter(event => event.name === 'form_success').length, 0);
+    await tick(); tab.dom.window.close();
+  });
+});
+
+test('only a matching acknowledgement is counted once, while legacy receipts and new requests remain valid', async () => {
+  const pending = [], events = [], submittedIds = [];
+  const tab = makeTab({ indexedDB: new IDBFactory(), kind: 'inquiry', fetchImpl: (url, options) => url === '/api/orders.php'
+    ? (submittedIds.push(JSON.parse(options.body).requestId), new Promise(resolve => pending.push(resolve)))
+    : configResponse() });
+  tab.document.addEventListener('cm:analytics', event => events.push(event.detail));
+  const form = tab.document.querySelector('.order-form');
+  form.elements.comment.value = 'Проверка запроса';
+  form.dispatchEvent(new tab.window.Event('submit', { bubbles: true, cancelable: true }));
+  assert.ok(await waitFor(() => pending.length === 1));
+  form.dispatchEvent(new tab.window.Event('submit', { bubbles: true, cancelable: true }));
+  assert.ok(await waitFor(() => pending.length === 2));
+  assert.equal(submittedIds[0], submittedIds[1]);
+  pending[0](await acceptedOrderResponse(submittedIds[0], { orderNumber: null }));
+  pending[1](await acceptedOrderResponse(submittedIds[1], { orderNumber: null }));
+  assert.ok(await waitFor(() => events.filter(event => event.name === 'form_success').length === 1));
+  assert.match(form.querySelector('.form-status').textContent, /Старая заявка от/);
+  assert.equal(JSON.stringify(events).includes(submittedIds[0]), false, 'request IDs stay out of analytics events');
+
+  form.elements.comment.value = 'Следующий отдельный запрос';
+  form.elements.comment.dispatchEvent(new tab.window.Event('input', { bubbles: true }));
+  form.dispatchEvent(new tab.window.Event('submit', { bubbles: true, cancelable: true }));
+  assert.ok(await waitFor(() => pending.length === 3));
+  assert.notEqual(submittedIds[2], submittedIds[0]);
+  pending[2](await acceptedOrderResponse(submittedIds[2]));
+  assert.ok(await waitFor(() => events.filter(event => event.name === 'form_success').length === 2));
+  await tick(); tab.dom.window.close();
+});
+
 test('disabled submission mode can save a request without requiring consent or posting it', async () => {
   const calls = [], tab = makeTab({ indexedDB: new IDBFactory(), kind: 'inquiry', fetchImpl: (url, options) => {
     calls.push(url);
@@ -206,8 +260,8 @@ test('aborted quantity update replays after reload only while its base cart revi
 
 test('committed cart submission clears quantity checkpoint without resurrecting items', async () => {
   const indexedDB = new IDBFactory();
-  const tab = makeTab({ indexedDB, seed: JSON.stringify([{ id: 'product-a', quantity: 1 }]), fetchImpl: url => url === '/api/orders.php'
-    ? Promise.resolve({ ok: true, json: async () => ({ ok: true, message: 'Accepted' }) })
+  const tab = makeTab({ indexedDB, seed: JSON.stringify([{ id: 'product-a', quantity: 1 }]), fetchImpl: (url, options) => url === '/api/orders.php'
+    ? acceptedOrderResponse(JSON.parse(options.body).requestId)
     : configResponse() });
   assert.ok(await waitFor(() => /Part A/.test(tab.document.querySelector('#cart-items').textContent)));
   await tab.document.querySelector('[data-cart-open]').click();
@@ -227,9 +281,9 @@ test('committed cart submission clears quantity checkpoint without resurrecting 
 });
 
 test('successful submission preserves a newer aborted quantity edit made while POST is pending', async () => {
-  const indexedDB = abortOneCartWrite(new IDBFactory()); let resolveOrder;
-  const tab = makeTab({ indexedDB, seed: JSON.stringify([{ id: 'product-a', quantity: 1 }]), fetchImpl: url => url === '/api/orders.php'
-    ? new Promise(resolve => { resolveOrder = resolve; })
+  const indexedDB = abortOneCartWrite(new IDBFactory()); let resolveOrder, submittedRequestId;
+  const tab = makeTab({ indexedDB, seed: JSON.stringify([{ id: 'product-a', quantity: 1 }]), fetchImpl: (url, options) => url === '/api/orders.php'
+    ? (submittedRequestId = JSON.parse(options.body).requestId, new Promise(resolve => { resolveOrder = resolve; }))
     : configResponse() });
   assert.ok(await waitFor(() => /Part A/.test(tab.document.querySelector('#cart-items').textContent)));
   const form = tab.document.querySelector('.order-form');
@@ -242,7 +296,7 @@ test('successful submission preserves a newer aborted quantity edit made while P
   assert.ok(await waitFor(() => indexedDB.abortCount === 1));
   const checkpoint = tab.window.sessionStorage.getItem('cm-techno-cart-quantity-checkpoint');
   assert.deepEqual(JSON.parse(checkpoint), { baseRevision: 0, quantities: { 'product-a': 3 } });
-  resolveOrder({ ok: true, json: async () => ({ ok: true, message: 'Accepted' }) });
+  resolveOrder(await acceptedOrderResponse(submittedRequestId));
   assert.ok(await waitFor(() => form.querySelector('.form-status').textContent.includes('Accepted')));
   assert.equal(tab.window.sessionStorage.getItem('cm-techno-cart-quantity-checkpoint'), checkpoint);
   tab.dom.window.close();
@@ -365,7 +419,7 @@ test('add followed immediately by submit includes the pending cart mutation', as
   const reachedOrder = await waitFor(() => typeof resolveOrder === 'function');
   assert.ok(reachedOrder, `status=${form.querySelector('.form-status').textContent}`);
   assert.deepEqual(payload.items, [{ id: 'product-a', quantity: 1 }]);
-  resolveOrder({ ok: true, json: async () => ({ ok: true, message: 'Accepted', requestId: 'request-123', orderNumber: 42, createdAt: Date.parse('2026-10-06T21:30:00Z') / 1000 }) });
+  resolveOrder(await acceptedOrderResponse(payload.requestId));
   await waitFor(() => form.querySelector('.form-status').textContent.includes('Заявка № 42 от 07.10.2026'));
   assert.match(form.querySelector('.form-status').textContent, /Заявка № 42 от 07\.10\.2026/);
   await tick();
@@ -374,9 +428,9 @@ test('add followed immediately by submit includes the pending cart mutation', as
 
 test('successful submit preserves cart and form edits made while the request is pending', async () => {
   const indexedDB = new IDBFactory();
-  let resolveOrder;
-  const fetchImpl = url => url === '/api/orders.php'
-    ? new Promise(resolve => { resolveOrder = resolve; })
+  let resolveOrder, submittedRequestId;
+  const fetchImpl = (url, options) => url === '/api/orders.php'
+    ? (submittedRequestId = JSON.parse(options.body).requestId, new Promise(resolve => { resolveOrder = resolve; }))
     : configResponse();
   const tab = makeTab({ indexedDB, fetchImpl, seed: JSON.stringify([{ id: 'product-a', quantity: 1 }]) });
   await waitFor(() => /Part A/.test(tab.document.querySelector('#cart-items').textContent));
@@ -388,7 +442,7 @@ test('successful submit preserves cart and form edits made while the request is 
   document.querySelector('[data-add="product-b"]').click();
   form.elements.name.value = 'Edited while sending';
   form.elements.name.dispatchEvent(new tab.window.Event('input', { bubbles: true }));
-  resolveOrder({ ok: true, json: async () => ({ ok: true, message: 'Accepted', requestId: 'request-123' }) });
+  resolveOrder(await acceptedOrderResponse(submittedRequestId));
   await waitFor(() => tab.document.querySelector('.form-status').textContent.includes('Accepted'));
   assert.doesNotMatch(tab.document.querySelector('.form-status').textContent, /Старая заявка от|request-123/);
   assert.match(document.querySelector('#cart-items').textContent, /Part A/);
@@ -400,9 +454,9 @@ test('successful submit preserves cart and form edits made while the request is 
 
 test('clear uses the submitted revision and does not erase an ABA remove-and-readd', async () => {
   const indexedDB = new IDBFactory();
-  let resolveOrder;
-  const fetchImpl = url => url === '/api/orders.php'
-    ? new Promise(resolve => { resolveOrder = resolve; })
+  let resolveOrder, submittedRequestId;
+  const fetchImpl = (url, options) => url === '/api/orders.php'
+    ? (submittedRequestId = JSON.parse(options.body).requestId, new Promise(resolve => { resolveOrder = resolve; }))
     : configResponse();
   const tab = makeTab({ indexedDB, fetchImpl, seed: JSON.stringify([{ id: 'product-a', quantity: 1 }]) });
   await waitFor(() => /Part A/.test(tab.document.querySelector('#cart-items').textContent));
@@ -413,7 +467,7 @@ test('clear uses the submitted revision and does not erase an ABA remove-and-rea
   await waitFor(() => tab.document.querySelector('[data-cart-count]').textContent === '0');
   tab.document.querySelector('[data-add="product-a"]').click();
   await waitFor(() => /Part A/.test(tab.document.querySelector('#cart-items').textContent));
-  resolveOrder({ ok: true, json: async () => ({ ok: true, message: 'Accepted', requestId: 'request-123' }) });
+  resolveOrder(await acceptedOrderResponse(submittedRequestId));
   await waitFor(() => form.querySelector('.form-status').textContent.includes('Accepted'));
   assert.doesNotMatch(form.querySelector('.form-status').textContent, /Старая заявка от|request-123/);
   assert.match(tab.document.querySelector('#cart-items').textContent, /Part A/);
@@ -423,8 +477,8 @@ test('clear uses the submitted revision and does not erase an ABA remove-and-rea
 
 test('an empty committed cart does not resurrect legacy items and remains usable without IndexedDB', async () => {
   const indexedDB = new IDBFactory();
-  const fetchImpl = url => url === '/api/orders.php'
-    ? Promise.resolve({ ok: true, json: async () => ({ ok: true, message: 'Accepted', requestId: 'request-123' }) })
+  const fetchImpl = (url, options) => url === '/api/orders.php'
+    ? acceptedOrderResponse(JSON.parse(options.body).requestId)
     : configResponse();
   const first = makeTab({ indexedDB, fetchImpl, seed: JSON.stringify([{ id: 'product-a', quantity: 1 }]) });
   await waitFor(() => /Part A/.test(first.document.querySelector('#cart-items').textContent));

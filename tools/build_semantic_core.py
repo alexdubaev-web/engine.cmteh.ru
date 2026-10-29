@@ -109,7 +109,7 @@ def unknown_query_tokens(text, code=None):
 
 def article_records():
     text = ARTICLES.read_text(encoding="utf-8")
-    slugs = re.findall(r"'slug':'([^']+)'", text)
+    slugs = re.findall(r"['\"]slug['\"]\s*:\s*['\"]([^'\"]+)['\"]", text)
     return [{"slug": s, "url": f"/articles/{s}/", "status": "published"} for s in slugs]
 
 def route_query(text, code, by_code, page_map, categories, brand_category_pairs):
@@ -174,6 +174,8 @@ def route_query(text, code, by_code, page_map, categories, brand_category_pairs)
                 return "", "manual_review", "Для указанной пары бренд/тип нет подтверждённой позиции текущего каталога"
         if "клапанов" in n and any(d in n for d in ("2 клапан", "4 клапан", "8 клапан", "16 клапан", "двигател")):
             return "", "manual_review", "Количество клапанов двигателя не задаёт тип топливной детали"
+        if category == "injectors" and any(term in n for term in ("bosch", "бош")):
+            return "category:injectors/bosch", "existing_category", "Существующая страница Bosch-форсунок соответствует подтверждённой паре бренд/тип"
         if "топливная аппаратура" in n and not any(x in n for x in ("купить", "цена", "заказать")):
             if re.search(r"\b(москва|санкт-петербург|воронеж|екатеринбург|новосибирск|челябинск|тюмень|барнаул|ногинск|доставка|дастер|форд|транзит|фольксваген|ниссан|камаз|мтз|юмз|ямз|д245|дизель|механическ|электронн|тепловоз|экскаватор|трактор)\b",n):
                 return "", "manual_review", "Уточнение требует подтверждения ассортимента, географии или совместимости; отдельной страницы нет"
@@ -273,6 +275,9 @@ def build():
             page_map.append({"target_id":target_id,"target_type":"existing_support","url":path,"sku":"","owned_codes":"","brand":"","category":"","secondary_links":"","status":"active"})
     for cat in cats:
         page_map.append({"target_id": f"category:{cat}", "target_type": "existing_category", "url": f"/category/{cat}/", "sku": "", "owned_codes": "", "brand": "", "category": cat, "secondary_links": "", "status": "active"})
+    if "/category/injectors/bosch/" in seo_state:
+        bosch_injectors = [p for p in products if p.get("brand", "").casefold() == "bosch" and p.get("category") == "injectors"]
+        page_map.append({"target_id": "category:injectors/bosch", "target_type": "existing_category", "url": "/category/injectors/bosch/", "sku": "|".join(sorted(p["sku"] for p in bosch_injectors)), "owned_codes": "", "brand": "Bosch", "category": "injectors", "secondary_links": "/category/injectors/|/brands/bosch/", "status": "active"})
     for brand in brands:
         page_map.append({"target_id": f"brand:{brand}", "target_type": "existing_brand", "url": f"/brands/{brand_urls.get(brand, norm(brand).replace(' ', '-'))}/", "sku": "", "owned_codes": "", "brand": brand, "category": "", "secondary_links": "", "status": "active"})
     for a in articles:
@@ -426,6 +431,13 @@ def validate(outputs, coverage, products, codes, active, candidate):
     assert all(r["primary_target"] in known_targets and known_targets[r["primary_target"]]["url"] == r["target_url"] for r in active)
     assert all((r["target_status"]=="proposed" and r["secondary_link"] in seo_state) or (r["target_status"]=="existing" and r["target_url"] in seo_state) for r in active)
     assert all(isinstance(p["sku"], str) for p in core["products"])
+    assert [a["slug"] for a in core["articles"]] == [a["slug"] for a in article_records()]
+    assert len(core["articles"]) == coverage["articles"]
+    assert core["articles"] and len(core["articles"]) >= 11
+    bosch_page = next(r for r in map_rows if r["target_id"] == "category:injectors/bosch")
+    assert bosch_page["url"] == "/category/injectors/bosch/" and len(bosch_page["sku"].split("|")) == 10
+    bosch_keywords = [r for r in active if "bosch" in r["normalized_query"] or "бош" in r["normalized_query"]]
+    assert all(r["primary_target"] != "category:injectors" for r in bosch_keywords if r["intent"] == "commercial" and ("форсун" in r["normalized_query"] or "инжектор" in r["normalized_query"]))
     obs_rows=list(csv.DictReader(outputs["observations.csv"].decode("utf-8").splitlines()))
     assert len({r["observation_id"] for r in obs_rows}) == coverage["observation_records"]
     assert all(r["sku"] in {p["sku"] for p in products} for r in map_rows if r["target_type"]=="existing_product")

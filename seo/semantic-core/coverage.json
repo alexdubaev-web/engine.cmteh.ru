@@ -1,6 +1,6 @@
 {
   "accepted_observed_keywords": 397,
-  "articles": 9,
+  "articles": 11,
   "brand_category_groups": 19,
   "code_record_kinds": {
     "additional_code": 41,
@@ -17,7 +17,7 @@
     "products": "data/products.json",
     "products_sha256": "e44cac341ff989944c53f6a95fb4cce209d06fa9d104af436acd1942b574bb87",
     "seo_state": "data/seo-state.json",
-    "seo_state_sha256": "c396a1d2814f572fcc525bc60c5630caf18d827ade6d9d3b7d54b3757dcc2878",
+    "seo_state_sha256": "5c7639c82f13d9182cb0dfd9fd1f862f953b8c5b2ac664c2b3b05cb8ad64c388",
     "serp_research": "seo/semantic-core/serp-research.json",
     "serp_research_sha256": "83bb5d125464fe2dbda85985668fcf1721dbcad87e7f0a6985c54ac00e991517",
     "sha256": "a668d19902bf63dc247ebb0970b6c149b9608ac9754c3d797da3e9fbc279330a",

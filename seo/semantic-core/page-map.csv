@@ -73,11 +73,14 @@ category:nozzles,existing_category,/category/nozzles/,,,,nozzles,,active
 category:other,existing_category,/category/other/,,,,other,,active
 category:pumps,existing_category,/category/pumps/,,,,pumps,,active
 category:valves,existing_category,/category/valves/,,,,valves,,active
+category:injectors/bosch,existing_category,/category/injectors/bosch/,0414701072|0445116059|0445120072|0445120075|0445120126|0445120212|0445120385|0445120728|0445124025|0445124036,,Bosch,injectors,/category/injectors/|/brands/bosch/,active
 brand:Bosch,existing_brand,/brands/bosch/,,,Bosch,,,active
 brand:Delphi,existing_brand,/brands/delphi/,,,Delphi,,,active
 brand:Denso,existing_brand,/brands/denso/,,,Denso,,,active
 brand:John Deere,existing_brand,/brands/john-deere/,,,John Deere,,,active
 brand:VDO / Vitesco (Aumovio),existing_brand,/brands/vdo/,,,VDO / Vitesco (Aumovio),,,active
+article:posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya,existing_article,/articles/posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya/,,,,,,published
+article:uplotneniya-pri-zamene-forsunki,existing_article,/articles/uplotneniya-pri-zamene-forsunki/,,,,,,published
 article:nasos-forsunka-i-common-rail,existing_article,/articles/nasos-forsunka-i-common-rail/,,,,,,published
 article:povtornyy-signal-voda-v-toplive,existing_article,/articles/povtornyy-signal-voda-v-toplive/,,,,,,published
 article:klapan-scv-ili-imv-podbor,existing_article,/articles/klapan-scv-ili-imv-podbor/,,,,,,published
