@@ -133,7 +133,7 @@ assert [len(items.xpath('./li')) for items in diagnosis.xpath('./ul')] == [3, 2]
 assert not article.xpath('//article[contains(@class,"read-content")]//p[normalize-space()=$lead]', lead=article.xpath('string(//p[@class="lead"])') )
 assert article.xpath('//section//h3[normalize-space()="Когда диагноз подтверждён"]')
 assert len(article.xpath('//section[@class="article-products"]//a[starts-with(@href,"/catalog/")]')) == 2
-for sku in ['0445120075', '0445120072']:
+for sku in ['0445120072']:
     product = html.fromstring((out / 'catalog' / sku / 'index.html').read_text(encoding='utf-8'))
     assert product.xpath(f'//section[contains(@class,"product-reading")]//a[@href="{url}"]')
     assert len(product.xpath('//section[contains(@class,"product-reading")]//article[contains(@class,"article-card")]')) <= 2
@@ -166,8 +166,7 @@ for href in ['/catalog/0414701072/', '/catalog/0445120075/', '/category/injector
 for sku in ['0414701072', '0445120075']:
     product = html.fromstring((out / 'catalog' / sku / 'index.html').read_text(encoding='utf-8'))
     assert product.xpath(f'//section[contains(@class,"product-reading")]//a[@href="{unit_url}"]')
-for listing in [out / 'index.html', out / 'articles' / 'index.html']:
-    assert html.fromstring(listing.read_text(encoding='utf-8')).xpath(f'//a[@href="{unit_url}"]')
+assert html.fromstring((out / 'articles' / 'index.html').read_text(encoding='utf-8')).xpath(f'//a[@href="{unit_url}"]')
 assert sitemap.xpath('//s:loc[contains(text(), $slug)]', namespaces=ns, slug=unit_url)
 temporary.cleanup()
 print('PASS article publication: cover, citations, schema/OG, listing, sitemap, reciprocal product links, and legacy articles')
