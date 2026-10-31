@@ -79,6 +79,7 @@ brand:Delphi,existing_brand,/brands/delphi/,,,Delphi,,,active
 brand:Denso,existing_brand,/brands/denso/,,,Denso,,,active
 brand:John Deere,existing_brand,/brands/john-deere/,,,John Deere,,,active
 brand:VDO / Vitesco (Aumovio),existing_brand,/brands/vdo/,,,VDO / Vitesco (Aumovio),,,active
+article:protokol-proverki-forsunki,existing_article,/articles/protokol-proverki-forsunki/,,,,,,published
 article:proverka-podlinnosti-forsunki-pered-pokupkoy,existing_article,/articles/proverka-podlinnosti-forsunki-pered-pokupkoy/,,,,,,published
 article:posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya,existing_article,/articles/posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya/,,,,,,published
 article:uplotneniya-pri-zamene-forsunki,existing_article,/articles/uplotneniya-pri-zamene-forsunki/,,,,,,published

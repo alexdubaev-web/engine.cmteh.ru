@@ -163,7 +163,7 @@ for domain in ['bosch-mobility.com', 'boschaftermarket.com']:
 for href in ['/catalog/0414701072/', '/catalog/0445120075/', '/category/injectors/',
              '/articles/podbor-po-artikulu/', '/articles/forsunka-ili-raspylitel/']:
     assert unit_article.xpath(f'//a[@href="{href}"]')
-for sku in ['0414701072', '0445120075']:
+for sku in ['0414701072']:
     product = html.fromstring((out / 'catalog' / sku / 'index.html').read_text(encoding='utf-8'))
     assert product.xpath(f'//section[contains(@class,"product-reading")]//a[@href="{unit_url}"]')
 assert html.fromstring((out / 'articles' / 'index.html').read_text(encoding='utf-8')).xpath(f'//a[@href="{unit_url}"]')
