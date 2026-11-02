@@ -31,11 +31,15 @@ class GeneratedFlowTests(unittest.TestCase):
     self.assertTrue(img.get('alt'))
  def test_inquiry_carries_visible_product_context(self):
   from lxml import html
-  page=html.fromstring((self.root/'dist/catalog/0445120075/index.html').read_text(encoding='utf-8'))
-  form=page.xpath('//form[@data-kind="inquiry"]')[0]
-  self.assertEqual(form.get('data-product-id'),'0445120075')
-  self.assertIn('0445120075',form.text_content())
-  self.assertTrue(page.xpath('//a[@href="mailto:info@cmteh.ru"]'))
+  products=json.loads((self.root/'data/products.json').read_text(encoding='utf-8'))
+  for product in products:
+   with self.subTest(sku=product['sku']):
+    page=html.fromstring((self.root/'dist/catalog'/product['id']/'index.html').read_text(encoding='utf-8'))
+    form=page.xpath('//form[@data-kind="inquiry"]')[0]
+    self.assertEqual(form.get('data-product-id'),product['id'])
+    self.assertIn(product['sku'],form.text_content())
+    self.assertIn(product['sku'],form.xpath('.//textarea[@name="comment"]/@placeholder')[0])
+    self.assertTrue(page.xpath('//a[@href="mailto:info@cmteh.ru"]'))
  def test_product_feed_is_production_only_and_matches_catalog(self):
   import subprocess,os
   from xml.etree import ElementTree as ET
