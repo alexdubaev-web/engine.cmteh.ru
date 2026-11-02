@@ -135,7 +135,7 @@ class SEO:
   if not self.indexable:raise ValueError('YML requires an indexable production domain')
   items=[p for p in self.products if self.availability(p) is not None and p.get('image')]
   if not items:raise ValueError('YML requires verified availability and actual product images')
-  root=ET.Element('yml_catalog',date=datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M'));shop=ET.SubElement(root,'shop')
+  root=ET.Element('yml_catalog',date=datetime.now(timezone.utc).isoformat(timespec='seconds'));shop=ET.SubElement(root,'shop')
   for tag,value in [('name','СМ ТЕХНО'),('company',self.commerce['company'].get('legal_name') or 'СМ ТЕХНО'),('url',self.base+'/')]:ET.SubElement(shop,tag).text=value
   currency=ET.SubElement(shop,'currencies');ET.SubElement(currency,'currency',id='RUR',rate='1')
   categories=ET.SubElement(shop,'categories');cat_ids={k:str(i+1) for i,k in enumerate(self.categories)}

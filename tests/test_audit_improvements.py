@@ -44,7 +44,12 @@ class GeneratedFlowTests(unittest.TestCase):
   self.assertEqual(result.returncode,0,result.stderr)
   feed=self.root/'dist/yandex-products.xml'
   self.assertTrue(feed.exists(),'production feed must be generated')
-  offers=ET.parse(feed).findall('.//offer')
+  from datetime import datetime,timezone,timedelta
+  feed_root=ET.parse(feed).getroot()
+  generated_at=datetime.fromisoformat(feed_root.attrib['date'])
+  self.assertIsNotNone(generated_at.utcoffset(),'YML date must include its timezone')
+  self.assertLess(abs(datetime.now(timezone.utc)-generated_at),timedelta(minutes=5))
+  offers=feed_root.findall('.//offer')
   products=json.loads((self.root/'data/products.json').read_text(encoding='utf-8'))
   self.assertEqual({x.get('id') for x in offers},{p['id'] for p in products})
   by_id={p['id']:p for p in products}
