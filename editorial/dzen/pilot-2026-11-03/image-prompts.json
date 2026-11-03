@@ -1,0 +1,18 @@
+{
+  "mode": "built-in image_gen",
+  "date": "2026-11-03",
+  "prompts": [
+    [
+      "orders",
+      "Create a premium editorial cover image for a Russian diesel parts procurement article about coordinating orders for several machines. Landscape 3:2. Photorealistic industrial still life, soft studio daylight, warm light grey concrete workbench, three clearly separated shallow trays arranged diagonally: one holding an intact generic diesel injector, another a compact complete metal fuel pump, third small sealed packets. Blank cream order sheets beside each tray, absolutely no text, letters, numbers, logos or watermarks. Restrained graphite and silver metal with one small muted yellow accent. Clean believable mechanical objects, careful organized grouping, generous breathing room, subject legible on mobile, no people, no exploded parts, not a photograph of any specific brand or product."
+    ],
+    [
+      "offers",
+      "Create a premium editorial cover for an article about comparing commercial offers for diesel parts. Landscape 3:2, photorealistic studio still life. Two equally well presented generic intact compact diesel fuel pumps on separate low grey plinths, two blank cream quotation papers placed alongside, no writing or symbols at all. A simple pencil between them. Light neutral background, graphite and silver machined metal, soft shadows, small restrained yellow accent. Balanced subtle asymmetry, no suggestion one is fake or defective, no brand-specific design, no logos, text, numbers, prices, ticks, arrows, people, or watermark. Clear readable silhouette at small size."
+    ],
+    [
+      "receipt",
+      "Create a premium editorial cover for an article about receiving diesel spare parts and handing them to a workshop. Landscape 3:2 photorealistic industrial still life, soft daylight. Open plain cardboard delivery box on light grey workbench, carefully folded protective packing, an intact generic metal diesel injector resting safely in a fitted tray beside the box, a blank cream packing slip and a closed small second package. Composition conveys orderly receiving and sorting, clean realistic materials, silver graphite and muted warm cardboard with a tiny yellow accent. No text, numbers, logos, watermarks, hands, people or tools for disassembly. Not a photograph of a specific SKU."
+    ]
+  ]
+}
