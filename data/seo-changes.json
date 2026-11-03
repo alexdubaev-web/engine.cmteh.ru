@@ -2,16 +2,6 @@
   "origin": "https://engine.cmteh.ru",
   "indexable": true,
   "generated_at": "2026-11-03T06:01:45Z",
-  "urls": [
-    "https://engine.cmteh.ru/",
-    "https://engine.cmteh.ru/articles/",
-    "https://engine.cmteh.ru/articles/novaya-ili-vosstanovlennaya-forsunka/",
-    "https://engine.cmteh.ru/articles/proverka-podlinnosti-forsunki-pered-pokupkoy/"
-  ],
-  "revisions": {
-    "https://engine.cmteh.ru/": "8d18bf72678d445b8d8b44df226ed387",
-    "https://engine.cmteh.ru/articles/": "f93e89f1a4b4454cb0799114d4f35575",
-    "https://engine.cmteh.ru/articles/novaya-ili-vosstanovlennaya-forsunka/": "0ef96dd05c6a4608a9fe365755b0a30a",
-    "https://engine.cmteh.ru/articles/proverka-podlinnosti-forsunki-pered-pokupkoy/": "1212e09145534ec38dd053a0458ec228"
-  }
+  "urls": [],
+  "revisions": {}
 }
