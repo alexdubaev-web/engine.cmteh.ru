@@ -1,0 +1,143 @@
+{
+  "checked_at": "2026-11-03T12:02:44.496204+03:00",
+  "site_articles_compared": 15,
+  "articles": [
+    {
+      "folder": "01-orders",
+      "title": "Несколько машин в ремонте: как собрать общий заказ запчастей",
+      "word_count": 593,
+      "urls": [
+        "https://engine.cmteh.ru/catalog/?utm_source=dzen&utm_medium=referral&utm_campaign=dzen_pilot_20261103&utm_content=multi_machine_order",
+        "https://engine.cmteh.ru/contacts/?utm_source=dzen&utm_medium=referral&utm_campaign=dzen_pilot_20261103&utm_content=multi_machine_order"
+      ],
+      "cover": {
+        "format": "WEBP",
+        "width": 1200,
+        "height": 800,
+        "bytes": 143570,
+        "alt": "Три лотка с металлическими запчастями и листами заказа на светлом столе"
+      },
+      "shared_12_word_sequences_with_site": {
+        "novaya-ili-vosstanovlennaya-forsunka": 0,
+        "letnee-toplivo-pered-morozami": 0,
+        "protokol-proverki-forsunki": 0,
+        "proverka-podlinnosti-forsunki-pered-pokupkoy": 0,
+        "posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya": 0,
+        "uplotneniya-pri-zamene-forsunki": 0,
+        "nasos-forsunka-i-common-rail": 0,
+        "povtornyy-signal-voda-v-toplive": 0,
+        "klapan-scv-ili-imv-podbor": 0,
+        "kodirovanie-forsunok-posle-zameny": 0,
+        "dizel-ploho-zavoditsya-na-holodnuyu": 0,
+        "podbor-po-artikulu": 0,
+        "tnvd-pered-zakazom": 0,
+        "forsunka-ili-raspylitel": 0,
+        "spisok-zapchastey-dlya-zakaza": 0
+      },
+      "article_sha256": "279efb486d90e8c670c9a68b6d70c8cdeb98cb228b99bbdbec2f26f0eb14c8d9"
+    },
+    {
+      "folder": "02-offers",
+      "title": "Два предложения на одну запчасть: как сравнить условия покупки",
+      "word_count": 577,
+      "urls": [
+        "https://engine.cmteh.ru/catalog/0445020089/?utm_source=dzen&utm_medium=referral&utm_campaign=dzen_pilot_20261103&utm_content=compare_offers",
+        "https://engine.cmteh.ru/delivery/?utm_source=dzen&utm_medium=referral&utm_campaign=dzen_pilot_20261103&utm_content=compare_offers"
+      ],
+      "cover": {
+        "format": "WEBP",
+        "width": 1200,
+        "height": 800,
+        "bytes": 71412,
+        "alt": "Два металлических топливных насоса рядом с чистыми листами на светлых подставках"
+      },
+      "shared_12_word_sequences_with_site": {
+        "novaya-ili-vosstanovlennaya-forsunka": 0,
+        "letnee-toplivo-pered-morozami": 0,
+        "protokol-proverki-forsunki": 0,
+        "proverka-podlinnosti-forsunki-pered-pokupkoy": 0,
+        "posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya": 0,
+        "uplotneniya-pri-zamene-forsunki": 0,
+        "nasos-forsunka-i-common-rail": 0,
+        "povtornyy-signal-voda-v-toplive": 0,
+        "klapan-scv-ili-imv-podbor": 0,
+        "kodirovanie-forsunok-posle-zameny": 0,
+        "dizel-ploho-zavoditsya-na-holodnuyu": 0,
+        "podbor-po-artikulu": 0,
+        "tnvd-pered-zakazom": 0,
+        "forsunka-ili-raspylitel": 0,
+        "spisok-zapchastey-dlya-zakaza": 0
+      },
+      "article_sha256": "b90de8727e625c7fbcd1d68bbddd2e701a6d94467eb2a701c9fe8ec4cb38ed3e"
+    },
+    {
+      "folder": "03-receipt",
+      "title": "Запчасти приехали: как передать поставку в ремонт без путаницы",
+      "word_count": 590,
+      "urls": [
+        "https://engine.cmteh.ru/delivery/?utm_source=dzen&utm_medium=referral&utm_campaign=dzen_pilot_20261103&utm_content=receiving_handoff",
+        "https://engine.cmteh.ru/contacts/?utm_source=dzen&utm_medium=referral&utm_campaign=dzen_pilot_20261103&utm_content=receiving_handoff"
+      ],
+      "cover": {
+        "format": "WEBP",
+        "width": 1200,
+        "height": 800,
+        "bytes": 118464,
+        "alt": "Открытая коробка с защитной упаковкой, форсункой и чистым сопроводительным листом"
+      },
+      "shared_12_word_sequences_with_site": {
+        "novaya-ili-vosstanovlennaya-forsunka": 0,
+        "letnee-toplivo-pered-morozami": 0,
+        "protokol-proverki-forsunki": 0,
+        "proverka-podlinnosti-forsunki-pered-pokupkoy": 0,
+        "posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya": 0,
+        "uplotneniya-pri-zamene-forsunki": 0,
+        "nasos-forsunka-i-common-rail": 0,
+        "povtornyy-signal-voda-v-toplive": 0,
+        "klapan-scv-ili-imv-podbor": 0,
+        "kodirovanie-forsunok-posle-zameny": 0,
+        "dizel-ploho-zavoditsya-na-holodnuyu": 0,
+        "podbor-po-artikulu": 0,
+        "tnvd-pered-zakazom": 0,
+        "forsunka-ili-raspylitel": 0,
+        "spisok-zapchastey-dlya-zakaza": 0
+      },
+      "article_sha256": "11465d0a3d6e6624a043dd6fda29cc6962d251aca7b5472f77762398ee4b3b6e"
+    }
+  ],
+  "paid_seo_api_calls": 0,
+  "dzen_published": false,
+  "http_checks": [
+    {
+      "url": "https://engine.cmteh.ru/catalog/?utm_source=dzen&utm_medium=referral&utm_campaign=dzen_pilot_20261103&utm_content=multi_machine_order",
+      "status": 200,
+      "canonical": "https://engine.cmteh.ru/catalog/"
+    },
+    {
+      "url": "https://engine.cmteh.ru/contacts/?utm_source=dzen&utm_medium=referral&utm_campaign=dzen_pilot_20261103&utm_content=multi_machine_order",
+      "status": 200,
+      "canonical": "https://engine.cmteh.ru/contacts/"
+    },
+    {
+      "url": "https://engine.cmteh.ru/catalog/0445020089/?utm_source=dzen&utm_medium=referral&utm_campaign=dzen_pilot_20261103&utm_content=compare_offers",
+      "status": 200,
+      "canonical": "https://engine.cmteh.ru/catalog/0445020089/"
+    },
+    {
+      "url": "https://engine.cmteh.ru/delivery/?utm_source=dzen&utm_medium=referral&utm_campaign=dzen_pilot_20261103&utm_content=compare_offers",
+      "status": 200,
+      "canonical": "https://engine.cmteh.ru/delivery/"
+    },
+    {
+      "url": "https://engine.cmteh.ru/delivery/?utm_source=dzen&utm_medium=referral&utm_campaign=dzen_pilot_20261103&utm_content=receiving_handoff",
+      "status": 200,
+      "canonical": "https://engine.cmteh.ru/delivery/"
+    },
+    {
+      "url": "https://engine.cmteh.ru/contacts/?utm_source=dzen&utm_medium=referral&utm_campaign=dzen_pilot_20261103&utm_content=receiving_handoff",
+      "status": 200,
+      "canonical": "https://engine.cmteh.ru/contacts/"
+    }
+  ],
+  "visual_review": "All three compressed covers inspected; legible compositions, no text/logos, no technical annotations"
+}
