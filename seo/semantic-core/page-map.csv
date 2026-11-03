@@ -79,6 +79,7 @@ brand:Delphi,existing_brand,/brands/delphi/,,,Delphi,,,active
 brand:Denso,existing_brand,/brands/denso/,,,Denso,,,active
 brand:John Deere,existing_brand,/brands/john-deere/,,,John Deere,,,active
 brand:VDO / Vitesco (Aumovio),existing_brand,/brands/vdo/,,,VDO / Vitesco (Aumovio),,,active
+article:novaya-ili-vosstanovlennaya-forsunka,existing_article,/articles/novaya-ili-vosstanovlennaya-forsunka/,,,,,,published
 article:letnee-toplivo-pered-morozami,existing_article,/articles/letnee-toplivo-pered-morozami/,,,,,,published
 article:protokol-proverki-forsunki,existing_article,/articles/protokol-proverki-forsunki/,,,,,,published
 article:proverka-podlinnosti-forsunki-pered-pokupkoy,existing_article,/articles/proverka-podlinnosti-forsunki-pered-pokupkoy/,,,,,,published
