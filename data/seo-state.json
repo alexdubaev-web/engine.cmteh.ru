@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "27b66712db80fbe66108a9c3a6986774e4c29d5407120a4e23a6608ed6a8a785",
-    "lastmod": "2026-11-01T06:09:44Z"
+    "sha256": "33a9fa1227265b799500e8ff73275c8b4c33ab4756b7ab4ed9ae32eb93416923",
+    "lastmod": "2026-11-03T06:01:45Z"
   },
   "/catalog/": {
     "sha256": "9c23866006082b209bf11ad747479fafa4fde7421af90b5a906695ef92f092d1",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-02T17:54:20Z"
   },
   "/articles/": {
-    "sha256": "82a311d814fdf5764065778c10d6daaa4d9fbf2da6235f5be9769a3282f7c9c8",
-    "lastmod": "2026-11-01T06:09:44Z"
+    "sha256": "7a75a9e6d9bf9aaa103fbb16c3128f49b26a59d20bfd19b720284898c008abd9",
+    "lastmod": "2026-11-03T06:01:45Z"
+  },
+  "/articles/novaya-ili-vosstanovlennaya-forsunka/": {
+    "sha256": "8cf124d1fa21c497865814d8d882fa19b450951ac388d6e3fa4a348bd3741d7b",
+    "lastmod": "2026-11-03T06:01:45Z"
   },
   "/articles/letnee-toplivo-pered-morozami/": {
     "sha256": "25f5e160b6c4bdb4111c7560e77a954fca90395016eb35fb65833cff02dd18bc",
@@ -320,8 +324,8 @@
     "lastmod": "2026-10-31T06:08:47Z"
   },
   "/articles/proverka-podlinnosti-forsunki-pered-pokupkoy/": {
-    "sha256": "f1e7cf702c3b7f730d78f3f1ff5acd23b1f2dba17eb268c6995abf1fc81a5dad",
-    "lastmod": "2026-10-30T06:09:49Z"
+    "sha256": "88be4b7c6a7c87a467bab69c3fccb6f8bca8c5226d04182347dfb225ee208aec",
+    "lastmod": "2026-11-03T06:01:45Z"
   },
   "/articles/posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya/": {
     "sha256": "8610ede19ffe7816cef5a5ec0b817a77489a67850826b304a6c820778112ab6c",
