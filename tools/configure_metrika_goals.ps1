@@ -51,11 +51,6 @@ $counter=(Api 'GET' $base).counter
 if ($counter.id -ne $counterId -or $counter.site -ne 'engine.cmteh.ru' -or $counter.permission -ne 'own') {
     throw 'Unexpected counter, domain or owner permission; no writes performed.'
 }
-$contacts=Invoke-WebRequest -Uri 'https://engine.cmteh.ru/contacts/' -Method Get -TimeoutSec 30
-$phones=@([regex]::Matches($contacts.Content,'href="tel:([^"?]+)"') | ForEach-Object {$_.Groups[1].Value} | Sort-Object -Unique)
-$emails=@([regex]::Matches($contacts.Content,'href="mailto:([^"?]+)') | ForEach-Object {$_.Groups[1].Value} | Sort-Object -Unique)
-if ($phones.Count -ne 4 -or $emails.Count -ne 2) { throw 'Contact inventory changed; review before applying.' }
-
 $spec=@(
     @('form_success','Заявка принята сервером',$true),
     @('search','Поиск по каталогу',$false),
@@ -69,8 +64,10 @@ $desired=@($spec | ForEach-Object {
     # Live API expects numeric 0/1 here despite its generated boolean schema.
     [ordered]@{name=$_[1];type='action';is_favorite=[int][bool]$_[2];conditions=@(@{type='exact';url=$_[0]})}
 })
-$desired += [ordered]@{name='Клик по номеру телефона';type='phone';is_favorite=0;hide_phone_number=0;conditions=@($phones | ForEach-Object {@{type='exact';url=$_}})}
-$desired += [ordered]@{name='Клик по email';type='email';is_favorite=0;conditions=@($emails | ForEach-Object {@{type='exact';url=$_}})}
+# Empty native conditions are the API representation of "all phones/emails",
+# verified against the goals created in Yandex's own interface.
+$desired += [ordered]@{name='Клик по номеру телефона';type='phone';is_favorite=0;hide_phone_number=0;conditions=@()}
+$desired += [ordered]@{name='Клик по email';type='email';is_favorite=0;conditions=@()}
 $desired | ConvertTo-Json -Depth 15 -AsArray | Set-Content -LiteralPath (Join-Path $EvidenceDir 'desired.json') -Encoding utf8
 $before=@((Api 'GET' "$base/goals").goals)
 Snapshot $before 'goals-before.json'
