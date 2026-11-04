@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "33a9fa1227265b799500e8ff73275c8b4c33ab4756b7ab4ed9ae32eb93416923",
-    "lastmod": "2026-11-03T06:01:45Z"
+    "sha256": "5520a69d7e01a140cf5816ce51c2d3972f4c529e52fb258287cab5c951c3c39c",
+    "lastmod": "2026-11-04T06:05:32Z"
   },
   "/catalog/": {
     "sha256": "9c23866006082b209bf11ad747479fafa4fde7421af90b5a906695ef92f092d1",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-02T17:54:20Z"
   },
   "/articles/": {
-    "sha256": "7a75a9e6d9bf9aaa103fbb16c3128f49b26a59d20bfd19b720284898c008abd9",
-    "lastmod": "2026-11-03T06:01:45Z"
+    "sha256": "20794668d68840c95351c189a0bc310a82b3d690bef97c9a3082a7772d2a0a72",
+    "lastmod": "2026-11-04T06:05:32Z"
+  },
+  "/articles/podkachivayushchiy-nasos-i-tnvd/": {
+    "sha256": "bd39d1ee6ee5444c53bb1e2689d68ae2915ab149eb73c56f331beeaf30606f0b",
+    "lastmod": "2026-11-04T06:05:32Z"
   },
   "/articles/novaya-ili-vosstanovlennaya-forsunka/": {
     "sha256": "8cf124d1fa21c497865814d8d882fa19b450951ac388d6e3fa4a348bd3741d7b",
@@ -328,8 +332,8 @@
     "lastmod": "2026-11-03T06:01:45Z"
   },
   "/articles/posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya/": {
-    "sha256": "8610ede19ffe7816cef5a5ec0b817a77489a67850826b304a6c820778112ab6c",
-    "lastmod": "2026-10-29T06:01:16Z"
+    "sha256": "95fd2d9639b02b4b41d67a9c5753916a0346160f9a70ffe6e7c7b51bd95e0392",
+    "lastmod": "2026-11-04T06:05:32Z"
   },
   "/articles/uplotneniya-pri-zamene-forsunki/": {
     "sha256": "64c33b13d77f9b98fc53ecd2dbff505a5da6870024a9028a00665f25a68be236",
