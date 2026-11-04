@@ -1,7 +1,17 @@
 {
   "origin": "https://engine.cmteh.ru",
   "indexable": true,
-  "generated_at": "2026-11-03T06:01:45Z",
-  "urls": [],
-  "revisions": {}
+  "generated_at": "2026-11-04T06:05:32Z",
+  "urls": [
+    "https://engine.cmteh.ru/",
+    "https://engine.cmteh.ru/articles/",
+    "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/",
+    "https://engine.cmteh.ru/articles/posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya/"
+  ],
+  "revisions": {
+    "https://engine.cmteh.ru/": "8a5c16e5c059496980f7d8e193f00695",
+    "https://engine.cmteh.ru/articles/": "9682134e67c349ce801b8fa86c762a47",
+    "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "49be21cda5d5406b999a5197f12f6fe9",
+    "https://engine.cmteh.ru/articles/posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya/": "32ec0eae2e2f433c84dbee3e58df8b96"
+  }
 }
