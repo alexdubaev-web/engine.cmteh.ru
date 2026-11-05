@@ -24,8 +24,8 @@
     "codes": [
       "7206-0460"
     ],
-    "name": "Электромагнитный клапан топливной системы Delphi",
-    "shortName": "Электромагнитный клапан топливной системы",
+    "name": "Клапан управления распылителем Delphi Smart Injector",
+    "shortName": "Клапан управления распылителем Smart Injector",
     "brand": "Delphi",
     "category": "valves",
     "price": 9096,
@@ -158,8 +158,8 @@
     "codes": [
       "7206-0435"
     ],
-    "name": "Электромагнитный клапан топливной системы Delphi",
-    "shortName": "Электромагнитный клапан топливной системы",
+    "name": "Актуатор насос-форсунки Delphi E1",
+    "shortName": "Актуатор насос-форсунки E1",
     "brand": "Delphi",
     "category": "valves",
     "price": 20272,
@@ -503,10 +503,10 @@
     "codes": [
       "DZ112112"
     ],
-    "name": "Комплект распылителя форсунки John Deere",
-    "shortName": "Комплект распылителя форсунки",
+    "name": "Комплект топливной форсунки John Deere",
+    "shortName": "Комплект топливной форсунки",
     "brand": "John Deere",
-    "category": "nozzles",
+    "category": "injectors",
     "price": 89496,
     "crossBrand": "",
     "sourceRow": 33,
@@ -878,8 +878,8 @@
     "codes": [
       "F00RJ02177"
     ],
-    "name": "Ремкомплект топливной форсунки Common Rail Bosch",
-    "shortName": "Ремкомплект топливной форсунки Common Rail",
+    "name": "Комплект уплотнений форсунки Common Rail Bosch",
+    "shortName": "Комплект уплотнений форсунки Common Rail",
     "brand": "Bosch",
     "category": "other",
     "price": 337,
@@ -948,15 +948,16 @@
       "DZ100218",
       "095000-6880"
     ],
-    "name": "Комплект топливной форсунки (распылитель) John Deere / Denso",
-    "shortName": "Комплект топливной форсунки (распылитель)",
+    "name": "Комплект топливной форсунки John Deere / Denso",
+    "shortName": "Комплект топливной форсунки",
     "brand": "Denso",
-    "category": "other",
+    "category": "injectors",
     "price": 55822,
     "crossBrand": "John Deere",
     "sourceRow": 55,
     "sourceUrls": [
-      "https://shop.deere.com/us/us/product/DZ100218%3A-Nozzle-Kit/p/DZ100218"
+      "https://shop.deere.com/uk/product/DZ100218%3A-Fuel-Injection-Nozzle-Kit/p/DZ100218",
+      "https://www.northern-lights.com/media/PDFs/manual_pdfs/P6.8-3.pdf"
     ],
     "image": null,
     "imageSource": null
@@ -991,8 +992,8 @@
       "31442-84300",
       "22720232"
     ],
-    "name": "Клапан регулирования давления топлива HPV",
-    "shortName": "Клапан регулирования давления топлива HPV",
+    "name": "Клапан регулирования давления топливной рампы Delphi",
+    "shortName": "Клапан регулирования давления топливной рампы",
     "brand": "Delphi",
     "category": "valves",
     "price": 2825,

@@ -11,7 +11,7 @@ _SKU_ROLES = {
     "delphi_injector": ("28272472", "28540276", "28308779", "28229876"),
     "denso_injector": ("260100-4010", "260100-6010"),
     "vdo_injector": ("5620004100",),
-    "deere_injector_kit": ("DZ100212", "DZ100221", "DZ100217", "DZ100216"),
+    "deere_injector_kit": ("DZ100212", "DZ100221", "DZ100217", "DZ100216", "DZ112112", "DZ100218"),
     "uis_injector": ("0414701072",),
     "bosch_pump": (
         "0445020610", "0445020208", "0445020201", "0445020082",
@@ -27,8 +27,6 @@ _SKU_ROLES = {
     "electric_pump": ("RE539764",),
     "bosch_nozzle": ("0433175478", "0433175518"),
     "delphi_nozzle": ("L229PBC", "L053PBC", "L017PBB", "L215PBC", "L158PBA"),
-    "deere_nozzle_kit": ("DZ112112",),
-    "deere_injector_nozzle_kit": ("DZ100218",),
     "electric_valve": ("7206-0460", "7206-0435"),
     "hpv_valve": ("7210-0473",),
     "scv_valve": ("8980436870", "DZ111136"),
@@ -88,14 +86,6 @@ _COPY = {
         "Для подбора распылителя Delphi сверим его код с номером форсунки.",
         ["Номер на распылителе", "Номер форсунки", "Модель двигателя"],
     ),
-    "deere_nozzle_kit": (
-        "Для подбора комплекта распылителя John Deere сверьте его артикул с данными двигателя.",
-        ["Артикул комплекта на маркировке", "Модель двигателя", "Серийный номер техники"],
-    ),
-    "deere_injector_nozzle_kit": (
-        "Для подбора комплекта форсунки-распылителя John Deere укажите артикул и данные двигателя.",
-        ["Артикул комплекта на маркировке", "Модель двигателя", "Серийный номер техники"],
-    ),
     "electric_valve": (
         "Для подбора электромагнитного клапана Delphi сверим его номер и данные топливной системы.",
         ["Номер на корпусе клапана", "Маркировка установленного узла", "Модель двигателя"],
@@ -140,8 +130,6 @@ _HINTS = {
     "feed_pump": "Топливоподкачивающий насос {sku}; количество; модель двигателя и серийный номер техники",
     "electric_pump": "Насос {sku}, 24 В; количество; модель и серийный номер техники",
     "nozzle": "Распылитель {sku}; номер форсунки; модель двигателя; количество",
-    "deere_nozzle_kit": "Комплект распылителя {sku}; количество; двигатель и серийный номер техники",
-    "deere_injector_nozzle_kit": "Комплект {sku}; количество; двигатель и серийный номер техники",
     "valve": "Клапан {sku}; номер насоса или топливной рампы; модель двигателя; количество",
     "fuel_rail": "Рампа {sku}; маркировка установленного узла; модель двигателя; количество",
     "engine_control_unit": "Блок управления {sku}; двигатель и серийный номер техники; количество",
@@ -156,8 +144,6 @@ _HINT_ROLE = {
     "uis_injector": "uis_injector", "bosch_pump": "pump", "pump": "pump",
     "feed_pump": "feed_pump", "electric_pump": "electric_pump",
     "bosch_nozzle": "nozzle", "delphi_nozzle": "nozzle",
-    "deere_nozzle_kit": "deere_nozzle_kit",
-    "deere_injector_nozzle_kit": "deere_injector_nozzle_kit",
     "electric_valve": "valve", "hpv_valve": "valve", "scv_valve": "valve",
     "imv_valve": "valve", "fuel_rail": "fuel_rail",
     "engine_control_unit": "engine_control_unit",
@@ -180,7 +166,6 @@ _TYPE_ROLES = {
     "uis_injector": "unit-injector", "bosch_pump": "pump", "pump": "pump",
     "feed_pump": "transfer-pump", "electric_pump": "transfer-pump",
     "bosch_nozzle": "nozzle", "delphi_nozzle": "nozzle",
-    "deere_nozzle_kit": "nozzle", "deere_injector_nozzle_kit": "injector-kit",
     "electric_valve": "valve", "hpv_valve": "valve", "scv_valve": "valve",
     "imv_valve": "valve", "fuel_rail": "rail",
     "engine_control_unit": "ecu", "engine_overhaul_kit": "overhaul",
@@ -199,6 +184,8 @@ def _build():
     for sku, role in roles.items():
         lead, checklist = _COPY[role]
         hint = _HINTS[_HINT_ROLE[role]].format(sku=sku)
+        if sku == "7206-0435":
+            hint = "Актуатор 7206-0435; номер насос-форсунки; модель двигателя; количество"
         result[sku] = {
             "lead": _LEAD_OVERRIDES.get(sku, lead),
             "checklist": list(checklist),

@@ -14,6 +14,12 @@ def dump(value): return json.dumps(value,ensure_ascii=False,separators=(',',':')
 def money(value):
  n=Decimal(str(value));s=f'{n:,.2f}' if n%1 else f'{n:,.0f}'
  return s.replace(',',' ').replace('.',',')
+def description_paragraphs(product):
+ record=product.get('technical') or {}
+ overview=record.get('overview') or []
+ if overview:return [item['text'] for item in overview]
+ return list(product.get('copy',[])[:2])
+def product_description(product):return ' '.join(description_paragraphs(product))
 def breadcrumbs(items):
  entries=[('Главная','/')]+items
  li=[]
@@ -47,7 +53,8 @@ class SEO:
   state=self.availability(p)
   if state:offer['availability']='https://schema.org/'+state
   if state and p.get('stockQuantity') is not None:offer['inventoryLevel']={'@type':'QuantitativeValue','value':p['stockQuantity'],'unitCode':'H87','unitText':'шт.'}
-  return {'@context':'https://schema.org','@type':'Product','@id':self.base+path+'#product','name':self.product_name(p),'sku':p['sku'],'mpn':p['sku'],'brand':{'@type':'Brand','name':p['brand']},'category':self.categories[p['category']][0],'description':p['copy'][0]+' '+p['copy'][1],'url':self.base+path,**({'image':self.base+p['image']} if p.get('image') else {}),'additionalProperty':[{'@type':'PropertyValue','name':'Номер для проверки','value':code} for code in p['codes'] if code!=p['sku']],'offers':offer}
+  facts=(p.get('technical') or {}).get('facts',[])
+  return {'@context':'https://schema.org','@type':'Product','@id':self.base+path+'#product','name':self.product_name(p),'sku':p['sku'],'mpn':p['sku'],'brand':{'@type':'Brand','name':p['brand']},'category':self.categories[p['category']][0],'description':product_description(p),'url':self.base+path,**({'image':self.base+p['image']} if p.get('image') else {}),'additionalProperty':[{'@type':'PropertyValue','name':fact['label'],'value':fact['value']} for fact in facts],'offers':offer}
  def identity(self):
   company=self.commerce['company']
   organization={'@type':'Organization','@id':self.base+'/#organization','name':'СМ ТЕХНО','url':self.base+'/','logo':{'@type':'ImageObject','url':self.base+'/assets/logo.webp'},'areaServed':{'@type':'Country','name':'Россия'}}
@@ -145,7 +152,7 @@ class SEO:
   offers=ET.SubElement(shop,'offers')
   for p in items:
    state=self.availability(p);available='true' if state in ['InStock','LimitedAvailability'] else 'false';offer=ET.SubElement(offers,'offer',id=p['id'],available=available)
-   for tag,value in [('url',self.base+'/catalog/'+p['id']+'/'),('price',format(Decimal(str(p['price'])),'f')),('currencyId','RUR'),('categoryId',cat_ids[p['category']]),('name',self.product_name(p)),('vendor',p['brand']),('vendorCode',p['sku']),('description',p['copy'][0]+' '+p['copy'][1])]:ET.SubElement(offer,tag).text=value
+   for tag,value in [('url',self.base+'/catalog/'+p['id']+'/'),('price',format(Decimal(str(p['price'])),'f')),('currencyId','RUR'),('categoryId',cat_ids[p['category']]),('name',self.product_name(p)),('vendor',p['brand']),('vendorCode',p['sku']),('description',product_description(p))]:ET.SubElement(offer,tag).text=value
    if p.get('image'):ET.SubElement(offer,'picture').text=self.base+p['image']
    ET.SubElement(offer,'param',name='Артикул').text=p['sku']
   ET.ElementTree(root).write(self.out/'yandex-products.xml',encoding='utf-8',xml_declaration=True)

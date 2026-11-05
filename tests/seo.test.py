@@ -50,7 +50,7 @@ for p in products:
  if expected and p['id'] in stock:
   require(product['offers']['inventoryLevel']['value']==stock[p['id']]['quantity'],p['sku']+' stock count mismatch')
   require(str(stock[p['id']]['quantity'])+' шт.' in h.xpath('string(//section[@class="product-detail"]//div[@class="stock-badge"])'),p['sku']+' stock absent from visible card')
- paragraphs=h.xpath('//section[@id="description"]//p/text()');require(len(paragraphs)>=2,p['sku']+' editorial copy missing')
+ paragraphs=h.xpath('//section[@id="description"]//p/text()');require(bool(paragraphs),p['sku']+' editorial copy missing')
  require(all(text.strip() for text in paragraphs),p['sku']+' empty editorial text')
  require(bool(h.xpath('//a[starts-with(@href,"/articles/")]')),p['sku']+' no article links')
  photo=h.xpath('//div[@class="detail-photo"]/img')
