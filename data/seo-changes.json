@@ -3,8 +3,6 @@
   "indexable": true,
   "generated_at": "2026-11-05T06:14:10Z",
   "urls": [
-    "https://engine.cmteh.ru/",
-    "https://engine.cmteh.ru/articles/",
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/",
     "https://engine.cmteh.ru/articles/posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya/",
     "https://engine.cmteh.ru/catalog/",
@@ -82,13 +80,9 @@
     "https://engine.cmteh.ru/catalog/dz100212/",
     "https://engine.cmteh.ru/catalog/dz100221/",
     "https://engine.cmteh.ru/catalog/dz100217/",
-    "https://engine.cmteh.ru/catalog/dz100216/",
-    "https://engine.cmteh.ru/articles/forsunka-do-ustanovki-upakovka-i-zashchita/",
-    "https://engine.cmteh.ru/articles/novaya-ili-vosstanovlennaya-forsunka/"
+    "https://engine.cmteh.ru/catalog/dz100216/"
   ],
   "revisions": {
-    "https://engine.cmteh.ru/": "d010c9c96da5483193118b34b85e3d29",
-    "https://engine.cmteh.ru/articles/": "042b1cc48df44931bc45ec25ecb8f8b4",
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "49be21cda5d5406b999a5197f12f6fe9",
     "https://engine.cmteh.ru/articles/posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya/": "32ec0eae2e2f433c84dbee3e58df8b96",
     "https://engine.cmteh.ru/catalog/": "99e0a4e97e7d4df08b0fb4a435943f4e",
@@ -166,8 +160,6 @@
     "https://engine.cmteh.ru/catalog/dz100212/": "fb0d7eb37f994dbdb44227cba939c1a4",
     "https://engine.cmteh.ru/catalog/dz100221/": "d8ec72bbd430406393d50578bed0c570",
     "https://engine.cmteh.ru/catalog/dz100217/": "6c5d1f56eba948c3bf7e780838fb2401",
-    "https://engine.cmteh.ru/catalog/dz100216/": "be63ee84b894418e96529953dd2562f6",
-    "https://engine.cmteh.ru/articles/forsunka-do-ustanovki-upakovka-i-zashchita/": "1e4e155e3a4a486ba39e95df68955412",
-    "https://engine.cmteh.ru/articles/novaya-ili-vosstanovlennaya-forsunka/": "dd83db41d7d94e3787fd81e1e59f41f4"
+    "https://engine.cmteh.ru/catalog/dz100216/": "be63ee84b894418e96529953dd2562f6"
   }
 }
