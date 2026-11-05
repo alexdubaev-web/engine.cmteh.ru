@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "524ccdaa98b25a1437dbb7b9a796ff214101c3774b37b1dc72643a47efec341f",
-    "lastmod": "2026-11-05T05:04:23Z"
+    "sha256": "e99f92508f4bde7761a0bb433b44a71ef57ff6b03a596681f4e3038fcf027dff",
+    "lastmod": "2026-11-05T06:14:10Z"
   },
   "/catalog/": {
     "sha256": "d18c24ba47208e661d06a37a08daf02e972a554bdfa41f73e98a66a3e7966a4c",
@@ -308,16 +308,20 @@
     "lastmod": "2026-11-05T05:04:23Z"
   },
   "/articles/": {
-    "sha256": "20794668d68840c95351c189a0bc310a82b3d690bef97c9a3082a7772d2a0a72",
-    "lastmod": "2026-11-04T06:05:32Z"
+    "sha256": "1ee44bdc22709e843fd00e9e4edf4f22b99e5dd257d5ff8aeef27abb478483dc",
+    "lastmod": "2026-11-05T06:14:10Z"
+  },
+  "/articles/forsunka-do-ustanovki-upakovka-i-zashchita/": {
+    "sha256": "a4e86fee3550f50e73f5da46486f1d0d21e007f1696461d47c8925fd817b1413",
+    "lastmod": "2026-11-05T06:14:10Z"
   },
   "/articles/podkachivayushchiy-nasos-i-tnvd/": {
     "sha256": "bd39d1ee6ee5444c53bb1e2689d68ae2915ab149eb73c56f331beeaf30606f0b",
     "lastmod": "2026-11-04T06:05:32Z"
   },
   "/articles/novaya-ili-vosstanovlennaya-forsunka/": {
-    "sha256": "8cf124d1fa21c497865814d8d882fa19b450951ac388d6e3fa4a348bd3741d7b",
-    "lastmod": "2026-11-03T06:01:45Z"
+    "sha256": "ebada28a014927b28b2506b3a86889ec40f715a17cad82562abb7ea7c40826ea",
+    "lastmod": "2026-11-05T06:14:10Z"
   },
   "/articles/letnee-toplivo-pered-morozami/": {
     "sha256": "25f5e160b6c4bdb4111c7560e77a954fca90395016eb35fb65833cff02dd18bc",
