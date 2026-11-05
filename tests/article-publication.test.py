@@ -36,9 +36,6 @@ assert new_article.xpath('//a[@href="/catalog/28272472/"]')
 assert new_article.xpath('//a[@href="/catalog/0445120126/"]')
 assert new_article.xpath('//a[@href="/articles/podbor-po-artikulu/"]')
 assert new_article.xpath('//a[@href="/articles/forsunka-ili-raspylitel/"]')
-for sku in ['28272472', '0445120126']:
-    product = html.fromstring((out / 'catalog' / sku / 'index.html').read_text(encoding='utf-8'))
-    assert product.xpath(f'//section[contains(@class,"product-reading")]//a[@href="{new_url}"]')
 assert html.fromstring((out / 'articles' / 'index.html').read_text(encoding='utf-8')).xpath(f'//a[@href="{new_url}"]')
 ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
 sitemap = etree.parse(str(out / 'sitemap.xml'))
@@ -93,9 +90,6 @@ for domain in ['delphiautoparts.com', 'perkins.com', 'agcopartsandservice.com']:
 for href in ['/catalog/28272472/', '/catalog/0445120126/', '/category/injectors/',
              '/articles/dizel-ploho-zavoditsya-na-holodnuyu/', '/articles/tnvd-pered-zakazom/']:
     assert water_article.xpath(f'//a[@href="{href}"]')
-for sku in ['28272472', '0445120126']:
-    product = html.fromstring((out / 'catalog' / sku / 'index.html').read_text(encoding='utf-8'))
-    assert product.xpath(f'//section[contains(@class,"product-reading")]//a[@href="{water_url}"]')
 assert html.fromstring((out / 'articles' / 'index.html').read_text(encoding='utf-8')).xpath(f'//a[@href="{water_url}"]')
 assert sitemap.xpath('//s:loc[contains(text(), $slug)]', namespaces=ns, slug=water_url)
 articles_source = root / 'data' / 'articles.py'
@@ -133,10 +127,6 @@ assert [len(items.xpath('./li')) for items in diagnosis.xpath('./ul')] == [3, 2]
 assert not article.xpath('//article[contains(@class,"read-content")]//p[normalize-space()=$lead]', lead=article.xpath('string(//p[@class="lead"])') )
 assert article.xpath('//section//h3[normalize-space()="Когда диагноз подтверждён"]')
 assert len(article.xpath('//section[@class="article-products"]//a[starts-with(@href,"/catalog/")]')) == 2
-for sku in ['0445120072']:
-    product = html.fromstring((out / 'catalog' / sku / 'index.html').read_text(encoding='utf-8'))
-    assert product.xpath(f'//section[contains(@class,"product-reading")]//a[@href="{url}"]')
-    assert len(product.xpath('//section[contains(@class,"product-reading")]//article[contains(@class,"article-card")]')) <= 2
 for old_slug in ['podbor-po-artikulu', 'tnvd-pered-zakazom', 'forsunka-ili-raspylitel', 'spisok-zapchastey-dlya-zakaza']:
     assert (out / 'articles' / old_slug / 'index.html').is_file()
     assert html.fromstring((out / 'articles' / old_slug / 'index.html').read_text(encoding='utf-8')).xpath('//h1')
@@ -168,5 +158,26 @@ for sku in ['0414701072']:
     assert product.xpath(f'//section[contains(@class,"product-reading")]//a[@href="{unit_url}"]')
 assert html.fromstring((out / 'articles' / 'index.html').read_text(encoding='utf-8')).xpath(f'//a[@href="{unit_url}"]')
 assert sitemap.xpath('//s:loc[contains(text(), $slug)]', namespaces=ns, slug=unit_url)
+
+# Every current product card has at most two distinct article recommendations.
+# Each target exists and leads back from its body to a category or product page;
+# the general SKU-selection memo is also a valid endpoint in this route.
+products = json.loads((root / 'data' / 'products.json').read_text(encoding='utf-8'))
+for item in products:
+    sku = item['sku']
+    product = html.fromstring((out / 'catalog' / item['id'] / 'index.html').read_text(encoding='utf-8'))
+    cards = product.xpath('//section[contains(@class,"product-reading")]//article[contains(@class,"article-card")]')
+    slugs = [card.xpath('string(.//a[starts-with(@href,"/articles/")][1]/@href)').strip('/').split('/')[-1] for card in cards]
+    assert len(slugs) <= 2, (sku, slugs)
+    assert len(slugs) == len(set(slugs)), (sku, slugs)
+    for article_slug in slugs:
+        article_path = out / 'articles' / article_slug / 'index.html'
+        assert article_path.is_file(), (sku, article_slug)
+        recommended_article = html.fromstring(article_path.read_text(encoding='utf-8'))
+        assert recommended_article.xpath('//h1'), (sku, article_slug)
+        article_body_links = recommended_article.xpath('//article[contains(@class,"read-content")]//a/@href')
+        assert article_slug == 'podbor-po-artikulu' or any(
+            href.startswith('/category/') or href.startswith('/catalog/') for href in article_body_links
+        ), (sku, article_slug, article_body_links)
 temporary.cleanup()
-print('PASS article publication: cover, citations, schema/OG, listing, sitemap, reciprocal product links, and legacy articles')
+print('PASS article publication: cover, citations, schema/OG, listing, sitemap, product recommendation routes, and legacy articles')

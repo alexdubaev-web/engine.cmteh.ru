@@ -58,7 +58,7 @@ class SEO:
   if company.get('postal_address'):organization['address']={'@type':'PostalAddress','streetAddress':company['postal_address'],'addressCountry':'RU'}
   website={'@type':'WebSite','@id':self.base+'/#website','url':self.base+'/','name':'СМ ТЕХНО - запчасти для спецтехники','inLanguage':'ru-RU','publisher':{'@id':self.base+'/#organization'}}
   return organization,website
- def render(self,path,title,description,content,schema,header,footer,cart,analytics_enabled=False):
+ def render(self,path,title,description,content,schema,header,footer,cart,analytics_enabled=False,listing_items=None):
   canonical=self.base+path;primary_image='/assets/hero.webp';image_alt='Иллюстрация компонентов дизельной топливной системы'
   product=self.byid.get(path.split('/')[2]) if path.startswith('/catalog/') and path.count('/')==3 else None
   if product:
@@ -76,8 +76,7 @@ class SEO:
   if trail:
    breadcrumb={'@type':'BreadcrumbList','@id':canonical+'#breadcrumbs','itemListElement':[{'@type':'ListItem','position':i+1,'name':name,'item':self.base+(url or path)} for i,(name,url) in enumerate(trail)]}
    web['breadcrumb']={'@id':breadcrumb['@id']};nodes.append(breadcrumb)
-  items=self.products if path=='/catalog/' else [p for p in self.products if p['category']==path.split('/')[2]] if path.startswith('/category/') else [p for p in self.products if p['brand']==next((v for k,v in {'bosch':'Bosch','delphi':'Delphi','denso':'Denso','john-deere':'John Deere','vdo':'VDO / Vitesco (Aumovio)'}.items() if k==path.split('/')[2]),'')] if path.startswith('/brands/') else []
-  if path=='/category/injectors/bosch/':items=[p for p in self.products if p['category']=='injectors' and p['brand']=='Bosch']
+  items=listing_items or []
   if items:
    nodes.append({'@type':'ItemList','@id':canonical+'#list','name':title,'numberOfItems':len(items),'itemListElement':[{'@type':'ListItem','position':i+1,'name':self.product_name(p),'url':self.base+'/catalog/'+p['id']+'/'} for i,p in enumerate(items)]})
   if product:web['mainEntity']={'@id':canonical+'#product'}
@@ -91,7 +90,7 @@ class SEO:
   if old.get('sha256')!=digest and path not in UTILITIES:self.changed.append(canonical)
   web['dateModified']=modified
   for node in nodes:
-   if node.get('@type')=='Article':node['dateModified']=modified
+   if node.get('@type')=='Article':node['dateModified']=node.get('dateModified') or modified
   nodes.extend([web,organization,website]);graph={'@context':'https://schema.org','@graph':nodes}
   robots='index,follow' if self.indexable and path not in UTILITIES else 'noindex,follow' if self.indexable else 'noindex,nofollow'
   robots_tag='' if self.indexable and path not in UTILITIES else '<meta name="robots" content="'+robots+'">'
@@ -100,11 +99,11 @@ class SEO:
   verification=os.environ['YANDEX_VERIFICATION'] if 'YANDEX_VERIFICATION' in os.environ else (self.commerce.get('yandex_verification',{}).get('code','') if self.indexable and self.base==self.commerce.get('yandex_verification',{}).get('origin') else '')
   verify='<meta name="yandex-verification" content="'+esc(verification)+'">' if verification else ''
   og_type='article' if any(n.get('@type')=='Article' for n in nodes) else 'website'
-  article_meta=('<meta property="article:modified_time" content="'+modified+'">'+('<meta property="article:published_time" content="'+esc(article['datePublished'])+'">' if article and article.get('datePublished') else '')) if og_type=='article' else ''
+  article_meta=('<meta property="article:modified_time" content="'+esc(article.get('dateModified') or modified)+'">'+('<meta property="article:published_time" content="'+esc(article['datePublished'])+'">' if article and article.get('datePublished') else '')) if og_type=='article' else ''
   font='/assets/manrope-400.woff2'
   preload='<link rel="preload" href="'+font+'" as="font" type="font/woff2" crossorigin>' if (self.root/'public'/font.lstrip('/')).exists() else ''
   analytics_ui='<section class="analytics-panel" data-analytics-panel role="dialog" aria-modal="true" aria-labelledby="analytics-title" hidden><div class="analytics-card"><h2 id="analytics-title">Настройки аналитики</h2><p>С вашего разрешения Яндекс Метрика будет собирать статистику посещений, действий на страницах и сведений о браузере. Содержимое форм заказа скрыто от записи, а ввод в поля маскируется.</p><p>Вы можете изменить выбор в любой момент. Подробнее - в <a href="/privacy/">Политике обработки данных</a>.</p><p data-analytics-status role="status" aria-live="polite"></p><div class="analytics-actions"><button class="btn outline" type="button" data-analytics-deny>Не разрешать</button><button class="btn" type="button" data-analytics-allow>Разрешить</button></div></div></section>' if analytics_enabled else ''
-  analytics_script=f'<script type="module" src="/assets/analytics.js?v={self.asset_versions["analytics.js"]}" defer></script>' if analytics_enabled else ''
+  analytics_script=f'<script type="module" src="/assets/analytics.js?v={self.asset_versions["analytics.js"]}"></script>' if analytics_enabled else ''
   document=f'''<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(title)}</title><meta name="description" content="{esc(description)}">{keyword_tag}{robots_tag}<meta name="theme-color" content="#f9dd16"><link rel="canonical" href="{esc(canonical)}">{verify}<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description)}"><meta property="og:type" content="{og_type}"><meta property="og:site_name" content="СМ ТЕХНО"><meta property="og:image" content="{esc(self.base+primary_image)}"><meta property="og:image:alt" content="{esc(image_alt)}"><meta property="og:url" content="{esc(canonical)}"><meta property="og:locale" content="ru_RU">{article_meta}<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)}"><meta name="twitter:description" content="{esc(description)}"><meta name="twitter:image" content="{esc(self.base+primary_image)}"><link rel="icon" href="/assets/favicon-32.webp?v={self.asset_versions['favicon-32.webp']}" type="image/webp" sizes="32x32"><link rel="icon" href="/assets/favicon-64.webp?v={self.asset_versions['favicon-64.webp']}" type="image/webp" sizes="64x64"><link rel="icon" href="/assets/favicon.ico?v={self.asset_versions['favicon.ico']}" type="image/x-icon" sizes="16x16 32x32 48x48">{preload}<link rel="stylesheet" href="/assets/style.css?v={self.asset_versions['style.css']}"><script src="/assets/app.js?v={self.asset_versions['app.js']}" defer></script>{analytics_script}<script type="application/ld+json">{dump(graph)}</script><noscript><style>@media(max-width:1150px){{.header-inner{{height:auto;min-height:80px;flex-wrap:wrap;padding-block:10px}}.nav{{position:static;order:3;flex:1 0 100%;margin:0;padding:8px 0;background:transparent;border:0;flex-direction:row;flex-wrap:wrap;gap:8px 20px}}.header .cart-button{{order:2;margin-left:auto}}.menu-toggle{{display:none}}}}</style></noscript></head><body id="top">{header}<main id="main">{content}</main>{footer}{cart}{analytics_ui}<a class="back-to-top" href="#top" aria-label="Наверх">↑</a><script type="application/json" id="catalog-data">{dump([{k:p[k] for k in ['id','sku','name','price','brand','stockQuantity']} for p in self.products])}</script><noscript><p class="no-js">Для заказа и подбора запчастей позвоните <a href="tel:+78124688299">+7 812 468-82-99</a> или напишите <a href="mailto:info@cmteh.ru">info@cmteh.ru</a>.</p></noscript></body></html>'''
   return document
  def finish(self,paths):
