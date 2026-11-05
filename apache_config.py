@@ -2,7 +2,9 @@
 import re
 
 def config(indexable,products):
- lines=['Options -Indexes','DirectoryIndex index.html','ErrorDocument 404 /404/','<IfModule mod_rewrite.c>',' RewriteEngine On',' RewriteCond %{ENV:REDIRECT_STATUS} ^$',' RewriteCond %{THE_REQUEST} \\s/+404(?:/index\\.html|/?)(?:[?\\s]) [NC]',' RewriteRule ^404(?:/index\\.html|/?)$ - [R=404,L]']
+ lines=['Options -Indexes','DirectoryIndex index.html','ErrorDocument 404 /404/','<IfModule mod_rewrite.c>',' RewriteEngine On',' RewriteCond %{ENV:REDIRECT_STATUS} ^$',' RewriteCond %{THE_REQUEST} \\s/+404(?:/index\\.html|/?)(?:[?\\s]) [NC]',' RewriteRule ^404(?:/index\\.html|/?)$ - [R=404,L]',
+        ' RewriteCond %{REQUEST_METHOD} ^(?:GET|HEAD)$', ' RewriteCond %{THE_REQUEST} "\\s//+([^?\\s]*)(?:\\?[^\\s]*)?\\s"', ' RewriteRule ^ /%1 [R=301,L,NE]',
+        ' RewriteCond %{REQUEST_METHOD} ^(?:GET|HEAD)$', ' RewriteCond %{THE_REQUEST} "\\s/([^?\\s]*?)/{2,}([^?\\s]*)(?:\\?[^\\s]*)?\\s"', ' RewriteRule ^ /%1/%2 [R=301,L,NE]']
  for p in products:
   slug=p['id'];pattern=re.escape(slug)
   lines += [' RewriteCond %{REQUEST_URI} !^/catalog/'+pattern+'/$', ' RewriteRule ^catalog/'+pattern+'(?:/index\\.html|/?)$ /catalog/'+slug+'/ [R=301,L,NC]']

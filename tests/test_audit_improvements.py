@@ -40,6 +40,31 @@ class GeneratedFlowTests(unittest.TestCase):
     self.assertIn(product['sku'],form.text_content())
     self.assertIn(product['sku'],form.xpath('.//textarea[@name="comment"]/@placeholder')[0])
     self.assertTrue(page.xpath('//a[@href="mailto:info@cmteh.ru"]'))
+ def test_sku_first_names_match_pages_lists_cart_and_backend(self):
+  from lxml import html
+  products=json.loads((self.root/'data/products.json').read_text(encoding='utf-8'))
+  backend={p['id']:p for p in json.loads((self.root/'backend/catalog.json').read_text(encoding='utf-8'))}
+  catalog=html.fromstring((self.root/'dist/catalog/index.html').read_text(encoding='utf-8'))
+  payload={p['id']:p for p in json.loads(catalog.xpath('//script[@id="catalog-data"]/text()')[0])}
+  for product in products:
+   with self.subTest(sku=product['sku']):
+    page=html.fromstring((self.root/'dist/catalog'/product['id']/'index.html').read_text(encoding='utf-8'))
+    name=page.xpath('string(//h1)')
+    self.assertTrue(name.startswith(product['sku']+' '),name)
+    self.assertEqual(name.count(product['sku']),1)
+    self.assertIn(product['shortName'],name)
+    schema=next(n for n in json.loads(page.xpath('//script[@type="application/ld+json"]/text()')[0])['@graph'] if n['@type']=='Product')
+    self.assertEqual(schema['name'],name)
+    self.assertEqual(schema['mpn'],product['sku'])
+    self.assertEqual(payload[product['id']]['name'],name)
+    self.assertEqual(backend[product['id']]['name'],name)
+    self.assertEqual(backend[product['id']]['price'],product['price'])
+    card=catalog.xpath('//article[@data-id=$id]',id=product['id'])[0]
+    self.assertEqual(card.xpath('string(.//a[@class="product-name"])'),name)
+    self.assertEqual(card.text_content().count(product['sku']),1)
+    self.assertTrue(page.xpath('string(//title)').startswith(product['sku']+' '))
+    self.assertIn('купить',page.xpath('string(//title)'))
+    self.assertTrue(page.xpath('string(//meta[@name="description"]/@content)').startswith(product['sku']+' '))
  def test_product_feed_is_production_only_and_matches_catalog(self):
   import subprocess,os
   from xml.etree import ElementTree as ET
@@ -60,6 +85,8 @@ class GeneratedFlowTests(unittest.TestCase):
   for offer in offers:
    self.assertEqual(float(offer.findtext('price')),by_id[offer.get('id')]['price'])
    self.assertTrue(offer.findtext('picture').startswith('https://engine.cmteh.ru/'))
+   self.assertEqual(offer.findtext('vendorCode'),by_id[offer.get('id')]['sku'])
+   self.assertTrue(offer.findtext('name').startswith(by_id[offer.get('id')]['sku']+' '))
  def test_saved_stock_remains_valid_until_next_import(self):
   from lxml import html
   page=html.fromstring((self.root/'dist/catalog/0445120075/index.html').read_text(encoding='utf-8'))

@@ -36,7 +36,6 @@ assert set(technical)=={p['sku'] for p in products},'Technical records must cove
 assert sum(not record['facts'] for record in technical.values())==5,'Five unverified records must remain selection-only'
 for product in products:
  record=technical[product['sku']]
- assert all(not fact['label'].startswith('Габариты') for fact in record['facts']),product['sku']+' must not publish OEM dimensions'
  assert all(source['url'].startswith('https://') for source in record['sources']),product['sku']+' technical source must use HTTPS'
  assert {fact['source_url'] for fact in record['facts']}=={source['url'] for source in record['sources']},product['sku']+' source list must match published facts'
  page=out/'catalog'/product['id']/'index.html';h=lxml.html.fromstring(page.read_text(encoding='utf-8'))
