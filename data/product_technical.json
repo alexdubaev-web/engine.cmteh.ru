@@ -272,7 +272,7 @@
     "selection_note": "Перед заказом сверим модель и серийный номер техники."
   },
   "DZ10599": {
-    "checked_at": "2026-10-13",
+    "checked_at": "2026-11-05",
     "status": "partial",
     "facts": [
       {
@@ -289,12 +289,22 @@
         "label": "Примеры техники",
         "value": "John Deere 8245R, 8330, 9560 STS, S660 (сверьте по серийному номеру)",
         "source_url": "https://shop.deere.com/uk/product/DZ10599%3A-Engine-Overhaul-Kit/p/DZ10599"
+      },
+      {
+        "label": "Габариты по каталогу (Д×Ш×В)",
+        "value": "103,378 × 42,926 × 33,02 см",
+        "source_url": "https://shop.deere.com/us/product/DZ10599%3A%2BEngine%2BOverhaul%2BKit/p/DZ10599"
       }
     ],
     "sources": [
       {
         "url": "https://shop.deere.com/uk/product/DZ10599%3A-Engine-Overhaul-Kit/p/DZ10599",
         "title": "DZ10599: Engine Overhaul Kit",
+        "publisher": "John Deere"
+      },
+      {
+        "url": "https://shop.deere.com/us/product/DZ10599%3A%2BEngine%2BOverhaul%2BKit/p/DZ10599",
+        "title": "DZ10599: Engine Overhaul Kit — Product Dimensions",
         "publisher": "John Deere"
       }
     ],
