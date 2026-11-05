@@ -107,42 +107,27 @@ with pipeline_lock(ROOT):
   label=AVAILABILITY[state]
   if p.get('stockQuantity') is not None:label+=': '+str(p['stockQuantity'])+' шт.'
   return f'<div class="stock-badge">{e(label)}</div>'
- def evidence_sources(record,urls):
-  by_url={source['url']:source for source in record.get('sources',[])}
-  unique=list(dict.fromkeys(urls))
-  if not unique:return ''
-  link=lambda url:f'<a href="{e(url)}" target="_blank" rel="noopener">{e(by_url[url].get("title") or urlsplit(url).netloc)}</a>'
-  direct=unique[:5];remaining=unique[5:]
-  citations='<ul class="technical-source-list">'+''.join('<li>'+link(url)+'</li>' for url in direct)+'</ul>'
-  if remaining:citations+='<details class="technical-source-details"><summary>Каталоги и технические источники ('+str(len(remaining))+')</summary><ul class="technical-source-list">'+''.join('<li>'+link(url)+'</li>' for url in remaining)+'</ul></details>'
-  return '<div class="technical-sources"><span>Источники:</span>'+citations+'</div>'
  def technical_section(p):
   record=TECHNICAL.get(p['sku'])
   if not record:return ''
-  cited=[url for item in record.get('overview',[]) for url in item['source_urls']]
-  def source_links(urls):
-   cited.extend(urls)
-   return ''
   def paragraphs(items):
-   return ''.join(f'<p>{e(item["text"])}</p>' for item in items)+source_links([url for item in items for url in item['source_urls']])
+   return ''.join(f'<p>{e(item["text"])}</p>' for item in items)
   blocks=[]
   if record.get('facts'):
    facts=''.join(f'<div><dt>{e(fact["label"])}</dt><dd>{e(fact["value"])}</dd></div>' for fact in record.get('facts',[]))
-   blocks.append(f'<section class="product-description" id="technical"><h2>Технические характеристики</h2><div><dl class="specs">{facts}</dl>{source_links([fact["source_url"] for fact in record.get("facts",[])])}</div></section>')
+   blocks.append(f'<section class="product-description" id="technical"><h2>Технические характеристики</h2><div><dl class="specs">{facts}</dl></div></section>')
   for section in record.get('sections',[]):
    models=''
    if section.get('models'):
-    models='<details class="product-models-details"><summary>Все модели из каталога производителя ('+str(len(section['models']))+')</summary><ul class="product-models">'+''.join('<li>'+e(model)+'</li>' for model in section['models'])+'</ul></details>'+source_links(section['model_source_urls'])
+    models='<details class="product-models-details"><summary>Все модели из каталога производителя ('+str(len(section['models']))+')</summary><ul class="product-models">'+''.join('<li>'+e(model)+'</li>' for model in section['models'])+'</ul></details>'
    blocks.append(f'<section class="product-description" id="technical-{e(section["id"])}"><h2>{e(section["title"])}</h2><div>{paragraphs(section["paragraphs"])}{models}</div></section>')
   kit=record.get('kit_contents')
   if kit:
    groups=[]
    for group in kit.get('groups',[]):
     rows=''.join('<tr><td>'+e(item['position'])+'</td><td>'+e(item['part_number'])+'</td><td>'+e(item['name'])+'</td><td>'+('' if item.get('quantity') is None else e(item['quantity']))+'</td><td>'+e(item.get('note',''))+'</td></tr>' for item in group.get('items',[]))
-    group_sources=source_links([url for item in group.get('items',[]) for url in item['source_urls']])
-    groups.append(f'<h3>{e(group["title"])}</h3><div class="product-table-scroll" role="region" tabindex="0" aria-label="Состав комплекта: {e(group["title"])}"><table class="product-spec-table"><thead><tr><th scope="col">Поз.</th><th scope="col">Номер детали</th><th scope="col">Наименование</th><th scope="col">Количество</th><th scope="col">Примечание</th></tr></thead><tbody>{rows}</tbody></table></div>{group_sources}')
+    groups.append(f'<h3>{e(group["title"])}</h3><div class="product-table-scroll" role="region" tabindex="0" aria-label="Состав комплекта: {e(group["title"])}"><table class="product-spec-table"><thead><tr><th scope="col">Поз.</th><th scope="col">Номер детали</th><th scope="col">Наименование</th><th scope="col">Количество</th><th scope="col">Примечание</th></tr></thead><tbody>{rows}</tbody></table></div>')
    blocks.insert(1 if record.get('facts') else 0,f'<section class="product-description" id="kit-contents"><h2>{e(kit["title"])}</h2><div>{paragraphs(kit.get("intro",[]))}{"".join(groups)}{paragraphs(kit.get("notes",[]))}</div></section>')
-  if cited:blocks.append('<section class="product-description" id="technical-sources"><h2>Документы и каталоги</h2><div>'+evidence_sources(record,cited)+'</div></section>')
   return ''.join(blocks)
  def buying_section(p):
   return f'<p class="product-fitment-cta" id="fitment"><a class="text-link" href="#selection">Задать вопрос о {e(p["sku"])} {icon("arrow")}</a></p>'
