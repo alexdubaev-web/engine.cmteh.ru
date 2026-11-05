@@ -4,7 +4,7 @@ from urllib.parse import quote,urlsplit
 sys.path.insert(0,str(Path(__file__).parent/'data'))
 from product_copy import COPY
 from product_buying import BUYING
-from seo import SEO, breadcrumbs, money, AVAILABILITY
+from seo import SEO, breadcrumbs, money, AVAILABILITY, description_paragraphs
 from articles import ARTICLES
 from pipeline_io import pipeline_lock,publish_files
 import tempfile
@@ -26,14 +26,40 @@ with pipeline_lock(ROOT):
   sources=record.get('sources',[]);source_indices={source['url']:i for i,source in enumerate(sources,1)}
   if len(source_indices)!=len(sources):raise ValueError(f'Duplicate technical source for {sku}')
   if any(urlsplit(source['url']).scheme!='https' or not urlsplit(source['url']).netloc for source in sources):raise ValueError(f'Non-HTTPS technical source for {sku}')
-  if any(fact.get('source_url') not in source_indices for fact in record.get('facts',[])):raise ValueError(f'Missing technical source association for {sku}')
-  if {fact['source_url'] for fact in record.get('facts',[])}!=set(source_indices):raise ValueError(f'Unused technical source for {sku}')
-  if not record.get('facts') and sources:raise ValueError(f'Sources without published facts for {sku}')
+  refs={fact.get('source_url') for fact in record.get('facts',[])}
+  if any(fact.get('evidence') not in ('A','B') for fact in record.get('facts',[]) if 'evidence' in fact):raise ValueError(f'Invalid technical fact evidence for {sku}')
+  if any(url not in source_indices for url in refs):raise ValueError(f'Missing technical source association for {sku}')
+  def check_paragraphs(items,field):
+   for item in items:
+    if not item.get('text') or item.get('evidence') not in ('A','B') or not item.get('source_urls'):
+     raise ValueError(f'Invalid {field} evidence for {sku}')
+    if any(url not in source_indices for url in item['source_urls']):raise ValueError(f'Missing {field} source association for {sku}')
+    refs.update(item['source_urls'])
+  check_paragraphs(record.get('overview',[]),'overview')
+  for section in record.get('sections',[]):
+   if not section.get('id') or not section.get('title') or not section.get('paragraphs'):raise ValueError(f'Incomplete technical section for {sku}')
+   check_paragraphs(section['paragraphs'],'section')
+   if 'models' in section:
+    if not section.get('models') or section.get('model_evidence') not in ('A','B') or not section.get('model_source_urls') or any(not isinstance(model,str) or not model.strip() for model in section['models']):raise ValueError(f'Invalid model compatibility evidence for {sku}')
+    if any(url not in source_indices for url in section['model_source_urls']):raise ValueError(f'Missing model compatibility source for {sku}')
+    refs.update(section['model_source_urls'])
+  kit=record.get('kit_contents')
+  if kit:
+   if not kit.get('title'):raise ValueError(f'Missing kit title for {sku}')
+   check_paragraphs(kit.get('intro',[]),'kit intro');check_paragraphs(kit.get('notes',[]),'kit note')
+   for group in kit.get('groups',[]):
+    if not group.get('title'):raise ValueError(f'Missing kit group title for {sku}')
+    for item in group.get('items',[]):
+     if not item.get('position') or not item.get('part_number') or not item.get('name') or 'quantity' not in item or isinstance(item.get('quantity'),bool) or item.get('quantity') is not None and not isinstance(item.get('quantity'),(int,float,str)) or item.get('note') is not None and not isinstance(item.get('note'),str) or item.get('evidence') not in ('A','B') or not item.get('source_urls'):
+      raise ValueError(f'Invalid kit item evidence for {sku}')
+     if any(url not in source_indices for url in item['source_urls']):raise ValueError(f'Missing kit item source association for {sku}')
+     refs.update(item['source_urls'])
+  if refs!=set(source_indices):raise ValueError(f'Technical sources must match referenced evidence for {sku}')
  STOCK_DATA=json.loads((ROOT/'data/stock.json').read_text(encoding='utf-8')) if (ROOT/'data/stock.json').exists() else {}
  STOCK=STOCK_DATA.get('items',{})
  for p in P:p['stockQuantity']=STOCK.get(p['id'],{}).get('quantity')
  images={x['id']:x for x in json.loads((ROOT/'data/images.json').read_text(encoding='utf-8'))} if (ROOT/'data/images.json').exists() else {}
- for p in P:p.update(images.get(p['id'],{}));p['copy']=COPY[p['sku']];p['note']=p['copy'][0]
+ for p in P:p.update(images.get(p['id'],{}));p['copy']=COPY[p['sku']];p['note']=p['copy'][0];p['technical']=TECHNICAL.get(p['sku'],{})
  origin=os.environ.get('PUBLIC_SITE_URL','').rstrip('/')
  indexable=os.environ.get('INDEXABLE','false')=='true' and bool(re.fullmatch(r'https://[a-zA-Z0-9.-]+(?::\d+)?',origin))
  analytics_enabled=indexable and origin=='https://engine.cmteh.ru'
@@ -81,27 +107,63 @@ with pipeline_lock(ROOT):
   label=AVAILABILITY[state]
   if p.get('stockQuantity') is not None:label+=': '+str(p['stockQuantity'])+' шт.'
   return f'<div class="stock-badge">{e(label)}</div>'
+ def evidence_sources(record,urls):
+  by_url={source['url']:source for source in record.get('sources',[])}
+  unique=list(dict.fromkeys(urls))
+  if not unique:return ''
+  link=lambda url:f'<a href="{e(url)}" target="_blank" rel="noopener">{e(by_url[url].get("title") or urlsplit(url).netloc)}</a>'
+  direct=unique[:5];remaining=unique[5:]
+  citations='<ul class="technical-source-list">'+''.join('<li>'+link(url)+'</li>' for url in direct)+'</ul>'
+  if remaining:citations+='<details class="technical-source-details"><summary>Каталоги и технические источники ('+str(len(remaining))+')</summary><ul class="technical-source-list">'+''.join('<li>'+link(url)+'</li>' for url in remaining)+'</ul></details>'
+  return '<div class="technical-sources"><span>Источники:</span>'+citations+'</div>'
  def technical_section(p):
   record=TECHNICAL.get(p['sku'])
-  if not record or not record.get('facts'):return ''
-  facts=''.join(f'<div><dt>{e(fact["label"])}</dt><dd>{e(fact["value"])}</dd></div>' for fact in record.get('facts',[]))
-  fact_list='<dl class="specs">'+facts+'</dl>' if facts else ''
-  return f'<section class="product-description" id="technical"><h2>Технические данные</h2><div>{fact_list}</div></section>'
+  if not record:return ''
+  cited=[url for item in record.get('overview',[]) for url in item['source_urls']]
+  def source_links(urls):
+   cited.extend(urls)
+   return ''
+  def paragraphs(items):
+   return ''.join(f'<p>{e(item["text"])}</p>' for item in items)+source_links([url for item in items for url in item['source_urls']])
+  blocks=[]
+  if record.get('facts'):
+   facts=''.join(f'<div><dt>{e(fact["label"])}</dt><dd>{e(fact["value"])}</dd></div>' for fact in record.get('facts',[]))
+   blocks.append(f'<section class="product-description" id="technical"><h2>Технические характеристики</h2><div><dl class="specs">{facts}</dl>{source_links([fact["source_url"] for fact in record.get("facts",[])])}</div></section>')
+  for section in record.get('sections',[]):
+   models=''
+   if section.get('models'):
+    models='<details class="product-models-details"><summary>Все модели из каталога производителя ('+str(len(section['models']))+')</summary><ul class="product-models">'+''.join('<li>'+e(model)+'</li>' for model in section['models'])+'</ul></details>'+source_links(section['model_source_urls'])
+   blocks.append(f'<section class="product-description" id="technical-{e(section["id"])}"><h2>{e(section["title"])}</h2><div>{paragraphs(section["paragraphs"])}{models}</div></section>')
+  kit=record.get('kit_contents')
+  if kit:
+   groups=[]
+   for group in kit.get('groups',[]):
+    rows=''.join('<tr><td>'+e(item['position'])+'</td><td>'+e(item['part_number'])+'</td><td>'+e(item['name'])+'</td><td>'+('' if item.get('quantity') is None else e(item['quantity']))+'</td><td>'+e(item.get('note',''))+'</td></tr>' for item in group.get('items',[]))
+    group_sources=source_links([url for item in group.get('items',[]) for url in item['source_urls']])
+    groups.append(f'<h3>{e(group["title"])}</h3><div class="product-table-scroll" role="region" tabindex="0" aria-label="Состав комплекта: {e(group["title"])}"><table class="product-spec-table"><thead><tr><th scope="col">Поз.</th><th scope="col">Номер детали</th><th scope="col">Наименование</th><th scope="col">Количество</th><th scope="col">Примечание</th></tr></thead><tbody>{rows}</tbody></table></div>{group_sources}')
+   blocks.insert(1 if record.get('facts') else 0,f'<section class="product-description" id="kit-contents"><h2>{e(kit["title"])}</h2><div>{paragraphs(kit.get("intro",[]))}{"".join(groups)}{paragraphs(kit.get("notes",[]))}</div></section>')
+  if cited:blocks.append('<section class="product-description" id="technical-sources"><h2>Документы и каталоги</h2><div>'+evidence_sources(record,cited)+'</div></section>')
+  return ''.join(blocks)
  def buying_section(p):
-  guide=BUYING[p['sku']]
-  checklist=''.join(f'<li>{e(item)}</li>' for item in guide['checklist'])
-  return f'<section class="product-description" id="fitment"><h2>Подбор {e(p["sku"])}</h2><div><p>{e(guide["lead"])}</p><ul class="buying-checklist">{checklist}</ul><a class="text-link" href="#selection">Запросить подбор {e(p["sku"])} {icon("arrow")}</a></div></section>'
+  return f'<p class="product-fitment-cta" id="fitment"><a class="text-link" href="#selection">Задать вопрос о {e(p["sku"])} {icon("arrow")}</a></p>'
  def buying_terms(p):
   company=seo.commerce['company']
   terms=''.join(f'<div><dt>{label}</dt><dd>{e(company[key])}</dd></div>' for key,label in [('payment_terms','Оплата'),('delivery_terms','Доставка'),('warranty_terms','Гарантия'),('dispatch_terms','Отгрузка')] if company.get(key))
   return f'<section class="product-description" id="order-details"><h2>Покупка и доставка</h2><div><p>Добавьте {e(p["sku"])} в корзину, укажите количество и отправьте заказ. Для расчёта доставки напишите город получения.</p><dl class="purchase-terms">{terms}</dl><a class="text-link" href="/delivery/">Подробнее о доставке и оплате {icon("arrow")}</a></div></section>'
- def product_description(p):
-  parts=[seo.product_name(p)+'.']
+ def product_meta_description(p):
+  overview=description_paragraphs(p)
+  lead=overview[0].split('. ',1)[0].rstrip('.') if overview else seo.product_name(p)
+  lead=re.sub(r'^(?:'+re.escape(p['brand'])+r'\s+)?'+re.escape(p['sku'])+r'\s*:\s*',p['sku']+' ',lead)
+  parts=[lead+'.']
+  for fact in p.get('technical',{}).get('facts',[]):
+   if any(term in fact['label'].lower() for term in ('серия','семейство','двигатель','цилиндро-поршневые')) and fact['value'] not in lead:
+    parts.append(fact['label']+': '+fact['value']+'.')
+    break
   state=seo.availability(p)
   if state:
    label=AVAILABILITY[state]
    if state in ('InStock','LimitedAvailability') and p.get('stockQuantity') is not None:label+=': '+str(p['stockQuantity'])+' шт.'
-   parts.append(label+'.')
+   parts.append(label.rstrip('.')+'.')
   parts.extend(['Цена с НДС.','Оплата по счёту.','Доставка по России.'])
   return ' '.join(parts)
  def card(p):
@@ -227,7 +289,7 @@ with pipeline_lock(ROOT):
  for p in P:
   path='/catalog/'+p['id']+'/'
   title=seo.product_title(p)
-  desc=product_description(p)
+  desc=product_meta_description(p)
   schema=seo.product_schema(p)
   codes=''.join(f'<span>{e(c)}</span>' for c in p['codes'])
   related=sorted([x for x in featured if x['category']==p['category'] and x['id']!=p['id']],key=lambda x:(x['brand']!=p['brand'],not bool(x.get('image')),x['sourceRow']))[:4]
@@ -240,7 +302,13 @@ with pipeline_lock(ROOT):
   if state and p.get('stockQuantity') is not None:stock+=f'<span itemprop="inventoryLevel" itemscope itemtype="https://schema.org/QuantitativeValue"><meta itemprop="value" content="{p["stockQuantity"]}"><meta itemprop="unitCode" content="H87"></span>'
   p_name=seo.product_name(p)
   technical=technical_section(p)
-  content=crumbs([('Каталог','/catalog/'),(p['brand'],'/brands/'+next(k for k,v in BRANDS.items() if v==p['brand'])+'/'),(p['sku'],None)])+f'''<div class="wrap"><article itemscope itemtype="https://schema.org/Product" itemid="{e(base+path)}#product"><section class="product-detail"><div><div class="detail-photo">{picture(p,True)}</div></div><div><div class="brand-label" itemprop="brand">{e(p['brand'])}</div><h1 itemprop="name">{e(p_name)}</h1><div class="detail-sku">Артикул: <strong itemprop="sku">{e(p['sku'])}</strong><meta itemprop="mpn" content="{e(p['sku'])}"></div><div itemprop="offers" itemscope itemtype="https://schema.org/Offer" itemid="{e(base+path)}#offer"><meta itemprop="price" content="{p['price']}"><meta itemprop="priceCurrency" content="RUB"><link itemprop="url" href="{e(base+path)}"><div class="detail-price">{money(p['price'])} ₽</div>{stock}<p class="price-note">Цена с НДС.</p></div><button class="btn" data-add="{e(p['id'])}">{icon('plus')} В корзину</button> <a class="text-link" href="#selection">Проверить применимость</a><p class="purchase-benefits"><span>Оплата по счёту</span><span>Договор и документы</span><span>Доставка по России</span></p><p><a href="tel:+78124688299">+7 812 468-82-99</a> · <a href="mailto:info@cmteh.ru">info@cmteh.ru</a></p><dl class="specs"><div><dt>Бренд</dt><dd><a href="/brands/{next(k for k,v in BRANDS.items() if v==p['brand'])}/">{e(p['brand'])}</a></dd></div><div><dt>Артикул</dt><dd>{e(p['sku'])}</dd></div><div><dt>Раздел</dt><dd><a href="/category/{e(p['category'])}/">{e(CATS[p['category']][0])}</a></dd></div><div><dt>Регион продаж</dt><dd>Россия</dd></div></dl><nav class="product-anchor-nav" aria-label="Информация о товаре"><a href="#description">Описание</a><a href="#part-numbers">Артикулы</a>{'<a href="#technical">Характеристики</a>' if TECHNICAL.get(p['sku'],{}).get('facts') else ''}<a href="#fitment">Подбор</a><a href="#order-details">Покупка и доставка</a></nav></div></section><section class="product-description" id="description"><h2>О детали</h2><div itemprop="description"><p>{e(p['copy'][0])}</p> <p>{e(p['copy'][1])}</p></div></section><section class="product-description" id="part-numbers"><h2>Номера для сверки</h2><div><p>Сверьте артикул с маркировкой детали. Остальные номера из карточки помогут при поиске, но перед заказом проверьте их связь с нужным исполнением.</p><div class="code-list">{codes}</div></div></section>{technical}{buying_section(p)}</article>{buying_terms(p)}<section class="section product-reading"><div class="section-heading"><h2>Полезные статьи</h2></div><div class="article-grid">{''.join(article_card(a) for a in articles[:2])}</div></section><section class="section"><div class="section-heading"><h2>Другие детали в разделе</h2><a class="text-link" href="/category/{e(p['category'])}/">Весь раздел {icon('arrow')}</a></div><div class="grid">{''.join(card(x)for x in related)}</div></section></div>'''+contact(p)
+  record=TECHNICAL.get(p['sku'],{})
+  overview=record.get('overview') or []
+  overview_html=''.join(f'<p>{e(item["text"])}</p>' for item in overview) if overview else ''.join(f'<p>{e(text)}</p>' for text in description_paragraphs(p))
+  overview_sources=''
+  part_numbers=''
+  anchors='<a href="#description">Описание</a>'+('<a href="#technical">Характеристики</a>' if record.get('facts') else '')+('<a href="#kit-contents">Состав комплекта</a>' if record.get('kit_contents') else '')+''.join(f'<a href="#technical-{e(section["id"])}">{e(section["title"])}</a>' for section in record.get('sections',[]))+'<a href="#order-details">Покупка</a>'
+  content=crumbs([('Каталог','/catalog/'),(p['brand'],'/brands/'+next(k for k,v in BRANDS.items() if v==p['brand'])+'/'),(p['sku'],None)])+f'''<div class="wrap"><article itemscope itemtype="https://schema.org/Product" itemid="{e(base+path)}#product"><section class="product-detail"><div><div class="detail-photo">{picture(p,True)}</div></div><div><div class="brand-label" itemprop="brand">{e(p['brand'])}</div><h1 itemprop="name">{e(p_name)}</h1><div class="detail-sku">Артикул: <strong itemprop="sku">{e(p['sku'])}</strong><meta itemprop="mpn" content="{e(p['sku'])}"></div><div itemprop="offers" itemscope itemtype="https://schema.org/Offer" itemid="{e(base+path)}#offer"><meta itemprop="price" content="{p['price']}"><meta itemprop="priceCurrency" content="RUB"><link itemprop="url" href="{e(base+path)}"><div class="detail-price">{money(p['price'])} ₽</div>{stock}<p class="price-note">Цена с НДС.</p></div><button class="btn" data-add="{e(p['id'])}">{icon('plus')} В корзину</button> <a class="text-link" href="#selection">Проверить применимость</a><p class="purchase-benefits"><span>Оплата по счёту</span><span>Договор и документы</span><span>Доставка по России</span></p><p><a href="tel:+78124688299">+7 812 468-82-99</a> · <a href="mailto:info@cmteh.ru">info@cmteh.ru</a></p><dl class="specs"><div><dt>Бренд</dt><dd><a href="/brands/{next(k for k,v in BRANDS.items() if v==p['brand'])}/">{e(p['brand'])}</a></dd></div><div><dt>Артикул</dt><dd>{e(p['sku'])}</dd></div><div><dt>Раздел</dt><dd><a href="/category/{e(p['category'])}/">{e(CATS[p['category']][0])}</a></dd></div><div><dt>Регион продаж</dt><dd>Россия</dd></div></dl><nav class="product-anchor-nav" aria-label="Информация о товаре">{anchors}</nav></div></section><section class="product-description" id="description"><h2>О детали</h2><div itemprop="description">{overview_html}</div>{overview_sources}</section>{part_numbers}{technical}{buying_section(p)}</article>{buying_terms(p)}<section class="section product-reading"><div class="section-heading"><h2>Полезные статьи</h2></div><div class="article-grid">{''.join(article_card(a) for a in articles[:2])}</div></section><section class="section"><div class="section-heading"><h2>Другие детали в разделе</h2><a class="text-link" href="/category/{e(p['category'])}/">Весь раздел {icon('arrow')}</a></div><div class="grid">{''.join(card(x)for x in related)}</div></section></div>'''+contact(p)
   page(path,title,desc,content,schema)
  page('/articles/','Статьи о подборе дизельных запчастей | СМ ТЕХНО','Как сверить артикул, выбрать ТНВД и понять, какая деталь нужна для ремонта.',crumbs([('Статьи',None)])+'<div class="wrap page-title"><h1>Статьи о запчастях</h1><p>Короткие ответы о подборе и заказе деталей для дизельной техники.</p></div><section class="section wrap catalog-page"><div class="article-grid articles-list">'+''.join(article_card(a)for a in ARTICLES)+'</div></section>')
  for a in ARTICLES:
@@ -280,7 +348,7 @@ with pipeline_lock(ROOT):
  paths.remove('/404/')
  seo.finish(paths)
  (stage/'data/catalog-built.json').write_text(json.dumps(P,ensure_ascii=False,indent=2),encoding='utf-8')
- (stage/'data/seo-catalog.json').write_text(json.dumps([{'sku':p['sku'],'path':'/catalog/'+p['id']+'/','title':seo.product_title(p),'description':product_description(p),'h1':seo.product_name(p),'image_alt':seo.product_name(p) if p.get('image') else None,'paragraphs':p['copy'][:2],'stockQuantity':p['stockQuantity'],'availability':seo.availability(p)} for p in P],ensure_ascii=False,indent=2),encoding='utf-8')
+ (stage/'data/seo-catalog.json').write_text(json.dumps([{'sku':p['sku'],'path':'/catalog/'+p['id']+'/','title':seo.product_title(p),'description':product_meta_description(p),'h1':seo.product_name(p),'image_alt':seo.product_name(p) if p.get('image') else None,'paragraphs':description_paragraphs(p),'stockQuantity':p['stockQuantity'],'availability':seo.availability(p)} for p in P],ensure_ascii=False,indent=2),encoding='utf-8')
  (stage/'backend').mkdir()
  (stage/'backend/catalog.json').write_text(json.dumps([{k:p[k] for k in ['id','sku','name','brand','price']} for p in P],ensure_ascii=False,indent=2),encoding='utf-8')
  # A single dependency-free Worker includes pre-rendered pages and locally hosted assets.

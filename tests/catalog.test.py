@@ -33,14 +33,22 @@ assert {'RE543262','RE571640','DZ100212','DZ100221','DZ100217','DZ100216'} <= {p
 assert len({p['id'] for p in products})==expected_product_count
 technical=json.loads((root/'data/product_technical.json').read_text(encoding='utf-8'))
 assert set(technical)=={p['sku'] for p in products},'Technical records must cover every catalog SKU exactly once'
-assert sum(not record['facts'] for record in technical.values())==5,'Five unverified records must remain selection-only'
 for product in products:
  record=technical[product['sku']]
  assert all(source['url'].startswith('https://') for source in record['sources']),product['sku']+' technical source must use HTTPS'
- assert {fact['source_url'] for fact in record['facts']}=={source['url'] for source in record['sources']},product['sku']+' source list must match published facts'
+ refs={fact['source_url'] for fact in record.get('facts',[])}
+ for item in record.get('overview',[]):refs.update(item.get('source_urls',[]))
+ for section in record.get('sections',[]):
+  for item in section.get('paragraphs',[]):refs.update(item.get('source_urls',[]))
+  refs.update(section.get('model_source_urls',[]))
+ kit=record.get('kit_contents') or {}
+ for item in kit.get('intro',[])+kit.get('notes',[]):refs.update(item.get('source_urls',[]))
+ for group in kit.get('groups',[]):
+  for item in group.get('items',[]):refs.update(item.get('source_urls',[]))
+ assert refs=={source['url'] for source in record['sources']},product['sku']+' source list must match published evidence'
  page=out/'catalog'/product['id']/'index.html';h=lxml.html.fromstring(page.read_text(encoding='utf-8'))
  sections=h.xpath('//section[@id="technical"]')
- if record['facts']:
+ if record.get('facts'):
   assert len(sections)==1,product['sku']+' technical section missing'
   section=sections[0]
   actual=[(x.xpath('./dt/text()')[0],x.xpath('./dd/text()')[0].strip()) for x in section.xpath('.//dl[@class="specs"]/div')]
@@ -48,9 +56,10 @@ for product in products:
   assert actual==expected,product['sku']+' visible facts differ from production data'
   if record.get('selection_note'):
    assert record['selection_note'] not in section.text_content(),product['sku']+' internal selection note must stay out of the public technical section'
- else:
-  assert not record['sources'] and not sections,product['sku']+' unverified record must not render an empty technical section'
-  assert record.get('selection_note'),product['sku']+' unverified record needs an actionable selection note'
+ if not record.get('facts') and not record.get('sections') and not record.get('kit_contents'):
+  assert not sections,product['sku']+' must not render an empty technical section'
+ for section in h.xpath('//section[starts-with(@id,"technical-")]|//section[@id="kit-contents"]'):
+  assert section.xpath('.//p|.//table|.//ul/li'),product['sku']+' rendered an empty technical content section'
 image_manifest=json.loads((root/'data/images.json').read_text(encoding='utf-8'))
 image_dimensions=json.loads((root/'data/image-dimensions.json').read_text(encoding='utf-8'))
 image_ledger=json.loads((root/'docs/PRODUCT-IMAGES-2026-10-07.json').read_text(encoding='utf-8'))
