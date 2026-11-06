@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "ff976df4c6e1281adfd57570a2ff834b81e06bd00f98bd4895eb841bfaaaade9",
-    "lastmod": "2026-11-05T10:30:21Z"
+    "sha256": "485619d4f35dcd7f9e0dda43e5ef3e80326ccf1466b80bee3d57305ee466fd1c",
+    "lastmod": "2026-11-06T06:03:03Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "fb0d4a85b0a94c9bf548a1d5fdd2dfb0755c65e3e62559ce946c012697d29712",
-    "lastmod": "2026-11-05T09:03:38Z"
+    "sha256": "fa4b67d6dec88f9a8a1249ad02cf30166faf5669d7ebcf654a900bdd57b80390",
+    "lastmod": "2026-11-06T06:03:03Z"
+  },
+  "/articles/chastitsy-v-toplivnom-filtre-dizelya/": {
+    "sha256": "429f854b1749e7dec5f2c7370179465a78fd134e8c0c27d7e15eed134042c2ab",
+    "lastmod": "2026-11-06T06:03:03Z"
   },
   "/articles/forsunka-do-ustanovki-upakovka-i-zashchita/": {
     "sha256": "67d29dd70f880ad22b7a9d242f638390881ed8bf3e80e0feaf247de4be3869c9",
@@ -336,8 +340,8 @@
     "lastmod": "2026-11-05T09:03:38Z"
   },
   "/articles/posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya/": {
-    "sha256": "2b3c3b7426f081ec5708300daec3a723ffbafe6e295523b513ec5e7576bcae38",
-    "lastmod": "2026-11-05T09:03:38Z"
+    "sha256": "2f5f30174140eee2ce58a3e3fe48273920e0458ba5245cda27a91a00636cb2cc",
+    "lastmod": "2026-11-06T06:03:03Z"
   },
   "/articles/uplotneniya-pri-zamene-forsunki/": {
     "sha256": "2c174ab83032a58007c3eee9b8df605c337af778f2e052a941b492bf797eaa0a",
