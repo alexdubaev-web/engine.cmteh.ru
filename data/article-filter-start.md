@@ -42,6 +42,8 @@
 
 Другие позиции находятся в [разделе ТНВД и топливных насосов](/category/pumps/). Для подготовки заявки используйте памятку [о проверках перед заказом ТНВД](/articles/tnvd-pered-zakazom/). Если затруднённый запуск появился до обслуживания и связан с холодной погодой, полезен отдельный материал [о плохом запуске дизеля на холодную](/articles/dizel-ploho-zavoditsya-na-holodnuyu/).
 
+Если частицы заметили на снятом фильтре, сохраните фото находки и уточните, на какой стороне фильтра она была. Какие сведения помогут механику оценить загрязнение, разобрано в статье [о частицах в топливном фильтре дизеля](/articles/chastitsy-v-toplivnom-filtre-dizelya/).
+
 ## Источники
 
 - [Delphi: How to Deal with Blocked Fuel Filters on Common Rail Applications](https://www.delphiautoparts.com/apac/mom/how-to/article/how-to-deal-with-blocked-fuel-filters-on-common-rail-applications). Проверка контура подачи в перечисленных производителем системах Common Rail. Проверено 29 октября 2026 года.

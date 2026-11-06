@@ -2,6 +2,11 @@
   "accepted_keyword_count": 397,
   "articles": [
     {
+      "slug": "chastitsy-v-toplivnom-filtre-dizelya",
+      "status": "published",
+      "url": "/articles/chastitsy-v-toplivnom-filtre-dizelya/"
+    },
+    {
       "slug": "forsunka-do-ustanovki-upakovka-i-zashchita",
       "status": "published",
       "url": "/articles/forsunka-do-ustanovki-upakovka-i-zashchita/"
@@ -211,18 +216,10 @@
       "secondary_brand_url": "/brands/denso/",
       "skus": [
         "260100-4010",
-        "260100-6010"
-      ],
-      "target_url": "/category/injectors/"
-    },
-    {
-      "brand": "Denso",
-      "category": "other",
-      "secondary_brand_url": "/brands/denso/",
-      "skus": [
+        "260100-6010",
         "DZ100218"
       ],
-      "target_url": "/category/other/"
+      "target_url": "/category/injectors/"
     },
     {
       "brand": "Denso",
@@ -250,18 +247,10 @@
         "DZ100212",
         "DZ100216",
         "DZ100217",
-        "DZ100221"
-      ],
-      "target_url": "/category/injectors/"
-    },
-    {
-      "brand": "John Deere",
-      "category": "nozzles",
-      "secondary_brand_url": "/brands/john-deere/",
-      "skus": [
+        "DZ100221",
         "DZ112112"
       ],
-      "target_url": "/category/nozzles/"
+      "target_url": "/category/injectors/"
     },
     {
       "brand": "John Deere",
@@ -305,7 +294,7 @@
       "target_url": "/category/injectors/"
     }
   ],
-  "candidate_count": 3057,
+  "candidate_count": 3055,
   "curated_decisions": {
     "count": 40,
     "file": "seo/semantic-core/curated-decisions.json",
@@ -3121,8 +3110,8 @@
         "ws-2026-10-12-q035-total",
         "ws-2026-10-12-q096-total"
       ],
-      "name": "Электромагнитный клапан топливной системы Delphi",
-      "short_name": "Электромагнитный клапан топливной системы",
+      "name": "Актуатор насос-форсунки Delphi E1",
+      "short_name": "Актуатор насос-форсунки E1",
       "sku": "7206-0435"
     },
     {
@@ -3139,8 +3128,8 @@
       "evidence_ids": [
         "ws-2026-10-12-q029-total"
       ],
-      "name": "Электромагнитный клапан топливной системы Delphi",
-      "short_name": "Электромагнитный клапан топливной системы",
+      "name": "Клапан управления распылителем Delphi Smart Injector",
+      "short_name": "Клапан управления распылителем Smart Injector",
       "sku": "7206-0460"
     },
     {
@@ -3167,8 +3156,8 @@
       "evidence_ids": [
         "ws-2026-10-12-q076-total"
       ],
-      "name": "Клапан регулирования давления топлива HPV",
-      "short_name": "Клапан регулирования давления топлива HPV",
+      "name": "Клапан регулирования давления топливной рампы Delphi",
+      "short_name": "Клапан регулирования давления топливной рампы",
       "sku": "7210-0473"
     },
     {
@@ -3317,7 +3306,7 @@
     {
       "brand": "Denso",
       "canonical_target": "/catalog/dz100218/",
-      "category": "other",
+      "category": "injectors",
       "codes": [
         {
           "kind": "catalog_sku",
@@ -3334,8 +3323,8 @@
         "ws-2026-10-12-q074-r002",
         "ws-2026-10-12-q074-total"
       ],
-      "name": "Комплект топливной форсунки (распылитель) John Deere / Denso",
-      "short_name": "Комплект топливной форсунки (распылитель)",
+      "name": "Комплект топливной форсунки John Deere / Denso",
+      "short_name": "Комплект топливной форсунки",
       "sku": "DZ100218"
     },
     {
@@ -3402,7 +3391,7 @@
     {
       "brand": "John Deere",
       "canonical_target": "/catalog/dz112112/",
-      "category": "nozzles",
+      "category": "injectors",
       "codes": [
         {
           "kind": "catalog_sku",
@@ -3414,8 +3403,8 @@
         "ws-2026-10-12-q052-r002",
         "ws-2026-10-12-q052-total"
       ],
-      "name": "Комплект распылителя форсунки John Deere",
-      "short_name": "Комплект распылителя форсунки",
+      "name": "Комплект топливной форсунки John Deere",
+      "short_name": "Комплект топливной форсунки",
       "sku": "DZ112112"
     },
     {
@@ -3483,8 +3472,8 @@
         "ws-2026-10-12-q071-r004",
         "ws-2026-10-12-q071-total"
       ],
-      "name": "Ремкомплект топливной форсунки Common Rail Bosch",
-      "short_name": "Ремкомплект топливной форсунки Common Rail",
+      "name": "Комплект уплотнений форсунки Common Rail Bosch",
+      "short_name": "Комплект уплотнений форсунки Common Rail",
       "sku": "F00RJ02177"
     },
     {

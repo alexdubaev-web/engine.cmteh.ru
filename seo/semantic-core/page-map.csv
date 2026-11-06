@@ -25,7 +25,7 @@ product:0445120126,existing_product,/catalog/0445120126/,0445120126,0445120126,B
 product:0445120072,existing_product,/catalog/0445120072/,0445120072,0445120072,Bosch,injectors,/category/injectors/|/brands/bosch/,active
 product:5620004100,existing_product,/catalog/5620004100/,5620004100,5620004100|GK2Q-9K546-AC,VDO / Vitesco (Aumovio),injectors,/category/injectors/|/brands/vdo/,active
 product:0445020540,existing_product,/catalog/0445020540/,0445020540,0445020540,Bosch,pumps,/category/pumps/|/brands/bosch/,active
-product:dz112112,existing_product,/catalog/dz112112/,DZ112112,DZ112112,John Deere,nozzles,/category/nozzles/|/brands/john-deere/,active
+product:dz112112,existing_product,/catalog/dz112112/,DZ112112,DZ112112,John Deere,injectors,/category/injectors/|/brands/john-deere/,active
 product:0445226092,existing_product,/catalog/0445226092/,0445226092,0445226092|0445226190,Bosch,other,/category/other/|/brands/bosch/,active
 product:0445120728,existing_product,/catalog/0445120728/,0445120728,0445120728|0445120729|527-5384|617-1909,Bosch,injectors,/category/injectors/|/brands/bosch/,active
 product:0445120212,existing_product,/catalog/0445120212/,0445120212,0445120212|5263307|0445120007|0445120273,Bosch,injectors,/category/injectors/|/brands/bosch/,active
@@ -47,7 +47,7 @@ product:0445020508,existing_product,/catalog/0445020508/,0445020508,0445020508,B
 product:f00rj02177,existing_product,/catalog/f00rj02177/,F00RJ02177,F00RJ02177,Bosch,other,/category/other/|/brands/bosch/,active
 product:0414701072,existing_product,/catalog/0414701072/,0414701072,0414701072|0414701051|0414701073/7|0414701086/8|0414701094|0414701930|2599428|2599429|1943974,Bosch,injectors,/category/injectors/|/brands/bosch/,active
 product:28384974,existing_product,/catalog/28384974/,28384974,28384974|28318239|9422A040A|25187375|98686903,Delphi,pumps,/category/pumps/|/brands/delphi/,active
-product:dz100218,existing_product,/catalog/dz100218/,DZ100218,DZ100218|095000-6880,Denso,other,/category/other/|/brands/denso/,active
+product:dz100218,existing_product,/catalog/dz100218/,DZ100218,DZ100218|095000-6880,Denso,injectors,/category/injectors/|/brands/denso/,active
 product:28384976,existing_product,/catalog/28384976/,28384976,28384976|28286124|28318240|25187376,Delphi,pumps,/category/pumps/|/brands/delphi/,active
 product:7210-0473,existing_product,/catalog/7210-0473/,7210-0473,7210-0473|31442-84300|22720232,Delphi,valves,/category/valves/|/brands/delphi/,active
 product:8980436870,existing_product,/catalog/8980436870/,8980436870,8980436870|294200-0650,Denso,valves,/category/valves/|/brands/denso/,active
@@ -79,6 +79,7 @@ brand:Delphi,existing_brand,/brands/delphi/,,,Delphi,,,active
 brand:Denso,existing_brand,/brands/denso/,,,Denso,,,active
 brand:John Deere,existing_brand,/brands/john-deere/,,,John Deere,,,active
 brand:VDO / Vitesco (Aumovio),existing_brand,/brands/vdo/,,,VDO / Vitesco (Aumovio),,,active
+article:chastitsy-v-toplivnom-filtre-dizelya,existing_article,/articles/chastitsy-v-toplivnom-filtre-dizelya/,,,,,,published
 article:forsunka-do-ustanovki-upakovka-i-zashchita,existing_article,/articles/forsunka-do-ustanovki-upakovka-i-zashchita/,,,,,,published
 article:podkachivayushchiy-nasos-i-tnvd,existing_article,/articles/podkachivayushchiy-nasos-i-tnvd/,,,,,,published
 article:novaya-ili-vosstanovlennaya-forsunka,existing_article,/articles/novaya-ili-vosstanovlennaya-forsunka/,,,,,,published
