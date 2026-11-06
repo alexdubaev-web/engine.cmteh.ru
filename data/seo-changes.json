@@ -4,7 +4,6 @@
   "generated_at": "2026-11-06T06:03:03Z",
   "urls": [
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/",
-    "https://engine.cmteh.ru/articles/posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya/",
     "https://engine.cmteh.ru/catalog/",
     "https://engine.cmteh.ru/category/injectors/",
     "https://engine.cmteh.ru/category/pumps/",
@@ -81,8 +80,6 @@
     "https://engine.cmteh.ru/catalog/dz100221/",
     "https://engine.cmteh.ru/catalog/dz100217/",
     "https://engine.cmteh.ru/catalog/dz100216/",
-    "https://engine.cmteh.ru/",
-    "https://engine.cmteh.ru/articles/",
     "https://engine.cmteh.ru/articles/forsunka-do-ustanovki-upakovka-i-zashchita/",
     "https://engine.cmteh.ru/articles/novaya-ili-vosstanovlennaya-forsunka/",
     "https://engine.cmteh.ru/articles/letnee-toplivo-pered-morozami/",
@@ -98,12 +95,10 @@
     "https://engine.cmteh.ru/articles/tnvd-pered-zakazom/",
     "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/",
-    "https://engine.cmteh.ru/contacts/",
-    "https://engine.cmteh.ru/articles/chastitsy-v-toplivnom-filtre-dizelya/"
+    "https://engine.cmteh.ru/contacts/"
   ],
   "revisions": {
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "a26169a07a8747e888773eca4b4d8790",
-    "https://engine.cmteh.ru/articles/posle-zameny-toplivnogo-filtra-dizel-ne-zavoditsya/": "7946c3e8e9f34b619609652113de8bc8",
     "https://engine.cmteh.ru/catalog/": "e47b07f822fb408583129369d43db353",
     "https://engine.cmteh.ru/category/injectors/": "8575687b9e794c448121d679ba01ae9d",
     "https://engine.cmteh.ru/category/pumps/": "02546230f9394494815fcaa4a61f74b8",
@@ -180,8 +175,6 @@
     "https://engine.cmteh.ru/catalog/dz100221/": "bdc3ecc0031144dfa8d369a1e4c758ee",
     "https://engine.cmteh.ru/catalog/dz100217/": "e2089637334b423fabd7289b0175c14d",
     "https://engine.cmteh.ru/catalog/dz100216/": "e0e6900ff54b475bafaa7b5f02c70d4b",
-    "https://engine.cmteh.ru/": "f5ca2bea8f0a47ae87ee153208542d79",
-    "https://engine.cmteh.ru/articles/": "f2fce63b2e014e3487ab379b15990859",
     "https://engine.cmteh.ru/articles/forsunka-do-ustanovki-upakovka-i-zashchita/": "0316d7a9c1624c1aa43c9a3f671d100d",
     "https://engine.cmteh.ru/articles/novaya-ili-vosstanovlennaya-forsunka/": "66bd77cc524e49f1aa0ad2283b602483",
     "https://engine.cmteh.ru/articles/letnee-toplivo-pered-morozami/": "2ad25f33539c44938cbfdfcb3621b046",
@@ -197,7 +190,6 @@
     "https://engine.cmteh.ru/articles/tnvd-pered-zakazom/": "21b1c46721284252be8c5fcd5045e2c8",
     "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/": "685e9156baaf4fe09c8097b0e5eebe0e",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/": "7085071d538c4fe8ac1c2b8ccd125e74",
-    "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0",
-    "https://engine.cmteh.ru/articles/chastitsy-v-toplivnom-filtre-dizelya/": "6f54ec3a8c80450dadcf35b52aebf6d5"
+    "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0"
   }
 }
