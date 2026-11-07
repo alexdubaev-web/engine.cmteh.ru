@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "485619d4f35dcd7f9e0dda43e5ef3e80326ccf1466b80bee3d57305ee466fd1c",
-    "lastmod": "2026-11-06T06:03:03Z"
+    "sha256": "37fdcb03387804c9c2f10743c6cd581bc33449c76a80e40821e95ee74a8b2e89",
+    "lastmod": "2026-11-07T06:00:15Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "fa4b67d6dec88f9a8a1249ad02cf30166faf5669d7ebcf654a900bdd57b80390",
-    "lastmod": "2026-11-06T06:03:03Z"
+    "sha256": "3f2559e81b85a78424b3999e4bbc6d638f51686897bae8174b284dd446e08dac",
+    "lastmod": "2026-11-07T06:00:15Z"
+  },
+  "/articles/proverka-obratnogo-sliva-forsunok/": {
+    "sha256": "7b707e5a148a2094c7e005a3b484768ba694549217f4155bf1f10c10c9cc2b9f",
+    "lastmod": "2026-11-07T06:00:15Z"
   },
   "/articles/chastitsy-v-toplivnom-filtre-dizelya/": {
     "sha256": "429f854b1749e7dec5f2c7370179465a78fd134e8c0c27d7e15eed134042c2ab",
@@ -332,8 +336,8 @@
     "lastmod": "2026-11-05T09:03:38Z"
   },
   "/articles/protokol-proverki-forsunki/": {
-    "sha256": "f46ed1b498142f4f3d0b6834088e76f114c60dcd2879630cd3dafd4c4354a788",
-    "lastmod": "2026-11-05T09:03:38Z"
+    "sha256": "850ccfd13fb0229abb15627750a7b6dd8607586a92f855dc7b60cdcf2ba14a83",
+    "lastmod": "2026-11-07T06:00:15Z"
   },
   "/articles/proverka-podlinnosti-forsunki-pered-pokupkoy/": {
     "sha256": "3084246125720464a0b7da540f3df64c51a24bc3cb95a419d8edb0994301c5d9",
