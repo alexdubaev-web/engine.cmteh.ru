@@ -1,7 +1,7 @@
 {
   "origin": "https://engine.cmteh.ru",
   "indexable": true,
-  "generated_at": "2026-11-06T06:03:03Z",
+  "generated_at": "2026-11-07T06:00:15Z",
   "urls": [
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/",
     "https://engine.cmteh.ru/catalog/",
@@ -95,7 +95,10 @@
     "https://engine.cmteh.ru/articles/tnvd-pered-zakazom/",
     "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/",
-    "https://engine.cmteh.ru/contacts/"
+    "https://engine.cmteh.ru/contacts/",
+    "https://engine.cmteh.ru/",
+    "https://engine.cmteh.ru/articles/",
+    "https://engine.cmteh.ru/articles/proverka-obratnogo-sliva-forsunok/"
   ],
   "revisions": {
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "a26169a07a8747e888773eca4b4d8790",
@@ -178,7 +181,7 @@
     "https://engine.cmteh.ru/articles/forsunka-do-ustanovki-upakovka-i-zashchita/": "0316d7a9c1624c1aa43c9a3f671d100d",
     "https://engine.cmteh.ru/articles/novaya-ili-vosstanovlennaya-forsunka/": "66bd77cc524e49f1aa0ad2283b602483",
     "https://engine.cmteh.ru/articles/letnee-toplivo-pered-morozami/": "2ad25f33539c44938cbfdfcb3621b046",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "e16530c5921a40ea942c30478b28a04a",
+    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "b6d4a653e740467ba2508579927dc536",
     "https://engine.cmteh.ru/articles/proverka-podlinnosti-forsunki-pered-pokupkoy/": "f3bda9ebcd434beba8375c2d016718b2",
     "https://engine.cmteh.ru/articles/uplotneniya-pri-zamene-forsunki/": "8266aadc991a44fe9cd1ff8f85b5db27",
     "https://engine.cmteh.ru/articles/nasos-forsunka-i-common-rail/": "4a2fc3dfc04145f5813d0e3acd1a0c02",
@@ -190,6 +193,9 @@
     "https://engine.cmteh.ru/articles/tnvd-pered-zakazom/": "21b1c46721284252be8c5fcd5045e2c8",
     "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/": "685e9156baaf4fe09c8097b0e5eebe0e",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/": "7085071d538c4fe8ac1c2b8ccd125e74",
-    "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0"
+    "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0",
+    "https://engine.cmteh.ru/": "34530a04b17a4616b8cd12de0a894dc7",
+    "https://engine.cmteh.ru/articles/": "4d2ff2ef82a0412d87c203bafe3a93ee",
+    "https://engine.cmteh.ru/articles/proverka-obratnogo-sliva-forsunok/": "ceeade3146e0484ea19be6bdd8986f8c"
   }
 }
