@@ -1,7 +1,7 @@
 {
   "origin": "https://engine.cmteh.ru",
   "indexable": true,
-  "generated_at": "2026-11-07T06:00:15Z",
+  "generated_at": "2026-11-08T09:35:45Z",
   "urls": [
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/",
     "https://engine.cmteh.ru/catalog/",
@@ -94,7 +94,11 @@
     "https://engine.cmteh.ru/articles/tnvd-pered-zakazom/",
     "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/",
-    "https://engine.cmteh.ru/contacts/"
+    "https://engine.cmteh.ru/contacts/",
+    "https://engine.cmteh.ru/",
+    "https://engine.cmteh.ru/articles/",
+    "https://engine.cmteh.ru/articles/proverka-elektriki-forsunki/",
+    "https://engine.cmteh.ru/articles/proverka-obratnogo-sliva-forsunok/"
   ],
   "revisions": {
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "a26169a07a8747e888773eca4b4d8790",
@@ -188,6 +192,10 @@
     "https://engine.cmteh.ru/articles/tnvd-pered-zakazom/": "21b1c46721284252be8c5fcd5045e2c8",
     "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/": "685e9156baaf4fe09c8097b0e5eebe0e",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/": "7085071d538c4fe8ac1c2b8ccd125e74",
-    "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0"
+    "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0",
+    "https://engine.cmteh.ru/": "d691b2355fe347e589b55a80f0bdc6a8",
+    "https://engine.cmteh.ru/articles/": "a19aaad0f7ab4651b325990e7a0ca88b",
+    "https://engine.cmteh.ru/articles/proverka-elektriki-forsunki/": "0e71d2ee4afe45a994237b1e1bd84e33",
+    "https://engine.cmteh.ru/articles/proverka-obratnogo-sliva-forsunok/": "3199e3c4824241d18e0f6d701a026121"
   }
 }

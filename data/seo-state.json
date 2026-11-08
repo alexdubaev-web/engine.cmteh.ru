@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "37fdcb03387804c9c2f10743c6cd581bc33449c76a80e40821e95ee74a8b2e89",
-    "lastmod": "2026-11-07T06:00:15Z"
+    "sha256": "8b6dcf6a21e3706305b0203ba0fec4e93f0f5aa44c634d48d57cdcb235663700",
+    "lastmod": "2026-11-08T09:34:07Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,12 +308,16 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "3f2559e81b85a78424b3999e4bbc6d638f51686897bae8174b284dd446e08dac",
-    "lastmod": "2026-11-07T06:00:15Z"
+    "sha256": "aa5a1f3b66cb8b5764bc379a269412b6b1239f2362e42e264a7899b62c050943",
+    "lastmod": "2026-11-08T09:34:07Z"
+  },
+  "/articles/proverka-elektriki-forsunki/": {
+    "sha256": "3dbe20b561d0e86e13a54537b9804e01498f85b38d07364444dde70d9583de3a",
+    "lastmod": "2026-11-08T09:35:45Z"
   },
   "/articles/proverka-obratnogo-sliva-forsunok/": {
-    "sha256": "7b707e5a148a2094c7e005a3b484768ba694549217f4155bf1f10c10c9cc2b9f",
-    "lastmod": "2026-11-07T06:00:15Z"
+    "sha256": "ca4f20a38db23afa7e5160c7cdc7c88ae3f0db981a43ce78f722136b0f4b6281",
+    "lastmod": "2026-11-08T09:34:07Z"
   },
   "/articles/chastitsy-v-toplivnom-filtre-dizelya/": {
     "sha256": "429f854b1749e7dec5f2c7370179465a78fd134e8c0c27d7e15eed134042c2ab",
