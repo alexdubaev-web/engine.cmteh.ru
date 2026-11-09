@@ -84,7 +84,6 @@
     "https://engine.cmteh.ru/articles/novaya-ili-vosstanovlennaya-forsunka/",
     "https://engine.cmteh.ru/articles/letnee-toplivo-pered-morozami/",
     "https://engine.cmteh.ru/articles/proverka-podlinnosti-forsunki-pered-pokupkoy/",
-    "https://engine.cmteh.ru/articles/uplotneniya-pri-zamene-forsunki/",
     "https://engine.cmteh.ru/articles/nasos-forsunka-i-common-rail/",
     "https://engine.cmteh.ru/articles/povtornyy-signal-voda-v-toplive/",
     "https://engine.cmteh.ru/articles/klapan-scv-ili-imv-podbor/",
@@ -94,10 +93,7 @@
     "https://engine.cmteh.ru/articles/tnvd-pered-zakazom/",
     "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/",
-    "https://engine.cmteh.ru/contacts/",
-    "https://engine.cmteh.ru/",
-    "https://engine.cmteh.ru/articles/",
-    "https://engine.cmteh.ru/articles/trubki-common-rail-pri-zamene-forsunki/"
+    "https://engine.cmteh.ru/contacts/"
   ],
   "revisions": {
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "a26169a07a8747e888773eca4b4d8790",
@@ -181,7 +177,6 @@
     "https://engine.cmteh.ru/articles/novaya-ili-vosstanovlennaya-forsunka/": "66bd77cc524e49f1aa0ad2283b602483",
     "https://engine.cmteh.ru/articles/letnee-toplivo-pered-morozami/": "2ad25f33539c44938cbfdfcb3621b046",
     "https://engine.cmteh.ru/articles/proverka-podlinnosti-forsunki-pered-pokupkoy/": "f3bda9ebcd434beba8375c2d016718b2",
-    "https://engine.cmteh.ru/articles/uplotneniya-pri-zamene-forsunki/": "ffb859ddca194809be59c0cd3860a2c8",
     "https://engine.cmteh.ru/articles/nasos-forsunka-i-common-rail/": "4a2fc3dfc04145f5813d0e3acd1a0c02",
     "https://engine.cmteh.ru/articles/povtornyy-signal-voda-v-toplive/": "1c84c0c34a2a4e4aa5d2e9e93586f3d7",
     "https://engine.cmteh.ru/articles/klapan-scv-ili-imv-podbor/": "96c037f785ac46b2bf6207aa56048589",
@@ -191,9 +186,6 @@
     "https://engine.cmteh.ru/articles/tnvd-pered-zakazom/": "21b1c46721284252be8c5fcd5045e2c8",
     "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/": "685e9156baaf4fe09c8097b0e5eebe0e",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/": "7085071d538c4fe8ac1c2b8ccd125e74",
-    "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0",
-    "https://engine.cmteh.ru/": "15c71e0e4cca40fcb5e2c68fba2332bf",
-    "https://engine.cmteh.ru/articles/": "7a70776ea10c4ebeb69d548c96db6197",
-    "https://engine.cmteh.ru/articles/trubki-common-rail-pri-zamene-forsunki/": "892845cab3e5453fb629e851290fbeba"
+    "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0"
   }
 }
