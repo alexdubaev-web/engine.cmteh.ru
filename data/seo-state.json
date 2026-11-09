@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "8b6dcf6a21e3706305b0203ba0fec4e93f0f5aa44c634d48d57cdcb235663700",
-    "lastmod": "2026-11-08T09:34:07Z"
+    "sha256": "3920120d953156b00aca79df96ee3d1dee3469bf9853265f7649eca36e034434",
+    "lastmod": "2026-11-09T06:02:55Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "aa5a1f3b66cb8b5764bc379a269412b6b1239f2362e42e264a7899b62c050943",
-    "lastmod": "2026-11-08T09:34:07Z"
+    "sha256": "06d9a5f6a888de717971067527e527532f030bd3d137bf79da0ea39a8830707b",
+    "lastmod": "2026-11-09T06:02:55Z"
+  },
+  "/articles/trubki-common-rail-pri-zamene-forsunki/": {
+    "sha256": "172cfe1cec718e5a0419693cc93628d56342317f0daaa84ac89c64e017dd57c1",
+    "lastmod": "2026-11-09T06:02:55Z"
   },
   "/articles/proverka-elektriki-forsunki/": {
     "sha256": "3dbe20b561d0e86e13a54537b9804e01498f85b38d07364444dde70d9583de3a",
@@ -352,8 +356,8 @@
     "lastmod": "2026-11-06T06:03:03Z"
   },
   "/articles/uplotneniya-pri-zamene-forsunki/": {
-    "sha256": "2c174ab83032a58007c3eee9b8df605c337af778f2e052a941b492bf797eaa0a",
-    "lastmod": "2026-11-05T09:03:38Z"
+    "sha256": "797870b14935052955be7573df970c814c0ae100a7d2e66031949ec4365c6245",
+    "lastmod": "2026-11-09T06:02:55Z"
   },
   "/articles/nasos-forsunka-i-common-rail/": {
     "sha256": "e47ea49b0dd69d8d3852a70450f66feabc3ce7b74ebad221431e51b0eee4df77",

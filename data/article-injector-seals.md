@@ -33,6 +33,8 @@
 
 Остальные позиции собраны в [разделе форсунок](/category/injectors/). Если сервис указал отдельную часть, поможет памятка [о форсунке, распылителе и ремкомплекте](/articles/forsunka-ili-raspylitel/). Предписанное для конкретной системы [кодирование после замены](/articles/kodirovanie-forsunok-posle-zameny/) обсудите отдельно: запись кода не заменяет проверку герметичности.
 
+Топливные трубки согласуйте отдельной строкой в перечне работ и деталей. Почему снятая трубка требует отдельного решения, разобрано в статье [о трубках Common Rail при замене форсунки](/articles/trubki-common-rail-pri-zamene-forsunki/).
+
 ## Источники
 
 - [Delphi: Best practice advice for servicing Common Rail injectors](https://www.delphiautoparts.com/resource-center/article/best-practice-advice-for-servicing-common-rail-injectors). Установка, уплотнения и разные проявления негерметичности. Проверено 28 октября 2026 года.
