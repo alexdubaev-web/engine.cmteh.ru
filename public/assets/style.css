@@ -58,3 +58,5 @@
 .js .back-to-top.is-visible{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0)}
 .back-to-top:focus-visible{outline:3px solid #927500;outline-offset:4px}
 @media(max-width:650px){.back-to-top{right:18px;bottom:18px}}
+
+.footer-requisites{display:flex;flex-wrap:wrap;gap:8px 24px;padding:20px 0;border-top:1px solid var(--line)}.footer-requisites span{overflow-wrap:anywhere}
