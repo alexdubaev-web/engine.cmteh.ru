@@ -3,7 +3,7 @@ window.STATE =
   "version": 2,
   "slug": "checksite-fixes",
   "dir": "2026-11-09-checksite-fixes--wip",
-  "title": "Проверка замечаний checksite.ru",
+  "title": "Checksite и Signum: проверка и публикация",
   "mode": "semi",
   "depth": "normal",
   "tier": "T0",
@@ -13,7 +13,7 @@ window.STATE =
   "skillDir": "C:/Users/Alexandr/.codex/skills/autopilot",
   "baseCommit": "ca20fe1",
   "startedAt": "2026-11-09T22:19:15+03:00",
-  "updatedAt": "2026-11-09T22:32:25+03:00",
+  "updatedAt": "2026-11-10T12:19:28+03:00",
   "finishedAt": null,
   "stages": [
     {
@@ -39,13 +39,13 @@ window.STATE =
       "id": "spec",
       "status": "done",
       "startedAt": "2026-11-09T22:21:18+03:00",
-      "finishedAt": "2026-11-09T22:22:02+03:00"
+      "finishedAt": "2026-11-09T22:32:05+03:00"
     },
     {
       "id": "plan",
       "status": "done",
       "startedAt": "2026-11-09T22:22:02+03:00",
-      "finishedAt": "2026-11-09T22:22:08+03:00"
+      "finishedAt": "2026-11-09T22:32:05+03:00"
     },
     {
       "id": "build",
@@ -66,10 +66,10 @@ window.STATE =
     }
   ],
   "requirements": {
-    "total": 3,
+    "total": 6,
     "done": 2,
-    "inTicket": 0,
-    "inSpec": 1,
+    "inTicket": 4,
+    "inSpec": 0,
     "placeholder": 0,
     "deferred": 0,
     "dropped": 0
@@ -96,14 +96,44 @@ window.STATE =
       "model": "обычная",
       "status": "done",
       "startedAt": "2026-11-09T22:22:08+03:00",
+      "finishedAt": "2026-11-09T22:29:19+03:00",
       "retries": 0,
       "repairs": 0,
-      "finishedAt": "2026-11-09T22:29:19+03:00",
       "tests": {
         "passed": 53,
         "failed": 0
       },
       "commit": "81f2567"
+    },
+    {
+      "id": "02",
+      "title": "Машиночитаемые представления и публикация",
+      "requirements": [
+        "G01",
+        "G02",
+        "G03",
+        "R03"
+      ],
+      "blockedBy": [
+        "01"
+      ],
+      "wave": 2,
+      "zone": [
+        "build.py",
+        "seo.py",
+        "apache_config.py",
+        "src/worker-runtime.mjs",
+        "tests/agent_content.test.py",
+        "tests/test_apache_config.py",
+        "tests/httpd_routing_integration.py",
+        "tests/routing.test.mjs",
+        "docs/SIGNUM-2026-11-10.md"
+      ],
+      "review": "нет",
+      "model": "обычная",
+      "status": "pending",
+      "retries": 0,
+      "repairs": 0
     }
   ],
   "tests": {
@@ -147,9 +177,18 @@ window.STATE =
     "2026-11-09T22:29:19+03:00",
     "2026-11-09T22:32:05+03:00",
     "2026-11-09T22:32:06+03:00",
-    "2026-11-09T22:32:25+03:00"
+    "2026-11-09T22:32:25+03:00",
+    "2026-11-10T12:17:50+03:00",
+    "2026-11-10T12:17:51+03:00",
+    "2026-11-10T12:18:51+03:00",
+    "2026-11-10T12:18:52+03:00",
+    "2026-11-10T12:19:24+03:00",
+    "2026-11-10T12:19:25+03:00",
+    "2026-11-10T12:19:26+03:00",
+    "2026-11-10T12:19:27+03:00",
+    "2026-11-10T12:19:28+03:00"
   ],
-  "rev": 22,
+  "rev": 32,
   "waiting": null,
   "waits": [],
   "log": [
@@ -285,6 +324,59 @@ window.STATE =
       "k": "add",
       "key": "report",
       "n": 1
+    },
+    {
+      "t": "2026-11-10T12:17:51+03:00",
+      "k": "gate",
+      "g": "G1",
+      "ok": true,
+      "open": 0,
+      "total": 6
+    },
+    {
+      "t": "2026-11-10T12:17:51+03:00",
+      "k": "stage",
+      "id": "spec",
+      "act": "start"
+    },
+    {
+      "t": "2026-11-10T12:18:51+03:00",
+      "k": "tickets",
+      "n": 2
+    },
+    {
+      "t": "2026-11-10T12:18:52+03:00",
+      "k": "gate",
+      "g": "G3",
+      "ok": true,
+      "problems": 0
+    },
+    {
+      "t": "2026-11-10T12:19:24+03:00",
+      "k": "gate",
+      "g": "G2",
+      "ok": true,
+      "found": 0,
+      "fixed": 0,
+      "deferred": 0
+    },
+    {
+      "t": "2026-11-10T12:19:26+03:00",
+      "k": "stage",
+      "id": "plan",
+      "act": "start"
+    },
+    {
+      "t": "2026-11-10T12:19:27+03:00",
+      "k": "tickets",
+      "n": 2
+    },
+    {
+      "t": "2026-11-10T12:19:28+03:00",
+      "k": "gate",
+      "g": "G3",
+      "ok": true,
+      "problems": 0
     }
   ],
   "reqList": [
@@ -301,26 +393,41 @@ window.STATE =
     {
       "id": "R03",
       "text": "«реши проблемы»",
-      "status": "in-spec"
+      "status": "in-ticket"
+    },
+    {
+      "id": "G01",
+      "text": "«с этим тоже разберись»",
+      "status": "in-ticket"
+    },
+    {
+      "id": "G02",
+      "text": "«с этим тоже разберись»",
+      "status": "in-ticket"
+    },
+    {
+      "id": "G03",
+      "text": "«а потом публикуй»",
+      "status": "in-ticket"
     }
   ],
   "gates": {
     "G1": {
       "ok": true,
-      "at": "2026-11-09T22:21:18+03:00",
+      "at": "2026-11-10T12:17:51+03:00",
       "open": 0,
-      "total": 3
+      "total": 6
     },
     "G2": {
       "ok": true,
-      "at": "2026-11-09T22:22:02+03:00",
+      "at": "2026-11-10T12:19:24+03:00",
       "found": 0,
       "fixed": 0,
       "deferred": 0
     },
     "G3": {
       "ok": true,
-      "at": "2026-11-09T22:22:17+03:00",
+      "at": "2026-11-10T12:19:28+03:00",
       "problems": 0
     },
     "G4": {
