@@ -63,6 +63,16 @@ test('product route renders crawlable HTML', async () => {
   assert.match(html, /application\/ld\+json/);
   assert.match(html, /priceCurrency/);
 });
+test('Markdown mirrors use UTF-8 text/markdown and are noindex, follow', async () => {
+  if (!fixture) return;
+  for (const current of [worker, productionWorker]) {
+    const response = await current.fetch(new Request('https://example.com/catalog/re507959/index.md'));
+    assert.equal(response.status, 200);
+    assert.equal(response.headers.get('content-type'), 'text/markdown; charset=utf-8');
+    assert.equal(response.headers.get('x-robots-tag'), 'noindex, follow');
+    assert.match(await response.text(), /RE507959/);
+  }
+});
 test('unknown routes return real 404', async () => assert.equal((await get('/missing/')).status, 404));
 test('hosting metadata is not exposed by the worker asset bundle', async () =>
   assert.equal((await get('/.openai/hosting.json')).status, 404));

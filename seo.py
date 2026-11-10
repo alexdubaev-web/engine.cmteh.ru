@@ -4,6 +4,8 @@ from datetime import datetime,timezone
 from decimal import Decimal
 from urllib.parse import urlsplit
 import hashlib,html,json,os,re,uuid
+from html.parser import HTMLParser
+from urllib.parse import urljoin
 from xml.etree import ElementTree as ET
 
 CRUMBS={}
@@ -20,6 +22,91 @@ def description_paragraphs(product):
  if overview:return [item['text'] for item in overview]
  return list(product.get('copy',[])[:2])
 def product_description(product):return ' '.join(description_paragraphs(product))
+
+class _MainContentParser(HTMLParser):
+ def __init__(self):
+  super().__init__(convert_charrefs=True);self.root={'tag':'root','attrs':{},'children':[]};self.stack=[self.root];self.skip=0;self.seen_main=False
+ def handle_starttag(self,tag,attrs):
+  attrs=dict(attrs);void={'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}
+  excluded=tag in {'script','style','nav','footer','form','button','noscript','dialog','template'} or 'hidden' in attrs or attrs.get('aria-hidden')=='true' or 'data-analytics-panel' in attrs or bool({'breadcrumbs','back-to-top','toast'}&set(attrs.get('class','').split()))
+  if self.skip:
+   if tag not in void:self.skip+=1
+   return
+  if excluded:self.skip=1;return
+  if tag=='main':self.seen_main=True
+  node={'tag':tag,'attrs':attrs,'children':[]};self.stack[-1]['children'].append(node)
+  if tag not in void:self.stack.append(node)
+ def handle_endtag(self,tag):
+  if self.skip:self.skip-=1;return
+  for i in range(len(self.stack)-1,0,-1):
+   if self.stack[i]['tag']==tag:del self.stack[i:];break
+ def handle_data(self,data):
+  if not self.skip:self.stack[-1]['children'].append(data)
+
+def html_to_markdown(content,canonical):
+ """Convert generated HTML main content into faithful, dependency-free Markdown."""
+ parser=_MainContentParser();parser.feed(content);parser.close();root=parser.root
+ if parser.seen_main:
+  def find_main(node):
+   if isinstance(node,dict):
+    if node['tag']=='main':return node
+    for child in node['children']:
+     found=find_main(child)
+     if found:return found
+  root=find_main(root) or root
+ def inline(node,table=False):
+  if isinstance(node,str):return node.replace('|',r'\|') if table else node
+  tag=node['tag'];text=''.join(inline(x,table) for x in node['children'])
+  if tag=='br':return '  \n'
+  if tag=='img':return node['attrs'].get('alt','')
+  if tag=='a':
+   href=node['attrs'].get('href','').strip()
+   if not href:return text
+   target=urljoin(canonical,href).replace(' ','%20').replace('(',r'\(').replace(')',r'\)')
+   return '['+text.replace(']',r'\]')+']('+target+')'
+  marker={'strong':'**','b':'**','em':'*','i':'*','code':'`'}.get(tag,'')
+  return marker+text+marker
+ def list_md(node,indent=0):
+  rows=[]
+  ordered=node['tag']=='ol';start=int(node['attrs'].get('start','1') or 1)
+  for number,item in enumerate((x for x in node['children'] if isinstance(x,dict) and x['tag']=='li'),start):
+   lead='';nested=[]
+   for part in item['children']:
+    if isinstance(part,dict) and part['tag'] in {'ul','ol'}:nested.append(list_md(part,indent+2))
+    else:lead+=inline(part).strip()
+   rows.append(' '*indent+(f'{number}. ' if ordered else '- ')+re.sub(r'\s+',' ',lead).strip())
+   rows.extend(nested)
+  return '\n'.join(rows)
+ def blocks(node):
+  result=[];children=node['children'];i=0
+  while i<len(children):
+   child=children[i]
+   if isinstance(child,str):
+    if child.strip():result.append(child.strip())
+    i+=1;continue
+   tag=child['tag']
+   if tag in {'h1','h2','h3','h4','h5','h6'}:result.append('#'*(int(tag[1]))+' '+inline(child).strip())
+   elif tag in {'p','blockquote','pre'}:
+    value=inline(child).strip()
+    if value:result.append(('> ' if tag=='blockquote' else '')+value)
+   elif tag in {'ul','ol'}:result.append(list_md(child))
+   elif tag=='table':
+    rows=[]
+    def table_rows(node):
+     for item in node['children']:
+      if isinstance(item,dict) and item['tag']=='tr':yield item
+      elif isinstance(item,dict) and item['tag'] in {'thead','tbody','tfoot'}:yield from table_rows(item)
+    for tr in table_rows(child):
+     cells=[inline(c,True).strip().replace('\n','<br>') for c in tr['children'] if isinstance(c,dict) and c['tag'] in {'th','td'}]
+     if cells:rows.append(cells)
+    if rows:
+     width=max(map(len,rows));rows=[r+['']*(width-len(r)) for r in rows]
+     result.append('| '+' | '.join(rows[0])+' |\n| '+' | '.join(['---']*width)+' |'+''.join('\n| '+' | '.join(r)+' |' for r in rows[1:]))
+   else:result.extend(blocks(child))
+   i+=1
+  return result
+ body='\n\n'.join(x for x in blocks(root) if x).strip()
+ return '[Открыть страницу в HTML]('+canonical+')'+('\n\n'+body if body else '')+'\n'
 def breadcrumbs(items):
  entries=[('Главная','/')]+items
  li=[]
@@ -37,7 +124,7 @@ class SEO:
   self.byid={p['id']:p for p in products}
   self.commerce=json.loads((root/'data/commerce.json').read_text(encoding='utf-8'))
   self.previous=json.loads((self.state_root/'seo-state.json').read_text(encoding='utf-8')) if (self.state_root/'seo-state.json').exists() else {}
-  self.current={};self.changed=[];self.now=datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z')
+  self.current={};self.changed=[];self.markdown_pages={};self.now=datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z')
   self.asset_versions={n:hashlib.sha256((root/'public/assets'/n).read_bytes()).hexdigest()[:12] for n in ['app.js','style.css','analytics.js','favicon-32.webp','favicon-64.webp','favicon.ico']}
  def availability(self,p):
   value=self.commerce['availability'].get(p['id'])
@@ -109,11 +196,23 @@ class SEO:
   article_meta=('<meta property="article:modified_time" content="'+esc(article.get('dateModified') or modified)+'">'+('<meta property="article:published_time" content="'+esc(article['datePublished'])+'">' if article and article.get('datePublished') else '')) if og_type=='article' else ''
   font='/assets/manrope-400.woff2'
   preload='<link rel="preload" href="'+font+'" as="font" type="font/woff2" crossorigin>' if (self.root/'public'/font.lstrip('/')).exists() else ''
+  discovery='' if path=='/404/' else '<link rel="alternate" type="text/markdown" href="'+esc(path.rstrip('/')+'/index.md' if path!='/' else '/index.md')+'"><link rel="describedby" href="/llms.txt">'
   analytics_ui='<section class="analytics-panel" data-analytics-panel role="dialog" aria-modal="true" aria-labelledby="analytics-title" hidden><div class="analytics-card"><h2 id="analytics-title">Cookie и аналитика</h2><p>Необходимая cookie сессии защищает форму от автоматических и повторных обращений. С вашего разрешения Яндекс Метрика также будет использовать cookie и собирать статистику посещений, действий на страницах и сведений о браузере. Содержимое форм заказа скрыто от записи, а ввод в поля маскируется.</p><p>Вы можете изменить выбор в любой момент. Подробнее - в <a href="/privacy/">Политике обработки данных</a>.</p><p data-analytics-status role="status" aria-live="polite"></p><div class="analytics-actions"><button class="btn outline" type="button" data-analytics-deny>Не разрешать</button><button class="btn" type="button" data-analytics-allow>Разрешить</button></div></div></section>' if analytics_enabled else ''
   analytics_script=f'<script type="module" src="/assets/analytics.js?v={self.asset_versions["analytics.js"]}"></script>' if analytics_enabled else ''
-  document=f'''<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(title)}</title><meta name="description" content="{esc(description)}">{keyword_tag}{robots_tag}<meta name="theme-color" content="#f9dd16"><link rel="canonical" href="{esc(canonical)}">{verify}<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description)}"><meta property="og:type" content="{og_type}"><meta property="og:site_name" content="СМ ТЕХНО"><meta property="og:image" content="{esc(self.base+primary_image)}"><meta property="og:image:alt" content="{esc(image_alt)}"><meta property="og:url" content="{esc(canonical)}"><meta property="og:locale" content="ru_RU">{article_meta}<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)}"><meta name="twitter:description" content="{esc(description)}"><meta name="twitter:image" content="{esc(self.base+primary_image)}"><link rel="icon" href="/assets/favicon-32.webp?v={self.asset_versions['favicon-32.webp']}" type="image/webp" sizes="32x32"><link rel="icon" href="/assets/favicon-64.webp?v={self.asset_versions['favicon-64.webp']}" type="image/webp" sizes="64x64"><link rel="icon" href="/assets/favicon.ico?v={self.asset_versions['favicon.ico']}" type="image/x-icon" sizes="16x16 32x32 48x48">{preload}<link rel="stylesheet" href="/assets/style.css?v={self.asset_versions['style.css']}"><script src="/assets/app.js?v={self.asset_versions['app.js']}" defer></script>{analytics_script}<script type="application/ld+json">{dump(graph)}</script><noscript><style>@media(max-width:1150px){{.header-inner{{height:auto;min-height:80px;flex-wrap:wrap;padding-block:10px}}.nav{{position:static;order:3;flex:1 0 100%;margin:0;padding:8px 0;background:transparent;border:0;flex-direction:row;flex-wrap:wrap;gap:8px 20px}}.header .cart-button{{order:2;margin-left:auto}}.menu-toggle{{display:none}}}}</style></noscript></head><body id="top">{header}<main id="main">{content}</main>{footer}{cart}{analytics_ui}<a class="back-to-top" href="#top" aria-label="Наверх">↑</a><script type="application/json" id="catalog-data">{dump([{k:p[k] for k in ['id','sku','name','price','brand','stockQuantity']} for p in self.products])}</script><noscript><p class="no-js">Для заказа и подбора запчастей позвоните <a href="tel:+78124688299">+7 812 468-82-99</a> или напишите <a href="mailto:info@cmteh.ru">info@cmteh.ru</a>.</p></noscript></body></html>'''
+  document=f'''<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(title)}</title><meta name="description" content="{esc(description)}">{keyword_tag}{robots_tag}<meta name="theme-color" content="#f9dd16"><link rel="canonical" href="{esc(canonical)}">{discovery}{verify}<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description)}"><meta property="og:type" content="{og_type}"><meta property="og:site_name" content="СМ ТЕХНО"><meta property="og:image" content="{esc(self.base+primary_image)}"><meta property="og:image:alt" content="{esc(image_alt)}"><meta property="og:url" content="{esc(canonical)}"><meta property="og:locale" content="ru_RU">{article_meta}<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)}"><meta name="twitter:description" content="{esc(description)}"><meta name="twitter:image" content="{esc(self.base+primary_image)}"><link rel="icon" href="/assets/favicon-32.webp?v={self.asset_versions['favicon-32.webp']}" type="image/webp" sizes="32x32"><link rel="icon" href="/assets/favicon-64.webp?v={self.asset_versions['favicon-64.webp']}" type="image/webp" sizes="64x64"><link rel="icon" href="/assets/favicon.ico?v={self.asset_versions['favicon.ico']}" type="image/x-icon" sizes="16x16 32x32 48x48">{preload}<link rel="stylesheet" href="/assets/style.css?v={self.asset_versions['style.css']}"><script src="/assets/app.js?v={self.asset_versions['app.js']}" defer></script>{analytics_script}<script type="application/ld+json">{dump(graph)}</script><noscript><style>@media(max-width:1150px){{.header-inner{{height:auto;min-height:80px;flex-wrap:wrap;padding-block:10px}}.nav{{position:static;order:3;flex:1 0 100%;margin:0;padding:8px 0;background:transparent;border:0;flex-direction:row;flex-wrap:wrap;gap:8px 20px}}.header .cart-button{{order:2;margin-left:auto}}.menu-toggle{{display:none}}}}</style></noscript></head><body id="top">{header}<main id="main">{content}</main>{footer}{cart}{analytics_ui}<a class="back-to-top" href="#top" aria-label="Наверх">↑</a><script type="application/json" id="catalog-data">{dump([{k:p[k] for k in ['id','sku','name','price','brand','stockQuantity']} for p in self.products])}</script><noscript><p class="no-js">Для заказа и подбора запчастей позвоните <a href="tel:+78124688299">+7 812 468-82-99</a> или напишите <a href="mailto:info@cmteh.ru">info@cmteh.ru</a>.</p></noscript></body></html>'''
   return document
  def finish(self,paths):
+  curated=[('Основные страницы',['/','/catalog/','/articles/','/delivery/','/about/','/contacts/']),('Разделы каталога',['/category/injectors/','/category/pumps/','/category/nozzles/','/category/valves/','/category/other/']),('Информация',['/privacy/','/consent/'])]
+  lines=['# СМ ТЕХНО','', '> Каталог запчастей для дизельных двигателей и топливных систем; подбор по артикулу, оплата по счёту и доставка по России.','']
+  for heading,items in curated:
+   links=[(path,self.markdown_pages[path][0]) for path in items if path in self.markdown_pages]
+   if links:
+    lines+=['## '+heading,'']
+    for path,title in links:
+     mdpath=path.rstrip('/')+'/index.md' if path!='/' else '/index.md'
+     lines.append('- ['+title.replace(']',r'\]')+']('+self.base+mdpath+')')
+    lines.append('')
+  (self.out/'llms.txt').write_text('\n'.join(lines).rstrip()+'\n',encoding='utf-8')
   ns='http://www.sitemaps.org/schemas/sitemap/0.9';image_ns='http://www.google.com/schemas/sitemap-image/1.1';ET.register_namespace('',ns);ET.register_namespace('image',image_ns);root=ET.Element('{'+ns+'}urlset')
   for path in paths:
    if path in UTILITIES:continue
