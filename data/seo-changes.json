@@ -1,7 +1,7 @@
 {
   "origin": "https://engine.cmteh.ru",
   "indexable": true,
-  "generated_at": "2026-11-09T06:02:55Z",
+  "generated_at": "2026-11-10T06:29:22Z",
   "urls": [
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/",
     "https://engine.cmteh.ru/catalog/",
@@ -93,7 +93,11 @@
     "https://engine.cmteh.ru/articles/tnvd-pered-zakazom/",
     "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/",
-    "https://engine.cmteh.ru/contacts/"
+    "https://engine.cmteh.ru/contacts/",
+    "https://engine.cmteh.ru/",
+    "https://engine.cmteh.ru/delivery/",
+    "https://engine.cmteh.ru/articles/",
+    "https://engine.cmteh.ru/articles/obuchenie-tnvd-posle-zameny/"
   ],
   "revisions": {
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "a26169a07a8747e888773eca4b4d8790",
@@ -179,13 +183,17 @@
     "https://engine.cmteh.ru/articles/proverka-podlinnosti-forsunki-pered-pokupkoy/": "f3bda9ebcd434beba8375c2d016718b2",
     "https://engine.cmteh.ru/articles/nasos-forsunka-i-common-rail/": "4a2fc3dfc04145f5813d0e3acd1a0c02",
     "https://engine.cmteh.ru/articles/povtornyy-signal-voda-v-toplive/": "1c84c0c34a2a4e4aa5d2e9e93586f3d7",
-    "https://engine.cmteh.ru/articles/klapan-scv-ili-imv-podbor/": "96c037f785ac46b2bf6207aa56048589",
+    "https://engine.cmteh.ru/articles/klapan-scv-ili-imv-podbor/": "583e7720d4c444fca47798c7dccb0e1b",
     "https://engine.cmteh.ru/articles/kodirovanie-forsunok-posle-zameny/": "bb972b8d65a740179ac16c5934e6c710",
     "https://engine.cmteh.ru/articles/dizel-ploho-zavoditsya-na-holodnuyu/": "d2995d259cc84015950338bacb4d37ec",
     "https://engine.cmteh.ru/articles/podbor-po-artikulu/": "995f1ddc82cf424b84a6a92e7be475b0",
     "https://engine.cmteh.ru/articles/tnvd-pered-zakazom/": "21b1c46721284252be8c5fcd5045e2c8",
     "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/": "685e9156baaf4fe09c8097b0e5eebe0e",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/": "7085071d538c4fe8ac1c2b8ccd125e74",
-    "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0"
+    "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0",
+    "https://engine.cmteh.ru/": "79c9bf6bbbc4436d8bb870ae26355d90",
+    "https://engine.cmteh.ru/delivery/": "647292ee341e4f408a6f5995f6283d19",
+    "https://engine.cmteh.ru/articles/": "f51205552d524cff95538e89fc9af5cd",
+    "https://engine.cmteh.ru/articles/obuchenie-tnvd-posle-zameny/": "18a829775634402f8ceef4c18893cd23"
   }
 }

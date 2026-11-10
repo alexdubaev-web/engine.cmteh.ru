@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "3920120d953156b00aca79df96ee3d1dee3469bf9853265f7649eca36e034434",
-    "lastmod": "2026-11-09T06:02:55Z"
+    "sha256": "60c53158cf4cc022aa1c43728695f6db5be06b64c5500a9269d8e12b23b32ca4",
+    "lastmod": "2026-11-10T06:29:22Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "06d9a5f6a888de717971067527e527532f030bd3d137bf79da0ea39a8830707b",
-    "lastmod": "2026-11-09T06:02:55Z"
+    "sha256": "b75516f16e2cc0846f5758414dc7ad2129ae612fd9d9de0be273bc0c7983c31c",
+    "lastmod": "2026-11-10T06:29:22Z"
+  },
+  "/articles/obuchenie-tnvd-posle-zameny/": {
+    "sha256": "d817beef54b145ca61c4eb0949b29d3b73fe6e3b8c571134505d4ce4d7818d53",
+    "lastmod": "2026-11-10T06:29:22Z"
   },
   "/articles/trubki-common-rail-pri-zamene-forsunki/": {
     "sha256": "172cfe1cec718e5a0419693cc93628d56342317f0daaa84ac89c64e017dd57c1",
@@ -368,8 +372,8 @@
     "lastmod": "2026-11-05T09:03:38Z"
   },
   "/articles/klapan-scv-ili-imv-podbor/": {
-    "sha256": "e40146d8e11c2c5fb8a08cd0a42809ad52c1cacf1b837b9f9d82bc51ad7f1b50",
-    "lastmod": "2026-11-05T09:03:38Z"
+    "sha256": "0e444b04c05f367a0309fb74a5f947cfedaf457d8311f39d53c51daa1780d672",
+    "lastmod": "2026-11-10T06:29:22Z"
   },
   "/articles/kodirovanie-forsunok-posle-zameny/": {
     "sha256": "f77ea29180304ff8a746730b22a8836ec9e4a491d0daf400d77dc3806ce8d465",
@@ -396,8 +400,8 @@
     "lastmod": "2026-11-05T09:03:38Z"
   },
   "/delivery/": {
-    "sha256": "5b43886798c53607fcbf2dcb0e6e1af7d71e1ee309d343024473f8dfe335d46a",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "e9dff8570b61869bbd10df20c9f044c98d07b3a6a120c026cbcdd89c603cb580",
+    "lastmod": "2026-11-10T06:08:35Z"
   },
   "/about/": {
     "sha256": "33313bbd5048dd14f14391014db13bce19355913aada093be55d00080861025b",
@@ -408,8 +412,8 @@
     "lastmod": "2026-11-05T09:03:38Z"
   },
   "/privacy/": {
-    "sha256": "aaac96da9d509d89de6099f74efad66422af53f516bc0e89b7f19342a75b5295",
-    "lastmod": "2026-10-15T11:00:33Z"
+    "sha256": "b96330b37d772aeebcfd15b2327c679c2f84410ca5561e39c5602076610a7e8f",
+    "lastmod": "2026-11-10T06:08:35Z"
   },
   "/consent/": {
     "sha256": "21f4e6997072dd0f544d7283697b3e7ea10ceb98320a8d79a2ad364ba8f7c3c7",
