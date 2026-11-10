@@ -13,7 +13,7 @@ window.STATE =
   "skillDir": "C:/Users/Alexandr/.codex/skills/autopilot",
   "baseCommit": "ca20fe1",
   "startedAt": "2026-11-09T22:19:15+03:00",
-  "updatedAt": "2026-11-10T12:19:28+03:00",
+  "updatedAt": "2026-11-10T12:37:41+03:00",
   "finishedAt": null,
   "stages": [
     {
@@ -51,7 +51,7 @@ window.STATE =
       "id": "build",
       "status": "done",
       "startedAt": "2026-11-09T22:22:08+03:00",
-      "finishedAt": "2026-11-09T22:29:19+03:00"
+      "finishedAt": "2026-11-09T22:32:05+03:00"
     },
     {
       "id": "review",
@@ -67,8 +67,8 @@ window.STATE =
   ],
   "requirements": {
     "total": 6,
-    "done": 2,
-    "inTicket": 4,
+    "done": 6,
+    "inTicket": 0,
     "inSpec": 0,
     "placeholder": 0,
     "deferred": 0,
@@ -131,13 +131,48 @@ window.STATE =
       ],
       "review": "нет",
       "model": "обычная",
-      "status": "pending",
+      "status": "done",
+      "startedAt": "2026-11-10T12:19:30+03:00",
+      "finishedAt": "2026-11-10T12:29:26+03:00",
       "retries": 0,
-      "repairs": 0
+      "repairs": 0,
+      "tests": {
+        "passed": 20,
+        "failed": 0
+      },
+      "commit": "f1e015c"
+    },
+    {
+      "id": "F1",
+      "title": "Сохранение ссылок и текста в Markdown",
+      "requirements": [
+        "G01",
+        "G02"
+      ],
+      "blockedBy": [
+        "02"
+      ],
+      "wave": 3,
+      "zone": [
+        "seo.py",
+        "tests/agent_content.test.py"
+      ],
+      "review": "нет — одно независимое ревью выполнено; закрытие узкими проверками по owner policy",
+      "model": "обычная",
+      "status": "done",
+      "retries": 0,
+      "repairs": 0,
+      "startedAt": "2026-11-10T12:32:17+03:00",
+      "finishedAt": "2026-11-10T12:35:16+03:00",
+      "tests": {
+        "passed": 6,
+        "failed": 0
+      },
+      "commit": "0f18baf"
     }
   ],
   "tests": {
-    "passed": 53,
+    "passed": 21,
     "failed": 0
   },
   "debt": {
@@ -154,10 +189,10 @@ window.STATE =
   },
   "concerns": [],
   "blind": {
-    "checked": 3,
-    "matched": 2,
+    "checked": 6,
+    "matched": 4,
     "mismatches": [
-      "R03: исходники приняты, публикация ожидает отдельного согласования массового пакета"
+      "R03/G03: исходники и узкое закрытие после исправлений приняты; публикация выполняется после merge"
     ]
   },
   "beats": [
@@ -186,9 +221,18 @@ window.STATE =
     "2026-11-10T12:19:25+03:00",
     "2026-11-10T12:19:26+03:00",
     "2026-11-10T12:19:27+03:00",
-    "2026-11-10T12:19:28+03:00"
+    "2026-11-10T12:19:28+03:00",
+    "2026-11-10T12:19:29+03:00",
+    "2026-11-10T12:19:30+03:00",
+    "2026-11-10T12:29:26+03:00",
+    "2026-11-10T12:29:27+03:00",
+    "2026-11-10T12:32:16+03:00",
+    "2026-11-10T12:32:17+03:00",
+    "2026-11-10T12:35:16+03:00",
+    "2026-11-10T12:37:40+03:00",
+    "2026-11-10T12:37:41+03:00"
   ],
-  "rev": 32,
+  "rev": 43,
   "waiting": null,
   "waits": [],
   "log": [
@@ -377,6 +421,90 @@ window.STATE =
       "g": "G3",
       "ok": true,
       "problems": 0
+    },
+    {
+      "t": "2026-11-10T12:19:29+03:00",
+      "k": "stage",
+      "id": "build",
+      "act": "start"
+    },
+    {
+      "t": "2026-11-10T12:19:30+03:00",
+      "k": "ticket",
+      "ids": [
+        "02"
+      ],
+      "act": "start"
+    },
+    {
+      "t": "2026-11-10T12:29:26+03:00",
+      "k": "ticket",
+      "ids": [
+        "02"
+      ],
+      "act": "done",
+      "tests": {
+        "passed": 20,
+        "failed": 0
+      }
+    },
+    {
+      "t": "2026-11-10T12:29:27+03:00",
+      "k": "stage",
+      "id": "review",
+      "act": "start"
+    },
+    {
+      "t": "2026-11-10T12:32:16+03:00",
+      "k": "tickets",
+      "n": 3
+    },
+    {
+      "t": "2026-11-10T12:32:16+03:00",
+      "k": "gate",
+      "g": "G3",
+      "ok": true,
+      "problems": 0
+    },
+    {
+      "t": "2026-11-10T12:32:17+03:00",
+      "k": "ticket",
+      "ids": [
+        "F1"
+      ],
+      "act": "start"
+    },
+    {
+      "t": "2026-11-10T12:35:16+03:00",
+      "k": "ticket",
+      "ids": [
+        "F1"
+      ],
+      "act": "done",
+      "tests": {
+        "passed": 6,
+        "failed": 0
+      }
+    },
+    {
+      "t": "2026-11-10T12:37:40+03:00",
+      "k": "stage",
+      "id": "final",
+      "act": "start"
+    },
+    {
+      "t": "2026-11-10T12:37:41+03:00",
+      "k": "gate",
+      "g": "G4",
+      "ok": false,
+      "checked": 6,
+      "matched": 4
+    },
+    {
+      "t": "2026-11-10T12:37:41+03:00",
+      "k": "tests",
+      "passed": 21,
+      "failed": 0
     }
   ],
   "reqList": [
@@ -393,22 +521,22 @@ window.STATE =
     {
       "id": "R03",
       "text": "«реши проблемы»",
-      "status": "in-ticket"
+      "status": "done"
     },
     {
       "id": "G01",
       "text": "«с этим тоже разберись»",
-      "status": "in-ticket"
+      "status": "done"
     },
     {
       "id": "G02",
       "text": "«с этим тоже разберись»",
-      "status": "in-ticket"
+      "status": "done"
     },
     {
       "id": "G03",
       "text": "«а потом публикуй»",
-      "status": "in-ticket"
+      "status": "done"
     }
   ],
   "gates": {
@@ -427,14 +555,14 @@ window.STATE =
     },
     "G3": {
       "ok": true,
-      "at": "2026-11-10T12:19:28+03:00",
+      "at": "2026-11-10T12:32:16+03:00",
       "problems": 0
     },
     "G4": {
       "ok": false,
-      "at": "2026-11-09T22:32:05+03:00",
-      "checked": 3,
-      "matched": 2
+      "at": "2026-11-10T12:37:41+03:00",
+      "checked": 6,
+      "matched": 4
     }
   },
   "result": null,
