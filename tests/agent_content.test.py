@@ -32,6 +32,16 @@ class MarkdownBoundaryTests(unittest.TestCase):
         for forbidden in ['Navigation', 'Form values', 'secrets()', 'Buy', 'Cookie', 'Footer']:
             self.assertNotIn(forbidden, result)
 
+    def test_standalone_links_controls_list_spacing_and_hidden_void_elements(self):
+        result = html_to_markdown('<main><div><a href="/catalog/item/">Product page</a></div><label>Brand<select><option>All brands</option></select></label><ul><li>Read <a href="/source/">source</a> now.</li></ul><p>First<img hidden src="x">After</p><p>Last</p></main>', 'https://example.test/')
+        self.assertIn('[Product page](https://example.test/catalog/item/)', result)
+        self.assertIn('- Read [source](https://example.test/source/) now.', result)
+        self.assertIn('FirstAfter', result)
+        self.assertIn('Last', result)
+        self.assertNotIn('Brand', result)
+        self.assertNotIn('All brands', result)
+        self.assertNotIn('FirstAfterLast', result)
+
 
 class GeneratedMarkdownTests(unittest.TestCase):
     def test_every_public_html_has_markdown_and_discovery_links(self):
@@ -60,6 +70,9 @@ class GeneratedMarkdownTests(unittest.TestCase):
 
     def test_all_product_skus_and_prices_remain_available(self):
         products = json.loads((ROOT / 'data/catalog-built.json').read_text(encoding='utf-8'))
+        catalog = (OUT / 'catalog' / 'index.md').read_text(encoding='utf-8')
+        links = set(re.findall(r'\]\(https://[^/)]+(/catalog/[^)]+/)\)', catalog))
+        self.assertEqual(links, {'/catalog/' + product['id'] + '/' for product in products})
         for product in products:
             markdown = (OUT / 'catalog' / product['id'] / 'index.md').read_text(encoding='utf-8')
             self.assertIn(product['sku'], markdown)

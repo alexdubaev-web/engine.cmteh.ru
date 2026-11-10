@@ -28,11 +28,13 @@ class _MainContentParser(HTMLParser):
   super().__init__(convert_charrefs=True);self.root={'tag':'root','attrs':{},'children':[]};self.stack=[self.root];self.skip=0;self.seen_main=False
  def handle_starttag(self,tag,attrs):
   attrs=dict(attrs);void={'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}
-  excluded=tag in {'script','style','nav','footer','form','button','noscript','dialog','template'} or 'hidden' in attrs or attrs.get('aria-hidden')=='true' or 'data-analytics-panel' in attrs or bool({'breadcrumbs','back-to-top','toast'}&set(attrs.get('class','').split()))
+  excluded=tag in {'script','style','nav','footer','form','button','label','select','option','textarea','output','datalist','fieldset','noscript','dialog','template'} or 'hidden' in attrs or attrs.get('aria-hidden')=='true' or 'data-analytics-panel' in attrs or bool({'breadcrumbs','back-to-top','toast'}&set(attrs.get('class','').split()))
   if self.skip:
    if tag not in void:self.skip+=1
    return
-  if excluded:self.skip=1;return
+  if excluded:
+   if tag not in void:self.skip=1
+   return
   if tag=='main':self.seen_main=True
   node={'tag':tag,'attrs':attrs,'children':[]};self.stack[-1]['children'].append(node)
   if tag not in void:self.stack.append(node)
@@ -73,7 +75,7 @@ def html_to_markdown(content,canonical):
    lead='';nested=[]
    for part in item['children']:
     if isinstance(part,dict) and part['tag'] in {'ul','ol'}:nested.append(list_md(part,indent+2))
-    else:lead+=inline(part).strip()
+    else:lead+=inline(part)
    rows.append(' '*indent+(f'{number}. ' if ordered else '- ')+re.sub(r'\s+',' ',lead).strip())
    rows.extend(nested)
   return '\n'.join(rows)
@@ -90,6 +92,9 @@ def html_to_markdown(content,canonical):
     value=inline(child).strip()
     if value:result.append(('> ' if tag=='blockquote' else '')+value)
    elif tag in {'ul','ol'}:result.append(list_md(child))
+   elif tag=='a':
+    value=inline(child).strip()
+    if value:result.append(value)
    elif tag=='table':
     rows=[]
     def table_rows(node):
