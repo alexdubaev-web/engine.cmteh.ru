@@ -4,7 +4,7 @@ from urllib.parse import quote,urlsplit
 sys.path.insert(0,str(Path(__file__).parent/'data'))
 from product_copy import COPY
 from product_buying import BUYING
-from seo import SEO, breadcrumbs, money, AVAILABILITY, description_paragraphs
+from seo import SEO, breadcrumbs, money, AVAILABILITY, description_paragraphs, html_to_markdown
 from articles import ARTICLES
 from pipeline_io import pipeline_lock,publish_files
 import tempfile
@@ -167,6 +167,9 @@ with pipeline_lock(ROOT):
  def page(path,title,description,content,schema=None,listing_items=None):
   document=seo.render(path,title,description,content,schema,HEADER,FOOTER,CART,analytics_enabled,listing_items)
   target=OUT/(path.strip('/')+'/index.html' if path!='/' else 'index.html');target.parent.mkdir(parents=True,exist_ok=True);target.write_text(document,encoding='utf-8');paths.append(path)
+  if path!='/404/':
+   (target.parent/'index.md').write_text(html_to_markdown(content,base+path),encoding='utf-8')
+   seo.markdown_pages[path]=(title,description)
  def crumbs(items):return breadcrumbs(items)
  def catalog(items,category='',full=False,brand=''):
   tabs='<a class="tab '+('active' if not category else '')+'" href="/catalog/" data-filter="">Все запчасти</a>'+''.join(f'<a href="/category/{k}/" class="tab {"active" if k==category else ""}" data-filter="{k}">{v[0]}</a>' for k,v in CATS.items())
@@ -344,7 +347,7 @@ with pipeline_lock(ROOT):
  for f in OUT.rglob('*'):
   if f.is_file():
    if '.openai' in f.relative_to(OUT).parts:continue
-   key='/'+f.relative_to(OUT).as_posix();mime=mimetypes.guess_type(f.name)[0] or 'application/octet-stream';binary=f.suffix.lower() not in ['.html','.css','.js','.json','.xml','.txt','.svg'];assets[key]={'type':mime,'binary':binary,'body':base64.b64encode(f.read_bytes()).decode() if binary else f.read_text(encoding='utf-8')}
+   key='/'+f.relative_to(OUT).as_posix();mime='text/markdown' if f.suffix.lower()=='.md' else mimetypes.guess_type(f.name)[0] or 'application/octet-stream';binary=f.suffix.lower() not in ['.html','.css','.js','.json','.xml','.txt','.svg','.md'];assets[key]={'type':mime,'binary':binary,'body':base64.b64encode(f.read_bytes()).decode() if binary else f.read_text(encoding='utf-8')}
  orders=(ROOT/'src/orders.mjs').read_text(encoding='utf-8').replace('export async function handleOrder','async function handleOrder')
  runtime=(ROOT/'src/worker-runtime.mjs').read_text(encoding='utf-8')
  worker='const ASSETS='+js(assets)+';\nconst PRODUCTS='+js(P)+';\nconst INDEXABLE='+str(indexable).lower()+';\n'+orders+'\n'+runtime

@@ -73,14 +73,25 @@ def main() -> None:
     with tempfile.TemporaryDirectory(prefix="apache-routing-") as temp:
         root = Path(temp)
         (root / "index.html").write_text("home", encoding="utf-8")
+        (root / "index.md").write_text("# home", encoding="utf-8")
         (root / "catalog" / "dz10599").mkdir(parents=True)
         (root / "catalog" / "dz10599" / "index.html").write_text("product", encoding="utf-8")
+        (root / "catalog" / "dz10599" / "index.md").write_text("# product", encoding="utf-8")
         (root / "api").mkdir()
         (root / "api" / "orders.php").write_text("api", encoding="utf-8")
         generated = config(True, [{"id": "dz10599"}]).splitlines()
         rewrite_start = generated.index(" RewriteEngine On")
         rewrite_end = generated.index("</IfModule>", rewrite_start)
-        (root / ".htaccess").write_text("\n".join(generated[rewrite_start:rewrite_end]), encoding="utf-8")
+        mime_start = generated.index("<IfModule mod_mime.c>")
+        mime_end = generated.index("</IfModule>", mime_start) + 1
+        env_start = generated.index("<IfModule mod_setenvif.c>")
+        env_end = generated.index("</IfModule>", env_start) + 1
+        headers_start = generated.index("<IfModule mod_headers.c>")
+        headers_end = generated.index("</IfModule>", headers_start) + 1
+        rules = generated[rewrite_start:rewrite_end] + generated[mime_start:mime_end] + generated[env_start:env_end]
+        rules += [line for line in generated[headers_start:headers_end]
+                  if "X-Robots-Tag" in line and "seo_markdown" in line]
+        (root / ".htaccess").write_text("\n".join(rules), encoding="utf-8")
 
         apache_conf = '''
 ServerRoot "/usr/local/apache2"
@@ -95,6 +106,8 @@ LoadModule unixd_module modules/mod_unixd.so
 LoadModule dir_module modules/mod_dir.so
 LoadModule mime_module modules/mod_mime.so
 LoadModule rewrite_module modules/mod_rewrite.so
+LoadModule setenvif_module modules/mod_setenvif.so
+LoadModule headers_module modules/mod_headers.so
 LoadModule log_config_module modules/mod_log_config.so
 TypesConfig conf/mime.types
 ErrorLog /proc/self/fd/2
@@ -115,6 +128,7 @@ AccessFileName .htaccess
             run("docker", "create", "--name", name, "-p", f"127.0.0.1:{port}:8080", IMAGE,
                 "httpd-foreground", "-f", "/tmp/httpd.conf")
             run("docker", "cp", str(root / "index.html"), f"{name}:/usr/local/apache2/htdocs/index.html")
+            run("docker", "cp", str(root / "index.md"), f"{name}:/usr/local/apache2/htdocs/index.md")
             run("docker", "cp", str(root / ".htaccess"), f"{name}:/usr/local/apache2/htdocs/.htaccess")
             run("docker", "cp", str(root / "catalog"), f"{name}:/usr/local/apache2/htdocs/catalog")
             run("docker", "cp", str(root / "api"), f"{name}:/usr/local/apache2/htdocs/api")
@@ -129,6 +143,8 @@ AccessFileName .htaccess
                 ("GET", "/catalog//%64z10599/?tag=a%2Fb", 301,
                  "/catalog/%64z10599/?tag=a%2Fb", b""),
                 ("GET", "/?next=https://outside.example/a//b", 200, "", b"home"),
+                ("GET", "/index.md", 200, "", b"# home"),
+                ("GET", "/catalog/dz10599/index.md", 200, "", b"# product"),
                 ("GET", "/api//orders.php?next=https://outside.example/a//b", 301,
                  "/api/orders.php?next=https://outside.example/a//b", b""),
                 ("POST", "/api//orders.php", 200, "", b"api"),
@@ -148,6 +164,17 @@ AccessFileName .htaccess
                 if expected_body:
                     assert expected_body in body, (method, target, body)
                 print(f"PASS {method} {target} -> {status}" + (f" {location}" if location else ""))
+
+            for target in ("/index.md", "/catalog/dz10599/index.md"):
+                conn = http.client.HTTPConnection("127.0.0.1", port, timeout=5)
+                try:
+                    conn.request("GET", target, headers={"Host": "engine.cmteh.ru"})
+                    response = conn.getresponse();response.read()
+                    assert response.getheader("Content-Type") == "text/markdown; charset=utf-8", (target, response.getheader("Content-Type"))
+                    assert response.getheader("X-Robots-Tag") == "noindex, follow", (target, response.getheader("X-Robots-Tag"))
+                finally:
+                    conn.close()
+                print(f"PASS Markdown headers {target}")
 
             for target, canonical, content in (
                 ("/////", "/", b"home"),
