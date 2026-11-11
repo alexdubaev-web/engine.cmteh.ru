@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "60c53158cf4cc022aa1c43728695f6db5be06b64c5500a9269d8e12b23b32ca4",
-    "lastmod": "2026-11-10T06:29:22Z"
+    "sha256": "bdfe1f35533c216f57162a1945b5236e96e499b722bc420c8468a4ca83f9d9e7",
+    "lastmod": "2026-11-11T06:09:45Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "b75516f16e2cc0846f5758414dc7ad2129ae612fd9d9de0be273bc0c7983c31c",
-    "lastmod": "2026-11-10T06:29:22Z"
+    "sha256": "cee63a7359b77842f5052031165049adbc67a1dbc7da7f9fe90eb0d66b56d57f",
+    "lastmod": "2026-11-11T06:09:45Z"
+  },
+  "/articles/klapan-rampy-ili-tnvd/": {
+    "sha256": "fb8286597037b4a3963b5a2f7d57a5e73f76467ddb5c57967fbda10ef879dc83",
+    "lastmod": "2026-11-11T06:09:45Z"
   },
   "/articles/obuchenie-tnvd-posle-zameny/": {
     "sha256": "d817beef54b145ca61c4eb0949b29d3b73fe6e3b8c571134505d4ce4d7818d53",
@@ -372,8 +376,8 @@
     "lastmod": "2026-11-05T09:03:38Z"
   },
   "/articles/klapan-scv-ili-imv-podbor/": {
-    "sha256": "0e444b04c05f367a0309fb74a5f947cfedaf457d8311f39d53c51daa1780d672",
-    "lastmod": "2026-11-10T06:29:22Z"
+    "sha256": "979f84195442aa674fd090f741b2a23c21742946ae698e9ed0ddb595cd3b6553",
+    "lastmod": "2026-11-11T06:09:45Z"
   },
   "/articles/kodirovanie-forsunok-posle-zameny/": {
     "sha256": "f77ea29180304ff8a746730b22a8836ec9e4a491d0daf400d77dc3806ce8d465",
