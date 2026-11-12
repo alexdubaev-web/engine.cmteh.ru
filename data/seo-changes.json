@@ -86,7 +86,6 @@
     "https://engine.cmteh.ru/articles/proverka-podlinnosti-forsunki-pered-pokupkoy/",
     "https://engine.cmteh.ru/articles/nasos-forsunka-i-common-rail/",
     "https://engine.cmteh.ru/articles/povtornyy-signal-voda-v-toplive/",
-    "https://engine.cmteh.ru/articles/klapan-scv-ili-imv-podbor/",
     "https://engine.cmteh.ru/articles/kodirovanie-forsunok-posle-zameny/",
     "https://engine.cmteh.ru/articles/dizel-ploho-zavoditsya-na-holodnuyu/",
     "https://engine.cmteh.ru/articles/podbor-po-artikulu/",
@@ -94,12 +93,7 @@
     "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/",
     "https://engine.cmteh.ru/contacts/",
-    "https://engine.cmteh.ru/",
-    "https://engine.cmteh.ru/delivery/",
-    "https://engine.cmteh.ru/articles/",
-    "https://engine.cmteh.ru/articles/klapan-rampy-ili-tnvd/",
-    "https://engine.cmteh.ru/articles/rastyot-uroven-masla-v-dizele/",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/"
+    "https://engine.cmteh.ru/delivery/"
   ],
   "revisions": {
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "a26169a07a8747e888773eca4b4d8790",
@@ -185,7 +179,6 @@
     "https://engine.cmteh.ru/articles/proverka-podlinnosti-forsunki-pered-pokupkoy/": "f3bda9ebcd434beba8375c2d016718b2",
     "https://engine.cmteh.ru/articles/nasos-forsunka-i-common-rail/": "4a2fc3dfc04145f5813d0e3acd1a0c02",
     "https://engine.cmteh.ru/articles/povtornyy-signal-voda-v-toplive/": "1c84c0c34a2a4e4aa5d2e9e93586f3d7",
-    "https://engine.cmteh.ru/articles/klapan-scv-ili-imv-podbor/": "06f485dd594c47b980282f2f0bf1051e",
     "https://engine.cmteh.ru/articles/kodirovanie-forsunok-posle-zameny/": "bb972b8d65a740179ac16c5934e6c710",
     "https://engine.cmteh.ru/articles/dizel-ploho-zavoditsya-na-holodnuyu/": "d2995d259cc84015950338bacb4d37ec",
     "https://engine.cmteh.ru/articles/podbor-po-artikulu/": "995f1ddc82cf424b84a6a92e7be475b0",
@@ -193,11 +186,6 @@
     "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/": "685e9156baaf4fe09c8097b0e5eebe0e",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/": "7085071d538c4fe8ac1c2b8ccd125e74",
     "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0",
-    "https://engine.cmteh.ru/": "31f6a528eda1446ea85ca027f8ddcd60",
-    "https://engine.cmteh.ru/delivery/": "647292ee341e4f408a6f5995f6283d19",
-    "https://engine.cmteh.ru/articles/": "6a43ad568b76452ba980a82c6644f569",
-    "https://engine.cmteh.ru/articles/klapan-rampy-ili-tnvd/": "0e43d18895714d659d83381abd1f6cda",
-    "https://engine.cmteh.ru/articles/rastyot-uroven-masla-v-dizele/": "b91e3b2def264928b523227aacaeabd0",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "710bd0c5951040ec9cfc35809ceeb377"
+    "https://engine.cmteh.ru/delivery/": "647292ee341e4f408a6f5995f6283d19"
   }
 }
