@@ -1,6 +1,6 @@
 {
   "accepted_observed_keywords": 397,
-  "articles": 23,
+  "articles": 24,
   "brand_category_groups": 17,
   "code_record_kinds": {
     "additional_code": 41,
@@ -11,13 +11,13 @@
   "excluded_unique_keywords": 213,
   "generated_from": {
     "articles": "data/articles.py",
-    "articles_sha256": "1b992432d0b9c272bd091fce1785a496e83d6589a8c8a14c90176e0e5eb1deea",
+    "articles_sha256": "7e322dba4e82c2323f6dcaa943708f7b264749db2012ddaa98a045cce91d3957",
     "curated_decisions": "seo/semantic-core/curated-decisions.json",
     "curated_decisions_sha256": "7f29331a2462ee57745653051fd97f5e8fa738eb9d6321b961ab9f9e6954a263",
     "products": "data/products.json",
     "products_sha256": "31c96c9a28bf9737f35f48343cce47fbceb4bb96ea86094d3d1cece0e3bc8585",
     "seo_state": "data/seo-state.json",
-    "seo_state_sha256": "2df03604e14048a2243534f52aedcc81003b728fd9eba15979af899a078cf644",
+    "seo_state_sha256": "e4b608e0e11ced12e62151494d842a71e010f6f444b1bf01ababc861631f3aef",
     "serp_research": "seo/semantic-core/serp-research.json",
     "serp_research_sha256": "83bb5d125464fe2dbda85985668fcf1721dbcad87e7f0a6985c54ac00e991517",
     "sha256": "a668d19902bf63dc247ebb0970b6c149b9608ac9754c3d797da3e9fbc279330a",
