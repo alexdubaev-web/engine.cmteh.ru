@@ -90,13 +90,9 @@
     "https://engine.cmteh.ru/articles/dizel-ploho-zavoditsya-na-holodnuyu/",
     "https://engine.cmteh.ru/articles/podbor-po-artikulu/",
     "https://engine.cmteh.ru/articles/tnvd-pered-zakazom/",
-    "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/",
     "https://engine.cmteh.ru/contacts/",
-    "https://engine.cmteh.ru/delivery/",
-    "https://engine.cmteh.ru/",
-    "https://engine.cmteh.ru/articles/",
-    "https://engine.cmteh.ru/articles/davlenie-otkrytiya-mehanicheskoy-forsunki/"
+    "https://engine.cmteh.ru/delivery/"
   ],
   "revisions": {
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "a26169a07a8747e888773eca4b4d8790",
@@ -186,12 +182,8 @@
     "https://engine.cmteh.ru/articles/dizel-ploho-zavoditsya-na-holodnuyu/": "d2995d259cc84015950338bacb4d37ec",
     "https://engine.cmteh.ru/articles/podbor-po-artikulu/": "995f1ddc82cf424b84a6a92e7be475b0",
     "https://engine.cmteh.ru/articles/tnvd-pered-zakazom/": "21b1c46721284252be8c5fcd5045e2c8",
-    "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/": "96f5cab4212c421f9f7490bd430e95a8",
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/": "7085071d538c4fe8ac1c2b8ccd125e74",
     "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0",
-    "https://engine.cmteh.ru/delivery/": "647292ee341e4f408a6f5995f6283d19",
-    "https://engine.cmteh.ru/": "7d70c18234c14785bd73fdc1646d6c7f",
-    "https://engine.cmteh.ru/articles/": "4ef7410d04da443c8f6b996680d7e206",
-    "https://engine.cmteh.ru/articles/davlenie-otkrytiya-mehanicheskoy-forsunki/": "e83f0ad9c47141449f80301bd7bc54cb"
+    "https://engine.cmteh.ru/delivery/": "647292ee341e4f408a6f5995f6283d19"
   }
 }
