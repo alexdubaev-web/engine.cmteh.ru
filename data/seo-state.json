@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "a462529ae8f42c71939d5142cdd8fb7a7fcaf58bbb472dcc6d7af7de346bc2f9",
-    "lastmod": "2026-11-12T06:09:48Z"
+    "sha256": "a2fcb3a83e5eb269e31f2dbf96c40034cf835f2c78fd999e8d1eb4e14c9f6687",
+    "lastmod": "2026-11-13T06:10:26Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "35417f75565add505d8efd23ab6f3f487f17c6100ee593df443baaf9ea76511a",
-    "lastmod": "2026-11-12T06:09:48Z"
+    "sha256": "dcfe86cde77344dab51602452a02e3497f4dfbc178b75c597136d8f3759a554e",
+    "lastmod": "2026-11-13T06:10:26Z"
+  },
+  "/articles/davlenie-otkrytiya-mehanicheskoy-forsunki/": {
+    "sha256": "fbc2d9b548d4b58ac5cd3c8f4827e460a26dcef6bee692349887cfde4e4c5b22",
+    "lastmod": "2026-11-13T06:10:26Z"
   },
   "/articles/rastyot-uroven-masla-v-dizele/": {
     "sha256": "b8635422cd4181f123886feb495283a0461922d635bd393017cfc6ab7d7efeff",
@@ -400,8 +404,8 @@
     "lastmod": "2026-11-05T09:03:38Z"
   },
   "/articles/forsunka-ili-raspylitel/": {
-    "sha256": "392cebc116aa9c87f31c52cd9c890599573ae2e6224f3986a8dd79d3cebf0a3f",
-    "lastmod": "2026-11-05T09:03:38Z"
+    "sha256": "26de8e9be4439e4affad08226d4ce70137a34388cb7a77b9c2547a747ec32056",
+    "lastmod": "2026-11-13T06:10:26Z"
   },
   "/articles/spisok-zapchastey-dlya-zakaza/": {
     "sha256": "6979f417fc5fc6982644602ac2e670a9be42aa76b7bc63070dc4e07fb05046cf",
