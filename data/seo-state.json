@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "a2fcb3a83e5eb269e31f2dbf96c40034cf835f2c78fd999e8d1eb4e14c9f6687",
-    "lastmod": "2026-11-13T06:10:26Z"
+    "sha256": "19e0bd94e29e8af905f740564ee02e30e74f3d18008efed44857c292c7fa1297",
+    "lastmod": "2026-11-14T06:07:20Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "dcfe86cde77344dab51602452a02e3497f4dfbc178b75c597136d8f3759a554e",
-    "lastmod": "2026-11-13T06:10:26Z"
+    "sha256": "6788c9f6a9701a1f70c2923099dcd8c14cebf1dbff83c5d2074732380454c2f9",
+    "lastmod": "2026-11-14T06:07:20Z"
+  },
+  "/articles/chernyy-dym-pod-nagruzkoy/": {
+    "sha256": "ac0861b82b436ac8dec6e7a8bc9f11ae9895b98b14b8551b36826d1a15621bb2",
+    "lastmod": "2026-11-14T06:07:20Z"
   },
   "/articles/davlenie-otkrytiya-mehanicheskoy-forsunki/": {
     "sha256": "fbc2d9b548d4b58ac5cd3c8f4827e460a26dcef6bee692349887cfde4e4c5b22",
@@ -360,8 +364,8 @@
     "lastmod": "2026-11-05T09:03:38Z"
   },
   "/articles/protokol-proverki-forsunki/": {
-    "sha256": "8704954c655a4dae9eb6d465c7723f5d20e10ccd504d28d36ee20b2bed311940",
-    "lastmod": "2026-11-12T06:09:48Z"
+    "sha256": "794baf57495e6e43fb75c45a101b8a1cdf3cc11ed66431168ddf841d3aff77c0",
+    "lastmod": "2026-11-14T06:07:20Z"
   },
   "/articles/proverka-podlinnosti-forsunki-pered-pokupkoy/": {
     "sha256": "3084246125720464a0b7da540f3df64c51a24bc3cb95a419d8edb0994301c5d9",
