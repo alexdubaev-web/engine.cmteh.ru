@@ -1,7 +1,7 @@
 {
   "origin": "https://engine.cmteh.ru",
   "indexable": true,
-  "generated_at": "2026-11-14T06:07:20Z",
+  "generated_at": "2026-11-15T06:09:20Z",
   "urls": [
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/",
     "https://engine.cmteh.ru/catalog/",
@@ -96,7 +96,9 @@
     "https://engine.cmteh.ru/",
     "https://engine.cmteh.ru/articles/",
     "https://engine.cmteh.ru/articles/chernyy-dym-pod-nagruzkoy/",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/"
+    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/",
+    "https://engine.cmteh.ru/articles/odnu-forsunku-ili-vse/",
+    "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/"
   ],
   "revisions": {
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "a26169a07a8747e888773eca4b4d8790",
@@ -189,9 +191,11 @@
     "https://engine.cmteh.ru/articles/spisok-zapchastey-dlya-zakaza/": "7085071d538c4fe8ac1c2b8ccd125e74",
     "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0",
     "https://engine.cmteh.ru/delivery/": "647292ee341e4f408a6f5995f6283d19",
-    "https://engine.cmteh.ru/": "dbf3b5e62b814f1aafdf1de2d6d49e9c",
-    "https://engine.cmteh.ru/articles/": "d072a09d5fe74dcebe8de1e2cfa71a12",
+    "https://engine.cmteh.ru/": "eeb21acfc71c4ea68df35cc8abd526e2",
+    "https://engine.cmteh.ru/articles/": "2164b18145e540d9a7e304eab63ac70e",
     "https://engine.cmteh.ru/articles/chernyy-dym-pod-nagruzkoy/": "118b600eae6443df8cfbcf819e5d791f",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "5a872bbe7e9a4cc6b4f2497d181e97ff"
+    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "5a872bbe7e9a4cc6b4f2497d181e97ff",
+    "https://engine.cmteh.ru/articles/odnu-forsunku-ili-vse/": "6a86a057aaab4613b8d93a67f11c6a44",
+    "https://engine.cmteh.ru/articles/forsunka-ili-raspylitel/": "7a7ee2dd764641e8b9ab110159dd4860"
   }
 }
