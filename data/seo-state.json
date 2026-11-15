@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "19e0bd94e29e8af905f740564ee02e30e74f3d18008efed44857c292c7fa1297",
-    "lastmod": "2026-11-14T06:07:20Z"
+    "sha256": "fc18e525cf167fe468671d07384d89d25f78fd30c36dc1a38f26bf83b247628b",
+    "lastmod": "2026-11-15T06:09:20Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "6788c9f6a9701a1f70c2923099dcd8c14cebf1dbff83c5d2074732380454c2f9",
-    "lastmod": "2026-11-14T06:07:20Z"
+    "sha256": "68690fd536ea1b79869debb13b38a07ab70534b8b6ea70cd822bd5e20aea51f1",
+    "lastmod": "2026-11-15T06:09:20Z"
+  },
+  "/articles/odnu-forsunku-ili-vse/": {
+    "sha256": "403e9e38dcaa53fd33066c64ed60ebb9b7d005f6869bb8c8d66792db21945d3f",
+    "lastmod": "2026-11-15T06:09:20Z"
   },
   "/articles/chernyy-dym-pod-nagruzkoy/": {
     "sha256": "ac0861b82b436ac8dec6e7a8bc9f11ae9895b98b14b8551b36826d1a15621bb2",
@@ -408,8 +412,8 @@
     "lastmod": "2026-11-05T09:03:38Z"
   },
   "/articles/forsunka-ili-raspylitel/": {
-    "sha256": "26de8e9be4439e4affad08226d4ce70137a34388cb7a77b9c2547a747ec32056",
-    "lastmod": "2026-11-13T06:10:26Z"
+    "sha256": "da1d6bffba9aeb4f02c90eda0ffaa8876d77953cdf3350b233558c22640b9fe5",
+    "lastmod": "2026-11-15T06:09:20Z"
   },
   "/articles/spisok-zapchastey-dlya-zakaza/": {
     "sha256": "6979f417fc5fc6982644602ac2e670a9be42aa76b7bc63070dc4e07fb05046cf",
