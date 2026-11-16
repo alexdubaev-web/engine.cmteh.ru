@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "fc18e525cf167fe468671d07384d89d25f78fd30c36dc1a38f26bf83b247628b",
-    "lastmod": "2026-11-15T06:09:20Z"
+    "sha256": "07dcf40963c7c3ad383e773a3759d19dbf2b57b45c069e5c89661b90b6b7b938",
+    "lastmod": "2026-11-16T06:08:26Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "68690fd536ea1b79869debb13b38a07ab70534b8b6ea70cd822bd5e20aea51f1",
-    "lastmod": "2026-11-15T06:09:20Z"
+    "sha256": "e22296d5f2ccdfe6dda1ade7f9f97d07ce61e10f5b5f19d2fd0254c145f278f8",
+    "lastmod": "2026-11-16T06:08:26Z"
+  },
+  "/articles/korrektsii-forsunok-na-skanere/": {
+    "sha256": "edb5b643e1b2878ccadde5aa7719d76301b4e2cea1608383823360cbb593e369",
+    "lastmod": "2026-11-16T06:08:26Z"
   },
   "/articles/odnu-forsunku-ili-vse/": {
     "sha256": "403e9e38dcaa53fd33066c64ed60ebb9b7d005f6869bb8c8d66792db21945d3f",
@@ -344,8 +348,8 @@
     "lastmod": "2026-11-08T09:35:45Z"
   },
   "/articles/proverka-obratnogo-sliva-forsunok/": {
-    "sha256": "ca4f20a38db23afa7e5160c7cdc7c88ae3f0db981a43ce78f722136b0f4b6281",
-    "lastmod": "2026-11-08T09:34:07Z"
+    "sha256": "9464abf2d72645a23b98b838ed1e0c13c43f43fff44874980dacf09e1c492abf",
+    "lastmod": "2026-11-16T06:08:26Z"
   },
   "/articles/chastitsy-v-toplivnom-filtre-dizelya/": {
     "sha256": "429f854b1749e7dec5f2c7370179465a78fd134e8c0c27d7e15eed134042c2ab",
