@@ -1,7 +1,7 @@
 {
   "origin": "https://engine.cmteh.ru",
   "indexable": true,
-  "generated_at": "2026-11-16T06:08:26Z",
+  "generated_at": "2026-11-18T06:07:47Z",
   "urls": [
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/",
     "https://engine.cmteh.ru/catalog/",
@@ -94,7 +94,11 @@
     "https://engine.cmteh.ru/contacts/",
     "https://engine.cmteh.ru/delivery/",
     "https://engine.cmteh.ru/articles/chernyy-dym-pod-nagruzkoy/",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/"
+    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/",
+    "https://engine.cmteh.ru/",
+    "https://engine.cmteh.ru/articles/",
+    "https://engine.cmteh.ru/articles/zamena-ebu-dvigatelya-john-deere/",
+    "https://engine.cmteh.ru/articles/obuchenie-tnvd-posle-zameny/"
   ],
   "revisions": {
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "a26169a07a8747e888773eca4b4d8790",
@@ -188,6 +192,10 @@
     "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0",
     "https://engine.cmteh.ru/delivery/": "647292ee341e4f408a6f5995f6283d19",
     "https://engine.cmteh.ru/articles/chernyy-dym-pod-nagruzkoy/": "118b600eae6443df8cfbcf819e5d791f",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "5a872bbe7e9a4cc6b4f2497d181e97ff"
+    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "5a872bbe7e9a4cc6b4f2497d181e97ff",
+    "https://engine.cmteh.ru/": "b7c9f6b5a84942a0bb81284f8477a4ee",
+    "https://engine.cmteh.ru/articles/": "4e28f5b0f76848a39e02bb07bd3c80fd",
+    "https://engine.cmteh.ru/articles/zamena-ebu-dvigatelya-john-deere/": "bf09a286707349e2ad9995cbcda819d1",
+    "https://engine.cmteh.ru/articles/obuchenie-tnvd-posle-zameny/": "9cab3b21de1e4b6faea4435526aeaf0e"
   }
 }
