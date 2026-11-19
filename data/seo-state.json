@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "1c6a4f8d9756d27a6c880636e8d71ba51c077262d058b2b2deef07fef0c73903",
-    "lastmod": "2026-11-18T06:07:47Z"
+    "sha256": "5ae37eee567576bc68cb6494110e53acdbbea2360bc6df5b82ec8add77a60a1d",
+    "lastmod": "2026-11-19T06:11:06Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "15fe9c4e4381fb41403ecaf06461b57d7582542e46578ce7124c7acffa20936f",
-    "lastmod": "2026-11-18T06:07:47Z"
+    "sha256": "163d42537a1995df8d9d34fb912644f9be354cc0a1a44d75e16d6873c9962663",
+    "lastmod": "2026-11-19T06:11:06Z"
+  },
+  "/articles/benzin-v-dizelnom-bake/": {
+    "sha256": "0f11a60e86fe2862655f22de4b4e07f02e958b1e50346db4bc7846aeb9b80d4f",
+    "lastmod": "2026-11-19T06:11:06Z"
   },
   "/articles/zamena-ebu-dvigatelya-john-deere/": {
     "sha256": "2da225df4c7dd71e86d0f9280d12482679ea5a99b5c36849bf41c7210c5050cf",
@@ -372,8 +376,8 @@
     "lastmod": "2026-11-05T09:03:38Z"
   },
   "/articles/letnee-toplivo-pered-morozami/": {
-    "sha256": "916ae8bdb0797d700fdcd407df989d4903f10e2f02d3971d8740624a2f17d8e7",
-    "lastmod": "2026-11-05T09:03:38Z"
+    "sha256": "4218b79dba25af831728117fe9b0d9f8bc75e1b683a7fcdb8123fe910d86b8d0",
+    "lastmod": "2026-11-19T06:11:06Z"
   },
   "/articles/protokol-proverki-forsunki/": {
     "sha256": "794baf57495e6e43fb75c45a101b8a1cdf3cc11ed66431168ddf841d3aff77c0",
