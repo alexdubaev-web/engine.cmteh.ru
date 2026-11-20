@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "5ae37eee567576bc68cb6494110e53acdbbea2360bc6df5b82ec8add77a60a1d",
-    "lastmod": "2026-11-19T06:11:06Z"
+    "sha256": "f657d466e5c757a355c24804b16fb3b7868386bb524dac75b0785639cb951c77",
+    "lastmod": "2026-11-20T06:09:28Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "163d42537a1995df8d9d34fb912644f9be354cc0a1a44d75e16d6873c9962663",
-    "lastmod": "2026-11-19T06:11:06Z"
+    "sha256": "4d133cbdca99e4c26aa7d14f3f1d39da66cb727a299ce39ed7f5681b3edb9630",
+    "lastmod": "2026-11-20T06:09:28Z"
+  },
+  "/articles/oshibka-p0087-na-dizele/": {
+    "sha256": "c5191e931327d0ce7682639145d70c2299d9bbba19ca1c25d60b94e0620c2fd6",
+    "lastmod": "2026-11-20T06:12:47Z"
   },
   "/articles/benzin-v-dizelnom-bake/": {
     "sha256": "0f11a60e86fe2862655f22de4b4e07f02e958b1e50346db4bc7846aeb9b80d4f",
@@ -340,8 +344,8 @@
     "lastmod": "2026-11-12T06:09:48Z"
   },
   "/articles/klapan-rampy-ili-tnvd/": {
-    "sha256": "fb8286597037b4a3963b5a2f7d57a5e73f76467ddb5c57967fbda10ef879dc83",
-    "lastmod": "2026-11-11T06:09:45Z"
+    "sha256": "1b91df44c152e7a92ad9da841fba9c330a9f6902e2e77c18c9342ebc57b9e2fd",
+    "lastmod": "2026-11-20T06:09:28Z"
   },
   "/articles/obuchenie-tnvd-posle-zameny/": {
     "sha256": "15d8921de29b58e6fafbda71576da257bb35576db2b63d9814da87b91f7b933b",
