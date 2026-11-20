@@ -1,7 +1,7 @@
 {
   "origin": "https://engine.cmteh.ru",
   "indexable": true,
-  "generated_at": "2026-11-19T06:11:06Z",
+  "generated_at": "2026-11-20T06:12:47Z",
   "urls": [
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/",
     "https://engine.cmteh.ru/catalog/",
@@ -93,7 +93,11 @@
     "https://engine.cmteh.ru/contacts/",
     "https://engine.cmteh.ru/delivery/",
     "https://engine.cmteh.ru/articles/chernyy-dym-pod-nagruzkoy/",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/"
+    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/",
+    "https://engine.cmteh.ru/",
+    "https://engine.cmteh.ru/articles/",
+    "https://engine.cmteh.ru/articles/oshibka-p0087-na-dizele/",
+    "https://engine.cmteh.ru/articles/klapan-rampy-ili-tnvd/"
   ],
   "revisions": {
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "a26169a07a8747e888773eca4b4d8790",
@@ -186,6 +190,10 @@
     "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0",
     "https://engine.cmteh.ru/delivery/": "647292ee341e4f408a6f5995f6283d19",
     "https://engine.cmteh.ru/articles/chernyy-dym-pod-nagruzkoy/": "118b600eae6443df8cfbcf819e5d791f",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "5a872bbe7e9a4cc6b4f2497d181e97ff"
+    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "5a872bbe7e9a4cc6b4f2497d181e97ff",
+    "https://engine.cmteh.ru/": "52be83db86c546b690020611727f5bbe",
+    "https://engine.cmteh.ru/articles/": "c56ac513c71c4d08a7f76bde0208a1e7",
+    "https://engine.cmteh.ru/articles/oshibka-p0087-na-dizele/": "6661e184fbe84185b380b4f2cc4dda4e",
+    "https://engine.cmteh.ru/articles/klapan-rampy-ili-tnvd/": "6fd9289d0cb34745a6731e84e135b700"
   }
 }
