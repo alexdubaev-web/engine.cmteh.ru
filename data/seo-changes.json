@@ -93,11 +93,7 @@
     "https://engine.cmteh.ru/contacts/",
     "https://engine.cmteh.ru/delivery/",
     "https://engine.cmteh.ru/articles/chernyy-dym-pod-nagruzkoy/",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/",
-    "https://engine.cmteh.ru/",
-    "https://engine.cmteh.ru/articles/",
-    "https://engine.cmteh.ru/articles/maslo-iz-sapuna-dizelya/",
-    "https://engine.cmteh.ru/articles/rastyot-uroven-masla-v-dizele/"
+    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/"
   ],
   "revisions": {
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "a26169a07a8747e888773eca4b4d8790",
@@ -190,10 +186,6 @@
     "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0",
     "https://engine.cmteh.ru/delivery/": "647292ee341e4f408a6f5995f6283d19",
     "https://engine.cmteh.ru/articles/chernyy-dym-pod-nagruzkoy/": "118b600eae6443df8cfbcf819e5d791f",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "5a872bbe7e9a4cc6b4f2497d181e97ff",
-    "https://engine.cmteh.ru/": "d99f73d2d50542e0b5a8dd2f26f8da8a",
-    "https://engine.cmteh.ru/articles/": "14de287effcd4083ac47dd1a731b5802",
-    "https://engine.cmteh.ru/articles/maslo-iz-sapuna-dizelya/": "6ddd5436ccd8402f9334b06f2c862204",
-    "https://engine.cmteh.ru/articles/rastyot-uroven-masla-v-dizele/": "77b6cbe5280545b59b10513a1881e0bb"
+    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "5a872bbe7e9a4cc6b4f2497d181e97ff"
   }
 }
