@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "f657d466e5c757a355c24804b16fb3b7868386bb524dac75b0785639cb951c77",
-    "lastmod": "2026-11-20T06:09:28Z"
+    "sha256": "b382f4a3419b0189e9442c4b55af81d59bd9dfc628f1c88d368fb624c25a60d9",
+    "lastmod": "2026-11-21T06:04:22Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "4d133cbdca99e4c26aa7d14f3f1d39da66cb727a299ce39ed7f5681b3edb9630",
-    "lastmod": "2026-11-20T06:09:28Z"
+    "sha256": "78c179e2958eba58efe217f9b43a533a837c1ad50817d35a27b32acb2757fd30",
+    "lastmod": "2026-11-21T06:04:22Z"
+  },
+  "/articles/maslo-iz-sapuna-dizelya/": {
+    "sha256": "de324d077be54b8ddb569eac7cc8204faa67c9f6a9d87f201f93a7845518fe00",
+    "lastmod": "2026-11-21T06:04:22Z"
   },
   "/articles/oshibka-p0087-na-dizele/": {
     "sha256": "c5191e931327d0ce7682639145d70c2299d9bbba19ca1c25d60b94e0620c2fd6",
@@ -340,8 +344,8 @@
     "lastmod": "2026-11-13T06:10:26Z"
   },
   "/articles/rastyot-uroven-masla-v-dizele/": {
-    "sha256": "b8635422cd4181f123886feb495283a0461922d635bd393017cfc6ab7d7efeff",
-    "lastmod": "2026-11-12T06:09:48Z"
+    "sha256": "f8ca8095aa864bc2c2fd77dd7633e0281db6e2787d87ca383063fb1010d07b47",
+    "lastmod": "2026-11-21T06:04:22Z"
   },
   "/articles/klapan-rampy-ili-tnvd/": {
     "sha256": "1b91df44c152e7a92ad9da841fba9c330a9f6902e2e77c18c9342ebc57b9e2fd",
