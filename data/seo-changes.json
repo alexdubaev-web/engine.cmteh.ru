@@ -1,7 +1,7 @@
 {
   "origin": "https://engine.cmteh.ru",
   "indexable": true,
-  "generated_at": "2026-11-21T06:04:22Z",
+  "generated_at": "2026-11-22T06:10:23Z",
   "urls": [
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/",
     "https://engine.cmteh.ru/catalog/",
@@ -93,7 +93,11 @@
     "https://engine.cmteh.ru/contacts/",
     "https://engine.cmteh.ru/delivery/",
     "https://engine.cmteh.ru/articles/chernyy-dym-pod-nagruzkoy/",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/"
+    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/",
+    "https://engine.cmteh.ru/",
+    "https://engine.cmteh.ru/articles/",
+    "https://engine.cmteh.ru/articles/piezo-ili-elektromagnitnaya-forsunka/",
+    "https://engine.cmteh.ru/articles/proverka-elektriki-forsunki/"
   ],
   "revisions": {
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "a26169a07a8747e888773eca4b4d8790",
@@ -186,6 +190,10 @@
     "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0",
     "https://engine.cmteh.ru/delivery/": "647292ee341e4f408a6f5995f6283d19",
     "https://engine.cmteh.ru/articles/chernyy-dym-pod-nagruzkoy/": "118b600eae6443df8cfbcf819e5d791f",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "5a872bbe7e9a4cc6b4f2497d181e97ff"
+    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "5a872bbe7e9a4cc6b4f2497d181e97ff",
+    "https://engine.cmteh.ru/": "93b404d8f8cb4567a257d701c2659870",
+    "https://engine.cmteh.ru/articles/": "9b795e2289214bbe84f5187e9914b4b4",
+    "https://engine.cmteh.ru/articles/piezo-ili-elektromagnitnaya-forsunka/": "8fb8d6a64055410b9a2b118b220fc55c",
+    "https://engine.cmteh.ru/articles/proverka-elektriki-forsunki/": "3241231179fc4b218f7f7082db2cecfb"
   }
 }
