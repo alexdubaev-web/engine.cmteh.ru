@@ -79,6 +79,7 @@ brand:Delphi,existing_brand,/brands/delphi/,,,Delphi,,,active
 brand:Denso,existing_brand,/brands/denso/,,,Denso,,,active
 brand:John Deere,existing_brand,/brands/john-deere/,,,John Deere,,,active
 brand:VDO / Vitesco (Aumovio),existing_brand,/brands/vdo/,,,VDO / Vitesco (Aumovio),,,active
+article:piezo-ili-elektromagnitnaya-forsunka,existing_article,/articles/piezo-ili-elektromagnitnaya-forsunka/,,,,,,published
 article:maslo-iz-sapuna-dizelya,existing_article,/articles/maslo-iz-sapuna-dizelya/,,,,,,published
 article:oshibka-p0087-na-dizele,existing_article,/articles/oshibka-p0087-na-dizele/,,,,,,published
 article:benzin-v-dizelnom-bake,existing_article,/articles/benzin-v-dizelnom-bake/,,,,,,published

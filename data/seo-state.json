@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "b382f4a3419b0189e9442c4b55af81d59bd9dfc628f1c88d368fb624c25a60d9",
-    "lastmod": "2026-11-21T06:04:22Z"
+    "sha256": "f05b98a3f8bb945641edadbbedfcc95fb55b5676747962b93e9aab42797b2e54",
+    "lastmod": "2026-11-22T06:10:23Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "78c179e2958eba58efe217f9b43a533a837c1ad50817d35a27b32acb2757fd30",
-    "lastmod": "2026-11-21T06:04:22Z"
+    "sha256": "3e8655efec94653f2b50129ab01baf1c279d7c2b67234156807b6d10b4e0649a",
+    "lastmod": "2026-11-22T06:10:23Z"
+  },
+  "/articles/piezo-ili-elektromagnitnaya-forsunka/": {
+    "sha256": "21c2087be00bc9d040150ca68ee312ea853e64285e7bbca59209a153b4aa4100",
+    "lastmod": "2026-11-22T06:10:23Z"
   },
   "/articles/maslo-iz-sapuna-dizelya/": {
     "sha256": "de324d077be54b8ddb569eac7cc8204faa67c9f6a9d87f201f93a7845518fe00",
@@ -360,8 +364,8 @@
     "lastmod": "2026-11-09T06:02:55Z"
   },
   "/articles/proverka-elektriki-forsunki/": {
-    "sha256": "3dbe20b561d0e86e13a54537b9804e01498f85b38d07364444dde70d9583de3a",
-    "lastmod": "2026-11-08T09:35:45Z"
+    "sha256": "cc2ae1c401bdca4ff1704dd03537663e3bde8af91482b7ffc3640bfebf839ad9",
+    "lastmod": "2026-11-22T06:10:23Z"
   },
   "/articles/proverka-obratnogo-sliva-forsunok/": {
     "sha256": "9464abf2d72645a23b98b838ed1e0c13c43f43fff44874980dacf09e1c492abf",
