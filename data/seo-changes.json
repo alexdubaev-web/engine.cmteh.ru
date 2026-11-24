@@ -1,7 +1,7 @@
 {
   "origin": "https://engine.cmteh.ru",
   "indexable": true,
-  "generated_at": "2026-11-22T06:10:23Z",
+  "generated_at": "2026-11-24T06:03:45Z",
   "urls": [
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/",
     "https://engine.cmteh.ru/catalog/",
@@ -93,7 +93,10 @@
     "https://engine.cmteh.ru/contacts/",
     "https://engine.cmteh.ru/delivery/",
     "https://engine.cmteh.ru/articles/chernyy-dym-pod-nagruzkoy/",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/"
+    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/",
+    "https://engine.cmteh.ru/",
+    "https://engine.cmteh.ru/articles/",
+    "https://engine.cmteh.ru/articles/promyvka-forsunok-common-rail/"
   ],
   "revisions": {
     "https://engine.cmteh.ru/articles/podkachivayushchiy-nasos-i-tnvd/": "a26169a07a8747e888773eca4b4d8790",
@@ -174,7 +177,7 @@
     "https://engine.cmteh.ru/catalog/dz100217/": "e2089637334b423fabd7289b0175c14d",
     "https://engine.cmteh.ru/catalog/dz100216/": "e0e6900ff54b475bafaa7b5f02c70d4b",
     "https://engine.cmteh.ru/articles/forsunka-do-ustanovki-upakovka-i-zashchita/": "0316d7a9c1624c1aa43c9a3f671d100d",
-    "https://engine.cmteh.ru/articles/novaya-ili-vosstanovlennaya-forsunka/": "66bd77cc524e49f1aa0ad2283b602483",
+    "https://engine.cmteh.ru/articles/novaya-ili-vosstanovlennaya-forsunka/": "3c73dfbf9f37447ea9ab94ef8431f74a",
     "https://engine.cmteh.ru/articles/proverka-podlinnosti-forsunki-pered-pokupkoy/": "f3bda9ebcd434beba8375c2d016718b2",
     "https://engine.cmteh.ru/articles/nasos-forsunka-i-common-rail/": "4a2fc3dfc04145f5813d0e3acd1a0c02",
     "https://engine.cmteh.ru/articles/povtornyy-signal-voda-v-toplive/": "1c84c0c34a2a4e4aa5d2e9e93586f3d7",
@@ -186,6 +189,9 @@
     "https://engine.cmteh.ru/contacts/": "7a6df3b6f68744d8b8aa9059c6d693b0",
     "https://engine.cmteh.ru/delivery/": "647292ee341e4f408a6f5995f6283d19",
     "https://engine.cmteh.ru/articles/chernyy-dym-pod-nagruzkoy/": "118b600eae6443df8cfbcf819e5d791f",
-    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "5a872bbe7e9a4cc6b4f2497d181e97ff"
+    "https://engine.cmteh.ru/articles/protokol-proverki-forsunki/": "5a872bbe7e9a4cc6b4f2497d181e97ff",
+    "https://engine.cmteh.ru/": "7a7ae36d4106406e99ae7c04fe713514",
+    "https://engine.cmteh.ru/articles/": "3843defa62204f0fa1d2927537960f22",
+    "https://engine.cmteh.ru/articles/promyvka-forsunok-common-rail/": "6dcb08cdf79944f8a6f7fa93053007be"
   }
 }

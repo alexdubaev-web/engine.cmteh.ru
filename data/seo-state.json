@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "f05b98a3f8bb945641edadbbedfcc95fb55b5676747962b93e9aab42797b2e54",
-    "lastmod": "2026-11-22T06:10:23Z"
+    "sha256": "fd69da9ac66c8bb975b30af144e0e9e1750e7797c33cdd13a01ebb07cbb741ab",
+    "lastmod": "2026-11-24T06:03:45Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "3e8655efec94653f2b50129ab01baf1c279d7c2b67234156807b6d10b4e0649a",
-    "lastmod": "2026-11-22T06:10:23Z"
+    "sha256": "f9cb20c6a25bfcea6d8a753b079a95e64ca1d2c30fb97f3facb889f1d5acdfa4",
+    "lastmod": "2026-11-24T06:03:45Z"
+  },
+  "/articles/promyvka-forsunok-common-rail/": {
+    "sha256": "f865915b8460d56fe98795a33dc897d1663824a518977a8872cae5b2dc14f48f",
+    "lastmod": "2026-11-24T06:03:45Z"
   },
   "/articles/piezo-ili-elektromagnitnaya-forsunka/": {
     "sha256": "21c2087be00bc9d040150ca68ee312ea853e64285e7bbca59209a153b4aa4100",
@@ -384,8 +388,8 @@
     "lastmod": "2026-11-05T09:03:38Z"
   },
   "/articles/novaya-ili-vosstanovlennaya-forsunka/": {
-    "sha256": "dd7cb917c524a17314c214fe64dcbdf74efd2c3097378522aa13c973ef05a360",
-    "lastmod": "2026-11-05T09:03:38Z"
+    "sha256": "9480438e2e3ec317b98d5ef18173598e6c21f2b199c0ab508c20a86fe4c12600",
+    "lastmod": "2026-11-24T06:03:45Z"
   },
   "/articles/letnee-toplivo-pered-morozami/": {
     "sha256": "4218b79dba25af831728117fe9b0d9f8bc75e1b683a7fcdb8123fe910d86b8d0",
