@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "fd69da9ac66c8bb975b30af144e0e9e1750e7797c33cdd13a01ebb07cbb741ab",
-    "lastmod": "2026-11-24T06:03:45Z"
+    "sha256": "ca8e6a71b4b5d9ab2770aba5931c573ee61b34d23efa2f1bef85961de71e5cc9",
+    "lastmod": "2026-11-25T06:03:09Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "f9cb20c6a25bfcea6d8a753b079a95e64ca1d2c30fb97f3facb889f1d5acdfa4",
-    "lastmod": "2026-11-24T06:03:45Z"
+    "sha256": "c871e7b368b90b82d9f2020a9cf62301e6559aa103cd19bc5b5dc51b09a20d19",
+    "lastmod": "2026-11-25T06:03:09Z"
+  },
+  "/articles/obkatka-dizelya-posle-kapremonta/": {
+    "sha256": "0e4dd628e32167c736d32d55e561e600d094ababd16f87900a3d1eaf2c7ffe4d",
+    "lastmod": "2026-11-25T06:03:09Z"
   },
   "/articles/promyvka-forsunok-common-rail/": {
     "sha256": "f865915b8460d56fe98795a33dc897d1663824a518977a8872cae5b2dc14f48f",
@@ -320,8 +324,8 @@
     "lastmod": "2026-11-22T06:10:23Z"
   },
   "/articles/maslo-iz-sapuna-dizelya/": {
-    "sha256": "de324d077be54b8ddb569eac7cc8204faa67c9f6a9d87f201f93a7845518fe00",
-    "lastmod": "2026-11-21T06:04:22Z"
+    "sha256": "080eeb424045dec7a4464d535db152c9b4441c8437be7d1f0c1ee575d4ab8c67",
+    "lastmod": "2026-11-25T06:03:09Z"
   },
   "/articles/oshibka-p0087-na-dizele/": {
     "sha256": "c5191e931327d0ce7682639145d70c2299d9bbba19ca1c25d60b94e0620c2fd6",
