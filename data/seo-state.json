@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "ca8e6a71b4b5d9ab2770aba5931c573ee61b34d23efa2f1bef85961de71e5cc9",
-    "lastmod": "2026-11-25T06:03:09Z"
+    "sha256": "396e042830d24dc97ed7f42f87d617c07f6f123fa1271c0e11e9ff9b329b9fa1",
+    "lastmod": "2026-11-26T06:03:34Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "c871e7b368b90b82d9f2020a9cf62301e6559aa103cd19bc5b5dc51b09a20d19",
-    "lastmod": "2026-11-25T06:03:09Z"
+    "sha256": "a18cba757837d7708f8988499e0e8e1026c0a1839a22373ade96c4ec3cba4b79",
+    "lastmod": "2026-11-26T06:03:34Z"
+  },
+  "/articles/sliz-v-toplivnom-filtre-dizelya/": {
+    "sha256": "6e5e470c6fec22fa26b0b10e5fd1d8f6e7e76cebb38c6256ad31c208825a440e",
+    "lastmod": "2026-11-26T06:03:34Z"
   },
   "/articles/obkatka-dizelya-posle-kapremonta/": {
     "sha256": "0e4dd628e32167c736d32d55e561e600d094ababd16f87900a3d1eaf2c7ffe4d",
@@ -380,8 +384,8 @@
     "lastmod": "2026-11-16T06:08:26Z"
   },
   "/articles/chastitsy-v-toplivnom-filtre-dizelya/": {
-    "sha256": "429f854b1749e7dec5f2c7370179465a78fd134e8c0c27d7e15eed134042c2ab",
-    "lastmod": "2026-11-06T06:03:03Z"
+    "sha256": "b2c528b905aee989630bd7bee88bbf2bd4d9c7f99630c26092a9d701e0cba292",
+    "lastmod": "2026-11-26T06:03:34Z"
   },
   "/articles/forsunka-do-ustanovki-upakovka-i-zashchita/": {
     "sha256": "67d29dd70f880ad22b7a9d242f638390881ed8bf3e80e0feaf247de4be3869c9",
