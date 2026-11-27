@@ -39,3 +39,5 @@
 
 - [Delphi: Best practice advice for servicing Common Rail injectors](https://www.delphiautoparts.com/resource-center/article/best-practice-advice-for-servicing-common-rail-injectors). Установка, уплотнения и разные проявления негерметичности. Проверено 28 октября 2026 года.
 - [DENSO: Mastering DENSO Diesel Injector Swaps](https://www.denso-am.eu/news/mastering-denso-diesel-injector-swaps-a-clear-step-by-step-youtube-guide), 27 ноября 2025 года. Подготовка компонентов и проверки после замены. Проверено 28 октября 2026 года.
+
+Если форсунка ещё не снята и не выходит из посадочного места, сначала согласуйте способ извлечения и дальнейшую оценку узла. Этому посвящён разбор [что делать, если форсунка не вынимается](/articles/forsunka-ne-vynimaetsya/).
