@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "396e042830d24dc97ed7f42f87d617c07f6f123fa1271c0e11e9ff9b329b9fa1",
-    "lastmod": "2026-11-26T06:03:34Z"
+    "sha256": "fc9ab36f2b87fe46b085300d8099657b21e7068648c7551e94ffc1fc24343de3",
+    "lastmod": "2026-11-27T06:10:18Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "a18cba757837d7708f8988499e0e8e1026c0a1839a22373ade96c4ec3cba4b79",
-    "lastmod": "2026-11-26T06:03:34Z"
+    "sha256": "fe32b57e1c488419496ee9adc9ca1e596cb5baa178940c6a70055333d6aaafd4",
+    "lastmod": "2026-11-27T06:10:18Z"
+  },
+  "/articles/forsunka-ne-vynimaetsya/": {
+    "sha256": "f17e5b4e231444ba0c8548d472c0b3ba333c38e4596f178764ef6b23f9315d17",
+    "lastmod": "2026-11-27T06:10:18Z"
   },
   "/articles/sliz-v-toplivnom-filtre-dizelya/": {
     "sha256": "6e5e470c6fec22fa26b0b10e5fd1d8f6e7e76cebb38c6256ad31c208825a440e",
@@ -416,8 +420,8 @@
     "lastmod": "2026-11-06T06:03:03Z"
   },
   "/articles/uplotneniya-pri-zamene-forsunki/": {
-    "sha256": "797870b14935052955be7573df970c814c0ae100a7d2e66031949ec4365c6245",
-    "lastmod": "2026-11-09T06:02:55Z"
+    "sha256": "e46082d6795ad73ef4dfd7909a2aed73ec63cbd269fff9c91f94ef55225a85f3",
+    "lastmod": "2026-11-27T06:10:18Z"
   },
   "/articles/nasos-forsunka-i-common-rail/": {
     "sha256": "e47ea49b0dd69d8d3852a70450f66feabc3ce7b74ebad221431e51b0eee4df77",
