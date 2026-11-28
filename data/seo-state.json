@@ -1,7 +1,7 @@
 {
   "/": {
-    "sha256": "fc9ab36f2b87fe46b085300d8099657b21e7068648c7551e94ffc1fc24343de3",
-    "lastmod": "2026-11-27T06:10:18Z"
+    "sha256": "31a3de96ac24590ab24458785823fa022da5b207f00878a7cf45b1a4314421ea",
+    "lastmod": "2026-11-28T06:10:50Z"
   },
   "/catalog/": {
     "sha256": "9808403bd2f318c652320923b3abce980bc5a50f2bd81a83c332fbf59ad37d16",
@@ -308,8 +308,12 @@
     "lastmod": "2026-11-05T12:14:28Z"
   },
   "/articles/": {
-    "sha256": "fe32b57e1c488419496ee9adc9ca1e596cb5baa178940c6a70055333d6aaafd4",
-    "lastmod": "2026-11-27T06:10:18Z"
+    "sha256": "98ce1d64d84b5540e11cf1eb2d53a36252ea8dd9911fbd400a683462a194b0d3",
+    "lastmod": "2026-11-28T06:10:50Z"
+  },
+  "/articles/kavitatsiya-gilz-dizelya/": {
+    "sha256": "7d89b59f9e857606f23a325847c613d74d25bdee0ac766d3ff181d120bff3ef2",
+    "lastmod": "2026-11-28T06:10:50Z"
   },
   "/articles/forsunka-ne-vynimaetsya/": {
     "sha256": "4677c20f76b4bda5322156f9264c684d28465f3ac4b6633c85cd15a3e4fb65a2",
@@ -320,8 +324,8 @@
     "lastmod": "2026-11-26T06:03:34Z"
   },
   "/articles/obkatka-dizelya-posle-kapremonta/": {
-    "sha256": "0e4dd628e32167c736d32d55e561e600d094ababd16f87900a3d1eaf2c7ffe4d",
-    "lastmod": "2026-11-25T06:03:09Z"
+    "sha256": "2f965b0e6295f12a2a32dca42ae7e969e5ceef5b90a328d3ce8076836b5f5e5a",
+    "lastmod": "2026-11-28T06:10:50Z"
   },
   "/articles/promyvka-forsunok-common-rail/": {
     "sha256": "f865915b8460d56fe98795a33dc897d1663824a518977a8872cae5b2dc14f48f",
